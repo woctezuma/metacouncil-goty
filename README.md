@@ -12,17 +12,17 @@
   [Codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
   [Codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
 
+![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
+
 ## Introduction
 
-These awards focus on PC games which we deem GOTY worthy, as well as the best Early Access game and the best DLC of the year. A separate category lists the most disappointing games.
+These awards focus on PC games which we deem GOTY worthy, as well as the best Early Access game and the best DLC.
 
 ## Method
 
 Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
 
 ## Results
-
-![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
 
 Not available before January 20, 2019.
 
