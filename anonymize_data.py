@@ -38,6 +38,7 @@ def anonymize(data, author_name_token_index=18):
         tokens[author_name_token_index] = fake.name()
 
         # Remove leading metadata
+        # Consequence: the fake author name should now appear as the first token on each line of the anonymized data.
         tokens = tokens[author_name_token_index:]
 
         line = ''.join(tokens)
@@ -72,7 +73,7 @@ def main():
 
     data_content = remove_header(data, content_start_criterion='"1"')
 
-    # Assumption: the name of the author appears as the 18th token on each line of data
+    # Assumption: the name of the author appears as the 18th token on each line of the original data
     anonymized_data = anonymize(data_content, author_name_token_index=18)
 
     write_output(anonymized_data, data_folder + output_filename, file_encoding)
