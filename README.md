@@ -22,6 +22,8 @@ Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-p
 
 ## Results
 
+![MetaCouncil GOTY banner](metacouncil-goty-banner.png)
+
 Not available before January 20, 2019.
 
 ## References
