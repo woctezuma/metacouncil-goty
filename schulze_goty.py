@@ -121,10 +121,12 @@ def find_closest_app_id(game_name_input, steamspy_database, num_closest_neighbor
     return closest_app_id, closest_distance
 
 
-def precompute_matches(raw_votes, steamspy_database, num_closest_neighbors=1,
+def precompute_matches(raw_votes, num_closest_neighbors=1,
                        release_year=None, max_num_tries_for_year=2):
     seen_game_names = set()
     matches = dict()
+
+    steamspy_database = steamspypi.api.load()
 
     for voter in raw_votes.keys():
         for (position, raw_name) in raw_votes[voter]['goty_preferences'].items():
@@ -236,7 +238,7 @@ def adapt_votes_format_for_schulze_computations(normalized_votes):
     return candidate_names, weighted_ranks
 
 
-def compute_schulze_ranking(normalized_votes, steamspy_database):
+def compute_schulze_ranking(normalized_votes):
     # Reference: https://github.com/mgp/schulze-method
 
     import schulze
@@ -245,12 +247,14 @@ def compute_schulze_ranking(normalized_votes, steamspy_database):
 
     schulze_ranking = schulze.compute_ranks(candidate_names, weighted_ranks)
 
-    print_schulze_ranking(schulze_ranking, steamspy_database)
+    print_schulze_ranking(schulze_ranking)
 
     return schulze_ranking
 
 
-def print_schulze_ranking(schulze_ranking, steamspy_database):
+def print_schulze_ranking(schulze_ranking):
+    steamspy_database = steamspypi.api.load()
+
     print()
 
     for (rank, appID_group) in enumerate(schulze_ranking):
@@ -332,23 +336,26 @@ def filter_out_votes_for_wrong_release_years(normalized_votes, target_release_ye
     return normalized_votes
 
 
-def compute_ranking(ballots, release_year='2018'):
-    steamspy_database = steamspypi.api.load()
-    num_closest_neighbors = 3
-
+def get_matches(ballots, release_year='2018', num_closest_neighbors=3):
     # The following parameter can only have an effect if it is strictly greater than 1.
     max_num_tries_for_year = 2
 
-    matches = precompute_matches(ballots, steamspy_database, num_closest_neighbors,
+    matches = precompute_matches(ballots, num_closest_neighbors,
                                  release_year, max_num_tries_for_year)
 
     display_matches(matches)
+
+    return matches
+
+
+def compute_ranking(ballots, release_year='2018'):
+    matches = get_matches(ballots, release_year=release_year)
 
     normalized_votes = normalize_votes(ballots, matches)
 
     normalized_votes = filter_out_votes_for_wrong_release_years(normalized_votes, release_year)
 
-    schulze_ranking = compute_schulze_ranking(normalized_votes, steamspy_database)
+    schulze_ranking = compute_schulze_ranking(normalized_votes)
 
     num_app_id_groups_to_display = 3
     for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
