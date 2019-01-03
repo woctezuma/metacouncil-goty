@@ -1,9 +1,7 @@
 import unittest
 
 import anonymize_data
-
-
-# import schulze_goty
+import schulze_goty
 
 
 class TestAnonymizeDataMethods(unittest.TestCase):
@@ -15,10 +13,10 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         self.assertEqual(len(anonymized_data), 3)
 
 
-# class TestSchulzeGotyMethods(unittest.TestCase):
-#
-#     def test_main(self):
-#         self.assertTrue(schulze_goty.main())
+class TestSchulzeGotyMethods(unittest.TestCase):
+
+    def test_main(self):
+        self.assertTrue(schulze_goty.main())
 
 
 if __name__ == '__main__':
