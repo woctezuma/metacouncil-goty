@@ -178,25 +178,10 @@ def display_matches(matches):
 
 
 def get_hard_coded_app_id_dict():
-    # Hard-coded list of game names which are wrongly matched with Levenshtein distance (cf. output/wrong_matches.txt)
+    # Hard-coded list of game names which are wrongly matched with Levenshtein distance
 
     hard_coded_dict = {
-        "Death of the Outsider": "614570",
-        "Hellblade": "414340",
-        "Nioh": "485510",
-        "Nioh: Complete Edition": "485510",
-        # "Okami HD": "587620",
-        "Okami": "587620",
         "PUBG": "578080",
-        "Resident Evil 7": "418370",
-        "Resident Evil VII Biohazard": "418370",
-        "Resident Evil VII": "418370",
-        "Telltale's Guardians of the Galaxy": "579950",
-        # "Total War: Warhammer 2": "594570",
-        # "Total war:warhammer 2": "594570",
-        "Trails in the Sky the 3rd": "436670",
-        "Turok 2": "405830",
-        "Wolfenstein II": "612880",
     }
 
     return hard_coded_dict
