@@ -383,17 +383,15 @@ def load_ballots(input_filename):
     return ballots
 
 
-def main():
-    ballot_year = '2018'
-
-    input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-
+def apply_pipeline(input_filename, release_year):
     ballots = load_ballots(input_filename)
 
-    compute_ranking(ballots, release_year=ballot_year)
+    compute_ranking(ballots, release_year=release_year)
 
     return True
 
 
 if __name__ == '__main__':
-    main()
+    ballot_year = '2018'
+    input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+    apply_pipeline(input_filename, release_year=ballot_year)
