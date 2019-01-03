@@ -62,8 +62,7 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     return
 
 
-def main():
-    input_filename = 'pc_gaming_metacouncil_goty_awards_2018.csv'
+def load_and_anonymize(input_filename):
     output_filename = 'anonymized_' + input_filename
     file_encoding = 'utf-8'
 
@@ -77,6 +76,13 @@ def main():
     anonymized_data = anonymize(data_content, author_name_token_index=18)
 
     write_output(anonymized_data, data_folder + output_filename, file_encoding)
+
+    return anonymized_data
+
+
+def main():
+    input_filename = 'pc_gaming_metacouncil_goty_awards_2018.csv'
+    anonymized_data = load_and_anonymize(input_filename)
 
     return
 
