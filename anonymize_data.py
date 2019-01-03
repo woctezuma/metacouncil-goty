@@ -1,7 +1,19 @@
+def get_data_folder():
+    data_folder = 'data/'
+    return data_folder
+
+
+def get_anonymized_file_prefix():
+    anonymized_file_prefix = 'anonymized_'
+    return anonymized_file_prefix
+
+
 def load_input(filename, file_encoding='utf8'):
     data = []
 
-    with open(filename, 'r', encoding=file_encoding) as f:
+    full_path_to_file = get_data_folder() + filename
+
+    with open(full_path_to_file, 'r', encoding=file_encoding) as f:
         for line in f.readlines():
             line = line.strip()
             # Remove empty lines and comments
@@ -51,11 +63,13 @@ def anonymize(data, author_name_token_index=18):
 def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     import pathlib
 
-    data_path = pathlib.Path(output_filename).parent
+    full_path_to_file = get_data_folder() + output_filename
+
+    data_path = pathlib.Path(full_path_to_file).parent
 
     pathlib.Path(data_path).mkdir(parents=True, exist_ok=True)
 
-    with open(output_filename, 'w', encoding=file_encoding) as outfile:
+    with open(full_path_to_file, 'w', encoding=file_encoding) as outfile:
         for element in anonymized_data:
             print(element, file=outfile)
 
@@ -63,29 +77,21 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
 
 
 def load_and_anonymize(input_filename):
-    output_filename = 'anonymized_' + input_filename
+    output_filename = get_anonymized_file_prefix() + input_filename
     file_encoding = 'utf-8'
 
-    data_folder = 'data/'
-
-    data = load_input(data_folder + input_filename, file_encoding)
+    data = load_input(input_filename, file_encoding)
 
     data_content = remove_header(data, content_start_criterion='"1"')
 
     # Assumption: the name of the author appears as the 18th token on each line of the original data
     anonymized_data = anonymize(data_content, author_name_token_index=18)
 
-    write_output(anonymized_data, data_folder + output_filename, file_encoding)
+    write_output(anonymized_data, output_filename, file_encoding)
 
     return anonymized_data
 
 
-def main():
+if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_2018.csv'
     anonymized_data = load_and_anonymize(input_filename)
-
-    return
-
-
-if __name__ == '__main__':
-    main()
