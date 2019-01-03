@@ -355,13 +355,13 @@ def compute_ranking(ballots, release_year='2018'):
         print_ballot_distribution_for_given_appid(appID_group, normalized_votes)
 
 
-def load_ballots(input_filename):
+def load_ballots(input_filename, file_encoding='utf8'):
     from anonymize_data import get_anonymized_file_prefix, load_input, load_and_anonymize
 
     if input_filename.startswith(get_anonymized_file_prefix()):
-        anonymized_data = load_input(input_filename)
+        anonymized_data = load_input(input_filename, file_encoding)
     else:
-        anonymized_data = load_and_anonymize(input_filename)
+        anonymized_data = load_and_anonymize(input_filename, file_encoding)
 
     ballots = parse_votes(anonymized_data)
 
