@@ -76,9 +76,8 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     return
 
 
-def load_and_anonymize(input_filename):
+def load_and_anonymize(input_filename, file_encoding='utf-8'):
     output_filename = get_anonymized_file_prefix() + input_filename
-    file_encoding = 'utf-8'
 
     data = load_input(input_filename, file_encoding)
 
