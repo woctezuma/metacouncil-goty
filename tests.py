@@ -54,10 +54,12 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         return ballots
 
-    def test_get_matches(self):
+    def test_precompute_matches(self):
         ballot_year = '2018'
         ballots = self.get_ballots(ballot_year)
-        matches = match_names.get_matches(ballots, release_year=ballot_year)
+        matches = match_names.precompute_matches(ballots, release_year=ballot_year)
+
+        match_names.display_matches(matches)
 
         self.assertGreater(len(matches), 0)
 

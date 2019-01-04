@@ -62,8 +62,7 @@ def find_closest_app_id(game_name_input, steamspy_database, num_closest_neighbor
     return closest_app_id, closest_distance
 
 
-def precompute_matches(raw_votes, num_closest_neighbors=1,
-                       release_year=None, max_num_tries_for_year=2):
+def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, max_num_tries_for_year=2):
     seen_game_names = set()
     matches = dict()
 
@@ -120,18 +119,6 @@ def display_matches(matches):
     return
 
 
-def get_matches(ballots, release_year='2018', num_closest_neighbors=3):
-    # The following parameter can only have an effect if it is strictly greater than 1.
-    max_num_tries_for_year = 2
-
-    matches = precompute_matches(ballots, num_closest_neighbors,
-                                 release_year, max_num_tries_for_year)
-
-    display_matches(matches)
-
-    return matches
-
-
 def normalize_votes(raw_votes, matches):
     # Index of the first neighbor
     neighbor_reference_index = 0
@@ -158,7 +145,9 @@ def normalize_votes(raw_votes, matches):
 
 
 def standardize_ballots(ballots, release_year):
-    matches = get_matches(ballots, release_year=release_year)
+    matches = precompute_matches(ballots, release_year=release_year, num_closest_neighbors=3, max_num_tries_for_year=2)
+
+    display_matches(matches)
 
     standardized_ballots = normalize_votes(ballots, matches)
 
