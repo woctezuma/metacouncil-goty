@@ -87,10 +87,10 @@ def print_schulze_ranking(schulze_ranking):
 
     print()
 
-    for (rank, appID_group) in enumerate(schulze_ranking):
+    def get_game_name(app_id):
+        return steamspy_database[app_id]['name']
 
-        def get_game_name(app_id):
-            return steamspy_database[app_id]['name']
+    for (rank, appID_group) in enumerate(schulze_ranking):
 
         for appID in sorted(appID_group, key=get_game_name):
             game_name = get_game_name(appID)
