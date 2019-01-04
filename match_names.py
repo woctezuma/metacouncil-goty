@@ -1,7 +1,7 @@
 import steampi.calendar
 import steampi.text_distances
 
-from hard_coded_matches import check_database_of_problematic_game_names, apply_hard_coded_fixes_to_app_id_search
+from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 from hard_coded_matches import load_extended_steamspy_database
 
 
@@ -31,6 +31,14 @@ def constrain_app_id_search_by_year(dist, sorted_app_ids, release_year, max_num_
                 filtered_sorted_app_ids = sorted_app_ids
 
     return filtered_sorted_app_ids
+
+
+def apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app_ids, num_closest_neighbors):
+    closest_app_id = [find_hard_coded_app_id(game_name_input)]
+    if num_closest_neighbors > 1:
+        closest_app_id.extend(filtered_sorted_app_ids[0:(num_closest_neighbors - 1)])
+
+    return closest_app_id
 
 
 def find_closest_app_id(game_name_input, steamspy_database, num_closest_neighbors=1,

@@ -56,13 +56,5 @@ def find_hard_coded_app_id(game_name_input):
     return hard_coded_app_id
 
 
-def apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app_ids, num_closest_neighbors):
-    closest_app_id = [find_hard_coded_app_id(game_name_input)]
-    if num_closest_neighbors > 1:
-        closest_app_id.extend(filtered_sorted_app_ids[0:(num_closest_neighbors - 1)])
-
-    return closest_app_id
-
-
 if __name__ == '__main__':
     steamspy_database = load_extended_steamspy_database()
