@@ -1,12 +1,13 @@
 import steampi.calendar
-import steamspypi.api
 
 from load_ballots import load_ballots
-from match_names import standardize_ballots
+from match_names import standardize_ballots, load_extended_steamspy_database
 
 
 def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
     # Objective: remove appID which gathered votes but were not released during the target release year
+
+    print()
 
     release_years = dict()
     removed_app_ids = []
@@ -21,6 +22,9 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots, target_releas
                 if app_id not in release_years.keys():
                     release_years[app_id] = steampi.calendar.get_release_year(app_id)
                 if release_years[app_id] == int(target_release_year):
+                    current_ballots_list.append(app_id)
+                elif release_years[app_id] == -1:
+                    print('AppID ' + app_id + ' not found on Steam (either a console game, or from another PC store)')
                     current_ballots_list.append(app_id)
                 else:
                     if app_id not in removed_app_ids:
@@ -83,7 +87,7 @@ def compute_schulze_ranking(standardized_ballots):
 
 
 def print_schulze_ranking(schulze_ranking):
-    steamspy_database = steamspypi.api.load()
+    steamspy_database = load_extended_steamspy_database()
 
     print()
 
