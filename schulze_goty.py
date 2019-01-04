@@ -1,30 +1,8 @@
 import steampi.calendar
 import steamspypi.api
 
-
-def normalize_votes(raw_votes, matches):
-    # Index of the first neighbor
-    neighbor_reference_index = 0
-
-    normalized_votes = dict()
-
-    for voter_name in raw_votes.keys():
-        normalized_votes[voter_name] = dict()
-        normalized_votes[voter_name]['ballots'] = dict()
-        normalized_votes[voter_name]['distances'] = dict()
-        for (position, game_name) in raw_votes[voter_name]['goty_preferences'].items():
-
-            if game_name in matches.keys():
-
-                normalized_votes[voter_name]['ballots'][position] = matches[game_name]['matched_appID'][
-                    neighbor_reference_index]
-                normalized_votes[voter_name]['distances'][position] = matches[game_name]['match_distance'][
-                    neighbor_reference_index]
-            else:
-                normalized_votes[voter_name]['ballots'][position] = None
-                normalized_votes[voter_name]['distances'][position] = None
-
-    return normalized_votes
+from load_ballots import load_ballots
+from match_names import standardize_ballots
 
 
 def adapt_votes_format_for_schulze_computations(normalized_votes):
@@ -158,28 +136,27 @@ def filter_out_votes_for_wrong_release_years(normalized_votes, target_release_ye
     return normalized_votes
 
 
-def compute_ranking(ballots, release_year='2018'):
-    from match_names import get_matches
-
-    matches = get_matches(ballots, release_year=release_year)
-
-    normalized_votes = normalize_votes(ballots, matches)
-
-    normalized_votes = filter_out_votes_for_wrong_release_years(normalized_votes, release_year)
-
-    schulze_ranking = compute_schulze_ranking(normalized_votes)
-
-    num_app_id_groups_to_display = 3
+def display_schulze_ranking(schulze_ranking, normalized_votes, num_app_id_groups_to_display=3):
     for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
         print_ballot_distribution_for_given_appid(appID_group, normalized_votes)
 
+    return
 
-def apply_pipeline(input_filename, release_year):
-    from load_ballots import load_ballots
 
+def apply_pipeline(input_filename, release_year='2018'):
     ballots = load_ballots(input_filename)
 
-    compute_ranking(ballots, release_year=release_year)
+    # Standardize ballots
+
+    normalized_votes = standardize_ballots(ballots, release_year)
+
+    normalized_votes = filter_out_votes_for_wrong_release_years(normalized_votes, release_year)
+
+    # Apply Schulze method
+
+    schulze_ranking = compute_schulze_ranking(normalized_votes)
+
+    display_schulze_ranking(schulze_ranking, normalized_votes)
 
     return True
 

@@ -156,6 +156,39 @@ def get_matches(ballots, release_year='2018', num_closest_neighbors=3):
     return matches
 
 
+def normalize_votes(raw_votes, matches):
+    # Index of the first neighbor
+    neighbor_reference_index = 0
+
+    normalized_votes = dict()
+
+    for voter_name in raw_votes.keys():
+        normalized_votes[voter_name] = dict()
+        normalized_votes[voter_name]['ballots'] = dict()
+        normalized_votes[voter_name]['distances'] = dict()
+        for (position, game_name) in raw_votes[voter_name]['goty_preferences'].items():
+
+            if game_name in matches.keys():
+
+                normalized_votes[voter_name]['ballots'][position] = matches[game_name]['matched_appID'][
+                    neighbor_reference_index]
+                normalized_votes[voter_name]['distances'][position] = matches[game_name]['match_distance'][
+                    neighbor_reference_index]
+            else:
+                normalized_votes[voter_name]['ballots'][position] = None
+                normalized_votes[voter_name]['distances'][position] = None
+
+    return normalized_votes
+
+
+def standardize_ballots(ballots, release_year):
+    matches = get_matches(ballots, release_year=release_year)
+
+    normalized_votes = normalize_votes(ballots, matches)
+
+    return normalized_votes
+
+
 if __name__ == '__main__':
     from load_ballots import load_ballots
 
@@ -163,4 +196,4 @@ if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
     ballots = load_ballots(input_filename)
-    matches = get_matches(ballots, release_year=ballot_year)
+    normalized_votes = standardize_ballots(ballots, release_year=ballot_year)
