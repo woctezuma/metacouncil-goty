@@ -60,7 +60,7 @@ class TestMatchNamesMethods(unittest.TestCase):
         self.assertEqual(len(ballots), len(standardized_ballots))
 
     def test_find_closest_app_id(self):
-        raw_name = 'Half-Life'
+        raw_name = 'Half-Life II'  # Typo ("II" instead of "2") on purpose to increase code coverage
         steamspy_database = match_names.load_extended_steamspy_database()
 
         (closest_appID, closest_distance) = match_names.find_closest_app_id(raw_name, steamspy_database,
@@ -68,7 +68,12 @@ class TestMatchNamesMethods(unittest.TestCase):
                                                                             release_year='2018',
                                                                             max_num_tries_for_year=2)
 
-        self.assertEqual(steamspy_database[closest_appID[0]]['developer'], 'Valve')
+        database_entry = steamspy_database[closest_appID[0]]
+
+        self.assertEqual(database_entry['appid'], 220)
+        self.assertEqual(database_entry['name'], 'Half-Life 2')
+        self.assertEqual(database_entry['developer'], 'Valve')
+        self.assertEqual(database_entry['publisher'], 'Valve')
 
 
 class TestSchulzeGotyMethods(unittest.TestCase):
