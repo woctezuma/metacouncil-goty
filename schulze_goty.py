@@ -5,11 +5,11 @@ from load_ballots import load_ballots
 from match_names import standardize_ballots
 
 
-def adapt_votes_format_for_schulze_computations(normalized_votes):
+def adapt_votes_format_for_schulze_computations(standardized_ballots):
     candidate_names = set()
 
-    for voter in normalized_votes.keys():
-        current_ballots = normalized_votes[voter]['ballots']
+    for voter in standardized_ballots.keys():
+        current_ballots = standardized_ballots[voter]['ballots']
         for position in sorted(current_ballots.keys()):
             app_id = current_ballots[position]
             if app_id is not None:
@@ -17,8 +17,8 @@ def adapt_votes_format_for_schulze_computations(normalized_votes):
 
     weighted_ranks = []
 
-    for voter in normalized_votes.keys():
-        current_ballots = normalized_votes[voter]['ballots']
+    for voter in standardized_ballots.keys():
+        current_ballots = standardized_ballots[voter]['ballots']
         current_ranking = []
         currently_seen_candidates = set()
         for position in sorted(current_ballots.keys()):
@@ -38,12 +38,12 @@ def adapt_votes_format_for_schulze_computations(normalized_votes):
     return candidate_names, weighted_ranks
 
 
-def compute_schulze_ranking(normalized_votes):
+def compute_schulze_ranking(standardized_ballots):
     # Reference: https://github.com/mgp/schulze-method
 
     import schulze
 
-    (candidate_names, weighted_ranks) = adapt_votes_format_for_schulze_computations(normalized_votes)
+    (candidate_names, weighted_ranks) = adapt_votes_format_for_schulze_computations(standardized_ballots)
 
     schulze_ranking = schulze.compute_ranks(candidate_names, weighted_ranks)
 
@@ -78,13 +78,13 @@ def print_schulze_ranking(schulze_ranking):
     return
 
 
-def print_ballot_distribution_for_given_appid(app_id_group, normalized_votes):
+def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots):
     for appID in app_id_group:
 
         ballot_distribution = None
 
-        for voter_name in normalized_votes.keys():
-            current_ballots = normalized_votes[voter_name]['ballots']
+        for voter_name in standardized_ballots.keys():
+            current_ballots = standardized_ballots[voter_name]['ballots']
 
             if ballot_distribution is None:
                 ballot_distribution = [0 for _ in range(len(current_ballots))]
@@ -101,7 +101,7 @@ def print_ballot_distribution_for_given_appid(app_id_group, normalized_votes):
     return
 
 
-def filter_out_votes_for_wrong_release_years(normalized_votes, target_release_year):
+def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
     # Objective: remove appID which gathered votes but were not released during the target release year
 
     print()
@@ -109,8 +109,8 @@ def filter_out_votes_for_wrong_release_years(normalized_votes, target_release_ye
     release_years = dict()
     removed_app_ids = []
 
-    for voter in normalized_votes.keys():
-        current_ballots = normalized_votes[voter]['ballots']
+    for voter in standardized_ballots.keys():
+        current_ballots = standardized_ballots[voter]['ballots']
 
         current_ballots_list = []
         for position in sorted(current_ballots.keys()):
@@ -128,17 +128,17 @@ def filter_out_votes_for_wrong_release_years(normalized_votes, target_release_ye
 
         for i in range(len(current_ballots_list)):
             position = i + 1
-            normalized_votes[voter]['ballots'][position] = current_ballots_list[i]
+            standardized_ballots[voter]['ballots'][position] = current_ballots_list[i]
         for i in range(len(current_ballots_list), len(current_ballots.keys())):
             position = i + 1
-            normalized_votes[voter]['ballots'][position] = None
+            standardized_ballots[voter]['ballots'][position] = None
 
-    return normalized_votes
+    return standardized_ballots
 
 
-def display_schulze_ranking(schulze_ranking, normalized_votes, num_app_id_groups_to_display=3):
+def display_schulze_ranking(schulze_ranking, standardized_ballots, num_app_id_groups_to_display=3):
     for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
-        print_ballot_distribution_for_given_appid(appID_group, normalized_votes)
+        print_ballot_distribution_for_given_appid(appID_group, standardized_ballots)
 
     return
 
@@ -148,15 +148,15 @@ def apply_pipeline(input_filename, release_year='2018'):
 
     # Standardize ballots
 
-    normalized_votes = standardize_ballots(ballots, release_year)
+    standardized_ballots = standardize_ballots(ballots, release_year)
 
-    normalized_votes = filter_out_votes_for_wrong_release_years(normalized_votes, release_year)
+    standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
 
     # Apply Schulze method
 
-    schulze_ranking = compute_schulze_ranking(normalized_votes)
+    schulze_ranking = compute_schulze_ranking(standardized_ballots)
 
-    display_schulze_ranking(schulze_ranking, normalized_votes)
+    display_schulze_ranking(schulze_ranking, standardized_ballots)
 
     return True
 

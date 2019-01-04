@@ -184,9 +184,9 @@ def normalize_votes(raw_votes, matches):
 def standardize_ballots(ballots, release_year):
     matches = get_matches(ballots, release_year=release_year)
 
-    normalized_votes = normalize_votes(ballots, matches)
+    standardized_ballots = normalize_votes(ballots, matches)
 
-    return normalized_votes
+    return standardized_ballots
 
 
 if __name__ == '__main__':
@@ -196,4 +196,4 @@ if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
     ballots = load_ballots(input_filename)
-    normalized_votes = standardize_ballots(ballots, release_year=ballot_year)
+    standardized_ballots = standardize_ballots(ballots, release_year=ballot_year)
