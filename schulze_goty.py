@@ -8,8 +8,6 @@ from match_names import standardize_ballots
 def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
     # Objective: remove appID which gathered votes but were not released during the target release year
 
-    print()
-
     release_years = dict()
     removed_app_ids = []
 
@@ -26,8 +24,7 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots, target_releas
                     current_ballots_list.append(app_id)
                 else:
                     if app_id not in removed_app_ids:
-                        print('AppID ' + app_id + ' was removed because it was released in '
-                              + str(release_years[app_id]))
+                        print('AppID ' + app_id + ' removed because it was released in ' + str(release_years[app_id]))
                         removed_app_ids.append(app_id)
 
         for i in range(len(current_ballots_list)):
