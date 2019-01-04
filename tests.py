@@ -4,6 +4,7 @@ import anonymize_data
 import hard_coded_matches
 import load_ballots
 import match_names
+import optional_categories
 import schulze_goty
 
 
@@ -112,6 +113,15 @@ class TestSchulzeGotyMethods(unittest.TestCase):
                                                                                      target_release_year=ballot_year)
 
         self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] is None))
+
+
+class TestOptionalCategoriesMethods(unittest.TestCase):
+
+    def test_display_optional_ballots(self):
+        ballot_year = '2018'
+        input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
+
+        self.assertTrue(optional_categories.display_optional_ballots(input_filename))
 
 
 if __name__ == '__main__':
