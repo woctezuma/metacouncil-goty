@@ -9,13 +9,21 @@ import schulze_goty
 class TestAnonymizeDataMethods(unittest.TestCase):
 
     def test_load_and_anonymize(self):
-        input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_2018.csv'
+        ballot_year = '2018'
+        input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
         anonymized_data = anonymize_data.load_and_anonymize(input_filename)
 
         self.assertEqual(len(anonymized_data), 3)
 
 
 class TestLoadBallotsMethods(unittest.TestCase):
+
+    def test_load_unanonymized_ballots(self):
+        ballot_year = '2018'
+        input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+        ballots = load_ballots.load_ballots(input_filename)
+
+        self.assertEqual(len(ballots), 3)
 
     def test_load_ballots(self):
         ballot_year = '2018'
