@@ -86,7 +86,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
     def test_filtering_out(self):
         ballot_year = '2018'  # anything but '1998'
-        input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+        input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
 
         ballots = load_ballots.load_ballots(input_filename)
 
