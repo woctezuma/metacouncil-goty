@@ -47,8 +47,6 @@ def compute_schulze_ranking(standardized_ballots):
 
     schulze_ranking = schulze.compute_ranks(candidate_names, weighted_ranks)
 
-    print_schulze_ranking(schulze_ranking)
-
     return schulze_ranking
 
 
@@ -155,6 +153,8 @@ def apply_pipeline(input_filename, release_year='2018'):
     # Apply Schulze method
 
     schulze_ranking = compute_schulze_ranking(standardized_ballots)
+
+    print_schulze_ranking(schulze_ranking)
 
     display_schulze_ranking(schulze_ranking, standardized_ballots)
 
