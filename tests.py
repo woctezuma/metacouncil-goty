@@ -2,6 +2,7 @@ import unittest
 
 import anonymize_data
 import load_ballots
+import match_names
 import schulze_goty
 
 
@@ -22,6 +23,20 @@ class TestLoadBallotsMethods(unittest.TestCase):
         ballots = load_ballots.load_ballots(input_filename)
 
         self.assertEqual(len(ballots), 6)
+
+
+class TestMatchNamesMethods(unittest.TestCase):
+
+    def test_get_matches(self):
+        from load_ballots import load_ballots
+
+        ballot_year = '2018'
+        input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
+
+        ballots = load_ballots(input_filename)
+        matches = match_names.get_matches(ballots, release_year=ballot_year)
+
+        self.assertGreater(len(matches), 0)
 
 
 class TestSchulzeGotyMethods(unittest.TestCase):
