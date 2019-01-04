@@ -1,7 +1,8 @@
 import steampi.calendar
 
+from hard_coded_matches import load_extended_steamspy_database
 from load_ballots import load_ballots
-from match_names import standardize_ballots, load_extended_steamspy_database
+from match_names import standardize_ballots
 
 
 def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
