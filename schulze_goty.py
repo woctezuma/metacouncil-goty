@@ -5,6 +5,41 @@ from load_ballots import load_ballots
 from match_names import standardize_ballots
 
 
+def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
+    # Objective: remove appID which gathered votes but were not released during the target release year
+
+    print()
+
+    release_years = dict()
+    removed_app_ids = []
+
+    for voter in standardized_ballots.keys():
+        current_ballots = standardized_ballots[voter]['ballots']
+
+        current_ballots_list = []
+        for position in sorted(current_ballots.keys()):
+            app_id = current_ballots[position]
+            if app_id is not None:
+                if app_id not in release_years.keys():
+                    release_years[app_id] = steampi.calendar.get_release_year(app_id)
+                if release_years[app_id] == int(target_release_year):
+                    current_ballots_list.append(app_id)
+                else:
+                    if app_id not in removed_app_ids:
+                        print('AppID ' + app_id + ' was removed because it was released in '
+                              + str(release_years[app_id]))
+                        removed_app_ids.append(app_id)
+
+        for i in range(len(current_ballots_list)):
+            position = i + 1
+            standardized_ballots[voter]['ballots'][position] = current_ballots_list[i]
+        for i in range(len(current_ballots_list), len(current_ballots.keys())):
+            position = i + 1
+            standardized_ballots[voter]['ballots'][position] = None
+
+    return standardized_ballots
+
+
 def adapt_votes_format_for_schulze_computations(standardized_ballots):
     candidate_names = set()
 
@@ -97,41 +132,6 @@ def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots
         print('counts of ballots with rank 1, 2, ..., 5:\t', ballot_distribution)
 
     return
-
-
-def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
-    # Objective: remove appID which gathered votes but were not released during the target release year
-
-    print()
-
-    release_years = dict()
-    removed_app_ids = []
-
-    for voter in standardized_ballots.keys():
-        current_ballots = standardized_ballots[voter]['ballots']
-
-        current_ballots_list = []
-        for position in sorted(current_ballots.keys()):
-            app_id = current_ballots[position]
-            if app_id is not None:
-                if app_id not in release_years.keys():
-                    release_years[app_id] = steampi.calendar.get_release_year(app_id)
-                if release_years[app_id] == int(target_release_year):
-                    current_ballots_list.append(app_id)
-                else:
-                    if app_id not in removed_app_ids:
-                        print('AppID ' + app_id + ' was removed because it was released in '
-                              + str(release_years[app_id]))
-                        removed_app_ids.append(app_id)
-
-        for i in range(len(current_ballots_list)):
-            position = i + 1
-            standardized_ballots[voter]['ballots'][position] = current_ballots_list[i]
-        for i in range(len(current_ballots_list), len(current_ballots.keys())):
-            position = i + 1
-            standardized_ballots[voter]['ballots'][position] = None
-
-    return standardized_ballots
 
 
 def display_schulze_ranking(schulze_ranking, standardized_ballots, num_app_id_groups_to_display=3):
