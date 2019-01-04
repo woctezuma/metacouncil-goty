@@ -128,7 +128,7 @@ def display_matches(matches):
         dist_reference = element['match_distance'][neighbor_reference_index]
         game_name = element['input_name']
 
-        if dist_reference > 0 and check_database_of_problematic_game_names(game_name):
+        if dist_reference > 0 or check_database_of_problematic_game_names(game_name):
 
             print('\n' + game_name
                   + ' (' + 'length:' + str(len(game_name)) + ')'
