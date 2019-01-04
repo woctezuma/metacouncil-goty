@@ -35,16 +35,29 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
 class TestMatchNamesMethods(unittest.TestCase):
 
-    def test_get_matches(self):
+    @staticmethod
+    def get_ballots(ballot_year='2018'):
         from load_ballots import load_ballots
 
-        ballot_year = '2018'
         input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
 
         ballots = load_ballots(input_filename)
+
+        return ballots
+
+    def test_get_matches(self):
+        ballot_year = '2018'
+        ballots = self.get_ballots(ballot_year)
         matches = match_names.get_matches(ballots, release_year=ballot_year)
 
         self.assertGreater(len(matches), 0)
+
+    def test_standardize_ballots(self):
+        ballot_year = '2018'
+        ballots = self.get_ballots(ballot_year)
+        standardized_ballots = match_names.standardize_ballots(ballots, release_year=ballot_year)
+
+        self.assertEqual(len(ballots), len(standardized_ballots))
 
 
 class TestSchulzeGotyMethods(unittest.TestCase):
