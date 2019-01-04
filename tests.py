@@ -75,8 +75,8 @@ class TestMatchNamesMethods(unittest.TestCase):
         steamspy_database = hard_coded_matches.load_extended_steamspy_database()
 
         (closest_appID, closest_distance) = match_names.find_closest_app_id(raw_name, steamspy_database,
-                                                                            num_closest_neighbors=1,
                                                                             release_year='2018',
+                                                                            num_closest_neighbors=1,
                                                                             max_num_tries_for_year=2)
 
         database_entry = steamspy_database[closest_appID[0]]

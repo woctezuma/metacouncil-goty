@@ -41,8 +41,8 @@ def apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app
     return closest_app_id
 
 
-def find_closest_app_id(game_name_input, steamspy_database, num_closest_neighbors=1,
-                        release_year=None, max_num_tries_for_year=2):
+def find_closest_app_id(game_name_input, steamspy_database, release_year=None,
+                        num_closest_neighbors=1, max_num_tries_for_year=2):
     (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input, steamspy_database)
 
     filtered_sorted_app_ids = sorted_app_ids
@@ -75,8 +75,9 @@ def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, ma
 
                 if raw_name != '':
                     (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database,
+                                                                            release_year,
                                                                             num_closest_neighbors,
-                                                                            release_year, max_num_tries_for_year)
+                                                                            max_num_tries_for_year)
 
                     element = dict()
                     element['input_name'] = raw_name
