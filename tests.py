@@ -84,6 +84,24 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
         self.assertTrue(schulze_goty.apply_pipeline(input_filename, release_year=ballot_year))
 
+    def test_filtering_out(self):
+        ballot_year = '2018'  # anything but '1998'
+        input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+
+        ballots = load_ballots.load_ballots(input_filename)
+
+        # Add dummy vote for a game released in another year
+        ballots['dummy_voter_name'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'][1] = "Half-Life"  # released in 1998
+
+        standardized_ballots = match_names.standardize_ballots(ballots, release_year=ballot_year)
+
+        standardized_ballots = schulze_goty.filter_out_votes_for_wrong_release_years(standardized_ballots,
+                                                                                     target_release_year=ballot_year)
+
+        self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] is None))
+
 
 if __name__ == '__main__':
     unittest.main()
