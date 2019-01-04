@@ -1,6 +1,7 @@
 import unittest
 
 import anonymize_data
+import load_ballots
 import schulze_goty
 
 
@@ -13,11 +14,22 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         self.assertEqual(len(anonymized_data), 3)
 
 
+class TestLoadBallotsMethods(unittest.TestCase):
+
+    def test_load_ballots(self):
+        ballot_year = '2018'
+        input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
+        ballots = load_ballots.load_ballots(input_filename)
+
+        self.assertEqual(len(ballots), 6)
+
+
 class TestSchulzeGotyMethods(unittest.TestCase):
 
     def test_apply_pipeline(self):
         ballot_year = '2018'
         input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
+
         self.assertTrue(schulze_goty.apply_pipeline(input_filename, release_year=ballot_year))
 
 
