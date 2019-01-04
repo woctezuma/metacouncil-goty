@@ -1,6 +1,7 @@
 import unittest
 
 import anonymize_data
+import hard_coded_matches
 import load_ballots
 import match_names
 import schulze_goty
@@ -33,6 +34,14 @@ class TestLoadBallotsMethods(unittest.TestCase):
         self.assertEqual(len(ballots), 6)
 
 
+class TestHardCodedMatchesMethods(unittest.TestCase):
+
+    def test_load_extended_steamspy_database(self):
+        extended_steamspy_database = hard_coded_matches.load_extended_steamspy_database()
+
+        self.assertGreater(len(extended_steamspy_database), 0)
+
+
 class TestMatchNamesMethods(unittest.TestCase):
 
     @staticmethod
@@ -61,7 +70,7 @@ class TestMatchNamesMethods(unittest.TestCase):
 
     def test_find_closest_app_id(self):
         raw_name = 'Half-Life II'  # Typo ("II" instead of "2") on purpose to increase code coverage
-        steamspy_database = match_names.load_extended_steamspy_database()
+        steamspy_database = hard_coded_matches.load_extended_steamspy_database()
 
         (closest_appID, closest_distance) = match_names.find_closest_app_id(raw_name, steamspy_database,
                                                                             num_closest_neighbors=1,
