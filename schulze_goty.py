@@ -135,7 +135,8 @@ def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots
     return
 
 
-def display_schulze_ranking(schulze_ranking, standardized_ballots, num_app_id_groups_to_display=3):
+def print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
+                                                   num_app_id_groups_to_display=3):
     for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
         print_ballot_distribution_for_given_appid(appID_group, standardized_ballots)
 
@@ -157,7 +158,7 @@ def apply_pipeline(input_filename, release_year='2018'):
 
     print_schulze_ranking(schulze_ranking)
 
-    display_schulze_ranking(schulze_ranking, standardized_ballots)
+    print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots)
 
     return True
 
