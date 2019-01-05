@@ -47,6 +47,31 @@ def load_ballots(input_filename, file_encoding='utf8'):
     return ballots
 
 
+def print_reviews(ballots, matches, app_id):
+    # Constant parameters
+    goty_position = 1
+    neighbor_reference_index = 0
+
+    seen_game_names = set()
+
+    for voter_name in ballots:
+        goty_raw_name = ballots[voter_name]['goty_preferences'][goty_position]
+        goty_app_id = matches[goty_raw_name]['matched_appID'][neighbor_reference_index]
+        goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
+
+        if goty_app_id == app_id:
+            goty_review = ballots[voter_name]['goty_description']
+
+            if goty_standardized_name not in seen_game_names:
+                seen_game_names.add(goty_standardized_name)
+                print('\n[game] ' + goty_standardized_name)
+
+            print('\nReviewer: ' + voter_name)
+            print(goty_review)
+
+    return
+
+
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
