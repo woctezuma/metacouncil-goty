@@ -102,6 +102,7 @@ def pretty_display(ranking):
 
     current_num_votes = 0
     rank = 0
+    increment = 1
 
     for element in ranking:
         game_name = element[0]
@@ -109,7 +110,10 @@ def pretty_display(ranking):
 
         if num_votes != current_num_votes:
             current_num_votes = num_votes
-            rank += 1
+            rank += increment
+            increment = 1
+        else:
+            increment += 1
 
         if num_votes > 1:
             my_str = ' with #votes = '
