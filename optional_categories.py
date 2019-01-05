@@ -24,7 +24,7 @@ def get_optional_ballots(ballots, category_name):
     return optional_ballots
 
 
-def filter_optional_ballots(optional_ballots):
+def filter_noise_from_optional_ballots(optional_ballots):
     filtered_optional_ballots = []
 
     for element in optional_ballots:
@@ -139,7 +139,7 @@ def display_optional_ballots(input_filename, filter_noise=True):
         optional_ballots = get_optional_ballots(ballots, category_name)
 
         if filter_noise:
-            optional_ballots = filter_optional_ballots(optional_ballots)
+            optional_ballots = filter_noise_from_optional_ballots(optional_ballots)
 
         optional_ballots = match_optional_ballots(optional_ballots)
 
