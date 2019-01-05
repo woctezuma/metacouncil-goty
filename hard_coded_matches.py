@@ -10,6 +10,8 @@ def get_hard_coded_app_id_dict():
         "Pillars of Eternity 2": "560130",
         "Dragon Quest XI: Shadows of an Elusive Age": "742120",
         "Atelier Rorona ~The Alchemist of Arland~ DX": "936160",
+        "Mega Man 11": "742300",
+        "Ys VIII: Lacrimosa of DANA": "579180",
 
         # Add an entry for each game which could not be found on Steam. Start with -1, and decrement from there.
         "Spider-Man": "-1",
