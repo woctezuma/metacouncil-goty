@@ -1,6 +1,6 @@
 import steampi.calendar
 
-from hard_coded_matches import load_extended_steamspy_database
+from extend_steamspy import load_extended_steamspy_database
 from load_ballots import load_ballots
 from match_names import standardize_ballots
 

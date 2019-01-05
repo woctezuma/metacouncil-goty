@@ -37,7 +37,7 @@ def filter_noise_from_optional_ballots(optional_ballots):
 def match_optional_ballots(optional_ballots):
     import steampi.calendar
 
-    from hard_coded_matches import load_extended_steamspy_database
+    from extend_steamspy import load_extended_steamspy_database
     from match_names import find_closest_app_id
 
     seen_game_names = set()

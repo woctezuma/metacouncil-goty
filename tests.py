@@ -1,6 +1,7 @@
 import unittest
 
 import anonymize_data
+import extend_steamspy
 import hard_coded_matches
 import load_ballots
 import match_names
@@ -37,8 +38,16 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
 class TestHardCodedMatchesMethods(unittest.TestCase):
 
+    def test_get_hard_coded_app_id_dict(self):
+        hard_coded_dict = hard_coded_matches.get_hard_coded_app_id_dict()
+
+        self.assertGreater(len(hard_coded_dict), 0)
+
+
+class TestExtendSteamSpyMethods(unittest.TestCase):
+
     def test_load_extended_steamspy_database(self):
-        extended_steamspy_database = hard_coded_matches.load_extended_steamspy_database()
+        extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
         self.assertGreater(len(extended_steamspy_database), 0)
 
@@ -73,7 +82,7 @@ class TestMatchNamesMethods(unittest.TestCase):
 
     def test_find_closest_app_id(self):
         raw_name = 'Half-Life II'  # Typo ("II" instead of "2") on purpose to increase code coverage
-        steamspy_database = hard_coded_matches.load_extended_steamspy_database()
+        steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
         (closest_appID, closest_distance) = match_names.find_closest_app_id(raw_name, steamspy_database,
                                                                             release_year='2018',

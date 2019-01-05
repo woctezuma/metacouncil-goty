@@ -1,8 +1,8 @@
 import steampi.calendar
 import steampi.text_distances
 
+from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
-from hard_coded_matches import load_extended_steamspy_database
 
 
 def constrain_app_id_search_by_year(dist, sorted_app_ids, release_year, max_num_tries_for_year):
