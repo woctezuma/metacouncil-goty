@@ -152,7 +152,7 @@ def standardize_ballots(ballots, release_year):
 
     standardized_ballots = normalize_votes(ballots, matches)
 
-    return standardized_ballots
+    return (standardized_ballots, matches)
 
 
 if __name__ == '__main__':

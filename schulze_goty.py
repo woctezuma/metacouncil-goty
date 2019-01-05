@@ -149,7 +149,7 @@ def apply_pipeline(input_filename, release_year='2018'):
 
     # Standardize ballots
 
-    standardized_ballots = standardize_ballots(ballots, release_year)
+    (standardized_ballots, matches) = standardize_ballots(ballots, release_year)
 
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
 
