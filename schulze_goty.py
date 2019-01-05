@@ -153,8 +153,8 @@ def print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
     return
 
 
-def apply_pipeline(input_filename, release_year='2018'):
-    ballots = load_ballots(input_filename)
+def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
+    ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
 
     # Standardize ballots
 
@@ -178,4 +178,4 @@ def apply_pipeline(input_filename, release_year='2018'):
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    apply_pipeline(input_filename, release_year=ballot_year)
+    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False)

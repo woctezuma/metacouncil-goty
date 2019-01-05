@@ -36,7 +36,7 @@ def remove_header(data, content_start_criterion='"1"'):
     return data_content
 
 
-def anonymize(data, author_name_token_index=18):
+def anonymize(data, author_name_token_index=18, fake_author_name=True):
     import re
 
     from faker import Faker
@@ -47,7 +47,8 @@ def anonymize(data, author_name_token_index=18):
 
     for element in data:
         tokens = re.split('(;)', element)
-        tokens[author_name_token_index] = fake.name()
+        if fake_author_name:
+            tokens[author_name_token_index] = fake.name()
 
         # Remove leading metadata
         # Consequence: the fake author name should now appear as the first token on each line of the anonymized data.
@@ -76,7 +77,7 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     return
 
 
-def load_and_anonymize(input_filename, file_encoding='utf-8'):
+def load_and_anonymize(input_filename, file_encoding='utf-8', fake_author_name=True):
     output_filename = get_anonymized_file_prefix() + input_filename
 
     data = load_input(input_filename, file_encoding)
@@ -84,7 +85,7 @@ def load_and_anonymize(input_filename, file_encoding='utf-8'):
     data_content = remove_header(data, content_start_criterion='"1"')
 
     # Assumption: the name of the author appears as the 18th token on each line of the original data
-    anonymized_data = anonymize(data_content, author_name_token_index=18)
+    anonymized_data = anonymize(data_content, author_name_token_index=18, fake_author_name=fake_author_name)
 
     write_output(anonymized_data, output_filename, file_encoding)
 
