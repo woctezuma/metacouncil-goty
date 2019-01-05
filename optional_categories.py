@@ -100,16 +100,23 @@ def compute_ranking_based_on_optional_ballots(optional_ballots):
 def pretty_display(ranking):
     print()
 
-    for (rank, element) in enumerate(ranking):
+    current_num_votes = 0
+    rank = 0
+
+    for element in ranking:
         game_name = element[0]
         num_votes = element[1]
+
+        if num_votes != current_num_votes:
+            current_num_votes = num_votes
+            rank += 1
 
         if num_votes > 1:
             my_str = ' with #votes = '
         else:
             my_str = ' with #vote = '
 
-        print('{0:2} | '.format(rank + 1)
+        print('{0:2} | '.format(rank)
               + game_name.strip()
               + my_str + str(num_votes)
               )
