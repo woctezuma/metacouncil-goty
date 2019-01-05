@@ -162,4 +162,4 @@ if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
     ballots = load_ballots(input_filename)
-    standardized_ballots = standardize_ballots(ballots, release_year=ballot_year)
+    (standardized_ballots, matches) = standardize_ballots(ballots, release_year=ballot_year)

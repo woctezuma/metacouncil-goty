@@ -76,7 +76,7 @@ class TestMatchNamesMethods(unittest.TestCase):
     def test_standardize_ballots(self):
         ballot_year = '2018'
         ballots = self.get_ballots(ballot_year)
-        standardized_ballots = match_names.standardize_ballots(ballots, release_year=ballot_year)
+        (standardized_ballots, matches) = match_names.standardize_ballots(ballots, release_year=ballot_year)
 
         self.assertEqual(len(ballots), len(standardized_ballots))
 
@@ -116,7 +116,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         ballots['dummy_voter_name']['goty_preferences'] = dict()
         ballots['dummy_voter_name']['goty_preferences'][1] = "Half-Life"  # released in 1998
 
-        standardized_ballots = match_names.standardize_ballots(ballots, release_year=ballot_year)
+        (standardized_ballots, matches) = match_names.standardize_ballots(ballots, release_year=ballot_year)
 
         standardized_ballots = schulze_goty.filter_out_votes_for_wrong_release_years(standardized_ballots,
                                                                                      target_release_year=ballot_year)
