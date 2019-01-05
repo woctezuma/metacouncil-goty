@@ -12,18 +12,17 @@ def get_hard_coded_app_id_dict():
         "Atelier Rorona ~The Alchemist of Arland~ DX": "936160",
         "Mega Man 11": "742300",
         "Ys VIII: Lacrimosa of DANA": "579180",
-
-        # Add an entry for each game which could not be found on Steam. Start with -1, and decrement from there.
         "Spider-Man": "-1",
-        "Fallout 76": "-2",
     }
 
     return hard_coded_dict
 
 
 def get_hard_coded_steamspy_database_extension():
+    # Entries manually added to SteamSpy's database
+
     database_extension = {
-        # Games which could not be found on Steam. Typically, games from other PC stores, or on consoles:
+        # Dummy (negative) Steam appIDs for games absent from Steam, e.g. console games or PC games from other stores.
         "-1": {
             "name": "Marvel's Spider-Man", "developer": "Insomniac Games", "publisher": "Sony Interactive Entertainment"
         },
@@ -31,7 +30,7 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Fallout 76", "developer": "Bethesda Game Studios", "publisher": " Bethesda Softworks"
         },
 
-        # Steam DLC, which are not provided by SteamSpy:
+        # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
         "744840": {"name": "Rainbow Six Siege - Year 3 Pass", },
         "865670": {"name": "Prey - Mooncrash", },
