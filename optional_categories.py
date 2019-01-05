@@ -34,6 +34,48 @@ def filter_optional_ballots(optional_ballots):
     return filtered_optional_ballots
 
 
+def match_optional_ballots(optional_ballots):
+    import steampi.calendar
+
+    from hard_coded_matches import load_extended_steamspy_database
+    from match_names import find_closest_app_id
+
+    seen_game_names = set()
+    matches = dict()
+    matched_optional_ballots = []
+
+    steamspy_database = load_extended_steamspy_database()
+
+    print()
+
+    for raw_name in optional_ballots:
+        if raw_name not in seen_game_names:
+            seen_game_names.add(raw_name)
+
+            (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database)
+
+            appID = closest_appID[0]
+
+            app_id_release_date = steampi.calendar.get_release_date_as_str(appID)
+            if app_id_release_date is None:
+                app_id_release_date = 'an unknown date'
+
+            matches[raw_name] = dict()
+            matches[raw_name]['matched_appID'] = appID
+            matches[raw_name]['matched_name'] = steamspy_database[appID]['name']
+            matches[raw_name]['matched_release_date'] = app_id_release_date
+
+            print(raw_name + ' -> ' + matches[raw_name]['matched_name'])
+
+        my_str = matches[raw_name]['matched_name'] + \
+                 ' (appID: ' + matches[raw_name]['matched_appID'] + \
+                 ', released on ' + matches[raw_name]['matched_release_date'] + ')'
+
+        matched_optional_ballots.append(my_str)
+
+    return matched_optional_ballots
+
+
 def count_optional_ballots(optional_ballots):
     optional_counts = dict()
 
@@ -46,10 +88,7 @@ def count_optional_ballots(optional_ballots):
     return optional_counts
 
 
-def compute_ranking_based_on_optional_ballots(optional_ballots, filter_noise=False):
-    if filter_noise:
-        optional_ballots = filter_optional_ballots(optional_ballots)
-
+def compute_ranking_based_on_optional_ballots(optional_ballots):
     optional_counts = count_optional_ballots(optional_ballots)
 
     # Reference: https://stackoverflow.com/a/37693603
@@ -66,19 +105,19 @@ def pretty_display(ranking):
         num_votes = element[1]
 
         if num_votes > 1:
-            my_str = ' (#votes = '
+            my_str = ' with #votes = '
         else:
-            my_str = ' (#vote = '
+            my_str = ' with #vote = '
 
         print('{0:2} | '.format(rank + 1)
               + game_name.strip()
-              + my_str + str(num_votes) + ')'
+              + my_str + str(num_votes)
               )
 
     return
 
 
-def display_optional_ballots(input_filename):
+def display_optional_ballots(input_filename, filter_noise=True):
     from load_ballots import load_ballots
 
     ballots = load_ballots(input_filename)
@@ -88,10 +127,12 @@ def display_optional_ballots(input_filename):
 
         optional_ballots = get_optional_ballots(ballots, category_name)
 
-        ranking = compute_ranking_based_on_optional_ballots(optional_ballots, filter_noise=False)
-        pretty_display(ranking)
+        if filter_noise:
+            optional_ballots = filter_optional_ballots(optional_ballots)
 
-        ranking = compute_ranking_based_on_optional_ballots(optional_ballots, filter_noise=True)
+        optional_ballots = match_optional_ballots(optional_ballots)
+
+        ranking = compute_ranking_based_on_optional_ballots(optional_ballots)
         pretty_display(ranking)
 
     return True
