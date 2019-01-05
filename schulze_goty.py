@@ -1,7 +1,7 @@
 import steampi.calendar
 
 from extend_steamspy import load_extended_steamspy_database
-from load_ballots import load_ballots
+from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
 
 
@@ -144,6 +144,15 @@ def print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized
     return
 
 
+def print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
+                                       num_app_id_groups_to_display=3):
+    for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
+        for app_id in app_id_group:
+            print_reviews(ballots, matches, app_id)
+
+    return
+
+
 def apply_pipeline(input_filename, release_year='2018'):
     ballots = load_ballots(input_filename)
 
@@ -160,6 +169,8 @@ def apply_pipeline(input_filename, release_year='2018'):
     print_schulze_ranking(schulze_ranking)
 
     print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots)
+
+    print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches)
 
     return True
 
