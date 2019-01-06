@@ -13,6 +13,11 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Fallout 76", "developer": "Bethesda Game Studios", "publisher": " Bethesda Softworks"
         },
 
+        # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
+        "885940": {
+            "name": "Meritocracy of the Oni & Blade", "developer": "ONEONE1", "publisher": "DLsite"
+        },
+
         # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
         "744840": {"name": "Rainbow Six Siege - Year 3 Pass", },
