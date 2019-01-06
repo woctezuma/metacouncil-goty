@@ -82,11 +82,9 @@ class TestMatchNamesMethods(unittest.TestCase):
 
     @staticmethod
     def get_ballots(ballot_year='2018'):
-        from load_ballots import load_ballots
-
         input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
 
-        ballots = load_ballots(input_filename)
+        ballots = load_ballots.load_ballots(input_filename)
 
         return ballots
 
