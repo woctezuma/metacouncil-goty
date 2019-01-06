@@ -1,5 +1,6 @@
 import steampi.calendar
 
+from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_steamspy import load_extended_steamspy_database
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
@@ -161,6 +162,8 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
     (standardized_ballots, matches) = standardize_ballots(ballots, release_year)
 
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
+
+    standardized_ballots = filter_out_votes_for_hard_coded_reasons(standardized_ballots)
 
     # Apply Schulze method
 
