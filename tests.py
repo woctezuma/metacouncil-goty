@@ -1,6 +1,7 @@
 import unittest
 
 import anonymize_data
+import disqualify_vote
 import extend_steamspy
 import hard_coded_matches
 import load_ballots
@@ -42,6 +43,31 @@ class TestHardCodedMatchesMethods(unittest.TestCase):
         hard_coded_dict = hard_coded_matches.get_hard_coded_app_id_dict()
 
         self.assertGreater(len(hard_coded_dict), 0)
+
+
+class TestDisqualifyVoteMethods(unittest.TestCase):
+
+    def test_get_hard_coded_disqualified_app_ids(self):
+        disqualified_app_id_dict = disqualify_vote.get_hard_coded_disqualified_app_ids()
+
+        self.assertGreater(len(disqualified_app_id_dict), 0)
+
+    def test_filter_out_votes_for_hard_coded_reasons(self):
+        ballot_year = '2018'
+        input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
+
+        ballots = load_ballots.load_ballots(input_filename)
+
+        # Add dummy vote for a game disqualified
+        ballots['dummy_voter_name'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'][1] = "Marvel's Spider-Man"  # exclusive to PS4
+
+        (standardized_ballots, matches) = match_names.standardize_ballots(ballots, release_year=ballot_year)
+
+        standardized_ballots = disqualify_vote.filter_out_votes_for_hard_coded_reasons(standardized_ballots)
+
+        self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] is None))
 
 
 class TestExtendSteamSpyMethods(unittest.TestCase):
