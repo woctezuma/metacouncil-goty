@@ -33,7 +33,9 @@ def get_hard_coded_steamspy_database_extension():
         # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
         "744840": {"name": "Rainbow Six Siege - Year 3 Pass", },
+        "792331": {"name": "Valkyria Chronicles 4 - Squad E, to the Beach!", },
         "865670": {"name": "Prey - Mooncrash", },
+        "896680": {"name": "WORLD OF FINAL FANTASY® MAXIMA Upgrade", },
         "911930": {"name": "BATTLETECH Flashpoint", },
         "947950": {"name": "Faeria - Puzzle Pack Elements", },
     }
