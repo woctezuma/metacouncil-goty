@@ -18,6 +18,9 @@ def get_hard_coded_steamspy_database_extension():
         "-4": {
             "name": "Deltarune - Chapter 1", "developer": "Toby Fox", "publisher": "Toby Fox"
         },
+        "-5": {
+            "name": "Hades", "developer": "Supergiant Games", "publisher": "Supergiant Games"
+        },
 
         # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
         "885940": {
