@@ -22,6 +22,25 @@ These awards focus on PC games which we deem GOTY worthy, as well as the best Ea
 
 Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
 
+## Usage ##
+
+- To compute the GOTY ranking, run:
+
+```bash
+python schulze_goty.py
+```
+
+- To compute the rankings for the optional categories (Early Access, DLC, etc.), run:
+
+```bash
+python optional_categories.py
+```
+
+- If needed, edit hard-coded values, then run the two aforementioned scripts again:
+    * `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
+    * `hard_coded_matches.py` (manual match of a few game names with appIDs)
+    * `disqualify_vote.py` (manual disqualification of a few appIDs)
+
 ## Results
 
 Not available before January 20, 2019.
