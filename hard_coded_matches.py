@@ -5,6 +5,7 @@ def get_hard_coded_app_id_dict():
         # Manually fix matches for which the automatic name matching (based on Levenshtein distance) is wrong:
         "The Missing": "842910",
         "Pillars of Eternity 2": "560130",
+        "Dragon Quest XI": "742120",
         "Dragon Quest XI: Shadows of an Elusive Age": "742120",
         "Atelier Rorona ~The Alchemist of Arland~ DX": "936160",
         "Mega Man 11": "742300",
