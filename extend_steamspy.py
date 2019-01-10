@@ -12,6 +12,12 @@ def get_hard_coded_steamspy_database_extension():
         "-2": {
             "name": "Fallout 76", "developer": "Bethesda Game Studios", "publisher": " Bethesda Softworks"
         },
+        "-3": {
+            "name": "Ashen", "developer": "New Zealand studio A44", "publisher": "Annapurna Interactive"
+        },
+        "-4": {
+            "name": "Deltarune - Chapter 1", "developer": "Toby Fox", "publisher": "Toby Fox"
+        },
 
         # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
         "885940": {
