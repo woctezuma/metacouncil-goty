@@ -10,7 +10,7 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Marvel's Spider-Man", "developer": "Insomniac Games", "publisher": "Sony Interactive Entertainment"
         },
         "-2": {
-            "name": "Fallout 76", "developer": "Bethesda Game Studios", "publisher": " Bethesda Softworks"
+            "name": "Fallout 76", "developer": "Bethesda Game Studios", "publisher": "Bethesda Softworks"
         },
         "-3": {
             "name": "Ashen", "developer": "New Zealand studio A44", "publisher": "Annapurna Interactive"
