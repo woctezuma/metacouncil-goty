@@ -23,6 +23,9 @@ def get_hard_coded_steamspy_database_extension():
         "885940": {
             "name": "Meritocracy of the Oni & Blade", "developer": "ONEONE1", "publisher": "DLsite"
         },
+        "955560": {
+            "name": "Evenicle", "developer": "Alicesoft", "publisher": "MangaGamer"
+        },
 
         # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
