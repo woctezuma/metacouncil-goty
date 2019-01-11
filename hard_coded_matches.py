@@ -11,6 +11,8 @@ def get_hard_coded_app_id_dict():
         "Mega Man 11": "742300",
         "Ys VIII: Lacrimosa of DANA": "579180",
         "Spider-Man": "-1",
+        "The Orb Vallis (Warframe Expansion)": "-101",
+        "CSGO: Danger Zone": "-102",
     }
 
     return hard_coded_dict
