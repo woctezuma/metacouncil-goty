@@ -24,11 +24,11 @@ def get_hard_coded_steamspy_database_extension():
 
         # Dummy (negative) Steam appIDs for DLC/major updates absent from Steam.
         "-101": {
-            "name": "Warframe - Orb Vallis map (Fortuna update)",
+            "name": "Warframe: Fortuna - Orb Vallis map",
             "developer": "Digital Extremes", "publisher": "Digital Extremes"
         },
         "-102": {
-            "name": "Counter-Strike: Global Offensive - Danger Zone (F2P update)",
+            "name": "Counter-Strike: Global Offensive (Danger Zone)",
             "developer": "Valve, Hidden Path Entertainment", "publisher": "Valve"
         },
         "-103": {
