@@ -31,6 +31,10 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Counter-Strike: Global Offensive - Danger Zone (F2P update)",
             "developer": "Valve, Hidden Path Entertainment", "publisher": "Valve"
         },
+        "-103": {
+            "name": "Path of Exile: Betrayal",
+            "developer": "Grinding Gear Games", "publisher": "Grinding Gear Games"
+        },
 
         # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
         "885940": {
