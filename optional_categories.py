@@ -12,6 +12,7 @@ def get_hard_coded_noisy_votes():
     noisy_votes = [
         '-',
         'None played',
+        'n/a',
     ]
 
     return noisy_votes
