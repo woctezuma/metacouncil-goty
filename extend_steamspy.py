@@ -22,6 +22,16 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Hades", "developer": "Supergiant Games", "publisher": "Supergiant Games"
         },
 
+        # Dummy (negative) Steam appIDs for DLC/major updates absent from Steam.
+        "-101": {
+            "name": "Warframe - Orb Vallis map (Fortuna update)",
+            "developer": "Digital Extremes", "publisher": "Digital Extremes"
+        },
+        "-102": {
+            "name": "Counter-Strike: Global Offensive - Danger Zone (F2P update)",
+            "developer": "Valve, Hidden Path Entertainment", "publisher": "Valve"
+        },
+
         # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
         "885940": {
             "name": "Meritocracy of the Oni & Blade", "developer": "ONEONE1", "publisher": "DLsite"
