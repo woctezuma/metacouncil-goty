@@ -14,22 +14,22 @@ Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-p
 
 ## Usage
 
-- To compute the GOTY ranking, run:
+-   To compute the GOTY ranking, run:
 
 ```bash
 python schulze_goty.py
 ```
 
-- To compute the rankings for the optional categories (Early Access, DLC, etc.), run:
+-   To compute the rankings for the optional categories (Early Access, DLC, etc.), run:
 
 ```bash
 python optional_categories.py
 ```
 
-- If needed, edit hard-coded values, then run the two aforementioned scripts again:
-  - `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
-  - `hard_coded_matches.py` (manual match of a few game names with appIDs)
-  - `disqualify_vote.py` (manual disqualification of a few appIDs)
+-   If needed, edit hard-coded values, then run the two aforementioned scripts again:
+  -   `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
+  -   `hard_coded_matches.py` (manual match of a few game names with appIDs)
+  -   `disqualify_vote.py` (manual disqualification of a few appIDs)
 
 ## Results
 
@@ -37,8 +37,8 @@ Not available before January 20, 2019.
 
 ## References
 
-- [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
-- [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
+-   [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
+-   [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
 
   [build]: https://travis-ci.org/woctezuma/metacouncil-goty
   [build image]: https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master
