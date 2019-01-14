@@ -12,7 +12,7 @@ These awards focus on PC games which we deem GOTY worthy, as well as the best Ea
 
 Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
 
-## Usage ##
+## Usage
 
 - To compute the GOTY ranking, run:
 
