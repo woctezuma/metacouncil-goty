@@ -2,16 +2,6 @@
 
  [![Build status][Build image]][Build] [![Updates][Dependency image]][PyUp] [![Python 3][Python3 image]][PyUp] [![Code coverage][Codecov image]][Codecov]
 
-  [Build]: https://travis-ci.org/woctezuma/metacouncil-goty
-  [Build image]: https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master
-
-  [PyUp]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/
-  [Dependency image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/shield.svg
-  [Python3 image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/python-3-shield.svg
-
-  [Codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
-  [Codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
-
 ![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
 
 ## Introduction
@@ -48,5 +38,14 @@ Not available before January 20, 2019.
 ## References
 
 * [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
-
 * [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
+
+  [Build]: https://travis-ci.org/woctezuma/metacouncil-goty
+  [Build image]: https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master
+
+  [PyUp]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/
+  [Dependency image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/shield.svg
+  [Python3 image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/python-3-shield.svg
+
+  [Codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
+  [Codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
