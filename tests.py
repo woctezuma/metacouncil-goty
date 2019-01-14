@@ -63,7 +63,7 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         ballots['dummy_voter_name']['goty_preferences'] = dict()
         ballots['dummy_voter_name']['goty_preferences'][1] = "Marvel's Spider-Man"  # exclusive to PS4
 
-        (standardized_ballots, matches) = match_names.standardize_ballots(ballots, release_year=ballot_year)
+        (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
 
         standardized_ballots = disqualify_vote.filter_out_votes_for_hard_coded_reasons(standardized_ballots)
 
