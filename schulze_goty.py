@@ -127,8 +127,8 @@ def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots
 
             positions = sorted(current_ballots.keys())
 
-            for index in range(len(ballot_distribution)):
-                if current_ballots[positions[index]] == appID:
+            for (index, position) in enumerate(positions):
+                if current_ballots[position] == appID:
                     ballot_distribution[index] += 1
 
         print('\nappID:' + appID, end='\t')
