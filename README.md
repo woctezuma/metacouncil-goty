@@ -1,6 +1,6 @@
 # MetaCouncil's PC Games of the Year (GOTY) Awards
 
- [![Build status][Build image]][Build] [![Updates][Dependency image]][PyUp] [![Python 3][Python3 image]][PyUp] [![Code coverage][Codecov image]][Codecov]
+ [![Build status][build image]][build] [![Updates][dependency image]][pyup] [![Python 3][python3 image]][pyup] [![Code coverage][codecov image]][codecov]
 
 ![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
 
@@ -40,12 +40,12 @@ Not available before January 20, 2019.
 * [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
 * [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
 
-  [Build]: https://travis-ci.org/woctezuma/metacouncil-goty
-  [Build image]: https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master
+  [build]: https://travis-ci.org/woctezuma/metacouncil-goty
+  [build image]: https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master
 
-  [PyUp]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/
-  [Dependency image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/shield.svg
-  [Python3 image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/python-3-shield.svg
+  [pyup]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/
+  [dependency image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/shield.svg
+  [python3 image]: https://pyup.io/repos/github/woctezuma/metacouncil-goty/python-3-shield.svg
 
-  [Codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
-  [Codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
+  [codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
+  [codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
