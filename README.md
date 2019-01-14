@@ -27,9 +27,9 @@ python optional_categories.py
 ```
 
 - If needed, edit hard-coded values, then run the two aforementioned scripts again:
-    - `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
-    - `hard_coded_matches.py` (manual match of a few game names with appIDs)
-    - `disqualify_vote.py` (manual disqualification of a few appIDs)
+  - `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
+  - `hard_coded_matches.py` (manual match of a few game names with appIDs)
+  - `disqualify_vote.py` (manual disqualification of a few appIDs)
 
 ## Results
 
