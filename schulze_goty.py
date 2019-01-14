@@ -33,9 +33,9 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots, target_releas
                         print('AppID ' + app_id + ' removed because it was released in ' + str(release_years[app_id]))
                         removed_app_ids.append(app_id)
 
-        for i in range(len(current_ballots_list)):
+        for (i, current_ballot) in enumerate(current_ballots_list):
             position = i + 1
-            standardized_ballots[voter]['ballots'][position] = current_ballots_list[i]
+            standardized_ballots[voter]['ballots'][position] = current_ballot
         for i in range(len(current_ballots_list), len(current_ballots.keys())):
             position = i + 1
             standardized_ballots[voter]['ballots'][position] = None

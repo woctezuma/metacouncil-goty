@@ -19,11 +19,8 @@ def parse_votes(data, num_games_per_voter=5):
         ballots[voter_name] = dict()
 
         ballots[voter_name]['goty_preferences'] = dict()
-        for i in range(len(voted_games)):
+        for (i, game_name) in enumerate(voted_games):
             position = num_games_per_voter - i
-
-            game_name = voted_games[i]
-
             ballots[voter_name]['goty_preferences'][position] = game_name
 
         ballots[voter_name]['goty_description'] = goty_description

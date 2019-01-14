@@ -33,9 +33,9 @@ def filter_out_votes_for_hard_coded_reasons(standardized_ballots):
                         print('AppID ' + app_id + ' removed because ' + disqualified_app_id_dict[app_id]["reason"])
                         removed_app_ids.append(app_id)
 
-        for i in range(len(current_ballots_list)):
+        for (i, current_ballot) in enumerate(current_ballots_list):
             position = i + 1
-            standardized_ballots[voter]['ballots'][position] = current_ballots_list[i]
+            standardized_ballots[voter]['ballots'][position] = current_ballot
         for i in range(len(current_ballots_list), len(current_ballots.keys())):
             position = i + 1
             standardized_ballots[voter]['ballots'][position] = None
