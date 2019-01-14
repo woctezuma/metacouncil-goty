@@ -53,7 +53,7 @@ def match_optional_ballots(optional_ballots):
         if raw_name not in seen_game_names:
             seen_game_names.add(raw_name)
 
-            (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database)
+            (closest_appID, _) = find_closest_app_id(raw_name, steamspy_database)
 
             appID = closest_appID[0]
 

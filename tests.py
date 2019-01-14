@@ -108,10 +108,10 @@ class TestMatchNamesMethods(unittest.TestCase):
         raw_name = 'Half-Life II'  # Typo ("II" instead of "2") on purpose to increase code coverage
         steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
-        (closest_appID, closest_distance) = match_names.find_closest_app_id(raw_name, steamspy_database,
-                                                                            release_year='2018',
-                                                                            num_closest_neighbors=1,
-                                                                            max_num_tries_for_year=2)
+        (closest_appID, _) = match_names.find_closest_app_id(raw_name, steamspy_database,
+                                                             release_year='2018',
+                                                             num_closest_neighbors=1,
+                                                             max_num_tries_for_year=2)
 
         database_entry = steamspy_database[closest_appID[0]]
 
@@ -140,7 +140,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         ballots['dummy_voter_name']['goty_preferences'] = dict()
         ballots['dummy_voter_name']['goty_preferences'][1] = "Half-Life"  # released in 1998
 
-        (standardized_ballots, matches) = match_names.standardize_ballots(ballots, release_year=ballot_year)
+        (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
 
         standardized_ballots = schulze_goty.filter_out_votes_for_wrong_release_years(standardized_ballots,
                                                                                      target_release_year=ballot_year)

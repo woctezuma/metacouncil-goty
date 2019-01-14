@@ -69,7 +69,7 @@ def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, ma
     steamspy_database = load_extended_steamspy_database()
 
     for voter in raw_votes.keys():
-        for (position, raw_name) in raw_votes[voter]['goty_preferences'].items():
+        for raw_name in raw_votes[voter]['goty_preferences'].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
