@@ -44,6 +44,8 @@ Not available before January 20, 2019.
 -   [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
 -   [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
 
+<!-- Definitions -->
+
 [build]: <https://travis-ci.org/woctezuma/metacouncil-goty>
 [build-image]: <https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master>
 
