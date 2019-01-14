@@ -1,6 +1,10 @@
 # MetaCouncil's PC Games of the Year (GOTY) Awards
 
- [![Build status][build image]][build] [![Updates][dependency image]][pyup] [![Python 3][python3 image]][pyup] [![Code coverage][codecov image]][codecov] [![Code Quality][codacy image]][codacy]
+[![Build status][build image]][build]
+[![Updates][dependency image]][pyup]
+[![Python 3][python3 image]][pyup]
+[![Code coverage][codecov image]][codecov]
+[![Code Quality][codacy image]][codacy]
 
 ![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
 
