@@ -1,6 +1,6 @@
 # MetaCouncil's PC Games of the Year (GOTY) Awards
 
- [![Build status][build image]][build] [![Updates][dependency image]][pyup] [![Python 3][python3 image]][pyup] [![Code coverage][codecov image]][codecov]
+ [![Build status][build image]][build] [![Updates][dependency image]][pyup] [![Python 3][python3 image]][pyup] [![Code coverage][codecov image]][codecov] [![Code Quality][codacy image]][codacy]
 
 ![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
 
@@ -49,3 +49,6 @@ Not available before January 20, 2019.
 
   [codecov]: https://codecov.io/gh/woctezuma/metacouncil-goty
   [codecov image]: https://codecov.io/gh/woctezuma/metacouncil-goty/branch/master/graph/badge.svg
+
+  [codacy]: https://www.codacy.com/app/woctezuma/metacouncil-goty
+  [codacy image]: https://api.codacy.com/project/badge/Grade/d072d73231a24a5b91bc72c59737ca7d 
