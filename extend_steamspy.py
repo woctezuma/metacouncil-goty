@@ -36,6 +36,11 @@ def get_hard_coded_steamspy_database_extension():
             "developer": "Grinding Gear Games", "publisher": "Grinding Gear Games"
         },
 
+        # Dummy (negative) Steam appIDs for softwares absent from Steam.
+        "-201": {
+            "name": "Epic Games Launcher (software)", "developer": "Epic Games", "publisher": "Epic Games"
+        },
+
         # Legitimate Steam appIDs for adult Steam games, which are not provided by SteamSpy as they are tagged as adult.
         "885940": {
             "name": "Meritocracy of the Oni & Blade", "developer": "ONEONE1", "publisher": "DLsite"
@@ -46,7 +51,9 @@ def get_hard_coded_steamspy_database_extension():
 
         # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
+        "662351": {"name": "Assassin's Creed® Origins - The Curse Of The Pharaohs", },
         "744840": {"name": "Rainbow Six Siege - Year 3 Pass", },
+        "785300": {"name": "XCOM 2: War of the Chosen - Tactical Legacy Pack", },
         "792331": {"name": "Valkyria Chronicles 4 - Squad E, to the Beach!", },
         "865670": {"name": "Prey - Mooncrash", },
         "896680": {"name": "WORLD OF FINAL FANTASY® MAXIMA Upgrade", },
