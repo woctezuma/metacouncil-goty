@@ -8,11 +8,14 @@ def get_hard_coded_app_id_dict():
         "Dragon Quest XI": "742120",
         "Dragon Quest XI: Shadows of an Elusive Age": "742120",
         "Atelier Rorona ~The Alchemist of Arland~ DX": "936160",
+        "Megaman 11": "742300",
         "Mega Man 11": "742300",
         "Ys VIII: Lacrimosa of DANA": "579180",
+        "The Curse of the Pharaohs (Assassin's Creed Origins)": "662351",
         "Spider-Man": "-1",
         "The Orb Vallis (Warframe Expansion)": "-101",
         "CSGO: Danger Zone": "-102",
+        "Epic Game Launcher": "-201",
     }
 
     return hard_coded_dict
