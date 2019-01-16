@@ -1,3 +1,6 @@
+from disqualify_vote import get_hard_coded_noisy_votes
+
+
 def get_optional_categories():
     optional_categories = [
         'best_dlc',
@@ -6,16 +9,6 @@ def get_optional_categories():
     ]
 
     return optional_categories
-
-
-def get_hard_coded_noisy_votes():
-    noisy_votes = [
-        '-',
-        'None played',
-        'n/a',
-    ]
-
-    return noisy_votes
 
 
 def get_optional_ballots(ballots, category_name):

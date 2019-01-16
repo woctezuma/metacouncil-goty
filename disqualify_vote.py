@@ -10,6 +10,16 @@ def get_hard_coded_disqualified_app_ids():
     return disqualified_app_id_dict
 
 
+def get_hard_coded_noisy_votes():
+    noisy_votes = [
+        '-',
+        'None played',
+        'n/a',
+    ]
+
+    return noisy_votes
+
+
 def filter_out_votes_for_hard_coded_reasons(standardized_ballots):
     # Objective: remove appID which gathered votes but were manually marked for disqualification
 
