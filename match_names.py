@@ -1,6 +1,7 @@
 import steampi.calendar
 import steampi.text_distances
 
+from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 
@@ -67,13 +68,14 @@ def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, ma
     matches = dict()
 
     steamspy_database = load_extended_steamspy_database()
+    noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter]['goty_preferences'].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
-                if raw_name != '':
+                if raw_name != '' and (raw_name not in noisy_votes):
                     (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database,
                                                                             release_year,
                                                                             num_closest_neighbors,
