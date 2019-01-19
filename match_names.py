@@ -92,13 +92,16 @@ def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, ma
     return matches
 
 
-def display_matches(matches):
+def display_matches(matches, print_after_sort=True):
     # Index of the neighbor used to sort keys of the matches dictionary
     neighbor_reference_index = 0
 
-    sorted_keys = sorted(matches.keys(),
-                         key=lambda x: matches[x]['match_distance'][neighbor_reference_index] / (
-                                 1 + len(matches[x]['input_name'])))
+    if print_after_sort:
+        sorted_keys = sorted(matches.keys(),
+                             key=lambda x: matches[x]['match_distance'][neighbor_reference_index] / (
+                                     1 + len(matches[x]['input_name'])))
+    else:
+        sorted_keys = matches.keys()
 
     for game in sorted_keys:
         element = matches[game]
@@ -147,10 +150,10 @@ def normalize_votes(raw_votes, matches):
     return normalized_votes
 
 
-def standardize_ballots(ballots, release_year):
+def standardize_ballots(ballots, release_year, print_after_sort=True):
     matches = precompute_matches(ballots, release_year=release_year, num_closest_neighbors=3, max_num_tries_for_year=2)
 
-    display_matches(matches)
+    display_matches(matches, print_after_sort)
 
     standardized_ballots = normalize_votes(ballots, matches)
 
