@@ -85,6 +85,8 @@ def load_extended_steamspy_database():
 
     extended_steamspy_database = steamspy_database
     for app_id in hard_coded_steamspy_database_extension.keys():
+        if app_id in steamspy_database.keys():
+            print('AppID {} already exists in SteamSpy database. The entry will be overwritten.'.format(app_id))
         extended_steamspy_database[app_id] = hard_coded_steamspy_database_extension[app_id]
         extended_steamspy_database[app_id]["appid"] = int(app_id)
 
