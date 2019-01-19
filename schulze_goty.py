@@ -4,6 +4,7 @@ from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_steamspy import load_extended_steamspy_database
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
+from steam_store_utils import get_link_to_store
 
 
 def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
@@ -107,7 +108,7 @@ def print_schulze_ranking(schulze_ranking):
 
             print('{0:2} | '.format(rank + 1)
                   + game_name.strip()
-                  + ' (appID: ' + appID
+                  + ' (appID: ' + get_link_to_store(appID)
                   + ', released on ' + app_id_release_date + ')'
                   )
 

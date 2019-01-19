@@ -1,4 +1,5 @@
 from disqualify_vote import get_hard_coded_noisy_votes
+from steam_store_utils import get_link_to_store
 
 
 def get_optional_categories():
@@ -62,7 +63,7 @@ def match_optional_ballots(optional_ballots):
             print(raw_name + ' -> ' + matches[raw_name]['matched_name'])
 
         my_str = matches[raw_name]['matched_name'] + \
-                 ' (appID: ' + matches[raw_name]['matched_appID'] + \
+                 ' (appID: ' + get_link_to_store(matches[raw_name]['matched_appID']) + \
                  ', released on ' + matches[raw_name]['matched_release_date'] + ')'
 
         matched_optional_ballots.append(my_str)
