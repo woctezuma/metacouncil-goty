@@ -77,6 +77,12 @@ class TestExtendSteamSpyMethods(unittest.TestCase):
 
         self.assertGreater(len(extended_steamspy_database), 0)
 
+    def test_load_twice_extended_steamspy_database(self):
+        extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
+        extended_steamspy_database = extend_steamspy.load_extended_steamspy_database(extended_steamspy_database)
+
+        self.assertGreater(len(extended_steamspy_database), 0)
+
 
 class TestMatchNamesMethods(unittest.TestCase):
 
