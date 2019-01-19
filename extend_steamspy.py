@@ -55,6 +55,12 @@ def get_hard_coded_steamspy_database_extension():
             "name": "Evenicle", "developer": "Alicesoft", "publisher": "MangaGamer"
         },
 
+        # Legitimate Steam appIDs for Steam games, which are not provided by SteamSpy due to being temporarily removed
+        "271260": {
+            "name": "Star Control®: Origins",
+            "developer": "Stardock Entertainment", "publisher": "Stardock Entertainment"
+        },
+
         # Legitimate Steam appIDs for Steam DLC, which are not provided by SteamSpy because they are not games.
         "624621": {"name": "Wolfenstein II: The Freedom Chronicles - Episode 2", },
         "662351": {"name": "Assassin's Creed® Origins - The Curse Of The Pharaohs", },
