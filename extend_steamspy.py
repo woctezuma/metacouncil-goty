@@ -24,6 +24,9 @@ def get_hard_coded_steamspy_database_extension():
         "-6": {
             "name": "Un Pueblo De Nada", "developer": "Cardboard Computer", "publisher": "Cardboard Computer"
         },
+        "-7": {
+            "name": "Phoenix Point", "developer": "Snapshot Games", "publisher": "Snapshot Games"
+        },
 
         # Dummy (negative) Steam appIDs for DLC/major updates absent from Steam.
         "-101": {
@@ -63,6 +66,7 @@ def get_hard_coded_steamspy_database_extension():
         "896680": {"name": "WORLD OF FINAL FANTASY® MAXIMA Upgrade", },
         "911930": {"name": "BATTLETECH Flashpoint", },
         "947950": {"name": "Faeria - Puzzle Pack Elements", },
+        "984180": {"name": "Pinball FX3 - Williams™ Pinball: Volume 2", },
     }
 
     return database_extension
