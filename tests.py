@@ -99,7 +99,9 @@ class TestMatchNamesMethods(unittest.TestCase):
         ballots = self.get_ballots(ballot_year)
         matches = match_names.precompute_matches(ballots, release_year=ballot_year)
 
-        match_names.display_matches(matches)
+        match_names.display_matches(matches, print_after_sort=False)
+
+        match_names.display_matches(matches, print_after_sort=True)
 
         self.assertGreater(len(matches), 0)
 
