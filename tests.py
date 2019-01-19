@@ -8,6 +8,29 @@ import load_ballots
 import match_names
 import optional_categories
 import schulze_goty
+import steam_store_utils
+
+
+class TestSteamStoreUtilsMethods(unittest.TestCase):
+
+    def test_get_link_to_store_case_valid_app_id(self):
+        app_id = '583950'
+        link_to_store = steam_store_utils.get_link_to_store(app_id)
+        expected_link = '[URL=https://store.steampowered.com/app/' + app_id + '/]' + app_id + '[/URL]'
+
+        self.assertEqual(link_to_store, expected_link)
+
+    def test_get_link_to_store_case_dummy_app_id_to_show(self):
+        app_id = '-1'
+        link_to_store = steam_store_utils.get_link_to_store(app_id, hide_dummy_app_id=False)
+
+        self.assertEqual(link_to_store, app_id)
+
+    def test_get_link_to_store_case_dummy_app_id_to_hide(self):
+        app_id = '-1'
+        link_to_store = steam_store_utils.get_link_to_store(app_id, hide_dummy_app_id=True)
+
+        self.assertEqual(link_to_store, 'n/a')
 
 
 class TestAnonymizeDataMethods(unittest.TestCase):
