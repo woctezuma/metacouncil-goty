@@ -178,6 +178,24 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
         self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] is None))
 
+    def test_filter_out_votes_for_early_access_titles(self):
+        ballot_year = '2018'
+
+        ballots = dict()
+
+        # Add dummy vote for an Early Access game
+        ballots['dummy_voter_name'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'][1] = 'SpyParty'  # app_id = '329070'
+        ballots['dummy_voter_name']['goty_preferences'][2] = 'Celeste'  # app_id = '504230'
+
+        (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
+
+        standardized_ballots = schulze_goty.filter_out_votes_for_early_access_titles(standardized_ballots)
+
+        self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] == '504230'))
+        self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][2] is None))
+
     def test_try_to_break_ties_in_app_id_group(self):
         app_id_group = ['300']
         standardized_ballots = {
