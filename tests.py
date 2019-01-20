@@ -158,7 +158,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         ballot_year = '2018'
         input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
 
-        self.assertTrue(schulze_goty.apply_pipeline(input_filename, release_year=ballot_year))
+        self.assertTrue(schulze_goty.apply_pipeline(input_filename, release_year=ballot_year, try_to_break_ties=True))
 
     def test_filtering_out(self):
         ballot_year = '2018'  # anything but '1998'

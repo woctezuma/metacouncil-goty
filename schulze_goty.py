@@ -119,6 +119,56 @@ def print_schulze_ranking(schulze_ranking):
     return
 
 
+def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
+    standardized_ballots_for_tied_app_id_group = dict()
+
+    for voter_name in standardized_ballots:
+        current_ballots = standardized_ballots[voter_name]['ballots']
+        positions = sorted(current_ballots.keys())
+        current_app_ids = [current_ballots[position] for position in positions]
+
+        has_voted_for_several_tied_app_ids = sum([bool(app_id in current_app_ids) for app_id in app_id_group]) > 1
+
+        if has_voted_for_several_tied_app_ids:
+            standardized_ballots_for_tied_app_id_group[voter_name] = dict()
+            standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = dict()
+
+            new_ballots = [current_ballots[position] for position in positions
+                           if current_ballots[position] in app_id_group]
+
+            for (i, app_id) in enumerate(new_ballots):
+                position = i + 1
+                standardized_ballots_for_tied_app_id_group[voter_name]['ballots'][position] = app_id
+            for i in range(len(new_ballots), len(current_ballots)):
+                position = i + 1
+                standardized_ballots_for_tied_app_id_group[voter_name]['ballots'][position] = None
+
+    if len(standardized_ballots_for_tied_app_id_group) == 0:
+        schulze_ranking_for_tied_app_id_group = [app_id_group]
+    else:
+        schulze_ranking_for_tied_app_id_group = compute_schulze_ranking(standardized_ballots_for_tied_app_id_group)
+
+    return schulze_ranking_for_tied_app_id_group
+
+
+def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
+    untied_schulze_ranking = list()
+
+    for (group_no, appID_group) in enumerate(schulze_ranking):
+        if len(appID_group) > 1:
+            schulze_ranking_for_tied_app_id_group = try_to_break_ties_in_app_id_group(appID_group, standardized_ballots)
+
+            if len(schulze_ranking_for_tied_app_id_group) > 1:
+                print('\nAt least one tie has been broken for group n°{}'.format(group_no))
+
+            for untied_app_id_group in schulze_ranking_for_tied_app_id_group:
+                untied_schulze_ranking.append(untied_app_id_group)
+        else:
+            untied_schulze_ranking.append(appID_group)
+
+    return untied_schulze_ranking
+
+
 def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots):
     for appID in app_id_group:
 
@@ -159,7 +209,7 @@ def print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
     return
 
 
-def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
+def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, try_to_break_ties=False):
     ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
 
     # Standardize ballots
@@ -173,6 +223,9 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
     # Apply Schulze method
 
     schulze_ranking = compute_schulze_ranking(standardized_ballots)
+
+    if try_to_break_ties:
+        schulze_ranking = try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots)
 
     print_schulze_ranking(schulze_ranking)
 
@@ -188,4 +241,4 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False)
+    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False, try_to_break_ties=True)
