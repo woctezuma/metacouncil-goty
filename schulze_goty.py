@@ -127,9 +127,9 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
         positions = sorted(current_ballots.keys())
         current_app_ids = [current_ballots[position] for position in positions]
 
-        has_voted_for_several_tied_app_ids = sum([bool(app_id in current_app_ids) for app_id in app_id_group]) > 1
+        has_voted_for_at_least_one_tied_app_id = sum([bool(app_id in current_app_ids) for app_id in app_id_group]) > 0
 
-        if has_voted_for_several_tied_app_ids:
+        if has_voted_for_at_least_one_tied_app_id:
             standardized_ballots_for_tied_app_id_group[voter_name] = dict()
             standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = dict()
 
