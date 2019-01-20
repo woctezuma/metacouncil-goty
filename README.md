@@ -37,7 +37,7 @@ python optional_categories.py
 
 ## Results
 
-Not available before January 20, 2019.
+Results are shown on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/).
 
 ## References
 
