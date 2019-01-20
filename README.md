@@ -37,7 +37,9 @@ python optional_categories.py
 
 ## Results
 
-Results are shown on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/).
+Results are displayed:
+-   on the [Wiki](https://github.com/woctezuma/metacouncil-goty/wiki),
+-   on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/).
 
 ## References
 
