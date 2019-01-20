@@ -241,4 +241,4 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, t
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False, try_to_break_ties=True)
+    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False, try_to_break_ties=False)
