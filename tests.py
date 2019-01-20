@@ -205,6 +205,10 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         }
         untied_schulze_ranking = schulze_goty.try_to_break_ties_in_schulze_ranking(schulze_ranking,
                                                                                    standardized_ballots)
+
+        for (i, element) in enumerate(untied_schulze_ranking):
+            untied_schulze_ranking[i] = sorted(element)
+
         self.assertEqual(untied_schulze_ranking, [['100'], ['200', '300']])
 
 
