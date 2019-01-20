@@ -4,7 +4,34 @@ from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_steamspy import load_extended_steamspy_database
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
-from steam_store_utils import get_link_to_store
+from steam_store_utils import get_link_to_store, get_early_access_status
+
+
+def filter_out_votes_for_early_access_titles(standardized_ballots):
+    # Objective: remove appID which gathered votes but are tagged as 'Early Access' titles
+
+    for voter in standardized_ballots.keys():
+        current_ballots = standardized_ballots[voter]['ballots']
+
+        current_ballots_list = []
+        for position in sorted(current_ballots.keys()):
+            app_id = current_ballots[position]
+            if app_id is not None:
+                is_early_access = get_early_access_status(app_id)
+
+                if not is_early_access:
+                    current_ballots_list.append(app_id)
+                else:
+                    print('AppID ' + app_id + ' removed because it is tagged as an Early Access title')
+
+        for (i, current_ballot) in enumerate(current_ballots_list):
+            position = i + 1
+            standardized_ballots[voter]['ballots'][position] = current_ballot
+        for i in range(len(current_ballots_list), len(current_ballots.keys())):
+            position = i + 1
+            standardized_ballots[voter]['ballots'][position] = None
+
+    return standardized_ballots
 
 
 def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
@@ -217,6 +244,8 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, t
     (standardized_ballots, matches) = standardize_ballots(ballots, release_year, print_after_sort=False)
 
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
+
+    standardized_ballots = filter_out_votes_for_early_access_titles(standardized_ballots)
 
     standardized_ballots = filter_out_votes_for_hard_coded_reasons(standardized_ballots)
 
