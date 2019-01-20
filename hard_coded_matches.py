@@ -18,6 +18,7 @@ def get_hard_coded_app_id_dict():
         "Spider-Man": "-1",
         "F76": "-2",
         "Deltarune": "-4",
+        "DELTARUNE": "-4",
         "The Orb Vallis (Warframe Expansion)": "-101",
         "CSGO: Danger Zone": "-102",
         "Epic Game Launcher": "-201",
