@@ -97,6 +97,8 @@ def print_schulze_ranking(schulze_ranking):
     def get_game_name(app_id):
         return steamspy_database[app_id]['name']
 
+    offset = 0
+
     for (rank, appID_group) in enumerate(schulze_ranking):
 
         for appID in sorted(appID_group, key=get_game_name):
@@ -106,11 +108,13 @@ def print_schulze_ranking(schulze_ranking):
             if app_id_release_date is None:
                 app_id_release_date = 'an unknown date'
 
-            print('{0:2} | '.format(rank + 1)
+            print('{0:2} | '.format(rank + offset + 1)
                   + game_name.strip()
                   + ' (appID: ' + get_link_to_store(appID)
                   + ', released on ' + app_id_release_date + ')'
                   )
+
+        offset += len(appID_group) - 1
 
     return
 
