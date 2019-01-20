@@ -178,6 +178,35 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
         self.assertTrue(bool(standardized_ballots['dummy_voter_name']['ballots'][1] is None))
 
+    def test_try_to_break_ties_in_app_id_group(self):
+        app_id_group = ['300']
+        standardized_ballots = {
+            'A': {
+                'ballots': {1: '100', 2: '200', 3: None, 4: None, 5: None}
+            },
+            'B': {
+                'ballots': {1: '200', 2: '100', 3: None, 4: None, 5: None}
+            },
+        }
+        schulze_ranking_for_tied_app_id_group = schulze_goty.try_to_break_ties_in_app_id_group(app_id_group,
+                                                                                               standardized_ballots)
+        self.assertEqual(schulze_ranking_for_tied_app_id_group, [['300']])
+
+    def test_try_to_break_ties_in_schulze_ranking(self):
+        app_id_group = ['100', '200', '300']
+        schulze_ranking = [app_id_group]
+        standardized_ballots = {
+            'A': {
+                'ballots': {1: '100', 2: '300', 3: '200', 4: None, 5: None}
+            },
+            'B': {
+                'ballots': {1: '200', 2: '100', 3: '300', 4: None, 5: None}
+            },
+        }
+        untied_schulze_ranking = schulze_goty.try_to_break_ties_in_schulze_ranking(schulze_ranking,
+                                                                                   standardized_ballots)
+        self.assertEqual(untied_schulze_ranking, [['100'], ['200', '300']])
+
 
 class TestOptionalCategoriesMethods(unittest.TestCase):
 
