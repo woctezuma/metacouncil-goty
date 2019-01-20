@@ -176,9 +176,11 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True):
 
     print_schulze_ranking(schulze_ranking)
 
-    print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots)
+    print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
+                                                   num_app_id_groups_to_display=7)
 
-    print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches)
+    print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
+                                       num_app_id_groups_to_display=7)
 
     return True
 
