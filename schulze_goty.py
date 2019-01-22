@@ -236,6 +236,41 @@ def print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
     return
 
 
+def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_to_display=7, verbose=True):
+    # Check how many people voted for N games which ended up in the top 10 of the GOTY ranking
+    # Reference:
+    # https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/page-2
+
+    goty = []
+    for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
+        for app_id in app_id_group:
+            goty.append(int(app_id))
+
+    if not (len(goty) == 10):
+        raise AssertionError()
+
+    max_num_ballots_per_person = 0
+
+    counter = dict()
+    for voter in standardized_ballots:
+        current_ballots = standardized_ballots[voter]['ballots'].values()
+        max_num_ballots_per_person = max(max_num_ballots_per_person, len(current_ballots))
+
+        vote = [int(i) for i in current_ballots if i is not None]
+        counter[voter] = sum(i in goty for i in vote)
+
+    for num_votes in reversed(range(max_num_ballots_per_person + 1)):
+        l = []
+        for (v, c) in counter.items():
+            if c == num_votes:
+                l.append(v)
+        print('\n{} ballots included {} games present the top 10.'.format(len(l), num_votes))
+        if verbose:
+            print(l)
+
+    return
+
+
 def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, try_to_break_ties=False):
     ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
 
@@ -260,6 +295,9 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, t
 
     print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
                                                    num_app_id_groups_to_display=7)
+
+    print_voter_stats(schulze_ranking, standardized_ballots,
+                      num_app_id_groups_to_display=7)
 
     print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
                                        num_app_id_groups_to_display=7)
