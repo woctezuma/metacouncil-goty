@@ -246,8 +246,7 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
         for app_id in app_id_group:
             goty.append(int(app_id))
 
-    if not (len(goty) == 10):
-        raise AssertionError()
+    print('\nVoter stats are displayed based on the top {} games'.format(len(goty)))
 
     max_num_ballots_per_person = 0
 
@@ -264,7 +263,7 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
         for (v, c) in counter.items():
             if c == num_votes:
                 l.append(v)
-        print('\n{} ballots included {} games present the top 10.'.format(len(l), num_votes))
+        print('\n{} ballots included {} games present in the top {}.'.format(len(l), num_votes, len(goty)))
         if verbose:
             print(l)
 
