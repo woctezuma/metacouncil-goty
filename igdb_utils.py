@@ -98,7 +98,8 @@ def get_game_category():
     return game_category
 
 
-def get_igdb_fields_for_games(enforce_pc_games=True):
+def get_igdb_fields_for_games(enforce_pc_games=True,
+                              enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
     igdb_fields_for_games = 'name, slug, platforms, release_dates.y, release_dates.human'  # TODO
@@ -106,12 +107,20 @@ def get_igdb_fields_for_games(enforce_pc_games=True):
     if enforce_pc_games:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
         # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
-        igdb_fields_for_games += ' ; where platforms = ({})'.format(get_pc_platform_no())
+        igdb_fields_for_games += ' ; where platforms = ({})'.format(
+            get_pc_platform_no(),
+        )
+
+    if enforced_year is not None:
+        igdb_fields_for_games += ' ; where release_dates.y = {}'.format(
+            enforced_year,
+        )
 
     return igdb_fields_for_games
 
 
-def get_igdb_fields_for_release_dates(enforce_pc_games=True):
+def get_igdb_fields_for_release_dates(enforce_pc_games=True,
+                                      enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
     igdb_fields_for_release_dates = 'game, platform, date, human'  # TODO
@@ -122,15 +131,22 @@ def get_igdb_fields_for_release_dates(enforce_pc_games=True):
             get_game_category(),
         )
 
+    if enforced_year is not None:
+        igdb_fields_for_release_dates += ' ; where y = {}'.format(
+            enforced_year,
+        )
+
     return igdb_fields_for_release_dates
 
 
 def look_up_game_name(game_name,
+                      enforced_year=None,
                       enforce_pc_games=True):
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games)
+    fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
+                                           enforced_year=enforced_year)
 
     params = get_igdb_request_params()
     params['fields'] = fields_str
@@ -149,11 +165,13 @@ def look_up_game_name(game_name,
 
 
 def look_up_game_id(game_id,
+                    enforced_year=None,
                     enforce_pc_games=True):
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games)
+    fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
+                                           enforced_year=enforced_year)
 
     if 'where' in fields_str:
         fields_str += ' & id = ({})'.format(game_id)
@@ -174,17 +192,13 @@ def look_up_game_id(game_id,
     return data
 
 
-def look_up_games_released_in_given_year(year,
+def look_up_games_released_in_given_year(enforced_year,
                                          enforce_pc_games=True):
     url = get_igdb_api_url_for_release_dates()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_release_dates(enforce_pc_games=enforce_pc_games)
-
-    if 'where' in fields_str:
-        fields_str += ' & y = {}'.format(year)
-    else:
-        fields_str += ' ; where y = {}'.format(year)
+    fields_str = get_igdb_fields_for_release_dates(enforce_pc_games=enforce_pc_games,
+                                                   enforced_year=enforced_year)
 
     params = get_igdb_request_params()
     params['fields'] = fields_str
@@ -201,15 +215,19 @@ def look_up_games_released_in_given_year(year,
 
 
 def main():
+    enforced_year = 2019
+
     data = look_up_game_name(game_name='Red Dead',
+                             enforced_year=enforced_year,
                              enforce_pc_games=True)
     print(data)
 
     data = look_up_game_id(game_id=113391,
+                           enforced_year=enforced_year,
                            enforce_pc_games=True)
     print(data)
 
-    data = look_up_games_released_in_given_year(year=2018,
+    data = look_up_games_released_in_given_year(enforced_year=enforced_year,
                                                 enforce_pc_games=True)
     print(data)
 
