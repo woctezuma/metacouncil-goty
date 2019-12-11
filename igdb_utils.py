@@ -166,10 +166,9 @@ def look_up_game_id(game_id,
     fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
                                            enforced_year=enforced_year)
 
-    if 'where' in fields_str:
-        fields_str += ' & id = ({})'.format(game_id)
-    else:
-        fields_str += ' ; where id = ({})'.format(game_id)
+    fields_str += ' ; where id = ({})'.format(
+        game_id
+    )
 
     params = get_igdb_request_params()
     params['fields'] = fields_str
