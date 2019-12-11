@@ -102,7 +102,7 @@ def get_igdb_fields_for_games(enforce_pc_games=True,
                               enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
-    igdb_fields_for_games = 'name, slug, platforms, release_dates.y, release_dates.human'  # TODO
+    igdb_fields_for_games = 'name, slug, alternative_names, platforms, category, status, first_release_date, release_dates.y, release_dates.human'  # TODO
 
     if enforce_pc_games:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
