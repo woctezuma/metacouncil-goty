@@ -92,12 +92,6 @@ def get_pc_platform_no():
     return pc_platform_no
 
 
-def get_game_category():
-    game_category = 0
-
-    return game_category
-
-
 def get_igdb_fields_for_games(enforce_pc_games=True,
                               enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
@@ -126,9 +120,8 @@ def get_igdb_fields_for_release_dates(enforce_pc_games=True,
     igdb_fields_for_release_dates = 'game, platform, date, human'  # TODO
 
     if enforce_pc_games:
-        igdb_fields_for_release_dates += ' ; where platform = ({}) & category = {}'.format(
+        igdb_fields_for_release_dates += ' ; where platform = ({})'.format(
             get_pc_platform_no(),
-            get_game_category(),
         )
 
     if enforced_year is not None:
