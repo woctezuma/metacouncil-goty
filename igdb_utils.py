@@ -92,7 +92,14 @@ def get_pc_platform_no():
     return pc_platform_no
 
 
+def get_game_category_no():
+    game_category_no = 0
+
+    return game_category_no
+
+
 def get_igdb_fields_for_games(enforce_pc_games=True,
+                              is_a_game=True,
                               enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
@@ -104,6 +111,16 @@ def get_igdb_fields_for_games(enforce_pc_games=True,
         igdb_fields_for_games += ' ; where platforms = ({})'.format(
             get_pc_platform_no(),
         )
+
+    if is_a_game:
+        if ' ; where ' in igdb_fields_for_games:
+            igdb_fields_for_games += ' & category = {}'.format(
+                get_game_category_no(),
+            )
+        else:
+            igdb_fields_for_games += ' ; where category = {}'.format(
+                get_game_category_no(),
+            )
 
     if enforced_year is not None:
         if ' ; where ' in igdb_fields_for_games:
@@ -145,16 +162,20 @@ def get_igdb_fields_for_release_dates(enforce_pc_games=True,
 def look_up_game_name(game_name,
                       enforced_year=None,
                       enforce_pc_games=True,
+                      is_a_game=True,
                       verbose=True):
     if verbose:
-        print('[query] Game name: {} ; Year: {} ; PC: {}'.format(game_name,
-                                                                 enforced_year,
-                                                                 enforce_pc_games))
+        print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_name,
+                                                                            enforced_year,
+                                                                            enforce_pc_games,
+                                                                            is_a_game,
+                                                                            ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
     fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
+                                           is_a_game=is_a_game,
                                            enforced_year=enforced_year)
 
     params = get_igdb_request_params()
@@ -179,16 +200,20 @@ def look_up_game_name(game_name,
 def look_up_game_id(game_id,
                     enforced_year=None,
                     enforce_pc_games=True,
+                    is_a_game=True,
                     verbose=True):
     if verbose:
-        print('[query] Game id: {} ; Year: {} ; PC: {}'.format(game_id,
-                                                               enforced_year,
-                                                               enforce_pc_games))
+        print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_id,
+                                                                          enforced_year,
+                                                                          enforce_pc_games,
+                                                                          is_a_game,
+                                                                          ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
     fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
+                                           is_a_game=is_a_game,
                                            enforced_year=enforced_year)
 
     if ' ; where ' in fields_str:
