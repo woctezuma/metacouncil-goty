@@ -79,7 +79,7 @@ def get_igdb_request_headers():
 
 def get_igdb_request_params():
     params = {
-        'fields': '*',  # It would be better if the fields are explicitly stated (and narrowed down to what is needed)!
+        'fields': '*',  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
         'limit': 10,  # max value is 500
     }
 
