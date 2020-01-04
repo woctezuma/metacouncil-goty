@@ -106,7 +106,7 @@ def get_igdb_fields_for_games(enforce_pc_games=True,
         )
 
     if enforced_year is not None:
-        if 'where' in igdb_fields_for_games:
+        if ' ; where ' in igdb_fields_for_games:
             igdb_fields_for_games += ' & release_dates.y = {}'.format(
                 enforced_year,
             )
@@ -130,7 +130,7 @@ def get_igdb_fields_for_release_dates(enforce_pc_games=True,
         )
 
     if enforced_year is not None:
-        if 'where' in igdb_fields_for_release_dates:
+        if ' ; where ' in igdb_fields_for_release_dates:
             igdb_fields_for_release_dates += ' & y = {}'.format(
                 enforced_year,
             )
@@ -191,7 +191,7 @@ def look_up_game_id(game_id,
     fields_str = get_igdb_fields_for_games(enforce_pc_games=enforce_pc_games,
                                            enforced_year=enforced_year)
 
-    if 'where' in fields_str:
+    if ' ; where ' in fields_str:
         fields_str += ' & id = ({})'.format(game_id)
     else:
         fields_str += ' ; where id = ({})'.format(game_id)
