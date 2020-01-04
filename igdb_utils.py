@@ -144,7 +144,13 @@ def get_igdb_fields_for_release_dates(enforce_pc_games=True,
 
 def look_up_game_name(game_name,
                       enforced_year=None,
-                      enforce_pc_games=True):
+                      enforce_pc_games=True,
+                      verbose=True):
+    if verbose:
+        print('[query] Game name: {} ; Year: {} ; PC: {}'.format(game_name,
+                                                                 enforced_year,
+                                                                 enforce_pc_games))
+
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
@@ -164,12 +170,21 @@ def look_up_game_name(game_name,
 
     data = response.json()
 
+    if verbose:
+        print('Response: {}\n'.format(data))
+
     return data
 
 
 def look_up_game_id(game_id,
                     enforced_year=None,
-                    enforce_pc_games=True):
+                    enforce_pc_games=True,
+                    verbose=True):
+    if verbose:
+        print('[query] Game id: {} ; Year: {} ; PC: {}'.format(game_id,
+                                                               enforced_year,
+                                                               enforce_pc_games))
+
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
@@ -192,11 +207,19 @@ def look_up_game_id(game_id,
 
     data = response.json()
 
+    if verbose:
+        print('Response: {}\n'.format(data))
+
     return data
 
 
 def look_up_games_released_in_given_year(enforced_year,
-                                         enforce_pc_games=True):
+                                         enforce_pc_games=True,
+                                         verbose=True):
+    if verbose:
+        print('[query] Year: {} ; PC: {}'.format(enforced_year,
+                                                 enforce_pc_games))
+
     url = get_igdb_api_url_for_release_dates()
     headers = get_igdb_request_headers()
 
@@ -214,25 +237,29 @@ def look_up_games_released_in_given_year(enforced_year,
 
     data = response.json()
 
+    if verbose:
+        print('Response: {}\n'.format(data))
+
     return data
 
 
 def main():
     enforced_year = 2019
+    verbose = True
 
     data = look_up_game_name(game_name='Red Dead',
                              enforced_year=enforced_year,
-                             enforce_pc_games=True)
-    print(data)
+                             enforce_pc_games=True,
+                             verbose=verbose)
 
     data = look_up_game_id(game_id=113391,
                            enforced_year=enforced_year,
-                           enforce_pc_games=True)
-    print(data)
+                           enforce_pc_games=True,
+                           verbose=verbose)
 
     data = look_up_games_released_in_given_year(enforced_year=enforced_year,
-                                                enforce_pc_games=True)
-    print(data)
+                                                enforce_pc_games=True,
+                                                verbose=verbose)
 
     return True
 
