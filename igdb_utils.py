@@ -245,20 +245,25 @@ def look_up_games_released_in_given_year(enforced_year,
 
 def main():
     enforced_year = 2019
+    enforce_pc_games = True
     verbose = True
 
-    data = look_up_game_name(game_name='Red Dead',
+    game_name = 'Red Dead'
+
+    data = look_up_game_name(game_name=game_name,
                              enforced_year=enforced_year,
-                             enforce_pc_games=True,
+                             enforce_pc_games=enforce_pc_games,
                              verbose=verbose)
 
-    data = look_up_game_id(game_id=113391,
+    game_id = 113391
+
+    data = look_up_game_id(game_id=game_id,
                            enforced_year=enforced_year,
-                           enforce_pc_games=True,
+                           enforce_pc_games=enforce_pc_games,
                            verbose=verbose)
 
     data = look_up_games_released_in_given_year(enforced_year=enforced_year,
-                                                enforce_pc_games=True,
+                                                enforce_pc_games=enforce_pc_games,
                                                 verbose=verbose)
 
     return True
