@@ -166,8 +166,8 @@ def append_filter_for_igdb_fields(igdb_fields,
     return igdb_fields
 
 
-def get_igdb_fields_for_games(is_available_on_pc=True,
-                              is_a_game=True,
+def get_igdb_fields_for_games(must_be_available_on_pc=True,
+                              must_be_a_game=True,
                               enforced_platform=None,
                               enforced_game_category=None,
                               enforced_year=None):
@@ -187,7 +187,7 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
         'release_dates.human',
     ])  # TODO
 
-    if is_available_on_pc or enforced_platform is not None:
+    if must_be_available_on_pc or enforced_platform is not None:
 
         if enforced_platform is None:
             enforced_platform = get_pc_platform_no()
@@ -198,7 +198,7 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
                                                               use_parenthesis=True,
                                                               )
 
-    if is_a_game or enforced_game_category is not None:
+    if must_be_a_game or enforced_game_category is not None:
 
         if enforced_game_category is None:
             enforced_game_category = get_game_category_no()
@@ -217,8 +217,8 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
     return igdb_fields_for_games
 
 
-def get_igdb_fields_for_release_dates(is_available_on_pc=True,
-                                      is_a_game=True,
+def get_igdb_fields_for_release_dates(must_be_available_on_pc=True,
+                                      must_be_a_game=True,
                                       enforced_platform=None,
                                       enforced_game_category=None,
                                       enforced_year=None):
@@ -234,7 +234,7 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
         'category',
     ])  # TODO
 
-    if is_available_on_pc or enforced_platform is not None:
+    if must_be_available_on_pc or enforced_platform is not None:
 
         if enforced_platform is None:
             enforced_platform = get_pc_platform_no()
@@ -245,7 +245,7 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
                                                                       use_parenthesis=True,
                                                                       )
 
-    if is_a_game or enforced_game_category is not None:
+    if must_be_a_game or enforced_game_category is not None:
 
         if enforced_game_category is None:
             enforced_game_category = get_game_category_no()
@@ -266,23 +266,23 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
 
 def look_up_game_name(game_name,
                       enforced_year=None,
-                      is_available_on_pc=True,
-                      is_a_game=True,
+                      must_be_available_on_pc=True,
+                      must_be_a_game=True,
                       enforced_platform=None,
                       enforced_game_category=None,
                       verbose=True):
     if verbose:
         print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_name,
                                                                             enforced_year,
-                                                                            is_available_on_pc,
-                                                                            is_a_game,
+                                                                            must_be_available_on_pc,
+                                                                            must_be_a_game,
                                                                             ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_games(is_available_on_pc=is_available_on_pc,
-                                           is_a_game=is_a_game,
+    fields_str = get_igdb_fields_for_games(must_be_available_on_pc=must_be_available_on_pc,
+                                           must_be_a_game=must_be_a_game,
                                            enforced_platform=enforced_platform,
                                            enforced_game_category=enforced_game_category,
                                            enforced_year=enforced_year)
@@ -308,23 +308,23 @@ def look_up_game_name(game_name,
 
 def look_up_game_id(game_id,
                     enforced_year=None,
-                    is_available_on_pc=True,
-                    is_a_game=True,
+                    must_be_available_on_pc=True,
+                    must_be_a_game=True,
                     enforced_platform=None,
                     enforced_game_category=None,
                     verbose=True):
     if verbose:
         print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_id,
                                                                           enforced_year,
-                                                                          is_available_on_pc,
-                                                                          is_a_game,
+                                                                          must_be_available_on_pc,
+                                                                          must_be_a_game,
                                                                           ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_games(is_available_on_pc=is_available_on_pc,
-                                           is_a_game=is_a_game,
+    fields_str = get_igdb_fields_for_games(must_be_available_on_pc=must_be_available_on_pc,
+                                           must_be_a_game=must_be_a_game,
                                            enforced_platform=enforced_platform,
                                            enforced_game_category=enforced_game_category,
                                            enforced_year=enforced_year)
@@ -352,20 +352,20 @@ def look_up_game_id(game_id,
 
 
 def look_up_games_released_in_given_year(enforced_year,
-                                         is_available_on_pc=True,
-                                         is_a_game=True,
+                                         must_be_available_on_pc=True,
+                                         must_be_a_game=True,
                                          enforced_platform=None,
                                          enforced_game_category=None,
                                          verbose=True):
     if verbose:
         print('[query] Year: {} ; PC: {}'.format(enforced_year,
-                                                 is_available_on_pc))
+                                                 must_be_available_on_pc))
 
     url = get_igdb_api_url_for_release_dates()
     headers = get_igdb_request_headers()
 
-    fields_str = get_igdb_fields_for_release_dates(is_available_on_pc=is_available_on_pc,
-                                                   is_a_game=is_a_game,
+    fields_str = get_igdb_fields_for_release_dates(must_be_available_on_pc=must_be_available_on_pc,
+                                                   must_be_a_game=must_be_a_game,
                                                    enforced_platform=enforced_platform,
                                                    enforced_game_category=enforced_game_category,
                                                    enforced_year=enforced_year)
@@ -389,25 +389,29 @@ def look_up_games_released_in_given_year(enforced_year,
 
 def main():
     enforced_year = 2019
-    is_available_on_pc = True
+    must_be_available_on_pc = True
+    must_be_a_game = True
     verbose = True
 
     game_name = 'Red Dead'
 
     data = look_up_game_name(game_name=game_name,
                              enforced_year=enforced_year,
-                             is_available_on_pc=is_available_on_pc,
+                             must_be_available_on_pc=must_be_available_on_pc,
+                             must_be_a_game=must_be_a_game,
                              verbose=verbose)
 
     game_id = 113391
 
     data = look_up_game_id(game_id=game_id,
                            enforced_year=enforced_year,
-                           is_available_on_pc=is_available_on_pc,
+                           must_be_available_on_pc=must_be_available_on_pc,
+                           must_be_a_game=must_be_a_game,
                            verbose=verbose)
 
     data = look_up_games_released_in_given_year(enforced_year=enforced_year,
-                                                is_available_on_pc=is_available_on_pc,
+                                                must_be_available_on_pc=must_be_available_on_pc,
+                                                must_be_a_game=must_be_a_game,
                                                 verbose=verbose)
 
     return True
