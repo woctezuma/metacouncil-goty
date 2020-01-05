@@ -177,14 +177,9 @@ def get_igdb_fields_for_games(must_be_available_on_pc=True,
 
     igdb_fields_for_games = field_separator.join([
         'name',
-        'slug',
-        'alternative_names',
         'platforms',
         'category',
-        'status',
-        'first_release_date',
         'release_dates.y',
-        'release_dates.m',
         'release_dates.platform',
         'release_dates.human',
     ])
@@ -227,12 +222,12 @@ def get_igdb_fields_for_release_dates(must_be_available_on_pc=True,
     field_separator = ', '
 
     igdb_fields_for_release_dates = field_separator.join([
-        'game',
+        'game.name',
+        'game.platforms',
+        'game.category',
         'platform',
-        'date',
         'human',
         'y',
-        'm',
     ])
 
     if must_be_available_on_pc or enforced_platform is not None:
