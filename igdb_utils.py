@@ -171,7 +171,19 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
                               enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
-    igdb_fields_for_games = 'name, slug, alternative_names, platforms, category, status, first_release_date, release_dates.y, release_dates.human'  # TODO
+    field_separator = ', '
+
+    igdb_fields_for_games = field_separator.join([
+        'name',
+        'slug',
+        'alternative_names',
+        'platforms',
+        'category',
+        'status',
+        'first_release_date',
+        'release_dates.y',
+        'release_dates.human',
+    ])  # TODO
 
     if is_available_on_pc:
         igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
@@ -199,7 +211,15 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
                                       enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
-    igdb_fields_for_release_dates = 'game, platform, date, human'  # TODO
+    field_separator = ', '
+
+    igdb_fields_for_release_dates = field_separator.join([
+        'game',
+        'platform',
+        'date',
+        'human',
+        'category',
+    ])  # TODO
 
     if is_available_on_pc:
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
