@@ -3,7 +3,7 @@ import json
 from anonymize_data import get_data_folder
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
-from igdb_utils import look_up_game_name, get_pc_platform_no
+from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches
 
@@ -40,7 +40,8 @@ def match_names_with_igdb(raw_votes,
     return matches
 
 
-def print_igdb_matches(matches):
+def print_igdb_matches(matches,
+                       constrained_release_year=None):
     sorted_input_names = sorted(matches.keys())
 
     for raw_name in sorted_input_names:
@@ -56,7 +57,7 @@ def print_igdb_matches(matches):
             release_years = set(
                 date['y']
                 for date in igdb_best_match['release_dates']
-                if 'y' in date and date['platform'] == get_pc_platform_no()
+                if 'y' in date and (date['platform'] in get_pc_platform_range())
             )
 
             if len(release_years) > 1:
@@ -64,6 +65,14 @@ def print_igdb_matches(matches):
                 print('[!]\tSeveral release years are found for {}.'.format(raw_name))
             else:
                 displayed_release_years = list(release_years)[0]
+
+            if constrained_release_year is not None:
+                if all(year != int(constrained_release_year) for year in release_years):
+                    print('[!]\tRelease year(s) ({}) do not match the ballot year ({}) for {}.'.format(
+                        displayed_release_years,
+                        constrained_release_year,
+                        raw_name,
+                    ))
 
             print('\t{} ---> {} ({})'.format(raw_name,
                                              igdb_best_match['name'],
@@ -141,7 +150,8 @@ def main():
             matches = download_igdb_local_database_file_name(ballots,
                                                              release_year=release_year)
 
-        print_igdb_matches(matches)
+        print_igdb_matches(matches,
+                           constrained_release_year=release_year)
 
     else:
         # Using SteamSpy
