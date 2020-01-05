@@ -105,7 +105,6 @@ def get_pc_platform_range():
     pc_platform_range = []
 
     pc_platform_range.append(get_pc_platform_no())
-    pc_platform_range.append(48)  # Epic Games? # TODO
 
     return pc_platform_range
 
