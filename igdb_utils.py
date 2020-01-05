@@ -129,6 +129,41 @@ def get_released_status_no():
 
     return released_status_no
 
+
+def append_filter_for_igdb_fields(igdb_fields,
+                                  filter_name,
+                                  filter_value,
+                                  use_parenthesis=False):
+    where_statement = ' ; where '
+    conjunction_statement = ' & '
+
+    if filter_name.startswith('platform'):
+        # The filter name can be singular or plural:
+        # - 'platforms' when used for games,
+        # - 'platform' when used for release dates.
+        use_parenthesis = True
+
+    if use_parenthesis:
+        # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
+        # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
+        statement_to_append = '{} = ({})'.format(
+            filter_name,
+            filter_value,
+        )
+    else:
+        statement_to_append = '{} = {}'.format(
+            filter_name,
+            filter_value,
+        )
+
+    if where_statement in igdb_fields:
+        igdb_fields += conjunction_statement + statement_to_append
+    else:
+        igdb_fields += where_statement + statement_to_append
+
+    return igdb_fields
+
+
 def get_igdb_fields_for_games(is_available_on_pc=True,
                               is_a_game=True,
                               enforced_year=None):
@@ -137,31 +172,23 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
     igdb_fields_for_games = 'name, slug, alternative_names, platforms, category, status, first_release_date, release_dates.y, release_dates.human'  # TODO
 
     if is_available_on_pc:
-        # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
-        # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
-        igdb_fields_for_games += ' ; where platforms = ({})'.format(
-            get_pc_platform_no(),
-        )
+        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
+                                                              'platforms',
+                                                              get_pc_platform_no(),
+                                                              use_parenthesis=True,
+                                                              )
 
     if is_a_game:
-        if ' ; where ' in igdb_fields_for_games:
-            igdb_fields_for_games += ' & category = {}'.format(
-                get_game_category_no(),
-            )
-        else:
-            igdb_fields_for_games += ' ; where category = {}'.format(
-                get_game_category_no(),
-            )
+        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
+                                                              'category',
+                                                              get_game_category_no(),
+                                                              )
 
     if enforced_year is not None:
-        if ' ; where ' in igdb_fields_for_games:
-            igdb_fields_for_games += ' & release_dates.y = {}'.format(
-                enforced_year,
-            )
-        else:
-            igdb_fields_for_games += ' ; where release_dates.y = {}'.format(
-                enforced_year,
-            )
+        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
+                                                              'release_dates.y',
+                                                              enforced_year,
+                                                              )
 
     return igdb_fields_for_games
 
@@ -173,19 +200,17 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
     igdb_fields_for_release_dates = 'game, platform, date, human'  # TODO
 
     if is_available_on_pc:
-        igdb_fields_for_release_dates += ' ; where platform = ({})'.format(
-            get_pc_platform_no(),
-        )
+        igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
+                                                                      'platform',
+                                                                      get_pc_platform_no(),
+                                                                      use_parenthesis=True,
+                                                                      )
 
     if enforced_year is not None:
-        if ' ; where ' in igdb_fields_for_release_dates:
-            igdb_fields_for_release_dates += ' & y = {}'.format(
-                enforced_year,
-            )
-        else:
-            igdb_fields_for_release_dates += ' ; where y = {}'.format(
-                enforced_year,
-            )
+        igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
+                                                                      'y',
+                                                                      enforced_year,
+                                                                      )
 
     return igdb_fields_for_release_dates
 
@@ -247,10 +272,10 @@ def look_up_game_id(game_id,
                                            is_a_game=is_a_game,
                                            enforced_year=enforced_year)
 
-    if ' ; where ' in fields_str:
-        fields_str += ' & id = ({})'.format(game_id)
-    else:
-        fields_str += ' ; where id = ({})'.format(game_id)
+    fields_str = append_filter_for_igdb_fields(fields_str,
+                                               'id',
+                                               game_id,
+                                               )
 
     params = get_igdb_request_params()
     params['fields'] = fields_str
