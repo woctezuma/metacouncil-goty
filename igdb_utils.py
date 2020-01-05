@@ -131,6 +131,7 @@ def get_released_status_no():
 
     return released_status_no
 
+
 def get_steam_service_no():
     # name 	                value
     # ====================  =====
@@ -145,6 +146,7 @@ def get_steam_service_no():
     steam_service_no = 1
 
     return steam_service_no
+
 
 def append_filter_for_igdb_fields(igdb_fields,
                                   filter_name,
