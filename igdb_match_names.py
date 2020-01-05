@@ -33,35 +33,46 @@ def match_names_with_igdb(raw_votes,
                         igdb_matches = look_up_game_name(game_name=raw_name,
                                                          enforced_year=None)
 
-                        try:
-                            igdb_best_match = igdb_matches[0]
-                        except IndexError:
-                            igdb_best_match = None
-
-                    # (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database,
-                    #                                                         release_year,
-                    #                                                         num_closest_neighbors,
-                    #                                                         max_num_tries_for_year)
-
-                    element = dict()
-                    element['input_name'] = raw_name
-
-                    if igdb_best_match is not None:
-                        element['matched_name'] = igdb_best_match['name']
-                        element['igdb_id'] = igdb_best_match['id']
-                        element['release_dates'] = set(
-                            date['y']
-                            for date in igdb_best_match['release_dates']
-                            if 'y' in date and date['platform'] == get_pc_platform_no()
-                        )
-
-                    # element['matched_appID'] = closest_appID
-                    # element['matched_name'] = [steamspy_database[appID]['name'] for appID in closest_appID]
-                    # element['match_distance'] = closest_distance
-
-                    matches[raw_name] = element
+                    # Caveat: For now, matches returned by match_names_with_igdb() does not have the same structure as
+                    #         matches returned by precompute_matches(). TODO
+                    matches[raw_name] = igdb_matches
 
     return matches
+
+
+def print_igdb_matches(matches):
+    sorted_input_names = sorted(matches.keys())
+
+    for raw_name in sorted_input_names:
+        igdb_matches = matches[raw_name]
+
+        try:
+            igdb_best_match = igdb_matches[0]
+        except IndexError:
+            igdb_best_match = None
+
+        if igdb_best_match is not None:
+
+            release_years = set(
+                date['y']
+                for date in igdb_best_match['release_dates']
+                if 'y' in date and date['platform'] == get_pc_platform_no()
+            )
+
+            if len(release_years) > 1:
+                displayed_release_years = sorted(release_years)
+                print('[!]\tSeveral release years are found for {}.'.format(raw_name))
+            else:
+                displayed_release_years = list(release_years)[0]
+
+            print('\t{} ---> {} ({})'.format(raw_name,
+                                             igdb_best_match['name'],
+                                             displayed_release_years,
+                                             ))
+        else:
+            print('[X]\t{}'.format(raw_name))
+
+    return
 
 
 def get_igdb_local_database_file_name(release_year=None):
@@ -130,7 +141,7 @@ def main():
             matches = download_igdb_local_database_file_name(ballots,
                                                              release_year=release_year)
 
-        print(matches)
+        print_igdb_matches(matches)
 
     else:
         # Using SteamSpy
