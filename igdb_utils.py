@@ -420,6 +420,67 @@ def look_up_games_released_in_given_year(enforced_year,
     return data
 
 
+def download_list_of_platforms(verbose=True):
+    url = get_igdb_api_url(end_point='platforms')
+    headers = get_igdb_request_headers()
+
+    fields_str = 'abbreviation, alternative_name, category, name, slug, summary, url'
+
+    params = get_igdb_request_params()
+    params['fields'] = fields_str
+    params['limit'] = 500
+
+    response = requests.post(
+        url=url,
+        headers=headers,
+        params=params,
+    )
+
+    data = response.json()
+
+    if verbose:
+        print('Response (#platforms={}): {}\n'.format(
+            len(data),
+            data
+        ))
+
+    return data
+
+
+def format_list_of_platforms(raw_data_platforms,
+                             verbose=True):
+    formatted_data_platforms = dict()
+
+    sorted_data_platforms = sorted(raw_data_platforms,
+                                   key=lambda x: x['id'])
+
+    for e in sorted_data_platforms:
+        id = e['id']
+
+        formatted_data_platforms[id] = dict()
+        formatted_data_platforms[id]['slug'] = e['slug']
+        formatted_data_platforms[id]['slug'] = e['name']
+
+        try:
+            formatted_data_platforms[id]['category'] = e['category']
+        except KeyError:
+            formatted_data_platforms[id]['category'] = None
+
+    if verbose:
+        for id in formatted_data_platforms:
+            category = formatted_data_platforms[id]['category']
+
+            if category == get_pc_platform_no():
+                slug = formatted_data_platforms[id]['slug']
+
+                print('Category: {} ; ID: {} ; Slug: {}'.format(category,
+                                                                id,
+                                                                slug,
+                                                                ))
+
+    return formatted_data_platforms
+
+
 def main():
     enforced_year = 2019
     must_be_available_on_pc = True
@@ -445,6 +506,10 @@ def main():
     data = look_up_games_released_in_given_year(enforced_year=enforced_year,
                                                 must_be_available_on_pc=must_be_available_on_pc,
                                                 verbose=verbose)
+
+    raw_data_platforms = download_list_of_platforms(verbose=verbose)
+    formatted_data_platforms = format_list_of_platforms(raw_data_platforms,
+                                                        verbose=verbose)
 
     return True
 
