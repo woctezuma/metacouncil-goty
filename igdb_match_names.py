@@ -8,6 +8,14 @@ from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches
 
 
+def format_game_name_for_igdb(raw_name):
+    formatted_game_name_for_igdb = raw_name
+    formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace('®', ' ')
+    formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace('~', ' ')
+
+    return formatted_game_name_for_igdb
+
+
 def match_names_with_igdb(raw_votes,
                           release_year=None):
     seen_game_names = set()
@@ -22,7 +30,9 @@ def match_names_with_igdb(raw_votes,
                 seen_game_names.add(raw_name)
 
                 if raw_name != '' and (raw_name not in noisy_votes):
-                    igdb_matches = look_up_game_name(game_name=raw_name,
+                    formatted_game_name_for_igdb = format_game_name_for_igdb(raw_name)
+
+                    igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,
                                                      enforced_year=release_year)
 
                     try:
