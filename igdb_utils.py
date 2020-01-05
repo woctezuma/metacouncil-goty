@@ -131,6 +131,20 @@ def get_released_status_no():
 
     return released_status_no
 
+def get_steam_service_no():
+    # name 	                value
+    # ====================  =====
+    # steam 	            1
+    # gog 	                5
+    # youtube 	            10
+    # microsoft 	        11
+    # apple 	            13
+    # twitch 	            14
+    # android 	            15
+
+    steam_service_no = 1
+
+    return steam_service_no
 
 def append_filter_for_igdb_fields(igdb_fields,
                                   filter_name,
@@ -183,6 +197,13 @@ def get_igdb_fields_for_games(must_be_available_on_pc=True,
         'release_dates.y',
         'release_dates.platform',
         'release_dates.human',
+        'external_games.category',
+        'external_games.name',
+        'external_games.uid',
+        'external_games.url',
+        'external_games.year',
+        'alternative_names.comment',
+        'alternative_names.name',
     ])
 
     if must_be_available_on_pc or enforced_platform is not None:
