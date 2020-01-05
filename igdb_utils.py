@@ -272,11 +272,14 @@ def look_up_game_name(game_name,
                       enforced_game_category=None,
                       verbose=True):
     if verbose:
-        print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_name,
-                                                                            enforced_year,
-                                                                            must_be_available_on_pc,
-                                                                            must_be_a_game,
-                                                                            ))
+        print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
+            game_name,
+            enforced_year,
+            must_be_available_on_pc,
+            must_be_a_game,
+            enforced_platform,
+            enforced_game_category,
+        ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
@@ -314,11 +317,14 @@ def look_up_game_id(game_id,
                     enforced_game_category=None,
                     verbose=True):
     if verbose:
-        print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_id,
-                                                                          enforced_year,
-                                                                          must_be_available_on_pc,
-                                                                          must_be_a_game,
-                                                                          ))
+        print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
+            game_id,
+            enforced_year,
+            must_be_available_on_pc,
+            must_be_a_game,
+            enforced_platform,
+            enforced_game_category,
+        ))
 
     url = get_igdb_api_url_for_games()
     headers = get_igdb_request_headers()
@@ -358,8 +364,13 @@ def look_up_games_released_in_given_year(enforced_year,
                                          enforced_game_category=None,
                                          verbose=True):
     if verbose:
-        print('[query] Year: {} ; PC: {}'.format(enforced_year,
-                                                 must_be_available_on_pc))
+        print('[query] Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
+            enforced_year,
+            must_be_available_on_pc,
+            must_be_a_game,
+            enforced_platform,
+            enforced_game_category,
+        ))
 
     url = get_igdb_api_url_for_release_dates()
     headers = get_igdb_request_headers()
