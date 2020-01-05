@@ -177,6 +177,7 @@ def get_igdb_fields_for_games(must_be_available_on_pc=True,
 
     igdb_fields_for_games = field_separator.join([
         'name',
+        'slug',
         'platforms',
         'category',
         'release_dates.y',
@@ -223,6 +224,7 @@ def get_igdb_fields_for_release_dates(must_be_available_on_pc=True,
 
     igdb_fields_for_release_dates = field_separator.join([
         'game.name',
+        'game.slug',
         'game.platforms',
         'game.category',
         'platform',
