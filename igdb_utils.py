@@ -87,16 +87,47 @@ def get_igdb_request_params():
 
 
 def get_pc_platform_no():
+    # name 	                value
+    # ====================  =====
+    # console 	            1
+    # arcade 	            2
+    # platform 	            3
+    # operating_system 	    4
+    # portable_console 	    5
+    # computer 	            6
+
     pc_platform_no = 6
 
     return pc_platform_no
 
 
 def get_game_category_no():
+    # name 	                value
+    # ====================  =====
+    # main_game 	        0
+    # dlc_addon 	        1
+    # expansion 	        2
+    # bundle 	            3
+    # standalone_expansion 	4
+
     game_category_no = 0
 
     return game_category_no
 
+
+def get_released_status_no():
+    # name 	                value
+    # ====================  =====
+    # released 	            0
+    # alpha 	            2
+    # beta 	                3
+    # early_access 	        4
+    # offline 	            5
+    # cancelled 	        6
+
+    released_status_no = 0
+
+    return released_status_no
 
 def get_igdb_fields_for_games(is_available_on_pc=True,
                               is_a_game=True,
