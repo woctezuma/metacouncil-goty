@@ -169,6 +169,37 @@ def append_filter_for_igdb_fields(igdb_fields,
         # - 'platform' when used for release dates.
         use_parenthesis = True
 
+    if filter_name == 'category':
+        # We will force the use of parenthesis if the filter value contains several game categories,
+        # e.g. '1,4' or [1,4] will lead to a filtering with (1,4).
+
+        try:
+            # Assume filter value is either a string or a list of integers.
+            num_enforced_game_categories = len(filter_value)
+        except TypeError:
+            # The exception suggests that filter value is actually an integer.
+            num_enforced_game_categories = 1
+
+        use_parenthesis = bool(num_enforced_game_categories > 1)
+
+        if num_enforced_game_categories > 1:
+            category_separator = ','
+
+            if category_separator in filter_value:
+                # Adjust the count of game categories, because we previously included the separators in our count.
+                num_enforced_game_categories -= filter_value.count(category_separator)
+
+                # filter_value is already a string, e.g. '1,4' or '(1,4)'. So we do not need to change it, unless it
+                # already contains parenthesis.
+                if filter_value.startswith('(') and filter_value.endswith(')'):
+                    filter_value = filter_value[1:-1]
+                    num_enforced_game_categories -= len('()')
+            else:
+                # Convert filter_value from a list of integers, e.g. [1,4], to a string, e.g. '1,4'.
+                filter_value = category_separator.join(str(category_no)
+                                                       for category_no in filter_value
+                                                       )
+
     if use_parenthesis:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
         # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
