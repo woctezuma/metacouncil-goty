@@ -168,6 +168,8 @@ def append_filter_for_igdb_fields(igdb_fields,
 
 def get_igdb_fields_for_games(is_available_on_pc=True,
                               is_a_game=True,
+                              enforced_platform=None,
+                              enforced_game_category=None,
                               enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
@@ -185,17 +187,25 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
         'release_dates.human',
     ])  # TODO
 
-    if is_available_on_pc:
+    if is_available_on_pc or enforced_platform is not None:
+
+        if enforced_platform is None:
+            enforced_platform = get_pc_platform_no()
+
         igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
                                                               'platforms',
-                                                              get_pc_platform_no(),
+                                                              enforced_platform,
                                                               use_parenthesis=True,
                                                               )
 
-    if is_a_game:
+    if is_a_game or enforced_game_category is not None:
+
+        if enforced_game_category is None:
+            enforced_game_category = get_game_category_no()
+
         igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
                                                               'category',
-                                                              get_game_category_no(),
+                                                              enforced_game_category,
                                                               )
 
     if enforced_year is not None:
@@ -208,6 +218,9 @@ def get_igdb_fields_for_games(is_available_on_pc=True,
 
 
 def get_igdb_fields_for_release_dates(is_available_on_pc=True,
+                                      is_a_game=True,
+                                      enforced_platform=None,
+                                      enforced_game_category=None,
                                       enforced_year=None):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
@@ -221,11 +234,25 @@ def get_igdb_fields_for_release_dates(is_available_on_pc=True,
         'category',
     ])  # TODO
 
-    if is_available_on_pc:
+    if is_available_on_pc or enforced_platform is not None:
+
+        if enforced_platform is None:
+            enforced_platform = get_pc_platform_no()
+
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
                                                                       'platform',
-                                                                      get_pc_platform_no(),
+                                                                      enforced_platform,
                                                                       use_parenthesis=True,
+                                                                      )
+
+    if is_a_game or enforced_game_category is not None:
+
+        if enforced_game_category is None:
+            enforced_game_category = get_game_category_no()
+
+        igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
+                                                                      'category',
+                                                                      enforced_game_category,
                                                                       )
 
     if enforced_year is not None:
@@ -241,6 +268,8 @@ def look_up_game_name(game_name,
                       enforced_year=None,
                       is_available_on_pc=True,
                       is_a_game=True,
+                      enforced_platform=None,
+                      enforced_game_category=None,
                       verbose=True):
     if verbose:
         print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_name,
@@ -254,6 +283,8 @@ def look_up_game_name(game_name,
 
     fields_str = get_igdb_fields_for_games(is_available_on_pc=is_available_on_pc,
                                            is_a_game=is_a_game,
+                                           enforced_platform=enforced_platform,
+                                           enforced_game_category=enforced_game_category,
                                            enforced_year=enforced_year)
 
     params = get_igdb_request_params()
@@ -279,6 +310,8 @@ def look_up_game_id(game_id,
                     enforced_year=None,
                     is_available_on_pc=True,
                     is_a_game=True,
+                    enforced_platform=None,
+                    enforced_game_category=None,
                     verbose=True):
     if verbose:
         print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {}'.format(game_id,
@@ -292,6 +325,8 @@ def look_up_game_id(game_id,
 
     fields_str = get_igdb_fields_for_games(is_available_on_pc=is_available_on_pc,
                                            is_a_game=is_a_game,
+                                           enforced_platform=enforced_platform,
+                                           enforced_game_category=enforced_game_category,
                                            enforced_year=enforced_year)
 
     fields_str = append_filter_for_igdb_fields(fields_str,
@@ -318,6 +353,9 @@ def look_up_game_id(game_id,
 
 def look_up_games_released_in_given_year(enforced_year,
                                          is_available_on_pc=True,
+                                         is_a_game=True,
+                                         enforced_platform=None,
+                                         enforced_game_category=None,
                                          verbose=True):
     if verbose:
         print('[query] Year: {} ; PC: {}'.format(enforced_year,
@@ -327,6 +365,9 @@ def look_up_games_released_in_given_year(enforced_year,
     headers = get_igdb_request_headers()
 
     fields_str = get_igdb_fields_for_release_dates(is_available_on_pc=is_available_on_pc,
+                                                   is_a_game=is_a_game,
+                                                   enforced_platform=enforced_platform,
+                                                   enforced_game_category=enforced_game_category,
                                                    enforced_year=enforced_year)
 
     params = get_igdb_request_params()
