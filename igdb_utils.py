@@ -184,8 +184,10 @@ def get_igdb_fields_for_games(must_be_available_on_pc=True,
         'status',
         'first_release_date',
         'release_dates.y',
+        'release_dates.m',
+        'release_dates.platform',
         'release_dates.human',
-    ])  # TODO
+    ])
 
     if must_be_available_on_pc or enforced_platform is not None:
 
@@ -229,7 +231,9 @@ def get_igdb_fields_for_release_dates(must_be_available_on_pc=True,
         'platform',
         'date',
         'human',
-    ])  # TODO
+        'y',
+        'm',
+    ])
 
     if must_be_available_on_pc or enforced_platform is not None:
 
