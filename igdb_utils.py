@@ -125,6 +125,8 @@ def get_released_status_no():
     # offline 	            5
     # cancelled 	        6
 
+    # Caveat: the release status is often missing from IGDB. Avoid using it for now, or you will get empty responses!
+
     released_status_no = 0
 
     return released_status_no
