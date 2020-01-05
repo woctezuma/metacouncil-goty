@@ -25,7 +25,15 @@ def match_names_with_igdb(raw_votes,
                     try:
                         igdb_best_match = igdb_matches[0]
                     except IndexError:
-                        igdb_best_match = None
+                        print('Relaxing the year constraint for {}'.format(raw_name))
+
+                        igdb_matches = look_up_game_name(game_name=raw_name,
+                                                         enforced_year=None)
+
+                        try:
+                            igdb_best_match = igdb_matches[0]
+                        except IndexError:
+                            igdb_best_match = None
 
                     # (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database,
                     #                                                         release_year,
