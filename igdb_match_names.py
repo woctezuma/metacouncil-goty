@@ -1,6 +1,6 @@
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
-from igdb_utils import look_up_game_name
+from igdb_utils import look_up_game_name, get_pc_platform_no
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches
 
@@ -38,11 +38,10 @@ def match_names_with_igdb(raw_votes,
                     if igdb_best_match is not None:
                         element['matched_name'] = igdb_best_match['name']
                         element['igdb_id'] = igdb_best_match['id']
-                        element['first_release_date'] = igdb_best_match['first_release_date']
                         element['release_dates'] = set(
                             date['y']
                             for date in igdb_best_match['release_dates']
-                            if 'y' in date
+                            if 'y' in date and date['platform'] == get_pc_platform_no()
                         )
 
                     # element['matched_appID'] = closest_appID
