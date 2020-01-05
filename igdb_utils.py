@@ -118,7 +118,7 @@ def get_game_category_no():
     # bundle 	            3
     # standalone_expansion 	4
 
-    game_category_no = 0
+    game_category_no = [0, 3, 4]
 
     return game_category_no
 
