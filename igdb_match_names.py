@@ -1,3 +1,6 @@
+import json
+
+from anonymize_data import get_data_folder
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
 from igdb_utils import look_up_game_name, get_pc_platform_no
@@ -61,6 +64,53 @@ def match_names_with_igdb(raw_votes,
     return matches
 
 
+def get_igdb_local_database_file_name(release_year=None):
+    if release_year is None:
+        suffix = ''
+    else:
+        suffix = '_' + str(release_year)
+
+    file_name = get_data_folder() + 'igdb_database' + suffix + '.json'
+
+    return file_name
+
+
+def load_igdb_local_database_file_name(release_year=None,
+                                       file_name=None):
+    if file_name is None:
+        file_name = get_igdb_local_database_file_name(release_year=release_year)
+
+    with open(file_name, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    return data
+
+
+def save_igdb_local_database_file_name(data,
+                                       release_year=None,
+                                       file_name=None):
+    if file_name is None:
+        file_name = get_igdb_local_database_file_name(release_year=release_year)
+
+    with open(file_name, 'w', encoding='utf-8') as f:
+        json.dump(data, f)
+
+    return
+
+
+def download_igdb_local_database_file_name(ballots,
+                                           release_year=None,
+                                           file_name=None):
+    matches = match_names_with_igdb(ballots,
+                                    release_year=release_year)
+
+    save_igdb_local_database_file_name(data=matches,
+                                       release_year=release_year,
+                                       file_name=file_name)
+
+    return matches
+
+
 def main():
     ballot_year = '2018'
     input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
@@ -74,8 +124,11 @@ def main():
     if use_igdb:
         # Using IGDB
 
-        matches = match_names_with_igdb(ballots,
-                                        release_year=release_year)
+        try:
+            matches = load_igdb_local_database_file_name(release_year=release_year)
+        except FileNotFoundError:
+            matches = download_igdb_local_database_file_name(ballots,
+                                                             release_year=release_year)
 
         print(matches)
 
