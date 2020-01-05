@@ -313,7 +313,10 @@ def look_up_game_name(game_name,
     data = response.json()
 
     if verbose:
-        print('Response: {}\n'.format(data))
+        print('Response (#games={}): {}\n'.format(
+            len(data),
+            data
+        ))
 
     return data
 
@@ -361,7 +364,10 @@ def look_up_game_id(game_id,
     data = response.json()
 
     if verbose:
-        print('Response: {}\n'.format(data))
+        print('Response (#games={}): {}\n'.format(
+            len(data),
+            data
+        ))
 
     return data
 
@@ -396,7 +402,10 @@ def look_up_games_released_in_given_year(enforced_year,
     data = response.json()
 
     if verbose:
-        print('Response: {}\n'.format(data))
+        print('Response (#games={}): {}\n'.format(
+            len(data),
+            data
+        ))
 
     return data
 
