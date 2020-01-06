@@ -118,6 +118,8 @@ def get_game_category_no():
     # bundle 	            3
     # standalone_expansion 	4
 
+    # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
+
     game_category_no = [0, 3, 4]
 
     return game_category_no
