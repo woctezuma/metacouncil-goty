@@ -6,10 +6,14 @@ from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 
 
-def constrain_app_id_search_by_year(dist, sorted_app_ids, release_year, max_num_tries_for_year):
+def constrain_app_id_search_by_year(dist,
+                                    sorted_app_ids,
+                                    release_year,
+                                    max_num_tries_for_year,
+                                    year_constraint='equality'):
     filtered_sorted_app_ids = sorted_app_ids.copy()
 
-    if release_year is not None:
+    if release_year is not None and year_constraint is not None:
         first_match = filtered_sorted_app_ids[0]
         dist_reference = dist[first_match]
 
@@ -22,7 +26,21 @@ def constrain_app_id_search_by_year(dist, sorted_app_ids, release_year, max_num_
                 first_match = filtered_sorted_app_ids[0]
                 matched_release_year = steampi.calendar.get_release_year(first_match)
 
-                is_the_first_match_released_in_a_wrong_year = bool(matched_release_year != int(release_year))
+                if year_constraint == 'equality':
+                    # We want the matched release year to be equal to the target release year.
+                    # NB: this is useful to compute the Game of the Year.
+                    is_the_first_match_released_in_a_wrong_year = bool(matched_release_year != int(release_year))
+                elif year_constraint == 'minimum':
+                    # We want the matched release year to be greater than or equal to the target release year.
+                    # NB: this should be useful to compute the Game of the last Decade.
+                    is_the_first_match_released_in_a_wrong_year = bool(matched_release_year < int(release_year))
+                elif year_constraint == 'maximum':
+                    # We want the matched release year to be less than or equal to the target release year.
+                    is_the_first_match_released_in_a_wrong_year = bool(matched_release_year > int(release_year))
+                else:
+                    # We do not want to apply any constraint.
+                    is_the_first_match_released_in_a_wrong_year = False
+
                 if is_the_first_match_released_in_a_wrong_year:
                     filtered_sorted_app_ids.pop(0)
 
@@ -42,15 +60,22 @@ def apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app
     return closest_app_id
 
 
-def find_closest_app_id(game_name_input, steamspy_database, release_year=None,
-                        num_closest_neighbors=1, max_num_tries_for_year=2):
+def find_closest_app_id(game_name_input,
+                        steamspy_database,
+                        release_year=None,
+                        num_closest_neighbors=1,
+                        max_num_tries_for_year=2,
+                        year_constraint='equality'):
     (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input, steamspy_database)
 
     filtered_sorted_app_ids = sorted_app_ids
 
-    if release_year is not None:
-        filtered_sorted_app_ids = constrain_app_id_search_by_year(dist, sorted_app_ids, release_year,
-                                                                  max_num_tries_for_year)
+    if release_year is not None and year_constraint is not None:
+        filtered_sorted_app_ids = constrain_app_id_search_by_year(dist,
+                                                                  sorted_app_ids,
+                                                                  release_year,
+                                                                  max_num_tries_for_year,
+                                                                  year_constraint=year_constraint)
 
     closest_app_id = filtered_sorted_app_ids[0:num_closest_neighbors]
 
@@ -63,7 +88,11 @@ def find_closest_app_id(game_name_input, steamspy_database, release_year=None,
     return closest_app_id, closest_distance
 
 
-def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, max_num_tries_for_year=2):
+def precompute_matches(raw_votes,
+                       release_year=None,
+                       num_closest_neighbors=3,
+                       max_num_tries_for_year=2,
+                       year_constraint='equality'):
     seen_game_names = set()
     matches = dict()
 
@@ -76,10 +105,12 @@ def precompute_matches(raw_votes, release_year=None, num_closest_neighbors=3, ma
                 seen_game_names.add(raw_name)
 
                 if raw_name != '' and (raw_name not in noisy_votes):
-                    (closest_appID, closest_distance) = find_closest_app_id(raw_name, steamspy_database,
+                    (closest_appID, closest_distance) = find_closest_app_id(raw_name,
+                                                                            steamspy_database,
                                                                             release_year,
                                                                             num_closest_neighbors,
-                                                                            max_num_tries_for_year)
+                                                                            max_num_tries_for_year,
+                                                                            year_constraint=year_constraint)
 
                     element = dict()
                     element['input_name'] = raw_name
@@ -150,8 +181,15 @@ def normalize_votes(raw_votes, matches):
     return normalized_votes
 
 
-def standardize_ballots(ballots, release_year, print_after_sort=True):
-    matches = precompute_matches(ballots, release_year=release_year, num_closest_neighbors=3, max_num_tries_for_year=2)
+def standardize_ballots(ballots,
+                        release_year,
+                        print_after_sort=True,
+                        year_constraint='equality'):
+    matches = precompute_matches(ballots,
+                                 release_year=release_year,
+                                 num_closest_neighbors=3,
+                                 max_num_tries_for_year=2,
+                                 year_constraint=year_constraint)
 
     display_matches(matches, print_after_sort)
 

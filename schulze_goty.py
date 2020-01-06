@@ -270,12 +270,19 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
     return
 
 
-def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, try_to_break_ties=False):
+def apply_pipeline(input_filename,
+                   release_year='2018',
+                   fake_author_name=True,
+                   try_to_break_ties=False,
+                   year_constraint='equality'):
     ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
 
     # Standardize ballots
 
-    (standardized_ballots, matches) = standardize_ballots(ballots, release_year, print_after_sort=False)
+    (standardized_ballots, matches) = standardize_ballots(ballots,
+                                                          release_year,
+                                                          print_after_sort=False,
+                                                          year_constraint=year_constraint)
 
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
 
@@ -307,4 +314,8 @@ def apply_pipeline(input_filename, release_year='2018', fake_author_name=True, t
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    apply_pipeline(input_filename, release_year=ballot_year, fake_author_name=False, try_to_break_ties=False)
+    apply_pipeline(input_filename,
+                   release_year=ballot_year,
+                   fake_author_name=False,
+                   try_to_break_ties=False,
+                   year_constraint='equality')
