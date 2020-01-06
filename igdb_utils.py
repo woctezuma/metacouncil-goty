@@ -125,6 +125,22 @@ def get_game_category_no():
     return game_category_no
 
 
+def get_dlc_category_no():
+    # name 	                value
+    # ====================  =====
+    # main_game 	        0
+    # dlc_addon 	        1
+    # expansion 	        2
+    # bundle 	            3
+    # standalone_expansion 	4
+
+    # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
+
+    dlc_category_no = [1, 2]
+
+    return dlc_category_no
+
+
 def get_released_status_no():
     # name 	                value
     # ====================  =====
