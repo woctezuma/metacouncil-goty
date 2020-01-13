@@ -22,7 +22,9 @@ def constrain_app_id_search_by_year(dist,
             # Warhammer & Warhammer II, we would only keep the game released in the target year (2017), i.e. the sequel.
             is_the_first_match_released_in_a_wrong_year = True
             iter_count = 0
-            while is_the_first_match_released_in_a_wrong_year and (iter_count < max_num_tries_for_year):
+            while is_the_first_match_released_in_a_wrong_year and (iter_count < max_num_tries_for_year) \
+                    and len(filtered_sorted_app_ids) > 0:
+
                 first_match = filtered_sorted_app_ids[0]
                 matched_release_year = steampi.calendar.get_release_year(first_match)
 
