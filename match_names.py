@@ -77,10 +77,18 @@ def find_closest_app_id(game_name_input,
                         max_num_tries_for_year=2,
                         use_levenshtein_distance=True,
                         year_constraint='equality'):
+    if use_levenshtein_distance:
+        # n is not used by Levenshtein distance.
+        n = None
+    else:
+        # n is only used by difflib.
+        # NB: difflib may not return as many neighbors as requested, because difflib relies on a similarity cut-off.
+        n = num_closest_neighbors + max_num_tries_for_year
+
     (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input,
                                                                                  steamspy_database,
                                                                                  use_levenshtein_distance=use_levenshtein_distance,
-                                                                                 n=num_closest_neighbors)
+                                                                                 n=n)
 
     filtered_sorted_app_ids = sorted_app_ids
 
