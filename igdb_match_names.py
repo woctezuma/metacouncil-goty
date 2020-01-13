@@ -130,6 +130,9 @@ def main():
 
     use_igdb = True
 
+    # If SteamSpy is used instead of IGDB, choose between Levenshtein distance and difflib:
+    use_levenshtein_distance = True
+
     if use_igdb:
         # Using IGDB
 
@@ -152,7 +155,8 @@ def main():
         matches = precompute_matches(ballots,
                                      release_year=release_year,
                                      num_closest_neighbors=3,
-                                     max_num_tries_for_year=2)
+                                     max_num_tries_for_year=2,
+                                     use_levenshtein_distance=use_levenshtein_distance)
 
         display_matches(matches, print_after_sort=False)
 
