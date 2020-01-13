@@ -1,8 +1,7 @@
-import json
-
-from anonymize_data import get_data_folder
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
+from igdb_databases import load_igdb_local_database_file_name, load_igdb_match_database_file_name
+from igdb_databases import save_igdb_local_database_file_name, save_igdb_match_database_file_name
 from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches
@@ -19,7 +18,8 @@ def format_game_name_for_igdb(raw_name):
 def match_names_with_igdb(raw_votes,
                           release_year=None):
     seen_game_names = set()
-    matches = dict()
+    igdb_match_database = dict()
+    igdb_local_database = dict()
 
     steamspy_database = load_extended_steamspy_database()
     noisy_votes = get_hard_coded_noisy_votes()
@@ -43,30 +43,42 @@ def match_names_with_igdb(raw_votes,
                         igdb_matches = look_up_game_name(game_name=raw_name,
                                                          enforced_year=None)
 
+                    igdb_matched_ids = []
+
+                    for element in igdb_matches:
+                        igdb_id = element['id']
+                        igdb_data = element
+
+                        igdb_matched_ids.append(igdb_id)
+
+                        igdb_local_database[igdb_id] = igdb_data
+
                     # Caveat: For now, matches returned by match_names_with_igdb() does not have the same structure as
                     #         matches returned by precompute_matches(). TODO
-                    matches[raw_name] = igdb_matches
+                    igdb_match_database[raw_name] = igdb_matched_ids
 
-    return matches
+    return igdb_match_database, igdb_local_database
 
 
-def print_igdb_matches(matches,
+def print_igdb_matches(igdb_match_database,
+                       igdb_local_database,
                        constrained_release_year=None):
-    sorted_input_names = sorted(matches.keys())
+    sorted_input_names = sorted(igdb_match_database.keys())
 
     for raw_name in sorted_input_names:
-        igdb_matches = matches[raw_name]
+        igdb_matched_ids = igdb_match_database[raw_name]
 
         try:
-            igdb_best_match = igdb_matches[0]
+            igdb_best_matched_id = igdb_matched_ids[0]
         except IndexError:
-            igdb_best_match = None
+            igdb_best_matched_id = None
 
-        if igdb_best_match is not None:
+        if igdb_best_matched_id is not None:
+            igdb_data = igdb_local_database[str(igdb_best_matched_id)]
 
             release_years = set(
                 date['y']
-                for date in igdb_best_match['release_dates']
+                for date in igdb_data['release_dates']
                 if 'y' in date and (date['platform'] in get_pc_platform_range())
             )
 
@@ -85,7 +97,7 @@ def print_igdb_matches(matches,
                     ))
 
             print('\t{} ---> {} ({})'.format(raw_name,
-                                             igdb_best_match['name'],
+                                             igdb_data['name'],
                                              displayed_release_years,
                                              ))
         else:
@@ -94,51 +106,18 @@ def print_igdb_matches(matches,
     return
 
 
-def get_igdb_local_database_file_name(release_year=None):
-    if release_year is None:
-        suffix = ''
-    else:
-        suffix = '_' + str(release_year)
+def download_igdb_local_databases(ballots,
+                                  release_year=None):
+    igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
+                                                                     release_year=release_year)
 
-    file_name = get_data_folder() + 'igdb_database' + suffix + '.json'
+    save_igdb_match_database_file_name(data=igdb_match_database,
+                                       release_year=release_year)
 
-    return file_name
+    save_igdb_local_database_file_name(data=igdb_local_database,
+                                       release_year=release_year)
 
-
-def load_igdb_local_database_file_name(release_year=None,
-                                       file_name=None):
-    if file_name is None:
-        file_name = get_igdb_local_database_file_name(release_year=release_year)
-
-    with open(file_name, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    return data
-
-
-def save_igdb_local_database_file_name(data,
-                                       release_year=None,
-                                       file_name=None):
-    if file_name is None:
-        file_name = get_igdb_local_database_file_name(release_year=release_year)
-
-    with open(file_name, 'w', encoding='utf-8') as f:
-        json.dump(data, f)
-
-    return
-
-
-def download_igdb_local_database_file_name(ballots,
-                                           release_year=None,
-                                           file_name=None):
-    matches = match_names_with_igdb(ballots,
-                                    release_year=release_year)
-
-    save_igdb_local_database_file_name(data=matches,
-                                       release_year=release_year,
-                                       file_name=file_name)
-
-    return matches
+    return igdb_match_database, igdb_local_database
 
 
 def main():
@@ -155,12 +134,16 @@ def main():
         # Using IGDB
 
         try:
-            matches = load_igdb_local_database_file_name(release_year=release_year)
-        except FileNotFoundError:
-            matches = download_igdb_local_database_file_name(ballots,
-                                                             release_year=release_year)
+            igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
 
-        print_igdb_matches(matches,
+            igdb_local_database = load_igdb_local_database_file_name(release_year=release_year)
+
+        except FileNotFoundError:
+            igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
+                                                                                     release_year=release_year)
+
+        print_igdb_matches(igdb_match_database,
+                           igdb_local_database,
                            constrained_release_year=release_year)
 
     else:
