@@ -60,6 +60,16 @@ def apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app
     return closest_app_id
 
 
+def get_default_distance_cut_off_for_difflib():
+    # Reference: https://docs.python.org/3/library/difflib.html
+
+    similarity_cut_off = 0.6
+
+    distance_cut_off = 1 - similarity_cut_off
+
+    return distance_cut_off
+
+
 def find_closest_app_id(game_name_input,
                         steamspy_database,
                         release_year=None,
@@ -86,6 +96,13 @@ def find_closest_app_id(game_name_input,
     if check_database_of_problematic_game_names(game_name_input):
         closest_app_id = apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app_ids,
                                                                  num_closest_neighbors)
+
+        if not use_levenshtein_distance:
+            # With difflib, computations are more expensive than with Levenshtein distance, therefore dist only contains
+            # distances for a few entries. So, we set the distance to 0.4 (default cut-off) for all the other entries.
+            for app_id in closest_app_id:
+                if app_id not in dist.keys():
+                    dist[app_id] = get_default_distance_cut_off_for_difflib()
 
     closest_distance = [dist[app_id] for app_id in closest_app_id]
 
