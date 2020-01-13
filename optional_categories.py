@@ -29,7 +29,8 @@ def filter_noise_from_optional_ballots(optional_ballots):
     return filtered_optional_ballots
 
 
-def match_optional_ballots(optional_ballots):
+def match_optional_ballots(optional_ballots,
+                           use_levenshtein_distance=True):
     import steampi.calendar
 
     from extend_steamspy import load_extended_steamspy_database
@@ -47,7 +48,9 @@ def match_optional_ballots(optional_ballots):
         if raw_name not in seen_game_names:
             seen_game_names.add(raw_name)
 
-            (closest_appID, _) = find_closest_app_id(raw_name, steamspy_database)
+            (closest_appID, _) = find_closest_app_id(raw_name,
+                                                     steamspy_database,
+                                                     use_levenshtein_distance=use_levenshtein_distance)
 
             appID = closest_appID[0]
 
@@ -123,7 +126,9 @@ def pretty_display(ranking):
     return
 
 
-def display_optional_ballots(input_filename, filter_noise=True):
+def display_optional_ballots(input_filename,
+                             filter_noise=True,
+                             use_levenshtein_distance=True):
     from load_ballots import load_ballots
 
     ballots = load_ballots(input_filename)
@@ -136,7 +141,8 @@ def display_optional_ballots(input_filename, filter_noise=True):
         if filter_noise:
             optional_ballots = filter_noise_from_optional_ballots(optional_ballots)
 
-        optional_ballots = match_optional_ballots(optional_ballots)
+        optional_ballots = match_optional_ballots(optional_ballots,
+                                                  use_levenshtein_distance=use_levenshtein_distance)
 
         ranking = compute_ranking_based_on_optional_ballots(optional_ballots)
         pretty_display(ranking)
@@ -147,4 +153,6 @@ def display_optional_ballots(input_filename, filter_noise=True):
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    display_optional_ballots(input_filename)
+    use_levenshtein_distance = True
+    display_optional_ballots(input_filename,
+                             use_levenshtein_distance=use_levenshtein_distance)

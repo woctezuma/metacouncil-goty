@@ -65,8 +65,12 @@ def find_closest_app_id(game_name_input,
                         release_year=None,
                         num_closest_neighbors=1,
                         max_num_tries_for_year=2,
+                        use_levenshtein_distance=True,
                         year_constraint='equality'):
-    (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input, steamspy_database)
+    (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(game_name_input,
+                                                                                 steamspy_database,
+                                                                                 use_levenshtein_distance=use_levenshtein_distance,
+                                                                                 n=num_closest_neighbors)
 
     filtered_sorted_app_ids = sorted_app_ids
 
@@ -92,6 +96,7 @@ def precompute_matches(raw_votes,
                        release_year=None,
                        num_closest_neighbors=3,
                        max_num_tries_for_year=2,
+                       use_levenshtein_distance=True,
                        year_constraint='equality'):
     seen_game_names = set()
     matches = dict()
@@ -110,6 +115,7 @@ def precompute_matches(raw_votes,
                                                                             release_year,
                                                                             num_closest_neighbors,
                                                                             max_num_tries_for_year,
+                                                                            use_levenshtein_distance=use_levenshtein_distance,
                                                                             year_constraint=year_constraint)
 
                     element = dict()
@@ -184,11 +190,13 @@ def normalize_votes(raw_votes, matches):
 def standardize_ballots(ballots,
                         release_year,
                         print_after_sort=True,
+                        use_levenshtein_distance=True,
                         year_constraint='equality'):
     matches = precompute_matches(ballots,
                                  release_year=release_year,
                                  num_closest_neighbors=3,
                                  max_num_tries_for_year=2,
+                                 use_levenshtein_distance=use_levenshtein_distance,
                                  year_constraint=year_constraint)
 
     display_matches(matches, print_after_sort)
@@ -203,6 +211,9 @@ if __name__ == '__main__':
 
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+    use_levenshtein_distance = True
 
     ballots = load_ballots(input_filename)
-    (standardized_ballots, matches) = standardize_ballots(ballots, release_year=ballot_year)
+    (standardized_ballots, matches) = standardize_ballots(ballots,
+                                                          release_year=ballot_year,
+                                                          use_levenshtein_distance=use_levenshtein_distance)
