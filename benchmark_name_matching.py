@@ -67,6 +67,8 @@ def main():
     num_closest_neighbors = 3
     max_num_tries_for_year = 2
 
+    apply_hard_coded_extension_and_fixes = False
+
     print('\n\ti) Vanilla SteamSpy database with Levenshtein distance (without using the release year)\n')
 
     matches = run_benchmark_for_steam_spy(ballots,
@@ -86,7 +88,8 @@ def main():
     print('\n\tiii) Vanilla IGDB database (without using the release year)\n')
 
     igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
-                                                                         release_year=None)
+                                                                         release_year=None,
+                                                                         apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
 
     print_igdb_matches(igdb_match_database,
                        igdb_local_database,
@@ -95,7 +98,8 @@ def main():
     print('\n\tiv) Vanilla IGDB database (plus release year)\n')
 
     igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
-                                                                         release_year=release_year)
+                                                                         release_year=release_year,
+                                                                         apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
 
     print_igdb_matches(igdb_match_database,
                        igdb_local_database,

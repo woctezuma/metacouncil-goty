@@ -221,6 +221,7 @@ def standardize_ballots(ballots,
                         print_after_sort=True,
                         use_igdb=False,
                         retrieve_igdb_data_from_scratch=True,
+                        apply_hard_coded_extension_and_fixes=True,
                         use_levenshtein_distance=True,
                         year_constraint='equality'):
     if use_igdb:
@@ -228,10 +229,12 @@ def standardize_ballots(ballots,
 
         if retrieve_igdb_data_from_scratch:
             igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
-                                                                                     release_year=release_year)
+                                                                                     release_year=release_year,
+                                                                                     apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
         else:
             igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
-                                                                                 release_year=release_year)
+                                                                                 release_year=release_year,
+                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
 
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,

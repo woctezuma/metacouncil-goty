@@ -107,9 +107,12 @@ def print_igdb_matches(igdb_match_database,
 
 
 def download_igdb_local_databases(ballots,
-                                  release_year=None):
+                                  release_year=None,
+                                  apply_hard_coded_extension_and_fixes=True):
     igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
                                                                      release_year=release_year)
+
+    # Save data before applying any hard-coded change
 
     save_igdb_match_database_file_name(data=igdb_match_database,
                                        release_year=release_year)
@@ -117,11 +120,17 @@ def download_igdb_local_databases(ballots,
     save_igdb_local_database_file_name(data=igdb_local_database,
                                        release_year=release_year)
 
+    # Apply hard-coded changes: i) database extension and ii) fixes to name matching
+
+    if apply_hard_coded_extension_and_fixes:
+        pass  # TODO
+
     return igdb_match_database, igdb_local_database
 
 
 def load_igdb_local_databases(ballots,
                               release_year=None,
+                              apply_hard_coded_extension_and_fixes=True,
                               verbose=False):
     try:
         igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
@@ -130,7 +139,13 @@ def load_igdb_local_databases(ballots,
 
     except FileNotFoundError:
         igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
-                                                                                 release_year=release_year)
+                                                                                 release_year=release_year,
+                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
+
+    # Apply hard-coded changes: i) database extension and ii) fixes to name matching
+
+    if apply_hard_coded_extension_and_fixes:
+        pass  # TODO
 
     if verbose:
         print_igdb_matches(igdb_match_database,
