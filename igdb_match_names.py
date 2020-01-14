@@ -5,7 +5,6 @@ from igdb_databases import save_igdb_local_database_file_name, save_igdb_match_d
 from igdb_utils import get_steam_service_no, get_pc_platform_no
 from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
-from match_names import precompute_matches, display_matches
 
 
 def format_game_name_for_igdb(raw_name):
@@ -219,31 +218,12 @@ def main():
 
     release_year = ballot_year
 
-    use_igdb = True
+    igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                         release_year=release_year)
 
-    # If SteamSpy is used instead of IGDB, choose between Levenshtein distance and difflib:
-    use_levenshtein_distance = True
-
-    if use_igdb:
-        # Using IGDB
-
-        igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
-                                                                             release_year=release_year)
-
-        print_igdb_matches(igdb_match_database,
-                           igdb_local_database,
-                           constrained_release_year=release_year)
-
-    else:
-        # Using SteamSpy
-
-        matches = precompute_matches(ballots,
-                                     release_year=release_year,
-                                     num_closest_neighbors=3,
-                                     max_num_tries_for_year=2,
-                                     use_levenshtein_distance=use_levenshtein_distance)
-
-        display_matches(matches, print_after_sort=False)
+    print_igdb_matches(igdb_match_database,
+                       igdb_local_database,
+                       constrained_release_year=release_year)
 
     return True
 
