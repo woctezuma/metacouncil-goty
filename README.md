@@ -61,7 +61,7 @@ However:
 -   IGDB's database is larger than SteamSpy's, so name matching could be better, thanks to the availability of alternative names.
 -   typos are not a big issue: they are rare in the input game names for the GotY votes.
 
-A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma/metacouncil-goty/wiki/Benchmark.md) on the Wiki.
+A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma/metacouncil-goty/wiki/Benchmark) on the Wiki.
 
 The mismatches observed with the 2018 dataset are counted, and the best performing methods are:
 1.  IGDB database with a constraint w.r.t. the release year: **8 mismatches**,
