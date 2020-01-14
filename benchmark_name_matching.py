@@ -8,8 +8,7 @@ import steampi.text_distances
 import steamspypi.api
 
 from disqualify_vote import get_hard_coded_noisy_votes
-from igdb_databases import load_igdb_local_database_file_name, load_igdb_match_database_file_name
-from igdb_match_names import download_igdb_local_databases, print_igdb_matches
+from igdb_match_names import load_igdb_local_databases, print_igdb_matches
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches, constrain_app_id_search_by_year
 
@@ -86,14 +85,8 @@ def main():
 
     print('\n\tiii) Vanilla IGDB database (without using the release year)\n')
 
-    try:
-        igdb_match_database = load_igdb_match_database_file_name(release_year=None)
-
-        igdb_local_database = load_igdb_local_database_file_name(release_year=None)
-
-    except FileNotFoundError:
-        igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
-                                                                                 release_year=None)
+    igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                         release_year=None)
 
     print_igdb_matches(igdb_match_database,
                        igdb_local_database,
@@ -101,14 +94,8 @@ def main():
 
     print('\n\tiv) Vanilla IGDB database (plus release year)\n')
 
-    try:
-        igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
-
-        igdb_local_database = load_igdb_local_database_file_name(release_year=release_year)
-
-    except FileNotFoundError:
-        igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
-                                                                                 release_year=release_year)
+    igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                         release_year=release_year)
 
     print_igdb_matches(igdb_match_database,
                        igdb_local_database,

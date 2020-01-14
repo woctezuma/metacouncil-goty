@@ -120,6 +120,20 @@ def download_igdb_local_databases(ballots,
     return igdb_match_database, igdb_local_database
 
 
+def load_igdb_local_databases(ballots,
+                              release_year=None):
+    try:
+        igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
+
+        igdb_local_database = load_igdb_local_database_file_name(release_year=release_year)
+
+    except FileNotFoundError:
+        igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
+                                                                                 release_year=release_year)
+
+    return igdb_match_database, igdb_local_database
+
+
 def main():
     ballot_year = '2018'
     input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
@@ -136,14 +150,8 @@ def main():
     if use_igdb:
         # Using IGDB
 
-        try:
-            igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
-
-            igdb_local_database = load_igdb_local_database_file_name(release_year=release_year)
-
-        except FileNotFoundError:
-            igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
-                                                                                     release_year=release_year)
+        igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                             release_year=release_year)
 
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,
