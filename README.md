@@ -56,10 +56,22 @@ In practice, Levenshtein distance is effective at fixing typos, but cannot work 
 > RESIDENT EVIL 7 biohazard / BIOHAZARD 7 resident evil
 
 If IGDB is used, then the API is queried, but the whole database is not locally available, so name matching is delegated to IGDB.
-In theory, this seems to lead to worse results if there are typos in the input names.
-However, IGDB's database is larger than SteamSpy's, so name matching could be better, thanks to the availability of alternative names.
+In theory, this could lead to worse results if there are typos in the input names.
+However:
+-   IGDB's database is larger than SteamSpy's, so name matching could be better, thanks to the availability of alternative names.
+-   typos are not a big issue: they are rare in the input game names for the GotY votes.
 
-A quantitative comparison would be welcome. 
+A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma/metacouncil-goty/wiki/Benchmark.md) on the Wiki.
+
+The mismatches observed with the 2018 dataset are counted, and the best performing methods are:
+1.  IGDB database with a constraint w.r.t. the release year: **8 mismatches**,
+2.  IGDB database: 11 mismatches,
+3.  vanilla SteamSpy database with difflib matching and a constraint w.r.t. the release yar: 12 mismatches,
+4.  vanilla SteamSpy database with difflib matching: 14 mismatches,
+5.  vanilla SteamSpy database with Levenshtein distance: 18 mismatches (same performance with and without constraint). 
+
+In summary, in order to minimize the number of manual edits necessary to extend the database and to fix name mismatches,
+the most promising method involves using the IGSB database with a constraint w.r.t. the release year.
 
 ## References
 
