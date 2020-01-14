@@ -2,6 +2,7 @@ from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
 from igdb_databases import load_igdb_local_database_file_name, load_igdb_match_database_file_name
 from igdb_databases import save_igdb_local_database_file_name, save_igdb_match_database_file_name
+from igdb_utils import get_steam_service_no, get_pc_platform_no
 from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches
@@ -167,6 +168,20 @@ def transform_structure_of_matches(igdb_match_database,
             for igdb_id in igdb_match_database[raw_name]
         ]
 
+        igdb_matched_pc_release_dates = [
+            element['human']
+            for igdb_id_as_str in igdb_matched_ids
+            for element in igdb_local_database[igdb_id_as_str]['release_dates']
+            if element['platform'] == get_pc_platform_no()
+        ]
+
+        steam_matched_ids = [
+            element['uid']
+            for igdb_id_as_str in igdb_matched_ids
+            for element in igdb_local_database[igdb_id_as_str]['external_games']
+            if element['category'] == get_steam_service_no()
+        ]
+
         igdb_matched_slugs = [
             igdb_local_database[igdb_id_as_str]['slug']
             for igdb_id_as_str in igdb_matched_ids
@@ -184,7 +199,9 @@ def transform_structure_of_matches(igdb_match_database,
 
         element = dict()
         element['input_name'] = raw_name
-        element['matched_appID'] = igdb_matched_ids  # Steam urls rely on the appID, which is the game ID on the store.
+        element['matched_igdbID'] = igdb_matched_ids
+        element['matched_pc_release_date'] = igdb_matched_pc_release_dates
+        element['matched_appID'] = steam_matched_ids  # Steam urls rely on the appID, which is the game ID on the store.
         element['matched_slug'] = igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
         element['matched_name'] = igdb_matched_names
         element['match_distance'] = dummy_distances
