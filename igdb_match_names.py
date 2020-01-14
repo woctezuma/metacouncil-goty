@@ -140,6 +140,45 @@ def load_igdb_local_databases(ballots,
     return igdb_match_database, igdb_local_database
 
 
+def transform_structure_of_matches(igdb_match_database,
+                                   igdb_local_database):
+    # Retro-compatibility with code written for SteamSpy
+
+    matches = dict()
+
+    for raw_name in igdb_match_database.keys():
+        igdb_matched_ids = [
+            str(igdb_id)
+            for igdb_id in igdb_match_database[raw_name]
+        ]
+
+        igdb_matched_slugs = [
+            igdb_local_database[igdb_id_as_str]['slug']
+            for igdb_id_as_str in igdb_matched_ids
+        ]
+
+        igdb_matched_names = [
+            igdb_local_database[igdb_id_as_str]['name']
+            for igdb_id_as_str in igdb_matched_ids
+        ]
+
+        dummy_distances = [
+            None
+            for _ in igdb_matched_ids
+        ]
+
+        element = dict()
+        element['input_name'] = raw_name
+        element['matched_appID'] = igdb_matched_ids  # Steam urls rely on the appID, which is the game ID on the store.
+        element['matched_slug'] = igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
+        element['matched_name'] = igdb_matched_names
+        element['match_distance'] = dummy_distances
+
+        matches[raw_name] = element
+
+    return matches
+
+
 def main():
     ballot_year = '2018'
     input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'

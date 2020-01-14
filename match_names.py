@@ -4,6 +4,8 @@ import steampi.text_distances
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
+from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases, print_igdb_matches
+from igdb_match_names import transform_structure_of_matches
 
 
 def constrain_app_id_search_by_year(dist,
@@ -217,16 +219,40 @@ def normalize_votes(raw_votes, matches):
 def standardize_ballots(ballots,
                         release_year,
                         print_after_sort=True,
+                        use_igdb=False,
+                        retrieve_igdb_data_from_scratch=True,
                         use_levenshtein_distance=True,
                         year_constraint='equality'):
-    matches = precompute_matches(ballots,
-                                 release_year=release_year,
-                                 num_closest_neighbors=3,
-                                 max_num_tries_for_year=2,
-                                 use_levenshtein_distance=use_levenshtein_distance,
-                                 year_constraint=year_constraint)
+    if use_igdb:
+        # Using IGDB
 
-    display_matches(matches, print_after_sort)
+        if retrieve_igdb_data_from_scratch:
+            igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
+                                                                                     release_year=release_year)
+        else:
+            igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                                 release_year=release_year)
+
+        print_igdb_matches(igdb_match_database,
+                           igdb_local_database,
+                           constrained_release_year=release_year)
+
+        matches = transform_structure_of_matches(
+            igdb_match_database,
+            igdb_local_database,
+        )
+
+    else:
+        # Using SteamSpy
+
+        matches = precompute_matches(ballots,
+                                     release_year=release_year,
+                                     num_closest_neighbors=3,
+                                     max_num_tries_for_year=2,
+                                     use_levenshtein_distance=use_levenshtein_distance,
+                                     year_constraint=year_constraint)
+
+        display_matches(matches, print_after_sort)
 
     standardized_ballots = normalize_votes(ballots, matches)
 
