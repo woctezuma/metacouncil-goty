@@ -11,11 +11,13 @@ from disqualify_vote import get_hard_coded_noisy_votes
 from igdb_databases import load_igdb_local_database_file_name, load_igdb_match_database_file_name
 from igdb_match_names import download_igdb_local_databases, print_igdb_matches
 from load_ballots import load_ballots
-from match_names import precompute_matches, display_matches
+from match_names import precompute_matches, display_matches, constrain_app_id_search_by_year
 
 
 def run_benchmark_for_steam_spy(raw_votes,
+                                release_year=None,
                                 num_closest_neighbors=1,
+                                max_num_tries_for_year=0,
                                 use_levenshtein_distance=True):
     seen_game_names = set()
     matches = dict()
@@ -34,6 +36,12 @@ def run_benchmark_for_steam_spy(raw_votes,
                                                                                                  steamspy_database,
                                                                                                  use_levenshtein_distance=use_levenshtein_distance,
                                                                                                  n=num_closest_neighbors)
+
+                    if release_year is not None:
+                        sorted_app_ids = constrain_app_id_search_by_year(dist,
+                                                                         sorted_app_ids,
+                                                                         release_year,
+                                                                         max_num_tries_for_year)
 
                     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
                     closest_distance = [dist[app_id] for app_id in closest_app_id]
@@ -123,6 +131,26 @@ def main():
                                  num_closest_neighbors=num_closest_neighbors,
                                  max_num_tries_for_year=max_num_tries_for_year,
                                  use_levenshtein_distance=False)
+
+    display_matches(matches, print_after_sort=False)
+
+    print('\n\tvii) Vanilla SteamSpy database with Levenshtein distance (plus release year)\n')
+
+    matches = run_benchmark_for_steam_spy(ballots,
+                                          release_year=release_year,
+                                          num_closest_neighbors=num_closest_neighbors,
+                                          max_num_tries_for_year=max_num_tries_for_year,
+                                          use_levenshtein_distance=True)
+
+    display_matches(matches, print_after_sort=False)
+
+    print('\n\tviii) Vanilla SteamSpy database with difflib (plus release year)\n')
+
+    matches = run_benchmark_for_steam_spy(ballots,
+                                          release_year=release_year,
+                                          num_closest_neighbors=num_closest_neighbors,
+                                          max_num_tries_for_year=max_num_tries_for_year,
+                                          use_levenshtein_distance=False)
 
     display_matches(matches, print_after_sort=False)
 
