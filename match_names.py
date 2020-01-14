@@ -205,6 +205,11 @@ def normalize_votes(raw_votes, matches):
 
             if game_name in matches.keys():
 
+                # Display game name before error due to absence of any matched IGDB ID, in order to make it easier to
+                # incrementally and manually add hard-coded matches:
+                if len(matches[game_name]['matched_appID']) == 0:
+                    print('[Warning] no match found for {}'.format(game_name))
+
                 normalized_votes[voter_name]['ballots'][position] = matches[game_name]['matched_appID'][
                     neighbor_reference_index]
                 normalized_votes[voter_name]['distances'][position] = matches[game_name]['match_distance'][
