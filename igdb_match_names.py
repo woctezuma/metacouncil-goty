@@ -167,19 +167,27 @@ def transform_structure_of_matches(igdb_match_database,
             for igdb_id in igdb_match_database[raw_name]
         ]
 
-        igdb_matched_pc_release_dates = [
-            element['human']
-            for igdb_id_as_str in igdb_matched_ids
-            for element in igdb_local_database[igdb_id_as_str]['release_dates']
-            if element['platform'] == get_pc_platform_no()
-        ]
+        igdb_matched_pc_release_dates = []
+        for igdb_id_as_str in igdb_matched_ids:
+            try:
+                release_dates = igdb_local_database[igdb_id_as_str]['release_dates']
+            except KeyError:
+                continue
+            for element in release_dates:
+                if element['platform'] == get_pc_platform_no():
+                    release_date = element['human']
+                    igdb_matched_pc_release_dates.append(release_date)
 
-        steam_matched_ids = [
-            element['uid']
-            for igdb_id_as_str in igdb_matched_ids
-            for element in igdb_local_database[igdb_id_as_str]['external_games']
-            if element['category'] == get_steam_service_no()
-        ]
+        steam_matched_ids = []
+        for igdb_id_as_str in igdb_matched_ids:
+            try:
+                external_games = igdb_local_database[igdb_id_as_str]['external_games']
+            except KeyError:
+                continue
+            for element in external_games:
+                if element['category'] == get_steam_service_no():
+                    steam_app_id = element['uid']
+                    steam_matched_ids.append(steam_app_id)
 
         igdb_matched_slugs = [
             igdb_local_database[igdb_id_as_str]['slug']
