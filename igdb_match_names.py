@@ -54,7 +54,7 @@ def match_names_with_igdb(raw_votes,
                         igdb_local_database[igdb_id] = igdb_data
 
                     # Caveat: For now, matches returned by match_names_with_igdb() does not have the same structure as
-                    #         matches returned by precompute_matches(). TODO
+                    #         matches returned by precompute_matches(). cf. transform_structure_of_matches()
                     igdb_match_database[raw_name] = igdb_matched_ids
 
     return igdb_match_database, igdb_local_database
