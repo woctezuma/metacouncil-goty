@@ -121,7 +121,8 @@ def download_igdb_local_databases(ballots,
 
 
 def load_igdb_local_databases(ballots,
-                              release_year=None):
+                              release_year=None,
+                              verbose=False):
     try:
         igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
 
@@ -130,6 +131,11 @@ def load_igdb_local_databases(ballots,
     except FileNotFoundError:
         igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
                                                                                  release_year=release_year)
+
+    if verbose:
+        print_igdb_matches(igdb_match_database,
+                           igdb_local_database,
+                           constrained_release_year=release_year)
 
     return igdb_match_database, igdb_local_database
 
