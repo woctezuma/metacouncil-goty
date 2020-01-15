@@ -82,14 +82,56 @@ def extend_igdb_match_database(release_year=None,
     return extended_igdb_match_database
 
 
+from igdb_utils import look_up_game_id
+
+
+def fill_in_blanks_in_the_local_database(release_year=None,
+                                         igdb_local_database=None):
+    augmented_igdb_local_database = igdb_local_database
+
+    fixes_to_igdb_match_database = load_fixes_to_igdb_match_database(release_year=release_year)
+
+    required_igdb_ids = []
+    for igdb_ids in fixes_to_igdb_match_database.values():
+        required_igdb_ids += igdb_ids
+
+    for igdb_id in required_igdb_ids:
+        igdb_id_as_str = str(igdb_id)
+
+        is_a_real_igdb_id = bool(igdb_id >= 0)
+
+        if is_a_real_igdb_id and igdb_id_as_str not in augmented_igdb_local_database.keys():
+            # Give as much freedom as possible: we **know** the IGDB ID (and it is a real IGDB ID since it is positive),
+            # but we ignore the reason why the matching previously failed. It is likely due a combination of missing
+            # information about the PC release on IGDB, and our parameters constraining the search to PC games.
+            encapsulated_data = look_up_game_id(igdb_id,
+                                                must_be_available_on_pc=False,
+                                                must_be_a_game=False)
+
+            data = encapsulated_data[0]
+
+            augmented_igdb_local_database[igdb_id_as_str] = data
+
+    return augmented_igdb_local_database
+
+
 def extend_both_igdb_databases(release_year=None,
                                igdb_match_database=None,
                                igdb_local_database=None):
+    # Manual extension of the match database
+
     extended_igdb_match_database = extend_igdb_match_database(release_year=release_year,
                                                               igdb_match_database=igdb_match_database)
 
+    # Manual extension of the local database
+
     extended_igdb_local_database = extend_igdb_local_database(release_year=release_year,
                                                               igdb_local_database=igdb_local_database)
+
+    # Automatic extension of the local database after the manual extension of the match database
+
+    extended_igdb_local_database = fill_in_blanks_in_the_local_database(release_year=release_year,
+                                                                        igdb_local_database=extended_igdb_local_database)
 
     return extended_igdb_match_database, extended_igdb_local_database
 
