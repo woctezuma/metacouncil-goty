@@ -77,11 +77,15 @@ def print_igdb_matches(igdb_match_database,
         if igdb_best_matched_id is not None:
             igdb_data = igdb_local_database[str(igdb_best_matched_id)]
 
-            release_years = set(
-                date['y']
-                for date in igdb_data['release_dates']
-                if 'y' in date and (date['platform'] in get_pc_platform_range())
-            )
+            try:
+                release_years = set(
+                    date['y']
+                    for date in igdb_data['release_dates']
+                    if 'y' in date and (date['platform'] in get_pc_platform_range())
+                )
+            except KeyError:
+                # Unknown release date
+                release_years = [None]
 
             if len(release_years) > 1:
                 displayed_release_years = sorted(release_years)
