@@ -32,8 +32,8 @@ def get_igdb_local_database_file_name(release_year=None):
     return file_name
 
 
-def load_igdb_match_database_file_name(release_year=None,
-                                       file_name=None):
+def load_igdb_match_database(release_year=None,
+                             file_name=None):
     if file_name is None:
         file_name = get_igdb_match_database_file_name(release_year=release_year)
 
@@ -43,9 +43,9 @@ def load_igdb_match_database_file_name(release_year=None,
     return data
 
 
-def save_igdb_match_database_file_name(data,
-                                       release_year=None,
-                                       file_name=None):
+def save_igdb_match_database(data,
+                             release_year=None,
+                             file_name=None):
     if file_name is None:
         file_name = get_igdb_match_database_file_name(release_year=release_year)
 
@@ -55,8 +55,8 @@ def save_igdb_match_database_file_name(data,
     return
 
 
-def load_igdb_local_database_file_name(release_year=None,
-                                       file_name=None):
+def load_igdb_local_database(release_year=None,
+                             file_name=None):
     if file_name is None:
         file_name = get_igdb_local_database_file_name(release_year=release_year)
 
@@ -66,9 +66,9 @@ def load_igdb_local_database_file_name(release_year=None,
     return data
 
 
-def save_igdb_local_database_file_name(data,
-                                       release_year=None,
-                                       file_name=None):
+def save_igdb_local_database(data,
+                             release_year=None,
+                             file_name=None):
     if file_name is None:
         file_name = get_igdb_local_database_file_name(release_year=release_year)
 
@@ -81,9 +81,9 @@ def save_igdb_local_database_file_name(data,
 def main():
     release_year = '2018'
 
-    igdb_match_database = load_igdb_match_database_file_name(release_year)
+    igdb_match_database = load_igdb_match_database(release_year)
 
-    igdb_local_database = load_igdb_local_database_file_name(release_year)
+    igdb_local_database = load_igdb_local_database(release_year)
 
     return True
 

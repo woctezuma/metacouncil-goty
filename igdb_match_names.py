@@ -1,7 +1,7 @@
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_steamspy import load_extended_steamspy_database
-from igdb_databases import load_igdb_local_database_file_name, load_igdb_match_database_file_name
-from igdb_databases import save_igdb_local_database_file_name, save_igdb_match_database_file_name
+from igdb_databases import load_igdb_local_database, load_igdb_match_database
+from igdb_databases import save_igdb_local_database, save_igdb_match_database
 from igdb_utils import get_steam_service_no, get_pc_platform_no
 from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
@@ -114,11 +114,11 @@ def download_igdb_local_databases(ballots,
 
     # Save data before applying any hard-coded change
 
-    save_igdb_match_database_file_name(data=igdb_match_database,
-                                       release_year=release_year)
+    save_igdb_match_database(data=igdb_match_database,
+                             release_year=release_year)
 
-    save_igdb_local_database_file_name(data=igdb_local_database,
-                                       release_year=release_year)
+    save_igdb_local_database(data=igdb_local_database,
+                             release_year=release_year)
 
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
@@ -133,9 +133,9 @@ def load_igdb_local_databases(ballots,
                               apply_hard_coded_extension_and_fixes=True,
                               verbose=False):
     try:
-        igdb_match_database = load_igdb_match_database_file_name(release_year=release_year)
+        igdb_match_database = load_igdb_match_database(release_year=release_year)
 
-        igdb_local_database = load_igdb_local_database_file_name(release_year=release_year)
+        igdb_local_database = load_igdb_local_database(release_year=release_year)
 
     except FileNotFoundError:
         igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
