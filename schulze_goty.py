@@ -36,15 +36,29 @@ def filter_out_votes_for_early_access_titles(standardized_ballots):
     return standardized_ballots
 
 
+def get_local_database(target_release_year=None,
+                       use_igdb=False):
+    if use_igdb:
+        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
+        steamspy_database = None
+
+        local_database = extended_igdb_local_database
+    else:
+        extended_igdb_local_database = None
+        steamspy_database = load_extended_steamspy_database()
+
+        local_database = steamspy_database
+
+    return local_database
+
+
 def filter_out_votes_for_wrong_release_years(standardized_ballots,
                                              target_release_year,
                                              use_igdb=False):
     # Objective: remove appID which gathered votes but were not released during the target release year
 
-    if use_igdb:
-        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
-    else:
-        extended_igdb_local_database = None
+    local_database = get_local_database(target_release_year=target_release_year,
+                                        use_igdb=use_igdb)
 
     print()
 
@@ -58,11 +72,13 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
         for position in sorted(current_ballots.keys()):
             app_id = current_ballots[position]
             if app_id is not None:
+                app_id_as_str = str(app_id)
+                app_data = local_database[app_id_as_str]
+                app_name = app_data['name']
+
                 if app_id not in release_years.keys():
                     if use_igdb:
-                        app_id_as_str = str(app_id)
-                        igdb_data = extended_igdb_local_database[app_id_as_str]
-                        possible_release_years, year_to_remember = get_igdb_release_years(igdb_data,
+                        possible_release_years, year_to_remember = get_igdb_release_years(app_data,
                                                                                           target_release_year=target_release_year)
                         release_years[app_id] = year_to_remember
                     else:
@@ -70,11 +86,18 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                 if release_years[app_id] == int(target_release_year):
                     current_ballots_list.append(app_id)
                 elif release_years[app_id] == -1:
-                    print('AppID ' + app_id + ' not found on Steam (either a console game, or from another PC store)')
+                    print('AppID {} ({}) not found on Steam (either a console game, or from another PC store)'.format(
+                        app_id,
+                        app_name,
+                    ))
                     current_ballots_list.append(app_id)
                 else:
                     if app_id not in removed_app_ids:
-                        print('AppID ' + app_id + ' removed because it was released in ' + str(release_years[app_id]))
+                        print('AppID {} ({}) removed because it was released in {}'.format(
+                            app_id,
+                            app_name,
+                            release_years[app_id],
+                        ))
                         removed_app_ids.append(app_id)
 
         for (i, current_ballot) in enumerate(current_ballots_list):
@@ -135,16 +158,8 @@ def compute_schulze_ranking(standardized_ballots):
 def print_schulze_ranking(schulze_ranking,
                           target_release_year=None,
                           use_igdb=False):
-    if use_igdb:
-        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
-        steamspy_database = None
-
-        local_database = extended_igdb_local_database
-    else:
-        extended_igdb_local_database = None
-        steamspy_database = load_extended_steamspy_database()
-
-        local_database = steamspy_database
+    local_database = get_local_database(target_release_year=target_release_year,
+                                        use_igdb=use_igdb)
 
     print()
 
