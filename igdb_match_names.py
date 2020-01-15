@@ -1,4 +1,5 @@
 from disqualify_vote import get_hard_coded_noisy_votes
+from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import load_extended_steamspy_database
 from igdb_databases import load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database, save_igdb_match_database
@@ -123,7 +124,9 @@ def download_igdb_local_databases(ballots,
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
     if apply_hard_coded_extension_and_fixes:
-        pass  # TODO
+        igdb_match_database, igdb_local_database = extend_both_igdb_databases(release_year=release_year,
+                                                                              igdb_match_database=igdb_match_database,
+                                                                              igdb_local_database=igdb_local_database)
 
     return igdb_match_database, igdb_local_database
 
@@ -145,7 +148,9 @@ def load_igdb_local_databases(ballots,
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
     if apply_hard_coded_extension_and_fixes:
-        pass  # TODO
+        igdb_match_database, igdb_local_database = extend_both_igdb_databases(release_year=release_year,
+                                                                              igdb_match_database=igdb_match_database,
+                                                                              igdb_local_database=igdb_local_database)
 
     if verbose:
         print_igdb_matches(igdb_match_database,
