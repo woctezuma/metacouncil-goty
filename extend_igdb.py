@@ -121,15 +121,15 @@ def extend_both_igdb_databases(release_year=None,
     extended_igdb_match_database = extend_igdb_match_database(release_year=release_year,
                                                               igdb_match_database=igdb_match_database)
 
+    # Automatic extension of the local database after the manual extension of the match database
+
+    augmented_igdb_local_database = fill_in_blanks_in_the_local_database(release_year=release_year,
+                                                                         igdb_local_database=igdb_local_database)
+
     # Manual extension of the local database
 
     extended_igdb_local_database = extend_igdb_local_database(release_year=release_year,
-                                                              igdb_local_database=igdb_local_database)
-
-    # Automatic extension of the local database after the manual extension of the match database
-
-    extended_igdb_local_database = fill_in_blanks_in_the_local_database(release_year=release_year,
-                                                                        igdb_local_database=extended_igdb_local_database)
+                                                              igdb_local_database=augmented_igdb_local_database)
 
     return extended_igdb_match_database, extended_igdb_local_database
 
