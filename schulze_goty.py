@@ -132,13 +132,24 @@ def compute_schulze_ranking(standardized_ballots):
     return schulze_ranking
 
 
-def print_schulze_ranking(schulze_ranking):
-    steamspy_database = load_extended_steamspy_database()
+def print_schulze_ranking(schulze_ranking,
+                          target_release_year=None,
+                          use_igdb=False):
+    if use_igdb:
+        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
+        steamspy_database = None
+
+        local_database = extended_igdb_local_database
+    else:
+        extended_igdb_local_database = None
+        steamspy_database = load_extended_steamspy_database()
+
+        local_database = steamspy_database
 
     print()
 
     def get_game_name(app_id):
-        return steamspy_database[app_id]['name']
+        return local_database[app_id]['name']
 
     offset = 0
 
@@ -147,13 +158,22 @@ def print_schulze_ranking(schulze_ranking):
         for appID in sorted(appID_group, key=get_game_name):
             game_name = get_game_name(appID)
 
-            app_id_release_date = steampi.calendar.get_release_date_as_str(appID)
+            if use_igdb:
+
+                _, app_id_release_date = get_igdb_human_release_dates(appID,
+                                                                      local_database)
+                app_url = get_link_to_igdb_website(appID,
+                                                   local_database)
+            else:
+                app_id_release_date = steampi.calendar.get_release_date_as_str(appID)
+                app_url = get_link_to_store(appID)
+
             if app_id_release_date is None:
                 app_id_release_date = 'an unknown date'
 
             print('{0:2} | '.format(rank + offset + 1)
                   + game_name.strip()
-                  + ' (appID: ' + get_link_to_store(appID)
+                  + ' (appID: ' + app_url
                   + ', released on ' + app_id_release_date + ')'
                   )
 
@@ -326,7 +346,9 @@ def apply_pipeline(input_filename,
     if try_to_break_ties:
         schulze_ranking = try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots)
 
-    print_schulze_ranking(schulze_ranking)
+    print_schulze_ranking(schulze_ranking,
+                          target_release_year=release_year,
+                          use_igdb=use_igdb)
 
     print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
                                                    num_app_id_groups_to_display=7)
