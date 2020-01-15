@@ -8,6 +8,76 @@ from igdb_utils import look_up_game_name, get_pc_platform_range
 from load_ballots import load_ballots
 
 
+def get_link_to_igdb_website(igdb_id,
+                             igdb_local_database,
+                             hide_dummy_app_id=True):
+    igdb_base_url = 'https://www.igdb.com/games/'
+
+    igdb_data = igdb_local_database[igdb_id]
+    slug = igdb_data['slug']
+
+    if int(igdb_id) > 0:
+        link_to_store = '[URL=' + igdb_base_url + slug + '/]' + igdb_id + '[/URL]'
+    else:
+        if hide_dummy_app_id:
+            link_to_store = 'n/a'
+        else:
+            link_to_store = igdb_id
+    return link_to_store
+
+
+def get_igdb_human_release_dates(igdb_id,
+                                 igdb_local_database):
+    igdb_data = igdb_local_database[igdb_id]
+
+    try:
+        human_release_dates = set(
+            date['human']
+            for date in igdb_data['release_dates']
+            if 'human' in date and (date['platform'] in get_pc_platform_range())
+        )
+    except KeyError:
+        # Unknown release date
+        human_release_dates = [None]
+
+    if len(human_release_dates) > 0:
+        human_release_date_to_remember = max(human_release_dates)
+    else:
+        human_release_date_to_remember = None
+
+    return human_release_dates, human_release_date_to_remember
+
+
+def get_igdb_release_years(igdb_data,
+                           target_release_year=None):
+    try:
+        release_years = set(
+            date['y']
+            for date in igdb_data['release_dates']
+            if 'y' in date and (date['platform'] in get_pc_platform_range())
+        )
+    except KeyError:
+        # Unknown release date
+        release_years = [None]
+
+    year_to_remember = -1
+
+    if target_release_year is not None:
+        target_release_year_as_int = int(target_release_year)
+
+        if len(release_years) > 0:
+            if target_release_year_as_int in release_years:
+                year_to_remember = target_release_year_as_int
+            else:
+                the_most_recent_date = max(release_years)
+                year_to_remember = the_most_recent_date
+
+                if year_to_remember is None:
+                    year_to_remember = -1
+
+    return release_years, year_to_remember
+
+
 def format_game_name_for_igdb(raw_name):
     formatted_game_name_for_igdb = raw_name
     formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace('®', ' ')
@@ -77,15 +147,8 @@ def print_igdb_matches(igdb_match_database,
         if igdb_best_matched_id is not None:
             igdb_data = igdb_local_database[str(igdb_best_matched_id)]
 
-            try:
-                release_years = set(
-                    date['y']
-                    for date in igdb_data['release_dates']
-                    if 'y' in date and (date['platform'] in get_pc_platform_range())
-                )
-            except KeyError:
-                # Unknown release date
-                release_years = [None]
+            release_years, year_to_remember = get_igdb_release_years(igdb_data,
+                                                                     target_release_year=constrained_release_year)
 
             if len(release_years) > 1:
                 displayed_release_years = sorted(release_years)

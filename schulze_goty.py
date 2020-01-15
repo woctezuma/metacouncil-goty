@@ -1,7 +1,9 @@
 import steampi.calendar
 
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
+from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import load_extended_steamspy_database
+from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, get_igdb_human_release_dates
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
 from steam_store_utils import get_link_to_store, get_early_access_status
@@ -34,8 +36,15 @@ def filter_out_votes_for_early_access_titles(standardized_ballots):
     return standardized_ballots
 
 
-def filter_out_votes_for_wrong_release_years(standardized_ballots, target_release_year):
+def filter_out_votes_for_wrong_release_years(standardized_ballots,
+                                             target_release_year,
+                                             use_igdb=False):
     # Objective: remove appID which gathered votes but were not released during the target release year
+
+    if use_igdb:
+        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
+    else:
+        extended_igdb_local_database = None
 
     print()
 
@@ -50,7 +59,14 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots, target_releas
             app_id = current_ballots[position]
             if app_id is not None:
                 if app_id not in release_years.keys():
-                    release_years[app_id] = steampi.calendar.get_release_year(app_id)
+                    if use_igdb:
+                        app_id_as_str = str(app_id)
+                        igdb_data = extended_igdb_local_database[app_id_as_str]
+                        possible_release_years, year_to_remember = get_igdb_release_years(igdb_data,
+                                                                                          target_release_year=target_release_year)
+                        release_years[app_id] = year_to_remember
+                    else:
+                        release_years[app_id] = steampi.calendar.get_release_year(app_id)
                 if release_years[app_id] == int(target_release_year):
                     current_ballots_list.append(app_id)
                 elif release_years[app_id] == -1:
@@ -292,11 +308,16 @@ def apply_pipeline(input_filename,
                                                           use_levenshtein_distance=use_levenshtein_distance,
                                                           year_constraint=year_constraint)
 
-    standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots, release_year)
+    standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots,
+                                                                    release_year,
+                                                                    use_igdb=use_igdb)
 
-    standardized_ballots = filter_out_votes_for_early_access_titles(standardized_ballots)
+    if not use_igdb:
+        standardized_ballots = filter_out_votes_for_early_access_titles(standardized_ballots)
 
-    standardized_ballots = filter_out_votes_for_hard_coded_reasons(standardized_ballots)
+    standardized_ballots = filter_out_votes_for_hard_coded_reasons(standardized_ballots,
+                                                                   release_year=release_year,
+                                                                   use_igdb=use_igdb)
 
     # Apply Schulze method
 
