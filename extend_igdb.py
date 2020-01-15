@@ -102,7 +102,7 @@ def fill_in_blanks_in_the_local_database(release_year=None,
     for igdb_id in required_igdb_ids:
         igdb_id_as_str = str(igdb_id)
 
-        is_a_real_igdb_id = bool(igdb_id >= 0)
+        is_a_real_igdb_id = bool(igdb_id > 0)
 
         if is_a_real_igdb_id and igdb_id_as_str not in augmented_igdb_local_database.keys():
             # Give as much freedom as possible: we **know** the IGDB ID (and it is a real IGDB ID since it is positive),
