@@ -2,6 +2,7 @@ import json
 
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix, load_igdb_local_database, load_igdb_match_database
+from igdb_databases import save_igdb_local_database
 from igdb_utils import look_up_game_id
 
 
@@ -84,14 +85,19 @@ def extend_igdb_match_database(release_year=None,
 
 
 def fill_in_blanks_in_the_local_database(release_year=None,
-                                         igdb_local_database=None):
-    augmented_igdb_local_database = igdb_local_database
+                                         igdb_local_database=None,
+                                         save_to_disk=True):
+    if igdb_local_database is None:
+        igdb_local_database = load_igdb_local_database(release_year=release_year)
 
     fixes_to_igdb_match_database = load_fixes_to_igdb_match_database(release_year=release_year)
 
     required_igdb_ids = []
     for igdb_ids in fixes_to_igdb_match_database.values():
         required_igdb_ids += igdb_ids
+
+    augmented_igdb_local_database = igdb_local_database
+    num_additional_entries = 0
 
     for igdb_id in required_igdb_ids:
         igdb_id_as_str = str(igdb_id)
@@ -109,6 +115,11 @@ def fill_in_blanks_in_the_local_database(release_year=None,
             data = encapsulated_data[0]
 
             augmented_igdb_local_database[igdb_id_as_str] = data
+            num_additional_entries += 1
+
+    if save_to_disk and num_additional_entries > 0:
+        save_igdb_local_database(augmented_igdb_local_database,
+                                 release_year=release_year)
 
     return augmented_igdb_local_database
 
