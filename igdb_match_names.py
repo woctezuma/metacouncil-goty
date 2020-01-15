@@ -101,10 +101,11 @@ def print_igdb_matches(igdb_match_database,
                         raw_name,
                     ))
 
-            print('\t{} ---> {} ({})'.format(raw_name,
-                                             igdb_data['name'],
-                                             displayed_release_years,
-                                             ))
+            print('\t{} ---> IGDB id: {}\t;\t{} ({})'.format(raw_name,
+                                                             igdb_data['id'],
+                                                             igdb_data['name'],
+                                                             displayed_release_years,
+                                                             ))
         else:
             print('[X]\t{}'.format(raw_name))
 
@@ -235,8 +236,21 @@ def main():
 
     release_year = ballot_year
 
+    # Before manual fixes
+
     igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
-                                                                         release_year=release_year)
+                                                                         release_year=release_year,
+                                                                         apply_hard_coded_extension_and_fixes=False)
+
+    print_igdb_matches(igdb_match_database,
+                       igdb_local_database,
+                       constrained_release_year=release_year)
+
+    # After manual fixes
+
+    igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
+                                                                         release_year=release_year,
+                                                                         apply_hard_coded_extension_and_fixes=True)
 
     print_igdb_matches(igdb_match_database,
                        igdb_local_database,
