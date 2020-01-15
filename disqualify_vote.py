@@ -1,3 +1,6 @@
+from disqualify_vote_igdb import load_disqualified_igdb_ids
+
+
 def get_hard_coded_disqualified_app_ids():
     disqualified_app_id_dict = {
 
@@ -20,14 +23,19 @@ def get_hard_coded_noisy_votes():
     return noisy_votes
 
 
-def filter_out_votes_for_hard_coded_reasons(standardized_ballots):
+def filter_out_votes_for_hard_coded_reasons(standardized_ballots,
+                                            release_year=None,
+                                            use_igdb=False):
     # Objective: remove appID which gathered votes but were manually marked for disqualification
 
     print()
 
     removed_app_ids = []
 
-    disqualified_app_id_dict = get_hard_coded_disqualified_app_ids()
+    if use_igdb:
+        disqualified_app_id_dict = load_disqualified_igdb_ids(release_year=release_year)
+    else:
+        disqualified_app_id_dict = get_hard_coded_disqualified_app_ids()
 
     for voter in standardized_ballots.keys():
         current_ballots = standardized_ballots[voter]['ballots']
