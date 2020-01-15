@@ -2,6 +2,7 @@ import json
 
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix, load_igdb_local_database, load_igdb_match_database
+from igdb_utils import look_up_game_id
 
 
 def get_file_name_for_fixes_to_igdb_database(release_year=None,
@@ -80,9 +81,6 @@ def extend_igdb_match_database(release_year=None,
         extended_igdb_match_database[app_name] = fixes_to_igdb_match_database[app_name]
 
     return extended_igdb_match_database
-
-
-from igdb_utils import look_up_game_id
 
 
 def fill_in_blanks_in_the_local_database(release_year=None,
