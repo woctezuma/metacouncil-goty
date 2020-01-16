@@ -32,6 +32,12 @@ def filter_noise_from_optional_ballots(optional_ballots):
 
 
 def match_optional_ballots(optional_ballots,
+                           release_year=None,
+                           use_igdb=False,
+                           retrieve_igdb_data_from_scratch=True,
+                           apply_hard_coded_extension_and_fixes=True,
+                           must_be_available_on_pc=False,
+                           must_be_a_game=False,
                            use_levenshtein_distance=True):
     import steampi.calendar
 
@@ -130,6 +136,10 @@ def pretty_display(ranking):
 
 def display_optional_ballots(input_filename,
                              filter_noise=True,
+                             release_year=None,
+                             use_igdb=False,
+                             retrieve_igdb_data_from_scratch=True,
+                             apply_hard_coded_extension_and_fixes=True,
                              use_levenshtein_distance=True):
     from load_ballots import load_ballots
 
@@ -144,6 +154,10 @@ def display_optional_ballots(input_filename,
             optional_ballots = filter_noise_from_optional_ballots(optional_ballots)
 
         optional_ballots = match_optional_ballots(optional_ballots,
+                                                  release_year=release_year,
+                                                  use_igdb=use_igdb,
+                                                  retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
+                                                  apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                                                   use_levenshtein_distance=use_levenshtein_distance)
 
         ranking = compute_ranking_based_on_optional_ballots(optional_ballots)
@@ -155,6 +169,13 @@ def display_optional_ballots(input_filename,
 if __name__ == '__main__':
     ballot_year = '2018'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
+    use_igdb = True
+    retrieve_igdb_data_from_scratch = False
+    apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
     display_optional_ballots(input_filename,
+                             release_year=ballot_year,
+                             use_igdb=use_igdb,
+                             retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
+                             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                              use_levenshtein_distance=use_levenshtein_distance)
