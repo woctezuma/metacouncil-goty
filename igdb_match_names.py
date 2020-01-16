@@ -175,11 +175,41 @@ def print_igdb_matches(igdb_match_database,
     return
 
 
+def merge_databases(new_database,
+                    previous_database):
+    merged_database = new_database
+
+    for element in previous_database:
+        if element not in merged_database:
+            merged_database[element] = merged_database[element]
+
+    return merged_database
+
+
 def download_igdb_local_databases(ballots,
                                   release_year=None,
-                                  apply_hard_coded_extension_and_fixes=True):
+                                  apply_hard_coded_extension_and_fixes=True,
+                                  extend_previous_databases=True):
     igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
                                                                      release_year=release_year)
+
+    # Merge with previous databases, if they were passed to the function as optional parameters
+    if extend_previous_databases:
+        try:
+            previous_igdb_match_database = load_igdb_match_database(release_year=release_year)
+        except FileNotFoundError:
+            previous_igdb_match_database = dict()
+
+        try:
+            previous_igdb_local_database = load_igdb_local_database(release_year=release_year)
+        except FileNotFoundError:
+            previous_igdb_local_database = dict()
+
+        igdb_match_database = merge_databases(igdb_match_database,
+                                              previous_database=previous_igdb_match_database)
+
+        igdb_local_database = merge_databases(igdb_local_database,
+                                              previous_database=previous_igdb_local_database)
 
     # Save data before applying any hard-coded change
 

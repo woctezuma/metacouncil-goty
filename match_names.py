@@ -235,7 +235,8 @@ def standardize_ballots(ballots,
         if retrieve_igdb_data_from_scratch:
             igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
                                                                                      release_year=release_year,
-                                                                                     apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
+                                                                                     apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                                                                                     extend_previous_databases=False)
         else:
             igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
                                                                                  release_year=release_year,
