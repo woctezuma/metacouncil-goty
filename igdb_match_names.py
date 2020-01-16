@@ -159,7 +159,10 @@ def print_igdb_matches(igdb_match_database,
                 displayed_release_years = sorted(release_years)
                 print('[!]\tSeveral release years are found for {}.'.format(raw_name))
             else:
-                displayed_release_years = list(release_years)[0]
+                try:
+                    displayed_release_years = list(release_years)[0]
+                except IndexError:
+                    displayed_release_years = None
 
             if constrained_release_year is not None:
                 if all(year != int(constrained_release_year) for year in release_years):
