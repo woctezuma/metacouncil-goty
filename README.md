@@ -45,6 +45,8 @@ Results are displayed:
 
 The current implementation relies on [SteamSpy](https://github.com/woctezuma/steamspypi)'s database, and matches game names with [Levenshtein distance](https://github.com/ztane/python-Levenshtein).
 
+**Edit:** As of January 16, 2020, IGDB can be used in place of SteamSpy with the `use_igdb` flag.
+
 Work-in-progress includes:
 -   matching game names with the longest contiguous matching subsequence, as offered by [difflib](https://docs.python.org/3/library/difflib.html),
 -   relying on [IGDB](https://www.igdb.com/api)'s database, which extends beyond Steam.
