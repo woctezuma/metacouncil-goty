@@ -255,7 +255,10 @@ def load_igdb_local_databases(ballots,
     except FileNotFoundError:
         igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
                                                                                  release_year=release_year,
-                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
+                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                                                                                 must_be_available_on_pc=must_be_available_on_pc,
+                                                                                 must_be_a_game=must_be_a_game,
+                                                                                 goty_field=goty_field)
 
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
