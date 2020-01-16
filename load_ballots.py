@@ -1,4 +1,14 @@
-def parse_votes(data, num_games_per_voter=5):
+def parse_votes(data,
+                num_goty_games_per_voter=5,
+                num_gotd_games_per_voter=10):
+    # Games of the Year (GotY)
+    goty_field = 'goty_preferences'
+    goty_review_field = 'goty_description'
+
+    # Games of the Decade (GotD)
+    gotd_field = 'gotd_preferences'
+    gotd_review_field = 'gotd_description'
+
     ballots = dict()
 
     for element in data:
@@ -9,8 +19,8 @@ def parse_votes(data, num_games_per_voter=5):
 
         # Parse
         voter_name = tokens[0]
-        voted_games = [tokens[i] for i in range(1, num_games_per_voter + 1)]
-        goty_description = tokens[num_games_per_voter + 1]
+        voted_games = [tokens[i] for i in range(1, num_goty_games_per_voter + 1)]
+        goty_description = tokens[num_goty_games_per_voter + 1]
         best_dlc = tokens[-3]
         best_early_access = tokens[-2]
         best_turd = tokens[-1]
@@ -18,12 +28,12 @@ def parse_votes(data, num_games_per_voter=5):
         # Store the parsed data in a dictionary
         ballots[voter_name] = dict()
 
-        ballots[voter_name]['goty_preferences'] = dict()
+        ballots[voter_name][goty_field] = dict()
         for (i, game_name) in enumerate(voted_games):
-            position = num_games_per_voter - i
-            ballots[voter_name]['goty_preferences'][position] = game_name
+            position = num_goty_games_per_voter - i
+            ballots[voter_name][goty_field][position] = game_name
 
-        ballots[voter_name]['goty_description'] = goty_description
+        ballots[voter_name][goty_review_field] = goty_description
         ballots[voter_name]['best_dlc'] = best_dlc
         ballots[voter_name]['best_early_access'] = best_early_access
         ballots[voter_name]['best_turd'] = best_turd
@@ -44,7 +54,11 @@ def load_ballots(input_filename, file_encoding='utf8', fake_author_name=True):
     return ballots
 
 
-def print_reviews(ballots, matches, app_id):
+def print_reviews(ballots,
+                  matches,
+                  app_id,
+                  goty_field='goty_preferences',
+                  goty_review_field='goty_description'):
     # Constant parameters
     goty_position = 1
     neighbor_reference_index = 0
@@ -52,12 +66,12 @@ def print_reviews(ballots, matches, app_id):
     seen_game_names = set()
 
     for voter_name in ballots:
-        goty_raw_name = ballots[voter_name]['goty_preferences'][goty_position]
+        goty_raw_name = ballots[voter_name][goty_field][goty_position]
         goty_app_id = matches[goty_raw_name]['matched_appID'][neighbor_reference_index]
         goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
 
         if goty_app_id == app_id:
-            goty_review = ballots[voter_name]['goty_description']
+            goty_review = ballots[voter_name][goty_review_field]
 
             if goty_standardized_name not in seen_game_names:
                 seen_game_names.add(goty_standardized_name)

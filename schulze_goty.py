@@ -329,6 +329,7 @@ def apply_pipeline(input_filename,
                    retrieve_igdb_data_from_scratch=True,
                    apply_hard_coded_extension_and_fixes=True,
                    use_levenshtein_distance=True,
+                   goty_field='goty_preferences',
                    year_constraint='equality'):
     ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
 
@@ -341,6 +342,7 @@ def apply_pipeline(input_filename,
                                                           retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
                                                           apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                                                           use_levenshtein_distance=use_levenshtein_distance,
+                                                          goty_field=goty_field,
                                                           year_constraint=year_constraint)
 
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots,
@@ -384,6 +386,7 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+    goty_field = 'goty_preferences'
     apply_pipeline(input_filename,
                    release_year=ballot_year,
                    fake_author_name=False,
@@ -392,4 +395,5 @@ if __name__ == '__main__':
                    retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
                    apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                    use_levenshtein_distance=use_levenshtein_distance,
+                   goty_field=goty_field,
                    year_constraint='equality')

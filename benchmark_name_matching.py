@@ -17,7 +17,8 @@ def run_benchmark_for_steam_spy(raw_votes,
                                 release_year=None,
                                 num_closest_neighbors=1,
                                 max_num_tries_for_year=0,
-                                use_levenshtein_distance=True):
+                                use_levenshtein_distance=True,
+                                goty_field='goty_preferences'):
     seen_game_names = set()
     matches = dict()
 
@@ -26,7 +27,7 @@ def run_benchmark_for_steam_spy(raw_votes,
     noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
-        for raw_name in raw_votes[voter]['goty_preferences'].values():
+        for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 

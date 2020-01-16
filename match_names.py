@@ -126,7 +126,8 @@ def precompute_matches(raw_votes,
                        num_closest_neighbors=3,
                        max_num_tries_for_year=2,
                        use_levenshtein_distance=True,
-                       year_constraint='equality'):
+                       year_constraint='equality',
+                       goty_field='goty_preferences'):
     seen_game_names = set()
     matches = dict()
 
@@ -134,7 +135,7 @@ def precompute_matches(raw_votes,
     noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
-        for raw_name in raw_votes[voter]['goty_preferences'].values():
+        for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
@@ -191,7 +192,9 @@ def display_matches(matches, print_after_sort=True):
     return
 
 
-def normalize_votes(raw_votes, matches):
+def normalize_votes(raw_votes,
+                    matches,
+                    goty_field='goty_preferences'):
     # Index of the first neighbor
     neighbor_reference_index = 0
 
@@ -201,7 +204,7 @@ def normalize_votes(raw_votes, matches):
         normalized_votes[voter_name] = dict()
         normalized_votes[voter_name]['ballots'] = dict()
         normalized_votes[voter_name]['distances'] = dict()
-        for (position, game_name) in raw_votes[voter_name]['goty_preferences'].items():
+        for (position, game_name) in raw_votes[voter_name][goty_field].items():
 
             if game_name in matches.keys():
 
@@ -228,6 +231,10 @@ def standardize_ballots(ballots,
                         retrieve_igdb_data_from_scratch=True,
                         apply_hard_coded_extension_and_fixes=True,
                         use_levenshtein_distance=True,
+                        extend_previous_databases=True,
+                        must_be_available_on_pc=True,
+                        must_be_a_game=True,
+                        goty_field='goty_preferences',
                         year_constraint='equality'):
     if use_igdb:
         # Using IGDB
@@ -236,11 +243,17 @@ def standardize_ballots(ballots,
             igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
                                                                                      release_year=release_year,
                                                                                      apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                                                                                     extend_previous_databases=False)
+                                                                                     extend_previous_databases=extend_previous_databases,
+                                                                                     must_be_available_on_pc=must_be_available_on_pc,
+                                                                                     must_be_a_game=must_be_a_game,
+                                                                                     goty_field=goty_field)
         else:
             igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
                                                                                  release_year=release_year,
-                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes)
+                                                                                 apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                                                                                 must_be_available_on_pc=must_be_available_on_pc,
+                                                                                 must_be_a_game=must_be_a_game,
+                                                                                 goty_field=goty_field)
 
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,

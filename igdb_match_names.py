@@ -87,7 +87,10 @@ def format_game_name_for_igdb(raw_name):
 
 
 def match_names_with_igdb(raw_votes,
-                          release_year=None):
+                          release_year=None,
+                          must_be_available_on_pc=True,
+                          must_be_a_game=True,
+                          goty_field='goty_preferences'):
     seen_game_names = set()
     igdb_match_database = dict()
     igdb_local_database = dict()
@@ -96,7 +99,7 @@ def match_names_with_igdb(raw_votes,
     noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
-        for raw_name in raw_votes[voter]['goty_preferences'].values():
+        for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
@@ -104,7 +107,9 @@ def match_names_with_igdb(raw_votes,
                     formatted_game_name_for_igdb = format_game_name_for_igdb(raw_name)
 
                     igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,
-                                                     enforced_year=release_year)
+                                                     enforced_year=release_year,
+                                                     must_be_available_on_pc=must_be_available_on_pc,
+                                                     must_be_a_game=must_be_a_game)
 
                     try:
                         igdb_best_match = igdb_matches[0]
@@ -112,7 +117,9 @@ def match_names_with_igdb(raw_votes,
                         print('Relaxing the year constraint for {}'.format(raw_name))
 
                         igdb_matches = look_up_game_name(game_name=raw_name,
-                                                         enforced_year=None)
+                                                         enforced_year=None,
+                                                         must_be_available_on_pc=must_be_available_on_pc,
+                                                         must_be_a_game=must_be_a_game)
 
                     igdb_matched_ids = []
 
@@ -189,9 +196,15 @@ def merge_databases(new_database,
 def download_igdb_local_databases(ballots,
                                   release_year=None,
                                   apply_hard_coded_extension_and_fixes=True,
-                                  extend_previous_databases=True):
+                                  extend_previous_databases=True,
+                                  must_be_available_on_pc=True,
+                                  must_be_a_game=True,
+                                  goty_field='goty_preferences'):
     igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
-                                                                     release_year=release_year)
+                                                                     release_year=release_year,
+                                                                     must_be_available_on_pc=must_be_available_on_pc,
+                                                                     must_be_a_game=must_be_a_game,
+                                                                     goty_field=goty_field)
 
     # Merge with previous databases, if they were passed to the function as optional parameters
     if extend_previous_databases:
@@ -232,6 +245,9 @@ def download_igdb_local_databases(ballots,
 def load_igdb_local_databases(ballots,
                               release_year=None,
                               apply_hard_coded_extension_and_fixes=True,
+                              must_be_available_on_pc=True,
+                              must_be_a_game=True,
+                              goty_field='goty_preferences',
                               verbose=False):
     try:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
