@@ -1,0 +1,9167 @@
+{
+  "29272": {
+    "id": 29272,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 582,
+        "category": 1,
+        "name": "Train Valley 2",
+        "uid": "602320"
+      },
+      {
+        "id": 1190521,
+        "category": 14,
+        "name": "Train Valley 2",
+        "uid": "505646"
+      },
+      {
+        "id": 1455840,
+        "category": 3,
+        "name": "Train Valley 2",
+        "uid": "68137",
+        "url": "https://www.giantbomb.com/games/3030-68137/"
+      }
+    ],
+    "name": "Train Valley 2",
+    "slug": "train-valley-2"
+  },
+  "124938": {
+    "id": 124938,
+    "category": 1,
+    "name": "Train Valley 2: Passenger Flow",
+    "slug": "train-valley-2-passenger-flow"
+  },
+  "83731": {
+    "id": 83731,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 238379,
+        "category": 1,
+        "name": "Beat Saber",
+        "uid": "620980",
+        "url": "https://store.steampowered.com/app/620980",
+        "year": 2018
+      },
+      {
+        "id": 575992,
+        "category": 3,
+        "name": "Beat Saber",
+        "uid": "65652",
+        "url": "https://www.giantbomb.com/games/3030-65652/"
+      },
+      {
+        "id": 1193243,
+        "category": 14,
+        "name": "Beat Saber",
+        "uid": "503116"
+      }
+    ],
+    "name": "Beat Saber",
+    "platforms": [
+      6,
+      161,
+      162,
+      163,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 169565,
+        "human": "2019-May-21",
+        "platform": 161,
+        "y": 2019
+      },
+      {
+        "id": 169566,
+        "human": "2019-May-21",
+        "platform": 162,
+        "y": 2019
+      },
+      {
+        "id": 169567,
+        "human": "2019-May-21",
+        "platform": 163,
+        "y": 2019
+      },
+      {
+        "id": 169568,
+        "human": "2019-May-21",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 174142,
+        "human": "2019-May-21",
+        "platform": 165,
+        "y": 2019
+      }
+    ],
+    "slug": "beat-saber"
+  },
+  "117901": {
+    "id": 117901,
+    "category": 0,
+    "name": "Beat Saber Origins",
+    "slug": "beat-saber-origins"
+  },
+  "43165": {
+    "id": 43165,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 70172,
+        "category": 1,
+        "name": "My Time At Portia",
+        "uid": "666140"
+      },
+      {
+        "id": 101672,
+        "category": 3,
+        "name": "My Time at Portia",
+        "uid": "60363",
+        "url": "https://www.giantbomb.com/games/3030-60363/",
+        "year": 2017
+      },
+      {
+        "id": 253571,
+        "category": 14,
+        "name": "My Time at Portia",
+        "uid": "497883"
+      }
+    ],
+    "name": "My Time at Portia",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 163224,
+        "human": "2019-Jan-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 166634,
+        "human": "2019-Apr-16",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 166635,
+        "human": "2019-Apr-16",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 166636,
+        "human": "2019-Apr-16",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "my-time-at-portia"
+  },
+  "54844": {
+    "id": 54844,
+    "alternative_names": [
+      {
+        "id": 9574,
+        "comment": "Working title",
+        "name": "The Washington Project"
+      },
+      {
+        "id": 25111,
+        "comment": "Former Title",
+        "name": "Ion Maiden"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 272444,
+        "category": 1,
+        "name": "Ion Maiden",
+        "uid": "562860",
+        "url": "https://store.steampowered.com/app/562860",
+        "year": 2018
+      },
+      {
+        "id": 285342,
+        "category": 14,
+        "name": "Ion Maiden",
+        "uid": "504248",
+        "url": "https://www.giantbomb.com/game/3030-66697/"
+      },
+      {
+        "id": 577057,
+        "category": 3,
+        "name": "Ion Maiden",
+        "uid": "66697",
+        "url": "https://www.giantbomb.com/games/3030-66697/",
+        "year": 2018
+      }
+    ],
+    "name": "Ion Fury",
+    "platforms": [
+      3,
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 172628,
+        "human": "2019-Aug-15",
+        "platform": 3,
+        "y": 2019
+      },
+      {
+        "id": 172629,
+        "human": "2019-Aug-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 185075,
+        "human": "2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 185076,
+        "human": "2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 185077,
+        "human": "2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "ion-fury"
+  },
+  "96354": {
+    "id": 96354,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 366867,
+        "category": 1,
+        "name": "The Road to Hades",
+        "uid": "826460",
+        "url": "https://store.steampowered.com/app/826460",
+        "year": 2018
+      }
+    ],
+    "name": "The Road to Hades",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 151367,
+        "human": "2018-Apr-12",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "the-road-to-hades"
+  },
+  "37294": {
+    "id": 37294,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 60059,
+        "category": 1,
+        "name": "Staxel",
+        "uid": "405710"
+      },
+      {
+        "id": 109034,
+        "category": 3,
+        "name": "Staxel",
+        "uid": "52220",
+        "url": "https://www.giantbomb.com/games/3030-52220/"
+      },
+      {
+        "id": 252376,
+        "category": 14,
+        "name": "Staxel",
+        "uid": "498377"
+      }
+    ],
+    "name": "Staxel",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 132499,
+        "human": "2018-Jan-23",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "staxel"
+  },
+  "19530": {
+    "id": 19530,
+    "alternative_names": [
+      {
+        "id": 24762,
+        "comment": "Acronym",
+        "name": "QC"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 107095,
+        "category": 3,
+        "name": "Quake Champions",
+        "uid": "54210",
+        "url": "https://www.giantbomb.com/games/3030-54210/"
+      },
+      {
+        "id": 184465,
+        "category": 1,
+        "name": "Quake Champions",
+        "uid": "611500"
+      },
+      {
+        "id": 189420,
+        "category": 10,
+        "name": "Quake Champions",
+        "uid": "UCJEZYWUMu-LUiItLpqZ4-uQ",
+        "url": "https://gaming.youtube.com/game/UCJEZYWUMu-LUiItLpqZ4-uQ"
+      },
+      {
+        "id": 250223,
+        "category": 14,
+        "name": "Quake Champions",
+        "uid": "496253"
+      }
+    ],
+    "name": "Quake Champions",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 123732,
+        "human": "2017-Aug-22",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "quake-champions"
+  },
+  "27804": {
+    "id": 27804,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 108193,
+        "category": 3,
+        "name": "Phoenix Point",
+        "uid": "53087",
+        "url": "https://www.giantbomb.com/games/3030-53087/"
+      }
+    ],
+    "name": "Phoenix Point",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 179279,
+        "human": "2019-Dec-03",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 179280,
+        "human": "2019-Dec-03",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "phoenix-point"
+  },
+  "40477": {
+    "id": 40477,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 20683,
+        "category": 1,
+        "name": "Slay the Spire",
+        "uid": "646570"
+      },
+      {
+        "id": 102639,
+        "category": 3,
+        "name": "Slay the Spire",
+        "uid": "59383",
+        "url": "https://www.giantbomb.com/games/3030-59383/"
+      },
+      {
+        "id": 252112,
+        "category": 14,
+        "name": "Slay the Spire",
+        "uid": "496902"
+      }
+    ],
+    "name": "Slay the Spire",
+    "platforms": [
+      3,
+      6,
+      14,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 164041,
+        "human": "2019-Jan-23",
+        "platform": 92,
+        "y": 2019
+      },
+      {
+        "id": 164042,
+        "human": "2019-Jan-23",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 164043,
+        "human": "2019-Jan-23",
+        "platform": 14,
+        "y": 2019
+      },
+      {
+        "id": 164044,
+        "human": "2019-Jan-23",
+        "platform": 3,
+        "y": 2019
+      },
+      {
+        "id": 170011,
+        "human": "2019-Jun-06",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "slay-the-spire"
+  },
+  "105447": {
+    "id": 105447,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1285120,
+        "category": 1,
+        "name": "Touhou Luna Nights",
+        "uid": "851100",
+        "url": "https://store.steampowered.com/app/851100",
+        "year": 2018
+      },
+      {
+        "id": 1614561,
+        "category": 3,
+        "name": "Touhou Luna Nights",
+        "uid": "69915",
+        "url": "https://www.giantbomb.com/games/3030-69915/",
+        "year": 2018
+      },
+      {
+        "id": 1615781,
+        "category": 14,
+        "name": "Touhou Luna Nights",
+        "uid": "509208",
+        "url": "https://www.giantbomb.com/game/3030-69915/"
+      }
+    ],
+    "name": "Touhou Luna Nights",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 165782,
+        "human": "2019-Feb-26",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 174860,
+        "human": "TBD",
+        "platform": 130
+      }
+    ],
+    "slug": "touhou-luna-nights"
+  },
+  "9789": {
+    "id": 9789,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11231,
+        "category": 1,
+        "name": "RimWorld",
+        "uid": "294100"
+      },
+      {
+        "id": 116755,
+        "category": 3,
+        "name": "RimWorld",
+        "uid": "44272",
+        "url": "https://www.giantbomb.com/games/3030-44272/",
+        "year": 2013
+      },
+      {
+        "id": 189109,
+        "category": 10,
+        "name": "RimWorld",
+        "uid": "UCCnY7KLXOI1ofeMu5zZFgSg",
+        "url": "https://gaming.youtube.com/game/UCCnY7KLXOI1ofeMu5zZFgSg"
+      },
+      {
+        "id": 245197,
+        "category": 14,
+        "name": "RimWorld",
+        "uid": "394568"
+      }
+    ],
+    "name": "RimWorld",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 160281,
+        "human": "2018-Oct-17",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160282,
+        "human": "2018-Oct-17",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 160283,
+        "human": "2018-Oct-17",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "rimworld"
+  },
+  "18280": {
+    "id": 18280,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105108,
+        "category": 3,
+        "name": "Them's Fightin' Herds",
+        "uid": "56877",
+        "url": "https://www.giantbomb.com/games/3030-56877/",
+        "year": 2017
+      },
+      {
+        "id": 223407,
+        "category": 1,
+        "name": "Them's Fightin' Herds",
+        "uid": "574980",
+        "url": "https://store.steampowered.com/app/574980",
+        "year": 2018
+      }
+    ],
+    "name": "Them's Fightin' Herds",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 184174,
+        "human": "2018-Feb-22",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "thems-fightin-herds"
+  },
+  "9943": {
+    "id": 9943,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 9196,
+        "category": 1,
+        "name": "The Universim",
+        "uid": "352720"
+      },
+      {
+        "id": 78286,
+        "category": 5,
+        "name": "The Universim",
+        "uid": "1425364326",
+        "url": "https://www.gog.com/game/the_universim",
+        "year": 1970
+      },
+      {
+        "id": 109955,
+        "category": 3,
+        "name": "The Universim",
+        "uid": "51264",
+        "url": "https://www.giantbomb.com/games/3030-51264/"
+      },
+      {
+        "id": 189983,
+        "category": 10,
+        "name": "The Universim",
+        "uid": "UCuDxLLAW89KVT-c1MDpMj_Q",
+        "url": "https://gaming.youtube.com/game/UCuDxLLAW89KVT-c1MDpMj_Q"
+      },
+      {
+        "id": 246967,
+        "category": 14,
+        "name": "The Universim",
+        "uid": "491020"
+      }
+    ],
+    "name": "The Universim",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 159998,
+        "human": "2018-Aug-28",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 159999,
+        "human": "2018-Aug-28",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160000,
+        "human": "2018-Aug-28",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "the-universim"
+  },
+  "19542": {
+    "id": 19542,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 5372,
+        "category": 1,
+        "name": "Oxygen Not Included",
+        "uid": "457140"
+      },
+      {
+        "id": 107093,
+        "category": 3,
+        "name": "Oxygen Not Included",
+        "uid": "54216",
+        "url": "https://www.giantbomb.com/games/3030-54216/",
+        "year": 2017
+      },
+      {
+        "id": 249467,
+        "category": 14,
+        "name": "Oxygen Not Included",
+        "uid": "493815"
+      },
+      {
+        "id": 1708325,
+        "category": 10,
+        "name": "Oxygen Not Included",
+        "uid": "UCT9F2U65xftbc_kjBoMRlLg",
+        "url": "https://www.youtube.com/watch?v=UCT9F2U65xftbc_kjBoMRlLg"
+      }
+    ],
+    "name": "Oxygen Not Included",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168299,
+        "human": "2019-May-28",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "oxygen-not-included"
+  },
+  "107258": {
+    "id": 107258,
+    "category": 2,
+    "name": "BattleTech: Flashpoint",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 160244,
+        "human": "2018-Nov-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160245,
+        "human": "2018-Nov-27",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "battletech-flashpoint"
+  },
+  "103300": {
+    "id": 103300,
+    "category": 1,
+    "name": "Prey: Mooncrash",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 155528,
+        "human": "2018-Jun-11",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 168486,
+        "human": "2018-Jun-11",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 168487,
+        "human": "2018-Jun-11",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "prey-mooncrash"
+  },
+  "117748": {
+    "id": 117748,
+    "category": 1,
+    "external_games": [
+      {
+        "id": 1709823,
+        "category": 14,
+        "name": "Prey: Typhon Hunter",
+        "uid": "510661",
+        "url": "https://www.twitch.tv/directory/game/Prey: Typhon Hunter"
+      },
+      {
+        "id": 1744218,
+        "category": 3,
+        "name": "Prey: Typhon Hunter",
+        "uid": "71369",
+        "url": "https://www.giantbomb.com/games/3030-71369/"
+      }
+    ],
+    "name": "Prey: Typhon Hunter",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 168795,
+        "human": "2018-Dec-11",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 168796,
+        "human": "2018-Dec-11",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 168797,
+        "human": "2018-Dec-11",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "prey-typhon-hunter"
+  },
+  "103306": {
+    "id": 103306,
+    "category": 3,
+    "name": "Prey: Digital Deluxe",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168794,
+        "human": "2018-Jun-10",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "prey-digital-deluxe"
+  },
+  "75847": {
+    "id": 75847,
+    "category": 3,
+    "name": "Wolfenstein II: The Freedom Chronicles - Season Pass",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 128286,
+        "human": "2017-Nov-07",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 128287,
+        "human": "2017-Nov-07",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 128288,
+        "human": "2017-Nov-07",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 128289,
+        "human": "2018",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "wolfenstein-ii-the-freedom-chronicles-season-pass"
+  },
+  "112085": {
+    "id": 112085,
+    "category": 2,
+    "name": "Path of Exile: Betrayal",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 161088,
+        "human": "2018-Dec-07",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 161089,
+        "human": "2018-Dec-10",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 161090,
+        "human": "2018-Dec",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "path-of-exile-betrayal"
+  },
+  "17783": {
+    "id": 17783,
+    "category": 2,
+    "name": "Assassin's Creed: Origins - The Curse of the Pharaohs",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 149029,
+        "human": "2018-Mar-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149030,
+        "human": "2018-Mar-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 149031,
+        "human": "2018-Mar-13",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "assassins-creed-origins-the-curse-of-the-pharaohs"
+  },
+  "76885": {
+    "id": 76885,
+    "alternative_names": [
+      {
+        "id": 14337,
+        "name": "SoulCalibur 6"
+      },
+      {
+        "id": 21021,
+        "comment": "Other",
+        "name": "Soul Calibur VI"
+      },
+      {
+        "id": 21022,
+        "comment": "Other",
+        "name": "Soul Calibur 6"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 207923,
+        "category": 3,
+        "name": "Soulcalibur VI",
+        "uid": "63117",
+        "url": "https://www.giantbomb.com/games/3030-63117/",
+        "year": 2018
+      },
+      {
+        "id": 321547,
+        "category": 14,
+        "name": "Soulcalibur VI",
+        "uid": "500626",
+        "url": "https://www.giantbomb.com/game/3030-63117/"
+      },
+      {
+        "id": 1492711,
+        "category": 1,
+        "name": "SOULCALIBUR VI",
+        "uid": "544750",
+        "url": "https://store.steampowered.com/app/544750",
+        "year": 2018
+      },
+      {
+        "id": 1708339,
+        "category": 10,
+        "name": "Soulcalibur VI",
+        "uid": "UCS854r-sdhOy3E5GFgXq5oQ",
+        "url": "https://www.youtube.com/watch?v=UCS854r-sdhOy3E5GFgXq5oQ"
+      }
+    ],
+    "name": "SoulCalibur VI",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 153920,
+        "human": "2018-Oct-19",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153921,
+        "human": "2018-Oct-19",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 153922,
+        "human": "2018-Oct-19",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "soulcalibur-vi"
+  },
+  "26855": {
+    "id": 26855,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 940,
+        "category": 1,
+        "name": "Dead Cells",
+        "uid": "588650"
+      },
+      {
+        "id": 103533,
+        "category": 3,
+        "name": "Dead Cells",
+        "uid": "58490",
+        "url": "https://www.giantbomb.com/games/3030-58490/",
+        "year": 2017
+      },
+      {
+        "id": 281233,
+        "category": 14,
+        "name": "Dead Cells",
+        "uid": "495961",
+        "url": "https://www.giantbomb.com/game/3030-58490/"
+      },
+      {
+        "id": 1458646,
+        "category": 10,
+        "name": "Dead Cells",
+        "uid": "UCB7B_ymjepyduGj2gemUiSw",
+        "url": "https://www.youtube.com/watch?v=UCB7B_ymjepyduGj2gemUiSw"
+      }
+    ],
+    "name": "Dead Cells",
+    "platforms": [
+      3,
+      6,
+      14,
+      39,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 155642,
+        "human": "2018-Aug-07",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 155643,
+        "human": "2018-Aug-07",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 155644,
+        "human": "2018-Aug-07",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 155645,
+        "human": "2018-Aug-07",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 156599,
+        "human": "2018-Aug-07",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 156600,
+        "human": "2018-Aug-07",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 156601,
+        "human": "2018-Aug-07",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 175078,
+        "human": "2019-Aug-28",
+        "platform": 39,
+        "y": 2019
+      }
+    ],
+    "slug": "dead-cells"
+  },
+  "103210": {
+    "id": 103210,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1191868,
+        "category": 14,
+        "name": "Hitman 2",
+        "uid": "506342"
+      },
+      {
+        "id": 1457667,
+        "category": 3,
+        "name": "Hitman 2",
+        "uid": "68822",
+        "url": "https://www.giantbomb.com/games/3030-68822/",
+        "year": 2018
+      },
+      {
+        "id": 1636597,
+        "category": 1,
+        "name": "HITMAN\u2122 2",
+        "uid": "863550",
+        "url": "https://store.steampowered.com/app/863550",
+        "year": 2018
+      },
+      {
+        "id": 1708319,
+        "category": 10,
+        "name": "Hitman 2",
+        "uid": "UC0fy6n4w3G17-YHysKfcUuA",
+        "url": "https://www.youtube.com/watch?v=UC0fy6n4w3G17-YHysKfcUuA"
+      }
+    ],
+    "name": "HITMAN 2",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 153510,
+        "human": "2018-Nov-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153511,
+        "human": "2018-Nov-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153512,
+        "human": "2018-Nov-13",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "hitman-2"
+  },
+  "18279": {
+    "id": 18279,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 15180,
+        "category": 1,
+        "name": "BattleTech",
+        "uid": "637090"
+      },
+      {
+        "id": 76699,
+        "category": 5,
+        "name": "BattleTech",
+        "uid": "1074103799",
+        "url": "https://www.gog.com/game/battletech",
+        "year": 1970
+      },
+      {
+        "id": 110299,
+        "category": 3,
+        "name": "BattleTech",
+        "uid": "50915",
+        "url": "https://www.giantbomb.com/games/3030-50915/"
+      },
+      {
+        "id": 251633,
+        "category": 14,
+        "name": "BattleTech",
+        "uid": "490757"
+      },
+      {
+        "id": 1184694,
+        "category": 10,
+        "name": "BattleTech",
+        "uid": "UCcZgfsKr5zYwEbNlAylgMGQ",
+        "url": "https://www.youtube.com/watch?v=UCcZgfsKr5zYwEbNlAylgMGQ"
+      }
+    ],
+    "name": "BATTLETECH",
+    "platforms": [
+      3,
+      6,
+      14,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 150269,
+        "human": "2018",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 150270,
+        "human": "2018",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 150271,
+        "human": "2018-Apr-24",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 150272,
+        "human": "2018-Apr-24",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "battletech"
+  },
+  "26951": {
+    "id": 26951,
+    "alternative_names": [
+      {
+        "id": 8091,
+        "name": "Pillars of Eternity 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104086,
+        "category": 3,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "57918",
+        "url": "https://www.giantbomb.com/games/3030-57918/",
+        "year": 2018
+      },
+      {
+        "id": 189885,
+        "category": 10,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "UCSHkYwn4ILVVT2NnDmRnz4w",
+        "url": "https://gaming.youtube.com/game/UCSHkYwn4ILVVT2NnDmRnz4w"
+      },
+      {
+        "id": 190584,
+        "category": 1,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "560130"
+      },
+      {
+        "id": 705521,
+        "category": 13,
+        "name": "Pillars of Eternity II",
+        "uid": "1340493247",
+        "url": "https://itunes.apple.com/us/app/pillars-of-eternity-ii/id1340493247?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Pillars of Eternity II: Deadfire",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 148992,
+        "human": "2018-May-08",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 148993,
+        "human": "2018-May-08",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 148994,
+        "human": "2018-May-08",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 148995,
+        "human": "2018-May-08",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 177655,
+        "human": "2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 180958,
+        "human": "2020-Jan-28",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 180959,
+        "human": "2020-Jan-28",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "pillars-of-eternity-ii-deadfire"
+  },
+  "103054": {
+    "id": 103054,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1031615,
+        "category": 14,
+        "name": "Assassin's Creed Odyssey",
+        "uid": "506274",
+        "url": "https://www.giantbomb.com/game/3030-68771/"
+      },
+      {
+        "id": 1457615,
+        "category": 3,
+        "name": "Assassin's Creed Odyssey",
+        "uid": "68771",
+        "url": "https://www.giantbomb.com/games/3030-68771/",
+        "year": 2018
+      },
+      {
+        "id": 1602882,
+        "category": 1,
+        "name": "Assassin's Creed Odyssey",
+        "uid": "812140",
+        "url": "https://store.steampowered.com/app/812140",
+        "year": 2018
+      },
+      {
+        "id": 1708333,
+        "category": 10,
+        "name": "Assassin's Creed Odyssey",
+        "uid": "UCNsMUydb0nWpsFWciStw7HQ",
+        "url": "https://www.youtube.com/watch?v=UCNsMUydb0nWpsFWciStw7HQ"
+      }
+    ],
+    "name": "Assassin's Creed: Odyssey",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 153845,
+        "human": "2018-Oct-05",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153846,
+        "human": "2018-Oct-05",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153847,
+        "human": "2018-Oct-05",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 178547,
+        "human": "2019-Nov-19",
+        "platform": 170,
+        "y": 2019
+      }
+    ],
+    "slug": "assassins-creed-odyssey"
+  },
+  "125126": {
+    "id": 125126,
+    "category": 0,
+    "name": "Assassin's Creed: Odyssey - Spartan Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 178417,
+        "human": "2018-Oct-05",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 178418,
+        "human": "2018-Oct-05",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 178419,
+        "human": "2018-Oct-05",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "assassins-creed-odyssey-spartan-edition"
+  },
+  "109423": {
+    "id": 109423,
+    "category": 0,
+    "name": "Assassin's Creed: Odyssey - Medusa Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 163142,
+        "human": "2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 163143,
+        "human": "2018",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 163144,
+        "human": "2018",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "assassins-creed-odyssey-medusa-edition"
+  },
+  "28072": {
+    "id": 28072,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 188495,
+        "category": 1,
+        "name": "Megaquarium",
+        "uid": "600480"
+      },
+      {
+        "id": 1614986,
+        "category": 3,
+        "name": "Megaquarium",
+        "uid": "70234",
+        "url": "https://www.giantbomb.com/games/3030-70234/",
+        "year": 2018
+      },
+      {
+        "id": 1615894,
+        "category": 14,
+        "name": "Megaquarium",
+        "uid": "509521",
+        "url": "https://www.giantbomb.com/game/3030-70234/"
+      }
+    ],
+    "name": "Megaquarium",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 158367,
+        "human": "2018-Sep-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160247,
+        "human": "2018-Sep-13",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160248,
+        "human": "2018-Sep-13",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 175061,
+        "human": "2019",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 175062,
+        "human": "2019",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 175063,
+        "human": "2019",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "megaquarium"
+  },
+  "9789": {
+    "id": 9789,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11231,
+        "category": 1,
+        "name": "RimWorld",
+        "uid": "294100"
+      },
+      {
+        "id": 116755,
+        "category": 3,
+        "name": "RimWorld",
+        "uid": "44272",
+        "url": "https://www.giantbomb.com/games/3030-44272/",
+        "year": 2013
+      },
+      {
+        "id": 189109,
+        "category": 10,
+        "name": "RimWorld",
+        "uid": "UCCnY7KLXOI1ofeMu5zZFgSg",
+        "url": "https://gaming.youtube.com/game/UCCnY7KLXOI1ofeMu5zZFgSg"
+      },
+      {
+        "id": 245197,
+        "category": 14,
+        "name": "RimWorld",
+        "uid": "394568"
+      }
+    ],
+    "name": "RimWorld",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 160281,
+        "human": "2018-Oct-17",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160282,
+        "human": "2018-Oct-17",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 160283,
+        "human": "2018-Oct-17",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "rimworld"
+  },
+  "11397": {
+    "id": 11397,
+    "alternative_names": [
+      {
+        "id": 4739,
+        "comment": "Japanese title",
+        "name": "\u9f8d\u304c\u5982\u304f0 \u8a93\u3044\u306e\u5834\u6240"
+      },
+      {
+        "id": 11772,
+        "comment": "Other",
+        "name": "Yakuza Zero"
+      },
+      {
+        "id": 11773,
+        "comment": "Other",
+        "name": "Ry\u016b ga Gotoku 0"
+      },
+      {
+        "id": 11774,
+        "comment": "Other",
+        "name": "Ry\u016b ga Gotoku Zero"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 113570,
+        "category": 3,
+        "name": "Yakuza 0",
+        "uid": "47551",
+        "url": "https://www.giantbomb.com/games/3030-47551/",
+        "year": 2015
+      },
+      {
+        "id": 190100,
+        "category": 10,
+        "name": "Yakuza 0",
+        "uid": "UCWUM_TP7IxJtU2Y1wgf_Y2A",
+        "url": "https://gaming.youtube.com/game/UCWUM_TP7IxJtU2Y1wgf_Y2A"
+      },
+      {
+        "id": 249278,
+        "category": 14,
+        "name": "Yakuza 0",
+        "uid": "476269"
+      },
+      {
+        "id": 1470703,
+        "category": 1,
+        "name": "Yakuza 0",
+        "uid": "638970",
+        "url": "https://store.steampowered.com/app/638970",
+        "year": 2018
+      }
+    ],
+    "name": "Yakuza 0",
+    "platforms": [
+      6,
+      9,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 31572,
+        "human": "2015-Mar-12",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 106999,
+        "human": "2015-Mar-12",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 107000,
+        "human": "2017-Jan-24",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 107001,
+        "human": "2017-Jan-24",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 153802,
+        "human": "2018-Aug-01",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 179598,
+        "human": "2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "yakuza-0"
+  },
+  "22917": {
+    "id": 22917,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1470503,
+        "category": 1,
+        "name": "GRIS",
+        "uid": "683320",
+        "url": "https://store.steampowered.com/app/683320",
+        "year": 2018
+      },
+      {
+        "id": 1614555,
+        "category": 3,
+        "name": "GRIS",
+        "uid": "69911",
+        "url": "https://www.giantbomb.com/games/3030-69911/",
+        "year": 2018
+      },
+      {
+        "id": 1697109,
+        "category": 14,
+        "name": "GRIS",
+        "uid": "509196",
+        "url": "https://www.giantbomb.com/game/3030-69911/"
+      }
+    ],
+    "name": "GRIS",
+    "platforms": [
+      6,
+      14,
+      39,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 160895,
+        "human": "2018-Dec-13",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160896,
+        "human": "2018-Dec-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160897,
+        "human": "2018-Dec-13",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 181643,
+        "human": "2019-Aug-21",
+        "platform": 39,
+        "y": 2019
+      }
+    ],
+    "slug": "gris"
+  },
+  "26226": {
+    "id": 26226,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 3888,
+        "category": 1,
+        "name": "Celeste",
+        "uid": "504230"
+      },
+      {
+        "id": 103381,
+        "category": 3,
+        "name": "Celeste",
+        "uid": "58634",
+        "url": "https://www.giantbomb.com/games/3030-58634/",
+        "year": 2017
+      },
+      {
+        "id": 252144,
+        "category": 14,
+        "name": "Celeste",
+        "uid": "492535"
+      },
+      {
+        "id": 307120,
+        "category": 11,
+        "name": "Celeste",
+        "uid": "BWMQL2RPWBHB",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BWMQL2RPWBHB",
+        "year": 2018
+      }
+    ],
+    "name": "Celeste",
+    "platforms": [
+      3,
+      6,
+      14,
+      45,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 134893,
+        "human": "2018-Jan-25",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 134894,
+        "human": "2018-Jan-25",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 134895,
+        "human": "2018-Jan-25",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 134896,
+        "human": "2018-Jan-25",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 134897,
+        "human": "2018-Jan-25",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 147905,
+        "human": "2018-Jan-25",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 147906,
+        "human": "2018-Jan-25",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 148537,
+        "human": "2018-Jan-25",
+        "platform": 45,
+        "y": 2018
+      },
+      {
+        "id": 148538,
+        "human": "2018-Jan-25",
+        "platform": 45,
+        "y": 2018
+      },
+      {
+        "id": 149138,
+        "human": "2018-Jan-26",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "celeste"
+  },
+  "19455": {
+    "id": 19455,
+    "alternative_names": [
+      {
+        "id": 7416,
+        "comment": "Japanese title",
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXII \u30b6 \u30be\u30c7\u30a3\u30a2\u30c3\u30af \u30a8\u30a4\u30b8"
+      },
+      {
+        "id": 10620,
+        "comment": "Other",
+        "name": "FFXII: The Zodiac Age"
+      },
+      {
+        "id": 10621,
+        "comment": "Other",
+        "name": "FF12: The Zodiac Age"
+      },
+      {
+        "id": 10622,
+        "comment": "Other",
+        "name": "Final Fantasy 12: The Zodiac Age"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 107182,
+        "category": 3,
+        "name": "Final Fantasy XII: The Zodiac Age",
+        "uid": "54121",
+        "url": "https://www.giantbomb.com/games/3030-54121/",
+        "year": 2017
+      },
+      {
+        "id": 207223,
+        "category": 1,
+        "name": "FINAL FANTASY XII THE ZODIAC AGE",
+        "uid": "595520",
+        "url": "https://store.steampowered.com/app/595520",
+        "year": 2018
+      },
+      {
+        "id": 248597,
+        "category": 14,
+        "name": "Final Fantasy XII: The Zodiac Age",
+        "uid": "493926"
+      }
+    ],
+    "name": "Final Fantasy XII: The Zodiac Age",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 64889,
+        "human": "2017-Jul-13",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 64890,
+        "human": "2017-Jul-13",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 103100,
+        "human": "2017-Jul-11",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 103101,
+        "human": "2017-Jul-11",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 141252,
+        "human": "2018-Feb-01",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 163295,
+        "human": "2019-Apr-30",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 163296,
+        "human": "2019-Apr-30",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "final-fantasy-xii-the-zodiac-age"
+  },
+  "101176": {
+    "id": 101176,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 736076,
+        "category": 1,
+        "name": "Bloodstained: Curse of the Moon",
+        "uid": "838310",
+        "url": "https://store.steampowered.com/app/838310",
+        "year": 2018
+      },
+      {
+        "id": 1192356,
+        "category": 14,
+        "name": "Bloodstained: Curse of the Moon",
+        "uid": "505991"
+      },
+      {
+        "id": 1457341,
+        "category": 3,
+        "name": "Bloodstained: Curse of the Moon",
+        "uid": "68493",
+        "url": "https://www.giantbomb.com/games/3030-68493/",
+        "year": 2018
+      }
+    ],
+    "name": "Bloodstained: Curse of the Moon",
+    "platforms": [
+      6,
+      37,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 152425,
+        "human": "2018-May-24",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 152426,
+        "human": "2018-May-24",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 152428,
+        "human": "2018-May-24",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 152429,
+        "human": "2018-May-24",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 152960,
+        "human": "2018-Jun-06",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 152961,
+        "human": "2018-May-24",
+        "platform": 37,
+        "y": 2018
+      },
+      {
+        "id": 152962,
+        "human": "2018-May-24",
+        "platform": 37,
+        "y": 2018
+      },
+      {
+        "id": 152963,
+        "human": "2018-May-31",
+        "platform": 37,
+        "y": 2018
+      }
+    ],
+    "slug": "bloodstained-curse-of-the-moon"
+  },
+  "34705": {
+    "id": 34705,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 7586,
+        "category": 1,
+        "name": "Iconoclasts",
+        "uid": "393520"
+      },
+      {
+        "id": 77330,
+        "category": 5,
+        "name": "Iconoclasts",
+        "uid": "1888064208",
+        "url": "https://www.gog.com/game/iconoclasts",
+        "year": 1970
+      },
+      {
+        "id": 121892,
+        "category": 3,
+        "name": "Iconoclasts",
+        "uid": "38695",
+        "url": "https://www.giantbomb.com/games/3030-38695/",
+        "year": 2017
+      },
+      {
+        "id": 252970,
+        "category": 14,
+        "name": "Iconoclasts",
+        "uid": "66089"
+      }
+    ],
+    "name": "Iconoclasts",
+    "platforms": [
+      3,
+      6,
+      14,
+      46,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 130517,
+        "human": "2018-Jan-23",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 130541,
+        "human": "2018-Jan-23",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 130542,
+        "human": "2018-Jan-23",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 130543,
+        "human": "2018-Jan-23",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 130544,
+        "human": "2018-Jan-23",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 130545,
+        "human": "2018-Jan-23",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 156238,
+        "human": "2018-Aug-02",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 184277,
+        "human": "2020-Jan-23",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "iconoclasts"
+  },
+  "9643": {
+    "id": 9643,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 114665,
+        "category": 3,
+        "name": "Return of the Obra Dinn",
+        "uid": "46427",
+        "url": "https://www.giantbomb.com/games/3030-46427/"
+      },
+      {
+        "id": 1192804,
+        "category": 14,
+        "name": "Return of the Obra Dinn",
+        "uid": "460501"
+      },
+      {
+        "id": 1601063,
+        "category": 1,
+        "name": "Return of the Obra Dinn",
+        "uid": "653530",
+        "url": "https://store.steampowered.com/app/653530",
+        "year": 0
+      }
+    ],
+    "name": "Return of the Obra Dinn",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 159838,
+        "human": "2018-Oct-18",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 159839,
+        "human": "2018-Oct-18",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 176938,
+        "human": "2019-Oct-18",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 177992,
+        "human": "2019-Oct-18",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 177993,
+        "human": "2019-Oct-18",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "return-of-the-obra-dinn"
+  },
+  "83888": {
+    "id": 83888,
+    "alternative_names": [
+      {
+        "id": 21221,
+        "name": "Far Cry 5: Hope County Edition"
+      },
+      {
+        "id": 21222,
+        "name": "Far Cry 5: Hope County Edition, MT Collector's Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Far Cry 5: Hope County, MT Collector's Case",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136809,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 136810,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 136811,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-hope-county-mt-collectors-case"
+  },
+  "28552": {
+    "id": 28552,
+    "alternative_names": [
+      {
+        "id": 20276,
+        "comment": "Other",
+        "name": "FC5"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102470,
+        "category": 3,
+        "name": "Far Cry 5",
+        "uid": "59557",
+        "url": "https://www.giantbomb.com/games/3030-59557/",
+        "year": 2018
+      },
+      {
+        "id": 210506,
+        "category": 11,
+        "name": "Far Cry 5",
+        "uid": "BXPXT1GKHPC1",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BXPXT1GKHPC1",
+        "year": 0
+      },
+      {
+        "id": 370492,
+        "category": 1,
+        "name": "Far Cry 5",
+        "uid": "552520",
+        "url": "https://store.steampowered.com/app/552520",
+        "year": 2018
+      },
+      {
+        "id": 1184714,
+        "category": 10,
+        "name": "Far Cry 5",
+        "uid": "UCbImrgxnQpzyis9xxxcEx8A",
+        "url": "https://www.youtube.com/watch?v=UCbImrgxnQpzyis9xxxcEx8A"
+      }
+    ],
+    "name": "Far Cry 5",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 130609,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 130611,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 150149,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5"
+  },
+  "95960": {
+    "id": 95960,
+    "category": 3,
+    "name": "Far Cry 5 Season Pass",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 150228,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 150229,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 150230,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-season-pass"
+  },
+  "53011": {
+    "id": 53011,
+    "category": 0,
+    "name": "Far Cry 5: Gold Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136802,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 136803,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 136804,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-gold-edition"
+  },
+  "53012": {
+    "id": 53012,
+    "category": 0,
+    "name": "Far Cry 5: Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136799,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 136800,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 136801,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-deluxe-edition"
+  },
+  "83886": {
+    "id": 83886,
+    "category": 0,
+    "name": "Far Cry 5: The Father Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136805,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 136806,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 136807,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-the-father-edition"
+  },
+  "83889": {
+    "id": 83889,
+    "category": 0,
+    "name": "Far Cry 5: x Mondo Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136812,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 136813,
+        "human": "2018-Mar-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 136814,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "far-cry-5-x-mondo-edition"
+  },
+  "25260": {
+    "id": 25260,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 3330,
+        "category": 1,
+        "name": "DUSK",
+        "uid": "519860"
+      },
+      {
+        "id": 105378,
+        "category": 3,
+        "name": "Dusk",
+        "uid": "56598",
+        "url": "https://www.giantbomb.com/games/3030-56598/",
+        "year": 2017
+      },
+      {
+        "id": 303509,
+        "category": 14,
+        "name": "Dusk",
+        "uid": "493813",
+        "url": "https://www.giantbomb.com/game/3030-56598/"
+      }
+    ],
+    "name": "DUSK",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 162077,
+        "human": "2018-Dec-10",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "dusk"
+  },
+  "13062": {
+    "id": 13062,
+    "alternative_names": [
+      {
+        "id": 5349,
+        "comment": "Japanese title",
+        "name": "\u30eb\u30d5\u30e9\u30f3\u306e\u5730\u4e0b\u8ff7\u5bae\u3068\u9b54\u5973\u30ce\u65c5\u56e3"
+      },
+      {
+        "id": 8002,
+        "comment": "Japanese title",
+        "name": "Refrain\u2019s Underground Dungeon and the Witch\u2019s Brigade"
+      },
+      {
+        "id": 21660,
+        "comment": "International title",
+        "name": "Labyrinth of Refrain: Coven of Dusk"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 233640,
+        "category": 1,
+        "name": "Labyrinth of Refrain: Coven of Dusk",
+        "uid": "566540",
+        "url": "https://store.steampowered.com/app/566540",
+        "year": 2018
+      },
+      {
+        "id": 302414,
+        "category": 14,
+        "name": "Coven and Labyrinth of Refrain",
+        "uid": "494807",
+        "url": "https://www.giantbomb.com/game/3030-57452/"
+      }
+    ],
+    "name": "Labyrinth of Refrain - Coven of Dusk",
+    "platforms": [
+      6,
+      46,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 63421,
+        "human": "2016-Jun-23",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 146908,
+        "human": "2017-Sep-28",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 154115,
+        "human": "2018-Sep-21",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154116,
+        "human": "2018-Sep-21",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 154117,
+        "human": "2018-Sep-21",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154118,
+        "human": "2018-Sep-18",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 154119,
+        "human": "2018-Sep-18",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154120,
+        "human": "2018-Sep-18",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "labyrinth-of-refrain-coven-of-dusk"
+  },
+  "104005": {
+    "id": 104005,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 994535,
+        "category": 1,
+        "name": "Unending Dusk",
+        "uid": "806530",
+        "url": "https://store.steampowered.com/app/806530",
+        "year": 2018
+      },
+      {
+        "id": 1614893,
+        "category": 3,
+        "name": "Unending Dusk",
+        "uid": "70142",
+        "url": "https://www.giantbomb.com/games/3030-70142/",
+        "year": 2018
+      }
+    ],
+    "name": "Unending Dusk",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 157985,
+        "human": "2018-Aug-30",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "unending-dusk"
+  },
+  "76723": {
+    "id": 76723,
+    "alternative_names": [
+      {
+        "id": 23128,
+        "comment": "Japanese title",
+        "name": "Rokku Man 11"
+      },
+      {
+        "id": 23129,
+        "comment": "Japanese title",
+        "name": "\u30ed\u30c3\u30af\u30de\u30f311"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 197268,
+        "category": 3,
+        "name": "Mega Man 11",
+        "uid": "63036",
+        "url": "https://www.giantbomb.com/games/3030-63036/",
+        "year": 2018
+      },
+      {
+        "id": 251712,
+        "category": 14,
+        "name": "Mega Man 11",
+        "uid": "500560"
+      },
+      {
+        "id": 1602904,
+        "category": 1,
+        "name": "Mega Man 11 / Rock Man 11",
+        "uid": "742300",
+        "url": "https://store.steampowered.com/app/742300",
+        "year": 2018
+      },
+      {
+        "id": 1708336,
+        "category": 10,
+        "name": "Mega Man 11",
+        "uid": "UCrBzJSZSs3vt6QRACbG3-Pw",
+        "url": "https://www.youtube.com/watch?v=UCrBzJSZSs3vt6QRACbG3-Pw"
+      }
+    ],
+    "name": "Mega Man 11",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 153184,
+        "human": "2018-Oct-02",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 153185,
+        "human": "2018-Oct-02",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153186,
+        "human": "2018-Oct-02",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153187,
+        "human": "2018-Oct-02",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "mega-man-11"
+  },
+  "9136": {
+    "id": 9136,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1977,
+        "category": 1,
+        "name": "Gorogoa",
+        "uid": "557600"
+      },
+      {
+        "id": 119546,
+        "category": 3,
+        "name": "Gorogoa",
+        "uid": "41173",
+        "url": "https://www.giantbomb.com/games/3030-41173/",
+        "year": 2013
+      },
+      {
+        "id": 225087,
+        "category": 13,
+        "name": "Gorogoa",
+        "uid": "1269225754",
+        "url": "https://itunes.apple.com/us/app/gorogoa/id1269225754?mt=8&uo=4",
+        "year": 2017
+      },
+      {
+        "id": 252627,
+        "category": 14,
+        "name": "Gorogoa",
+        "uid": "106657"
+      },
+      {
+        "id": 846197,
+        "category": 13,
+        "name": "Gorogoa",
+        "uid": "1384710628",
+        "url": "https://itunes.apple.com/us/app/gorogoa/id1384710628?mt=12&uo=4",
+        "year": 2018
+      },
+      {
+        "id": 1103719,
+        "category": 15,
+        "name": "Gorogoa",
+        "uid": "unity.Annapurna.Gorogoa",
+        "url": "https://play.google.com/store/apps/details?id=unity.Annapurna.Gorogoa"
+      }
+    ],
+    "name": "Gorogoa",
+    "platforms": [
+      6,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 130332,
+        "human": "2017-Dec-14",
+        "platform": 39,
+        "y": 2017
+      },
+      {
+        "id": 130340,
+        "human": "2017-Dec-14",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 131191,
+        "human": "2017-Dec-14",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 152814,
+        "human": "2018-May-22",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 152815,
+        "human": "2018-May-22",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "gorogoa"
+  },
+  "36926": {
+    "id": 36926,
+    "alternative_names": [
+      {
+        "id": 21723,
+        "comment": "Acronym",
+        "name": "MHW"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102114,
+        "category": 3,
+        "name": "Monster Hunter: World",
+        "uid": "59924",
+        "url": "https://www.giantbomb.com/games/3030-59924/",
+        "year": 2018
+      },
+      {
+        "id": 210711,
+        "category": 11,
+        "name": "MONSTER HUNTER: WORLD\u2122",
+        "uid": "BNG91PT95LQN",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNG91PT95LQN",
+        "year": 0
+      },
+      {
+        "id": 253135,
+        "category": 14,
+        "name": "Monster Hunter World",
+        "uid": "497467"
+      },
+      {
+        "id": 1184753,
+        "category": 10,
+        "name": "Monster Hunter: World",
+        "uid": "UCjV-uixqhUvj-2dPzHLTGag",
+        "url": "https://www.youtube.com/watch?v=UCjV-uixqhUvj-2dPzHLTGag"
+      },
+      {
+        "id": 1472428,
+        "category": 1,
+        "name": "MONSTER HUNTER: WORLD",
+        "uid": "582010",
+        "url": "https://store.steampowered.com/app/582010",
+        "year": 2018
+      }
+    ],
+    "name": "Monster Hunter: World",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 113479,
+        "human": "2018-Jan-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 147904,
+        "human": "2018-Jan-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 155500,
+        "human": "2018-Aug-09",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "monster-hunter-world"
+  },
+  "27117": {
+    "id": 27117,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 888,
+        "category": 1,
+        "name": "Into the Breach",
+        "uid": "590380"
+      },
+      {
+        "id": 103778,
+        "category": 3,
+        "name": "Into the Breach",
+        "uid": "58234",
+        "url": "https://www.giantbomb.com/games/3030-58234/"
+      },
+      {
+        "id": 281197,
+        "category": 14,
+        "name": "Into the Breach",
+        "uid": "495636",
+        "url": "https://www.giantbomb.com/game/3030-58234/"
+      }
+    ],
+    "name": "Into the Breach",
+    "platforms": [
+      6,
+      14,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 148442,
+        "human": "2018-Feb-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 157707,
+        "human": "2018-Aug-28",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 157708,
+        "human": "2018-Feb-27",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "into-the-breach"
+  },
+  "109309": {
+    "id": 109309,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1592651,
+        "category": 1,
+        "name": "Seacurity Breach",
+        "uid": "906660",
+        "url": "https://store.steampowered.com/app/906660",
+        "year": 2018
+      },
+      {
+        "id": 1774924,
+        "category": 3,
+        "name": "Seacurity Breach",
+        "uid": "72818",
+        "url": "https://www.giantbomb.com/games/3030-72818/"
+      }
+    ],
+    "name": "Seacurity Breach",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 163659,
+        "human": "2018-Dec-17",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "seacurity-breach"
+  },
+  "111563": {
+    "id": 111563,
+    "alternative_names": [
+      {
+        "id": 23227,
+        "comment": "Acronym",
+        "name": "SURVEY_PROGRAM"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1611001,
+        "category": 14,
+        "name": "Deltarune",
+        "uid": "510118",
+        "url": "https://www.giantbomb.com/game/3030-70836/"
+      },
+      {
+        "id": 1617757,
+        "category": 3,
+        "name": "Deltarune",
+        "uid": "70836",
+        "url": "https://www.giantbomb.com/games/3030-70836/",
+        "year": 2018
+      }
+    ],
+    "name": "Deltarune",
+    "platforms": [
+      6,
+      14,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 165064,
+        "human": "2019-Feb-28",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 165777,
+        "human": "2019-Feb-28",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 165778,
+        "human": "2018-Oct-31",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 165779,
+        "human": "2018-Oct-31",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "deltarune"
+  },
+  "13558": {
+    "id": 13558,
+    "alternative_names": [
+      {
+        "id": 5555,
+        "comment": "Japanese title",
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u9583\u306e\u8ecc\u8de1II"
+      },
+      {
+        "id": 7336,
+        "name": "The Legend of Heroes: Sen no Kiseki II"
+      },
+      {
+        "id": 12018,
+        "comment": "Other",
+        "name": "Eiyuu Densetsu: Sen no Kiseki II"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 115826,
+        "category": 3,
+        "name": "The Legend of Heroes: Trails of Cold Steel II",
+        "uid": "45228",
+        "url": "https://www.giantbomb.com/games/3030-45228/",
+        "year": 2014
+      },
+      {
+        "id": 214777,
+        "category": 1,
+        "name": "The Legend of Heroes: Trails of Cold Steel II",
+        "uid": "748490",
+        "url": "https://store.steampowered.com/app/748490",
+        "year": 2018
+      },
+      {
+        "id": 250824,
+        "category": 14,
+        "name": "The Legend of Heroes: Trails of Cold Steel II",
+        "uid": "459341"
+      }
+    ],
+    "name": "The Legend of Heroes: Trails of Cold Steel II",
+    "platforms": [
+      6,
+      9,
+      45,
+      46,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 38951,
+        "human": "2014-Sep-25",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 38952,
+        "human": "2014-Sep-25",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 55738,
+        "human": "2016-Sep-06",
+        "platform": 9,
+        "y": 2016
+      },
+      {
+        "id": 55739,
+        "human": "2016-Sep-06",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 55740,
+        "human": "2016-Nov-11",
+        "platform": 9,
+        "y": 2016
+      },
+      {
+        "id": 55741,
+        "human": "2016-Nov-11",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 129944,
+        "human": "2014-Sep-25",
+        "platform": 45,
+        "y": 2014
+      },
+      {
+        "id": 136842,
+        "human": "2018-Feb-14",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 169033,
+        "human": "2019-Jun-04",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "the-legend-of-heroes-trails-of-cold-steel-ii"
+  },
+  "9254": {
+    "id": 9254,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11998,
+        "category": 1,
+        "name": "Subnautica",
+        "uid": "264710"
+      },
+      {
+        "id": 115077,
+        "category": 3,
+        "name": "Subnautica",
+        "uid": "46006",
+        "url": "https://www.giantbomb.com/games/3030-46006/"
+      },
+      {
+        "id": 190165,
+        "category": 10,
+        "name": "Subnautica",
+        "uid": "UCy2enOz-j605o7sV5OohDZg",
+        "url": "https://gaming.youtube.com/game/UCy2enOz-j605o7sV5OohDZg"
+      },
+      {
+        "id": 245075,
+        "category": 14,
+        "name": "Subnautica",
+        "uid": "460090"
+      }
+    ],
+    "name": "Subnautica",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      162
+    ],
+    "release_dates": [
+      {
+        "id": 136817,
+        "human": "2018-Jan-23",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 136818,
+        "human": "2018-Jan-23",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 161084,
+        "human": "2018-Dec-04",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 161085,
+        "human": "2018-Dec-04",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 163750,
+        "human": "TBD",
+        "platform": 162
+      }
+    ],
+    "slug": "subnautica"
+  },
+  "20123": {
+    "id": 20123,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 6067,
+        "category": 1,
+        "name": "State of Mind",
+        "uid": "437630"
+      },
+      {
+        "id": 78128,
+        "category": 5,
+        "name": "State of Mind",
+        "uid": "1663581818",
+        "url": "https://www.gog.com/game/state_of_mind",
+        "year": 1970
+      },
+      {
+        "id": 106552,
+        "category": 3,
+        "name": "State of Mind",
+        "uid": "54771",
+        "url": "https://www.giantbomb.com/games/3030-54771/",
+        "year": 2017
+      },
+      {
+        "id": 1459207,
+        "category": 14,
+        "name": "State of Mind",
+        "uid": "493420"
+      }
+    ],
+    "name": "State of Mind",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 155662,
+        "human": "2018-Aug-15",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 155663,
+        "human": "2018-Aug-15",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 155664,
+        "human": "2018-Aug-15",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 155665,
+        "human": "2018-Aug-15",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 155666,
+        "human": "2018-Aug-15",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 155734,
+        "human": "2018-Aug-15",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 155735,
+        "human": "2018-Aug-15",
+        "platform": 92,
+        "y": 2018
+      }
+    ],
+    "slug": "state-of-mind"
+  },
+  "19114": {
+    "id": 19114,
+    "alternative_names": [
+      {
+        "id": 6499,
+        "name": "Spider-Man: The Movie"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 149442,
+        "category": 3,
+        "name": "Spider-Man: The Movie",
+        "uid": "8322",
+        "url": "https://www.giantbomb.com/games/3030-8322/",
+        "year": 2002
+      }
+    ],
+    "name": "Spider-Man",
+    "platforms": [
+      6,
+      8,
+      11,
+      21,
+      24
+    ],
+    "release_dates": [
+      {
+        "id": 50569,
+        "human": "2002-Apr-16",
+        "platform": 24,
+        "y": 2002
+      },
+      {
+        "id": 50570,
+        "human": "2002-Apr-15",
+        "platform": 6,
+        "y": 2002
+      },
+      {
+        "id": 50571,
+        "human": "2002-Apr-15",
+        "platform": 21,
+        "y": 2002
+      },
+      {
+        "id": 50572,
+        "human": "2002-Apr-15",
+        "platform": 8,
+        "y": 2002
+      },
+      {
+        "id": 50573,
+        "human": "2002-Apr-15",
+        "platform": 11,
+        "y": 2002
+      }
+    ],
+    "slug": "spider-man--1"
+  },
+  "3603": {
+    "id": 3603,
+    "alternative_names": [
+      {
+        "id": 21229,
+        "name": "Spider-Man 2000"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 189524,
+        "category": 10,
+        "name": "Spider-Man",
+        "uid": "UClBEMpgGpMQaBXa27MKiSFA",
+        "url": "https://gaming.youtube.com/game/UClBEMpgGpMQaBXa27MKiSFA"
+      }
+    ],
+    "name": "Spider-Man",
+    "platforms": [
+      4,
+      6,
+      7,
+      22,
+      23
+    ],
+    "release_dates": [
+      {
+        "id": 8128,
+        "human": "2000-Nov-21",
+        "platform": 4,
+        "y": 2000
+      },
+      {
+        "id": 8129,
+        "human": "2000-Aug-30",
+        "platform": 22,
+        "y": 2000
+      },
+      {
+        "id": 8130,
+        "human": "2000-Aug-30",
+        "platform": 7,
+        "y": 2000
+      },
+      {
+        "id": 145880,
+        "human": "2001-Apr-19",
+        "platform": 23,
+        "y": 2001
+      },
+      {
+        "id": 145881,
+        "human": "2001-Sep-17",
+        "platform": 6,
+        "y": 2001
+      },
+      {
+        "id": 145882,
+        "human": "2001-Sep-21",
+        "platform": 6,
+        "y": 2001
+      },
+      {
+        "id": 145883,
+        "human": "2001-Jun-29",
+        "platform": 23,
+        "y": 2001
+      }
+    ],
+    "slug": "spider-man--5"
+  },
+  "6285": {
+    "id": 6285,
+    "alternative_names": [
+      {
+        "id": 18331,
+        "comment": "Other",
+        "name": "The Amazing Spider-Man 2"
+      },
+      {
+        "id": 24706,
+        "name": "Spider-Man 2: The Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 155474,
+        "category": 3,
+        "name": "Spider-Man 2",
+        "uid": "1690",
+        "url": "https://www.giantbomb.com/games/3030-1690/",
+        "year": 2004
+      },
+      {
+        "id": 189532,
+        "category": 10,
+        "name": "Spider-Man 2",
+        "uid": "UClgqhRgy1sHEzPQFbBOhy6A",
+        "url": "https://gaming.youtube.com/game/UClgqhRgy1sHEzPQFbBOhy6A"
+      },
+      {
+        "id": 247689,
+        "category": 14,
+        "name": "Spider-Man 2",
+        "uid": "1546"
+      }
+    ],
+    "name": "Spider-Man 2",
+    "platforms": [
+      6,
+      8,
+      11,
+      14,
+      20,
+      21,
+      24,
+      38,
+      42
+    ],
+    "release_dates": [
+      {
+        "id": 15311,
+        "human": "2004-Jun-28",
+        "platform": 21,
+        "y": 2004
+      },
+      {
+        "id": 15313,
+        "human": "2004-Jun-28",
+        "platform": 8,
+        "y": 2004
+      },
+      {
+        "id": 15314,
+        "human": "2004-Jun-28",
+        "platform": 11,
+        "y": 2004
+      },
+      {
+        "id": 15315,
+        "human": "2004-Jun-28",
+        "platform": 24,
+        "y": 2004
+      },
+      {
+        "id": 15316,
+        "human": "2004-Jul-02",
+        "platform": 42,
+        "y": 2004
+      },
+      {
+        "id": 15317,
+        "human": "2004-Jul-02",
+        "platform": 14,
+        "y": 2004
+      },
+      {
+        "id": 15318,
+        "human": "2004-Nov-16",
+        "platform": 20,
+        "y": 2004
+      },
+      {
+        "id": 15319,
+        "human": "2005-Mar-15",
+        "platform": 38,
+        "y": 2005
+      },
+      {
+        "id": 169831,
+        "human": "2004-Jun-28",
+        "platform": 6,
+        "y": 2004
+      },
+      {
+        "id": 169832,
+        "human": "2004-Jul-09",
+        "platform": 6,
+        "y": 2004
+      }
+    ],
+    "slug": "spider-man-2"
+  },
+  "5181": {
+    "id": 5181,
+    "alternative_names": [
+      {
+        "id": 8115,
+        "name": "Spider-Man: Web of Shadows - Amazing Allies Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 138174,
+        "category": 3,
+        "name": "Spider-Man: Web of Shadows",
+        "uid": "20762",
+        "url": "https://www.giantbomb.com/games/3030-20762/",
+        "year": 2008
+      },
+      {
+        "id": 247867,
+        "category": 14,
+        "name": "Spider-Man: Web of Shadows",
+        "uid": "18979"
+      }
+    ],
+    "name": "Spider-Man: Web of Shadows",
+    "platforms": [
+      5,
+      6,
+      8,
+      9,
+      12,
+      20,
+      38
+    ],
+    "release_dates": [
+      {
+        "id": 12162,
+        "human": "2008-Oct-21",
+        "platform": 5,
+        "y": 2008
+      },
+      {
+        "id": 12163,
+        "human": "2008-Oct-21",
+        "platform": 6,
+        "y": 2008
+      },
+      {
+        "id": 12164,
+        "human": "2008-Oct-21",
+        "platform": 20,
+        "y": 2008
+      },
+      {
+        "id": 12165,
+        "human": "2008-Oct-21",
+        "platform": 8,
+        "y": 2008
+      },
+      {
+        "id": 12166,
+        "human": "2008-Oct-21",
+        "platform": 9,
+        "y": 2008
+      },
+      {
+        "id": 12167,
+        "human": "2008-Oct-21",
+        "platform": 38,
+        "y": 2008
+      },
+      {
+        "id": 12168,
+        "human": "2008-Oct-21",
+        "platform": 12,
+        "y": 2008
+      },
+      {
+        "id": 143420,
+        "human": "2008-Oct-21",
+        "platform": 5,
+        "y": 2008
+      },
+      {
+        "id": 143421,
+        "human": "2008-Oct-24",
+        "platform": 5,
+        "y": 2008
+      }
+    ],
+    "slug": "spider-man-web-of-shadows"
+  },
+  "46182": {
+    "id": 46182,
+    "alternative_names": [
+      {
+        "id": 18063,
+        "comment": "Other",
+        "name": "Venom - Spider-Man: Separation Anxiety"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 153212,
+        "category": 3,
+        "name": "Spider-Man & Venom: Separation Anxiety",
+        "uid": "4181",
+        "url": "https://www.giantbomb.com/games/3030-4181/",
+        "year": 1995
+      },
+      {
+        "id": 189111,
+        "category": 10,
+        "name": "Venom/Spider-Man: Separation Anxiety",
+        "uid": "UCcOJ3cqHhwH4s0U38cs1Kjg",
+        "url": "https://gaming.youtube.com/game/UCcOJ3cqHhwH4s0U38cs1Kjg"
+      },
+      {
+        "id": 1187704,
+        "category": 14,
+        "name": "Spider-Man & Venom: Separation Anxiety",
+        "uid": "3820",
+        "url": "https://www.twitch.tv/directory/game/Spider-Man & Venom: Separation Anxiety"
+      }
+    ],
+    "name": "Spider-Man & Venom: Separation Anxiety",
+    "platforms": [
+      6,
+      19,
+      29
+    ],
+    "release_dates": [
+      {
+        "id": 98560,
+        "human": "1995-Dec-01",
+        "platform": 29,
+        "y": 1995
+      },
+      {
+        "id": 177367,
+        "human": "1995",
+        "platform": 19,
+        "y": 1995
+      },
+      {
+        "id": 177368,
+        "human": "1995",
+        "platform": 6,
+        "y": 1995
+      }
+    ],
+    "slug": "spider-man-and-venom-separation-anxiety"
+  },
+  "5178": {
+    "id": 5178,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 151902,
+        "category": 3,
+        "name": "Spider-Man 3",
+        "uid": "5614",
+        "url": "https://www.giantbomb.com/games/3030-5614/",
+        "year": 2007
+      },
+      {
+        "id": 189333,
+        "category": 10,
+        "name": "Spider-Man 3",
+        "uid": "UCHkpaCVjMjJGhUK5jLveN5w",
+        "url": "https://gaming.youtube.com/game/UCHkpaCVjMjJGhUK5jLveN5w"
+      },
+      {
+        "id": 214169,
+        "category": 11,
+        "name": "Spider-Man 3",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802415607e2",
+        "url": "http://marketplace.xbox.com/en-US/Product/Spider-Man-3/66acd000-77fe-1000-9115-d802415607e2",
+        "year": 2013
+      },
+      {
+        "id": 248860,
+        "category": 14,
+        "name": "Spider-Man 3",
+        "uid": "5151"
+      }
+    ],
+    "name": "Spider-Man 3",
+    "platforms": [
+      5,
+      6,
+      8,
+      9,
+      12,
+      20,
+      24,
+      38
+    ],
+    "release_dates": [
+      {
+        "id": 12143,
+        "human": "2007-May-04",
+        "platform": 5,
+        "y": 2007
+      },
+      {
+        "id": 12144,
+        "human": "2007-May-04",
+        "platform": 12,
+        "y": 2007
+      },
+      {
+        "id": 12145,
+        "human": "2007-May-04",
+        "platform": 8,
+        "y": 2007
+      },
+      {
+        "id": 12147,
+        "human": "2007-May-04",
+        "platform": 6,
+        "y": 2007
+      },
+      {
+        "id": 12148,
+        "human": "2007-May-04",
+        "platform": 24,
+        "y": 2007
+      },
+      {
+        "id": 12149,
+        "human": "2007-Oct-16",
+        "platform": 38,
+        "y": 2007
+      },
+      {
+        "id": 12150,
+        "human": "2007-May-04",
+        "platform": 20,
+        "y": 2007
+      },
+      {
+        "id": 105767,
+        "human": "2007-May-04",
+        "platform": 9,
+        "y": 2007
+      },
+      {
+        "id": 105768,
+        "human": "2007-Oct-17",
+        "platform": 9,
+        "y": 2007
+      },
+      {
+        "id": 131420,
+        "human": "2007-May-04",
+        "platform": 9,
+        "y": 2007
+      },
+      {
+        "id": 143410,
+        "human": "2007-May-04",
+        "platform": 20,
+        "y": 2007
+      },
+      {
+        "id": 143411,
+        "human": "2007-May-04",
+        "platform": 20,
+        "y": 2007
+      },
+      {
+        "id": 146529,
+        "human": "2007-May-04",
+        "platform": 5,
+        "y": 2007
+      },
+      {
+        "id": 146530,
+        "human": "2007-May-04",
+        "platform": 5,
+        "y": 2007
+      },
+      {
+        "id": 146531,
+        "human": "2007-May-05",
+        "platform": 5,
+        "y": 2007
+      }
+    ],
+    "slug": "spider-man-3"
+  },
+  "4225": {
+    "id": 4225,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 150117,
+        "category": 3,
+        "name": "Ultimate Spider-Man",
+        "uid": "7593",
+        "url": "https://www.giantbomb.com/games/3030-7593/",
+        "year": 2005
+      },
+      {
+        "id": 1187652,
+        "category": 14,
+        "name": "Ultimate Spider-Man",
+        "uid": "6956",
+        "url": "https://www.twitch.tv/directory/game/Ultimate Spider-Man"
+      }
+    ],
+    "name": "Ultimate Spider-Man",
+    "platforms": [
+      6,
+      8,
+      11,
+      20,
+      21,
+      24
+    ],
+    "release_dates": [
+      {
+        "id": 9926,
+        "human": "2005-Sep-19",
+        "platform": 20,
+        "y": 2005
+      },
+      {
+        "id": 9927,
+        "human": "2005-Sep-21",
+        "platform": 21,
+        "y": 2005
+      },
+      {
+        "id": 9928,
+        "human": "2005-Sep-22",
+        "platform": 8,
+        "y": 2005
+      },
+      {
+        "id": 9929,
+        "human": "2005-Sep-22",
+        "platform": 11,
+        "y": 2005
+      },
+      {
+        "id": 9930,
+        "human": "2005-Sep-22",
+        "platform": 6,
+        "y": 2005
+      },
+      {
+        "id": 9931,
+        "human": "2005-Sep-22",
+        "platform": 24,
+        "y": 2005
+      },
+      {
+        "id": 144591,
+        "human": "2005-Sep-22",
+        "platform": 20,
+        "y": 2005
+      },
+      {
+        "id": 144592,
+        "human": "2005-Oct-15",
+        "platform": 20,
+        "y": 2005
+      },
+      {
+        "id": 145884,
+        "human": "2006-May-25",
+        "platform": 20,
+        "y": 2006
+      },
+      {
+        "id": 145885,
+        "human": "2006-Jun-29",
+        "platform": 21,
+        "y": 2006
+      },
+      {
+        "id": 145886,
+        "human": "2006-Aug-24",
+        "platform": 8,
+        "y": 2006
+      }
+    ],
+    "slug": "ultimate-spider-man"
+  },
+  "1376": {
+    "id": 1376,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 123731,
+        "category": 3,
+        "name": "The Amazing Spider-Man",
+        "uid": "36687",
+        "url": "https://www.giantbomb.com/games/3030-36687/",
+        "year": 2012
+      },
+      {
+        "id": 225155,
+        "category": 13,
+        "name": "The Amazing Spider-Man",
+        "uid": "524359189",
+        "url": "https://itunes.apple.com/us/app/the-amazing-spider-man/id524359189?mt=8&uo=4",
+        "year": 2012
+      },
+      {
+        "id": 318049,
+        "category": 14,
+        "name": "The Amazing Spider-Man",
+        "uid": "4817",
+        "url": "https://www.giantbomb.com/game/3030-36687/"
+      }
+    ],
+    "name": "The Amazing Spider-Man",
+    "platforms": [
+      5,
+      6,
+      9,
+      12,
+      20,
+      34,
+      37,
+      39,
+      41,
+      46,
+      73
+    ],
+    "release_dates": [
+      {
+        "id": 10866,
+        "human": "2012-Jun-26",
+        "platform": 20,
+        "y": 2012
+      },
+      {
+        "id": 10867,
+        "human": "2012-Jun-26",
+        "platform": 37,
+        "y": 2012
+      },
+      {
+        "id": 10868,
+        "human": "2012-Jun-26",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 10869,
+        "human": "2012-Jun-26",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 10870,
+        "human": "2012-Jun-26",
+        "platform": 5,
+        "y": 2012
+      },
+      {
+        "id": 10871,
+        "human": "2012-Jun-28",
+        "platform": 34,
+        "y": 2012
+      },
+      {
+        "id": 10872,
+        "human": "2012-Jun-28",
+        "platform": 39,
+        "y": 2012
+      },
+      {
+        "id": 10873,
+        "human": "2012-Aug-10",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 10874,
+        "human": "2013-Mar-05",
+        "platform": 41,
+        "y": 2013
+      },
+      {
+        "id": 10875,
+        "human": "2013-Mar-20",
+        "platform": 73,
+        "y": 2013
+      },
+      {
+        "id": 10876,
+        "human": "2013-Nov-09",
+        "platform": 46,
+        "y": 2013
+      },
+      {
+        "id": 106097,
+        "human": "2012-Jun-26",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 106098,
+        "human": "2012-Jun-29",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 144088,
+        "human": "2012-Jun-26",
+        "platform": 37,
+        "y": 2012
+      },
+      {
+        "id": 144089,
+        "human": "2012-Jun-29",
+        "platform": 37,
+        "y": 2012
+      },
+      {
+        "id": 150003,
+        "human": "2012-Jun-28",
+        "platform": 39,
+        "y": 2012
+      }
+    ],
+    "slug": "the-amazing-spider-man"
+  },
+  "5180": {
+    "id": 5180,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 138635,
+        "category": 3,
+        "name": "Spider-Man: Friend or Foe",
+        "uid": "20258",
+        "url": "https://www.giantbomb.com/games/3030-20258/",
+        "year": 2007
+      },
+      {
+        "id": 189412,
+        "category": 10,
+        "name": "Spider-Man: Friend or Foe",
+        "uid": "UCJ6Uwa0aIHlAcKOs7-kJh_A",
+        "url": "https://gaming.youtube.com/game/UCJ6Uwa0aIHlAcKOs7-kJh_A"
+      },
+      {
+        "id": 1190160,
+        "category": 14,
+        "name": "Spider-Man: Friend or Foe",
+        "uid": "18527"
+      }
+    ],
+    "name": "Spider-Man: Friend or Foe",
+    "platforms": [
+      5,
+      6,
+      8,
+      12,
+      20,
+      38
+    ],
+    "release_dates": [
+      {
+        "id": 12156,
+        "human": "2007-Oct-02",
+        "platform": 5,
+        "y": 2007
+      },
+      {
+        "id": 12157,
+        "human": "2007-Oct-02",
+        "platform": 12,
+        "y": 2007
+      },
+      {
+        "id": 12158,
+        "human": "2007-Oct-02",
+        "platform": 6,
+        "y": 2007
+      },
+      {
+        "id": 12159,
+        "human": "2007-Oct-02",
+        "platform": 20,
+        "y": 2007
+      },
+      {
+        "id": 12160,
+        "human": "2007-Oct-02",
+        "platform": 8,
+        "y": 2007
+      },
+      {
+        "id": 12161,
+        "human": "2007-Oct-02",
+        "platform": 38,
+        "y": 2007
+      },
+      {
+        "id": 143416,
+        "human": "2007-Oct-02",
+        "platform": 20,
+        "y": 2007
+      },
+      {
+        "id": 143417,
+        "human": "2007-Oct-12",
+        "platform": 20,
+        "y": 2007
+      }
+    ],
+    "slug": "spider-man-friend-or-foe"
+  },
+  "4755": {
+    "id": 4755,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 116803,
+        "category": 3,
+        "name": "The Amazing Spider-Man 2",
+        "uid": "44217",
+        "url": "https://www.giantbomb.com/games/3030-44217/",
+        "year": 2014
+      },
+      {
+        "id": 224866,
+        "category": 13,
+        "name": "The Amazing Spider-Man 2",
+        "uid": "779561331",
+        "url": "https://itunes.apple.com/us/app/the-amazing-spider-man-2/id779561331?mt=8&uo=4",
+        "year": 2014
+      },
+      {
+        "id": 246073,
+        "category": 14,
+        "name": "The Amazing Spider-Man 2",
+        "uid": "417736"
+      },
+      {
+        "id": 352282,
+        "category": 15,
+        "name": "The Amazing Spider-Man 2",
+        "uid": "com.gameloft.android.ANMP.GloftASHM",
+        "url": "https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftASHM"
+      }
+    ],
+    "name": "The Amazing Spider-Man 2",
+    "platforms": [
+      6,
+      9,
+      12,
+      34,
+      37,
+      39,
+      41,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 16514,
+        "human": "2014-Apr-29",
+        "platform": 12,
+        "y": 2014
+      },
+      {
+        "id": 16515,
+        "human": "2014-Apr-29",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 16516,
+        "human": "2014-Apr-29",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 16518,
+        "human": "2014-Apr-29",
+        "platform": 37,
+        "y": 2014
+      },
+      {
+        "id": 16519,
+        "human": "2014-Apr-29",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 106100,
+        "human": "2014-Apr-29",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 106101,
+        "human": "2014-May-02",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 134210,
+        "human": "2014-May-02",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 144090,
+        "human": "2014-May-02",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 147500,
+        "human": "2014-Apr-18",
+        "platform": 39,
+        "y": 2014
+      },
+      {
+        "id": 151061,
+        "human": "2014-May-12",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 151062,
+        "human": "2014-Apr-17",
+        "platform": 34,
+        "y": 2014
+      }
+    ],
+    "slug": "the-amazing-spider-man-2"
+  },
+  "4843": {
+    "id": 4843,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 21891,
+        "category": 1,
+        "name": "Kingdom Come: Deliverance",
+        "uid": "379430"
+      },
+      {
+        "id": 116258,
+        "category": 3,
+        "name": "Kingdom Come: Deliverance",
+        "uid": "44790",
+        "url": "https://www.giantbomb.com/games/3030-44790/",
+        "year": 2018
+      },
+      {
+        "id": 188846,
+        "category": 10,
+        "name": "Kingdom Come: Deliverance",
+        "uid": "UC3-4HHj8eaAKXP0m_Sj9EZQ",
+        "url": "https://gaming.youtube.com/game/UC3-4HHj8eaAKXP0m_Sj9EZQ"
+      },
+      {
+        "id": 247204,
+        "category": 14,
+        "name": "Kingdom Come: Deliverance",
+        "uid": "458912"
+      },
+      {
+        "id": 307432,
+        "category": 11,
+        "name": "Kingdom Come: Deliverance",
+        "uid": "BNBWFH89FCF1",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNBWFH89FCF1",
+        "year": 2018
+      }
+    ],
+    "name": "Kingdom Come: Deliverance",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 83395,
+        "human": "2018-Feb-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 83396,
+        "human": "2018-Feb-13",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 83397,
+        "human": "2018-Feb-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149157,
+        "human": "2018-Feb-13",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "kingdom-come-deliverance"
+  },
+  "116794": {
+    "id": 116794,
+    "category": 3,
+    "name": "Kingdom Come: Deliverance - Royal Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 182947,
+        "human": "2018-Feb-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 182948,
+        "human": "2018-Feb-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 182949,
+        "human": "2018-Feb-13",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "kingdom-come-deliverance-royal-edition"
+  },
+  "28380": {
+    "id": 28380,
+    "alternative_names": [
+      {
+        "id": 9911,
+        "comment": "Other",
+        "name": "Darksiders 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 479,
+        "category": 1,
+        "name": "Darksiders III",
+        "uid": "606280"
+      },
+      {
+        "id": 102677,
+        "category": 3,
+        "name": "Darksiders III",
+        "uid": "59346",
+        "url": "https://www.giantbomb.com/games/3030-59346/",
+        "year": 2018
+      },
+      {
+        "id": 210420,
+        "category": 11,
+        "name": "Darksiders III",
+        "uid": "BSVZCMGZV52L",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BSVZCMGZV52L"
+      },
+      {
+        "id": 1191297,
+        "category": 14,
+        "name": "Darksiders III",
+        "uid": "496881"
+      },
+      {
+        "id": 1708311,
+        "category": 10,
+        "name": "Darksiders III",
+        "uid": "UCrHUAH2wqw1GDRlFTtfCpXQ",
+        "url": "https://www.youtube.com/watch?v=UCrHUAH2wqw1GDRlFTtfCpXQ"
+      }
+    ],
+    "name": "Darksiders III",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 155497,
+        "human": "2018-Nov-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 155498,
+        "human": "2018-Nov-27",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 155499,
+        "human": "2018-Nov-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "darksiders-iii"
+  },
+  "27304": {
+    "id": 27304,
+    "alternative_names": [
+      {
+        "id": 8192,
+        "comment": "Japanese title",
+        "name": "\u30a4\u30fc\u30b9VIII -Lacrimosa of DANA-"
+      },
+      {
+        "id": 11755,
+        "comment": "Other",
+        "name": "Ys 8"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1228,
+        "category": 1,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "579180"
+      },
+      {
+        "id": 113403,
+        "category": 3,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "47723",
+        "url": "https://www.giantbomb.com/games/3030-47723/",
+        "year": 2016
+      },
+      {
+        "id": 189214,
+        "category": 10,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "UCf5iGJQ0nqFR4E0Q5k4Thjw",
+        "url": "https://gaming.youtube.com/game/UCf5iGJQ0nqFR4E0Q5k4Thjw"
+      },
+      {
+        "id": 247314,
+        "category": 14,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "476439"
+      }
+    ],
+    "name": "Ys VIII: Lacrimosa of Dana",
+    "platforms": [
+      6,
+      46,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 65625,
+        "human": "2016-Jul-21",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 65626,
+        "human": "2017-May-25",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 93333,
+        "human": "2017-Sep-12",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 93334,
+        "human": "2017-Sep-12",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 93335,
+        "human": "2017-Sep-15",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 93336,
+        "human": "2017-Sep-15",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 149025,
+        "human": "2018-Jun-28",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149475,
+        "human": "2018-Jun-29",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149476,
+        "human": "2018-Jun-26",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 151562,
+        "human": "2018-Apr-17",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "ys-viii-lacrimosa-of-dana"
+  },
+  "81918": {
+    "id": 81918,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 205125,
+        "category": 1,
+        "name": "Delete",
+        "uid": "773670",
+        "url": "https://store.steampowered.com/app/773670",
+        "year": 2018
+      },
+      {
+        "id": 571596,
+        "category": 3,
+        "name": "Delete",
+        "uid": "63131",
+        "url": "https://www.giantbomb.com/games/3030-63131/"
+      },
+      {
+        "id": 576114,
+        "category": 3,
+        "name": "Delete",
+        "uid": "65774",
+        "url": "https://www.giantbomb.com/games/3030-65774/",
+        "year": 2018
+      },
+      {
+        "id": 1023723,
+        "category": 15,
+        "name": "Delete",
+        "uid": "com.delete.pony",
+        "url": "https://play.google.com/store/apps/details?id=com.delete.pony"
+      },
+      {
+        "id": 1192285,
+        "category": 14,
+        "name": "Delete",
+        "uid": "30486"
+      }
+    ],
+    "name": "Delete",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 154534,
+        "human": "2018-Jan-25",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154535,
+        "human": "2018-Jan-25",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "delete"
+  },
+  "104523": {
+    "id": 104523,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1148777,
+        "category": 1,
+        "name": "Groove Coaster for Steam",
+        "uid": "744060",
+        "url": "https://store.steampowered.com/app/744060",
+        "year": 2018
+      }
+    ],
+    "name": "Groove Coaster for Steam",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 180704,
+        "human": "2018-Jul-16",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "groove-coaster-for-steam"
+  },
+  "1802": {
+    "id": 1802,
+    "alternative_names": [
+      {
+        "id": 24451,
+        "comment": "Acronym",
+        "name": "CT"
+      },
+      {
+        "id": 24452,
+        "comment": "Japanese title",
+        "name": "\u30af\u30ed\u30ce\u30fb\u30c8\u30ea\u30ac\u30fc"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 148599,
+        "category": 3,
+        "name": "Chrono Trigger",
+        "uid": "9249",
+        "url": "https://www.giantbomb.com/games/3030-9249/",
+        "year": 1995
+      },
+      {
+        "id": 189153,
+        "category": 10,
+        "name": "Chrono Trigger",
+        "uid": "UCDsIM0bdbzZ8GN8eeOYpGLA",
+        "url": "https://gaming.youtube.com/game/UCDsIM0bdbzZ8GN8eeOYpGLA"
+      },
+      {
+        "id": 245993,
+        "category": 14,
+        "name": "Chrono Trigger",
+        "uid": "8489"
+      },
+      {
+        "id": 266563,
+        "category": 1,
+        "name": "CHRONO TRIGGER",
+        "uid": "613830",
+        "url": "https://store.steampowered.com/app/613830",
+        "year": 2018
+      },
+      {
+        "id": 916543,
+        "category": 15,
+        "name": "CHRONO TRIGGER (Upgrade Ver.)",
+        "uid": "com.square_enix.android_googleplay.chrono",
+        "url": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.chrono"
+      }
+    ],
+    "name": "Chrono Trigger",
+    "platforms": [
+      5,
+      6,
+      7,
+      19,
+      20,
+      34,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 5266,
+        "human": "2011-Dec-09",
+        "platform": 39,
+        "y": 2011
+      },
+      {
+        "id": 110201,
+        "human": "1995-Mar-11",
+        "platform": 19,
+        "y": 1995
+      },
+      {
+        "id": 110202,
+        "human": "1999-Nov-02",
+        "platform": 7,
+        "y": 1999
+      },
+      {
+        "id": 110203,
+        "human": "2008-Nov-20",
+        "platform": 20,
+        "y": 2008
+      },
+      {
+        "id": 110204,
+        "human": "2012-Oct-29",
+        "platform": 34,
+        "y": 2012
+      },
+      {
+        "id": 110205,
+        "human": "1995-Aug-11",
+        "platform": 19,
+        "y": 1995
+      },
+      {
+        "id": 110206,
+        "human": "2001-Jun-29",
+        "platform": 7,
+        "y": 2001
+      },
+      {
+        "id": 110207,
+        "human": "2008-Nov-25",
+        "platform": 20,
+        "y": 2008
+      },
+      {
+        "id": 110208,
+        "human": "2009-Feb-03",
+        "platform": 20,
+        "y": 2009
+      },
+      {
+        "id": 110209,
+        "human": "2009-Feb-06",
+        "platform": 20,
+        "y": 2009
+      },
+      {
+        "id": 110210,
+        "human": "2011-Dec-22",
+        "platform": 34,
+        "y": 2011
+      },
+      {
+        "id": 110215,
+        "human": "2011-Apr-26",
+        "platform": 5,
+        "y": 2011
+      },
+      {
+        "id": 110216,
+        "human": "2011-May-16",
+        "platform": 5,
+        "y": 2011
+      },
+      {
+        "id": 110217,
+        "human": "2011-May-20",
+        "platform": 5,
+        "y": 2011
+      },
+      {
+        "id": 110218,
+        "human": "2011-May-20",
+        "platform": 5,
+        "y": 2011
+      },
+      {
+        "id": 148495,
+        "human": "2018-Feb-27",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "chrono-trigger"
+  },
+  "56006": {
+    "id": 56006,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102239,
+        "category": 3,
+        "name": "The House in Fata Morgana: A Requiem for Innocence",
+        "uid": "59796",
+        "url": "https://www.giantbomb.com/games/3030-59796/",
+        "year": 2015
+      },
+      {
+        "id": 464730,
+        "category": 1,
+        "name": "The House in Fata Morgana: A Requiem for Innocence",
+        "uid": "804700",
+        "url": "https://store.steampowered.com/app/804700",
+        "year": 2018
+      },
+      {
+        "id": 1192586,
+        "category": 14,
+        "name": "The House in Fata Morgana: A Requiem for Innocence",
+        "uid": "497324"
+      }
+    ],
+    "name": "The House in Fata Morgana: A Requiem for Innocence",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 115829,
+        "human": "2015-Aug-16",
+        "platform": 6,
+        "y": 2015
+      }
+    ],
+    "slug": "the-house-in-fata-morgana-a-requiem-for-innocence"
+  },
+  "76702": {
+    "id": 76702,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 191033,
+        "category": 1,
+        "name": "Zwei: The Arges Adventure",
+        "uid": "427680"
+      }
+    ],
+    "name": "Zwei: The Arges Adventure",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 154241,
+        "human": "2001-Dec-30",
+        "platform": 6,
+        "y": 2001
+      }
+    ],
+    "slug": "zwei-the-arges-adventure"
+  },
+  "95069": {
+    "id": 95069,
+    "alternative_names": [
+      {
+        "id": 26118,
+        "comment": "Japanese title",
+        "name": "428 \u301c\u5c01\u9396\u3055\u308c\u305f\u6e0b\u8c37\u3067\u301c"
+      },
+      {
+        "id": 26119,
+        "comment": "Other",
+        "name": "428: In a Blockaded Shibuya"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 348512,
+        "category": 1,
+        "name": "428 Shibuya Scramble",
+        "uid": "648580",
+        "url": "https://store.steampowered.com/app/648580",
+        "year": 2018
+      }
+    ],
+    "name": "428: Shibuya Scramble",
+    "platforms": [
+      5,
+      6,
+      9,
+      34,
+      38,
+      39,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 149578,
+        "human": "2008-Dec-04",
+        "platform": 5,
+        "y": 2008
+      },
+      {
+        "id": 149579,
+        "human": "2009-Sep-03",
+        "platform": 9,
+        "y": 2009
+      },
+      {
+        "id": 149580,
+        "human": "2009-Sep-17",
+        "platform": 38,
+        "y": 2009
+      },
+      {
+        "id": 149581,
+        "human": "2011-Nov-03",
+        "platform": 39,
+        "y": 2011
+      },
+      {
+        "id": 149582,
+        "human": "2011-Nov-03",
+        "platform": 34,
+        "y": 2011
+      },
+      {
+        "id": 156839,
+        "human": "2018-Sep-04",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 156990,
+        "human": "2018-Sep-04",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 156991,
+        "human": "2018-Sep-21",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "428-shibuya-scramble"
+  },
+  "11667": {
+    "id": 11667,
+    "alternative_names": [
+      {
+        "id": 4853,
+        "name": "Dragon Quest 11"
+      },
+      {
+        "id": 4986,
+        "comment": "Japanese title",
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30af\u30a8\u30b9\u30c8XI \u904e\u304e\u53bb\u308a\u3057\u6642\u3092\u6c42\u3081\u3066"
+      },
+      {
+        "id": 9272,
+        "comment": "Translated title",
+        "name": "Dragon Quest XI: In Search of Departed Time"
+      },
+      {
+        "id": 27453,
+        "name": "Dragon Quest XI"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1592699,
+        "category": 1,
+        "name": "DRAGON QUEST\u00ae XI: Echoes of an Elusive Age\u2122",
+        "uid": "742120",
+        "url": "https://store.steampowered.com/app/742120",
+        "year": 2018
+      }
+    ],
+    "name": "Dragon Quest XI: Echoes of an Elusive Age",
+    "platforms": [
+      6,
+      37,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 68050,
+        "human": "2017-Jul-29",
+        "platform": 37,
+        "y": 2017
+      },
+      {
+        "id": 107487,
+        "human": "2017-Jul-29",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 150349,
+        "human": "2018-Sep-04",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 150350,
+        "human": "2018-Sep-04",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 150351,
+        "human": "2018-Sep-04",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 150352,
+        "human": "2018-Sep-04",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "dragon-quest-xi-echoes-of-an-elusive-age"
+  },
+  "26970": {
+    "id": 26970,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 60115,
+        "category": 1,
+        "name": "Minit",
+        "uid": "609490"
+      },
+      {
+        "id": 103813,
+        "category": 3,
+        "name": "Minit",
+        "uid": "58197",
+        "url": "https://www.giantbomb.com/games/3030-58197/",
+        "year": 2017
+      },
+      {
+        "id": 374398,
+        "category": 14,
+        "name": "Minit",
+        "uid": "495610",
+        "url": "https://www.giantbomb.com/game/3030-58197/"
+      }
+    ],
+    "name": "Minit",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 149091,
+        "human": "2018-Apr-03",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149092,
+        "human": "2018-Apr-03",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149093,
+        "human": "2018-Apr-03",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 152198,
+        "human": "2018-Apr-03",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 152199,
+        "human": "2018-Apr-03",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 156430,
+        "human": "2018-Aug-09",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "minit"
+  },
+  "7937": {
+    "id": 7937,
+    "alternative_names": [
+      {
+        "id": 22257,
+        "comment": "Other",
+        "name": "La Mulana 2"
+      },
+      {
+        "id": 22258,
+        "comment": "Other",
+        "name": "Lamulana 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 117018,
+        "category": 3,
+        "name": "La-Mulana 2",
+        "uid": "43994",
+        "url": "https://www.giantbomb.com/games/3030-43994/",
+        "year": 2016
+      },
+      {
+        "id": 249797,
+        "category": 14,
+        "name": "La-Mulana 2",
+        "uid": "458149"
+      },
+      {
+        "id": 736171,
+        "category": 1,
+        "name": "La-Mulana 2",
+        "uid": "835430",
+        "url": "https://store.steampowered.com/app/835430",
+        "year": 2018
+      }
+    ],
+    "name": "La-Mulana 2",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 157958,
+        "human": "2018-Jul-30",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 157959,
+        "human": "2018-Jul-30",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 167628,
+        "human": "2019-Q2",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 167629,
+        "human": "2019-Q2",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 167630,
+        "human": "2019-Q2",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 167631,
+        "human": "2019-Jun-27",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 167632,
+        "human": "2019-Jun-27",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 167633,
+        "human": "2019-Jun-27",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "la-mulana-2"
+  },
+  "97690": {
+    "id": 97690,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 577966,
+        "category": 3,
+        "name": "Paratopic",
+        "uid": "67277",
+        "url": "https://www.giantbomb.com/games/3030-67277/",
+        "year": 2018
+      },
+      {
+        "id": 1193464,
+        "category": 14,
+        "name": "Paratopic",
+        "uid": "504817"
+      }
+    ],
+    "name": "Paratopic",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 166900,
+        "human": "2018-Sep-06",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "paratopic"
+  },
+  "107740": {
+    "id": 107740,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1482137,
+        "category": 1,
+        "name": "Paratopic: Definitive Cut",
+        "uid": "897030",
+        "url": "https://store.steampowered.com/app/897030",
+        "year": 2018
+      }
+    ],
+    "name": "Paratopic: Definitive Cut",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 163344,
+        "human": "2018-Sep-06",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 163345,
+        "human": "2018-Sep-06",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 163346,
+        "human": "2018-Sep-06",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "paratopic-definitive-cut"
+  },
+  "54572": {
+    "id": 54572,
+    "alternative_names": [
+      {
+        "id": 12897,
+        "name": "Artifact - The Dota Card Game"
+      },
+      {
+        "id": 12898,
+        "name": "Artifact TDCG"
+      },
+      {
+        "id": 12899,
+        "name": "The Dota Card Game"
+      },
+      {
+        "id": 12900,
+        "name": "Dota Card Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101308,
+        "category": 3,
+        "name": "Artifact",
+        "uid": "60758",
+        "url": "https://www.giantbomb.com/games/3030-60758/",
+        "year": 2018
+      },
+      {
+        "id": 253248,
+        "category": 14,
+        "name": "Artifact",
+        "uid": "16937"
+      },
+      {
+        "id": 1684092,
+        "category": 1,
+        "name": "Artifact",
+        "uid": "583950",
+        "url": "https://store.steampowered.com/app/583950",
+        "year": 2018
+      },
+      {
+        "id": 1708309,
+        "category": 10,
+        "name": "Artifact",
+        "uid": "UC7ggdqv_mpOIdOwyPGrBjgQ",
+        "url": "https://www.youtube.com/watch?v=UC7ggdqv_mpOIdOwyPGrBjgQ"
+      }
+    ],
+    "name": "Artifact",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 148923,
+        "human": "2019",
+        "platform": 34,
+        "y": 2019
+      },
+      {
+        "id": 148924,
+        "human": "2019",
+        "platform": 39,
+        "y": 2019
+      },
+      {
+        "id": 156611,
+        "human": "2018-Nov-28",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 156612,
+        "human": "2018-Nov-28",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 156613,
+        "human": "2018-Nov-28",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 156614,
+        "human": "2018-Nov-28",
+        "platform": 92,
+        "y": 2018
+      }
+    ],
+    "slug": "artifact"
+  },
+  "83182": {
+    "id": 83182,
+    "alternative_names": [
+      {
+        "id": 23877,
+        "name": "Lost Artifacts - Ancient Tribe Survival"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 187452,
+        "category": 1,
+        "name": "Lost Artifacts",
+        "uid": "708150"
+      },
+      {
+        "id": 208896,
+        "category": 3,
+        "name": "Lost Artifacts",
+        "uid": "64082",
+        "url": "https://www.giantbomb.com/games/3030-64082/"
+      },
+      {
+        "id": 255515,
+        "category": 13,
+        "name": "Lost Artifacts",
+        "uid": "1289656881",
+        "url": "https://itunes.apple.com/us/app/lost-artifacts/id1289656881?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Lost Artifacts",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 165340,
+        "human": "2018-Feb-01",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "lost-artifacts"
+  },
+  "76753": {
+    "id": 76753,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 191159,
+        "category": 1,
+        "name": "Artifact Adventure Gaiden",
+        "uid": "675490"
+      }
+    ],
+    "name": "Artifact Adventure Gaiden",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 170208,
+        "human": "2018-Jan-09",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "artifact-adventure-gaiden"
+  },
+  "113320": {
+    "id": 113320,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1686424,
+        "category": 1,
+        "name": "Lost Artifacts: Soulstone",
+        "uid": "874020",
+        "url": "https://store.steampowered.com/app/874020",
+        "year": 2018
+      },
+      {
+        "id": 1746539,
+        "category": 3,
+        "name": "Lost Artifacts: Soulstone",
+        "uid": "72171",
+        "url": "https://www.giantbomb.com/games/3030-72171/",
+        "year": 2018
+      }
+    ],
+    "name": "Lost Artifacts: Soulstone",
+    "platforms": [
+      6,
+      14,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 165345,
+        "human": "2018-Dec-21",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 165346,
+        "human": "2018-Dec-21",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 165347,
+        "human": "2019-Feb-13",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "lost-artifacts-soulstone"
+  },
+  "107300": {
+    "id": 107300,
+    "alternative_names": [
+      {
+        "id": 22938,
+        "comment": "Formerly Known As",
+        "name": "GWENT: Thronebreaker"
+      },
+      {
+        "id": 24578,
+        "comment": "Japanese title",
+        "name": "\u596a\u308f\u308c\u3057\u7389\u5ea7\uff1a\u30a6\u30a3\u30c3\u30c1\u30e3\u30fc\u30c6\u30a4\u30eb\u30ba"
+      }
+    ],
+    "category": 4,
+    "external_games": [
+      {
+        "id": 1611029,
+        "category": 14,
+        "name": "Thronebreaker: The Witcher Tales",
+        "uid": "509619",
+        "url": "https://www.giantbomb.com/game/3030-70325/"
+      },
+      {
+        "id": 1614774,
+        "category": 1,
+        "name": "Thronebreaker: The Witcher Tales",
+        "uid": "973760",
+        "url": "https://store.steampowered.com/app/973760",
+        "year": 2018
+      },
+      {
+        "id": 1617239,
+        "category": 3,
+        "name": "Thronebreaker: The Witcher Tales",
+        "uid": "70325",
+        "url": "https://www.giantbomb.com/games/3030-70325/",
+        "year": 2018
+      },
+      {
+        "id": 1708294,
+        "category": 10,
+        "name": "Thronebreaker: The Witcher Tales",
+        "uid": "UCr2zWJ-54nH1JZ10EcPMznw",
+        "url": "https://www.youtube.com/watch?v=UCr2zWJ-54nH1JZ10EcPMznw"
+      }
+    ],
+    "name": "Thronebreaker: The Witcher Tales",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 157735,
+        "human": "2018",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 157736,
+        "human": "2018",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 159258,
+        "human": "2018-Oct-23",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "thronebreaker-the-witcher-tales"
+  },
+  "27384": {
+    "id": 27384,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 685,
+        "category": 1,
+        "name": "Graveyard Keeper",
+        "uid": "599140"
+      },
+      {
+        "id": 101979,
+        "category": 3,
+        "name": "Graveyard Keeper",
+        "uid": "60063",
+        "url": "https://www.giantbomb.com/games/3030-60063/"
+      },
+      {
+        "id": 1193044,
+        "category": 14,
+        "name": "Graveyard Keeper",
+        "uid": "497585"
+      },
+      {
+        "id": 1458636,
+        "category": 10,
+        "name": "Graveyard Keeper",
+        "uid": "UCcaoOg6-hRhDLzVqNsiQgiw",
+        "url": "https://www.youtube.com/watch?v=UCcaoOg6-hRhDLzVqNsiQgiw"
+      }
+    ],
+    "name": "Graveyard Keeper",
+    "platforms": [
+      3,
+      6,
+      14,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 153587,
+        "human": "2018-Aug-15",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153588,
+        "human": "2018-Aug-15",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153589,
+        "human": "2018-Aug-15",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 153590,
+        "human": "2018-Aug-15",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 171263,
+        "human": "2019-Jun-27",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "graveyard-keeper"
+  },
+  "74904": {
+    "id": 74904,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 188319,
+        "category": 1,
+        "name": "AMID EVIL",
+        "uid": "673130"
+      },
+      {
+        "id": 393026,
+        "category": 14,
+        "name": "AMID EVIL",
+        "uid": "504610",
+        "url": "https://www.giantbomb.com/game/3030-67388/"
+      },
+      {
+        "id": 578369,
+        "category": 3,
+        "name": "Amid Evil",
+        "uid": "67388",
+        "url": "https://www.giantbomb.com/games/3030-67388/",
+        "year": 2018
+      }
+    ],
+    "name": "AMID EVIL",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 173275,
+        "human": "2019-Jun-20",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "amid-evil"
+  },
+  "30225": {
+    "id": 30225,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12710,
+        "category": 1,
+        "name": "Kenshi",
+        "uid": "233860"
+      },
+      {
+        "id": 77394,
+        "category": 5,
+        "name": "Kenshi",
+        "uid": "1193046833",
+        "url": "https://www.gog.com/game/kenshi",
+        "year": 1970
+      },
+      {
+        "id": 122608,
+        "category": 3,
+        "name": "Kenshi",
+        "uid": "37924",
+        "url": "https://www.giantbomb.com/games/3030-37924/"
+      },
+      {
+        "id": 281404,
+        "category": 14,
+        "name": "Kenshi",
+        "uid": "34025",
+        "url": "https://www.giantbomb.com/game/3030-37924/"
+      }
+    ],
+    "name": "Kenshi",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 161846,
+        "human": "2018-Dec-06",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "kenshi"
+  },
+  "23851": {
+    "id": 23851,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 106232,
+        "category": 3,
+        "name": "Wandersong",
+        "uid": "55099",
+        "url": "https://www.giantbomb.com/games/3030-55099/",
+        "year": 2017
+      },
+      {
+        "id": 185085,
+        "category": 1,
+        "name": "Wandersong",
+        "uid": "530320"
+      },
+      {
+        "id": 1611620,
+        "category": 14,
+        "name": "Wandersong",
+        "uid": "500038",
+        "url": "https://www.giantbomb.com/game/3030-55099/"
+      }
+    ],
+    "name": "Wandersong",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 158179,
+        "human": "2018-Sep-27",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 163682,
+        "human": "2019-Jan-22",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 179527,
+        "human": "2018-Sep-27",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 179528,
+        "human": "2018-Sep-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 179529,
+        "human": "2019-Dec-06",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "wandersong"
+  },
+  "103283": {
+    "id": 103283,
+    "alternative_names": [
+      {
+        "id": 22456,
+        "comment": "Other",
+        "name": "Captain Spirit"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1041249,
+        "category": 1,
+        "name": "The Awesome Adventures of Captain Spirit",
+        "uid": "845070",
+        "url": "https://store.steampowered.com/app/845070",
+        "year": 2018
+      },
+      {
+        "id": 1193598,
+        "category": 14,
+        "name": "The Awesome Adventures of Captain Spirit",
+        "uid": "506414"
+      },
+      {
+        "id": 1457751,
+        "category": 3,
+        "name": "The Awesome Adventures of Captain Spirit",
+        "uid": "68908",
+        "url": "https://www.giantbomb.com/games/3030-68908/",
+        "year": 2018
+      }
+    ],
+    "name": "The Awesome Adventures of Captain Spirit",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 154769,
+        "human": "2018-Jun-26",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154770,
+        "human": "2018-Jun-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154771,
+        "human": "2018-Jun-26",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "the-awesome-adventures-of-captain-spirit"
+  },
+  "111117": {
+    "id": 111117,
+    "alternative_names": [
+      {
+        "id": 27850,
+        "name": "The Haunted Island"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1605000,
+        "category": 1,
+        "name": "The Haunted Island, a Frog Detective Game",
+        "uid": "963000",
+        "url": "https://store.steampowered.com/app/963000",
+        "year": 2018
+      },
+      {
+        "id": 1708806,
+        "category": 14,
+        "name": "The Haunted Island, a Frog Detective Game",
+        "uid": "510419"
+      },
+      {
+        "id": 1744496,
+        "category": 3,
+        "name": "The Haunted Island, a Frog Detective Game",
+        "uid": "71128",
+        "url": "https://www.giantbomb.com/games/3030-71128/",
+        "year": 2018
+      }
+    ],
+    "name": "The Haunted Island, a Frog Detective Game",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 184412,
+        "human": "2018-Nov-22",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 184413,
+        "human": "2018-Nov-22",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "the-haunted-island-a-frog-detective-game"
+  },
+  "55080": {
+    "id": 55080,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 113730,
+        "category": 3,
+        "name": "Donut County",
+        "uid": "47388",
+        "url": "https://www.giantbomb.com/games/3030-47388/"
+      },
+      {
+        "id": 184622,
+        "category": 1,
+        "name": "Donut County",
+        "uid": "702670"
+      },
+      {
+        "id": 1550825,
+        "category": 13,
+        "name": "Donut County",
+        "uid": "1405347356",
+        "url": "https://itunes.apple.com/us/app/donut-county/id1405347356?mt=12&uo=4",
+        "year": 2018
+      },
+      {
+        "id": 1551439,
+        "category": 13,
+        "name": "Donut County",
+        "uid": "1292099839",
+        "url": "https://itunes.apple.com/us/app/donut-county/id1292099839?mt=8&uo=4",
+        "year": 2018
+      },
+      {
+        "id": 1593070,
+        "category": 14,
+        "name": "Donut County",
+        "uid": "461435"
+      }
+    ],
+    "name": "Donut County",
+    "platforms": [
+      6,
+      14,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 156493,
+        "human": "2018-Aug-28",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 156494,
+        "human": "2018-Aug-28",
+        "platform": 39,
+        "y": 2018
+      },
+      {
+        "id": 156495,
+        "human": "2018-Aug-28",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 156496,
+        "human": "2018-Aug-28",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 162078,
+        "human": "2018-Dec-18",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 162079,
+        "human": "2018-Dec-18",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "donut-county"
+  },
+  "57263": {
+    "id": 57263,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104929,
+        "category": 3,
+        "name": "Chuchel",
+        "uid": "57075",
+        "url": "https://www.giantbomb.com/games/3030-57075/"
+      },
+      {
+        "id": 187449,
+        "category": 1,
+        "name": "CHUCHEL",
+        "uid": "711660"
+      },
+      {
+        "id": 289984,
+        "category": 14,
+        "name": "Chuchel",
+        "uid": "494370",
+        "url": "https://www.giantbomb.com/game/3030-57075/"
+      },
+      {
+        "id": 296940,
+        "category": 13,
+        "name": "CHUCHEL",
+        "uid": "1352949166",
+        "url": "https://itunes.apple.com/us/app/chuchel/id1352949166?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Chuchel",
+    "platforms": [
+      6,
+      14,
+      34,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 148773,
+        "human": "2018-Mar-07",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 148774,
+        "human": "2018-Mar-07",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 150554,
+        "human": "2018-Q2",
+        "platform": 39,
+        "y": 2018
+      },
+      {
+        "id": 150555,
+        "human": "2018-Q2",
+        "platform": 34,
+        "y": 2018
+      }
+    ],
+    "slug": "chuchel"
+  },
+  "68838": {
+    "id": 68838,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 185411,
+        "category": 1,
+        "name": "El Tango de la Muerte",
+        "uid": "701380"
+      },
+      {
+        "id": 1456067,
+        "category": 3,
+        "name": "El Tango de la Muerte",
+        "uid": "68188",
+        "url": "https://www.giantbomb.com/games/3030-68188/",
+        "year": 2018
+      },
+      {
+        "id": 1710026,
+        "category": 14,
+        "name": "El Tango de la Muerte",
+        "uid": "505743"
+      }
+    ],
+    "name": "El Tango de la Muerte",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 114605,
+        "human": "2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "el-tango-de-la-muerte"
+  },
+  "35282": {
+    "id": 35282,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8554,
+        "category": 1,
+        "name": "CrossCode",
+        "uid": "368340"
+      },
+      {
+        "id": 76872,
+        "category": 5,
+        "name": "CrossCode",
+        "uid": "1252295864",
+        "url": "https://www.gog.com/game/crosscode",
+        "year": 2015
+      },
+      {
+        "id": 108801,
+        "category": 3,
+        "name": "CrossCode",
+        "uid": "52463",
+        "url": "https://www.giantbomb.com/games/3030-52463/",
+        "year": 2015
+      },
+      {
+        "id": 281537,
+        "category": 14,
+        "name": "CrossCode",
+        "uid": "491243",
+        "url": "https://www.giantbomb.com/game/3030-52463/"
+      }
+    ],
+    "name": "CrossCode",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 159563,
+        "human": "2018-Sep-20",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 159564,
+        "human": "2018-Sep-20",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 159565,
+        "human": "2018-Sep-20",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 166274,
+        "human": "2019",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 172183,
+        "human": "2019",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 175715,
+        "human": "2019",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "crosscode"
+  },
+  "27867": {
+    "id": 27867,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105276,
+        "category": 3,
+        "name": "Unavowed",
+        "uid": "56702",
+        "url": "https://www.giantbomb.com/games/3030-56702/",
+        "year": 2017
+      },
+      {
+        "id": 203558,
+        "category": 1,
+        "name": "Unavowed",
+        "uid": "336140",
+        "url": "https://store.steampowered.com/app/336140",
+        "year": 0
+      },
+      {
+        "id": 1188514,
+        "category": 14,
+        "name": "Unavowed",
+        "uid": "493943",
+        "url": "https://www.twitch.tv/directory/game/Unavowed"
+      },
+      {
+        "id": 1381093,
+        "category": 13,
+        "name": "Unavowed",
+        "uid": "1393793849",
+        "url": "https://itunes.apple.com/us/app/unavowed/id1393793849?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Unavowed",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 154449,
+        "human": "2018-Aug-08",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154450,
+        "human": "2018-Aug-08",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "unavowed"
+  },
+  "6866": {
+    "id": 6866,
+    "alternative_names": [
+      {
+        "id": 2104,
+        "comment": "Japanese title",
+        "name": "\u3077\u3088\u3077\u3088\u30c6\u30c8\u30ea\u30b9"
+      },
+      {
+        "id": 10754,
+        "comment": "Other",
+        "name": "\u3077\u3088\u3077\u3088\u2122\u30c6\u30c8\u30ea\u30b9\u00ae"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 117123,
+        "category": 3,
+        "name": "Puyo Puyo Tetris",
+        "uid": "43883",
+        "url": "https://www.giantbomb.com/games/3030-43883/",
+        "year": 2014
+      },
+      {
+        "id": 189474,
+        "category": 10,
+        "name": "Puyo Puyo Tetris",
+        "uid": "UCkj3xDCJcR6_4EiOuRAIesw",
+        "url": "https://gaming.youtube.com/game/UCkj3xDCJcR6_4EiOuRAIesw"
+      },
+      {
+        "id": 223410,
+        "category": 1,
+        "name": "Puyo Puyo\u2122Tetris\u00ae ",
+        "uid": "546050",
+        "url": "https://store.steampowered.com/app/546050",
+        "year": 2018
+      },
+      {
+        "id": 281224,
+        "category": 14,
+        "name": "Puyo Puyo Tetris",
+        "uid": "370539",
+        "url": "https://www.giantbomb.com/game/3030-43883/"
+      }
+    ],
+    "name": "Puyo Puyo Tetris",
+    "platforms": [
+      6,
+      9,
+      37,
+      41,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 16731,
+        "human": "2014-Feb-06",
+        "platform": 37,
+        "y": 2014
+      },
+      {
+        "id": 16733,
+        "human": "2014-Feb-06",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 16734,
+        "human": "2014-Feb-06",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 64264,
+        "human": "2014-Dec-04",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 64265,
+        "human": "2014-Dec-04",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 65124,
+        "human": "2017-Apr-25",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 65125,
+        "human": "2017-Apr-25",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 65126,
+        "human": "2017-Apr-28",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 65127,
+        "human": "2017-Apr-28",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 105031,
+        "human": "2014-Feb-06",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 146619,
+        "human": "2018-Feb-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 146783,
+        "human": "2017-Apr-28",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 146784,
+        "human": "2017-Mar-03",
+        "platform": 130,
+        "y": 2017
+      }
+    ],
+    "slug": "puyo-puyo-tetris"
+  },
+  "102119": {
+    "id": 102119,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 826718,
+        "category": 1,
+        "name": "Quarantine Circular",
+        "uid": "853500",
+        "url": "https://store.steampowered.com/app/853500",
+        "year": 2018
+      },
+      {
+        "id": 1457499,
+        "category": 3,
+        "name": "Quarantine Circular",
+        "uid": "68655",
+        "url": "https://www.giantbomb.com/games/3030-68655/",
+        "year": 2018
+      }
+    ],
+    "name": "Quarantine Circular",
+    "platforms": [
+      6,
+      14,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 152875,
+        "human": "2018-May-22",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 152876,
+        "human": "2018-May-22",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 162021,
+        "human": "2018-Dec-08",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "quarantine-circular"
+  },
+  "8729": {
+    "id": 8729,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 21888,
+        "category": 1,
+        "name": "Vampyr",
+        "uid": "427290"
+      },
+      {
+        "id": 112538,
+        "category": 3,
+        "name": "Vampyr",
+        "uid": "48617",
+        "url": "https://www.giantbomb.com/games/3030-48617/",
+        "year": 2017
+      },
+      {
+        "id": 1184679,
+        "category": 10,
+        "name": "Vampyr",
+        "uid": "UCIdSwGp3KI41RZLP8PzGUlQ",
+        "url": "https://www.youtube.com/watch?v=UCIdSwGp3KI41RZLP8PzGUlQ"
+      },
+      {
+        "id": 1192975,
+        "category": 14,
+        "name": "Vampyr",
+        "uid": "488758"
+      }
+    ],
+    "name": "Vampyr",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 146795,
+        "human": "2018-Jun-05",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 146796,
+        "human": "2018-Jun-05",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 146800,
+        "human": "2018-Jun-05",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 175270,
+        "human": "2019-Oct-29",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "vampyr"
+  },
+  "99123": {
+    "id": 99123,
+    "alternative_names": [
+      {
+        "id": 22153,
+        "name": "Shadow of the Tomb Raider Collector's Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151862,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151863,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151864,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-ultimate-edition"
+  },
+  "37777": {
+    "id": 37777,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 323912,
+        "category": 1,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "750920",
+        "url": "https://store.steampowered.com/app/750920",
+        "year": 2018
+      },
+      {
+        "id": 577742,
+        "category": 3,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "67214",
+        "url": "https://www.giantbomb.com/games/3030-67214/",
+        "year": 2018
+      },
+      {
+        "id": 1191954,
+        "category": 14,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "504735"
+      },
+      {
+        "id": 1592908,
+        "category": 10,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "UCGG8kaxALszLmIYqerCz-cA",
+        "url": "https://www.youtube.com/watch?v=UCGG8kaxALszLmIYqerCz-cA"
+      }
+    ],
+    "name": "Shadow of the Tomb Raider",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 149054,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149055,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149056,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider"
+  },
+  "99122": {
+    "id": 99122,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Croft Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151850,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151851,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151852,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-croft-edition"
+  },
+  "99121": {
+    "id": 99121,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider - Digital Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151859,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151860,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151861,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-digital-deluxe-edition"
+  },
+  "99229": {
+    "id": 99229,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Digital Croft Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151856,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151857,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151858,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-digital-croft-edition"
+  },
+  "99230": {
+    "id": 99230,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Croft Steelbook Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151853,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151854,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151855,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-croft-steelbook-edition"
+  },
+  "51448": {
+    "id": 51448,
+    "alternative_names": [
+      {
+        "id": 22228,
+        "comment": "Japanese title",
+        "name": "\u30d6\u30ec\u30a4\u30d6\u30eb\u30fc \u30af\u30ed\u30b9\u30bf\u30c3\u30b0\u30d0\u30c8\u30eb"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101666,
+        "category": 3,
+        "name": "BlazBlue Cross Tag Battle",
+        "uid": "60367",
+        "url": "https://www.giantbomb.com/games/3030-60367/",
+        "year": 2018
+      },
+      {
+        "id": 246441,
+        "category": 14,
+        "name": "BlazBlue Cross Tag Battle",
+        "uid": "497877"
+      },
+      {
+        "id": 743186,
+        "category": 1,
+        "name": "BlazBlue Cross Tag Battle",
+        "uid": "702890",
+        "url": "https://store.steampowered.com/app/702890",
+        "year": 2018
+      },
+      {
+        "id": 1184690,
+        "category": 10,
+        "name": "BlazBlue: Cross Tag Battle",
+        "uid": "UCY0r4lgc1k0QsJ147uY2ZOQ",
+        "url": "https://www.youtube.com/watch?v=UCY0r4lgc1k0QsJ147uY2ZOQ"
+      }
+    ],
+    "name": "BlazBlue: Cross Tag Battle",
+    "platforms": [
+      6,
+      48,
+      52,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 149214,
+        "human": "2018-May-31",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149215,
+        "human": "2018-May-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149217,
+        "human": "2018-May-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149218,
+        "human": "2018-May-31",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149219,
+        "human": "2018-Jun-05",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149220,
+        "human": "2018-Jun-05",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149221,
+        "human": "2018-Jun-05",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 152252,
+        "human": "2018-Jun-06",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 152253,
+        "human": "2018-Jun-06",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 152644,
+        "human": "2018-Jun-22",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 152645,
+        "human": "2018-Jun-22",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 159479,
+        "human": "2018-Jun-05",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 164221,
+        "human": "2019-Q2",
+        "platform": 52,
+        "y": 2019
+      }
+    ],
+    "slug": "blazblue-cross-tag-battle"
+  },
+  "77175": {
+    "id": 77175,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 207955,
+        "category": 3,
+        "name": "Street Fighter 30th Anniversary Collection",
+        "uid": "63150",
+        "url": "https://www.giantbomb.com/games/3030-63150/",
+        "year": 2018
+      },
+      {
+        "id": 329861,
+        "category": 14,
+        "name": "Street Fighter 30th Anniversary Collection",
+        "uid": "500689",
+        "url": "https://www.giantbomb.com/game/3030-63150/"
+      },
+      {
+        "id": 887518,
+        "category": 1,
+        "name": "Street Fighter 30th Anniversary Collection",
+        "uid": "586200",
+        "url": "https://store.steampowered.com/app/586200",
+        "year": 2018
+      }
+    ],
+    "name": "Street Fighter 30th Anniversary Collection",
+    "platforms": [
+      6,
+      45,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 130932,
+        "human": "2018-May-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 130933,
+        "human": "2018-May-31",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 130934,
+        "human": "2018-May-31",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 130935,
+        "human": "2018-May-31",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 134767,
+        "human": "2018",
+        "platform": 45,
+        "y": 2018
+      },
+      {
+        "id": 134768,
+        "human": "2018",
+        "platform": 45,
+        "y": 2018
+      }
+    ],
+    "slug": "street-fighter-30th-anniversary-collection"
+  },
+  "41819": {
+    "id": 41819,
+    "alternative_names": [
+      {
+        "id": 8972,
+        "comment": "Japanese title",
+        "name": "\u30a2\u30f3\u30c0\u30fc\u30ca\u30a4\u30c8\u30a4\u30f3\u30f4\u30a1\u30fc\u30b9\u30a8\u30af\u30bb\u30ec\u30a4\u30c8\u30a8\u30b9\u30c8"
+      },
+      {
+        "id": 19995,
+        "comment": "Other",
+        "name": "UNIST"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 110892,
+        "category": 3,
+        "name": "Under Night In-Birth Exe:Late[st]",
+        "uid": "50323",
+        "url": "https://www.giantbomb.com/games/3030-50323/",
+        "year": 2015
+      },
+      {
+        "id": 1288864,
+        "category": 1,
+        "name": "UNDER NIGHT IN-BIRTH Exe:Late[st]",
+        "uid": "801630",
+        "url": "https://store.steampowered.com/app/801630",
+        "year": 2018
+      }
+    ],
+    "name": "Under Night In-Birth Exe:Late[st]",
+    "platforms": [
+      6,
+      9,
+      46,
+      48,
+      52
+    ],
+    "release_dates": [
+      {
+        "id": 88295,
+        "human": "2017-Jul-20",
+        "platform": 9,
+        "y": 2017
+      },
+      {
+        "id": 88296,
+        "human": "2017-Jul-20",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 88297,
+        "human": "2017-Jul-20",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 88300,
+        "human": "2015-Jul-23",
+        "platform": 52,
+        "y": 2015
+      },
+      {
+        "id": 129181,
+        "human": "2018-Feb-09",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 129184,
+        "human": "2018-Feb-09",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 129185,
+        "human": "2018-Feb-09",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 129187,
+        "human": "2018-Feb-09",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 129188,
+        "human": "2018-Feb-09",
+        "platform": 9,
+        "y": 2018
+      },
+      {
+        "id": 129189,
+        "human": "2018-Feb-09",
+        "platform": 9,
+        "y": 2018
+      },
+      {
+        "id": 157494,
+        "human": "2018-Aug-20",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "under-night-in-birth-exe-late-st"
+  },
+  "36911": {
+    "id": 36911,
+    "alternative_names": [
+      {
+        "id": 8794,
+        "comment": "Japanese title",
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30dc\u30fc\u30eb \u30d5\u30a1\u30a4\u30bf\u30fc\u30ba"
+      },
+      {
+        "id": 9898,
+        "comment": "Other",
+        "name": "Dragonball FighterZ"
+      },
+      {
+        "id": 21722,
+        "comment": "Acronym",
+        "name": "DBFZ"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102176,
+        "category": 3,
+        "name": "Dragon Ball FighterZ",
+        "uid": "59862",
+        "url": "https://www.giantbomb.com/games/3030-59862/",
+        "year": 2018
+      },
+      {
+        "id": 214838,
+        "category": 1,
+        "name": "DRAGON BALL FighterZ",
+        "uid": "678950",
+        "url": "https://store.steampowered.com/app/678950",
+        "year": 2018
+      },
+      {
+        "id": 226021,
+        "category": 11,
+        "name": "DRAGON BALL FIGHTERZ",
+        "uid": "BZRK5C951KK7",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BZRK5C951KK7",
+        "year": 2018
+      },
+      {
+        "id": 254005,
+        "category": 14,
+        "name": "Dragon Ball FighterZ",
+        "uid": "497385"
+      },
+      {
+        "id": 309040,
+        "category": 11,
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30dc\u30fc\u30eb \u30d5\u30a1\u30a4\u30bf\u30fc\u30ba",
+        "uid": "BPRR175K75MT",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPRR175K75MT"
+      },
+      {
+        "id": 1184743,
+        "category": 10,
+        "name": "Dragon Ball FighterZ",
+        "uid": "UCxI9EGwRrFx_BQ7gTqfZOBA",
+        "url": "https://www.youtube.com/watch?v=UCxI9EGwRrFx_BQ7gTqfZOBA"
+      }
+    ],
+    "name": "Dragon Ball FighterZ",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 123049,
+        "human": "2018-Feb-01",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 123050,
+        "human": "2018-Feb-01",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 123051,
+        "human": "2018-Feb-01",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 123880,
+        "human": "2018-Jan-26",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 123881,
+        "human": "2018-Jan-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 123882,
+        "human": "2018-Jan-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 123883,
+        "human": "2018-Jan-26",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 123884,
+        "human": "2018-Jan-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 123885,
+        "human": "2018-Jan-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 154287,
+        "human": "2018-Sep-27",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 154413,
+        "human": "2018-Sep-28",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "dragon-ball-fighterz"
+  },
+  "33363": {
+    "id": 33363,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 5676,
+        "category": 1,
+        "name": "Overload",
+        "uid": "448850"
+      },
+      {
+        "id": 108332,
+        "category": 3,
+        "name": "Overload",
+        "uid": "52944",
+        "url": "https://www.giantbomb.com/games/3030-52944/"
+      }
+    ],
+    "name": "Overload",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 151694,
+        "human": "2018-May-31",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 151695,
+        "human": "2018-May-31",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 151696,
+        "human": "2018-May-31",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 151697,
+        "human": "2018-May-31",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 165672,
+        "human": "2018-May-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 165673,
+        "human": "2019-Mar-06",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "overload"
+  },
+  "7684": {
+    "id": 7684,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 6726,
+        "category": 1,
+        "name": "Ghost of a Tale",
+        "uid": "417290"
+      },
+      {
+        "id": 77193,
+        "category": 5,
+        "name": "Ghost of a Tale",
+        "uid": "1875167847",
+        "url": "https://www.gog.com/game/ghost_of_a_tale",
+        "year": 1970
+      },
+      {
+        "id": 118459,
+        "category": 3,
+        "name": "Ghost of a Tale",
+        "uid": "42460",
+        "url": "https://www.giantbomb.com/games/3030-42460/",
+        "year": 2016
+      },
+      {
+        "id": 246578,
+        "category": 14,
+        "name": "Ghost of a Tale",
+        "uid": "369141"
+      }
+    ],
+    "name": "Ghost of a Tale",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 149014,
+        "human": "2018-Mar-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 167200,
+        "human": "2019-Mar-12",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 167201,
+        "human": "2019-Mar-12",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "ghost-of-a-tale"
+  },
+  "106122": {
+    "id": 106122,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1313359,
+        "category": 1,
+        "name": "EXAPUNKS",
+        "uid": "716490",
+        "url": "https://store.steampowered.com/app/716490",
+        "year": 2018
+      },
+      {
+        "id": 1370600,
+        "category": 14,
+        "name": "EXAPUNKS",
+        "uid": "508761",
+        "url": "https://www.giantbomb.com/game/3030-69464/"
+      },
+      {
+        "id": 1574915,
+        "category": 3,
+        "name": "EXAPUNKS",
+        "uid": "69464",
+        "url": "https://www.giantbomb.com/games/3030-69464/",
+        "year": 2018
+      }
+    ],
+    "name": "EXAPUNKS",
+    "platforms": [
+      3,
+      6,
+      14,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 160274,
+        "human": "2018-Oct-22",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160275,
+        "human": "2018-Oct-22",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160276,
+        "human": "2018-Oct-22",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 160277,
+        "human": "2018-Oct-22",
+        "platform": 92,
+        "y": 2018
+      }
+    ],
+    "slug": "exapunks"
+  },
+  "96391": {
+    "id": 96391,
+    "alternative_names": [
+      {
+        "id": 22062,
+        "comment": "Japanese title",
+        "name": "\u30b7\u30a7\u30f3\u30e0\u30fc I\uff06II"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 464889,
+        "category": 1,
+        "name": "Shenmue I & II",
+        "uid": "758330",
+        "url": "https://store.steampowered.com/app/758330",
+        "year": 2018
+      },
+      {
+        "id": 1455264,
+        "category": 3,
+        "name": "Shenmue I & II",
+        "uid": "68002",
+        "url": "https://www.giantbomb.com/games/3030-68002/",
+        "year": 2018
+      },
+      {
+        "id": 1486679,
+        "category": 14,
+        "name": "Shenmue I & II",
+        "uid": "505524",
+        "url": "https://www.giantbomb.com/game/3030-68002/"
+      }
+    ],
+    "name": "Shenmue I & II",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 154913,
+        "human": "2018-Aug-21",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154914,
+        "human": "2018-Aug-21",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 154915,
+        "human": "2018-Aug-21",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 154916,
+        "human": "2018-Aug-21",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154917,
+        "human": "2018-Aug-21",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 156570,
+        "human": "2018-Nov-22",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "shenmue-i-and-ii"
+  },
+  "7504": {
+    "id": 7504,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12556,
+        "category": 1,
+        "name": "The Forest",
+        "uid": "242760"
+      },
+      {
+        "id": 150036,
+        "category": 3,
+        "name": "The Forest",
+        "uid": "7675",
+        "url": "https://www.giantbomb.com/games/3030-7675/",
+        "year": 2014
+      },
+      {
+        "id": 188795,
+        "category": 10,
+        "name": "The Forest",
+        "uid": "UC1FmDC0aitSDxQdRpMbguEg",
+        "url": "https://gaming.youtube.com/game/UC1FmDC0aitSDxQdRpMbguEg"
+      },
+      {
+        "id": 245246,
+        "category": 14,
+        "name": "The Forest",
+        "uid": "7022"
+      }
+    ],
+    "name": "The Forest",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 147796,
+        "human": "2018-Apr-30",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 157765,
+        "human": "2018-Nov-06",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "the-forest"
+  },
+  "21961": {
+    "id": 21961,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 223406,
+        "category": 1,
+        "name": "FOX n FORESTS",
+        "uid": "603400",
+        "url": "https://store.steampowered.com/app/603400",
+        "year": 2018
+      },
+      {
+        "id": 576615,
+        "category": 3,
+        "name": "Fox n Forests",
+        "uid": "66250",
+        "url": "https://www.giantbomb.com/games/3030-66250/",
+        "year": 2018
+      },
+      {
+        "id": 1193419,
+        "category": 14,
+        "name": "Fox n Forests",
+        "uid": "503789"
+      }
+    ],
+    "name": "FOX n FORESTS",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 153244,
+        "human": "2018-May-17",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153245,
+        "human": "2018-May-17",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 153246,
+        "human": "2018-May-17",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 153247,
+        "human": "2018-May-17",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 153248,
+        "human": "2018-May-17",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 153249,
+        "human": "2018-May-17",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 153250,
+        "human": "2018-May-17",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 153251,
+        "human": "2018-May-17",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 153252,
+        "human": "2018-May-30",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153253,
+        "human": "2018-May-30",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "fox-n-forests"
+  },
+  "102313": {
+    "id": 102313,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 779400,
+        "category": 1,
+        "name": "Zombie Forest 2",
+        "uid": "833010",
+        "url": "https://store.steampowered.com/app/833010",
+        "year": 2018
+      }
+    ],
+    "name": "Zombie Forest 2",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 164422,
+        "human": "2018-May-28",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "zombie-forest-2"
+  },
+  "107021": {
+    "id": 107021,
+    "category": 0,
+    "name": "Forests Are For Trees",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 156885,
+        "human": "2018-Aug-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 156886,
+        "human": "2018-Aug-13",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 156887,
+        "human": "2018-Aug-13",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "forests-are-for-trees"
+  },
+  "15457": {
+    "id": 15457,
+    "alternative_names": [
+      {
+        "id": 5907,
+        "name": "Ys: Foliage Ocean in Celceta"
+      },
+      {
+        "id": 5908,
+        "comment": "Japanese title",
+        "name": "\u30a4\u30fc\u30b9 \u30bb\u30eb\u30bb\u30bf\u306e\u6a39\u6d77"
+      },
+      {
+        "id": 22523,
+        "comment": "Other",
+        "name": "Ys: Celceta, Sea of Trees"
+      },
+      {
+        "id": 22524,
+        "name": "Ys Foliage Ocean in Celceta"
+      },
+      {
+        "id": 22525,
+        "name": "Ys: Forest of Seruseta"
+      },
+      {
+        "id": 22526,
+        "name": "Ys: Celceta no Jukai"
+      },
+      {
+        "id": 22527,
+        "name": "Ys IV: Woodland of Celceta Sprout"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 123981,
+        "category": 3,
+        "name": "Ys: Memories of Celceta",
+        "uid": "36409",
+        "url": "https://www.giantbomb.com/games/3030-36409/",
+        "year": 2012
+      },
+      {
+        "id": 248803,
+        "category": 14,
+        "name": "Ys: Memories of Celceta",
+        "uid": "32665"
+      },
+      {
+        "id": 1202466,
+        "category": 1,
+        "name": "Ys: Memories of Celceta",
+        "uid": "587110",
+        "url": "https://store.steampowered.com/app/587110",
+        "year": 2018
+      }
+    ],
+    "name": "Ys: Memories of Celceta",
+    "platforms": [
+      6,
+      46,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 48113,
+        "human": "2012-Sep-27",
+        "platform": 46,
+        "y": 2012
+      },
+      {
+        "id": 48114,
+        "human": "2013-Nov-26",
+        "platform": 46,
+        "y": 2013
+      },
+      {
+        "id": 48115,
+        "human": "2014-Feb-21",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 48116,
+        "human": "2015-Oct-28",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 154748,
+        "human": "2018-Jul-25",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 164730,
+        "human": "2019-May-16",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "ys-memories-of-celceta"
+  },
+  "26196": {
+    "id": 26196,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104773,
+        "category": 3,
+        "name": "Crash Bandicoot N. Sane Trilogy",
+        "uid": "57213",
+        "url": "https://www.giantbomb.com/games/3030-57213/",
+        "year": 2017
+      },
+      {
+        "id": 189165,
+        "category": 10,
+        "name": "Crash Bandicoot N. Sane Trilogy",
+        "uid": "UCdxS9fVS3qNYdxujaqRV02Q",
+        "url": "https://gaming.youtube.com/game/UCdxS9fVS3qNYdxujaqRV02Q"
+      },
+      {
+        "id": 253021,
+        "category": 14,
+        "name": "Crash Bandicoot: N. Sane Trilogy",
+        "uid": "494553"
+      },
+      {
+        "id": 1196955,
+        "category": 1,
+        "name": "Crash Bandicoot\u2122 N. Sane Trilogy",
+        "uid": "731490",
+        "url": "https://store.steampowered.com/app/731490",
+        "year": 2018
+      }
+    ],
+    "name": "Crash Bandicoot N. Sane Trilogy",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 102271,
+        "human": "2017-Jun-30",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 102272,
+        "human": "2017-Jun-30",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 116997,
+        "human": "2017-Aug-03",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 152363,
+        "human": "2018-Jun-29",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 152364,
+        "human": "2018-Jun-29",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 152365,
+        "human": "2018-Jun-29",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "crash-bandicoot-n-sane-trilogy"
+  },
+  "78547": {
+    "id": 78547,
+    "alternative_names": [
+      {
+        "id": 27177,
+        "name": "The Council: Complete Season"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 209282,
+        "category": 3,
+        "name": "The Council",
+        "uid": "64465",
+        "url": "https://www.giantbomb.com/games/3030-64465/",
+        "year": 2018
+      },
+      {
+        "id": 309239,
+        "category": 14,
+        "name": "The Council",
+        "uid": "501925",
+        "url": "https://www.giantbomb.com/game/3030-64465/"
+      },
+      {
+        "id": 333355,
+        "category": 1,
+        "name": "The Council",
+        "uid": "287630",
+        "url": "https://store.steampowered.com/app/287630",
+        "year": 2018
+      }
+    ],
+    "name": "The Council",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 148736,
+        "human": "2018-Mar-13",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 148737,
+        "human": "2018-Mar-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 148738,
+        "human": "2018-Mar-13",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "the-council"
+  },
+  "87499": {
+    "id": 87499,
+    "alternative_names": [
+      {
+        "id": 22883,
+        "comment": "Other",
+        "name": "The Missing"
+      },
+      {
+        "id": 22884,
+        "comment": "Japanese title",
+        "name": "The MISSING - J.J.\u30de\u30af\u30d5\u30a3\u30fc\u30eb\u30c9\u3068\u8ffd\u61b6\u5cf6 -"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1457562,
+        "category": 3,
+        "name": "The Missing",
+        "uid": "68718",
+        "url": "https://www.giantbomb.com/games/3030-68718/",
+        "year": 2018
+      },
+      {
+        "id": 1604427,
+        "category": 1,
+        "name": "The MISSING: J.J. Macfield and the Island of Memories",
+        "uid": "842910",
+        "url": "https://store.steampowered.com/app/842910",
+        "year": 2018
+      },
+      {
+        "id": 1709529,
+        "category": 14,
+        "name": "The Missing",
+        "uid": "506222"
+      }
+    ],
+    "name": "The MISSING: J.J. Macfield and the Island of Memories",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 158357,
+        "human": "2018-Oct-11",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 158358,
+        "human": "2018-Oct-11",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 158359,
+        "human": "2018-Oct-11",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 158360,
+        "human": "2018-Oct-11",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "the-missing-jj-macfield-and-the-island-of-memories"
+  },
+  "26783": {
+    "id": 26783,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 190461,
+        "category": 1,
+        "name": "Miss Fisher and the Deathly Maze",
+        "uid": "711430"
+      }
+    ],
+    "name": "Miss Fisher and the Deathly Maze",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 128559,
+        "human": "2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 128560,
+        "human": "2018",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 128561,
+        "human": "2018",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "miss-fisher-and-the-deathly-maze"
+  },
+  "23248": {
+    "id": 23248,
+    "alternative_names": [
+      {
+        "id": 24633,
+        "comment": "Other",
+        "name": "Frostpunk: Console Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105606,
+        "category": 3,
+        "name": "Frostpunk",
+        "uid": "55760",
+        "url": "https://www.giantbomb.com/games/3030-55760/"
+      },
+      {
+        "id": 184571,
+        "category": 1,
+        "name": "Frostpunk",
+        "uid": "323190"
+      },
+      {
+        "id": 360625,
+        "category": 14,
+        "name": "Frostpunk",
+        "uid": "493549",
+        "url": "https://www.giantbomb.com/game/3030-55760/"
+      },
+      {
+        "id": 1184697,
+        "category": 10,
+        "name": "Frostpunk",
+        "uid": "UC8pmGKNAM06K1J1R8yZ1n-g",
+        "url": "https://www.youtube.com/watch?v=UC8pmGKNAM06K1J1R8yZ1n-g"
+      }
+    ],
+    "name": "Frostpunk",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 148862,
+        "human": "2018-Apr-24",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 174251,
+        "human": "2019-Oct-11",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 174252,
+        "human": "2019-Oct-11",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "frostpunk"
+  },
+  "90295": {
+    "id": 90295,
+    "category": 0,
+    "name": "Frostpunk: Victorian Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 148939,
+        "human": "2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "frostpunk-victorian-edition"
+  },
+  "109458": {
+    "id": 109458,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1686235,
+        "category": 1,
+        "name": "Katamari Damacy REROLL",
+        "uid": "848350",
+        "url": "https://store.steampowered.com/app/848350",
+        "year": 2018
+      }
+    ],
+    "name": "Katamari Damacy REROLL",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 158430,
+        "human": "2018-Dec-07",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 161970,
+        "human": "2018-Dec-07",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "katamari-damacy-reroll"
+  },
+  "82117": {
+    "id": 82117,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 211283,
+        "category": 1,
+        "name": "Two Point Hospital",
+        "uid": "535930",
+        "url": "https://store.steampowered.com/app/535930",
+        "year": 2018
+      },
+      {
+        "id": 575768,
+        "category": 3,
+        "name": "Two Point Hospital",
+        "uid": "65427",
+        "url": "https://www.giantbomb.com/games/3030-65427/",
+        "year": 2018
+      },
+      {
+        "id": 1458843,
+        "category": 14,
+        "name": "Two Point Hospital",
+        "uid": "502918"
+      },
+      {
+        "id": 1592913,
+        "category": 10,
+        "name": "Two Point Hospital",
+        "uid": "UCONai8Uup0OAgfqSTQ9Ul0Q",
+        "url": "https://www.youtube.com/watch?v=UCONai8Uup0OAgfqSTQ9Ul0Q"
+      }
+    ],
+    "name": "Two Point Hospital",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 155911,
+        "human": "2018-Aug-30",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 179035,
+        "human": "2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 179036,
+        "human": "2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 181437,
+        "human": "2020-Feb-25",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "two-point-hospital"
+  },
+  "83731": {
+    "id": 83731,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 238379,
+        "category": 1,
+        "name": "Beat Saber",
+        "uid": "620980",
+        "url": "https://store.steampowered.com/app/620980",
+        "year": 2018
+      },
+      {
+        "id": 575992,
+        "category": 3,
+        "name": "Beat Saber",
+        "uid": "65652",
+        "url": "https://www.giantbomb.com/games/3030-65652/"
+      },
+      {
+        "id": 1193243,
+        "category": 14,
+        "name": "Beat Saber",
+        "uid": "503116"
+      }
+    ],
+    "name": "Beat Saber",
+    "platforms": [
+      6,
+      161,
+      162,
+      163,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 169565,
+        "human": "2019-May-21",
+        "platform": 161,
+        "y": 2019
+      },
+      {
+        "id": 169566,
+        "human": "2019-May-21",
+        "platform": 162,
+        "y": 2019
+      },
+      {
+        "id": 169567,
+        "human": "2019-May-21",
+        "platform": 163,
+        "y": 2019
+      },
+      {
+        "id": 169568,
+        "human": "2019-May-21",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 174142,
+        "human": "2019-May-21",
+        "platform": 165,
+        "y": 2019
+      }
+    ],
+    "slug": "beat-saber"
+  },
+  "28160": {
+    "id": 28160,
+    "alternative_names": [
+      {
+        "id": 28466,
+        "name": "ATOM RPG: Post-apocalyptic indie game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 2179,
+        "category": 1,
+        "name": "ATOM RPG",
+        "uid": "552620"
+      },
+      {
+        "id": 102715,
+        "category": 3,
+        "name": "ATOM RPG: Post-apocalyptic indie game",
+        "uid": "59307",
+        "url": "https://www.giantbomb.com/games/3030-59307/"
+      },
+      {
+        "id": 1190846,
+        "category": 14,
+        "name": "ATOM RPG: Post-apocalyptic indie game",
+        "uid": "496791",
+        "url": "https://www.twitch.tv/directory/game/ATOM RPG: Post-apocalyptic indie game"
+      }
+    ],
+    "name": "ATOM RPG",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 174221,
+        "human": "2018-Dec-19",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 174222,
+        "human": "2018-Dec-19",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 174223,
+        "human": "2018-Dec-19",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "atom-rpg"
+  },
+  "75848": {
+    "id": 75848,
+    "alternative_names": [
+      {
+        "id": 12752,
+        "comment": "Teaser title",
+        "name": "Valkyria Project"
+      },
+      {
+        "id": 12814,
+        "comment": "Japanese title",
+        "name": "\u6226\u5834\u306e\u30f4\u30a1\u30eb\u30ad\u30e5\u30ea\u30a2\uff14"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 196909,
+        "category": 3,
+        "name": "Valkyria Chronicles 4",
+        "uid": "62693",
+        "url": "https://www.giantbomb.com/games/3030-62693/",
+        "year": 2018
+      },
+      {
+        "id": 328898,
+        "category": 14,
+        "name": "Valkyria Chronicles 4",
+        "uid": "500231",
+        "url": "https://www.giantbomb.com/game/3030-62693/"
+      },
+      {
+        "id": 1043208,
+        "category": 1,
+        "name": "Valkyria Chronicles 4",
+        "uid": "790820",
+        "url": "https://store.steampowered.com/app/790820",
+        "year": 2018
+      }
+    ],
+    "name": "Valkyria Chronicles 4",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 129644,
+        "human": "2018-Q3",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 129645,
+        "human": "2018-Mar-21",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149336,
+        "human": "2019-Q1",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 149337,
+        "human": "2019-Q1",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 149338,
+        "human": "2019-Q1",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 154305,
+        "human": "2018-Sep-25",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154306,
+        "human": "2018-Sep-25",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 154307,
+        "human": "2018-Sep-25",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 154308,
+        "human": "2018-Sep-25",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154309,
+        "human": "2018-Sep-25",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 154310,
+        "human": "2018-Sep-25",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154311,
+        "human": "2018-Sep-25",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "valkyria-chronicles-4"
+  },
+  "22747": {
+    "id": 22747,
+    "alternative_names": [
+      {
+        "id": 10648,
+        "comment": "Other",
+        "name": "Return 2 Games: Book of Demons"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 5618,
+        "category": 1,
+        "name": "Book of Demons",
+        "uid": "449960"
+      },
+      {
+        "id": 107576,
+        "category": 3,
+        "name": "Book of Demons",
+        "uid": "53730",
+        "url": "https://www.giantbomb.com/games/3030-53730/",
+        "year": 2017
+      },
+      {
+        "id": 246805,
+        "category": 14,
+        "name": "Book of Demons",
+        "uid": "492568"
+      }
+    ],
+    "name": "Book of Demons",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 161629,
+        "human": "2018-Dec-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 162186,
+        "human": "2018-Dec-13",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "book-of-demons"
+  },
+  "24426": {
+    "id": 24426,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105632,
+        "category": 3,
+        "name": "Forgotton Anne",
+        "uid": "55713",
+        "url": "https://www.giantbomb.com/games/3030-55713/",
+        "year": 2017
+      },
+      {
+        "id": 207421,
+        "category": 1,
+        "name": "Forgotton Anne",
+        "uid": "542050",
+        "url": "https://store.steampowered.com/app/542050",
+        "year": 2018
+      },
+      {
+        "id": 1191684,
+        "category": 14,
+        "name": "Forgotton Anne",
+        "uid": "493503"
+      }
+    ],
+    "name": "Forgotton Anne",
+    "platforms": [
+      6,
+      14,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 152471,
+        "human": "2018-May-15",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 152472,
+        "human": "2018-May-15",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 152473,
+        "human": "2018-May-15",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160674,
+        "human": "2018-Jun-21",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160675,
+        "human": "2018-Nov-09",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 171948,
+        "human": "2019-Jun-26",
+        "platform": 39,
+        "y": 2019
+      }
+    ],
+    "slug": "forgotton-anne"
+  },
+  "17001": {
+    "id": 17001,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 71669,
+        "category": 1,
+        "name": "Ashen",
+        "uid": "649950"
+      },
+      {
+        "id": 111228,
+        "category": 3,
+        "name": "Ashen",
+        "uid": "49964",
+        "url": "https://www.giantbomb.com/games/3030-49964/"
+      },
+      {
+        "id": 1699304,
+        "category": 14,
+        "name": "Ashen",
+        "uid": "4520",
+        "url": "https://www.giantbomb.com/game/3030-49964/"
+      }
+    ],
+    "name": "Ashen",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 161895,
+        "human": "2018-Dec-07",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 174872,
+        "human": "2019-Dec-09",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 177790,
+        "human": "2019-Dec-09",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 178132,
+        "human": "2019-Dec-09",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "ashen--1"
+  },
+  "41824": {
+    "id": 41824,
+    "alternative_names": [
+      {
+        "id": 8983,
+        "comment": "Japanese title",
+        "name": "\u7070\u9df9\u306e\u30b5\u30a4\u30b1\u30c7\u30ea\u30ab"
+      },
+      {
+        "id": 8984,
+        "comment": "Japanese title",
+        "name": "Haitaka no Psychedelica"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186881,
+        "category": 3,
+        "name": "Haitaka no Psychedelica",
+        "uid": "60276",
+        "url": "https://www.giantbomb.com/games/3030-60276/",
+        "year": 2016
+      },
+      {
+        "id": 1735148,
+        "category": 1,
+        "name": "Psychedelica of the Ashen Hawk",
+        "uid": "865830",
+        "url": "https://store.steampowered.com/app/865830",
+        "year": 2019
+      }
+    ],
+    "name": "Psychedelica of the Ashen Hawk",
+    "platforms": [
+      6,
+      46
+    ],
+    "release_dates": [
+      {
+        "id": 88313,
+        "human": "2016-Sep-29",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 88314,
+        "human": "2018",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 105007,
+        "human": "2018",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 165163,
+        "human": "2019-Feb-18",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "psychedelica-of-the-ashen-hawk"
+  },
+  "111001": {
+    "id": 111001,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1604146,
+        "category": 1,
+        "name": "Evenicle",
+        "uid": "955560",
+        "url": "https://store.steampowered.com/app/955560",
+        "year": 2018
+      }
+    ],
+    "name": "Evenicle",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 163610,
+        "human": "2015-Apr-24",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 163611,
+        "human": "2018-Jun-28",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "evenicle"
+  },
+  "18222": {
+    "id": 18222,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 109783,
+        "category": 3,
+        "name": "The Room Three",
+        "uid": "51443",
+        "url": "https://www.giantbomb.com/games/3030-51443/",
+        "year": 2015
+      },
+      {
+        "id": 224861,
+        "category": 13,
+        "name": "The Room Three",
+        "uid": "918054748",
+        "url": "https://itunes.apple.com/us/app/the-room-three/id918054748?mt=8&uo=4",
+        "year": 2015
+      },
+      {
+        "id": 246666,
+        "category": 14,
+        "name": "The Room Three",
+        "uid": "491586"
+      },
+      {
+        "id": 352300,
+        "category": 15,
+        "name": "The Room Three",
+        "uid": "com.FireproofStudios.TheRoom3",
+        "url": "https://play.google.com/store/apps/details?id=com.FireproofStudios.TheRoom3"
+      },
+      {
+        "id": 1604986,
+        "category": 1,
+        "name": "The Room Three",
+        "uid": "456750",
+        "url": "https://store.steampowered.com/app/456750",
+        "year": 2018
+      }
+    ],
+    "name": "The Room Three",
+    "platforms": [
+      6,
+      34,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 47882,
+        "human": "2015-Nov-09",
+        "platform": 34,
+        "y": 2015
+      },
+      {
+        "id": 147498,
+        "human": "2015-Nov-04",
+        "platform": 39,
+        "y": 2015
+      },
+      {
+        "id": 161407,
+        "human": "2018-Nov-13",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "the-room-three"
+  },
+  "105031": {
+    "id": 105031,
+    "alternative_names": [
+      {
+        "id": 22735,
+        "comment": "Other",
+        "name": "Atelier Rorona DX"
+      },
+      {
+        "id": 22736,
+        "comment": "Japanese title",
+        "name": "\u30ed\u30ed\u30ca\u306e\u30a2\u30c8\u30ea\u30a8 \uff5e\u30a2\u30fc\u30e9\u30f3\u30c9\u306e\u932c\u91d1\u8853\u58eb\uff5e DX"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1606933,
+        "category": 1,
+        "name": "Atelier Rorona ~The Alchemist of Arland~ DX",
+        "uid": "936160",
+        "url": "https://store.steampowered.com/app/936160",
+        "year": 2018
+      },
+      {
+        "id": 1776082,
+        "category": 3,
+        "name": "Atelier Rorona DX",
+        "uid": "73986",
+        "url": "https://www.giantbomb.com/games/3030-73986/",
+        "year": 2018
+      }
+    ],
+    "name": "Atelier Rorona: The Alchemist of Arland DX",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 155561,
+        "human": "2018-Sep-20",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 155562,
+        "human": "2018-Sep-20",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 161790,
+        "human": "2018-Dec-04",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 174117,
+        "human": "2018-Dec-04",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "atelier-rorona-the-alchemist-of-arland-dx"
+  },
+  "36814": {
+    "id": 36814,
+    "alternative_names": [
+      {
+        "id": 8765,
+        "comment": "Japanese title",
+        "name": "\u30ea\u30c7\u30a3\u30fc\uff06\u30b9\u30fc\u30eb\u306e\u30a2\u30c8\u30ea\u30a8 \uff5e\u4e0d\u601d\u8b70\u306a\u7d75\u753b\u306e\u932c\u91d1\u8853\u58eb\uff5e"
+      },
+      {
+        "id": 12579,
+        "comment": "Other",
+        "name": "Atelier Lydie & Soeur: Alchemists of the Mysterious Painting"
+      },
+      {
+        "id": 20327,
+        "comment": "Other",
+        "name": "Atelier Lydie & Soeur: Fushigi na Kaiga no Renkinjutsushi"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186832,
+        "category": 3,
+        "name": "Atelier Lydie & Soeur: Fushigi na Kaiga no Renkinjutsushi",
+        "uid": "60828",
+        "url": "https://www.giantbomb.com/games/3030-60828/",
+        "year": 2017
+      },
+      {
+        "id": 335394,
+        "category": 14,
+        "name": "Atelier Lydie & Soeur: Fushigi na Kaiga no Renkinjutsushi",
+        "uid": "498358",
+        "url": "https://www.giantbomb.com/game/3030-60828/"
+      },
+      {
+        "id": 368592,
+        "category": 1,
+        "name": "Atelier Lydie & Suelle ~The Alchemists and the Mysterious Paintings~",
+        "uid": "756590",
+        "url": "https://store.steampowered.com/app/756590",
+        "year": 2018
+      }
+    ],
+    "name": "Atelier Lydie & Suelle: The Alchemists and the Mysterious Paintings",
+    "platforms": [
+      6,
+      46,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 128381,
+        "human": "2018-Mar-30",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 128382,
+        "human": "2018-Mar-30",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 128383,
+        "human": "2018-Mar-30",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 128384,
+        "human": "2018-Mar-27",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 128385,
+        "human": "2018-Mar-27",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 128386,
+        "human": "2018-Mar-27",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 128387,
+        "human": "2017-Dec-21",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 128388,
+        "human": "2017-Dec-21",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 128389,
+        "human": "2017-Dec-21",
+        "platform": 46,
+        "y": 2017
+      }
+    ],
+    "slug": "atelier-lydie-and-suelle-the-alchemists-and-the-mysterious-paintings"
+  },
+  "107327": {
+    "id": 107327,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1615011,
+        "category": 3,
+        "name": "Heartbeat",
+        "uid": "70260",
+        "url": "https://www.giantbomb.com/games/3030-70260/"
+      },
+      {
+        "id": 1684480,
+        "category": 1,
+        "name": "HEARTBEAT",
+        "uid": "984560",
+        "url": "https://store.steampowered.com/app/984560",
+        "year": 2018
+      },
+      {
+        "id": 1697110,
+        "category": 14,
+        "name": "Heartbeat",
+        "uid": "509556",
+        "url": "https://www.giantbomb.com/game/3030-70260/"
+      }
+    ],
+    "name": "HEARTBEAT",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 157912,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "heartbeat"
+  },
+  "86574": {
+    "id": 86574,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 223289,
+        "category": 1,
+        "name": "Squidlit",
+        "uid": "799510",
+        "url": "https://store.steampowered.com/app/799510",
+        "year": 2018
+      },
+      {
+        "id": 281416,
+        "category": 14,
+        "name": "Squidlit",
+        "uid": "504338",
+        "url": "https://www.giantbomb.com/game/3030-66805/"
+      },
+      {
+        "id": 577164,
+        "category": 3,
+        "name": "Squidlit",
+        "uid": "66805",
+        "url": "https://www.giantbomb.com/games/3030-66805/"
+      }
+    ],
+    "name": "Squidlit",
+    "slug": "squidlit"
+  }
+}
