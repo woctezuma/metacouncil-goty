@@ -69,7 +69,8 @@ def extend_igdb_local_database(release_year=None,
 
 
 def extend_igdb_match_database(release_year=None,
-                               igdb_match_database=None):
+                               igdb_match_database=None,
+                               verbose=True):
     if igdb_match_database is None:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
 
@@ -78,7 +79,10 @@ def extend_igdb_match_database(release_year=None,
     extended_igdb_match_database = igdb_match_database
     for app_name in fixes_to_igdb_match_database.keys():
         if app_name in igdb_match_database.keys():
-            print('Query name {} already exists in IGDB match database. Match will be overwritten.'.format(app_name))
+            if verbose:
+                print('Query name {} already exists in IGDB match database. Match will be overwritten.'.format(
+                    app_name
+                ))
         extended_igdb_match_database[app_name] = fixes_to_igdb_match_database[app_name]
 
     return extended_igdb_match_database
@@ -126,11 +130,13 @@ def fill_in_blanks_in_the_local_database(release_year=None,
 
 def extend_both_igdb_databases(release_year=None,
                                igdb_match_database=None,
-                               igdb_local_database=None):
+                               igdb_local_database=None,
+                               verbose=True):
     # Manual extension of the match database
 
     extended_igdb_match_database = extend_igdb_match_database(release_year=release_year,
-                                                              igdb_match_database=igdb_match_database)
+                                                              igdb_match_database=igdb_match_database,
+                                                              verbose=verbose)
 
     # Automatic extension of the local database after the manual extension of the match database
 

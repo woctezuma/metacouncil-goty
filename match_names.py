@@ -235,7 +235,8 @@ def standardize_ballots(ballots,
                         must_be_available_on_pc=True,
                         must_be_a_game=True,
                         goty_field='goty_preferences',
-                        year_constraint='equality'):
+                        year_constraint='equality',
+                        verbose=True):
     if use_igdb:
         # Using IGDB
 

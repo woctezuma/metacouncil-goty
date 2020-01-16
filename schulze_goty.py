@@ -37,9 +37,11 @@ def filter_out_votes_for_early_access_titles(standardized_ballots):
 
 
 def get_local_database(target_release_year=None,
-                       use_igdb=False):
+                       use_igdb=False,
+                       verbose=False):
     if use_igdb:
-        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year)
+        _, extended_igdb_local_database = extend_both_igdb_databases(release_year=target_release_year,
+                                                                     verbose=verbose)
         steamspy_database = None
 
         local_database = extended_igdb_local_database

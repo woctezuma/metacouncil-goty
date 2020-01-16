@@ -197,7 +197,8 @@ def download_igdb_local_databases(ballots,
                                   extend_previous_databases=True,
                                   must_be_available_on_pc=True,
                                   must_be_a_game=True,
-                                  goty_field='goty_preferences'):
+                                  goty_field='goty_preferences',
+                                  verbose=True):
     igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
                                                                      release_year=release_year,
                                                                      must_be_available_on_pc=must_be_available_on_pc,
@@ -235,7 +236,8 @@ def download_igdb_local_databases(ballots,
     if apply_hard_coded_extension_and_fixes:
         igdb_match_database, igdb_local_database = extend_both_igdb_databases(release_year=release_year,
                                                                               igdb_match_database=igdb_match_database,
-                                                                              igdb_local_database=igdb_local_database)
+                                                                              igdb_local_database=igdb_local_database,
+                                                                              verbose=verbose)
 
     return igdb_match_database, igdb_local_database
 
@@ -258,14 +260,16 @@ def load_igdb_local_databases(ballots,
                                                                                  apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                                                                                  must_be_available_on_pc=must_be_available_on_pc,
                                                                                  must_be_a_game=must_be_a_game,
-                                                                                 goty_field=goty_field)
+                                                                                 goty_field=goty_field,
+                                                                                 verbose=verbose)
 
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
     if apply_hard_coded_extension_and_fixes:
         igdb_match_database, igdb_local_database = extend_both_igdb_databases(release_year=release_year,
                                                                               igdb_match_database=igdb_match_database,
-                                                                              igdb_local_database=igdb_local_database)
+                                                                              igdb_local_database=igdb_local_database,
+                                                                              verbose=verbose)
 
     if verbose:
         print_igdb_matches(igdb_match_database,
