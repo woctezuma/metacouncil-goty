@@ -188,7 +188,7 @@ def merge_databases(new_database,
 
     for element in previous_database:
         if element not in merged_database:
-            merged_database[element] = merged_database[element]
+            merged_database[element] = previous_database[element]
 
     return merged_database
 
