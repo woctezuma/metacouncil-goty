@@ -15,7 +15,8 @@ def get_optional_categories():
 
 def get_optional_ballots(ballots, category_name):
     optional_ballots = [ballots[voter_name][category_name] for voter_name in ballots
-                        if len(ballots[voter_name][category_name]) > 0]
+                        if category_name in ballots[voter_name]
+                        and len(ballots[voter_name][category_name]) > 0]
 
     return optional_ballots
 
