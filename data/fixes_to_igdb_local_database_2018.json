@@ -1,0 +1,20 @@
+{
+  "-885940": {
+    "id": -885940,
+    "name": "Meritocracy of the Oni & Blade",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2018,
+        "human": "2018-Sep-27"
+      }
+    ],
+    "external_games": [
+      {
+        "category": 1,
+        "uid": "885940"
+      }
+    ],
+    "slug": null
+  }
+}

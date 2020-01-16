@@ -41,10 +41,46 @@ Results are displayed:
 -   on the [Wiki](https://github.com/woctezuma/metacouncil-goty/wiki),
 -   on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/).
 
+## Perspectives
+
+The current implementation relies on [SteamSpy](https://github.com/woctezuma/steamspypi)'s database, and matches game names with [Levenshtein distance](https://github.com/ztane/python-Levenshtein).
+
+Work-in-progress includes:
+-   matching game names with the longest contiguous matching subsequence, as offered by [difflib](https://docs.python.org/3/library/difflib.html),
+-   relying on [IGDB](https://www.igdb.com/api)'s database, which extends beyond Steam.
+
+If we use SteamSpy, we have the choice between Levenshtein distance and difflib for name matching.
+Difflib is notably slower than Levenshtein distance. 
+In practice, Levenshtein distance is effective at fixing typos, but cannot work for cases where the input is short and the actual game title is long, e.g. for [Resident Evil 7](https://store.steampowered.com/app/418370/):
+
+> RESIDENT EVIL 7 biohazard / BIOHAZARD 7 resident evil
+
+If IGDB is used, then the API is queried, but the whole database is not locally available, so name matching is delegated to IGDB.
+In theory, this could lead to worse results if there are typos in the input names.
+However:
+-   IGDB's database is larger than SteamSpy's, so name matching could be better, thanks to the availability of alternative names.
+-   typos are not a big issue: they are rare in the input game names for the GotY votes.
+
+A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma/metacouncil-goty/wiki/Benchmark) on the Wiki.
+
+The mismatches observed with the 2018 dataset are counted, and the best performing methods are:
+1.  IGDB database with a constraint w.r.t. the release year: **8 mismatches**,
+2.  IGDB database: 11 mismatches,
+3.  vanilla SteamSpy database with difflib matching and a constraint w.r.t. the release yar: 12 mismatches,
+4.  vanilla SteamSpy database with difflib matching: 14 mismatches,
+5.  vanilla SteamSpy database with Levenshtein distance: 18 mismatches (same performance with and without constraint). 
+
+In summary, in order to minimize the number of manual edits necessary to extend the database and to fix name mismatches,
+the most promising method involves using the IGSB database with a constraint w.r.t. the release year.
+
 ## References
 
 -   [Ranked-choice voting](https://en.wikipedia.org/wiki/Ranked_voting)
 -   [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
+-   [SteamSpy API](https://github.com/woctezuma/steamspypi)
+-   [IGDB API](https://www.igdb.com/api)
+-   [Levenshtein distance](https://github.com/ztane/python-Levenshtein)
+-   [difflib](https://docs.python.org/3/library/difflib.html): the longest contiguous matching subsequence
 
 <!-- Definitions -->
 
