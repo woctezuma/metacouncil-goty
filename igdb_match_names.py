@@ -1,6 +1,5 @@
 from disqualify_vote import get_hard_coded_noisy_votes
 from extend_igdb import extend_both_igdb_databases
-from extend_steamspy import load_extended_steamspy_database
 from igdb_databases import load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database, save_igdb_match_database
 from igdb_utils import get_steam_service_no, get_pc_platform_no
@@ -95,7 +94,6 @@ def match_names_with_igdb(raw_votes,
     igdb_match_database = dict()
     igdb_local_database = dict()
 
-    steamspy_database = load_extended_steamspy_database()
     noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
