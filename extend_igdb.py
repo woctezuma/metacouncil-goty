@@ -90,14 +90,20 @@ def extend_igdb_match_database(release_year=None,
 
 def fill_in_blanks_in_the_local_database(release_year=None,
                                          igdb_local_database=None,
+                                         igdb_match_database=None,
                                          save_to_disk=True):
     if igdb_local_database is None:
         igdb_local_database = load_igdb_local_database(release_year=release_year)
+
+    if igdb_match_database is None:
+        igdb_match_database = load_igdb_match_database(release_year=release_year)
 
     fixes_to_igdb_match_database = load_fixes_to_igdb_match_database(release_year=release_year)
 
     required_igdb_ids = []
     for igdb_ids in fixes_to_igdb_match_database.values():
+        required_igdb_ids += igdb_ids
+    for igdb_ids in igdb_match_database.values():
         required_igdb_ids += igdb_ids
 
     augmented_igdb_local_database = igdb_local_database
@@ -141,7 +147,8 @@ def extend_both_igdb_databases(release_year=None,
     # Automatic extension of the local database after the manual extension of the match database
 
     augmented_igdb_local_database = fill_in_blanks_in_the_local_database(release_year=release_year,
-                                                                         igdb_local_database=igdb_local_database)
+                                                                         igdb_local_database=igdb_local_database,
+                                                                         igdb_match_database=extended_igdb_match_database)
 
     # Manual extension of the local database
 
