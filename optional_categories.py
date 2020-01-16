@@ -6,6 +6,7 @@ def get_optional_categories():
     optional_categories = [
         'best_dlc',
         'best_early_access',
+        'best_vr',
         'best_turd',
     ]
 
