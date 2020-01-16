@@ -240,6 +240,7 @@ def standardize_ballots(ballots,
         # Using IGDB
 
         if retrieve_igdb_data_from_scratch:
+            # By default, we extend the previous databases. If you do not want to, delete them before running the code.
             igdb_match_database, igdb_local_database = download_igdb_local_databases(ballots,
                                                                                      release_year=release_year,
                                                                                      apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
