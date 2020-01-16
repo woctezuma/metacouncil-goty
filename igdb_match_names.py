@@ -17,7 +17,7 @@ def get_link_to_igdb_website(igdb_id,
     slug = igdb_data['slug']
 
     if int(igdb_id) > 0:
-        link_to_store = '[URL=' + igdb_base_url + slug + '/]' + igdb_id + '[/URL]'
+        link_to_store = '[URL=' + igdb_base_url + slug + '/]' + str(igdb_id) + '[/URL]'
     else:
         if hide_dummy_app_id:
             link_to_store = 'n/a'
