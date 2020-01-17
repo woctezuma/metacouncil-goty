@@ -275,11 +275,14 @@ def standardize_ballots(ballots,
                                      num_closest_neighbors=3,
                                      max_num_tries_for_year=2,
                                      use_levenshtein_distance=use_levenshtein_distance,
-                                     year_constraint=year_constraint)
+                                     year_constraint=year_constraint,
+                                     goty_field=goty_field)
 
         display_matches(matches, print_after_sort)
 
-    standardized_ballots = normalize_votes(ballots, matches)
+    standardized_ballots = normalize_votes(ballots,
+                                           matches,
+                                           goty_field=goty_field)
 
     return (standardized_ballots, matches)
 
