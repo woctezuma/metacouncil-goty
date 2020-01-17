@@ -4,6 +4,7 @@ from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import load_extended_steamspy_database
 from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, get_igdb_human_release_dates
+from load_ballots import get_parsing_params
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
 from steam_store_utils import get_link_to_store, get_early_access_status
@@ -354,8 +355,11 @@ def apply_pipeline(input_filename,
                    apply_hard_coded_extension_and_fixes=True,
                    use_levenshtein_distance=True,
                    goty_field='goty_preferences',
-                   year_constraint='equality'):
-    ballots = load_ballots(input_filename, fake_author_name=fake_author_name)
+                   year_constraint='equality',
+                   parsing_params=None):
+    ballots = load_ballots(input_filename,
+                           fake_author_name=fake_author_name,
+                           parsing_params=parsing_params)
 
     # Standardize ballots
 
@@ -416,6 +420,8 @@ if __name__ == '__main__':
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
 
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
+
     # Game of the Year
     goty_field = 'goty_preferences'
     release_year = ballot_year
@@ -430,4 +436,5 @@ if __name__ == '__main__':
                    apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
-                   year_constraint=year_constraint)
+                   year_constraint=year_constraint,
+                   parsing_params=parsing_params)

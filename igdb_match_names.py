@@ -4,6 +4,7 @@ from igdb_databases import load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database, save_igdb_match_database
 from igdb_utils import get_steam_service_no, get_pc_platform_no
 from igdb_utils import look_up_game_name, get_pc_platform_range
+from load_ballots import get_parsing_params
 from load_ballots import load_ballots
 
 
@@ -353,7 +354,10 @@ def main():
     ballot_year = '2018'
     input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
-    ballots = load_ballots(input_filename)
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
+
+    ballots = load_ballots(input_filename,
+                           parsing_params=parsing_params)
 
     release_year = ballot_year
 

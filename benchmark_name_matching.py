@@ -9,6 +9,7 @@ import steamspypi.api
 
 from disqualify_vote import get_hard_coded_noisy_votes
 from igdb_match_names import load_igdb_local_databases, print_igdb_matches
+from load_ballots import get_parsing_params
 from load_ballots import load_ballots
 from match_names import precompute_matches, display_matches, constrain_app_id_search_by_year
 
@@ -61,7 +62,10 @@ def main():
     ballot_year = '2018'
     input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
-    ballots = load_ballots(input_filename)
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
+
+    ballots = load_ballots(input_filename,
+                           parsing_params=parsing_params)
 
     release_year = ballot_year
 

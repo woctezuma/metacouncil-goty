@@ -1,3 +1,4 @@
+from load_ballots import get_parsing_params
 from schulze_goty import apply_pipeline
 
 if __name__ == '__main__':
@@ -7,6 +8,8 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
 
     # Game of the Decade
     # Caveat: pay attention to the d in 'gotd'.
@@ -28,4 +31,5 @@ if __name__ == '__main__':
                    apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
-                   year_constraint=year_constraint)
+                   year_constraint=year_constraint,
+                   parsing_params=parsing_params)

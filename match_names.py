@@ -6,6 +6,7 @@ from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases, print_igdb_matches
 from igdb_match_names import transform_structure_of_matches
+from load_ballots import get_parsing_params
 
 
 def constrain_app_id_search_by_year(dist,
@@ -290,7 +291,10 @@ if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
     use_levenshtein_distance = True
 
-    ballots = load_ballots(input_filename)
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
+
+    ballots = load_ballots(input_filename,
+                           parsing_params=parsing_params)
     (standardized_ballots, matches) = standardize_ballots(ballots,
                                                           release_year=ballot_year,
                                                           use_levenshtein_distance=use_levenshtein_distance)
