@@ -93,5 +93,6 @@ def load_and_anonymize(input_filename, file_encoding='utf-8', fake_author_name=T
 
 
 if __name__ == '__main__':
-    input_filename = 'pc_gaming_metacouncil_goty_awards_2018.csv'
+    ballot_year = '2018'
+    input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
     anonymized_data = load_and_anonymize(input_filename)

@@ -275,8 +275,12 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+
+    # Optional Categories of the Year
+    release_year = ballot_year
+
     display_optional_ballots(input_filename,
-                             release_year=ballot_year,
+                             release_year=release_year,
                              use_igdb=use_igdb,
                              retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
                              apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,

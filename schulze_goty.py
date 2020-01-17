@@ -415,9 +415,14 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+
+    # Game of the Year
     goty_field = 'goty_preferences'
+    release_year = ballot_year
+    year_constraint = 'equality'
+
     apply_pipeline(input_filename,
-                   release_year=ballot_year,
+                   release_year=release_year,
                    fake_author_name=False,
                    try_to_break_ties=False,
                    use_igdb=use_igdb,
@@ -425,4 +430,4 @@ if __name__ == '__main__':
                    apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
-                   year_constraint='equality')
+                   year_constraint=year_constraint)
