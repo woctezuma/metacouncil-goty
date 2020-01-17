@@ -18,6 +18,7 @@ def get_hard_coded_noisy_votes():
         '-',
         'None played',
         'n/a',
+        'N/A',
     ]
 
     return noisy_votes
