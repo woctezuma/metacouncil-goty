@@ -72,6 +72,7 @@ def get_local_database(target_release_year=None,
 def filter_out_votes_for_wrong_release_years(standardized_ballots,
                                              target_release_year,
                                              use_igdb=False,
+                                             year_constraint='equality',
                                              whitelisted_ids=None):
     # Objective: remove appID which gathered votes but were not released during the target release year
 
@@ -106,12 +107,17 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                     else:
                         release_years[app_id] = steampi.calendar.get_release_year(app_id)
                 if release_years[app_id] == int(target_release_year):
+                    # Always keep the game, whichever the value of 'year_constraint' ('equality', 'minimum', 'maximum').
                     current_ballots_list.append(app_id)
                 elif release_years[app_id] == -1:
                     print('AppID {} ({}) not found on Steam (either a console game, or from another PC store)'.format(
                         app_id,
                         app_name,
                     ))
+                    current_ballots_list.append(app_id)
+                elif year_constraint == 'minimum' and release_years[app_id] >= int(target_release_year):
+                    current_ballots_list.append(app_id)
+                elif year_constraint == 'maximum' and release_years[app_id] <= int(target_release_year):
                     current_ballots_list.append(app_id)
                 elif app_id in whitelisted_ids:
                     print('AppID ' + app_id + ' whitelisted because ' + whitelisted_ids[app_id]["reason"])
@@ -379,6 +385,7 @@ def apply_pipeline(input_filename,
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots,
                                                                     release_year,
                                                                     use_igdb=use_igdb,
+                                                                    year_constraint=year_constraint,
                                                                     whitelisted_ids=whitelisted_ids)
 
     if not use_igdb:
