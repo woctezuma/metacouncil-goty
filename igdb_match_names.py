@@ -82,10 +82,20 @@ def get_igdb_release_years(igdb_data,
     return release_years, year_to_remember
 
 
-def format_game_name_for_igdb(raw_name):
+def format_game_name_for_igdb(raw_name,
+                              verbose=True):
     formatted_game_name_for_igdb = raw_name
-    formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace('®', ' ')
-    formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace('~', ' ')
+
+    for character in ['®', '~', '\'', ': ', ' - ', '!', '™', ' / ']:
+        formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace(character, ' ')
+
+    formatted_game_name_for_igdb = formatted_game_name_for_igdb.strip()
+
+    if verbose:
+        print('Game name is reformatted from {} to {}'.format(
+            raw_name,
+            formatted_game_name_for_igdb,
+        ))
 
     return formatted_game_name_for_igdb
 
