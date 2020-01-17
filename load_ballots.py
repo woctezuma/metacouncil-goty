@@ -157,7 +157,13 @@ def print_reviews(ballots,
 
     for voter_name in ballots:
         goty_raw_name = ballots[voter_name][goty_field][goty_position]
-        goty_app_id = matches[goty_raw_name]['matched_appID'][neighbor_reference_index]
+        try:
+            goty_app_id = matches[goty_raw_name]['matched_appID'][neighbor_reference_index]
+        except KeyError:
+            # This happens if the voter did not submit any actual game at all, e.g.
+            # - 'n/a' as the first game for GotY, so that the mandatory field in the form can be bypassed,
+            # - no submitted game for the following games for GotY, because the fields were optional anyway.
+            continue
         goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
 
         if goty_app_id == app_id:
