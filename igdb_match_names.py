@@ -134,6 +134,16 @@ def match_names_with_igdb(raw_votes,
                                                          must_be_available_on_pc=must_be_available_on_pc,
                                                          must_be_a_game=must_be_a_game)
 
+                        try:
+                            igdb_best_match = igdb_matches[0]
+                        except IndexError:
+                            print('Relaxing all of the constraints for {}'.format(raw_name))
+
+                            igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,
+                                                             enforced_year=None,
+                                                             must_be_available_on_pc=False,
+                                                             must_be_a_game=False)
+
                     igdb_matched_ids = []
 
                     for element in igdb_matches:
