@@ -129,7 +129,7 @@ def match_names_with_igdb(raw_votes,
                     except IndexError:
                         print('Relaxing the year constraint for {}'.format(raw_name))
 
-                        igdb_matches = look_up_game_name(game_name=raw_name,
+                        igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,
                                                          enforced_year=None,
                                                          must_be_available_on_pc=must_be_available_on_pc,
                                                          must_be_a_game=must_be_a_game)
