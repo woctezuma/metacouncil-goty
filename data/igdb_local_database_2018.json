@@ -1,4 +1,1185 @@
 {
+  "103020": {
+    "id": 103020,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1193530,
+        "category": 14,
+        "name": "Fallout 76",
+        "uid": "506246"
+      },
+      {
+        "id": 1457586,
+        "category": 3,
+        "name": "Fallout 76",
+        "uid": "68742",
+        "url": "https://www.giantbomb.com/games/3030-68742/",
+        "year": 2018
+      },
+      {
+        "id": 1708323,
+        "category": 10,
+        "name": "Fallout 76",
+        "uid": "UCBPEm7NZqmHolhZJOEadmhg",
+        "url": "https://www.youtube.com/watch?v=UCBPEm7NZqmHolhZJOEadmhg"
+      }
+    ],
+    "name": "Fallout 76",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 153710,
+        "human": "2018-Nov-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153711,
+        "human": "2018-Nov-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 153712,
+        "human": "2018-Nov-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "fallout-76"
+  },
+  "99123": {
+    "id": 99123,
+    "alternative_names": [
+      {
+        "id": 22153,
+        "name": "Shadow of the Tomb Raider Collector's Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151862,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151863,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151864,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-ultimate-edition"
+  },
+  "37777": {
+    "id": 37777,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 323912,
+        "category": 1,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "750920",
+        "url": "https://store.steampowered.com/app/750920",
+        "year": 2018
+      },
+      {
+        "id": 577742,
+        "category": 3,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "67214",
+        "url": "https://www.giantbomb.com/games/3030-67214/",
+        "year": 2018
+      },
+      {
+        "id": 1191954,
+        "category": 14,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "504735"
+      },
+      {
+        "id": 1592908,
+        "category": 10,
+        "name": "Shadow of the Tomb Raider",
+        "uid": "UCGG8kaxALszLmIYqerCz-cA",
+        "url": "https://www.youtube.com/watch?v=UCGG8kaxALszLmIYqerCz-cA"
+      }
+    ],
+    "name": "Shadow of the Tomb Raider",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 149054,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149055,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149056,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider"
+  },
+  "110844": {
+    "id": 110844,
+    "category": 1,
+    "name": "Shadow of the Tomb Raider: The Forge",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 163625,
+        "human": "2018-Nov-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 163626,
+        "human": "2018-Nov-13",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 163627,
+        "human": "2018-Nov-13",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-the-forge"
+  },
+  "113988": {
+    "id": 113988,
+    "category": 1,
+    "name": "Shadow of the Tomb Raider: The Pillar",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 163628,
+        "human": "2018-Dec-18",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 163629,
+        "human": "2018-Dec-18",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 163630,
+        "human": "2018-Dec-18",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-the-pillar"
+  },
+  "99122": {
+    "id": 99122,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Croft Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151850,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151851,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151852,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-croft-edition"
+  },
+  "99229": {
+    "id": 99229,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Digital Croft Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151856,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151857,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151858,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-digital-croft-edition"
+  },
+  "99121": {
+    "id": 99121,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider - Digital Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151859,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151860,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151861,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-digital-deluxe-edition"
+  },
+  "99230": {
+    "id": 99230,
+    "category": 0,
+    "name": "Shadow of the Tomb Raider: Croft Steelbook Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 151853,
+        "human": "2018-Sep-14",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 151854,
+        "human": "2018-Sep-14",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 151855,
+        "human": "2018-Sep-14",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "shadow-of-the-tomb-raider-croft-steelbook-edition"
+  },
+  "30847": {
+    "id": 30847,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 2385,
+        "category": 1,
+        "name": "Fear Effect Sedna",
+        "uid": "546900"
+      },
+      {
+        "id": 107566,
+        "category": 3,
+        "name": "Fear Effect: Sedna",
+        "uid": "53735",
+        "url": "https://www.giantbomb.com/games/3030-53735/",
+        "year": 2017
+      },
+      {
+        "id": 288181,
+        "category": 14,
+        "name": "Fear Effect: Sedna",
+        "uid": "492609",
+        "url": "https://www.giantbomb.com/game/3030-53735/"
+      }
+    ],
+    "name": "Fear Effect Sedna",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 146983,
+        "human": "2018-Mar-06",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 146984,
+        "human": "2018-Mar-06",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 146985,
+        "human": "2018-Mar-06",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 146986,
+        "human": "2018-Mar-06",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "fear-effect-sedna"
+  },
+  "25311": {
+    "id": 25311,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 188510,
+        "category": 1,
+        "name": "Star Control: Origins",
+        "uid": "271260"
+      },
+      {
+        "id": 196794,
+        "category": 3,
+        "name": "Star Control: Origins",
+        "uid": "62662",
+        "url": "https://www.giantbomb.com/games/3030-62662/"
+      },
+      {
+        "id": 252355,
+        "category": 14,
+        "name": "Star Control: Origins",
+        "uid": "500185"
+      }
+    ],
+    "name": "Star Control: Origins",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 157495,
+        "human": "2018-Sep-20",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "star-control-origins"
+  },
+  "54572": {
+    "id": 54572,
+    "alternative_names": [
+      {
+        "id": 12897,
+        "name": "Artifact - The Dota Card Game"
+      },
+      {
+        "id": 12898,
+        "name": "Artifact TDCG"
+      },
+      {
+        "id": 12899,
+        "name": "The Dota Card Game"
+      },
+      {
+        "id": 12900,
+        "name": "Dota Card Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101308,
+        "category": 3,
+        "name": "Artifact",
+        "uid": "60758",
+        "url": "https://www.giantbomb.com/games/3030-60758/",
+        "year": 2018
+      },
+      {
+        "id": 253248,
+        "category": 14,
+        "name": "Artifact",
+        "uid": "16937"
+      },
+      {
+        "id": 1684092,
+        "category": 1,
+        "name": "Artifact",
+        "uid": "583950",
+        "url": "https://store.steampowered.com/app/583950",
+        "year": 2018
+      },
+      {
+        "id": 1708309,
+        "category": 10,
+        "name": "Artifact",
+        "uid": "UC7ggdqv_mpOIdOwyPGrBjgQ",
+        "url": "https://www.youtube.com/watch?v=UC7ggdqv_mpOIdOwyPGrBjgQ"
+      }
+    ],
+    "name": "Artifact",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 148923,
+        "human": "2019",
+        "platform": 34,
+        "y": 2019
+      },
+      {
+        "id": 148924,
+        "human": "2019",
+        "platform": 39,
+        "y": 2019
+      },
+      {
+        "id": 156611,
+        "human": "2018-Nov-28",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 156612,
+        "human": "2018-Nov-28",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 156613,
+        "human": "2018-Nov-28",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 156614,
+        "human": "2018-Nov-28",
+        "platform": 92,
+        "y": 2018
+      }
+    ],
+    "slug": "artifact"
+  },
+  "83182": {
+    "id": 83182,
+    "alternative_names": [
+      {
+        "id": 23877,
+        "name": "Lost Artifacts - Ancient Tribe Survival"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 187452,
+        "category": 1,
+        "name": "Lost Artifacts",
+        "uid": "708150"
+      },
+      {
+        "id": 208896,
+        "category": 3,
+        "name": "Lost Artifacts",
+        "uid": "64082",
+        "url": "https://www.giantbomb.com/games/3030-64082/"
+      },
+      {
+        "id": 255515,
+        "category": 13,
+        "name": "Lost Artifacts",
+        "uid": "1289656881",
+        "url": "https://itunes.apple.com/us/app/lost-artifacts/id1289656881?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Lost Artifacts",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 165340,
+        "human": "2018-Feb-01",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "lost-artifacts"
+  },
+  "76753": {
+    "id": 76753,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 191159,
+        "category": 1,
+        "name": "Artifact Adventure Gaiden",
+        "uid": "675490"
+      }
+    ],
+    "name": "Artifact Adventure Gaiden",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 170208,
+        "human": "2018-Jan-09",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "artifact-adventure-gaiden"
+  },
+  "113320": {
+    "id": 113320,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1686424,
+        "category": 1,
+        "name": "Lost Artifacts: Soulstone",
+        "uid": "874020",
+        "url": "https://store.steampowered.com/app/874020",
+        "year": 2018
+      },
+      {
+        "id": 1746539,
+        "category": 3,
+        "name": "Lost Artifacts: Soulstone",
+        "uid": "72171",
+        "url": "https://www.giantbomb.com/games/3030-72171/",
+        "year": 2018
+      }
+    ],
+    "name": "Lost Artifacts: Soulstone",
+    "platforms": [
+      6,
+      14,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 165345,
+        "human": "2018-Dec-21",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 165346,
+        "human": "2018-Dec-21",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 165347,
+        "human": "2019-Feb-13",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "lost-artifacts-soulstone"
+  },
+  "113116": {
+    "id": 113116,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1686241,
+        "category": 1,
+        "name": "ATLAS",
+        "uid": "834910",
+        "url": "https://store.steampowered.com/app/834910",
+        "year": 2018
+      },
+      {
+        "id": 1696851,
+        "category": 14,
+        "name": "ATLAS",
+        "uid": "510825",
+        "url": "https://www.giantbomb.com/game/3030-71301/"
+      },
+      {
+        "id": 1773414,
+        "category": 3,
+        "name": "Atlas",
+        "uid": "71301",
+        "url": "https://www.giantbomb.com/games/3030-71301/",
+        "year": 2018
+      }
+    ],
+    "name": "Atlas",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 167789,
+        "human": "2018-Dec-22",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 176106,
+        "human": "2019-Oct-08",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "atlas"
+  },
+  "37066": {
+    "id": 37066,
+    "alternative_names": [
+      {
+        "id": 19397,
+        "name": "Starlink"
+      },
+      {
+        "id": 24588,
+        "comment": "Japanese title",
+        "name": "\u30b9\u30bf\u30fc\u30ea\u30f3\u30af \u30d0\u30c8\u30eb\u30fb\u30d5\u30a9\u30fc\u30fb\u30a2\u30c8\u30e9\u30b9 \u30b9\u30bf\u30f3\u30c0\u30fc\u30c9\u30a8\u30c7\u30a3\u30b7\u30e7\u30f3"
+      },
+      {
+        "id": 25371,
+        "name": "Starlink: Battle for Atlas Digital Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102121,
+        "category": 3,
+        "name": "Starlink: Battle for Atlas",
+        "uid": "59917",
+        "url": "https://www.giantbomb.com/games/3030-59917/",
+        "year": 2018
+      },
+      {
+        "id": 1612336,
+        "category": 14,
+        "name": "Starlink: Battle for Atlas",
+        "uid": "497430",
+        "url": "https://www.giantbomb.com/game/3030-59917/"
+      },
+      {
+        "id": 1720666,
+        "category": 1,
+        "name": "Starlink: Battle for Atlas",
+        "uid": "950050",
+        "url": "https://store.steampowered.com/app/950050",
+        "year": 2019
+      }
+    ],
+    "name": "Starlink: Battle for Atlas",
+    "platforms": [
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 153949,
+        "human": "2018-Oct-16",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 153950,
+        "human": "2018-Oct-16",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 153951,
+        "human": "2018-Oct-16",
+        "platform": 49,
+        "y": 2018
+      }
+    ],
+    "slug": "starlink-battle-for-atlas"
+  },
+  "18868": {
+    "id": 18868,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 107999,
+        "category": 3,
+        "name": "Arcadian Atlas",
+        "uid": "53288",
+        "url": "https://www.giantbomb.com/games/3030-53288/",
+        "year": 2018
+      },
+      {
+        "id": 185062,
+        "category": 1,
+        "name": "Arcadian Atlas",
+        "uid": "691790"
+      }
+    ],
+    "name": "Arcadian Atlas",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 59063,
+        "human": "2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 59064,
+        "human": "2018",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 59065,
+        "human": "2018",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "arcadian-atlas"
+  },
+  "27318": {
+    "id": 27318,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 2875,
+        "category": 1,
+        "name": "Neo ATLAS 1469",
+        "uid": "532690"
+      },
+      {
+        "id": 102500,
+        "category": 3,
+        "name": "Neo ATLAS 1469",
+        "uid": "59527",
+        "url": "https://www.giantbomb.com/games/3030-59527/",
+        "year": 2017
+      }
+    ],
+    "name": "Neo ATLAS 1469",
+    "platforms": [
+      6,
+      46,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 65839,
+        "human": "2017-Feb-14",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 148703,
+        "human": "2016-Oct-27",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 148704,
+        "human": "2018-Apr-19",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "neo-atlas-1469"
+  },
+  "121507": {
+    "id": 121507,
+    "category": 0,
+    "name": "Starlink: Battle for Atlas - Deluxe Edition",
+    "platforms": [
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 173895,
+        "human": "2018-Oct-15",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "starlink-battle-for-atlas-deluxe-edition"
+  },
+  "3225": {
+    "id": 3225,
+    "alternative_names": [
+      {
+        "id": 25517,
+        "name": "No Man's Sky Beyond"
+      },
+      {
+        "id": 25518,
+        "name": "No Man's Sky Next"
+      },
+      {
+        "id": 25519,
+        "name": "No Man's Sky Atlas Rises"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11738,
+        "category": 1,
+        "name": "No Man's Sky",
+        "uid": "275850"
+      },
+      {
+        "id": 77635,
+        "category": 5,
+        "name": "No Man's Sky",
+        "uid": "1446213994",
+        "url": "https://www.gog.com/game/no_mans_sky",
+        "year": 2016
+      },
+      {
+        "id": 116390,
+        "category": 3,
+        "name": "No Man's Sky",
+        "uid": "44656",
+        "url": "https://www.giantbomb.com/games/3030-44656/",
+        "year": 2016
+      },
+      {
+        "id": 189387,
+        "category": 10,
+        "name": "No Man's Sky",
+        "uid": "UCItiO3RzCS1EAcO7OuTR1FQ",
+        "url": "https://gaming.youtube.com/game/UCItiO3RzCS1EAcO7OuTR1FQ"
+      },
+      {
+        "id": 247089,
+        "category": 14,
+        "name": "No Man's Sky",
+        "uid": "458781"
+      },
+      {
+        "id": 1458663,
+        "category": 10,
+        "name": "No Man's Sky",
+        "uid": "UCkRYcIuMZj-aRVBCIv3Lyrw",
+        "url": "https://www.youtube.com/watch?v=UCkRYcIuMZj-aRVBCIv3Lyrw"
+      }
+    ],
+    "name": "No Man's Sky",
+    "platforms": [
+      6,
+      48,
+      49,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 54808,
+        "human": "2016-Aug-12",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 108434,
+        "human": "2016-Aug-10",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 108435,
+        "human": "2016-Aug-09",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 157511,
+        "human": "2018-Jul-24",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 166914,
+        "human": "TBD",
+        "platform": 165
+      }
+    ],
+    "slug": "no-man-s-sky"
+  },
+  "106816": {
+    "id": 106816,
+    "category": 0,
+    "name": "Cross Square Circle",
+    "platforms": [
+      34
+    ],
+    "release_dates": [
+      {
+        "id": 156624,
+        "human": "2018-Aug-03",
+        "platform": 34,
+        "y": 2018
+      }
+    ],
+    "slug": "cross-square-circle"
+  },
+  "87186": {
+    "id": 87186,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 241589,
+        "category": 1,
+        "name": "Just a Jumping Square",
+        "uid": "800520",
+        "url": "https://store.steampowered.com/app/800520",
+        "year": 2018
+      }
+    ],
+    "name": "Just a Jumping Square",
+    "platforms": [
+      3,
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 147164,
+        "human": "2018-Mar-05",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 147165,
+        "human": "2018-Mar-05",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "just-a-jumping-square"
+  },
+  "76318": {
+    "id": 76318,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 190786,
+        "category": 1,
+        "name": "Big Tower Tiny Square",
+        "uid": "751250"
+      }
+    ],
+    "name": "Big Tower Tiny Square",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 129829,
+        "human": "2018-Jan-15",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "big-tower-tiny-square"
+  },
+  "22703": {
+    "id": 22703,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 106249,
+        "category": 3,
+        "name": "Metal Gear Survive",
+        "uid": "55081",
+        "url": "https://www.giantbomb.com/games/3030-55081/",
+        "year": 2017
+      },
+      {
+        "id": 267557,
+        "category": 1,
+        "name": "METAL GEAR SURVIVE",
+        "uid": "543900",
+        "url": "https://store.steampowered.com/app/543900",
+        "year": 2018
+      },
+      {
+        "id": 281212,
+        "category": 14,
+        "name": "Metal Gear Survive",
+        "uid": "498026",
+        "url": "https://www.giantbomb.com/game/3030-55081/"
+      },
+      {
+        "id": 307515,
+        "category": 11,
+        "name": "METAL GEAR SURVIVE",
+        "uid": "BR6DLJ4RDR9Q",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BR6DLJ4RDR9Q",
+        "year": 2018
+      },
+      {
+        "id": 307517,
+        "category": 11,
+        "name": "METAL GEAR SURVIVE \u901a\u5e38\u7248",
+        "uid": "BS9DDDMXHWM0",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BS9DDDMXHWM0"
+      },
+      {
+        "id": 1184740,
+        "category": 10,
+        "name": "Metal Gear Survive",
+        "uid": "UC6Q2aJkbHkHmc-poWAgEpKA",
+        "url": "https://www.youtube.com/watch?v=UC6Q2aJkbHkHmc-poWAgEpKA"
+      }
+    ],
+    "name": "Metal Gear Survive",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 124171,
+        "human": "2018-Feb-20",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 124172,
+        "human": "2018-Feb-22",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 124173,
+        "human": "2018-Feb-20",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 124174,
+        "human": "2018-Feb-22",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 147907,
+        "human": "2018-Feb-21",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "metal-gear-survive"
+  },
+  "81972": {
+    "id": 81972,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 205056,
+        "category": 1,
+        "name": "TOXIC PLUMBING",
+        "uid": "777050",
+        "url": "https://store.steampowered.com/app/777050",
+        "year": 2018
+      },
+      {
+        "id": 211697,
+        "category": 3,
+        "name": "Toxic Plumbing",
+        "uid": "65109",
+        "url": "https://www.giantbomb.com/games/3030-65109/",
+        "year": 2018
+      }
+    ],
+    "name": "TOXIC PLUMBING",
+    "slug": "toxic-plumbing"
+  },
   "29272": {
     "id": 29272,
     "category": 0,
@@ -1552,66 +2733,6 @@
       }
     ],
     "slug": "megaquarium"
-  },
-  "9789": {
-    "id": 9789,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 11231,
-        "category": 1,
-        "name": "RimWorld",
-        "uid": "294100"
-      },
-      {
-        "id": 116755,
-        "category": 3,
-        "name": "RimWorld",
-        "uid": "44272",
-        "url": "https://www.giantbomb.com/games/3030-44272/",
-        "year": 2013
-      },
-      {
-        "id": 189109,
-        "category": 10,
-        "name": "RimWorld",
-        "uid": "UCCnY7KLXOI1ofeMu5zZFgSg",
-        "url": "https://gaming.youtube.com/game/UCCnY7KLXOI1ofeMu5zZFgSg"
-      },
-      {
-        "id": 245197,
-        "category": 14,
-        "name": "RimWorld",
-        "uid": "394568"
-      }
-    ],
-    "name": "RimWorld",
-    "platforms": [
-      3,
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 160281,
-        "human": "2018-Oct-17",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 160282,
-        "human": "2018-Oct-17",
-        "platform": 3,
-        "y": 2018
-      },
-      {
-        "id": 160283,
-        "human": "2018-Oct-17",
-        "platform": 14,
-        "y": 2018
-      }
-    ],
-    "slug": "rimworld"
   },
   "11397": {
     "id": 11397,
@@ -5361,227 +6482,6 @@
     ],
     "slug": "paratopic-definitive-cut"
   },
-  "54572": {
-    "id": 54572,
-    "alternative_names": [
-      {
-        "id": 12897,
-        "name": "Artifact - The Dota Card Game"
-      },
-      {
-        "id": 12898,
-        "name": "Artifact TDCG"
-      },
-      {
-        "id": 12899,
-        "name": "The Dota Card Game"
-      },
-      {
-        "id": 12900,
-        "name": "Dota Card Game"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 101308,
-        "category": 3,
-        "name": "Artifact",
-        "uid": "60758",
-        "url": "https://www.giantbomb.com/games/3030-60758/",
-        "year": 2018
-      },
-      {
-        "id": 253248,
-        "category": 14,
-        "name": "Artifact",
-        "uid": "16937"
-      },
-      {
-        "id": 1684092,
-        "category": 1,
-        "name": "Artifact",
-        "uid": "583950",
-        "url": "https://store.steampowered.com/app/583950",
-        "year": 2018
-      },
-      {
-        "id": 1708309,
-        "category": 10,
-        "name": "Artifact",
-        "uid": "UC7ggdqv_mpOIdOwyPGrBjgQ",
-        "url": "https://www.youtube.com/watch?v=UC7ggdqv_mpOIdOwyPGrBjgQ"
-      }
-    ],
-    "name": "Artifact",
-    "platforms": [
-      3,
-      6,
-      14,
-      34,
-      39,
-      92
-    ],
-    "release_dates": [
-      {
-        "id": 148923,
-        "human": "2019",
-        "platform": 34,
-        "y": 2019
-      },
-      {
-        "id": 148924,
-        "human": "2019",
-        "platform": 39,
-        "y": 2019
-      },
-      {
-        "id": 156611,
-        "human": "2018-Nov-28",
-        "platform": 3,
-        "y": 2018
-      },
-      {
-        "id": 156612,
-        "human": "2018-Nov-28",
-        "platform": 14,
-        "y": 2018
-      },
-      {
-        "id": 156613,
-        "human": "2018-Nov-28",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 156614,
-        "human": "2018-Nov-28",
-        "platform": 92,
-        "y": 2018
-      }
-    ],
-    "slug": "artifact"
-  },
-  "83182": {
-    "id": 83182,
-    "alternative_names": [
-      {
-        "id": 23877,
-        "name": "Lost Artifacts - Ancient Tribe Survival"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 187452,
-        "category": 1,
-        "name": "Lost Artifacts",
-        "uid": "708150"
-      },
-      {
-        "id": 208896,
-        "category": 3,
-        "name": "Lost Artifacts",
-        "uid": "64082",
-        "url": "https://www.giantbomb.com/games/3030-64082/"
-      },
-      {
-        "id": 255515,
-        "category": 13,
-        "name": "Lost Artifacts",
-        "uid": "1289656881",
-        "url": "https://itunes.apple.com/us/app/lost-artifacts/id1289656881?mt=12&uo=4",
-        "year": 2018
-      }
-    ],
-    "name": "Lost Artifacts",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 165340,
-        "human": "2018-Feb-01",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "lost-artifacts"
-  },
-  "76753": {
-    "id": 76753,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 191159,
-        "category": 1,
-        "name": "Artifact Adventure Gaiden",
-        "uid": "675490"
-      }
-    ],
-    "name": "Artifact Adventure Gaiden",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 170208,
-        "human": "2018-Jan-09",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "artifact-adventure-gaiden"
-  },
-  "113320": {
-    "id": 113320,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1686424,
-        "category": 1,
-        "name": "Lost Artifacts: Soulstone",
-        "uid": "874020",
-        "url": "https://store.steampowered.com/app/874020",
-        "year": 2018
-      },
-      {
-        "id": 1746539,
-        "category": 3,
-        "name": "Lost Artifacts: Soulstone",
-        "uid": "72171",
-        "url": "https://www.giantbomb.com/games/3030-72171/",
-        "year": 2018
-      }
-    ],
-    "name": "Lost Artifacts: Soulstone",
-    "platforms": [
-      6,
-      14,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 165345,
-        "human": "2018-Dec-21",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 165346,
-        "human": "2018-Dec-21",
-        "platform": 14,
-        "y": 2018
-      },
-      {
-        "id": 165347,
-        "human": "2019-Feb-13",
-        "platform": 49,
-        "y": 2019
-      }
-    ],
-    "slug": "lost-artifacts-soulstone"
-  },
   "107300": {
     "id": 107300,
     "alternative_names": [
@@ -6592,229 +7492,6 @@
       }
     ],
     "slug": "vampyr"
-  },
-  "99123": {
-    "id": 99123,
-    "alternative_names": [
-      {
-        "id": 22153,
-        "name": "Shadow of the Tomb Raider Collector's Edition"
-      }
-    ],
-    "category": 0,
-    "name": "Shadow of the Tomb Raider: Ultimate Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 151862,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 151863,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 151864,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider-ultimate-edition"
-  },
-  "37777": {
-    "id": 37777,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 323912,
-        "category": 1,
-        "name": "Shadow of the Tomb Raider",
-        "uid": "750920",
-        "url": "https://store.steampowered.com/app/750920",
-        "year": 2018
-      },
-      {
-        "id": 577742,
-        "category": 3,
-        "name": "Shadow of the Tomb Raider",
-        "uid": "67214",
-        "url": "https://www.giantbomb.com/games/3030-67214/",
-        "year": 2018
-      },
-      {
-        "id": 1191954,
-        "category": 14,
-        "name": "Shadow of the Tomb Raider",
-        "uid": "504735"
-      },
-      {
-        "id": 1592908,
-        "category": 10,
-        "name": "Shadow of the Tomb Raider",
-        "uid": "UCGG8kaxALszLmIYqerCz-cA",
-        "url": "https://www.youtube.com/watch?v=UCGG8kaxALszLmIYqerCz-cA"
-      }
-    ],
-    "name": "Shadow of the Tomb Raider",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 149054,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 149055,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 149056,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider"
-  },
-  "99122": {
-    "id": 99122,
-    "category": 0,
-    "name": "Shadow of the Tomb Raider: Croft Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 151850,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 151851,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 151852,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider-croft-edition"
-  },
-  "99121": {
-    "id": 99121,
-    "category": 0,
-    "name": "Shadow of the Tomb Raider - Digital Deluxe Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 151859,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 151860,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 151861,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider-digital-deluxe-edition"
-  },
-  "99229": {
-    "id": 99229,
-    "category": 0,
-    "name": "Shadow of the Tomb Raider: Digital Croft Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 151856,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 151857,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 151858,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider-digital-croft-edition"
-  },
-  "99230": {
-    "id": 99230,
-    "category": 0,
-    "name": "Shadow of the Tomb Raider: Croft Steelbook Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 151853,
-        "human": "2018-Sep-14",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 151854,
-        "human": "2018-Sep-14",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 151855,
-        "human": "2018-Sep-14",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "shadow-of-the-tomb-raider-croft-steelbook-edition"
   },
   "51448": {
     "id": 51448,
@@ -8308,74 +8985,6 @@
     ],
     "slug": "two-point-hospital"
   },
-  "83731": {
-    "id": 83731,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 238379,
-        "category": 1,
-        "name": "Beat Saber",
-        "uid": "620980",
-        "url": "https://store.steampowered.com/app/620980",
-        "year": 2018
-      },
-      {
-        "id": 575992,
-        "category": 3,
-        "name": "Beat Saber",
-        "uid": "65652",
-        "url": "https://www.giantbomb.com/games/3030-65652/"
-      },
-      {
-        "id": 1193243,
-        "category": 14,
-        "name": "Beat Saber",
-        "uid": "503116"
-      }
-    ],
-    "name": "Beat Saber",
-    "platforms": [
-      6,
-      161,
-      162,
-      163,
-      165
-    ],
-    "release_dates": [
-      {
-        "id": 169565,
-        "human": "2019-May-21",
-        "platform": 161,
-        "y": 2019
-      },
-      {
-        "id": 169566,
-        "human": "2019-May-21",
-        "platform": 162,
-        "y": 2019
-      },
-      {
-        "id": 169567,
-        "human": "2019-May-21",
-        "platform": 163,
-        "y": 2019
-      },
-      {
-        "id": 169568,
-        "human": "2019-May-21",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 174142,
-        "human": "2019-May-21",
-        "platform": 165,
-        "y": 2019
-      }
-    ],
-    "slug": "beat-saber"
-  },
   "28160": {
     "id": 28160,
     "alternative_names": [
@@ -9163,5 +9772,549 @@
     ],
     "name": "Squidlit",
     "slug": "squidlit"
+  },
+  "1372": {
+    "id": 1372,
+    "alternative_names": [
+      {
+        "id": 13435,
+        "comment": "Other",
+        "name": "CS:GO"
+      },
+      {
+        "id": 13436,
+        "comment": "Other",
+        "name": "CSGO"
+      },
+      {
+        "id": 13437,
+        "comment": "Other",
+        "name": "CS: Global Offensive"
+      },
+      {
+        "id": 13438,
+        "comment": "Other",
+        "name": "Counterstrike: Global Offensive"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 15147,
+        "category": 1,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "730"
+      },
+      {
+        "id": 124257,
+        "category": 3,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "36113",
+        "url": "https://www.giantbomb.com/games/3030-36113/",
+        "year": 2012
+      },
+      {
+        "id": 189392,
+        "category": 10,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "UCiVA5GplC-m8qzChGuzahRg",
+        "url": "https://gaming.youtube.com/game/UCiVA5GplC-m8qzChGuzahRg"
+      },
+      {
+        "id": 245101,
+        "category": 14,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "32399"
+      },
+      {
+        "id": 1185085,
+        "category": 10,
+        "name": "Counter-Strike Online",
+        "uid": "UCDKcJ-GmhLMkRxPqW9H2n2w",
+        "url": "https://www.youtube.com/watch?v=UCDKcJ-GmhLMkRxPqW9H2n2w"
+      }
+    ],
+    "name": "Counter-Strike: Global Offensive",
+    "platforms": [
+      3,
+      6,
+      9,
+      12,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 6386,
+        "human": "2012-Aug-21",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 20118,
+        "human": "2012-Aug-21",
+        "platform": 14,
+        "y": 2012
+      },
+      {
+        "id": 20119,
+        "human": "2012-Aug-21",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 20120,
+        "human": "2012-Aug-21",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 29818,
+        "human": "2012-Aug-21",
+        "platform": 3,
+        "y": 2012
+      },
+      {
+        "id": 102262,
+        "human": "2012-Aug-21",
+        "platform": 9,
+        "y": 2012
+      }
+    ],
+    "slug": "counter-strike-global-offensive"
+  },
+  "110871": {
+    "id": 110871,
+    "category": 1,
+    "name": "XCOM 2: War of the Chosen - Tactical Legacy Pack",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 169865,
+        "human": "2018-Oct-09",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 169866,
+        "human": "2018-Oct-09",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 169867,
+        "human": "2018-Oct-09",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "xcom-2-war-of-the-chosen-tactical-legacy-pack"
+  },
+  "12523": {
+    "id": 12523,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 7457,
+        "category": 1,
+        "name": "Faeria",
+        "uid": "397060"
+      },
+      {
+        "id": 116986,
+        "category": 3,
+        "name": "Faeria: Strategy Card Game",
+        "uid": "44029",
+        "url": "https://www.giantbomb.com/games/3030-44029/",
+        "year": 2017
+      },
+      {
+        "id": 245069,
+        "category": 14,
+        "name": "Faeria",
+        "uid": "491638"
+      }
+    ],
+    "name": "Faeria",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 66519,
+        "human": "2017-Mar-08",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 66520,
+        "human": "2017-Mar-08",
+        "platform": 14,
+        "y": 2017
+      },
+      {
+        "id": 66521,
+        "human": "2017-Mar-08",
+        "platform": 3,
+        "y": 2017
+      },
+      {
+        "id": 66522,
+        "human": "2017-Mar-08",
+        "platform": 92,
+        "y": 2017
+      },
+      {
+        "id": 66523,
+        "human": "2017-Mar-08",
+        "platform": 39,
+        "y": 2017
+      },
+      {
+        "id": 66524,
+        "human": "2017",
+        "platform": 34,
+        "y": 2017
+      }
+    ],
+    "slug": "faeria"
+  },
+  "113112": {
+    "id": 113112,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1740294,
+        "category": 1,
+        "name": "Hades",
+        "uid": "1145360",
+        "url": "https://store.steampowered.com/app/1145360",
+        "year": 2019
+      },
+      {
+        "id": 1744299,
+        "category": 3,
+        "name": "Hades",
+        "uid": "71297",
+        "url": "https://www.giantbomb.com/games/3030-71297/",
+        "year": 2018
+      }
+    ],
+    "name": "Hades",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 178100,
+        "human": "2019-Dec-10",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "hades--1"
+  },
+  "41051": {
+    "id": 41051,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 71609,
+        "category": 1,
+        "name": "Pinball FX3",
+        "uid": "442120"
+      },
+      {
+        "id": 120871,
+        "category": 3,
+        "name": "Pinball FX3",
+        "uid": "39784",
+        "url": "https://www.giantbomb.com/games/3030-39784/",
+        "year": 2017
+      },
+      {
+        "id": 212325,
+        "category": 11,
+        "name": "Pinball FX3",
+        "uid": "9PCKBVF3P67H",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/9PCKBVF3P67H",
+        "year": 2017
+      },
+      {
+        "id": 254418,
+        "category": 14,
+        "name": "Pinball FX3",
+        "uid": "68035"
+      }
+    ],
+    "name": "Pinball FX3",
+    "platforms": [
+      6,
+      45,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 115095,
+        "human": "2017-Sep-26",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 115096,
+        "human": "2017-Sep-26",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 115097,
+        "human": "2017-Sep-26",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 130123,
+        "human": "2017-Dec-12",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 133978,
+        "human": "2017-Sep-26",
+        "platform": 45,
+        "y": 2017
+      },
+      {
+        "id": 133979,
+        "human": "2017-Sep-26",
+        "platform": 45,
+        "y": 2017
+      },
+      {
+        "id": 137022,
+        "human": "2017-Sep-26",
+        "platform": 49,
+        "y": 2017
+      }
+    ],
+    "slug": "pinball-fx3"
+  },
+  "7360": {
+    "id": 7360,
+    "alternative_names": [
+      {
+        "id": 2312,
+        "name": "Rainbow Six Siege"
+      },
+      {
+        "id": 24765,
+        "comment": "Acronym",
+        "name": "R6:S"
+      },
+      {
+        "id": 24766,
+        "comment": "Acronym",
+        "name": "R6S"
+      },
+      {
+        "id": 26385,
+        "comment": "Acronym",
+        "name": "R6: Siege"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8916,
+        "category": 1,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "uid": "359550"
+      },
+      {
+        "id": 114539,
+        "category": 3,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "uid": "46562",
+        "url": "https://www.giantbomb.com/games/3030-46562/",
+        "year": 2015
+      },
+      {
+        "id": 189587,
+        "category": 10,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "uid": "UCmLtMXSWnOSJuKmIJ_xh4Kg",
+        "url": "https://gaming.youtube.com/game/UCmLtMXSWnOSJuKmIJ_xh4Kg"
+      },
+      {
+        "id": 211048,
+        "category": 11,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "uid": "C12T09DSVP8J",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C12T09DSVP8J",
+        "year": 2015
+      },
+      {
+        "id": 245114,
+        "category": 14,
+        "name": "Tom Clancy's Rainbow Six: Siege",
+        "uid": "460630"
+      }
+    ],
+    "name": "Tom Clancy's Rainbow Six: Siege",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 38973,
+        "human": "2015-Dec-01",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 38974,
+        "human": "2015-Dec-01",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 38975,
+        "human": "2015-Dec-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 106465,
+        "human": "2015-Dec-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 106466,
+        "human": "2015-Dec-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 121301,
+        "human": "2015-Dec-01",
+        "platform": 49,
+        "y": 2015
+      }
+    ],
+    "slug": "tom-clancy-s-rainbow-six-siege--1"
+  },
+  "86246": {
+    "id": 86246,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 221972,
+        "category": 1,
+        "name": "Squares",
+        "uid": "786750",
+        "url": "https://store.steampowered.com/app/786750",
+        "year": 2018
+      }
+    ],
+    "name": "Squares",
+    "slug": "squares--1"
+  },
+  "111285": {
+    "id": 111285,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1708320,
+        "category": 10,
+        "name": "Warframe Fortuna",
+        "uid": "UCIsZqo7OGcBh_0hWGzt5ZqA",
+        "url": "https://www.youtube.com/watch?v=UCIsZqo7OGcBh_0hWGzt5ZqA"
+      }
+    ],
+    "name": "Warframe: Fortuna",
+    "platforms": [
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 164646,
+        "human": "2018-Nov",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 164647,
+        "human": "2018-Nov",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 164648,
+        "human": "2019-Feb-05",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "warframe-fortuna"
+  },
+  "109461": {
+    "id": 109461,
+    "alternative_names": [
+      {
+        "id": 23043,
+        "comment": "Japanese title",
+        "name": "\u30ef\u30fc\u30eb\u30c9 \u30aa\u30d6 \u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fc \u30de\u30ad\u30b7\u30de"
+      }
+    ],
+    "category": 0,
+    "name": "World of Final Fantasy: Maxima",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 158438,
+        "human": "2018-Nov-06",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 158439,
+        "human": "2018-Nov-06",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 158440,
+        "human": "2018-Nov-06",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 158441,
+        "human": "2018-Nov-06",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "world-of-final-fantasy-maxima"
   }
 }
