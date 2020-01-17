@@ -89,13 +89,13 @@ def parse_votes(data,
         gotd_description_index = parsing_params['gotd_description']
         try:
             gotd_description = tokens[gotd_description_index]
-        except IndexError:
+        except TypeError as e:
             gotd_description = None
 
         best_vr_index = parsing_params['best_vr']
         try:
             best_vr = tokens[best_vr_index]
-        except:
+        except TypeError as e:
             best_vr = None
 
         # Store the parsed data in a dictionary
