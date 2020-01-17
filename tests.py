@@ -469,10 +469,10 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         self.assertEqual(formatted_game_name, game_name)
 
         formatted_game_name = igdb_match_names.format_game_name_for_igdb('Coca-Cola®')
-        self.assertEqual(formatted_game_name, 'Coca-Cola ')
+        self.assertEqual(formatted_game_name, 'Coca-Cola')
 
         formatted_game_name = igdb_match_names.format_game_name_for_igdb('Atelier ~ Anime Game ~')
-        self.assertEqual(formatted_game_name, 'Atelier   Anime Game  ')
+        self.assertEqual(formatted_game_name, 'Atelier   Anime Game')
 
     def test_print_igdb_matches(self):
         release_year = '2018'
