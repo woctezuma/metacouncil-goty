@@ -12,22 +12,26 @@ def get_link_to_igdb_website(igdb_id,
                              hide_dummy_app_id=True):
     igdb_base_url = 'https://www.igdb.com/games/'
 
-    igdb_data = igdb_local_database[igdb_id]
+    igdb_id_as_str = str(igdb_id)
+
+    igdb_data = igdb_local_database[igdb_id_as_str]
     slug = igdb_data['slug']
 
     if int(igdb_id) > 0:
-        link_to_store = '[URL=' + igdb_base_url + slug + '/]' + str(igdb_id) + '[/URL]'
+        link_to_store = '[URL=' + igdb_base_url + slug + '/]' + igdb_id_as_str + '[/URL]'
     else:
         if hide_dummy_app_id:
             link_to_store = 'n/a'
         else:
-            link_to_store = igdb_id
+            link_to_store = igdb_id_as_str
     return link_to_store
 
 
 def get_igdb_human_release_dates(igdb_id,
                                  igdb_local_database):
-    igdb_data = igdb_local_database[igdb_id]
+    igdb_id_as_str = str(igdb_id)
+
+    igdb_data = igdb_local_database[igdb_id_as_str]
 
     try:
         human_release_dates = set(
