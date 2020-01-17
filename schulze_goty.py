@@ -7,10 +7,21 @@ from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, g
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
 from steam_store_utils import get_link_to_store, get_early_access_status
+from whitelist_vote import load_whitelisted_ids
 
 
-def filter_out_votes_for_early_access_titles(standardized_ballots):
+def filter_out_votes_for_early_access_titles(standardized_ballots,
+                                             whitelisted_ids=None):
     # Objective: remove appID which gathered votes but are tagged as 'Early Access' titles
+
+    if whitelisted_ids is None:
+        # Caveat: Early Access status is only retrieved when using SteamSpy, hence why 'release_year' and 'use_igdb'
+        # are not function parameters of filter_out_votes_for_early_access_titles()
+        release_year = None
+        use_igdb = False
+
+        whitelisted_ids = load_whitelisted_ids(release_year=release_year,
+                                               use_igdb=use_igdb)
 
     for voter in standardized_ballots.keys():
         current_ballots = standardized_ballots[voter]['ballots']
@@ -22,6 +33,9 @@ def filter_out_votes_for_early_access_titles(standardized_ballots):
                 is_early_access = get_early_access_status(app_id)
 
                 if not is_early_access:
+                    current_ballots_list.append(app_id)
+                elif app_id in whitelisted_ids:
+                    print('AppID ' + app_id + ' whitelisted because ' + whitelisted_ids[app_id]["reason"])
                     current_ballots_list.append(app_id)
                 else:
                     print('AppID ' + app_id + ' removed because it is tagged as an Early Access title')
@@ -56,8 +70,13 @@ def get_local_database(target_release_year=None,
 
 def filter_out_votes_for_wrong_release_years(standardized_ballots,
                                              target_release_year,
-                                             use_igdb=False):
+                                             use_igdb=False,
+                                             whitelisted_ids=None):
     # Objective: remove appID which gathered votes but were not released during the target release year
+
+    if whitelisted_ids is None:
+        whitelisted_ids = load_whitelisted_ids(release_year=target_release_year,
+                                               use_igdb=use_igdb)
 
     local_database = get_local_database(target_release_year=target_release_year,
                                         use_igdb=use_igdb)
@@ -92,6 +111,9 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                         app_id,
                         app_name,
                     ))
+                    current_ballots_list.append(app_id)
+                elif app_id in whitelisted_ids:
+                    print('AppID ' + app_id + ' whitelisted because ' + whitelisted_ids[app_id]["reason"])
                     current_ballots_list.append(app_id)
                 else:
                     if app_id not in removed_app_ids:
@@ -347,12 +369,17 @@ def apply_pipeline(input_filename,
                                                           goty_field=goty_field,
                                                           year_constraint=year_constraint)
 
+    whitelisted_ids = load_whitelisted_ids(release_year=release_year,
+                                           use_igdb=use_igdb)
+
     standardized_ballots = filter_out_votes_for_wrong_release_years(standardized_ballots,
                                                                     release_year,
-                                                                    use_igdb=use_igdb)
+                                                                    use_igdb=use_igdb,
+                                                                    whitelisted_ids=whitelisted_ids)
 
     if not use_igdb:
-        standardized_ballots = filter_out_votes_for_early_access_titles(standardized_ballots)
+        standardized_ballots = filter_out_votes_for_early_access_titles(standardized_ballots,
+                                                                        whitelisted_ids=whitelisted_ids)
 
     standardized_ballots = filter_out_votes_for_hard_coded_reasons(standardized_ballots,
                                                                    release_year=release_year,
