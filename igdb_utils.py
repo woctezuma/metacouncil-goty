@@ -530,6 +530,60 @@ def format_list_of_platforms(raw_data_platforms,
     return formatted_data_platforms
 
 
+def format_release_dates_for_manual_display(element):
+    if 'release_dates' in element:
+        release_years = set(
+            str(date['y'])
+            for date in element['release_dates']
+            if 'y' in date
+        )
+    else:
+        release_years = None
+
+    if release_years is not None:
+        release_years_as_str = ', '.join(sorted(release_years))
+    else:
+        release_years_as_str = None
+
+    return release_years_as_str
+
+
+def manual_look_up(input,
+                   must_be_a_game=False,
+                   must_be_available_on_pc=False,
+                   verbose=True):
+    # Input can be:
+    # - either a query game name,
+    # - or an IGDB id.
+    #
+    # NB: This is a quality-of-lie utility function to manually query IGDB, in order to figure out:
+    # - fixes to name matching,
+    # - and database extensions.
+
+    try:
+        input = int(input)
+
+        data = look_up_game_id(input,
+                               must_be_a_game=must_be_a_game,
+                               must_be_available_on_pc=must_be_available_on_pc)
+    except ValueError:
+        data = look_up_game_name(input,
+                                 must_be_a_game=must_be_a_game,
+                                 must_be_available_on_pc=must_be_available_on_pc)
+
+    if verbose:
+        for element in data:
+            release_years_as_str = format_release_dates_for_manual_display(element)
+
+            print('{}\t{}\t({})'.format(
+                element['id'],
+                element['name'],
+                release_years_as_str,
+            ))
+
+    return data
+
+
 def main():
     enforced_year = 2019
     must_be_available_on_pc = True
