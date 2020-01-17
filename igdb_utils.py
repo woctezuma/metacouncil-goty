@@ -60,8 +60,14 @@ def get_igdb_user_key_file_name():
 
 
 def load_igdb_user_key():
-    with open(get_igdb_user_key_file_name(), 'r') as f:
-        igdb_user_key = json.load(f)
+    file_name = get_igdb_user_key_file_name()
+
+    try:
+        with open(file_name, 'r') as f:
+            igdb_user_key = json.load(f)
+    except FileNotFoundError:
+        print('IGDB user secret key {} not found.'.format(file_name))
+        igdb_user_key = {"user-key": None}
 
     return igdb_user_key
 
