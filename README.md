@@ -10,11 +10,12 @@
 
 ## Introduction
 
-These awards focus on PC games which we deem GOTY worthy, as well as the best Early Access game and the best DLC.
+These awards focus on PC games which we deem GOTY worthy, as well as the best DLC / Ongoing game, the best Early Access
+game, and the best VR game. Exceptionally, for 2019, there is also an award for the Game of the Decade (GOTD).
 
 ## Method
 
-Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
+Ballots are cast on MetaCouncil ([2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/), [2019](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019.1729/)) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
 
 ## Usage
 
@@ -24,7 +25,13 @@ Ballots are cast on [MetaCouncil](https://metacouncil.com/threads/metacouncils-p
 python schulze_goty.py
 ```
 
--   To compute the rankings for the optional categories (Early Access, DLC, etc.), run:
+-   To compute the GOTD ranking, run:
+
+```bash
+python schulze_gotd.py
+```
+
+-   To compute the rankings for the optional categories (DLC / Ongoing, Early Access, VR, etc.), run:
 
 ```bash
 python optional_categories.py
@@ -40,7 +47,7 @@ python optional_categories.py
 
 Results are displayed:
 -   on the [Wiki](https://github.com/woctezuma/metacouncil-goty/wiki),
--   on [MetaCouncil](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/).
+-   on MetaCouncil ([2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/), 2019).
 
 ## Perspectives
 
