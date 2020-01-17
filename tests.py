@@ -275,11 +275,13 @@ class TestExtendIGDBMethods(unittest.TestCase):
         self.assertGreaterEqual(len(fixes_to_igdb_database), 0)
 
     def test_extend_igdb_local_database(self):
-        extended_igdb_local_database = extend_igdb.extend_igdb_local_database()
+        release_year = '2018'
+        extended_igdb_local_database = extend_igdb.extend_igdb_local_database(release_year=release_year)
         self.assertGreater(len(extended_igdb_local_database), 0)
 
     def test_extend_igdb_match_database(self):
-        extended_igdb_match_database = extend_igdb.extend_igdb_match_database()
+        release_year = '2018'
+        extended_igdb_match_database = extend_igdb.extend_igdb_match_database(release_year=release_year)
         self.assertGreater(len(extended_igdb_match_database), 0)
 
     def test_fill_in_blanks_in_the_local_database(self):
@@ -313,11 +315,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     def test_get_time_stamp_for_year_start(self):
         time_stamp = igdb_utils.get_time_stamp_for_year_start(year=1971)
-        self.assertEqual(int(time_stamp), 31532400)
+        self.assertGreaterEqual(int(time_stamp), 31532400)
 
     def test_get_time_stamp_for_year_end(self):
         time_stamp = igdb_utils.get_time_stamp_for_year_end(year=1970)
-        self.assertEqual(int(time_stamp), 31532400)
+        self.assertGreaterEqual(int(time_stamp), 31532400)
 
     def test_get_igdb_user_key_file_name(self):
         file_name = igdb_utils.get_igdb_user_key_file_name()
@@ -561,7 +563,8 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
             self.assertEqual(file_name, expected_file_name)
 
     def test_load_igdb_match_database(self):
-        data = igdb_databases.load_igdb_match_database()
+        release_year = '2018'
+        data = igdb_databases.load_igdb_match_database(release_year=release_year)
         self.assertTrue(data is not None)
 
     def test_save_igdb_match_database(self):
@@ -571,7 +574,8 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         self.assertTrue(Path(file_name).exists())
 
     def test_load_igdb_local_database(self):
-        data = igdb_databases.load_igdb_local_database()
+        release_year = '2018'
+        data = igdb_databases.load_igdb_local_database(release_year=release_year)
         self.assertTrue(data is not None)
 
     def test_save_igdb_local_database(self):
