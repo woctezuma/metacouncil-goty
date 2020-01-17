@@ -161,11 +161,17 @@ def match_optional_ballots(optional_ballots,
             matches[raw_name]['matched_release_date'] = app_id_release_date
             matches[raw_name]['matched_url'] = app_url
 
-            print('\t{} ---> IGDB id: {}\t;\t{} ({})'.format(raw_name,
-                                                             matches[raw_name]['matched_appID'],
-                                                             matches[raw_name]['matched_name'],
-                                                             matches[raw_name]['matched_release_date'],
-                                                             ))
+            if use_igdb:
+                id_description = 'IGDB id'
+            else:
+                id_description = 'AppID'
+
+            print('\t{} ---> {}: {}\t;\t{} ({})'.format(raw_name,
+                                                        id_description,
+                                                        matches[raw_name]['matched_appID'],
+                                                        matches[raw_name]['matched_name'],
+                                                        matches[raw_name]['matched_release_date'],
+                                                        ))
 
         my_str = '{} (appID: {}, released on {})'.format(
             matches[raw_name]['matched_name'],
