@@ -453,6 +453,15 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 class TestIGDBMatchNamesMethods(unittest.TestCase):
 
     @staticmethod
+    def get_dummy_match_database():
+        dummy_match_database = {
+            "Hello": [0],
+            "World": [1, 2],
+        }
+
+        return dummy_match_database
+
+    @staticmethod
     def get_dummy_local_database():
         igdb_data = TestIGDBUtilsMethods.get_read_dead_redemption_two()
         dummy_local_database = {"25076": igdb_data}
@@ -541,6 +550,35 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         self.assertEqual(merged_database["a"], 0)
         self.assertEqual(merged_database["b"], 1)
         self.assertEqual(merged_database["c"], 2)
+
+    def test_figure_out_ballots_with_missing_data(self):
+        dummy_voter = 'dummy_voter_name'
+        goty_field = 'dummy_preferences'
+
+        ballots = dict()
+        ballots[dummy_voter] = dict()
+        ballots[dummy_voter][goty_field] = dict()
+        ballots[dummy_voter][goty_field][1] = 'Hello'
+        ballots[dummy_voter][goty_field][2] = 'Universe'
+
+        igdb_match_database = self.get_dummy_match_database()
+
+        release_year = '2018'
+
+        new_ballots = igdb_match_names.figure_out_ballots_with_missing_data(ballots=ballots,
+                                                                            igdb_match_database=igdb_match_database,
+                                                                            release_year=release_year,
+                                                                            goty_field=goty_field,
+                                                                            verbose=True)
+
+        empty_vote = ''
+
+        first_vote_is_now_empty = bool(new_ballots[dummy_voter][goty_field][1] == empty_vote)
+        self.assertTrue(first_vote_is_now_empty)
+
+        second_vote_is_still_intact = bool(
+            new_ballots[dummy_voter][goty_field][2] == new_ballots[dummy_voter][goty_field][2])
+        self.assertTrue(second_vote_is_still_intact)
 
     def test_load_igdb_local_databases(self):
         ballot_year = '2018'
