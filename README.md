@@ -37,39 +37,75 @@ python schulze_gotd.py
 python optional_categories.py
 ```
 
--   If needed, edit hard-coded values, then run the two aforementioned scripts again:
+### With SteamSpy
+
+-   If needed, edit hard-coded values below, then run the three aforementioned scripts again:
     -   `extend_steamspy.py` (manual addition of a few appIDs to SteamSpy's database)
     -   `hard_coded_matches.py` (manual match of a few game names with appIDs)
     -   `disqualify_vote.py` (manual disqualification of a few appIDs)
     -   `whitelist_vote.py` (manual white-listing of a few appIDs)
 
+### With IGDB
+
+Let us assume the target release year is `2018` for this section, i.e. we focus on games released during the year 2018.
+
+-   If needed, edit hard-coded values below, then run the three aforementioned scripts again:
+    -   `fixes_to_igdb_local_database_2018.json` (manual addition of a few appIDs to IGDB's database)
+    -   `fixes_to_igdb_match_database_2018.json` (manual match of a few game names with appIDs)
+    -   `disqualified_igdb_ids_2018.json` (manual disqualification of a few appIDs)
+    -   `whitelisted_igdb_ids_2018.json` (manual white-listing of a few appIDs)
+
+The fixes to the local database allow to extend the IGDB database, in case a game is missing from IGDB, e.g. Steam games in the adult section of the store.
+
+The fixes to the match database allow to manually enforce matches between input game names and IGDB ids, in order to fix
+empty matches or mismatches resulting from the automatic method. This also allows to merge matches for games released in
+different editions (vanilla, definitive, etc.), e.g. versions of Darks Souls 1, Deus Ex,  Divinity Original Sin 2, etc.
+
+The black-list allows to disqualify some games for manually specified reasons.
+
+The white-list allows to prevent the automatic disqualification of some games due to their reported release date differing from the target release year.
+
 ## Results
 
 Results are displayed:
--   on the [Wiki](https://github.com/woctezuma/metacouncil-goty/wiki),
+-   on the Wiki ([2018](https://github.com/woctezuma/metacouncil-goty/wiki), 2019),
 -   on MetaCouncil ([2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/), 2019).
 
-## Perspectives
+## Alternative methods for game name matching
 
-The current implementation relies on [SteamSpy](https://github.com/woctezuma/steamspypi)'s database, and matches game names with [Levenshtein distance](https://github.com/ztane/python-Levenshtein).
+### SteamSpy and Levenshtein distance
 
-**Edit:** As of January 16, 2020, IGDB can be used in place of SteamSpy with the `use_igdb` flag.
+The first implementation relied on [SteamSpy](https://github.com/woctezuma/steamspypi)'s database, and matched game names with [Levenshtein distance](https://github.com/ztane/python-Levenshtein).
 
-Work-in-progress includes:
--   matching game names with the longest contiguous matching subsequence, as offered by [difflib](https://docs.python.org/3/library/difflib.html),
--   relying on [IGDB](https://www.igdb.com/api)'s database, which extends beyond Steam.
-
-If we use SteamSpy, we have the choice between Levenshtein distance and difflib for name matching.
-Difflib is notably slower than Levenshtein distance. 
 In practice, Levenshtein distance is effective at fixing typos, but cannot work for cases where the input is short and the actual game title is long, e.g. for [Resident Evil 7](https://store.steampowered.com/app/418370/):
 
 > RESIDENT EVIL 7 biohazard / BIOHAZARD 7 resident evil
 
-If IGDB is used, then the API is queried, but the whole database is not locally available, so name matching is delegated to IGDB.
+### SteamSpy and difflib
+
+If we use SteamSpy, we have the choice between Levenshtein distance and difflib for name matching.
+
+[Difflib](https://docs.python.org/3/library/difflib.html) allows to match game names with the longest contiguous matching subsequence.
+However, difflib is notably slower than Levenshtein distance.
+
+### IGDB
+
+As of January 2020, [IGDB](https://www.igdb.com/api)'s database, which extends beyond Steam, can be used in place of SteamSpy with the `use_igdb` flag.
+
+If IGDB is to be used, then you need to have a user secret key to be authorized.
+It is free, but you need to register on IGDB.
+ 
+The API is queried whenever it is necessary, and the responses are locally saved to avoid unnecessary requests.
+As a free user, there is a monthly allowance of 50k requests per month.
+
+Name matching is delegated to IGDB because the whole IGDB database is not locally available.
 In theory, this could lead to worse results if there are typos in the input names.
 However:
 -   IGDB's database is larger than SteamSpy's, so name matching could be better, thanks to the availability of alternative names.
+-   IGDB also offers access to information about DLC, which could be useful for at least one of the optional categories,
 -   typos are not a big issue: they are rare in the input game names for the GotY votes.
+
+### Benchmark
 
 A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma/metacouncil-goty/wiki/Benchmark) on the Wiki.
 
