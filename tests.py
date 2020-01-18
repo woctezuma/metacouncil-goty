@@ -53,6 +53,45 @@ class TestAnonymizeDataMethods(unittest.TestCase):
 
 class TestLoadBallotsMethods(unittest.TestCase):
 
+    def test_get_parsing_params(self):
+        num_parameters = 11
+
+        num_goty_games_per_voter = 5
+        num_gotd_games_per_voter = 10
+
+        goty_description_index = num_goty_games_per_voter + 1
+        gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
+
+        for ballot_year in ['2018', '2019']:
+            parsing_params = load_ballots.get_parsing_params(ballot_year=ballot_year)
+
+            self.assertEqual(len(parsing_params.keys()), num_parameters)
+
+            self.assertEqual(parsing_params['num_goty_games_per_voter'], num_goty_games_per_voter)
+            self.assertEqual(parsing_params['num_gotd_games_per_voter'], num_gotd_games_per_voter)
+
+            self.assertEqual(parsing_params['voter_name'], 0)
+
+            self.assertEqual(len(parsing_params['voted_games']), num_goty_games_per_voter)
+            self.assertEqual(parsing_params['goty_description'], goty_description_index)
+
+            if int(ballot_year) == 2018:
+                self.assertEqual(len(parsing_params['gotd_voted_games']), 0)
+                self.assertEqual(parsing_params['gotd_description'], None)
+
+                self.assertEqual(parsing_params['best_dlc'], -3)
+                self.assertEqual(parsing_params['best_early_access'], -2)
+                self.assertEqual(parsing_params['best_vr'], None)
+                self.assertEqual(parsing_params['best_turd'], -1)
+            else:
+                self.assertEqual(len(parsing_params['gotd_voted_games']), num_gotd_games_per_voter)
+                self.assertEqual(parsing_params['gotd_description'], gotd_description_index)
+
+                self.assertEqual(parsing_params['best_dlc'], -4)
+                self.assertEqual(parsing_params['best_early_access'], -3)
+                self.assertEqual(parsing_params['best_vr'], -2)
+                self.assertEqual(parsing_params['best_turd'], -1)
+
     def test_load_unanonymized_ballots(self):
         ballot_year = '2018'
         input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
