@@ -1,6 +1,6 @@
 import copy
 
-from disqualify_vote import get_hard_coded_noisy_votes
+from disqualify_vote import is_a_noisy_vote
 from extend_igdb import extend_both_igdb_databases
 from extend_igdb import extend_igdb_match_database
 from igdb_databases import load_igdb_local_database, load_igdb_match_database
@@ -113,14 +113,12 @@ def match_names_with_igdb(raw_votes,
     igdb_match_database = dict()
     igdb_local_database = dict()
 
-    noisy_votes = get_hard_coded_noisy_votes()
-
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
-                if raw_name != '' and (raw_name not in noisy_votes):
+                if not is_a_noisy_vote(raw_name):
                     formatted_game_name_for_igdb = format_game_name_for_igdb(raw_name)
 
                     igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,

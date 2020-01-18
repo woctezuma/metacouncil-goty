@@ -1,4 +1,4 @@
-from disqualify_vote import get_hard_coded_noisy_votes
+from disqualify_vote import is_a_noisy_vote
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases
 from igdb_match_names import get_link_to_igdb_website, get_igdb_human_release_dates
 from load_ballots import get_parsing_params
@@ -28,7 +28,7 @@ def filter_noise_from_optional_ballots(optional_ballots):
     filtered_optional_ballots = []
 
     for element in optional_ballots:
-        if element not in get_hard_coded_noisy_votes():
+        if not is_a_noisy_vote(element):
             filtered_optional_ballots.append(element)
 
     return filtered_optional_ballots

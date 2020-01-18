@@ -7,7 +7,7 @@ import steampi.calendar
 import steampi.text_distances
 import steamspypi.api
 
-from disqualify_vote import get_hard_coded_noisy_votes
+from disqualify_vote import is_a_noisy_vote
 from igdb_match_names import load_igdb_local_databases, print_igdb_matches
 from load_ballots import get_parsing_params
 from load_ballots import load_ballots
@@ -25,14 +25,13 @@ def run_benchmark_for_steam_spy(raw_votes,
 
     # Caveat: do not use the extended SteamSpy database for a fair benchmark!
     steamspy_database = steamspypi.api.load()
-    noisy_votes = get_hard_coded_noisy_votes()
 
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
 
-                if raw_name != '' and (raw_name not in noisy_votes):
+                if not is_a_noisy_vote(raw_name):
                     (sorted_app_ids, dist) = steampi.text_distances.find_most_similar_game_names(raw_name,
                                                                                                  steamspy_database,
                                                                                                  use_levenshtein_distance=use_levenshtein_distance,
