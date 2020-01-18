@@ -256,11 +256,13 @@ def standardize_ballots(ballots,
                                                                                  apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                                                                                  must_be_available_on_pc=must_be_available_on_pc,
                                                                                  must_be_a_game=must_be_a_game,
-                                                                                 goty_field=goty_field)
+                                                                                 goty_field=goty_field,
+                                                                                 year_constraint=year_constraint)
 
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,
-                           constrained_release_year=release_year)
+                           constrained_release_year=release_year,
+                           year_constraint=year_constraint)
 
         matches = transform_structure_of_matches(
             igdb_match_database,

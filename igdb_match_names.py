@@ -166,7 +166,8 @@ def match_names_with_igdb(raw_votes,
 
 def print_igdb_matches(igdb_match_database,
                        igdb_local_database,
-                       constrained_release_year=None):
+                       constrained_release_year=None,
+                       year_constraint='equality'):
     sorted_input_names = sorted(igdb_match_database.keys())
 
     for raw_name in sorted_input_names:
@@ -193,10 +194,23 @@ def print_igdb_matches(igdb_match_database,
                     displayed_release_years = None
 
             if constrained_release_year is not None:
-                if all(year != int(constrained_release_year) for year in release_years):
-                    print('[!]\tRelease year(s) ({}) do not match the ballot year ({}) for {}.'.format(
+                cleaned_release_years = [int(year) for year in release_years if year is not None]
+
+                if year_constraint == 'equality':
+                    constraint_is_okay = any(year == int(constrained_release_year) for year in cleaned_release_years)
+                elif year_constraint == 'minimum':
+                    constraint_is_okay = any(year >= int(constrained_release_year) for year in cleaned_release_years)
+                elif year_constraint == 'maximum':
+                    constraint_is_okay = any(year <= int(constrained_release_year) for year in cleaned_release_years)
+                else:
+                    # There is an issue if a constrained release year is provided without a valid type of constraint.
+                    constraint_is_okay = False
+
+                if not constraint_is_okay:
+                    print('[!]\tRelease year(s) ({}) do not match the ballot year ({}, constraint:{}) for {}.'.format(
                         displayed_release_years,
                         constrained_release_year,
+                        year_constraint,
                         raw_name,
                     ))
 
@@ -329,6 +343,7 @@ def load_igdb_local_databases(ballots,
                               must_be_available_on_pc=True,
                               must_be_a_game=True,
                               goty_field='goty_preferences',
+                              year_constraint='equality',
                               verbose=False):
     try:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
@@ -371,7 +386,8 @@ def load_igdb_local_databases(ballots,
     if verbose:
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,
-                           constrained_release_year=release_year)
+                           constrained_release_year=release_year,
+                           year_constraint=year_constraint)
 
     return igdb_match_database, igdb_local_database
 
