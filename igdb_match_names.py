@@ -347,13 +347,8 @@ def load_igdb_local_databases(ballots,
                               verbose=False):
     try:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
-
-        igdb_local_database = load_igdb_local_database(release_year=release_year)
-
     except FileNotFoundError:
         igdb_match_database = dict()
-
-        igdb_local_database = dict()
 
     # Download missing data for some ballots
 
