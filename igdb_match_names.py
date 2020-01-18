@@ -273,6 +273,56 @@ def download_igdb_local_databases(ballots,
     return igdb_match_database, igdb_local_database
 
 
+def figure_out_ballots_with_missing_data(ballots,
+                                         igdb_match_database=None,
+                                         release_year=None,
+                                         goty_field='goty_preferences',
+                                         verbose=False):
+    # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
+    # This means that we could work in offline mode once the manual matches cover all the empty results of IGDB queries.
+    #
+    # If you want to try again to automatically match these games, backup and delete the manual fixes to match database.
+    extended_igdb_match_database = extend_igdb_match_database(release_year=release_year,
+                                                              igdb_match_database=igdb_match_database,
+                                                              verbose=verbose)
+
+    # Reference: https://stackoverflow.com/a/5105554
+    new_ballots = copy.deepcopy(ballots)
+
+    for voter_name in new_ballots:
+        for (game_position, game_name) in new_ballots[voter_name][goty_field].items():
+            if game_name in extended_igdb_match_database and len(extended_igdb_match_database[game_name]) > 0:
+                new_ballots[voter_name][goty_field][game_position] = ''
+
+    return new_ballots
+
+
+def download_igdb_data_for_ballots_with_missing_data(new_ballots,
+                                                     release_year=None,
+                                                     apply_hard_coded_extension_and_fixes=True,
+                                                     must_be_available_on_pc=True,
+                                                     must_be_a_game=True,
+                                                     goty_field='goty_preferences',
+                                                     verbose=False):
+    # Caveat: it is mandatory to set 'extend_previous_databases' to True, if you want to:
+    # - first download data for new ballots,
+    # - then merge the result with databases stored on the disk for the previously seen ballots,
+    # Otherwise, you will obtain incomplete databases (for new ballots), and overwrite the stored databases, likely
+    # losing progress in the process.
+    extend_previous_databases = True
+
+    igdb_match_database, igdb_local_database = download_igdb_local_databases(new_ballots,
+                                                                             release_year=release_year,
+                                                                             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                                                                             extend_previous_databases=extend_previous_databases,
+                                                                             must_be_available_on_pc=must_be_available_on_pc,
+                                                                             must_be_a_game=must_be_a_game,
+                                                                             goty_field=goty_field,
+                                                                             verbose=verbose)
+
+    return igdb_match_database, igdb_local_database
+
+
 def load_igdb_local_databases(ballots,
                               release_year=None,
                               apply_hard_coded_extension_and_fixes=True,
@@ -292,37 +342,23 @@ def load_igdb_local_databases(ballots,
 
     # Download missing data for some ballots
 
-    # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
-    # This means that we could work in offline mode once the manual matches cover all the empty results of IGDB queries.
-    #
-    # If you want to try again to automatically match these games, backup and delete the manual fixes to match database.
-    extended_igdb_match_database = extend_igdb_match_database(release_year=release_year,
-                                                              igdb_match_database=igdb_match_database,
-                                                              verbose=verbose)
+    new_ballots = figure_out_ballots_with_missing_data(
+        ballots=ballots,
+        igdb_match_database=igdb_match_database,
+        release_year=release_year,
+        goty_field=goty_field,
+        verbose=verbose,
+    )
 
-    # Reference: https://stackoverflow.com/a/5105554
-    new_ballots = copy.deepcopy(ballots)
-
-    for voter_name in new_ballots:
-        for (game_position, game_name) in new_ballots[voter_name][goty_field].items():
-            if game_name in extended_igdb_match_database and len(extended_igdb_match_database[game_name]) > 0:
-                new_ballots[voter_name][goty_field][game_position] = ''
-
-    # Caveat: it is mandatory to set 'extend_previous_databases' to True, if you want to:
-    # - first download data for new ballots,
-    # - then merge the result with databases stored on the disk for the previously seen ballots,
-    # Otherwise, you will obtain incomplete databases (for new ballots), and overwrite the stored databases, likely
-    # losing progress in the process.
-    extend_previous_databases = True
-
-    igdb_match_database, igdb_local_database = download_igdb_local_databases(new_ballots,
-                                                                             release_year=release_year,
-                                                                             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                                                                             extend_previous_databases=extend_previous_databases,
-                                                                             must_be_available_on_pc=must_be_available_on_pc,
-                                                                             must_be_a_game=must_be_a_game,
-                                                                             goty_field=goty_field,
-                                                                             verbose=verbose)
+    igdb_match_database, igdb_local_database = download_igdb_data_for_ballots_with_missing_data(
+        new_ballots=new_ballots,
+        release_year=release_year,
+        apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+        must_be_available_on_pc=must_be_available_on_pc,
+        must_be_a_game=must_be_a_game,
+        goty_field=goty_field,
+        verbose=verbose,
+    )
 
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
