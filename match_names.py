@@ -237,7 +237,7 @@ def standardize_ballots(ballots,
                         must_be_a_game=True,
                         goty_field='goty_preferences',
                         year_constraint='equality',
-                        verbose=True):
+                        verbose=False):
     if use_igdb:
         # Using IGDB
 
@@ -249,7 +249,8 @@ def standardize_ballots(ballots,
                                                                                      extend_previous_databases=extend_previous_databases,
                                                                                      must_be_available_on_pc=must_be_available_on_pc,
                                                                                      must_be_a_game=must_be_a_game,
-                                                                                     goty_field=goty_field)
+                                                                                     goty_field=goty_field,
+                                                                                     verbose=verbose)
         else:
             igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,
                                                                                  release_year=release_year,
@@ -257,7 +258,8 @@ def standardize_ballots(ballots,
                                                                                  must_be_available_on_pc=must_be_available_on_pc,
                                                                                  must_be_a_game=must_be_a_game,
                                                                                  goty_field=goty_field,
-                                                                                 year_constraint=year_constraint)
+                                                                                 year_constraint=year_constraint,
+                                                                                 verbose=verbose)
 
         print_igdb_matches(igdb_match_database,
                            igdb_local_database,
