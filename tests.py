@@ -117,6 +117,28 @@ class TestHardCodedMatchesMethods(unittest.TestCase):
 
 class TestDisqualifyVoteMethods(unittest.TestCase):
 
+    def test_get_hard_coded_noisy_votes(self):
+        noisy_votes = disqualify_vote.get_hard_coded_noisy_votes()
+
+        empty_game_name = ''
+        self.assertTrue(empty_game_name not in noisy_votes)
+
+        for noisy_game_name in ['n/a', 'N/A', '-']:
+            self.assertTrue(noisy_game_name in noisy_votes)
+
+    def test_is_a_noisy_vote(self):
+        empty_game_name = ''
+        game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(empty_game_name)
+        self.assertTrue(not game_name_is_a_noisy_vote)
+
+        for noisy_game_name in ['n/a', 'N/A', '-']:
+            game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(noisy_game_name)
+            self.assertTrue(game_name_is_a_noisy_vote)
+
+        for real_game_name in ['Hitman', 'Celeste', 'SpyParty']:
+            game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(real_game_name)
+            self.assertTrue(not game_name_is_a_noisy_vote)
+
     def test_get_hard_coded_disqualified_app_ids(self):
         disqualified_app_id_dict = disqualify_vote.get_hard_coded_disqualified_app_ids()
 
