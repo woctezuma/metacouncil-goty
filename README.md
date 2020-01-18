@@ -57,9 +57,12 @@ Let us assume the target release year is `2018` for this section, i.e. we focus 
 
 The fixes to the local database allow to extend the IGDB database, in case a game is missing from IGDB, e.g. Steam games in the adult section of the store.
 
-The fixes to the match database allow to manually enforce matches between input game names and IGDB ids, in order to fix
-empty matches or mismatches resulting from the automatic method. This also allows to merge matches for games released in
-different editions (vanilla, definitive, etc.), e.g. versions of Darks Souls 1, Deus Ex,  Divinity Original Sin 2, etc.
+The fixes to the match database allow to manually enforce matches between input game names and IGDB ids, in order to
+edit results from the automatic matching method:
+-   fix empty matches: no match could be found by IGDB,
+-   fix actual mismatches: the match is factually wrong,
+-   merge matches for different versions (vanilla, definitive, etc.) of the same game, e.g. Darks Souls 1.
+Without merging versions of the same game, votes for this same game would be spread to the detriment of the game rank.
 
 The black-list allows to disqualify some games for manually specified reasons.
 
