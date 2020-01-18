@@ -250,6 +250,7 @@ def standardize_ballots(ballots,
                                                                                      must_be_available_on_pc=must_be_available_on_pc,
                                                                                      must_be_a_game=must_be_a_game,
                                                                                      goty_field=goty_field,
+                                                                                     year_constraint=year_constraint,
                                                                                      verbose=verbose)
         else:
             igdb_match_database, igdb_local_database = load_igdb_local_databases(ballots,

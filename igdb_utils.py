@@ -183,7 +183,8 @@ def get_steam_service_no():
 def append_filter_for_igdb_fields(igdb_fields,
                                   filter_name,
                                   filter_value,
-                                  use_parenthesis=False):
+                                  use_parenthesis=False,
+                                  comparison_symbol='='):
     where_statement = ' ; where '
     conjunction_statement = ' & '
 
@@ -227,13 +228,15 @@ def append_filter_for_igdb_fields(igdb_fields,
     if use_parenthesis:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
         # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
-        statement_to_append = '{} = ({})'.format(
+        statement_to_append = '{} {} ({})'.format(
             filter_name,
+            comparison_symbol,
             filter_value,
         )
     else:
-        statement_to_append = '{} = {}'.format(
+        statement_to_append = '{} {} {}'.format(
             filter_name,
+            comparison_symbol,
             filter_value,
         )
 
@@ -245,11 +248,25 @@ def append_filter_for_igdb_fields(igdb_fields,
     return igdb_fields
 
 
+def get_comparison_symbol(year_constraint='equality'):
+    if year_constraint == 'equality':
+        comparison_symbol = '='
+    elif year_constraint == 'minimum':
+        comparison_symbol = '>='
+    elif year_constraint == 'maximum':
+        comparison_symbol = '<='
+    else:
+        comparison_symbol = '='
+
+    return comparison_symbol
+
+
 def get_igdb_fields_for_games(must_be_available_on_pc=True,
                               must_be_a_game=True,
                               enforced_platform=None,
                               enforced_game_category=None,
-                              enforced_year=None):
+                              enforced_year=None,
+                              year_constraint='equality'):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
     field_separator = ', '
@@ -293,10 +310,12 @@ def get_igdb_fields_for_games(must_be_available_on_pc=True,
                                                               )
 
     if enforced_year is not None:
+        comparison_symbol = get_comparison_symbol(year_constraint=year_constraint)
+
         igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
                                                               'release_dates.y',
                                                               enforced_year,
-                                                              )
+                                                              comparison_symbol=comparison_symbol)
 
     return igdb_fields_for_games
 
@@ -344,11 +363,13 @@ def look_up_game_name(game_name,
                       must_be_a_game=True,
                       enforced_platform=None,
                       enforced_game_category=None,
+                      year_constraint='equality',
                       verbose=True):
     if verbose:
-        print('[query] Game name: {} ; Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
+        print('[query] Game name: {} ; Year: {} ({}) ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
             game_name,
             enforced_year,
+            year_constraint,
             must_be_available_on_pc,
             must_be_a_game,
             enforced_platform,
@@ -362,7 +383,8 @@ def look_up_game_name(game_name,
                                            must_be_a_game=must_be_a_game,
                                            enforced_platform=enforced_platform,
                                            enforced_game_category=enforced_game_category,
-                                           enforced_year=enforced_year)
+                                           enforced_year=enforced_year,
+                                           year_constraint=year_constraint)
 
     params = get_igdb_request_params()
     params['fields'] = fields_str
@@ -392,6 +414,7 @@ def look_up_game_id(game_id,
                     must_be_a_game=True,
                     enforced_platform=None,
                     enforced_game_category=None,
+                    year_constraint='equality',
                     verbose=True):
     if verbose:
         print('[query] Game id: {} ; Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}'.format(
@@ -410,7 +433,8 @@ def look_up_game_id(game_id,
                                            must_be_a_game=must_be_a_game,
                                            enforced_platform=enforced_platform,
                                            enforced_game_category=enforced_game_category,
-                                           enforced_year=enforced_year)
+                                           enforced_year=enforced_year,
+                                           year_constraint=year_constraint)
 
     fields_str = append_filter_for_igdb_fields(fields_str,
                                                'id',

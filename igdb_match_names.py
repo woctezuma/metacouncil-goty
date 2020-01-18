@@ -107,7 +107,8 @@ def match_names_with_igdb(raw_votes,
                           release_year=None,
                           must_be_available_on_pc=True,
                           must_be_a_game=True,
-                          goty_field='goty_preferences'):
+                          goty_field='goty_preferences',
+                          year_constraint='equality'):
     seen_game_names = set()
     igdb_match_database = dict()
     igdb_local_database = dict()
@@ -125,7 +126,8 @@ def match_names_with_igdb(raw_votes,
                     igdb_matches = look_up_game_name(game_name=formatted_game_name_for_igdb,
                                                      enforced_year=release_year,
                                                      must_be_available_on_pc=must_be_available_on_pc,
-                                                     must_be_a_game=must_be_a_game)
+                                                     must_be_a_game=must_be_a_game,
+                                                     year_constraint=year_constraint)
 
                     try:
                         igdb_best_match = igdb_matches[0]
@@ -243,12 +245,14 @@ def download_igdb_local_databases(ballots,
                                   must_be_available_on_pc=True,
                                   must_be_a_game=True,
                                   goty_field='goty_preferences',
+                                  year_constraint='equality',
                                   verbose=True):
     igdb_match_database, igdb_local_database = match_names_with_igdb(ballots,
                                                                      release_year=release_year,
                                                                      must_be_available_on_pc=must_be_available_on_pc,
                                                                      must_be_a_game=must_be_a_game,
-                                                                     goty_field=goty_field)
+                                                                     goty_field=goty_field,
+                                                                     year_constraint=year_constraint)
 
     # Merge with previous databases, if they were passed to the function as optional parameters
     if extend_previous_databases:
@@ -317,6 +321,7 @@ def download_igdb_data_for_ballots_with_missing_data(new_ballots,
                                                      must_be_available_on_pc=True,
                                                      must_be_a_game=True,
                                                      goty_field='goty_preferences',
+                                                     year_constraint='equality',
                                                      verbose=False):
     # Caveat: it is mandatory to set 'extend_previous_databases' to True, if you want to:
     # - first download data for new ballots,
@@ -332,6 +337,7 @@ def download_igdb_data_for_ballots_with_missing_data(new_ballots,
                                                                              must_be_available_on_pc=must_be_available_on_pc,
                                                                              must_be_a_game=must_be_a_game,
                                                                              goty_field=goty_field,
+                                                                             year_constraint=year_constraint,
                                                                              verbose=verbose)
 
     return igdb_match_database, igdb_local_database
@@ -367,6 +373,7 @@ def load_igdb_local_databases(ballots,
         must_be_available_on_pc=must_be_available_on_pc,
         must_be_a_game=must_be_a_game,
         goty_field=goty_field,
+        year_constraint=year_constraint,
         verbose=verbose,
     )
 
