@@ -271,12 +271,20 @@ def download_igdb_local_databases(ballots,
                                               previous_database=previous_igdb_local_database)
 
     # Save data before applying any hard-coded change
+    num_queries = 0
+    for voter_name in ballots:
+        for (game_position, game_name) in ballots[voter_name][goty_field].items():
+            if not is_a_noisy_vote(game_name):
+                num_queries += 1
 
-    save_igdb_match_database(data=igdb_match_database,
-                             release_year=release_year)
+    save_to_disk = bool(num_queries > 0)
 
-    save_igdb_local_database(data=igdb_local_database,
-                             release_year=release_year)
+    if save_to_disk:
+        save_igdb_match_database(data=igdb_match_database,
+                                 release_year=release_year)
+
+        save_igdb_local_database(data=igdb_local_database,
+                                 release_year=release_year)
 
     # Apply hard-coded changes: i) database extension and ii) fixes to name matching
 
