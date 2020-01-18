@@ -1,0 +1,26 @@
+{
+  "-201": {
+    "id": -201,
+    "name": "Epic Games Launcher (software)",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2018,
+        "human": "2018-Dec-06"
+      }
+    ],
+    "slug": null
+  },
+  "-1147390": {
+    "id": -1147390,
+    "name": "Punchline!!",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2019,
+        "human": "2019-Dec-19"
+      }
+    ],
+    "slug": null
+  }
+}
