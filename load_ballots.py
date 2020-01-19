@@ -59,13 +59,15 @@ def parse_votes(data,
     gotd_field = 'gotd_preferences'
     gotd_review_field = 'gotd_description'
 
+    quote = '"'
+
     ballots = dict()
 
     for element in data:
         # Tokenize
         raw_tokens = element.split('";"')
         # Adjust the first two tokens and the last token due to formatting
-        tokens = [t for t in raw_tokens[0].split(';"')] + raw_tokens[1:-1] + [raw_tokens[-1].strip('"')]
+        tokens = [t for t in raw_tokens[0].strip(quote).split(';"')] + raw_tokens[1:-1] + [raw_tokens[-1].strip(quote)]
 
         # Parse
         voter_name = tokens[parsing_params['voter_name']]
