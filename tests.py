@@ -136,6 +136,7 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         noisy_votes = disqualify_vote.get_hard_coded_noisy_votes()
 
         empty_game_name = ''
+        # The empty string is not part of the hard-coded noisy votes, although it would be consider as noisy later on.
         self.assertTrue(empty_game_name not in noisy_votes)
 
         for noisy_game_name in ['n/a', 'N/A', '-']:
@@ -144,7 +145,8 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
     def test_is_a_noisy_vote(self):
         empty_game_name = ''
         game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(empty_game_name)
-        self.assertTrue(not game_name_is_a_noisy_vote)
+        # The empty string is considered as noisy, although it is not part of the hard-coded noisy votes.
+        self.assertTrue(game_name_is_a_noisy_vote)
 
         for noisy_game_name in ['n/a', 'N/A', '-']:
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(noisy_game_name)
