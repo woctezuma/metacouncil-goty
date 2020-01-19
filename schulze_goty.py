@@ -310,10 +310,12 @@ def print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized
 
 
 def print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
+                                       goty_field='goty_preferences',
                                        num_app_id_groups_to_display=3):
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
         for app_id in app_id_group:
-            print_reviews(ballots, matches, app_id)
+            print_reviews(ballots, matches, app_id,
+                          goty_field=goty_field)
 
     return
 
@@ -414,6 +416,7 @@ def apply_pipeline(input_filename,
                       num_app_id_groups_to_display=7)
 
     print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
+                                       goty_field=goty_field,
                                        num_app_id_groups_to_display=7)
 
     return True

@@ -148,7 +148,10 @@ def print_reviews(ballots,
                   matches,
                   app_id,
                   goty_field='goty_preferences',
-                  goty_review_field='goty_description'):
+                  goty_review_field=None):
+    if goty_review_field is None:
+        goty_review_field = goty_field.replace('_preferences', '_description')
+
     # Constant parameters
     goty_position = 1
     neighbor_reference_index = 0
