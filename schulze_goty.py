@@ -409,15 +409,17 @@ def apply_pipeline(input_filename,
                           target_release_year=release_year,
                           use_igdb=use_igdb)
 
+    num_app_id_groups_to_display = 7
+
     print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
-                                                   num_app_id_groups_to_display=7)
+                                                   num_app_id_groups_to_display=num_app_id_groups_to_display)
 
     print_voter_stats(schulze_ranking, standardized_ballots,
-                      num_app_id_groups_to_display=7)
+                      num_app_id_groups_to_display=num_app_id_groups_to_display)
 
     print_reviews_for_top_ranked_games(schulze_ranking, ballots, matches,
                                        goty_field=goty_field,
-                                       num_app_id_groups_to_display=7)
+                                       num_app_id_groups_to_display=num_app_id_groups_to_display)
 
     return True
 
