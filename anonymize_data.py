@@ -80,7 +80,7 @@ def anonymize(data,
                 if verbose:
                     review_content = tokens[review_token_index]
                     print('Redacting review content: {}'.format(review_content))
-                tokens[review_token_index] = ''
+                tokens[review_token_index] = '""'
 
         # Remove leading metadata
         # Consequence: the fake author name should now appear as the first token on each line of the anonymized data.
