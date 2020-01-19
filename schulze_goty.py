@@ -364,7 +364,8 @@ def apply_pipeline(input_filename,
                    use_levenshtein_distance=True,
                    goty_field='goty_preferences',
                    year_constraint='equality',
-                   parsing_params=None):
+                   parsing_params=None,
+                   num_app_id_groups_to_display=7):
     ballots = load_ballots(input_filename,
                            fake_author_name=fake_author_name,
                            parsing_params=parsing_params)
@@ -409,8 +410,6 @@ def apply_pipeline(input_filename,
                           target_release_year=release_year,
                           use_igdb=use_igdb)
 
-    num_app_id_groups_to_display = 7
-
     print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
                                                    num_app_id_groups_to_display=num_app_id_groups_to_display)
 
@@ -449,4 +448,5 @@ if __name__ == '__main__':
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
                    year_constraint=year_constraint,
-                   parsing_params=parsing_params)
+                   parsing_params=parsing_params,
+                   num_app_id_groups_to_display=9)

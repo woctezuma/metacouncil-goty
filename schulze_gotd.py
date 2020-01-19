@@ -32,4 +32,5 @@ if __name__ == '__main__':
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
                    year_constraint=year_constraint,
-                   parsing_params=parsing_params)
+                   parsing_params=parsing_params,
+                   num_app_id_groups_to_display=9)
