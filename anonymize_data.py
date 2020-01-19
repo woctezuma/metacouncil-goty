@@ -36,7 +36,31 @@ def remove_header(data, content_start_criterion='"1"'):
     return data_content
 
 
-def anonymize(data, author_name_token_index=18, fake_author_name=True):
+def get_review_token_indices(ballot_year='2018'):
+    # Valid for 2018 and 2019 data
+    goty_description_token_index = 30
+    # Only valid for 2019 data
+    gotd_description_token_index = 52
+
+    if int(ballot_year) == 2019:
+        review_token_indices = [goty_description_token_index,
+                                gotd_description_token_index]
+    else:
+        review_token_indices = [goty_description_token_index]
+
+    return review_token_indices
+
+
+def anonymize(data,
+              author_name_token_index=18,
+              fake_author_name=True,
+              review_token_indices=None,
+              redact_reviews=False,
+              verbose=True):
+    if review_token_indices is None:
+        default_ballot_year = '2018'
+        review_token_indices = get_review_token_indices(ballot_year=default_ballot_year)
+
     import re
 
     from faker import Faker
@@ -49,6 +73,14 @@ def anonymize(data, author_name_token_index=18, fake_author_name=True):
         tokens = re.split('(;)', element)
         if fake_author_name:
             tokens[author_name_token_index] = fake.name()
+
+        if redact_reviews:
+            # Delete 'goty_description' and 'gotd_description'
+            for review_token_index in review_token_indices:
+                if verbose:
+                    review_content = tokens[review_token_index]
+                    print('Redacting review content: {}'.format(review_content))
+                tokens[review_token_index] = ''
 
         # Remove leading metadata
         # Consequence: the fake author name should now appear as the first token on each line of the anonymized data.
@@ -77,7 +109,12 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     return
 
 
-def load_and_anonymize(input_filename, file_encoding='utf-8', fake_author_name=True):
+def load_and_anonymize(input_filename,
+                       file_encoding='utf-8',
+                       fake_author_name=True,
+                       review_token_indices=None,
+                       redact_reviews=False,
+                       verbose=True):
     output_filename = get_anonymized_file_prefix() + input_filename
 
     data = load_input(input_filename, file_encoding)
@@ -85,7 +122,12 @@ def load_and_anonymize(input_filename, file_encoding='utf-8', fake_author_name=T
     data_content = remove_header(data, content_start_criterion='"1"')
 
     # Assumption: the name of the author appears as the 18th token on each line of the original data
-    anonymized_data = anonymize(data_content, author_name_token_index=18, fake_author_name=fake_author_name)
+    anonymized_data = anonymize(data_content,
+                                author_name_token_index=18,
+                                fake_author_name=fake_author_name,
+                                review_token_indices=review_token_indices,
+                                redact_reviews=redact_reviews,
+                                verbose=verbose)
 
     write_output(anonymized_data, output_filename, file_encoding)
 
@@ -95,4 +137,12 @@ def load_and_anonymize(input_filename, file_encoding='utf-8', fake_author_name=T
 if __name__ == '__main__':
     ballot_year = '2019'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-    anonymized_data = load_and_anonymize(input_filename)
+
+    review_token_indices = get_review_token_indices(ballot_year)
+    redact_reviews = False
+    verbose = True
+
+    anonymized_data = load_and_anonymize(input_filename,
+                                         review_token_indices=review_token_indices,
+                                         redact_reviews=redact_reviews,
+                                         verbose=verbose)

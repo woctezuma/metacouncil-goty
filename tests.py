@@ -43,6 +43,21 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
 
 class TestAnonymizeDataMethods(unittest.TestCase):
 
+    def test_get_review_token_indices(self):
+        goty_description_token_index = 30
+        gotd_description_token_index = 52
+
+        ballot_year = '2018'
+        review_token_indices = anonymize_data.get_review_token_indices(ballot_year=ballot_year)
+        self.assertTrue(len(review_token_indices) == 1)
+        self.assertTrue(goty_description_token_index in review_token_indices)
+
+        ballot_year = '2019'
+        review_token_indices = anonymize_data.get_review_token_indices(ballot_year=ballot_year)
+        self.assertTrue(len(review_token_indices) == 2)
+        self.assertTrue(goty_description_token_index in review_token_indices)
+        self.assertTrue(gotd_description_token_index in review_token_indices)
+
     def test_load_and_anonymize(self):
         ballot_year = '2018'
         input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
