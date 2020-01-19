@@ -139,10 +139,13 @@ if __name__ == '__main__':
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
     review_token_indices = get_review_token_indices(ballot_year)
+
+    fake_author_name = True
     redact_reviews = False
     verbose = True
 
     anonymized_data = load_and_anonymize(input_filename,
+                                         fake_author_name=fake_author_name,
                                          review_token_indices=review_token_indices,
                                          redact_reviews=redact_reviews,
                                          verbose=verbose)
