@@ -1,4 +1,5580 @@
 {
+  "14587": {
+    "id": 14587,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 7758,
+        "category": 1,
+        "name": "Oxenfree",
+        "uid": "388880"
+      },
+      {
+        "id": 77695,
+        "category": 5,
+        "name": "Oxenfree",
+        "uid": "1457519353",
+        "url": "https://www.gog.com/game/oxenfree",
+        "year": 2016
+      },
+      {
+        "id": 108980,
+        "category": 3,
+        "name": "Oxenfree",
+        "uid": "52278",
+        "url": "https://www.giantbomb.com/games/3030-52278/",
+        "year": 2016
+      },
+      {
+        "id": 210763,
+        "category": 11,
+        "name": "Oxenfree",
+        "uid": "BSK1GN27RB8R",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BSK1GN27RB8R",
+        "year": 2016
+      },
+      {
+        "id": 223859,
+        "category": 13,
+        "name": "OXENFREE",
+        "uid": "1192807913",
+        "url": "https://itunes.apple.com/us/app/oxenfree/id1192807913?mt=12&uo=4",
+        "year": 2017
+      },
+      {
+        "id": 224979,
+        "category": 13,
+        "name": "OXENFREE",
+        "uid": "1179177872",
+        "url": "https://itunes.apple.com/us/app/oxenfree/id1179177872?mt=8&uo=4",
+        "year": 2017
+      },
+      {
+        "id": 245710,
+        "category": 14,
+        "name": "Oxenfree",
+        "uid": "491181"
+      }
+    ],
+    "name": "Oxenfree",
+    "platforms": [
+      3,
+      6,
+      14,
+      39,
+      45,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 44141,
+        "human": "2016-Jan-15",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 44142,
+        "human": "2016-Jan-15",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 53749,
+        "human": "2016-May-31",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 53750,
+        "human": "2016-Jun-01",
+        "platform": 3,
+        "y": 2016
+      },
+      {
+        "id": 116489,
+        "human": "2016-Jan-15",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 116490,
+        "human": "2016-Jun-01",
+        "platform": 92,
+        "y": 2016
+      },
+      {
+        "id": 116491,
+        "human": "2017-Oct-06",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 118611,
+        "human": "2016-Jan-15",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 120222,
+        "human": "2016-Jan-15",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 133958,
+        "human": "2016-May-31",
+        "platform": 45,
+        "y": 2016
+      },
+      {
+        "id": 133959,
+        "human": "2016-May-31",
+        "platform": 45,
+        "y": 2016
+      },
+      {
+        "id": 147515,
+        "human": "2017-Mar-16",
+        "platform": 39,
+        "y": 2017
+      }
+    ],
+    "slug": "oxenfree"
+  },
+  "7327": {
+    "id": 7327,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12136,
+        "category": 1,
+        "name": "Valiant Hearts: The Great War\u2122 / Soldats Inconnus : M\u00e9moires de la Grande Guerre\u2122",
+        "uid": "260230"
+      },
+      {
+        "id": 117121,
+        "category": 3,
+        "name": "Valiant Hearts: The Great War",
+        "uid": "43885",
+        "url": "https://www.giantbomb.com/games/3030-43885/",
+        "year": 2014
+      },
+      {
+        "id": 211087,
+        "category": 11,
+        "name": "Valiant Hearts: The Great War",
+        "uid": "C0X15TR4NP0B",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C0X15TR4NP0B",
+        "year": 2014
+      },
+      {
+        "id": 245712,
+        "category": 14,
+        "name": "Valiant Hearts: The Great War",
+        "uid": "370541"
+      }
+    ],
+    "name": "Valiant Hearts: The Great War",
+    "platforms": [
+      6,
+      36,
+      39,
+      45,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 20189,
+        "human": "2014-Jun-25",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 20190,
+        "human": "2014-Jun-25",
+        "platform": 36,
+        "y": 2014
+      },
+      {
+        "id": 20191,
+        "human": "2014-Jun-25",
+        "platform": 45,
+        "y": 2014
+      },
+      {
+        "id": 20783,
+        "human": "2014-Sep-04",
+        "platform": 39,
+        "y": 2014
+      },
+      {
+        "id": 106714,
+        "human": "2014-Jun-25",
+        "platform": 45,
+        "y": 2014
+      },
+      {
+        "id": 106715,
+        "human": "2014-Jun-25",
+        "platform": 45,
+        "y": 2014
+      },
+      {
+        "id": 121805,
+        "human": "2014-Jun-25",
+        "platform": 36,
+        "y": 2014
+      },
+      {
+        "id": 121808,
+        "human": "2014-Jun-25",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 130304,
+        "human": "2014-Jun-25",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 136432,
+        "human": "2014-Jun-25",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 153630,
+        "human": "2014-Jul-31",
+        "platform": 45,
+        "y": 2014
+      },
+      {
+        "id": 156737,
+        "human": "2018-Nov-08",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "valiant-hearts-the-great-war"
+  },
+  "121": {
+    "id": 121,
+    "alternative_names": [
+      {
+        "id": 14098,
+        "comment": "Other",
+        "name": "Minecraft Xbox One Edition"
+      },
+      {
+        "id": 14099,
+        "comment": "Other",
+        "name": "Minecraft Xbox 360 Edition"
+      },
+      {
+        "id": 27552,
+        "name": "Minecraft Bedrock Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 129354,
+        "category": 3,
+        "name": "Minecraft",
+        "uid": "30475",
+        "url": "https://www.giantbomb.com/games/3030-30475/",
+        "year": 2011
+      },
+      {
+        "id": 189735,
+        "category": 10,
+        "name": "Minecraft",
+        "uid": "UCPIAZ-E6VsIegksYc0BfUJg",
+        "url": "https://gaming.youtube.com/game/UCPIAZ-E6VsIegksYc0BfUJg"
+      },
+      {
+        "id": 210703,
+        "category": 11,
+        "name": "Minecraft",
+        "uid": "9NBLGGH537BL",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/9NBLGGH537BL",
+        "year": 2017
+      },
+      {
+        "id": 224819,
+        "category": 13,
+        "name": "Minecraft",
+        "uid": "479516143",
+        "url": "https://itunes.apple.com/us/app/minecraft/id479516143?mt=8&uo=4",
+        "year": 2011
+      },
+      {
+        "id": 245104,
+        "category": 14,
+        "name": "Minecraft",
+        "uid": "27471"
+      },
+      {
+        "id": 352179,
+        "category": 15,
+        "name": "Minecraft",
+        "uid": "com.mojang.minecraftpe",
+        "url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe"
+      },
+      {
+        "id": 1592923,
+        "category": 10,
+        "name": "Minecraft",
+        "uid": "UCxd3YPc5sSSC5qrk5tVofcA",
+        "url": "https://www.youtube.com/watch?v=UCxd3YPc5sSSC5qrk5tVofcA"
+      },
+      {
+        "id": 1708307,
+        "category": 10,
+        "name": "Minecraft",
+        "uid": "UCgr9oeR0vtFqs0SAf4I6dHw",
+        "url": "https://www.youtube.com/watch?v=UCgr9oeR0vtFqs0SAf4I6dHw"
+      }
+    ],
+    "name": "Minecraft",
+    "platforms": [
+      3,
+      6,
+      9,
+      12,
+      14,
+      34,
+      39,
+      41,
+      45,
+      46,
+      48,
+      49,
+      74,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 20300,
+        "human": "2011-Nov-18",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 20301,
+        "human": "2011-Nov-18",
+        "platform": 14,
+        "y": 2011
+      },
+      {
+        "id": 20302,
+        "human": "2011-Nov-18",
+        "platform": 3,
+        "y": 2011
+      },
+      {
+        "id": 20303,
+        "human": "2011-Oct-07",
+        "platform": 34,
+        "y": 2011
+      },
+      {
+        "id": 20304,
+        "human": "2011-Nov-17",
+        "platform": 39,
+        "y": 2011
+      },
+      {
+        "id": 20305,
+        "human": "2012-May-09",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 20308,
+        "human": "2014-Sep-04",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 20309,
+        "human": "2014-Sep-05",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 28704,
+        "human": "2014-Oct-14",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 28705,
+        "human": "2014-Oct-15",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 28926,
+        "human": "2014-Dec-15",
+        "platform": 74,
+        "y": 2014
+      },
+      {
+        "id": 41557,
+        "human": "2015-Dec-17",
+        "platform": 41,
+        "y": 2015
+      },
+      {
+        "id": 69255,
+        "human": "2017-May-12",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 133884,
+        "human": "2014-May-16",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 133885,
+        "human": "2014-May-14",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 133886,
+        "human": "2013-Dec-17",
+        "platform": 45,
+        "y": 2013
+      },
+      {
+        "id": 133887,
+        "human": "2013-Dec-18",
+        "platform": 45,
+        "y": 2013
+      },
+      {
+        "id": 136149,
+        "human": "2017-Sep-20",
+        "platform": 49,
+        "y": 2017
+      }
+    ],
+    "slug": "minecraft"
+  },
+  "8339": {
+    "id": 8339,
+    "alternative_names": [
+      {
+        "id": 28133,
+        "comment": "Other",
+        "name": " Minecraft: Story Mode - A Telltale Games Series"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8209,
+        "category": 1,
+        "name": "Minecraft: Story Mode - A Telltale Games Series",
+        "uid": "376870"
+      },
+      {
+        "id": 77584,
+        "category": 5,
+        "name": "Minecraft: Story Mode - A Telltale Game Series",
+        "uid": "1444400283",
+        "url": "https://www.gog.com/game/minecraft_story_mode",
+        "year": 2015
+      },
+      {
+        "id": 112738,
+        "category": 3,
+        "name": "Minecraft: Story Mode",
+        "uid": "48413",
+        "url": "https://www.giantbomb.com/games/3030-48413/",
+        "year": 2015
+      },
+      {
+        "id": 189656,
+        "category": 10,
+        "name": "Minecraft: Story Mode",
+        "uid": "UCNRnY0iMI2Bgo_ncrk0JXaQ",
+        "url": "https://gaming.youtube.com/game/UCNRnY0iMI2Bgo_ncrk0JXaQ"
+      },
+      {
+        "id": 210702,
+        "category": 11,
+        "name": "Minecraft: Story Mode - The Complete Adventure (Episodes 1-8)",
+        "uid": "C4DXR269PZSG",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C4DXR269PZSG",
+        "year": 2016
+      },
+      {
+        "id": 213834,
+        "category": 11,
+        "name": "Minecraft: Story Mode - Complete",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802443607dc",
+        "url": "http://marketplace.xbox.com/en-US/Product/Minecraft-Story-Mode-Complete/66acd000-77fe-1000-9115-d802443607dc",
+        "year": 2016
+      },
+      {
+        "id": 224678,
+        "category": 13,
+        "name": "Minecraft: Story Mode",
+        "uid": "1001286466",
+        "url": "https://itunes.apple.com/us/app/minecraft-story-mode/id1001286466?mt=8&uo=4",
+        "year": 2015
+      },
+      {
+        "id": 246006,
+        "category": 14,
+        "name": "Minecraft: Story Mode",
+        "uid": "490130"
+      }
+    ],
+    "name": "Minecraft: Story Mode",
+    "platforms": [
+      6,
+      9,
+      12,
+      14,
+      34,
+      39,
+      41,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 38192,
+        "human": "2015-Oct-13",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 38193,
+        "human": "2015-Oct-13",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 38194,
+        "human": "2015-Oct-13",
+        "platform": 12,
+        "y": 2015
+      },
+      {
+        "id": 38195,
+        "human": "2015-Oct-13",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 38196,
+        "human": "2015-Oct-13",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 38197,
+        "human": "2015-Oct-13",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 38198,
+        "human": "2015-Oct-15",
+        "platform": 39,
+        "y": 2015
+      },
+      {
+        "id": 38199,
+        "human": "2015-Oct-15",
+        "platform": 34,
+        "y": 2015
+      },
+      {
+        "id": 93329,
+        "human": "2016-Jan-21",
+        "platform": 41,
+        "y": 2016
+      },
+      {
+        "id": 93330,
+        "human": "2017-Jul-01",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 93331,
+        "human": "2017-Aug-22",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 108095,
+        "human": "2015-Oct-30",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 108096,
+        "human": "2015-Oct-27",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 136647,
+        "human": "2016-Apr-12",
+        "platform": 49,
+        "y": 2016
+      }
+    ],
+    "slug": "minecraft-story-mode"
+  },
+  "110474": {
+    "id": 110474,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1617337,
+        "category": 3,
+        "name": "Minecraft: Dungeons",
+        "uid": "70421",
+        "url": "https://www.giantbomb.com/games/3030-70421/",
+        "year": 2019
+      },
+      {
+        "id": 1708811,
+        "category": 14,
+        "name": "Minecraft: Dungeons",
+        "uid": "509725"
+      }
+    ],
+    "name": "Minecraft Dungeons",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 179606,
+        "human": "2020-Apr",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 179607,
+        "human": "2020-Apr",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 179608,
+        "human": "2020-Apr",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 179609,
+        "human": "2020-Apr",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons"
+  },
+  "28407": {
+    "id": 28407,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 188867,
+        "category": 10,
+        "name": "Education",
+        "uid": "UC3yA8nDwraeOfnYfBWun83g",
+        "url": "https://gaming.youtube.com/game/UC3yA8nDwraeOfnYfBWun83g"
+      }
+    ],
+    "name": "Minecraft: Education Edition",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 123573,
+        "human": "2016-Nov-01",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 123574,
+        "human": "2016-Nov-01",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "minecraft-education-edition"
+  },
+  "46077": {
+    "id": 46077,
+    "category": 0,
+    "name": "The Minecraft tribute game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 92425,
+        "human": "2017-Jan-08",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "the-minecraft-tribute-game"
+  },
+  "46133": {
+    "id": 46133,
+    "category": 0,
+    "name": "The Minecraft tribute game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 92449,
+        "human": "2017-Jul-08",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "the-minecraft-tribute-game--1"
+  },
+  "44158": {
+    "id": 44158,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 77585,
+        "category": 5,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "1614341910",
+        "url": "https://www.gog.com/game/minecraft_story_mode_season_2",
+        "year": 2017
+      },
+      {
+        "id": 100276,
+        "category": 1,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "639170"
+      },
+      {
+        "id": 102208,
+        "category": 3,
+        "name": "Minecraft: Story Mode - Season 2",
+        "uid": "59826",
+        "url": "https://www.giantbomb.com/games/3030-59826/",
+        "year": 2017
+      },
+      {
+        "id": 213833,
+        "category": 11,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802443607df",
+        "url": "http://marketplace.xbox.com/en-US/Product/Minecraft-Story-Mode-Season-Two/66acd000-77fe-1000-9115-d802443607df",
+        "year": 2017
+      },
+      {
+        "id": 225307,
+        "category": 13,
+        "name": "Minecraft: Story Mode - S2",
+        "uid": "1235920003",
+        "url": "https://itunes.apple.com/us/app/minecraft-story-mode-s2/id1235920003?mt=8&uo=4",
+        "year": 2017
+      },
+      {
+        "id": 368210,
+        "category": 15,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "com.telltalegames.minecraft200",
+        "url": "https://play.google.com/store/apps/details?id=com.telltalegames.minecraft200"
+      },
+      {
+        "id": 376146,
+        "category": 14,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "497348",
+        "url": "https://www.giantbomb.com/game/3030-59826/"
+      },
+      {
+        "id": 1184728,
+        "category": 10,
+        "name": "Minecraft: Story Mode - Season Two",
+        "uid": "UC7hSHk6zKrVm1gdqZcxUNHQ",
+        "url": "https://www.youtube.com/watch?v=UC7hSHk6zKrVm1gdqZcxUNHQ"
+      }
+    ],
+    "name": "Minecraft: Story Mode - Season Two",
+    "platforms": [
+      6,
+      12,
+      34,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 110266,
+        "human": "2017-Jul-12",
+        "platform": 34,
+        "y": 2017
+      },
+      {
+        "id": 110267,
+        "human": "2017-Jul-11",
+        "platform": 39,
+        "y": 2017
+      },
+      {
+        "id": 110268,
+        "human": "2017-Jul-11",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 110269,
+        "human": "2017-Jul-11",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 110270,
+        "human": "2017-Jul-11",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 110272,
+        "human": "2017-Jul-14",
+        "platform": 12,
+        "y": 2017
+      },
+      {
+        "id": 115819,
+        "human": "2017-Jul-11",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 182796,
+        "human": "2018-Nov-06",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "minecraft-story-mode-season-two"
+  },
+  "1985": {
+    "id": 1985,
+    "alternative_names": [
+      {
+        "id": 4111,
+        "comment": "Acronym",
+        "name": "MGS5"
+      },
+      {
+        "id": 8949,
+        "comment": "Japanese title",
+        "name": "\u30e1\u30bf\u30eb\u30ae\u30a2\u30bd\u30ea\u30c3\u30c9V \u30d5\u30a1\u30f3\u30c8\u30e0\u30da\u30a4\u30f3"
+      },
+      {
+        "id": 10887,
+        "comment": "Other",
+        "name": "Metal Gear Solid 5"
+      },
+      {
+        "id": 10888,
+        "comment": "Other",
+        "name": "Metal Gear Solid V"
+      },
+      {
+        "id": 10889,
+        "comment": "Other",
+        "name": "MGSVTPP"
+      },
+      {
+        "id": 10890,
+        "comment": "Other",
+        "name": "MGS5TPP"
+      },
+      {
+        "id": 10891,
+        "comment": "Other",
+        "name": "mgs5"
+      },
+      {
+        "id": 10892,
+        "comment": "Other",
+        "name": "mgs 5"
+      },
+      {
+        "id": 21889,
+        "comment": "Other",
+        "name": "MGSV"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11442,
+        "category": 1,
+        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+        "uid": "287700"
+      },
+      {
+        "id": 119910,
+        "category": 3,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "uid": "40796",
+        "url": "https://www.giantbomb.com/games/3030-40796/",
+        "year": 2015
+      },
+      {
+        "id": 188865,
+        "category": 10,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "uid": "UC3W9h9CubzWPt-h9IjS-8Og",
+        "url": "https://gaming.youtube.com/game/UC3W9h9CubzWPt-h9IjS-8Og"
+      },
+      {
+        "id": 210694,
+        "category": 11,
+        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+        "uid": "C253HWJP0L18",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C253HWJP0L18",
+        "year": 2015
+      },
+      {
+        "id": 213822,
+        "category": 11,
+        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8024b4e085e",
+        "url": "http://marketplace.xbox.com/en-US/Product/METAL-GEAR-SOLID-V-THE-PHANTOM-PAIN/66acd000-77fe-1000-9115-d8024b4e085e",
+        "year": 2015
+      },
+      {
+        "id": 245204,
+        "category": 14,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "uid": "91419"
+      },
+      {
+        "id": 1187060,
+        "category": 14,
+        "name": "Metal Gear Solid 5",
+        "uid": "66138",
+        "url": "https://www.twitch.tv/directory/game/Metal Gear Solid 5"
+      },
+      {
+        "id": 1193437,
+        "category": 14,
+        "name": "Improvisio",
+        "uid": "30959"
+      }
+    ],
+    "name": "Metal Gear Solid V: The Phantom Pain",
+    "platforms": [
+      6,
+      9,
+      12,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 28440,
+        "human": "2015-Sep-15",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 28543,
+        "human": "2015-Sep-01",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 28544,
+        "human": "2015-Sep-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 28545,
+        "human": "2015-Sep-01",
+        "platform": 12,
+        "y": 2015
+      },
+      {
+        "id": 28546,
+        "human": "2015-Sep-01",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 108035,
+        "human": "2015-Sep-01",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 108036,
+        "human": "2015-Sep-01",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 122509,
+        "human": "2015-Sep-01",
+        "platform": 12,
+        "y": 2015
+      },
+      {
+        "id": 133875,
+        "human": "2015-Sep-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 133876,
+        "human": "2015-Sep-01",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 136144,
+        "human": "2015-Sep-01",
+        "platform": 49,
+        "y": 2015
+      }
+    ],
+    "slug": "metal-gear-solid-v-the-phantom-pain"
+  },
+  "25076": {
+    "id": 25076,
+    "alternative_names": [
+      {
+        "id": 7594,
+        "comment": "Acronym",
+        "name": "RDR2"
+      },
+      {
+        "id": 22246,
+        "name": "Red Dead Redemption II"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105255,
+        "category": 3,
+        "name": "Red Dead Redemption 2",
+        "uid": "56725",
+        "url": "https://www.giantbomb.com/games/3030-56725/",
+        "year": 2018
+      },
+      {
+        "id": 210828,
+        "category": 11,
+        "name": "Red Dead Redemption 2",
+        "uid": "BPSWGQBW7R3G",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPSWGQBW7R3G",
+        "year": 2018
+      },
+      {
+        "id": 248276,
+        "category": 14,
+        "name": "Red Dead Redemption 2",
+        "uid": "493959"
+      },
+      {
+        "id": 1708337,
+        "category": 10,
+        "name": "Red Dead Redemption 2",
+        "uid": "UCxlDdW3aW7Sht6pM0TJ4Tag",
+        "url": "https://www.youtube.com/watch?v=UCxlDdW3aW7Sht6pM0TJ4Tag"
+      },
+      {
+        "id": 1837431,
+        "category": 1,
+        "name": "Red Dead Redemption 2",
+        "uid": "1174180",
+        "url": "https://store.steampowered.com/app/1174180",
+        "year": 2019
+      }
+    ],
+    "name": "Red Dead Redemption 2",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 137262,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 137263,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137264,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137265,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137266,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 147060,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 177006,
+        "human": "2019-Nov-05",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 179286,
+        "human": "2019-Nov-19",
+        "platform": 170,
+        "y": 2019
+      }
+    ],
+    "slug": "red-dead-redemption-2"
+  },
+  "1020": {
+    "id": 1020,
+    "alternative_names": [
+      {
+        "id": 12289,
+        "comment": "Acronym",
+        "name": "Grand Theft Auto 5"
+      },
+      {
+        "id": 13338,
+        "comment": "Other",
+        "name": "GTA Online"
+      },
+      {
+        "id": 13339,
+        "comment": "Other",
+        "name": "GTA 5"
+      },
+      {
+        "id": 13340,
+        "comment": "Other",
+        "name": "GTA V"
+      },
+      {
+        "id": 13341,
+        "comment": "Other",
+        "name": "Grand Theft Auto Five"
+      },
+      {
+        "id": 13342,
+        "comment": "Other",
+        "name": "GTAV"
+      },
+      {
+        "id": 13343,
+        "comment": "Other",
+        "name": "GTA5"
+      },
+      {
+        "id": 13344,
+        "comment": "Other",
+        "name": "Grand Theft Auto Online"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11827,
+        "category": 1,
+        "name": "Grand Theft Auto V",
+        "uid": "271590"
+      },
+      {
+        "id": 123664,
+        "category": 3,
+        "name": "Grand Theft Auto V",
+        "uid": "36765",
+        "url": "https://www.giantbomb.com/games/3030-36765/",
+        "year": 2013
+      },
+      {
+        "id": 189339,
+        "category": 10,
+        "name": "Grand Theft Auto Online",
+        "uid": "UChoveWrDASwMxB5_iNot07A",
+        "url": "https://gaming.youtube.com/game/UChoveWrDASwMxB5_iNot07A"
+      },
+      {
+        "id": 189925,
+        "category": 10,
+        "name": "Grand Theft Auto V",
+        "uid": "UCT1tnevF8bn9Nwr6ZHA9Mag",
+        "url": "https://gaming.youtube.com/game/UCT1tnevF8bn9Nwr6ZHA9Mag"
+      },
+      {
+        "id": 210553,
+        "category": 11,
+        "name": "Grand Theft Auto V",
+        "uid": "BPJ686W6S0NH",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPJ686W6S0NH",
+        "year": 2014
+      },
+      {
+        "id": 213597,
+        "category": 11,
+        "name": "GTA V",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802545408a7",
+        "url": "http://marketplace.xbox.com/en-US/Product/GTA-V/66acd000-77fe-1000-9115-d802545408a7",
+        "year": 2013
+      },
+      {
+        "id": 245105,
+        "category": 14,
+        "name": "Grand Theft Auto V",
+        "uid": "32982"
+      },
+      {
+        "id": 281412,
+        "category": 14,
+        "name": "GTA Online",
+        "uid": "412753",
+        "url": "https://www.giantbomb.com/game/3030-0/"
+      }
+    ],
+    "name": "Grand Theft Auto V",
+    "platforms": [
+      6,
+      9,
+      12,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 20290,
+        "human": "2014-Nov-18",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 20291,
+        "human": "2014-Nov-18",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 20293,
+        "human": "2013-Sep-17",
+        "platform": 12,
+        "y": 2013
+      },
+      {
+        "id": 20294,
+        "human": "2013-Sep-17",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 27436,
+        "human": "2015-Apr-14",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 103344,
+        "human": "2013-Sep-17",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 103345,
+        "human": "2013-Sep-17",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 133723,
+        "human": "2014-Nov-18",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 133724,
+        "human": "2014-Nov-18",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 136048,
+        "human": "2014-Nov-18",
+        "platform": 49,
+        "y": 2014
+      }
+    ],
+    "slug": "grand-theft-auto-v"
+  },
+  "2115": {
+    "id": 2115,
+    "alternative_names": [
+      {
+        "id": 10312,
+        "comment": "Other",
+        "name": "Titanfall Online"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 118079,
+        "category": 3,
+        "name": "Titanfall",
+        "uid": "42860",
+        "url": "https://www.giantbomb.com/games/3030-42860/",
+        "year": 2014
+      },
+      {
+        "id": 188921,
+        "category": 10,
+        "name": "Titanfall",
+        "uid": "UC6dp5hRmWPj1ttthyiPXSXw",
+        "url": "https://gaming.youtube.com/game/UC6dp5hRmWPj1ttthyiPXSXw"
+      },
+      {
+        "id": 245340,
+        "category": 14,
+        "name": "Titanfall",
+        "uid": "369525"
+      }
+    ],
+    "name": "Titanfall",
+    "platforms": [
+      6,
+      12,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 6838,
+        "human": "2014-Mar-11",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 6841,
+        "human": "2014-Mar-11",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 13564,
+        "human": "2014-Apr-08",
+        "platform": 12,
+        "y": 2014
+      }
+    ],
+    "slug": "titanfall"
+  },
+  "17447": {
+    "id": 17447,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 112029,
+        "category": 3,
+        "name": "Titanfall 2",
+        "uid": "49139",
+        "url": "https://www.giantbomb.com/games/3030-49139/",
+        "year": 2016
+      },
+      {
+        "id": 188917,
+        "category": 10,
+        "name": "Titanfall 2",
+        "uid": "UC6BlfFYL1GZV0XZ0tvZ7buw",
+        "url": "https://gaming.youtube.com/game/UC6BlfFYL1GZV0XZ0tvZ7buw"
+      },
+      {
+        "id": 211045,
+        "category": 11,
+        "name": "Titanfall\u00ae 2",
+        "uid": "C0X2HNVH08FB",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C0X2HNVH08FB",
+        "year": 2016
+      },
+      {
+        "id": 247353,
+        "category": 14,
+        "name": "Titanfall 2",
+        "uid": "489201"
+      }
+    ],
+    "name": "Titanfall 2",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 51870,
+        "human": "2016-Oct-28",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 51871,
+        "human": "2016-Oct-28",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 51872,
+        "human": "2016-Oct-28",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 106422,
+        "human": "2016-Oct-28",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 106423,
+        "human": "2016-Oct-28",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 136398,
+        "human": "2016-Oct-28",
+        "platform": 49,
+        "y": 2016
+      }
+    ],
+    "slug": "titanfall-2"
+  },
+  "36336": {
+    "id": 36336,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11305,
+        "category": 1,
+        "name": "Final Hours of Titanfall",
+        "uid": "292060"
+      }
+    ],
+    "name": "Final Hours of Titanfall",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 83219,
+        "human": "2014-Apr-16",
+        "platform": 6,
+        "y": 2014
+      }
+    ],
+    "slug": "final-hours-of-titanfall"
+  },
+  "28513": {
+    "id": 28513,
+    "category": 0,
+    "name": "Titanfall 2: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 117782,
+        "human": "2017-Aug-01",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 117783,
+        "human": "2017-Aug-01",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 117784,
+        "human": "2017-Aug-01",
+        "platform": 48,
+        "y": 2017
+      }
+    ],
+    "slug": "titanfall-2-ultimate-edition"
+  },
+  "21729": {
+    "id": 21729,
+    "category": 0,
+    "name": "Titanfall 2: Vanguard Collector's Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 117758,
+        "human": "2016-Oct-28",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 117763,
+        "human": "2016-Oct-28",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 117764,
+        "human": "2016-Oct-28",
+        "platform": 49,
+        "y": 2016
+      }
+    ],
+    "slug": "titanfall-2-vanguard-collectors-edition"
+  },
+  "8222": {
+    "id": 8222,
+    "alternative_names": [
+      {
+        "id": 11608,
+        "comment": "Other",
+        "name": "Dark Souls 2: Scholar of the First Sin"
+      },
+      {
+        "id": 11609,
+        "comment": "Other",
+        "name": "Dark Souls II SotFS"
+      },
+      {
+        "id": 11610,
+        "comment": "Other",
+        "name": " Dark Souls 2 SotFS"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 9934,
+        "category": 1,
+        "name": "DARK SOULS\u2122 II: Scholar of the First Sin",
+        "uid": "335300"
+      },
+      {
+        "id": 112045,
+        "category": 3,
+        "name": "Dark Souls II: Scholar of the First Sin",
+        "uid": "49122",
+        "url": "https://www.giantbomb.com/games/3030-49122/",
+        "year": 2015
+      },
+      {
+        "id": 245363,
+        "category": 14,
+        "name": "Dark Souls II: Scholar of the First Sin",
+        "uid": "489170"
+      }
+    ],
+    "name": "Dark Souls II: Scholar of the First Sin",
+    "platforms": [
+      6,
+      9,
+      12,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 28137,
+        "human": "2015-Apr-02",
+        "platform": 12,
+        "y": 2015
+      },
+      {
+        "id": 28138,
+        "human": "2015-Apr-02",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 28139,
+        "human": "2015-Apr-02",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 28140,
+        "human": "2015-Apr-02",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 28141,
+        "human": "2015-Apr-02",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 102356,
+        "human": "2015-Apr-07",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 102357,
+        "human": "2015-Apr-04",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 118947,
+        "human": "2015-Apr-07",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 134537,
+        "human": "2015-Apr-07",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 134538,
+        "human": "2015-Apr-04",
+        "platform": 48,
+        "y": 2015
+      }
+    ],
+    "slug": "dark-souls-ii-scholar-of-the-first-sin"
+  },
+  "11133": {
+    "id": 11133,
+    "alternative_names": [
+      {
+        "id": 9346,
+        "comment": "Other",
+        "name": "Dark Souls 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8305,
+        "category": 1,
+        "name": "DARK SOULS\u2122 III",
+        "uid": "374320"
+      },
+      {
+        "id": 111303,
+        "category": 3,
+        "name": "Dark Souls III",
+        "uid": "49884",
+        "url": "https://www.giantbomb.com/games/3030-49884/",
+        "year": 2016
+      },
+      {
+        "id": 189639,
+        "category": 10,
+        "name": "Dark Souls III",
+        "uid": "UCnhbk-JD4v1OJGwmH6Dn19Q",
+        "url": "https://gaming.youtube.com/game/UCnhbk-JD4v1OJGwmH6Dn19Q"
+      },
+      {
+        "id": 210417,
+        "category": 11,
+        "name": "DARK SOULS\u2122 III",
+        "uid": "BW2XDRNSCCPZ",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BW2XDRNSCCPZ",
+        "year": 2016
+      },
+      {
+        "id": 245128,
+        "category": 14,
+        "name": "Dark Souls III",
+        "uid": "490292"
+      }
+    ],
+    "name": "Dark Souls III",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 45932,
+        "human": "2016-Apr-12",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 45933,
+        "human": "2016-Apr-12",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 45934,
+        "human": "2016-Apr-12",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 47597,
+        "human": "2016-Mar-24",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 47598,
+        "human": "2016-Mar-24",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 47599,
+        "human": "2016-Mar-24",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 102358,
+        "human": "2016-Apr-12",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 102359,
+        "human": "2016-Apr-12",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 135944,
+        "human": "2016-Apr-12",
+        "platform": 49,
+        "y": 2016
+      }
+    ],
+    "slug": "dark-souls-iii"
+  },
+  "2368": {
+    "id": 2368,
+    "alternative_names": [
+      {
+        "id": 2988,
+        "comment": "Japanese title",
+        "name": "\u30c0\u30fc\u30af\u30bd\u30a6\u30eb\u30c4"
+      },
+      {
+        "id": 10886,
+        "comment": "Other",
+        "name": "Dark Souls 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12657,
+        "category": 1,
+        "name": "DARK SOULS\u2122 II",
+        "uid": "236430"
+      },
+      {
+        "id": 119908,
+        "category": 3,
+        "name": "Dark Souls II",
+        "uid": "40798",
+        "url": "https://www.giantbomb.com/games/3030-40798/",
+        "year": 2014
+      },
+      {
+        "id": 189378,
+        "category": 10,
+        "name": "Dark Souls II",
+        "uid": "UCiOd3bJ6ym1rPBoipNqQSCQ",
+        "url": "https://gaming.youtube.com/game/UCiOd3bJ6ym1rPBoipNqQSCQ"
+      },
+      {
+        "id": 213383,
+        "category": 11,
+        "name": "DARK SOULS\u2122 II ",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802465307e4",
+        "url": "http://marketplace.xbox.com/en-US/Product/DARK-SOULS-II/66acd000-77fe-1000-9115-d802465307e4",
+        "year": 2014
+      },
+      {
+        "id": 245161,
+        "category": 14,
+        "name": "Dark Souls II",
+        "uid": "91423"
+      }
+    ],
+    "name": "Dark Souls II",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 8399,
+        "human": "2014-Mar-11",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 8400,
+        "human": "2014-Mar-11",
+        "platform": 12,
+        "y": 2014
+      },
+      {
+        "id": 13674,
+        "human": "2014-Apr-25",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 102354,
+        "human": "2014-Mar-11",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 102355,
+        "human": "2014-Mar-14",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 122507,
+        "human": "2014-Mar-11",
+        "platform": 12,
+        "y": 2014
+      }
+    ],
+    "slug": "dark-souls-ii"
+  },
+  "2155": {
+    "id": 2155,
+    "alternative_names": [
+      {
+        "id": 26238,
+        "comment": "Working title",
+        "name": "Project Dark"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 127316,
+        "category": 3,
+        "name": "Dark Souls",
+        "uid": "32697",
+        "url": "https://www.giantbomb.com/games/3030-32697/",
+        "year": 2011
+      },
+      {
+        "id": 190095,
+        "category": 10,
+        "name": "Dark Souls",
+        "uid": "UCWsFYDGo-R3lhs9bB6UEc_Q",
+        "url": "https://gaming.youtube.com/game/UCWsFYDGo-R3lhs9bB6UEc_Q"
+      },
+      {
+        "id": 213382,
+        "category": 11,
+        "name": "Dark Souls\u2122",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8024e4d083a",
+        "url": "http://marketplace.xbox.com/en-US/Product/Dark-Souls/66acd000-77fe-1000-9115-d8024e4d083a",
+        "year": 2011
+      },
+      {
+        "id": 245163,
+        "category": 14,
+        "name": "Dark Souls",
+        "uid": "29433"
+      }
+    ],
+    "name": "Dark Souls",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 4426,
+        "human": "2011-Sep-22",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 4427,
+        "human": "2011-Oct-04",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 4428,
+        "human": "2012-Aug-23",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 102351,
+        "human": "2011-Oct-04",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 102352,
+        "human": "2011-Oct-07",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 102353,
+        "human": "2011-Sep-22",
+        "platform": 9,
+        "y": 2011
+      }
+    ],
+    "slug": "dark-souls"
+  },
+  "81085": {
+    "id": 81085,
+    "alternative_names": [
+      {
+        "id": 22563,
+        "name": "Dark Souls Remastered"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 889829,
+        "category": 1,
+        "name": "DARK SOULS\u2122: REMASTERED",
+        "uid": "570940",
+        "url": "https://store.steampowered.com/app/570940",
+        "year": 2018
+      },
+      {
+        "id": 1184668,
+        "category": 10,
+        "name": "DARK SOULS\u2122: REMASTERED",
+        "uid": "UC-YFflhJ7yVifGRCxVwbnwg",
+        "url": "https://www.youtube.com/watch?v=UC-YFflhJ7yVifGRCxVwbnwg"
+      },
+      {
+        "id": 1708338,
+        "category": 10,
+        "name": "DARK SOULS: REMASTERED",
+        "uid": "UCKwbigiaRxF99262UXjONUg",
+        "url": "https://www.youtube.com/watch?v=UCKwbigiaRxF99262UXjONUg"
+      }
+    ],
+    "name": "Dark Souls: Remastered",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 154831,
+        "human": "2018-May-25",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 154832,
+        "human": "2018-May-25",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 154833,
+        "human": "2018-May-25",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 156945,
+        "human": "2018-Oct-19",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "dark-souls-remastered"
+  },
+  "28210": {
+    "id": 28210,
+    "alternative_names": [
+      {
+        "id": 8438,
+        "comment": "Steam title",
+        "name": "DARK SOULS III Deluxe Edition"
+      },
+      {
+        "id": 8439,
+        "comment": "Japanese title",
+        "name": "\u30c0\u30fc\u30af\u30bd\u30a6\u30eb III THE FIRE FADES EDITION"
+      }
+    ],
+    "category": 3,
+    "name": "Dark Souls III: The Fire Fades Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 68376,
+        "human": "2017-Apr-21",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 68377,
+        "human": "2017-Apr-21",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 68378,
+        "human": "2017-Apr-21",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "dark-souls-iii-the-fire-fades-edition"
+  },
+  "9536": {
+    "id": 9536,
+    "category": 0,
+    "name": "Dark Souls III: Day 1 Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 117398,
+        "human": "2016-Apr-12",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 117399,
+        "human": "2016-Apr-12",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 117400,
+        "human": "2016-Apr-12",
+        "platform": 48,
+        "y": 2016
+      }
+    ],
+    "slug": "dark-souls-iii-day-1-edition"
+  },
+  "47486": {
+    "id": 47486,
+    "category": 0,
+    "name": "Dark Souls III: Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 117389,
+        "human": "2016-Apr-11",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 117390,
+        "human": "2016-Apr-11",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 117391,
+        "human": "2016-Apr-11",
+        "platform": 48,
+        "y": 2016
+      }
+    ],
+    "slug": "dark-souls-iii-deluxe-edition"
+  },
+  "21040": {
+    "id": 21040,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13091,
+        "category": 1,
+        "name": "Dark Souls: Prepare to Die Edition",
+        "uid": "211420"
+      }
+    ],
+    "name": "Dark Souls: Prepare to Die Edition",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 55160,
+        "human": "2012-Aug-24",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 55161,
+        "human": "2012-Oct-26",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 55162,
+        "human": "2012-Oct-26",
+        "platform": 12,
+        "y": 2012
+      }
+    ],
+    "slug": "dark-souls-prepare-to-die-edition"
+  },
+  "10139": {
+    "id": 10139,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13959,
+        "category": 1,
+        "name": "Dark Fall: Lost Souls",
+        "uid": "46750"
+      },
+      {
+        "id": 76896,
+        "category": 5,
+        "name": "Dark Fall 3: Lost Souls",
+        "uid": "1207660703",
+        "url": "https://www.gog.com/game/dark_fall_3_lost_souls",
+        "year": 2009
+      },
+      {
+        "id": 128299,
+        "category": 3,
+        "name": "Dark Fall: Lost Souls",
+        "uid": "31615",
+        "url": "https://www.giantbomb.com/games/3030-31615/",
+        "year": 2009
+      },
+      {
+        "id": 248838,
+        "category": 14,
+        "name": "Dark Fall: Lost Souls",
+        "uid": "28471"
+      }
+    ],
+    "name": "Dark Fall: Lost Souls",
+    "platforms": [
+      6,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 35595,
+        "human": "2009",
+        "platform": 6,
+        "y": 2009
+      },
+      {
+        "id": 66870,
+        "human": "2010-Apr-21",
+        "platform": 92,
+        "y": 2010
+      }
+    ],
+    "slug": "dark-fall-lost-souls"
+  },
+  "36926": {
+    "id": 36926,
+    "alternative_names": [
+      {
+        "id": 21723,
+        "comment": "Acronym",
+        "name": "MHW"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102114,
+        "category": 3,
+        "name": "Monster Hunter: World",
+        "uid": "59924",
+        "url": "https://www.giantbomb.com/games/3030-59924/",
+        "year": 2018
+      },
+      {
+        "id": 210711,
+        "category": 11,
+        "name": "MONSTER HUNTER: WORLD\u2122",
+        "uid": "BNG91PT95LQN",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNG91PT95LQN",
+        "year": 0
+      },
+      {
+        "id": 253135,
+        "category": 14,
+        "name": "Monster Hunter World",
+        "uid": "497467"
+      },
+      {
+        "id": 1184753,
+        "category": 10,
+        "name": "Monster Hunter: World",
+        "uid": "UCjV-uixqhUvj-2dPzHLTGag",
+        "url": "https://www.youtube.com/watch?v=UCjV-uixqhUvj-2dPzHLTGag"
+      },
+      {
+        "id": 1472428,
+        "category": 1,
+        "name": "MONSTER HUNTER: WORLD",
+        "uid": "582010",
+        "url": "https://store.steampowered.com/app/582010",
+        "year": 2018
+      }
+    ],
+    "name": "Monster Hunter: World",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 113479,
+        "human": "2018-Jan-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 147904,
+        "human": "2018-Jan-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 155500,
+        "human": "2018-Aug-09",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "monster-hunter-world"
+  },
+  "118273": {
+    "id": 118273,
+    "category": 0,
+    "name": "Monster Hunter World: Iceborne Master Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 169393,
+        "human": "2019-Sep-06",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 169394,
+        "human": "2019-Sep-06",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 169395,
+        "human": "2019-Sep-06",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "monster-hunter-world-iceborne-master-edition"
+  },
+  "1881": {
+    "id": 1881,
+    "alternative_names": [
+      {
+        "id": 9254,
+        "name": "ARMA III"
+      },
+      {
+        "id": 13563,
+        "comment": "Other",
+        "name": "Arma 3"
+      },
+      {
+        "id": 18812,
+        "comment": "Other",
+        "name": "ArmA: Armed Assault "
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13380,
+        "category": 1,
+        "name": "Arma 3",
+        "uid": "107410"
+      },
+      {
+        "id": 124909,
+        "category": 3,
+        "name": "ArmA III",
+        "uid": "35383",
+        "url": "https://www.giantbomb.com/games/3030-35383/",
+        "year": 2013
+      },
+      {
+        "id": 245112,
+        "category": 14,
+        "name": "Arma 3",
+        "uid": "31750"
+      },
+      {
+        "id": 1191356,
+        "category": 14,
+        "name": "Jak X: Combat Racing",
+        "uid": "636"
+      }
+    ],
+    "name": "Arma 3",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 93379,
+        "human": "2013-Sep-12",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 93380,
+        "human": "2015-Aug-31",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 93381,
+        "human": "2015-Aug-31",
+        "platform": 3,
+        "y": 2015
+      }
+    ],
+    "slug": "arma-3"
+  },
+  "352": {
+    "id": 352,
+    "alternative_names": [
+      {
+        "id": 20298,
+        "name": "BFBC2"
+      },
+      {
+        "id": 20299,
+        "name": "BC2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 14435,
+        "category": 1,
+        "name": "Battlefield: Bad Company 2",
+        "uid": "24960"
+      },
+      {
+        "id": 134187,
+        "category": 3,
+        "name": "Battlefield: Bad Company 2",
+        "uid": "25246",
+        "url": "https://www.giantbomb.com/games/3030-25246/",
+        "year": 2010
+      },
+      {
+        "id": 213220,
+        "category": 11,
+        "name": "Battlefield Bad Company 2",
+        "uid": "xbox36066acd000-77fe-1000-9115-d802454108a8",
+        "url": "http://marketplace.xbox.com/en-US/Product/Battlefield-Bad-Company-2/66acd000-77fe-1000-9115-d802454108a8",
+        "year": 2010
+      },
+      {
+        "id": 245552,
+        "category": 14,
+        "name": "Battlefield: Bad Company 2",
+        "uid": "22851"
+      },
+      {
+        "id": 1190041,
+        "category": 14,
+        "name": "Super Robot Wars MX",
+        "uid": "20482"
+      }
+    ],
+    "name": "Battlefield: Bad Company 2",
+    "platforms": [
+      6,
+      9,
+      12,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 234,
+        "human": "2010-Mar-02",
+        "platform": 6,
+        "y": 2010
+      },
+      {
+        "id": 235,
+        "human": "2010-Mar-02",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 236,
+        "human": "2010-Mar-02",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 237,
+        "human": "2010-Dec-16",
+        "platform": 39,
+        "y": 2010
+      },
+      {
+        "id": 107434,
+        "human": "2010-Mar-02",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107435,
+        "human": "2010-Mar-05",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107436,
+        "human": "2010-Mar-11",
+        "platform": 9,
+        "y": 2010
+      }
+    ],
+    "slug": "battlefield-bad-company-2"
+  },
+  "5652": {
+    "id": 5652,
+    "alternative_names": [
+      {
+        "id": 10447,
+        "comment": "Other",
+        "name": "Age of Wonders 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12826,
+        "category": 1,
+        "name": "Age of Wonders III",
+        "uid": "226840"
+      },
+      {
+        "id": 76581,
+        "category": 5,
+        "name": "Age of Wonders 3",
+        "uid": "1207660893",
+        "url": "https://www.gog.com/game/age_of_wonders_3",
+        "year": 2014
+      },
+      {
+        "id": 119238,
+        "category": 3,
+        "name": "Age of Wonders III",
+        "uid": "41503",
+        "url": "https://www.giantbomb.com/games/3030-41503/",
+        "year": 2014
+      },
+      {
+        "id": 247225,
+        "category": 14,
+        "name": "Age of Wonders III",
+        "uid": "116820"
+      }
+    ],
+    "name": "Age of Wonders III",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 22308,
+        "human": "2014-Mar-31",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 22309,
+        "human": "TBD",
+        "platform": 14
+      },
+      {
+        "id": 22310,
+        "human": "TBD",
+        "platform": 3
+      }
+    ],
+    "slug": "age-of-wonders-iii"
+  },
+  "11085": {
+    "id": 11085,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 76583,
+        "category": 5,
+        "name": "Age of Wonders 3 - Eternal Lords",
+        "uid": "1428937263",
+        "url": "https://www.gog.com/game/age_of_wonders_3_eternal_lords",
+        "year": 2015
+      }
+    ],
+    "name": "Age of Wonders III: Eternal Lords",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 37705,
+        "human": "2015-Apr-14",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 37706,
+        "human": "2015-Apr-14",
+        "platform": 3,
+        "y": 2015
+      },
+      {
+        "id": 37707,
+        "human": "2015-Apr-14",
+        "platform": 14,
+        "y": 2015
+      }
+    ],
+    "slug": "age-of-wonders-iii-eternal-lords"
+  },
+  "8863": {
+    "id": 8863,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 76584,
+        "category": 5,
+        "name": "Age of Wonders 3 - Golden Realms",
+        "uid": "1207665893",
+        "url": "https://www.gog.com/game/age_of_wonders_3_golden_realms",
+        "year": 2014
+      }
+    ],
+    "name": "Age of Wonders III: Golden Realms",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 29350,
+        "human": "2014-Sep-18",
+        "platform": 6,
+        "y": 2014
+      }
+    ],
+    "slug": "age-of-wonders-iii-golden-realms"
+  },
+  "5641": {
+    "id": 5641,
+    "alternative_names": [
+      {
+        "id": 10390,
+        "comment": "Other",
+        "name": "Might and Magic X Legacy"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12613,
+        "category": 1,
+        "name": "Might & Magic X - Legacy ",
+        "uid": "238750"
+      },
+      {
+        "id": 118849,
+        "category": 3,
+        "name": "Might & Magic X Legacy",
+        "uid": "42030",
+        "url": "https://www.giantbomb.com/games/3030-42030/",
+        "year": 2014
+      },
+      {
+        "id": 247115,
+        "category": 14,
+        "name": "Might & Magic X Legacy",
+        "uid": "138581"
+      }
+    ],
+    "name": "Might & Magic X: Legacy",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 22262,
+        "human": "2014-Jan-23",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 22263,
+        "human": "2014-Jan-24",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 22264,
+        "human": "2014-Jan-23",
+        "platform": 14,
+        "y": 2014
+      }
+    ],
+    "slug": "might-and-magic-x-legacy--1"
+  },
+  "26951": {
+    "id": 26951,
+    "alternative_names": [
+      {
+        "id": 8091,
+        "name": "Pillars of Eternity 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104086,
+        "category": 3,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "57918",
+        "url": "https://www.giantbomb.com/games/3030-57918/",
+        "year": 2018
+      },
+      {
+        "id": 189885,
+        "category": 10,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "UCSHkYwn4ILVVT2NnDmRnz4w",
+        "url": "https://gaming.youtube.com/game/UCSHkYwn4ILVVT2NnDmRnz4w"
+      },
+      {
+        "id": 190584,
+        "category": 1,
+        "name": "Pillars of Eternity II: Deadfire",
+        "uid": "560130"
+      },
+      {
+        "id": 705521,
+        "category": 13,
+        "name": "Pillars of Eternity II",
+        "uid": "1340493247",
+        "url": "https://itunes.apple.com/us/app/pillars-of-eternity-ii/id1340493247?mt=12&uo=4",
+        "year": 2018
+      }
+    ],
+    "name": "Pillars of Eternity II: Deadfire",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 148992,
+        "human": "2018-May-08",
+        "platform": 92,
+        "y": 2018
+      },
+      {
+        "id": 148993,
+        "human": "2018-May-08",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 148994,
+        "human": "2018-May-08",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 148995,
+        "human": "2018-May-08",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 177655,
+        "human": "2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 180958,
+        "human": "2020-Jan-28",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 180959,
+        "human": "2020-Jan-28",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "pillars-of-eternity-ii-deadfire"
+  },
+  "1593": {
+    "id": 1593,
+    "alternative_names": [
+      {
+        "id": 10994,
+        "comment": "Other",
+        "name": "Project Eternity"
+      },
+      {
+        "id": 10995,
+        "comment": "Other",
+        "name": "PoE"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11316,
+        "category": 1,
+        "name": "Pillars of Eternity",
+        "uid": "291650"
+      },
+      {
+        "id": 120880,
+        "category": 3,
+        "name": "Pillars of Eternity",
+        "uid": "39775",
+        "url": "https://www.giantbomb.com/games/3030-39775/",
+        "year": 2015
+      },
+      {
+        "id": 189957,
+        "category": 10,
+        "name": "Pillars of Eternity",
+        "uid": "UCTt7rAQDJAcHbMuxkLwsPqA",
+        "url": "https://gaming.youtube.com/game/UCTt7rAQDJAcHbMuxkLwsPqA"
+      },
+      {
+        "id": 223574,
+        "category": 13,
+        "name": "Pillars of Eternity",
+        "uid": "979217373",
+        "url": "https://itunes.apple.com/us/app/pillars-of-eternity/id979217373?mt=12&uo=4",
+        "year": 2015
+      },
+      {
+        "id": 245120,
+        "category": 14,
+        "name": "Pillars of Eternity",
+        "uid": "68028"
+      }
+    ],
+    "name": "Pillars of Eternity",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 27760,
+        "human": "2015-Mar-26",
+        "platform": 3,
+        "y": 2015
+      },
+      {
+        "id": 27762,
+        "human": "2015-Mar-26",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 104876,
+        "human": "2017-Aug-29",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 104877,
+        "human": "2017-Aug-29",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 118388,
+        "human": "2015-Mar-26",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 147113,
+        "human": "2015-Apr-08",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 173441,
+        "human": "2019-Aug-08",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "pillars-of-eternity"
+  },
+  "75357": {
+    "id": 75357,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 223593,
+        "category": 13,
+        "name": "Pillars of Eternity Definitive",
+        "uid": "1306136701",
+        "url": "https://itunes.apple.com/us/app/pillars-of-eternity-definitive/id1306136701?mt=12&uo=4",
+        "year": 2017
+      }
+    ],
+    "name": "Pillars of Eternity: Definitive Edition",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 126061,
+        "human": "2017-Nov-15",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 126062,
+        "human": "2017-Nov-15",
+        "platform": 14,
+        "y": 2017
+      },
+      {
+        "id": 126063,
+        "human": "2017-Nov-15",
+        "platform": 3,
+        "y": 2017
+      }
+    ],
+    "slug": "pillars-of-eternity-definitive-edition"
+  },
+  "106122": {
+    "id": 106122,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1313359,
+        "category": 1,
+        "name": "EXAPUNKS",
+        "uid": "716490",
+        "url": "https://store.steampowered.com/app/716490",
+        "year": 2018
+      },
+      {
+        "id": 1370600,
+        "category": 14,
+        "name": "EXAPUNKS",
+        "uid": "508761",
+        "url": "https://www.giantbomb.com/game/3030-69464/"
+      },
+      {
+        "id": 1574915,
+        "category": 3,
+        "name": "EXAPUNKS",
+        "uid": "69464",
+        "url": "https://www.giantbomb.com/games/3030-69464/",
+        "year": 2018
+      }
+    ],
+    "name": "EXAPUNKS",
+    "platforms": [
+      3,
+      6,
+      14,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 160274,
+        "human": "2018-Oct-22",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 160275,
+        "human": "2018-Oct-22",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 160276,
+        "human": "2018-Oct-22",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 160277,
+        "human": "2018-Oct-22",
+        "platform": 92,
+        "y": 2018
+      }
+    ],
+    "slug": "exapunks"
+  },
+  "2136": {
+    "id": 2136,
+    "alternative_names": [
+      {
+        "id": 2934,
+        "comment": "Japanese title",
+        "name": "\u30d9\u30e8\u30cd\u30c3\u30bf "
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 5245,
+        "category": 1,
+        "name": "Bayonetta",
+        "uid": "460790"
+      },
+      {
+        "id": 138220,
+        "category": 3,
+        "name": "Bayonetta",
+        "uid": "20710",
+        "url": "https://www.giantbomb.com/games/3030-20710/",
+        "year": 2009
+      },
+      {
+        "id": 189346,
+        "category": 10,
+        "name": "Bayonetta",
+        "uid": "UCHUfnQTRlJ1t6PDqZGMdVKw",
+        "url": "https://gaming.youtube.com/game/UCHUfnQTRlJ1t6PDqZGMdVKw"
+      },
+      {
+        "id": 213226,
+        "category": 11,
+        "name": "BAYONETTA",
+        "uid": "xbox36066acd000-77fe-1000-9115-d80253450813",
+        "url": "http://marketplace.xbox.com/en-US/Product/BAYONETTA/66acd000-77fe-1000-9115-d80253450813",
+        "year": 2009
+      },
+      {
+        "id": 246130,
+        "category": 14,
+        "name": "Bayonetta",
+        "uid": "18933"
+      }
+    ],
+    "name": "Bayonetta",
+    "platforms": [
+      6,
+      9,
+      12,
+      41,
+      45,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 20748,
+        "human": "2014-Oct-24",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 20749,
+        "human": "2014-Oct-24",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 22825,
+        "human": "2010-Jan-08",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 22827,
+        "human": "2010-Jan-05",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 22829,
+        "human": "2009-Oct-29",
+        "platform": 12,
+        "y": 2009
+      },
+      {
+        "id": 22830,
+        "human": "2010-Jan-07",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 22831,
+        "human": "2010-Jan-07",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 68047,
+        "human": "2017-Apr-11",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 101837,
+        "human": "2010-Jan-08",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 101838,
+        "human": "2010-Jan-05",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 101839,
+        "human": "2009-Oct-29",
+        "platform": 9,
+        "y": 2009
+      },
+      {
+        "id": 130783,
+        "human": "2014-Oct-25",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 130784,
+        "human": "2014-Sep-20",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 130785,
+        "human": "2018-Feb-16",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 134470,
+        "human": "2013-Jan-29",
+        "platform": 45,
+        "y": 2013
+      },
+      {
+        "id": 134471,
+        "human": "2013-Jan-30",
+        "platform": 45,
+        "y": 2013
+      }
+    ],
+    "slug": "bayonetta"
+  },
+  "28058": {
+    "id": 28058,
+    "alternative_names": [
+      {
+        "id": 8367,
+        "comment": "Browser title",
+        "name": "Angel Land"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 103038,
+        "category": 3,
+        "name": "8-Bit Bayonetta",
+        "uid": "58980",
+        "url": "https://www.giantbomb.com/games/3030-58980/",
+        "year": 2015
+      }
+    ],
+    "name": "8-Bit Bayonetta",
+    "platforms": [
+      6,
+      82
+    ],
+    "release_dates": [
+      {
+        "id": 67827,
+        "human": "2017-Mar-31",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 67828,
+        "human": "2015-Feb-02",
+        "platform": 82,
+        "y": 2015
+      }
+    ],
+    "slug": "8-bit-bayonetta"
+  },
+  "103286": {
+    "id": 103286,
+    "alternative_names": [
+      {
+        "id": 24365,
+        "comment": "Japanese title",
+        "name": "\u30c6\u30a4\u30eb\u30ba \u30aa\u30d6 \u30f4\u30a7\u30b9\u30da\u30ea\u30a2 REMASTER"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1685367,
+        "category": 1,
+        "name": "Tales of Vesperia\u2122: Definitive Edition",
+        "uid": "738540",
+        "url": "https://store.steampowered.com/app/738540",
+        "year": 2019
+      }
+    ],
+    "name": "Tales of Vesperia: Definitive Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 161255,
+        "human": "2019-Jan-11",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 161256,
+        "human": "2019-Jan-11",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 161257,
+        "human": "2019-Jan-11",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 161258,
+        "human": "2019-Jan-11",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "tales-of-vesperia-definitive-edition"
+  },
+  "9278": {
+    "id": 9278,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11401,
+        "category": 1,
+        "name": "Endless Legend",
+        "uid": "289130"
+      },
+      {
+        "id": 117267,
+        "category": 3,
+        "name": "Endless Legend",
+        "uid": "43720",
+        "url": "https://www.giantbomb.com/games/3030-43720/",
+        "year": 2014
+      },
+      {
+        "id": 245551,
+        "category": 14,
+        "name": "Endless Legend",
+        "uid": "370359"
+      }
+    ],
+    "name": "Endless Legend",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 31958,
+        "human": "2014-Sep-18",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 31959,
+        "human": "2014-Sep-18",
+        "platform": 14,
+        "y": 2014
+      }
+    ],
+    "slug": "endless-legend"
+  },
+  "74701": {
+    "id": 74701,
+    "alternative_names": [
+      {
+        "id": 22422,
+        "comment": "Other",
+        "name": "Jedi: Fallen Order"
+      },
+      {
+        "id": 26531,
+        "name": "STAR WARS Jedi: Fallen Order\u2122"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 576336,
+        "category": 3,
+        "name": "Untitled Respawn Star Wars Game",
+        "uid": "66000",
+        "url": "https://www.giantbomb.com/games/3030-66000/",
+        "year": 2020
+      },
+      {
+        "id": 1836038,
+        "category": 1,
+        "name": "STAR WARS Jedi: Fallen Order\u2122 ",
+        "uid": "1172380",
+        "url": "https://store.steampowered.com/app/1172380",
+        "year": 2019
+      }
+    ],
+    "name": "Star Wars Jedi: Fallen Order",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 168143,
+        "human": "2019-Nov-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 168144,
+        "human": "2019-Nov-15",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 168145,
+        "human": "2019-Nov-15",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 168146,
+        "human": "2019-Nov-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 168147,
+        "human": "2019-Nov-15",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 168148,
+        "human": "2019-Nov-15",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "star-wars-jedi-fallen-order"
+  },
+  "8983": {
+    "id": 8983,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 10842,
+        "category": 1,
+        "name": "Obduction",
+        "uid": "306760"
+      },
+      {
+        "id": 77646,
+        "category": 5,
+        "name": "Obduction \u00ae",
+        "uid": "2003665371",
+        "url": "https://www.gog.com/game/obduction",
+        "year": 2016
+      },
+      {
+        "id": 116746,
+        "category": 3,
+        "name": "Obduction",
+        "uid": "44273",
+        "url": "https://www.giantbomb.com/games/3030-44273/",
+        "year": 2016
+      },
+      {
+        "id": 223857,
+        "category": 13,
+        "name": "Obduction",
+        "uid": "1183537149",
+        "url": "https://itunes.apple.com/us/app/obduction/id1183537149?mt=12&uo=4",
+        "year": 2017
+      },
+      {
+        "id": 247426,
+        "category": 14,
+        "name": "Obduction",
+        "uid": "458421"
+      }
+    ],
+    "name": "Obduction",
+    "platforms": [
+      6,
+      14,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 55243,
+        "human": "2016-Aug-24",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 55244,
+        "human": "2016-Aug-24",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 60073,
+        "human": "2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 117751,
+        "human": "2016-Aug-24",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 121701,
+        "human": "2016-Aug-24",
+        "platform": 14,
+        "y": 2016
+      }
+    ],
+    "slug": "obduction"
+  },
+  "89354": {
+    "id": 89354,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 260923,
+        "category": 1,
+        "name": "Supraland",
+        "uid": "813630",
+        "url": "https://store.steampowered.com/app/813630",
+        "year": 2018
+      },
+      {
+        "id": 576866,
+        "category": 3,
+        "name": "Supraland",
+        "uid": "66505",
+        "url": "https://www.giantbomb.com/games/3030-66505/"
+      },
+      {
+        "id": 1190910,
+        "category": 14,
+        "name": "Supraland",
+        "uid": "504059"
+      }
+    ],
+    "name": "Supraland",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168038,
+        "human": "2019-Apr-05",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "supraland"
+  },
+  "27304": {
+    "id": 27304,
+    "alternative_names": [
+      {
+        "id": 8192,
+        "comment": "Japanese title",
+        "name": "\u30a4\u30fc\u30b9VIII -Lacrimosa of DANA-"
+      },
+      {
+        "id": 11755,
+        "comment": "Other",
+        "name": "Ys 8"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1228,
+        "category": 1,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "579180"
+      },
+      {
+        "id": 113403,
+        "category": 3,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "47723",
+        "url": "https://www.giantbomb.com/games/3030-47723/",
+        "year": 2016
+      },
+      {
+        "id": 189214,
+        "category": 10,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "UCf5iGJQ0nqFR4E0Q5k4Thjw",
+        "url": "https://gaming.youtube.com/game/UCf5iGJQ0nqFR4E0Q5k4Thjw"
+      },
+      {
+        "id": 247314,
+        "category": 14,
+        "name": "Ys VIII: Lacrimosa of Dana",
+        "uid": "476439"
+      }
+    ],
+    "name": "Ys VIII: Lacrimosa of Dana",
+    "platforms": [
+      6,
+      46,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 65625,
+        "human": "2016-Jul-21",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 65626,
+        "human": "2017-May-25",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 93333,
+        "human": "2017-Sep-12",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 93334,
+        "human": "2017-Sep-12",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 93335,
+        "human": "2017-Sep-15",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 93336,
+        "human": "2017-Sep-15",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 149025,
+        "human": "2018-Jun-28",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149475,
+        "human": "2018-Jun-29",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 149476,
+        "human": "2018-Jun-26",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 151562,
+        "human": "2018-Apr-17",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "ys-viii-lacrimosa-of-dana"
+  },
+  "11208": {
+    "id": 11208,
+    "alternative_names": [
+      {
+        "id": 9388,
+        "comment": "Other",
+        "name": "NieR New Project"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 3176,
+        "category": 1,
+        "name": "NieR:Automata\u2122",
+        "uid": "524220"
+      },
+      {
+        "id": 111198,
+        "category": 3,
+        "name": "NieR: Automata",
+        "uid": "49998",
+        "url": "https://www.giantbomb.com/games/3030-49998/",
+        "year": 2017
+      },
+      {
+        "id": 189372,
+        "category": 10,
+        "name": "Nier: Automata",
+        "uid": "UCIISf_IjC2DH1SC_eMaMzDg",
+        "url": "https://gaming.youtube.com/game/UCIISf_IjC2DH1SC_eMaMzDg"
+      },
+      {
+        "id": 281219,
+        "category": 14,
+        "name": "NieR Automata",
+        "uid": "494162",
+        "url": "https://www.giantbomb.com/game/3030-49998/"
+      }
+    ],
+    "name": "NieR: Automata",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 66248,
+        "human": "2017-Mar-17",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 108396,
+        "human": "2017-Mar-07",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 108397,
+        "human": "2017-Mar-10",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 108398,
+        "human": "2017-Feb-23",
+        "platform": 48,
+        "y": 2017
+      }
+    ],
+    "slug": "nier-automata"
+  },
+  "113345": {
+    "id": 113345,
+    "alternative_names": [
+      {
+        "id": 23507,
+        "comment": "Japanese title",
+        "name": "\u30cb\u30fc\u30a2 \u30aa\u30fc\u30c8\u30de\u30bf \u30b2\u30fc\u30e0 \u30aa\u30d6 \u30b6 \u30e8\u30eb\u30cf \u30a8\u30c7\u30a3\u30b7\u30e7\u30f3"
+      },
+      {
+        "id": 26128,
+        "comment": "Other",
+        "name": "NieR:Automata Game of the YoRHa Edition"
+      }
+    ],
+    "category": 0,
+    "name": "NieR: Automata - Game of the YoRHa Edition",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 162081,
+        "human": "2019-Feb-21",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 162082,
+        "human": "2019-Feb-26",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 162083,
+        "human": "2019-Feb-26",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 162084,
+        "human": "2019-Feb-26",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "nier-automata-game-of-the-yorha-edition"
+  },
+  "873": {
+    "id": 873,
+    "alternative_names": [
+      {
+        "id": 14574,
+        "comment": "Other",
+        "name": "SR3"
+      },
+      {
+        "id": 14575,
+        "comment": "Other",
+        "name": "Saints Row 3"
+      },
+      {
+        "id": 14576,
+        "comment": "Other",
+        "name": "Saints Row III"
+      },
+      {
+        "id": 14577,
+        "comment": "Other",
+        "name": "SRTT"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13853,
+        "category": 1,
+        "name": "Saints Row: The Third",
+        "uid": "55230"
+      },
+      {
+        "id": 133756,
+        "category": 3,
+        "name": "Saints Row: The Third",
+        "uid": "25725",
+        "url": "https://www.giantbomb.com/games/3030-25725/",
+        "year": 2011
+      },
+      {
+        "id": 214099,
+        "category": 11,
+        "name": "Saints Row\u00ae: The Third\u2122 ",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8025451086d",
+        "url": "http://marketplace.xbox.com/en-US/Product/Saints-Row-The-Third/66acd000-77fe-1000-9115-d8025451086d",
+        "year": 2011
+      },
+      {
+        "id": 245421,
+        "category": 14,
+        "name": "Saints Row: The Third",
+        "uid": "23268"
+      }
+    ],
+    "name": "Saints Row: The Third",
+    "platforms": [
+      6,
+      9,
+      12,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 21824,
+        "human": "2011-Nov-15",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 21826,
+        "human": "2011-Nov-15",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 21827,
+        "human": "2011-Nov-18",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 21829,
+        "human": "2011-Nov-18",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 21830,
+        "human": "2011-Nov-15",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 21831,
+        "human": "2011-Nov-15",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 21832,
+        "human": "2011-Nov-15",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 21833,
+        "human": "2011-Nov-17",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 21835,
+        "human": "2011-Nov-17",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 21836,
+        "human": "2011-Nov-15",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 21837,
+        "human": "2011-Nov-15",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 105386,
+        "human": "2011-Nov-15",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 105387,
+        "human": "2011-Nov-18",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 105388,
+        "human": "2011-Nov-17",
+        "platform": 9,
+        "y": 2011
+      },
+      {
+        "id": 168799,
+        "human": "2019-May-10",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "saints-row-the-third"
+  },
+  "37060": {
+    "id": 37060,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 252822,
+        "category": 14,
+        "name": "XCOM 2: War of the Chosen",
+        "uid": "497435"
+      }
+    ],
+    "name": "XCOM 2: War of the Chosen",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 130036,
+        "human": "2017-Aug-29",
+        "platform": 92,
+        "y": 2017
+      },
+      {
+        "id": 130037,
+        "human": "2017-Aug-29",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 130038,
+        "human": "2017-Aug-29",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 130039,
+        "human": "2017-Aug-29",
+        "platform": 3,
+        "y": 2017
+      },
+      {
+        "id": 130040,
+        "human": "2017-Aug-29",
+        "platform": 14,
+        "y": 2017
+      },
+      {
+        "id": 130041,
+        "human": "2017-Aug-29",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "xcom-2-war-of-the-chosen"
+  },
+  "110871": {
+    "id": 110871,
+    "category": 1,
+    "name": "XCOM 2: War of the Chosen - Tactical Legacy Pack",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 169865,
+        "human": "2018-Oct-09",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 169866,
+        "human": "2018-Oct-09",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 169867,
+        "human": "2018-Oct-09",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "xcom-2-war-of-the-chosen-tactical-legacy-pack"
+  },
+  "378": {
+    "id": 378,
+    "alternative_names": [
+      {
+        "id": 1885,
+        "name": "\u30e1\u30bf\u30eb\u30ae\u30a2 \u30e9\u30a4\u30b8\u30f3\u30b0 \u30ea\u30d9\u30f3\u30b8\u30a7\u30f3\u30b9"
+      },
+      {
+        "id": 14478,
+        "comment": "Other",
+        "name": "MGS: Rising"
+      },
+      {
+        "id": 14479,
+        "comment": "Other",
+        "name": "MGSR"
+      },
+      {
+        "id": 14480,
+        "comment": "Other",
+        "name": "Metal Gear Solid: Rising"
+      },
+      {
+        "id": 14481,
+        "comment": "Other",
+        "name": "MGS: Revengeance"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12677,
+        "category": 1,
+        "name": "METAL GEAR RISING: REVENGEANCE",
+        "uid": "235460"
+      },
+      {
+        "id": 132771,
+        "category": 3,
+        "name": "Metal Gear Rising: Revengeance",
+        "uid": "26801",
+        "url": "https://www.giantbomb.com/games/3030-26801/",
+        "year": 2013
+      },
+      {
+        "id": 213818,
+        "category": 11,
+        "name": "METAL GEAR RISING: REVENGEANCE",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8024b4e080a",
+        "url": "http://marketplace.xbox.com/en-US/Product/METAL-GEAR-RISING-REVENGEANCE/66acd000-77fe-1000-9115-d8024b4e080a",
+        "year": 2013
+      },
+      {
+        "id": 245868,
+        "category": 14,
+        "name": "Metal Gear Rising: Revengeance",
+        "uid": "24208"
+      },
+      {
+        "id": 1185632,
+        "category": 14,
+        "name": "Cross Edge",
+        "uid": "21485"
+      }
+    ],
+    "name": "Metal Gear Rising: Revengeance",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 14446,
+        "human": "2013-Feb-19",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 14447,
+        "human": "2014-Jan-09",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 14448,
+        "human": "2013-Feb-19",
+        "platform": 12,
+        "y": 2013
+      },
+      {
+        "id": 108019,
+        "human": "2013-Feb-21",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 108020,
+        "human": "2013-Feb-19",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 108021,
+        "human": "2013-Feb-19",
+        "platform": 9,
+        "y": 2013
+      }
+    ],
+    "slug": "metal-gear-rising-revengeance"
+  },
+  "7205": {
+    "id": 7205,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 10358,
+        "category": 1,
+        "name": "SUPERHOT",
+        "uid": "322500"
+      },
+      {
+        "id": 78177,
+        "category": 5,
+        "name": "SUPERHOT",
+        "uid": "1456141688",
+        "url": "https://www.gog.com/game/superhot",
+        "year": 2016
+      },
+      {
+        "id": 117320,
+        "category": 3,
+        "name": "Superhot",
+        "uid": "43663",
+        "url": "https://www.giantbomb.com/games/3030-43663/",
+        "year": 2016
+      },
+      {
+        "id": 188873,
+        "category": 10,
+        "name": "Superhot",
+        "uid": "UC4D7o4wW1GA89mR5sU__lAA",
+        "url": "https://gaming.youtube.com/game/UC4D7o4wW1GA89mR5sU__lAA"
+      },
+      {
+        "id": 210962,
+        "category": 11,
+        "name": "SUPERHOT",
+        "uid": "BVZ0D05W8MP2",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BVZ0D05W8MP2",
+        "year": 2016
+      },
+      {
+        "id": 235949,
+        "category": 13,
+        "name": "SUPERHOT",
+        "uid": "1109409676",
+        "url": "https://itunes.apple.com/us/app/superhot/id1109409676?mt=12&uo=4",
+        "year": 2016
+      },
+      {
+        "id": 246555,
+        "category": 14,
+        "name": "Superhot",
+        "uid": "313566"
+      },
+      {
+        "id": 252934,
+        "category": 14,
+        "name": "Code of Princess",
+        "uid": "32944"
+      }
+    ],
+    "name": "SUPERHOT",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 45464,
+        "human": "2016-Feb-25",
+        "platform": 3,
+        "y": 2016
+      },
+      {
+        "id": 45465,
+        "human": "2016-Feb-25",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 45466,
+        "human": "2016-Feb-25",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 55484,
+        "human": "2016-May-03",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 121867,
+        "human": "2016-May-03",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 121868,
+        "human": "2016-Feb-25",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 174397,
+        "human": "2019-Aug-19",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 174449,
+        "human": "TBD",
+        "platform": 170
+      },
+      {
+        "id": 185638,
+        "human": "2017-Jul-19",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 185639,
+        "human": "2017-Jul-21",
+        "platform": 48,
+        "y": 2017
+      }
+    ],
+    "slug": "superhot"
+  },
+  "25632": {
+    "id": 25632,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 15849,
+        "category": 1,
+        "name": "SUPERHOT VR",
+        "uid": "617830"
+      },
+      {
+        "id": 107092,
+        "category": 3,
+        "name": "Superhot VR",
+        "uid": "54217",
+        "url": "https://www.giantbomb.com/games/3030-54217/",
+        "year": 2016
+      },
+      {
+        "id": 281470,
+        "category": 14,
+        "name": "Superhot VR",
+        "uid": "494592",
+        "url": "https://www.giantbomb.com/game/3030-54217/"
+      }
+    ],
+    "name": "Superhot VR",
+    "platforms": [
+      6,
+      48,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 63109,
+        "human": "2016-Dec-06",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 105969,
+        "human": "2017-Jul-21",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 105970,
+        "human": "2017-Jul-19",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 120008,
+        "human": "2016-Dec-06",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 179639,
+        "human": "2017-Jul-21",
+        "platform": 165,
+        "y": 2017
+      },
+      {
+        "id": 179640,
+        "human": "2017-Jul-19",
+        "platform": 165,
+        "y": 2017
+      }
+    ],
+    "slug": "superhot-vr"
+  },
+  "27448": {
+    "id": 27448,
+    "category": 4,
+    "external_games": [
+      {
+        "id": 191157,
+        "category": 1,
+        "name": "SUPERHOT: MIND CONTROL DELETE",
+        "uid": "690040"
+      },
+      {
+        "id": 197283,
+        "category": 3,
+        "name": "Superhot: Mind Control Delete",
+        "uid": "63090",
+        "url": "https://www.giantbomb.com/games/3030-63090/"
+      },
+      {
+        "id": 252676,
+        "category": 14,
+        "name": "Superhot: Mind Control Delete",
+        "uid": "500612"
+      }
+    ],
+    "name": "SUPERHOT: MIND CONTROL DELETE",
+    "platforms": [
+      6,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 130499,
+        "human": "2017-Dec-07",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 174657,
+        "human": "TBD",
+        "platform": 170
+      }
+    ],
+    "slug": "superhot-mind-control-delete"
+  },
+  "10160": {
+    "id": 10160,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11924,
+        "category": 1,
+        "name": "Heat Signature",
+        "uid": "268130"
+      },
+      {
+        "id": 112890,
+        "category": 3,
+        "name": "Heat Signature",
+        "uid": "48255",
+        "url": "https://www.giantbomb.com/games/3030-48255/"
+      },
+      {
+        "id": 250939,
+        "category": 14,
+        "name": "Heat Signature",
+        "uid": "488582"
+      }
+    ],
+    "name": "Heat Signature",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 112823,
+        "human": "2017-Sep-21",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 121020,
+        "human": "2017-Sep-21",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "heat-signature"
+  },
+  "11800": {
+    "id": 11800,
+    "alternative_names": [
+      {
+        "id": 11337,
+        "comment": "Other",
+        "name": "DOS2"
+      },
+      {
+        "id": 11338,
+        "comment": "Other",
+        "name": "Divinity: Original Sin 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 6148,
+        "category": 1,
+        "name": "Divinity: Original Sin 2",
+        "uid": "435150"
+      },
+      {
+        "id": 76976,
+        "category": 5,
+        "name": "Divinity: Original Sin 2",
+        "uid": "1584823040",
+        "url": "https://www.gog.com/game/divinity_original_sin_2",
+        "year": 2017
+      },
+      {
+        "id": 110413,
+        "category": 3,
+        "name": "Divinity: Original Sin II",
+        "uid": "50803",
+        "url": "https://www.giantbomb.com/games/3030-50803/",
+        "year": 2017
+      },
+      {
+        "id": 189120,
+        "category": 10,
+        "name": "Divinity: Original Sin II",
+        "uid": "UCcXDEY2jcFJTYTx7-YKFPuw",
+        "url": "https://gaming.youtube.com/game/UCcXDEY2jcFJTYTx7-YKFPuw"
+      },
+      {
+        "id": 246993,
+        "category": 14,
+        "name": "Divinity: Original Sin II",
+        "uid": "490644"
+      }
+    ],
+    "name": "Divinity: Original Sin II",
+    "platforms": [
+      6,
+      14,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 71666,
+        "human": "2017-Sep-14",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 150965,
+        "human": "2018-Aug-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 150966,
+        "human": "2018-Aug-31",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 176522,
+        "human": "2019-Jan-31",
+        "platform": 14,
+        "y": 2019
+      }
+    ],
+    "slug": "divinity-original-sin-ii"
+  },
+  "103337": {
+    "id": 103337,
+    "alternative_names": [
+      {
+        "id": 22446,
+        "name": "Divinity: Original Sin 2 Definitive Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Divinity: Original Sin II - Definitive Edition",
+    "platforms": [
+      6,
+      14,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 154609,
+        "human": "2018-Aug-31",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 157146,
+        "human": "2018-Aug-31",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 157147,
+        "human": "2018-Aug-31",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 164550,
+        "human": "2019-Jan-31",
+        "platform": 14,
+        "y": 2019
+      }
+    ],
+    "slug": "divinity-original-sin-ii-definitive-edition"
+  },
+  "11157": {
+    "id": 11157,
+    "alternative_names": [
+      {
+        "id": 12024,
+        "comment": "Other",
+        "name": "Hitman 6"
+      },
+      {
+        "id": 12816,
+        "comment": "Stylized",
+        "name": "HITMAN"
+      },
+      {
+        "id": 12817,
+        "comment": "Non-stylized",
+        "name": "Hitman"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12648,
+        "category": 1,
+        "name": "HITMAN\u2122",
+        "uid": "236870"
+      },
+      {
+        "id": 115904,
+        "category": 3,
+        "name": "Hitman",
+        "uid": "45150",
+        "url": "https://www.giantbomb.com/games/3030-45150/",
+        "year": 2016
+      },
+      {
+        "id": 190272,
+        "category": 10,
+        "name": "Hitman",
+        "uid": "UCZxVwtEFA30_9HA9gc8twYA",
+        "url": "https://gaming.youtube.com/game/UCZxVwtEFA30_9HA9gc8twYA"
+      },
+      {
+        "id": 210581,
+        "category": 11,
+        "name": "HITMAN\u2122",
+        "uid": "C1C6CRH9D0R4",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C1C6CRH9D0R4",
+        "year": 2016
+      },
+      {
+        "id": 245115,
+        "category": 14,
+        "name": "HITMAN",
+        "uid": "491471"
+      }
+    ],
+    "name": "HITMAN",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 38093,
+        "human": "2016-Mar-11",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 38094,
+        "human": "2016-Mar-11",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 38095,
+        "human": "2016-Mar-11",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 103553,
+        "human": "2017-Jan-31",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 103554,
+        "human": "2017-Jan-31",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 119460,
+        "human": "2016-Mar-11",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 121528,
+        "human": "2016-Mar-11",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 136072,
+        "human": "2016-Mar-11",
+        "platform": 49,
+        "y": 2016
+      }
+    ],
+    "slug": "hitman"
+  },
+  "6073": {
+    "id": 6073,
+    "alternative_names": [
+      {
+        "id": 12851,
+        "name": "Hitman: GO"
+      },
+      {
+        "id": 18858,
+        "comment": "Other",
+        "name": "Hitman GO: Definitive Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 115062,
+        "category": 3,
+        "name": "Hitman Go",
+        "uid": "46020",
+        "url": "https://www.giantbomb.com/games/3030-46020/",
+        "year": 2014
+      },
+      {
+        "id": 243566,
+        "category": 13,
+        "name": "Hitman GO",
+        "uid": "731645633",
+        "url": "https://itunes.apple.com/us/app/hitman-go/id731645633?mt=8&uo=4",
+        "year": 2014
+      },
+      {
+        "id": 248691,
+        "category": 14,
+        "name": "Hitman Go",
+        "uid": "417823"
+      },
+      {
+        "id": 352335,
+        "category": 15,
+        "name": "Hitman GO",
+        "uid": "com.squareenixmontreal.hitmango",
+        "url": "https://play.google.com/store/apps/details?id=com.squareenixmontreal.hitmango"
+      }
+    ],
+    "name": "Hitman GO",
+    "platforms": [
+      6,
+      34,
+      39,
+      74
+    ],
+    "release_dates": [
+      {
+        "id": 130073,
+        "human": "2014-Jun-04",
+        "platform": 34,
+        "y": 2014
+      },
+      {
+        "id": 130074,
+        "human": "2014-Apr-17",
+        "platform": 39,
+        "y": 2014
+      },
+      {
+        "id": 130075,
+        "human": "2015-Apr-27",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 130076,
+        "human": "2015-Apr-27",
+        "platform": 74,
+        "y": 2015
+      }
+    ],
+    "slug": "hitman-go"
+  },
+  "530": {
+    "id": 530,
+    "alternative_names": [
+      {
+        "id": 12842,
+        "name": "Hitman Absolution"
+      },
+      {
+        "id": 14525,
+        "comment": "Other",
+        "name": "Hitman 5"
+      },
+      {
+        "id": 24584,
+        "comment": "Japanese title",
+        "name": "\u30d2\u30c3\u30c8\u30de\u30f3: \u30a2\u30d6\u30bd\u30ea\u30e5\u30fc\u30b7\u30e7\u30f3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13275,
+        "category": 1,
+        "name": "Hitman: Absolution",
+        "uid": "203140"
+      },
+      {
+        "id": 133107,
+        "category": 3,
+        "name": "Hitman: Absolution",
+        "uid": "26417",
+        "url": "https://www.giantbomb.com/games/3030-26417/",
+        "year": 2012
+      },
+      {
+        "id": 213634,
+        "category": 11,
+        "name": "Hitman: Absolution",
+        "uid": "xbox36066acd000-77fe-1000-9115-d80253510804",
+        "url": "http://marketplace.xbox.com/en-US/Product/Hitman-Absolution/66acd000-77fe-1000-9115-d80253510804",
+        "year": 2013
+      },
+      {
+        "id": 245685,
+        "category": 14,
+        "name": "Hitman: Absolution",
+        "uid": "23880"
+      }
+    ],
+    "name": "Hitman: Absolution",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 3532,
+        "human": "2012-Nov-20",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 3533,
+        "human": "2012-Nov-20",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 3534,
+        "human": "2012-Nov-20",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 103551,
+        "human": "2012-Nov-20",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 103552,
+        "human": "2012-Nov-20",
+        "platform": 9,
+        "y": 2012
+      }
+    ],
+    "slug": "hitman-absolution"
+  },
+  "103210": {
+    "id": 103210,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1191868,
+        "category": 14,
+        "name": "Hitman 2",
+        "uid": "506342"
+      },
+      {
+        "id": 1457667,
+        "category": 3,
+        "name": "Hitman 2",
+        "uid": "68822",
+        "url": "https://www.giantbomb.com/games/3030-68822/",
+        "year": 2018
+      },
+      {
+        "id": 1636597,
+        "category": 1,
+        "name": "HITMAN\u2122 2",
+        "uid": "863550",
+        "url": "https://store.steampowered.com/app/863550",
+        "year": 2018
+      },
+      {
+        "id": 1708319,
+        "category": 10,
+        "name": "Hitman 2",
+        "uid": "UC0fy6n4w3G17-YHysKfcUuA",
+        "url": "https://www.youtube.com/watch?v=UC0fy6n4w3G17-YHysKfcUuA"
+      }
+    ],
+    "name": "HITMAN 2",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 153510,
+        "human": "2018-Nov-13",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 153511,
+        "human": "2018-Nov-13",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 153512,
+        "human": "2018-Nov-13",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "hitman-2"
+  },
+  "5567": {
+    "id": 5567,
+    "alternative_names": [
+      {
+        "id": 12843,
+        "name": "Hitman Sniper Challenge"
+      },
+      {
+        "id": 12844,
+        "name": "Sniper Challenge"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 120642,
+        "category": 3,
+        "name": "Hitman: Sniper Challenge",
+        "uid": "40030",
+        "url": "https://www.giantbomb.com/games/3030-40030/",
+        "year": 2012
+      },
+      {
+        "id": 248917,
+        "category": 14,
+        "name": "Hitman: Sniper Challenge",
+        "uid": "72608"
+      }
+    ],
+    "name": "Hitman: Sniper Challenge",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 30837,
+        "human": "2012-Aug-01",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 30838,
+        "human": "2012-May-15",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 30839,
+        "human": "2012-May-15",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 122704,
+        "human": "2012-Aug-01",
+        "platform": 6,
+        "y": 2012
+      }
+    ],
+    "slug": "hitman-sniper-challenge"
+  },
+  "21580": {
+    "id": 21580,
+    "alternative_names": [
+      {
+        "id": 12852,
+        "name": "Hitman GO - Definitive Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 6455,
+        "category": 1,
+        "name": "Hitman GO: Definitive Edition",
+        "uid": "427820"
+      }
+    ],
+    "name": "Hitman GO: Definitive Edition",
+    "platforms": [
+      3,
+      6,
+      45,
+      46,
+      48,
+      92
+    ],
+    "release_dates": [
+      {
+        "id": 130077,
+        "human": "2016-Feb-23",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 130078,
+        "human": "2016-Feb-23",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 130079,
+        "human": "2016-Feb-23",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 130080,
+        "human": "2016-Feb-23",
+        "platform": 3,
+        "y": 2016
+      },
+      {
+        "id": 130081,
+        "human": "2016-Feb-23",
+        "platform": 92,
+        "y": 2016
+      },
+      {
+        "id": 133757,
+        "human": "2016-Feb-23",
+        "platform": 45,
+        "y": 2016
+      },
+      {
+        "id": 133758,
+        "human": "2016-Feb-23",
+        "platform": 45,
+        "y": 2016
+      }
+    ],
+    "slug": "hitman-go-definitive-edition"
+  },
+  "59757": {
+    "id": 59757,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 110191,
+        "category": 3,
+        "name": "Galactic Hitman",
+        "uid": "51025",
+        "url": "https://www.giantbomb.com/games/3030-51025/",
+        "year": 2015
+      }
+    ],
+    "name": "Galactic Hitman",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 166856,
+        "human": "2015-Sep-17",
+        "platform": 6,
+        "y": 2015
+      }
+    ],
+    "slug": "galactic-hitman"
+  },
+  "74878": {
+    "id": 74878,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 215545,
+        "category": 11,
+        "name": "HITMAN\u2122 - Game of the Year Edition",
+        "uid": "BT62D5QBJ0ZL",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BT62D5QBJ0ZL",
+        "year": 2017
+      }
+    ],
+    "name": "Hitman: Game of the Year Edition",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 147024,
+        "human": "2017-Nov-07",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 151785,
+        "human": "2017-Nov-07",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "hitman-game-of-the-year-edition"
+  },
+  "127153": {
+    "id": 127153,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1837434,
+        "category": 1,
+        "name": "Baldr Sky",
+        "uid": "741140",
+        "url": "https://store.steampowered.com/app/741140",
+        "year": 0
+      }
+    ],
+    "name": "Baldr Sky",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 182121,
+        "human": "2019-Dec-20",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "baldr-sky"
+  },
+  "23323": {
+    "id": 23323,
+    "alternative_names": [
+      {
+        "id": 7355,
+        "comment": "Japanese title",
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u78a7\u306e\u8ecc\u8de1"
+      },
+      {
+        "id": 7356,
+        "comment": "Japanese title",
+        "name": "Eiyuu Densetsu: Ao no Kiseki"
+      },
+      {
+        "id": 7357,
+        "name": "The Legend of Heroes: Trails to Azure"
+      },
+      {
+        "id": 25257,
+        "comment": "Japanese title",
+        "name": "Eiyuu Densetsu: Ao no Kiseki Evolution"
+      },
+      {
+        "id": 26832,
+        "name": "Trails to Azure"
+      },
+      {
+        "id": 26833,
+        "name": "Path of Azure"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 124840,
+        "category": 3,
+        "name": "Eiyuu Densetsu: Ao no Kiseki",
+        "uid": "35457",
+        "url": "https://www.giantbomb.com/games/3030-35457/",
+        "year": 2011
+      }
+    ],
+    "name": "The Legend of Heroes: Ao no Kiseki",
+    "platforms": [
+      38,
+      46
+    ],
+    "release_dates": [
+      {
+        "id": 55982,
+        "human": "2011-Sep-29",
+        "platform": 38,
+        "y": 2011
+      },
+      {
+        "id": 173508,
+        "human": "2014-Jun-12",
+        "platform": 46,
+        "y": 2014
+      }
+    ],
+    "slug": "the-legend-of-heroes-ao-no-kiseki"
+  },
+  "11781": {
+    "id": 11781,
+    "alternative_names": [
+      {
+        "id": 4987,
+        "name": "\u30de\u30d6\u30e9\u30f4\u3000\u30aa\u30eb\u30bf\u30cd\u30a4\u30c6\u30a3\u30f4"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 123595,
+        "category": 3,
+        "name": "Muv-Luv Alternative",
+        "uid": "36832",
+        "url": "https://www.giantbomb.com/games/3030-36832/",
+        "year": 2006
+      },
+      {
+        "id": 270105,
+        "category": 1,
+        "name": "Muv-Luv Alternative",
+        "uid": "802890",
+        "url": "https://store.steampowered.com/app/802890",
+        "year": 2018
+      },
+      {
+        "id": 1187202,
+        "category": 14,
+        "name": "Muv-Luv Alternative",
+        "uid": "33038",
+        "url": "https://www.twitch.tv/directory/game/Muv-Luv Alternative"
+      }
+    ],
+    "name": "Muv-Luv Alternative",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 32884,
+        "human": "2006-Feb-24",
+        "platform": 6,
+        "y": 2006
+      },
+      {
+        "id": 32885,
+        "human": "2011-Oct-27",
+        "platform": 12,
+        "y": 2011
+      },
+      {
+        "id": 32886,
+        "human": "2012-Oct-25",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 38027,
+        "human": "2016-Q3",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "muv-luv-alternative"
+  },
+  "11799": {
+    "id": 11799,
+    "alternative_names": [
+      {
+        "id": 5000,
+        "comment": "Japanese title",
+        "name": "\u30de\u30d6\u30e9\u30f4 \u30aa\u30eb\u30bf\u30cd\u30a4\u30c6\u30a3\u30f4 \u30c8\u30fc\u30bf\u30eb\u30fb\u30a4\u30af\u30ea\u30d7\u30b9"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 118353,
+        "category": 3,
+        "name": "Muv-Luv Alternative: Total Eclipse",
+        "uid": "42575",
+        "url": "https://www.giantbomb.com/games/3030-42575/",
+        "year": 2013
+      },
+      {
+        "id": 1191095,
+        "category": 14,
+        "name": "Muv-Luv Alternative: Total Eclipse",
+        "uid": "369253"
+      }
+    ],
+    "name": "Muv-Luv Alternative: Total Eclipse",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
+    "release_dates": [
+      {
+        "id": 32977,
+        "human": "2014-Sep-26",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 32978,
+        "human": "2013-May-16",
+        "platform": 12,
+        "y": 2013
+      },
+      {
+        "id": 32979,
+        "human": "2013-May-16",
+        "platform": 9,
+        "y": 2013
+      }
+    ],
+    "slug": "muv-luv-alternative-total-eclipse"
+  },
+  "14748": {
+    "id": 14748,
+    "alternative_names": [
+      {
+        "id": 9084,
+        "comment": "Japanese title",
+        "name": "\u4e8c\u30ce\u56fdII \u30ec\u30f4\u30a1\u30ca\u30f3\u30c8\u30ad\u30f3\u30b0\u30c0\u30e0"
+      },
+      {
+        "id": 10171,
+        "comment": "Other",
+        "name": "Ni No Kuni 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 109489,
+        "category": 3,
+        "name": "Ni no Kuni II: Revenant Kingdom",
+        "uid": "51744",
+        "url": "https://www.giantbomb.com/games/3030-51744/",
+        "year": 2018
+      },
+      {
+        "id": 189458,
+        "category": 10,
+        "name": "Ni no Kuni II: Revenant Kingdom",
+        "uid": "UCKAIACR6h36x9EjYiPmFUXQ",
+        "url": "https://gaming.youtube.com/game/UCKAIACR6h36x9EjYiPmFUXQ"
+      },
+      {
+        "id": 252620,
+        "category": 14,
+        "name": "Ni no Kuni II: Revenant Kingdom",
+        "uid": "494556"
+      },
+      {
+        "id": 348525,
+        "category": 1,
+        "name": "Ni no Kuni\u2122 II: Revenant Kingdom",
+        "uid": "589360",
+        "url": "https://store.steampowered.com/app/589360",
+        "year": 2018
+      },
+      {
+        "id": 1184715,
+        "category": 10,
+        "name": "Ni no Kuni II: Revenant Kingdom",
+        "uid": "UCaXAHPSg-Tv300Fq57EIRAA",
+        "url": "https://www.youtube.com/watch?v=UCaXAHPSg-Tv300Fq57EIRAA"
+      }
+    ],
+    "name": "Ni no Kuni II: Revenant Kingdom",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 131178,
+        "human": "2018-Mar-23",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 133930,
+        "human": "2018-Mar-23",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 133931,
+        "human": "2018-Mar-23",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 149537,
+        "human": "2018-Mar-23",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 149538,
+        "human": "2018-Mar-24",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "ni-no-kuni-ii-revenant-kingdom--1"
+  },
+  "7388": {
+    "id": 7388,
+    "alternative_names": [
+      {
+        "id": 22301,
+        "name": "Papo and Yo"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12819,
+        "category": 1,
+        "name": "Papo & Yo",
+        "uid": "227080"
+      },
+      {
+        "id": 124791,
+        "category": 3,
+        "name": "Papo & Yo",
+        "uid": "35512",
+        "url": "https://www.giantbomb.com/games/3030-35512/",
+        "year": 2012
+      },
+      {
+        "id": 250184,
+        "category": 14,
+        "name": "Papo & Yo",
+        "uid": "31860"
+      }
+    ],
+    "name": "Papo & Yo",
+    "platforms": [
+      3,
+      6,
+      9,
+      14,
+      45
+    ],
+    "release_dates": [
+      {
+        "id": 19123,
+        "human": "2012-Aug-14",
+        "platform": 45,
+        "y": 2012
+      },
+      {
+        "id": 19124,
+        "human": "2012-Aug-15",
+        "platform": 45,
+        "y": 2012
+      },
+      {
+        "id": 19125,
+        "human": "2013-Apr-18",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 19126,
+        "human": "2014-Jan-07",
+        "platform": 14,
+        "y": 2014
+      },
+      {
+        "id": 108578,
+        "human": "2012-Aug-14",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 133965,
+        "human": "2012-Aug-15",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 152664,
+        "human": "2014-Jan-07",
+        "platform": 3,
+        "y": 2014
+      }
+    ],
+    "slug": "papo-yo"
+  },
+  "11233": {
+    "id": 11233,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 4025,
+        "category": 1,
+        "name": "What Remains of Edith Finch",
+        "uid": "501300"
+      },
+      {
+        "id": 112816,
+        "category": 3,
+        "name": "What Remains of Edith Finch",
+        "uid": "48329",
+        "url": "https://www.giantbomb.com/games/3030-48329/",
+        "year": 2017
+      },
+      {
+        "id": 189007,
+        "category": 10,
+        "name": "What Remains of Edith Finch",
+        "uid": "UC_adHfZi6I8R2fQvVD3AMuw",
+        "url": "https://gaming.youtube.com/game/UC_adHfZi6I8R2fQvVD3AMuw"
+      }
+    ],
+    "name": "What Remains of Edith Finch",
+    "platforms": [
+      6,
+      45,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 68356,
+        "human": "2017-Apr-25",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 68357,
+        "human": "2017-Apr-25",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 93183,
+        "human": "2017-Jul-19",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 106850,
+        "human": "2017-Apr-25",
+        "platform": 45,
+        "y": 2017
+      },
+      {
+        "id": 106851,
+        "human": "2017-Apr-25",
+        "platform": 45,
+        "y": 2017
+      },
+      {
+        "id": 171957,
+        "human": "2019-Jul-04",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "what-remains-of-edith-finch"
+  },
   "11737": {
     "id": 11737,
     "category": 0,
@@ -652,108 +6228,6 @@
       }
     ],
     "slug": "wolfenstein-the-new-order"
-  },
-  "352": {
-    "id": 352,
-    "alternative_names": [
-      {
-        "id": 20298,
-        "name": "BFBC2"
-      },
-      {
-        "id": 20299,
-        "name": "BC2"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 14435,
-        "category": 1,
-        "name": "Battlefield: Bad Company 2",
-        "uid": "24960"
-      },
-      {
-        "id": 134187,
-        "category": 3,
-        "name": "Battlefield: Bad Company 2",
-        "uid": "25246",
-        "url": "https://www.giantbomb.com/games/3030-25246/",
-        "year": 2010
-      },
-      {
-        "id": 213220,
-        "category": 11,
-        "name": "Battlefield Bad Company 2",
-        "uid": "xbox36066acd000-77fe-1000-9115-d802454108a8",
-        "url": "http://marketplace.xbox.com/en-US/Product/Battlefield-Bad-Company-2/66acd000-77fe-1000-9115-d802454108a8",
-        "year": 2010
-      },
-      {
-        "id": 245552,
-        "category": 14,
-        "name": "Battlefield: Bad Company 2",
-        "uid": "22851"
-      },
-      {
-        "id": 1190041,
-        "category": 14,
-        "name": "Super Robot Wars MX",
-        "uid": "20482"
-      }
-    ],
-    "name": "Battlefield: Bad Company 2",
-    "platforms": [
-      6,
-      9,
-      12,
-      39
-    ],
-    "release_dates": [
-      {
-        "id": 234,
-        "human": "2010-Mar-02",
-        "platform": 6,
-        "y": 2010
-      },
-      {
-        "id": 235,
-        "human": "2010-Mar-02",
-        "platform": 12,
-        "y": 2010
-      },
-      {
-        "id": 236,
-        "human": "2010-Mar-02",
-        "platform": 9,
-        "y": 2010
-      },
-      {
-        "id": 237,
-        "human": "2010-Dec-16",
-        "platform": 39,
-        "y": 2010
-      },
-      {
-        "id": 107434,
-        "human": "2010-Mar-02",
-        "platform": 9,
-        "y": 2010
-      },
-      {
-        "id": 107435,
-        "human": "2010-Mar-05",
-        "platform": 9,
-        "y": 2010
-      },
-      {
-        "id": 107436,
-        "human": "2010-Mar-11",
-        "platform": 9,
-        "y": 2010
-      }
-    ],
-    "slug": "battlefield-bad-company-2"
   },
   "529": {
     "id": 529,
@@ -6345,192 +11819,6 @@
     ],
     "slug": "soma-spirits-rebalance"
   },
-  "1985": {
-    "id": 1985,
-    "alternative_names": [
-      {
-        "id": 4111,
-        "comment": "Acronym",
-        "name": "MGS5"
-      },
-      {
-        "id": 8949,
-        "comment": "Japanese title",
-        "name": "\u30e1\u30bf\u30eb\u30ae\u30a2\u30bd\u30ea\u30c3\u30c9V \u30d5\u30a1\u30f3\u30c8\u30e0\u30da\u30a4\u30f3"
-      },
-      {
-        "id": 10887,
-        "comment": "Other",
-        "name": "Metal Gear Solid 5"
-      },
-      {
-        "id": 10888,
-        "comment": "Other",
-        "name": "Metal Gear Solid V"
-      },
-      {
-        "id": 10889,
-        "comment": "Other",
-        "name": "MGSVTPP"
-      },
-      {
-        "id": 10890,
-        "comment": "Other",
-        "name": "MGS5TPP"
-      },
-      {
-        "id": 10891,
-        "comment": "Other",
-        "name": "mgs5"
-      },
-      {
-        "id": 10892,
-        "comment": "Other",
-        "name": "mgs 5"
-      },
-      {
-        "id": 21889,
-        "comment": "Other",
-        "name": "MGSV"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 11442,
-        "category": 1,
-        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
-        "uid": "287700"
-      },
-      {
-        "id": 119910,
-        "category": 3,
-        "name": "Metal Gear Solid V: The Phantom Pain",
-        "uid": "40796",
-        "url": "https://www.giantbomb.com/games/3030-40796/",
-        "year": 2015
-      },
-      {
-        "id": 188865,
-        "category": 10,
-        "name": "Metal Gear Solid V: The Phantom Pain",
-        "uid": "UC3W9h9CubzWPt-h9IjS-8Og",
-        "url": "https://gaming.youtube.com/game/UC3W9h9CubzWPt-h9IjS-8Og"
-      },
-      {
-        "id": 210694,
-        "category": 11,
-        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
-        "uid": "C253HWJP0L18",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C253HWJP0L18",
-        "year": 2015
-      },
-      {
-        "id": 213822,
-        "category": 11,
-        "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
-        "uid": "xbox36066acd000-77fe-1000-9115-d8024b4e085e",
-        "url": "http://marketplace.xbox.com/en-US/Product/METAL-GEAR-SOLID-V-THE-PHANTOM-PAIN/66acd000-77fe-1000-9115-d8024b4e085e",
-        "year": 2015
-      },
-      {
-        "id": 245204,
-        "category": 14,
-        "name": "Metal Gear Solid V: The Phantom Pain",
-        "uid": "91419"
-      },
-      {
-        "id": 1187060,
-        "category": 14,
-        "name": "Metal Gear Solid 5",
-        "uid": "66138",
-        "url": "https://www.twitch.tv/directory/game/Metal Gear Solid 5"
-      },
-      {
-        "id": 1193437,
-        "category": 14,
-        "name": "Improvisio",
-        "uid": "30959"
-      }
-    ],
-    "name": "Metal Gear Solid V: The Phantom Pain",
-    "platforms": [
-      6,
-      9,
-      12,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 28440,
-        "human": "2015-Sep-15",
-        "platform": 6,
-        "y": 2015
-      },
-      {
-        "id": 28543,
-        "human": "2015-Sep-01",
-        "platform": 49,
-        "y": 2015
-      },
-      {
-        "id": 28544,
-        "human": "2015-Sep-01",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 28545,
-        "human": "2015-Sep-01",
-        "platform": 12,
-        "y": 2015
-      },
-      {
-        "id": 28546,
-        "human": "2015-Sep-01",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 108035,
-        "human": "2015-Sep-01",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 108036,
-        "human": "2015-Sep-01",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 122509,
-        "human": "2015-Sep-01",
-        "platform": 12,
-        "y": 2015
-      },
-      {
-        "id": 133875,
-        "human": "2015-Sep-01",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 133876,
-        "human": "2015-Sep-01",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 136144,
-        "human": "2015-Sep-01",
-        "platform": 49,
-        "y": 2015
-      }
-    ],
-    "slug": "metal-gear-solid-v-the-phantom-pain"
-  },
   "866": {
     "id": 866,
     "alternative_names": [
@@ -7207,118 +12495,6 @@
       }
     ],
     "slug": "yakuza-kiwami-2"
-  },
-  "25076": {
-    "id": 25076,
-    "alternative_names": [
-      {
-        "id": 7594,
-        "comment": "Acronym",
-        "name": "RDR2"
-      },
-      {
-        "id": 22246,
-        "name": "Red Dead Redemption II"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 105255,
-        "category": 3,
-        "name": "Red Dead Redemption 2",
-        "uid": "56725",
-        "url": "https://www.giantbomb.com/games/3030-56725/",
-        "year": 2018
-      },
-      {
-        "id": 210828,
-        "category": 11,
-        "name": "Red Dead Redemption 2",
-        "uid": "BPSWGQBW7R3G",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPSWGQBW7R3G",
-        "year": 2018
-      },
-      {
-        "id": 248276,
-        "category": 14,
-        "name": "Red Dead Redemption 2",
-        "uid": "493959"
-      },
-      {
-        "id": 1708337,
-        "category": 10,
-        "name": "Red Dead Redemption 2",
-        "uid": "UCxlDdW3aW7Sht6pM0TJ4Tag",
-        "url": "https://www.youtube.com/watch?v=UCxlDdW3aW7Sht6pM0TJ4Tag"
-      },
-      {
-        "id": 1837431,
-        "category": 1,
-        "name": "Red Dead Redemption 2",
-        "uid": "1174180",
-        "url": "https://store.steampowered.com/app/1174180",
-        "year": 2019
-      }
-    ],
-    "name": "Red Dead Redemption 2",
-    "platforms": [
-      6,
-      48,
-      49,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 137262,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 137263,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137264,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137265,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137266,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 147060,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 177006,
-        "human": "2019-Nov-05",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 179286,
-        "human": "2019-Nov-19",
-        "platform": 170,
-        "y": 2019
-      }
-    ],
-    "slug": "red-dead-redemption-2"
   },
   "11397": {
     "id": 11397,
@@ -8532,74 +13708,6 @@
     ],
     "slug": "return-of-the-obra-dinn"
   },
-  "81085": {
-    "id": 81085,
-    "alternative_names": [
-      {
-        "id": 22563,
-        "name": "Dark Souls Remastered"
-      }
-    ],
-    "category": 3,
-    "external_games": [
-      {
-        "id": 889829,
-        "category": 1,
-        "name": "DARK SOULS\u2122: REMASTERED",
-        "uid": "570940",
-        "url": "https://store.steampowered.com/app/570940",
-        "year": 2018
-      },
-      {
-        "id": 1184668,
-        "category": 10,
-        "name": "DARK SOULS\u2122: REMASTERED",
-        "uid": "UC-YFflhJ7yVifGRCxVwbnwg",
-        "url": "https://www.youtube.com/watch?v=UC-YFflhJ7yVifGRCxVwbnwg"
-      },
-      {
-        "id": 1708338,
-        "category": 10,
-        "name": "DARK SOULS: REMASTERED",
-        "uid": "UCKwbigiaRxF99262UXjONUg",
-        "url": "https://www.youtube.com/watch?v=UCKwbigiaRxF99262UXjONUg"
-      }
-    ],
-    "name": "Dark Souls: Remastered",
-    "platforms": [
-      6,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 154831,
-        "human": "2018-May-25",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 154832,
-        "human": "2018-May-25",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 154833,
-        "human": "2018-May-25",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 156945,
-        "human": "2018-Oct-19",
-        "platform": 130,
-        "y": 2018
-      }
-    ],
-    "slug": "dark-souls-remastered"
-  },
   "14593": {
     "id": 14593,
     "category": 0,
@@ -8726,182 +13834,6 @@
       }
     ],
     "slug": "hollow-knight-silksong"
-  },
-  "1020": {
-    "id": 1020,
-    "alternative_names": [
-      {
-        "id": 12289,
-        "comment": "Acronym",
-        "name": "Grand Theft Auto 5"
-      },
-      {
-        "id": 13338,
-        "comment": "Other",
-        "name": "GTA Online"
-      },
-      {
-        "id": 13339,
-        "comment": "Other",
-        "name": "GTA 5"
-      },
-      {
-        "id": 13340,
-        "comment": "Other",
-        "name": "GTA V"
-      },
-      {
-        "id": 13341,
-        "comment": "Other",
-        "name": "Grand Theft Auto Five"
-      },
-      {
-        "id": 13342,
-        "comment": "Other",
-        "name": "GTAV"
-      },
-      {
-        "id": 13343,
-        "comment": "Other",
-        "name": "GTA5"
-      },
-      {
-        "id": 13344,
-        "comment": "Other",
-        "name": "Grand Theft Auto Online"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 11827,
-        "category": 1,
-        "name": "Grand Theft Auto V",
-        "uid": "271590"
-      },
-      {
-        "id": 123664,
-        "category": 3,
-        "name": "Grand Theft Auto V",
-        "uid": "36765",
-        "url": "https://www.giantbomb.com/games/3030-36765/",
-        "year": 2013
-      },
-      {
-        "id": 189339,
-        "category": 10,
-        "name": "Grand Theft Auto Online",
-        "uid": "UChoveWrDASwMxB5_iNot07A",
-        "url": "https://gaming.youtube.com/game/UChoveWrDASwMxB5_iNot07A"
-      },
-      {
-        "id": 189925,
-        "category": 10,
-        "name": "Grand Theft Auto V",
-        "uid": "UCT1tnevF8bn9Nwr6ZHA9Mag",
-        "url": "https://gaming.youtube.com/game/UCT1tnevF8bn9Nwr6ZHA9Mag"
-      },
-      {
-        "id": 210553,
-        "category": 11,
-        "name": "Grand Theft Auto V",
-        "uid": "BPJ686W6S0NH",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPJ686W6S0NH",
-        "year": 2014
-      },
-      {
-        "id": 213597,
-        "category": 11,
-        "name": "GTA V",
-        "uid": "xbox36066acd000-77fe-1000-9115-d802545408a7",
-        "url": "http://marketplace.xbox.com/en-US/Product/GTA-V/66acd000-77fe-1000-9115-d802545408a7",
-        "year": 2013
-      },
-      {
-        "id": 245105,
-        "category": 14,
-        "name": "Grand Theft Auto V",
-        "uid": "32982"
-      },
-      {
-        "id": 281412,
-        "category": 14,
-        "name": "GTA Online",
-        "uid": "412753",
-        "url": "https://www.giantbomb.com/game/3030-0/"
-      }
-    ],
-    "name": "Grand Theft Auto V",
-    "platforms": [
-      6,
-      9,
-      12,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 20290,
-        "human": "2014-Nov-18",
-        "platform": 49,
-        "y": 2014
-      },
-      {
-        "id": 20291,
-        "human": "2014-Nov-18",
-        "platform": 48,
-        "y": 2014
-      },
-      {
-        "id": 20293,
-        "human": "2013-Sep-17",
-        "platform": 12,
-        "y": 2013
-      },
-      {
-        "id": 20294,
-        "human": "2013-Sep-17",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 27436,
-        "human": "2015-Apr-14",
-        "platform": 6,
-        "y": 2015
-      },
-      {
-        "id": 103344,
-        "human": "2013-Sep-17",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 103345,
-        "human": "2013-Sep-17",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 133723,
-        "human": "2014-Nov-18",
-        "platform": 48,
-        "y": 2014
-      },
-      {
-        "id": 133724,
-        "human": "2014-Nov-18",
-        "platform": 48,
-        "y": 2014
-      },
-      {
-        "id": 136048,
-        "human": "2014-Nov-18",
-        "platform": 49,
-        "y": 2014
-      }
-    ],
-    "slug": "grand-theft-auto-v"
   },
   "533": {
     "id": 533,
@@ -9959,280 +14891,6 @@
     ],
     "slug": "hitman-2-silent-assassin"
   },
-  "103210": {
-    "id": 103210,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1191868,
-        "category": 14,
-        "name": "Hitman 2",
-        "uid": "506342"
-      },
-      {
-        "id": 1457667,
-        "category": 3,
-        "name": "Hitman 2",
-        "uid": "68822",
-        "url": "https://www.giantbomb.com/games/3030-68822/",
-        "year": 2018
-      },
-      {
-        "id": 1636597,
-        "category": 1,
-        "name": "HITMAN\u2122 2",
-        "uid": "863550",
-        "url": "https://store.steampowered.com/app/863550",
-        "year": 2018
-      },
-      {
-        "id": 1708319,
-        "category": 10,
-        "name": "Hitman 2",
-        "uid": "UC0fy6n4w3G17-YHysKfcUuA",
-        "url": "https://www.youtube.com/watch?v=UC0fy6n4w3G17-YHysKfcUuA"
-      }
-    ],
-    "name": "HITMAN 2",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 153510,
-        "human": "2018-Nov-13",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 153511,
-        "human": "2018-Nov-13",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 153512,
-        "human": "2018-Nov-13",
-        "platform": 48,
-        "y": 2018
-      }
-    ],
-    "slug": "hitman-2"
-  },
-  "2368": {
-    "id": 2368,
-    "alternative_names": [
-      {
-        "id": 2988,
-        "comment": "Japanese title",
-        "name": "\u30c0\u30fc\u30af\u30bd\u30a6\u30eb\u30c4"
-      },
-      {
-        "id": 10886,
-        "comment": "Other",
-        "name": "Dark Souls 2"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 12657,
-        "category": 1,
-        "name": "DARK SOULS\u2122 II",
-        "uid": "236430"
-      },
-      {
-        "id": 119908,
-        "category": 3,
-        "name": "Dark Souls II",
-        "uid": "40798",
-        "url": "https://www.giantbomb.com/games/3030-40798/",
-        "year": 2014
-      },
-      {
-        "id": 189378,
-        "category": 10,
-        "name": "Dark Souls II",
-        "uid": "UCiOd3bJ6ym1rPBoipNqQSCQ",
-        "url": "https://gaming.youtube.com/game/UCiOd3bJ6ym1rPBoipNqQSCQ"
-      },
-      {
-        "id": 213383,
-        "category": 11,
-        "name": "DARK SOULS\u2122 II ",
-        "uid": "xbox36066acd000-77fe-1000-9115-d802465307e4",
-        "url": "http://marketplace.xbox.com/en-US/Product/DARK-SOULS-II/66acd000-77fe-1000-9115-d802465307e4",
-        "year": 2014
-      },
-      {
-        "id": 245161,
-        "category": 14,
-        "name": "Dark Souls II",
-        "uid": "91423"
-      }
-    ],
-    "name": "Dark Souls II",
-    "platforms": [
-      6,
-      9,
-      12
-    ],
-    "release_dates": [
-      {
-        "id": 8399,
-        "human": "2014-Mar-11",
-        "platform": 9,
-        "y": 2014
-      },
-      {
-        "id": 8400,
-        "human": "2014-Mar-11",
-        "platform": 12,
-        "y": 2014
-      },
-      {
-        "id": 13674,
-        "human": "2014-Apr-25",
-        "platform": 6,
-        "y": 2014
-      },
-      {
-        "id": 102354,
-        "human": "2014-Mar-11",
-        "platform": 9,
-        "y": 2014
-      },
-      {
-        "id": 102355,
-        "human": "2014-Mar-14",
-        "platform": 9,
-        "y": 2014
-      },
-      {
-        "id": 122507,
-        "human": "2014-Mar-11",
-        "platform": 12,
-        "y": 2014
-      }
-    ],
-    "slug": "dark-souls-ii"
-  },
-  "8222": {
-    "id": 8222,
-    "alternative_names": [
-      {
-        "id": 11608,
-        "comment": "Other",
-        "name": "Dark Souls 2: Scholar of the First Sin"
-      },
-      {
-        "id": 11609,
-        "comment": "Other",
-        "name": "Dark Souls II SotFS"
-      },
-      {
-        "id": 11610,
-        "comment": "Other",
-        "name": " Dark Souls 2 SotFS"
-      }
-    ],
-    "category": 3,
-    "external_games": [
-      {
-        "id": 9934,
-        "category": 1,
-        "name": "DARK SOULS\u2122 II: Scholar of the First Sin",
-        "uid": "335300"
-      },
-      {
-        "id": 112045,
-        "category": 3,
-        "name": "Dark Souls II: Scholar of the First Sin",
-        "uid": "49122",
-        "url": "https://www.giantbomb.com/games/3030-49122/",
-        "year": 2015
-      },
-      {
-        "id": 245363,
-        "category": 14,
-        "name": "Dark Souls II: Scholar of the First Sin",
-        "uid": "489170"
-      }
-    ],
-    "name": "Dark Souls II: Scholar of the First Sin",
-    "platforms": [
-      6,
-      9,
-      12,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 28137,
-        "human": "2015-Apr-02",
-        "platform": 12,
-        "y": 2015
-      },
-      {
-        "id": 28138,
-        "human": "2015-Apr-02",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 28139,
-        "human": "2015-Apr-02",
-        "platform": 6,
-        "y": 2015
-      },
-      {
-        "id": 28140,
-        "human": "2015-Apr-02",
-        "platform": 49,
-        "y": 2015
-      },
-      {
-        "id": 28141,
-        "human": "2015-Apr-02",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 102356,
-        "human": "2015-Apr-07",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 102357,
-        "human": "2015-Apr-04",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 118947,
-        "human": "2015-Apr-07",
-        "platform": 49,
-        "y": 2015
-      },
-      {
-        "id": 134537,
-        "human": "2015-Apr-07",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 134538,
-        "human": "2015-Apr-04",
-        "platform": 48,
-        "y": 2015
-      }
-    ],
-    "slug": "dark-souls-ii-scholar-of-the-first-sin"
-  },
   "27789": {
     "id": 27789,
     "alternative_names": [
@@ -11250,137 +15908,6 @@
     ],
     "slug": "unending-dusk"
   },
-  "11800": {
-    "id": 11800,
-    "alternative_names": [
-      {
-        "id": 11337,
-        "comment": "Other",
-        "name": "DOS2"
-      },
-      {
-        "id": 11338,
-        "comment": "Other",
-        "name": "Divinity: Original Sin 2"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 6148,
-        "category": 1,
-        "name": "Divinity: Original Sin 2",
-        "uid": "435150"
-      },
-      {
-        "id": 76976,
-        "category": 5,
-        "name": "Divinity: Original Sin 2",
-        "uid": "1584823040",
-        "url": "https://www.gog.com/game/divinity_original_sin_2",
-        "year": 2017
-      },
-      {
-        "id": 110413,
-        "category": 3,
-        "name": "Divinity: Original Sin II",
-        "uid": "50803",
-        "url": "https://www.giantbomb.com/games/3030-50803/",
-        "year": 2017
-      },
-      {
-        "id": 189120,
-        "category": 10,
-        "name": "Divinity: Original Sin II",
-        "uid": "UCcXDEY2jcFJTYTx7-YKFPuw",
-        "url": "https://gaming.youtube.com/game/UCcXDEY2jcFJTYTx7-YKFPuw"
-      },
-      {
-        "id": 246993,
-        "category": 14,
-        "name": "Divinity: Original Sin II",
-        "uid": "490644"
-      }
-    ],
-    "name": "Divinity: Original Sin II",
-    "platforms": [
-      6,
-      14,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 71666,
-        "human": "2017-Sep-14",
-        "platform": 6,
-        "y": 2017
-      },
-      {
-        "id": 150965,
-        "human": "2018-Aug-31",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 150966,
-        "human": "2018-Aug-31",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 176522,
-        "human": "2019-Jan-31",
-        "platform": 14,
-        "y": 2019
-      }
-    ],
-    "slug": "divinity-original-sin-ii"
-  },
-  "103337": {
-    "id": 103337,
-    "alternative_names": [
-      {
-        "id": 22446,
-        "name": "Divinity: Original Sin 2 Definitive Edition"
-      }
-    ],
-    "category": 0,
-    "name": "Divinity: Original Sin II - Definitive Edition",
-    "platforms": [
-      6,
-      14,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 154609,
-        "human": "2018-Aug-31",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 157146,
-        "human": "2018-Aug-31",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 157147,
-        "human": "2018-Aug-31",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 164550,
-        "human": "2019-Jan-31",
-        "platform": 14,
-        "y": 2019
-      }
-    ],
-    "slug": "divinity-original-sin-ii-definitive-edition"
-  },
   "26472": {
     "id": 26472,
     "alternative_names": [
@@ -12182,222 +16709,6 @@
     ],
     "slug": "diablo-iii"
   },
-  "11133": {
-    "id": 11133,
-    "alternative_names": [
-      {
-        "id": 9346,
-        "comment": "Other",
-        "name": "Dark Souls 3"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 8305,
-        "category": 1,
-        "name": "DARK SOULS\u2122 III",
-        "uid": "374320"
-      },
-      {
-        "id": 111303,
-        "category": 3,
-        "name": "Dark Souls III",
-        "uid": "49884",
-        "url": "https://www.giantbomb.com/games/3030-49884/",
-        "year": 2016
-      },
-      {
-        "id": 189639,
-        "category": 10,
-        "name": "Dark Souls III",
-        "uid": "UCnhbk-JD4v1OJGwmH6Dn19Q",
-        "url": "https://gaming.youtube.com/game/UCnhbk-JD4v1OJGwmH6Dn19Q"
-      },
-      {
-        "id": 210417,
-        "category": 11,
-        "name": "DARK SOULS\u2122 III",
-        "uid": "BW2XDRNSCCPZ",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BW2XDRNSCCPZ",
-        "year": 2016
-      },
-      {
-        "id": 245128,
-        "category": 14,
-        "name": "Dark Souls III",
-        "uid": "490292"
-      }
-    ],
-    "name": "Dark Souls III",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 45932,
-        "human": "2016-Apr-12",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 45933,
-        "human": "2016-Apr-12",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 45934,
-        "human": "2016-Apr-12",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 47597,
-        "human": "2016-Mar-24",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 47598,
-        "human": "2016-Mar-24",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 47599,
-        "human": "2016-Mar-24",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 102358,
-        "human": "2016-Apr-12",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 102359,
-        "human": "2016-Apr-12",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 135944,
-        "human": "2016-Apr-12",
-        "platform": 49,
-        "y": 2016
-      }
-    ],
-    "slug": "dark-souls-iii"
-  },
-  "28210": {
-    "id": 28210,
-    "alternative_names": [
-      {
-        "id": 8438,
-        "comment": "Steam title",
-        "name": "DARK SOULS III Deluxe Edition"
-      },
-      {
-        "id": 8439,
-        "comment": "Japanese title",
-        "name": "\u30c0\u30fc\u30af\u30bd\u30a6\u30eb III THE FIRE FADES EDITION"
-      }
-    ],
-    "category": 3,
-    "name": "Dark Souls III: The Fire Fades Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 68376,
-        "human": "2017-Apr-21",
-        "platform": 49,
-        "y": 2017
-      },
-      {
-        "id": 68377,
-        "human": "2017-Apr-21",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 68378,
-        "human": "2017-Apr-21",
-        "platform": 6,
-        "y": 2017
-      }
-    ],
-    "slug": "dark-souls-iii-the-fire-fades-edition"
-  },
-  "9536": {
-    "id": 9536,
-    "category": 0,
-    "name": "Dark Souls III: Day 1 Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 117398,
-        "human": "2016-Apr-12",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 117399,
-        "human": "2016-Apr-12",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 117400,
-        "human": "2016-Apr-12",
-        "platform": 48,
-        "y": 2016
-      }
-    ],
-    "slug": "dark-souls-iii-day-1-edition"
-  },
-  "47486": {
-    "id": 47486,
-    "category": 0,
-    "name": "Dark Souls III: Deluxe Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 117389,
-        "human": "2016-Apr-11",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 117390,
-        "human": "2016-Apr-11",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 117391,
-        "human": "2016-Apr-11",
-        "platform": 48,
-        "y": 2016
-      }
-    ],
-    "slug": "dark-souls-iii-deluxe-edition"
-  },
   "74904": {
     "id": 74904,
     "category": 0,
@@ -12437,45 +16748,6 @@
       }
     ],
     "slug": "amid-evil"
-  },
-  "21040": {
-    "id": 21040,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 13091,
-        "category": 1,
-        "name": "Dark Souls: Prepare to Die Edition",
-        "uid": "211420"
-      }
-    ],
-    "name": "Dark Souls: Prepare to Die Edition",
-    "platforms": [
-      6,
-      9,
-      12
-    ],
-    "release_dates": [
-      {
-        "id": 55160,
-        "human": "2012-Aug-24",
-        "platform": 6,
-        "y": 2012
-      },
-      {
-        "id": 55161,
-        "human": "2012-Oct-26",
-        "platform": 9,
-        "y": 2012
-      },
-      {
-        "id": 55162,
-        "human": "2012-Oct-26",
-        "platform": 12,
-        "y": 2012
-      }
-    ],
-    "slug": "dark-souls-prepare-to-die-edition"
   },
   "3029": {
     "id": 3029,
@@ -13227,102 +17499,6 @@
     ],
     "slug": "mass-effect-2-collectors-edition"
   },
-  "26951": {
-    "id": 26951,
-    "alternative_names": [
-      {
-        "id": 8091,
-        "name": "Pillars of Eternity 2"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 104086,
-        "category": 3,
-        "name": "Pillars of Eternity II: Deadfire",
-        "uid": "57918",
-        "url": "https://www.giantbomb.com/games/3030-57918/",
-        "year": 2018
-      },
-      {
-        "id": 189885,
-        "category": 10,
-        "name": "Pillars of Eternity II: Deadfire",
-        "uid": "UCSHkYwn4ILVVT2NnDmRnz4w",
-        "url": "https://gaming.youtube.com/game/UCSHkYwn4ILVVT2NnDmRnz4w"
-      },
-      {
-        "id": 190584,
-        "category": 1,
-        "name": "Pillars of Eternity II: Deadfire",
-        "uid": "560130"
-      },
-      {
-        "id": 705521,
-        "category": 13,
-        "name": "Pillars of Eternity II",
-        "uid": "1340493247",
-        "url": "https://itunes.apple.com/us/app/pillars-of-eternity-ii/id1340493247?mt=12&uo=4",
-        "year": 2018
-      }
-    ],
-    "name": "Pillars of Eternity II: Deadfire",
-    "platforms": [
-      3,
-      6,
-      14,
-      48,
-      49,
-      92,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 148992,
-        "human": "2018-May-08",
-        "platform": 92,
-        "y": 2018
-      },
-      {
-        "id": 148993,
-        "human": "2018-May-08",
-        "platform": 14,
-        "y": 2018
-      },
-      {
-        "id": 148994,
-        "human": "2018-May-08",
-        "platform": 3,
-        "y": 2018
-      },
-      {
-        "id": 148995,
-        "human": "2018-May-08",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 177655,
-        "human": "2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 180958,
-        "human": "2020-Jan-28",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 180959,
-        "human": "2020-Jan-28",
-        "platform": 49,
-        "y": 2020
-      }
-    ],
-    "slug": "pillars-of-eternity-ii-deadfire"
-  },
   "3102": {
     "id": 3102,
     "alternative_names": [
@@ -14065,60 +18241,6 @@
       }
     ],
     "slug": "subnautica-below-zero"
-  },
-  "10139": {
-    "id": 10139,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 13959,
-        "category": 1,
-        "name": "Dark Fall: Lost Souls",
-        "uid": "46750"
-      },
-      {
-        "id": 76896,
-        "category": 5,
-        "name": "Dark Fall 3: Lost Souls",
-        "uid": "1207660703",
-        "url": "https://www.gog.com/game/dark_fall_3_lost_souls",
-        "year": 2009
-      },
-      {
-        "id": 128299,
-        "category": 3,
-        "name": "Dark Fall: Lost Souls",
-        "uid": "31615",
-        "url": "https://www.giantbomb.com/games/3030-31615/",
-        "year": 2009
-      },
-      {
-        "id": 248838,
-        "category": 14,
-        "name": "Dark Fall: Lost Souls",
-        "uid": "28471"
-      }
-    ],
-    "name": "Dark Fall: Lost Souls",
-    "platforms": [
-      6,
-      92
-    ],
-    "release_dates": [
-      {
-        "id": 35595,
-        "human": "2009",
-        "platform": 6,
-        "y": 2009
-      },
-      {
-        "id": 66870,
-        "human": "2010-Apr-21",
-        "platform": 92,
-        "y": 2010
-      }
-    ],
-    "slug": "dark-fall-lost-souls"
   },
   "7599": {
     "id": 7599,
@@ -15244,117 +19366,6 @@
       }
     ],
     "slug": "ultimate-marvel-vs-capcom-3"
-  },
-  "378": {
-    "id": 378,
-    "alternative_names": [
-      {
-        "id": 1885,
-        "name": "\u30e1\u30bf\u30eb\u30ae\u30a2 \u30e9\u30a4\u30b8\u30f3\u30b0 \u30ea\u30d9\u30f3\u30b8\u30a7\u30f3\u30b9"
-      },
-      {
-        "id": 14478,
-        "comment": "Other",
-        "name": "MGS: Rising"
-      },
-      {
-        "id": 14479,
-        "comment": "Other",
-        "name": "MGSR"
-      },
-      {
-        "id": 14480,
-        "comment": "Other",
-        "name": "Metal Gear Solid: Rising"
-      },
-      {
-        "id": 14481,
-        "comment": "Other",
-        "name": "MGS: Revengeance"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 12677,
-        "category": 1,
-        "name": "METAL GEAR RISING: REVENGEANCE",
-        "uid": "235460"
-      },
-      {
-        "id": 132771,
-        "category": 3,
-        "name": "Metal Gear Rising: Revengeance",
-        "uid": "26801",
-        "url": "https://www.giantbomb.com/games/3030-26801/",
-        "year": 2013
-      },
-      {
-        "id": 213818,
-        "category": 11,
-        "name": "METAL GEAR RISING: REVENGEANCE",
-        "uid": "xbox36066acd000-77fe-1000-9115-d8024b4e080a",
-        "url": "http://marketplace.xbox.com/en-US/Product/METAL-GEAR-RISING-REVENGEANCE/66acd000-77fe-1000-9115-d8024b4e080a",
-        "year": 2013
-      },
-      {
-        "id": 245868,
-        "category": 14,
-        "name": "Metal Gear Rising: Revengeance",
-        "uid": "24208"
-      },
-      {
-        "id": 1185632,
-        "category": 14,
-        "name": "Cross Edge",
-        "uid": "21485"
-      }
-    ],
-    "name": "Metal Gear Rising: Revengeance",
-    "platforms": [
-      6,
-      9,
-      12
-    ],
-    "release_dates": [
-      {
-        "id": 14446,
-        "human": "2013-Feb-19",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 14447,
-        "human": "2014-Jan-09",
-        "platform": 6,
-        "y": 2014
-      },
-      {
-        "id": 14448,
-        "human": "2013-Feb-19",
-        "platform": 12,
-        "y": 2013
-      },
-      {
-        "id": 108019,
-        "human": "2013-Feb-21",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 108020,
-        "human": "2013-Feb-19",
-        "platform": 9,
-        "y": 2013
-      },
-      {
-        "id": 108021,
-        "human": "2013-Feb-19",
-        "platform": 9,
-        "y": 2013
-      }
-    ],
-    "slug": "metal-gear-rising-revengeance"
   },
   "76882": {
     "id": 76882,
@@ -17249,127 +21260,6 @@
     ],
     "slug": "transistor"
   },
-  "11208": {
-    "id": 11208,
-    "alternative_names": [
-      {
-        "id": 9388,
-        "comment": "Other",
-        "name": "NieR New Project"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 3176,
-        "category": 1,
-        "name": "NieR:Automata\u2122",
-        "uid": "524220"
-      },
-      {
-        "id": 111198,
-        "category": 3,
-        "name": "NieR: Automata",
-        "uid": "49998",
-        "url": "https://www.giantbomb.com/games/3030-49998/",
-        "year": 2017
-      },
-      {
-        "id": 189372,
-        "category": 10,
-        "name": "Nier: Automata",
-        "uid": "UCIISf_IjC2DH1SC_eMaMzDg",
-        "url": "https://gaming.youtube.com/game/UCIISf_IjC2DH1SC_eMaMzDg"
-      },
-      {
-        "id": 281219,
-        "category": 14,
-        "name": "NieR Automata",
-        "uid": "494162",
-        "url": "https://www.giantbomb.com/game/3030-49998/"
-      }
-    ],
-    "name": "NieR: Automata",
-    "platforms": [
-      6,
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 66248,
-        "human": "2017-Mar-17",
-        "platform": 6,
-        "y": 2017
-      },
-      {
-        "id": 108396,
-        "human": "2017-Mar-07",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 108397,
-        "human": "2017-Mar-10",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 108398,
-        "human": "2017-Feb-23",
-        "platform": 48,
-        "y": 2017
-      }
-    ],
-    "slug": "nier-automata"
-  },
-  "113345": {
-    "id": 113345,
-    "alternative_names": [
-      {
-        "id": 23507,
-        "comment": "Japanese title",
-        "name": "\u30cb\u30fc\u30a2 \u30aa\u30fc\u30c8\u30de\u30bf \u30b2\u30fc\u30e0 \u30aa\u30d6 \u30b6 \u30e8\u30eb\u30cf \u30a8\u30c7\u30a3\u30b7\u30e7\u30f3"
-      },
-      {
-        "id": 26128,
-        "comment": "Other",
-        "name": "NieR:Automata Game of the YoRHa Edition"
-      }
-    ],
-    "category": 0,
-    "name": "NieR: Automata - Game of the YoRHa Edition",
-    "platforms": [
-      6,
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 162081,
-        "human": "2019-Feb-21",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 162082,
-        "human": "2019-Feb-26",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 162083,
-        "human": "2019-Feb-26",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 162084,
-        "human": "2019-Feb-26",
-        "platform": 48,
-        "y": 2019
-      }
-    ],
-    "slug": "nier-automata-game-of-the-yorha-edition"
-  },
   "10949": {
     "id": 10949,
     "alternative_names": [
@@ -19120,114 +23010,6 @@
     ],
     "slug": "spellforce-2-faith-in-destiny"
   },
-  "36926": {
-    "id": 36926,
-    "alternative_names": [
-      {
-        "id": 21723,
-        "comment": "Acronym",
-        "name": "MHW"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 102114,
-        "category": 3,
-        "name": "Monster Hunter: World",
-        "uid": "59924",
-        "url": "https://www.giantbomb.com/games/3030-59924/",
-        "year": 2018
-      },
-      {
-        "id": 210711,
-        "category": 11,
-        "name": "MONSTER HUNTER: WORLD\u2122",
-        "uid": "BNG91PT95LQN",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNG91PT95LQN",
-        "year": 0
-      },
-      {
-        "id": 253135,
-        "category": 14,
-        "name": "Monster Hunter World",
-        "uid": "497467"
-      },
-      {
-        "id": 1184753,
-        "category": 10,
-        "name": "Monster Hunter: World",
-        "uid": "UCjV-uixqhUvj-2dPzHLTGag",
-        "url": "https://www.youtube.com/watch?v=UCjV-uixqhUvj-2dPzHLTGag"
-      },
-      {
-        "id": 1472428,
-        "category": 1,
-        "name": "MONSTER HUNTER: WORLD",
-        "uid": "582010",
-        "url": "https://store.steampowered.com/app/582010",
-        "year": 2018
-      }
-    ],
-    "name": "Monster Hunter: World",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 113479,
-        "human": "2018-Jan-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 147904,
-        "human": "2018-Jan-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 155500,
-        "human": "2018-Aug-09",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "monster-hunter-world"
-  },
-  "118273": {
-    "id": 118273,
-    "category": 0,
-    "name": "Monster Hunter World: Iceborne Master Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 169393,
-        "human": "2019-Sep-06",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 169394,
-        "human": "2019-Sep-06",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 169395,
-        "human": "2019-Sep-06",
-        "platform": 6,
-        "y": 2019
-      }
-    ],
-    "slug": "monster-hunter-world-iceborne-master-edition"
-  },
   "11667": {
     "id": 11667,
     "alternative_names": [
@@ -20694,52 +24476,6 @@
       }
     ],
     "slug": "stellaris"
-  },
-  "9278": {
-    "id": 9278,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 11401,
-        "category": 1,
-        "name": "Endless Legend",
-        "uid": "289130"
-      },
-      {
-        "id": 117267,
-        "category": 3,
-        "name": "Endless Legend",
-        "uid": "43720",
-        "url": "https://www.giantbomb.com/games/3030-43720/",
-        "year": 2014
-      },
-      {
-        "id": 245551,
-        "category": 14,
-        "name": "Endless Legend",
-        "uid": "370359"
-      }
-    ],
-    "name": "Endless Legend",
-    "platforms": [
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 31958,
-        "human": "2014-Sep-18",
-        "platform": 6,
-        "y": 2014
-      },
-      {
-        "id": 31959,
-        "human": "2014-Sep-18",
-        "platform": 14,
-        "y": 2014
-      }
-    ],
-    "slug": "endless-legend"
   },
   "9066": {
     "id": 9066,
@@ -23408,508 +27144,6 @@
     ],
     "slug": "euro-truck-simulator-2"
   },
-  "121": {
-    "id": 121,
-    "alternative_names": [
-      {
-        "id": 14098,
-        "comment": "Other",
-        "name": "Minecraft Xbox One Edition"
-      },
-      {
-        "id": 14099,
-        "comment": "Other",
-        "name": "Minecraft Xbox 360 Edition"
-      },
-      {
-        "id": 27552,
-        "name": "Minecraft Bedrock Edition"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 129354,
-        "category": 3,
-        "name": "Minecraft",
-        "uid": "30475",
-        "url": "https://www.giantbomb.com/games/3030-30475/",
-        "year": 2011
-      },
-      {
-        "id": 189735,
-        "category": 10,
-        "name": "Minecraft",
-        "uid": "UCPIAZ-E6VsIegksYc0BfUJg",
-        "url": "https://gaming.youtube.com/game/UCPIAZ-E6VsIegksYc0BfUJg"
-      },
-      {
-        "id": 210703,
-        "category": 11,
-        "name": "Minecraft",
-        "uid": "9NBLGGH537BL",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/9NBLGGH537BL",
-        "year": 2017
-      },
-      {
-        "id": 224819,
-        "category": 13,
-        "name": "Minecraft",
-        "uid": "479516143",
-        "url": "https://itunes.apple.com/us/app/minecraft/id479516143?mt=8&uo=4",
-        "year": 2011
-      },
-      {
-        "id": 245104,
-        "category": 14,
-        "name": "Minecraft",
-        "uid": "27471"
-      },
-      {
-        "id": 352179,
-        "category": 15,
-        "name": "Minecraft",
-        "uid": "com.mojang.minecraftpe",
-        "url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe"
-      },
-      {
-        "id": 1592923,
-        "category": 10,
-        "name": "Minecraft",
-        "uid": "UCxd3YPc5sSSC5qrk5tVofcA",
-        "url": "https://www.youtube.com/watch?v=UCxd3YPc5sSSC5qrk5tVofcA"
-      },
-      {
-        "id": 1708307,
-        "category": 10,
-        "name": "Minecraft",
-        "uid": "UCgr9oeR0vtFqs0SAf4I6dHw",
-        "url": "https://www.youtube.com/watch?v=UCgr9oeR0vtFqs0SAf4I6dHw"
-      }
-    ],
-    "name": "Minecraft",
-    "platforms": [
-      3,
-      6,
-      9,
-      12,
-      14,
-      34,
-      39,
-      41,
-      45,
-      46,
-      48,
-      49,
-      74,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 20300,
-        "human": "2011-Nov-18",
-        "platform": 6,
-        "y": 2011
-      },
-      {
-        "id": 20301,
-        "human": "2011-Nov-18",
-        "platform": 14,
-        "y": 2011
-      },
-      {
-        "id": 20302,
-        "human": "2011-Nov-18",
-        "platform": 3,
-        "y": 2011
-      },
-      {
-        "id": 20303,
-        "human": "2011-Oct-07",
-        "platform": 34,
-        "y": 2011
-      },
-      {
-        "id": 20304,
-        "human": "2011-Nov-17",
-        "platform": 39,
-        "y": 2011
-      },
-      {
-        "id": 20305,
-        "human": "2012-May-09",
-        "platform": 12,
-        "y": 2012
-      },
-      {
-        "id": 20308,
-        "human": "2014-Sep-04",
-        "platform": 48,
-        "y": 2014
-      },
-      {
-        "id": 20309,
-        "human": "2014-Sep-05",
-        "platform": 49,
-        "y": 2014
-      },
-      {
-        "id": 28704,
-        "human": "2014-Oct-14",
-        "platform": 46,
-        "y": 2014
-      },
-      {
-        "id": 28705,
-        "human": "2014-Oct-15",
-        "platform": 46,
-        "y": 2014
-      },
-      {
-        "id": 28926,
-        "human": "2014-Dec-15",
-        "platform": 74,
-        "y": 2014
-      },
-      {
-        "id": 41557,
-        "human": "2015-Dec-17",
-        "platform": 41,
-        "y": 2015
-      },
-      {
-        "id": 69255,
-        "human": "2017-May-12",
-        "platform": 130,
-        "y": 2017
-      },
-      {
-        "id": 133884,
-        "human": "2014-May-16",
-        "platform": 9,
-        "y": 2014
-      },
-      {
-        "id": 133885,
-        "human": "2014-May-14",
-        "platform": 9,
-        "y": 2014
-      },
-      {
-        "id": 133886,
-        "human": "2013-Dec-17",
-        "platform": 45,
-        "y": 2013
-      },
-      {
-        "id": 133887,
-        "human": "2013-Dec-18",
-        "platform": 45,
-        "y": 2013
-      },
-      {
-        "id": 136149,
-        "human": "2017-Sep-20",
-        "platform": 49,
-        "y": 2017
-      }
-    ],
-    "slug": "minecraft"
-  },
-  "8339": {
-    "id": 8339,
-    "alternative_names": [
-      {
-        "id": 28133,
-        "comment": "Other",
-        "name": " Minecraft: Story Mode - A Telltale Games Series"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 8209,
-        "category": 1,
-        "name": "Minecraft: Story Mode - A Telltale Games Series",
-        "uid": "376870"
-      },
-      {
-        "id": 77584,
-        "category": 5,
-        "name": "Minecraft: Story Mode - A Telltale Game Series",
-        "uid": "1444400283",
-        "url": "https://www.gog.com/game/minecraft_story_mode",
-        "year": 2015
-      },
-      {
-        "id": 112738,
-        "category": 3,
-        "name": "Minecraft: Story Mode",
-        "uid": "48413",
-        "url": "https://www.giantbomb.com/games/3030-48413/",
-        "year": 2015
-      },
-      {
-        "id": 189656,
-        "category": 10,
-        "name": "Minecraft: Story Mode",
-        "uid": "UCNRnY0iMI2Bgo_ncrk0JXaQ",
-        "url": "https://gaming.youtube.com/game/UCNRnY0iMI2Bgo_ncrk0JXaQ"
-      },
-      {
-        "id": 210702,
-        "category": 11,
-        "name": "Minecraft: Story Mode - The Complete Adventure (Episodes 1-8)",
-        "uid": "C4DXR269PZSG",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C4DXR269PZSG",
-        "year": 2016
-      },
-      {
-        "id": 213834,
-        "category": 11,
-        "name": "Minecraft: Story Mode - Complete",
-        "uid": "xbox36066acd000-77fe-1000-9115-d802443607dc",
-        "url": "http://marketplace.xbox.com/en-US/Product/Minecraft-Story-Mode-Complete/66acd000-77fe-1000-9115-d802443607dc",
-        "year": 2016
-      },
-      {
-        "id": 224678,
-        "category": 13,
-        "name": "Minecraft: Story Mode",
-        "uid": "1001286466",
-        "url": "https://itunes.apple.com/us/app/minecraft-story-mode/id1001286466?mt=8&uo=4",
-        "year": 2015
-      },
-      {
-        "id": 246006,
-        "category": 14,
-        "name": "Minecraft: Story Mode",
-        "uid": "490130"
-      }
-    ],
-    "name": "Minecraft: Story Mode",
-    "platforms": [
-      6,
-      9,
-      12,
-      14,
-      34,
-      39,
-      41,
-      46,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 38192,
-        "human": "2015-Oct-13",
-        "platform": 6,
-        "y": 2015
-      },
-      {
-        "id": 38193,
-        "human": "2015-Oct-13",
-        "platform": 14,
-        "y": 2015
-      },
-      {
-        "id": 38194,
-        "human": "2015-Oct-13",
-        "platform": 12,
-        "y": 2015
-      },
-      {
-        "id": 38195,
-        "human": "2015-Oct-13",
-        "platform": 49,
-        "y": 2015
-      },
-      {
-        "id": 38196,
-        "human": "2015-Oct-13",
-        "platform": 9,
-        "y": 2015
-      },
-      {
-        "id": 38197,
-        "human": "2015-Oct-13",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 38198,
-        "human": "2015-Oct-15",
-        "platform": 39,
-        "y": 2015
-      },
-      {
-        "id": 38199,
-        "human": "2015-Oct-15",
-        "platform": 34,
-        "y": 2015
-      },
-      {
-        "id": 93329,
-        "human": "2016-Jan-21",
-        "platform": 41,
-        "y": 2016
-      },
-      {
-        "id": 93330,
-        "human": "2017-Jul-01",
-        "platform": 46,
-        "y": 2017
-      },
-      {
-        "id": 93331,
-        "human": "2017-Aug-22",
-        "platform": 130,
-        "y": 2017
-      },
-      {
-        "id": 108095,
-        "human": "2015-Oct-30",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 108096,
-        "human": "2015-Oct-27",
-        "platform": 48,
-        "y": 2015
-      },
-      {
-        "id": 136647,
-        "human": "2016-Apr-12",
-        "platform": 49,
-        "y": 2016
-      }
-    ],
-    "slug": "minecraft-story-mode"
-  },
-  "110474": {
-    "id": 110474,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1617337,
-        "category": 3,
-        "name": "Minecraft: Dungeons",
-        "uid": "70421",
-        "url": "https://www.giantbomb.com/games/3030-70421/",
-        "year": 2019
-      },
-      {
-        "id": 1708811,
-        "category": 14,
-        "name": "Minecraft: Dungeons",
-        "uid": "509725"
-      }
-    ],
-    "name": "Minecraft Dungeons",
-    "platforms": [
-      6,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 179606,
-        "human": "2020-Apr",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 179607,
-        "human": "2020-Apr",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 179608,
-        "human": "2020-Apr",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 179609,
-        "human": "2020-Apr",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "minecraft-dungeons"
-  },
-  "28407": {
-    "id": 28407,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 188867,
-        "category": 10,
-        "name": "Education",
-        "uid": "UC3yA8nDwraeOfnYfBWun83g",
-        "url": "https://gaming.youtube.com/game/UC3yA8nDwraeOfnYfBWun83g"
-      }
-    ],
-    "name": "Minecraft: Education Edition",
-    "platforms": [
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 123573,
-        "human": "2016-Nov-01",
-        "platform": 14,
-        "y": 2016
-      },
-      {
-        "id": 123574,
-        "human": "2016-Nov-01",
-        "platform": 6,
-        "y": 2016
-      }
-    ],
-    "slug": "minecraft-education-edition"
-  },
-  "46077": {
-    "id": 46077,
-    "category": 0,
-    "name": "The Minecraft tribute game",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 92425,
-        "human": "2017-Jan-08",
-        "platform": 6,
-        "y": 2017
-      }
-    ],
-    "slug": "the-minecraft-tribute-game"
-  },
-  "46133": {
-    "id": 46133,
-    "category": 0,
-    "name": "The Minecraft tribute game",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 92449,
-        "human": "2017-Jul-08",
-        "platform": 6,
-        "y": 2017
-      }
-    ],
-    "slug": "the-minecraft-tribute-game--1"
-  },
   "94049": {
     "id": 94049,
     "category": 0,
@@ -23925,132 +27159,6 @@
       }
     ],
     "slug": "minecraft-windows-10-edition"
-  },
-  "44158": {
-    "id": 44158,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 77585,
-        "category": 5,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "1614341910",
-        "url": "https://www.gog.com/game/minecraft_story_mode_season_2",
-        "year": 2017
-      },
-      {
-        "id": 100276,
-        "category": 1,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "639170"
-      },
-      {
-        "id": 102208,
-        "category": 3,
-        "name": "Minecraft: Story Mode - Season 2",
-        "uid": "59826",
-        "url": "https://www.giantbomb.com/games/3030-59826/",
-        "year": 2017
-      },
-      {
-        "id": 213833,
-        "category": 11,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "xbox36066acd000-77fe-1000-9115-d802443607df",
-        "url": "http://marketplace.xbox.com/en-US/Product/Minecraft-Story-Mode-Season-Two/66acd000-77fe-1000-9115-d802443607df",
-        "year": 2017
-      },
-      {
-        "id": 225307,
-        "category": 13,
-        "name": "Minecraft: Story Mode - S2",
-        "uid": "1235920003",
-        "url": "https://itunes.apple.com/us/app/minecraft-story-mode-s2/id1235920003?mt=8&uo=4",
-        "year": 2017
-      },
-      {
-        "id": 368210,
-        "category": 15,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "com.telltalegames.minecraft200",
-        "url": "https://play.google.com/store/apps/details?id=com.telltalegames.minecraft200"
-      },
-      {
-        "id": 376146,
-        "category": 14,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "497348",
-        "url": "https://www.giantbomb.com/game/3030-59826/"
-      },
-      {
-        "id": 1184728,
-        "category": 10,
-        "name": "Minecraft: Story Mode - Season Two",
-        "uid": "UC7hSHk6zKrVm1gdqZcxUNHQ",
-        "url": "https://www.youtube.com/watch?v=UC7hSHk6zKrVm1gdqZcxUNHQ"
-      }
-    ],
-    "name": "Minecraft: Story Mode - Season Two",
-    "platforms": [
-      6,
-      12,
-      34,
-      39,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 110266,
-        "human": "2017-Jul-12",
-        "platform": 34,
-        "y": 2017
-      },
-      {
-        "id": 110267,
-        "human": "2017-Jul-11",
-        "platform": 39,
-        "y": 2017
-      },
-      {
-        "id": 110268,
-        "human": "2017-Jul-11",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 110269,
-        "human": "2017-Jul-11",
-        "platform": 49,
-        "y": 2017
-      },
-      {
-        "id": 110270,
-        "human": "2017-Jul-11",
-        "platform": 6,
-        "y": 2017
-      },
-      {
-        "id": 110272,
-        "human": "2017-Jul-14",
-        "platform": 12,
-        "y": 2017
-      },
-      {
-        "id": 115819,
-        "human": "2017-Jul-11",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 182796,
-        "human": "2018-Nov-06",
-        "platform": 130,
-        "y": 2018
-      }
-    ],
-    "slug": "minecraft-story-mode-season-two"
   },
   "7725": {
     "id": 7725,
@@ -25161,290 +28269,6 @@
     ],
     "slug": "darksiders"
   },
-  "11157": {
-    "id": 11157,
-    "alternative_names": [
-      {
-        "id": 12024,
-        "comment": "Other",
-        "name": "Hitman 6"
-      },
-      {
-        "id": 12816,
-        "comment": "Stylized",
-        "name": "HITMAN"
-      },
-      {
-        "id": 12817,
-        "comment": "Non-stylized",
-        "name": "Hitman"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 12648,
-        "category": 1,
-        "name": "HITMAN\u2122",
-        "uid": "236870"
-      },
-      {
-        "id": 115904,
-        "category": 3,
-        "name": "Hitman",
-        "uid": "45150",
-        "url": "https://www.giantbomb.com/games/3030-45150/",
-        "year": 2016
-      },
-      {
-        "id": 190272,
-        "category": 10,
-        "name": "Hitman",
-        "uid": "UCZxVwtEFA30_9HA9gc8twYA",
-        "url": "https://gaming.youtube.com/game/UCZxVwtEFA30_9HA9gc8twYA"
-      },
-      {
-        "id": 210581,
-        "category": 11,
-        "name": "HITMAN\u2122",
-        "uid": "C1C6CRH9D0R4",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C1C6CRH9D0R4",
-        "year": 2016
-      },
-      {
-        "id": 245115,
-        "category": 14,
-        "name": "HITMAN",
-        "uid": "491471"
-      }
-    ],
-    "name": "HITMAN",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 38093,
-        "human": "2016-Mar-11",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 38094,
-        "human": "2016-Mar-11",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 38095,
-        "human": "2016-Mar-11",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 103553,
-        "human": "2017-Jan-31",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 103554,
-        "human": "2017-Jan-31",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 119460,
-        "human": "2016-Mar-11",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 121528,
-        "human": "2016-Mar-11",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 136072,
-        "human": "2016-Mar-11",
-        "platform": 49,
-        "y": 2016
-      }
-    ],
-    "slug": "hitman"
-  },
-  "6073": {
-    "id": 6073,
-    "alternative_names": [
-      {
-        "id": 12851,
-        "name": "Hitman: GO"
-      },
-      {
-        "id": 18858,
-        "comment": "Other",
-        "name": "Hitman GO: Definitive Edition"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 115062,
-        "category": 3,
-        "name": "Hitman Go",
-        "uid": "46020",
-        "url": "https://www.giantbomb.com/games/3030-46020/",
-        "year": 2014
-      },
-      {
-        "id": 243566,
-        "category": 13,
-        "name": "Hitman GO",
-        "uid": "731645633",
-        "url": "https://itunes.apple.com/us/app/hitman-go/id731645633?mt=8&uo=4",
-        "year": 2014
-      },
-      {
-        "id": 248691,
-        "category": 14,
-        "name": "Hitman Go",
-        "uid": "417823"
-      },
-      {
-        "id": 352335,
-        "category": 15,
-        "name": "Hitman GO",
-        "uid": "com.squareenixmontreal.hitmango",
-        "url": "https://play.google.com/store/apps/details?id=com.squareenixmontreal.hitmango"
-      }
-    ],
-    "name": "Hitman GO",
-    "platforms": [
-      6,
-      34,
-      39,
-      74
-    ],
-    "release_dates": [
-      {
-        "id": 130073,
-        "human": "2014-Jun-04",
-        "platform": 34,
-        "y": 2014
-      },
-      {
-        "id": 130074,
-        "human": "2014-Apr-17",
-        "platform": 39,
-        "y": 2014
-      },
-      {
-        "id": 130075,
-        "human": "2015-Apr-27",
-        "platform": 6,
-        "y": 2015
-      },
-      {
-        "id": 130076,
-        "human": "2015-Apr-27",
-        "platform": 74,
-        "y": 2015
-      }
-    ],
-    "slug": "hitman-go"
-  },
-  "530": {
-    "id": 530,
-    "alternative_names": [
-      {
-        "id": 12842,
-        "name": "Hitman Absolution"
-      },
-      {
-        "id": 14525,
-        "comment": "Other",
-        "name": "Hitman 5"
-      },
-      {
-        "id": 24584,
-        "comment": "Japanese title",
-        "name": "\u30d2\u30c3\u30c8\u30de\u30f3: \u30a2\u30d6\u30bd\u30ea\u30e5\u30fc\u30b7\u30e7\u30f3"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 13275,
-        "category": 1,
-        "name": "Hitman: Absolution",
-        "uid": "203140"
-      },
-      {
-        "id": 133107,
-        "category": 3,
-        "name": "Hitman: Absolution",
-        "uid": "26417",
-        "url": "https://www.giantbomb.com/games/3030-26417/",
-        "year": 2012
-      },
-      {
-        "id": 213634,
-        "category": 11,
-        "name": "Hitman: Absolution",
-        "uid": "xbox36066acd000-77fe-1000-9115-d80253510804",
-        "url": "http://marketplace.xbox.com/en-US/Product/Hitman-Absolution/66acd000-77fe-1000-9115-d80253510804",
-        "year": 2013
-      },
-      {
-        "id": 245685,
-        "category": 14,
-        "name": "Hitman: Absolution",
-        "uid": "23880"
-      }
-    ],
-    "name": "Hitman: Absolution",
-    "platforms": [
-      6,
-      9,
-      12
-    ],
-    "release_dates": [
-      {
-        "id": 3532,
-        "human": "2012-Nov-20",
-        "platform": 6,
-        "y": 2012
-      },
-      {
-        "id": 3533,
-        "human": "2012-Nov-20",
-        "platform": 9,
-        "y": 2012
-      },
-      {
-        "id": 3534,
-        "human": "2012-Nov-20",
-        "platform": 12,
-        "y": 2012
-      },
-      {
-        "id": 103551,
-        "human": "2012-Nov-20",
-        "platform": 9,
-        "y": 2012
-      },
-      {
-        "id": 103552,
-        "human": "2012-Nov-20",
-        "platform": 9,
-        "y": 2012
-      }
-    ],
-    "slug": "hitman-absolution"
-  },
   "20084": {
     "id": 20084,
     "alternative_names": [
@@ -25687,326 +28511,6 @@
       }
     ],
     "slug": "hitman-codename-47"
-  },
-  "5567": {
-    "id": 5567,
-    "alternative_names": [
-      {
-        "id": 12843,
-        "name": "Hitman Sniper Challenge"
-      },
-      {
-        "id": 12844,
-        "name": "Sniper Challenge"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 120642,
-        "category": 3,
-        "name": "Hitman: Sniper Challenge",
-        "uid": "40030",
-        "url": "https://www.giantbomb.com/games/3030-40030/",
-        "year": 2012
-      },
-      {
-        "id": 248917,
-        "category": 14,
-        "name": "Hitman: Sniper Challenge",
-        "uid": "72608"
-      }
-    ],
-    "name": "Hitman: Sniper Challenge",
-    "platforms": [
-      6,
-      9,
-      12
-    ],
-    "release_dates": [
-      {
-        "id": 30837,
-        "human": "2012-Aug-01",
-        "platform": 6,
-        "y": 2012
-      },
-      {
-        "id": 30838,
-        "human": "2012-May-15",
-        "platform": 12,
-        "y": 2012
-      },
-      {
-        "id": 30839,
-        "human": "2012-May-15",
-        "platform": 9,
-        "y": 2012
-      },
-      {
-        "id": 122704,
-        "human": "2012-Aug-01",
-        "platform": 6,
-        "y": 2012
-      }
-    ],
-    "slug": "hitman-sniper-challenge"
-  },
-  "17447": {
-    "id": 17447,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 112029,
-        "category": 3,
-        "name": "Titanfall 2",
-        "uid": "49139",
-        "url": "https://www.giantbomb.com/games/3030-49139/",
-        "year": 2016
-      },
-      {
-        "id": 188917,
-        "category": 10,
-        "name": "Titanfall 2",
-        "uid": "UC6BlfFYL1GZV0XZ0tvZ7buw",
-        "url": "https://gaming.youtube.com/game/UC6BlfFYL1GZV0XZ0tvZ7buw"
-      },
-      {
-        "id": 211045,
-        "category": 11,
-        "name": "Titanfall\u00ae 2",
-        "uid": "C0X2HNVH08FB",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C0X2HNVH08FB",
-        "year": 2016
-      },
-      {
-        "id": 247353,
-        "category": 14,
-        "name": "Titanfall 2",
-        "uid": "489201"
-      }
-    ],
-    "name": "Titanfall 2",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 51870,
-        "human": "2016-Oct-28",
-        "platform": 49,
-        "y": 2016
-      },
-      {
-        "id": 51871,
-        "human": "2016-Oct-28",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 51872,
-        "human": "2016-Oct-28",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 106422,
-        "human": "2016-Oct-28",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 106423,
-        "human": "2016-Oct-28",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 136398,
-        "human": "2016-Oct-28",
-        "platform": 49,
-        "y": 2016
-      }
-    ],
-    "slug": "titanfall-2"
-  },
-  "28513": {
-    "id": 28513,
-    "category": 0,
-    "name": "Titanfall 2: Ultimate Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 117782,
-        "human": "2017-Aug-01",
-        "platform": 6,
-        "y": 2017
-      },
-      {
-        "id": 117783,
-        "human": "2017-Aug-01",
-        "platform": 49,
-        "y": 2017
-      },
-      {
-        "id": 117784,
-        "human": "2017-Aug-01",
-        "platform": 48,
-        "y": 2017
-      }
-    ],
-    "slug": "titanfall-2-ultimate-edition"
-  },
-  "21729": {
-    "id": 21729,
-    "category": 0,
-    "name": "Titanfall 2: Vanguard Collector's Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 117758,
-        "human": "2016-Oct-28",
-        "platform": 48,
-        "y": 2016
-      },
-      {
-        "id": 117763,
-        "human": "2016-Oct-28",
-        "platform": 6,
-        "y": 2016
-      },
-      {
-        "id": 117764,
-        "human": "2016-Oct-28",
-        "platform": 49,
-        "y": 2016
-      }
-    ],
-    "slug": "titanfall-2-vanguard-collectors-edition"
-  },
-  "27304": {
-    "id": 27304,
-    "alternative_names": [
-      {
-        "id": 8192,
-        "comment": "Japanese title",
-        "name": "\u30a4\u30fc\u30b9VIII -Lacrimosa of DANA-"
-      },
-      {
-        "id": 11755,
-        "comment": "Other",
-        "name": "Ys 8"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1228,
-        "category": 1,
-        "name": "Ys VIII: Lacrimosa of Dana",
-        "uid": "579180"
-      },
-      {
-        "id": 113403,
-        "category": 3,
-        "name": "Ys VIII: Lacrimosa of Dana",
-        "uid": "47723",
-        "url": "https://www.giantbomb.com/games/3030-47723/",
-        "year": 2016
-      },
-      {
-        "id": 189214,
-        "category": 10,
-        "name": "Ys VIII: Lacrimosa of Dana",
-        "uid": "UCf5iGJQ0nqFR4E0Q5k4Thjw",
-        "url": "https://gaming.youtube.com/game/UCf5iGJQ0nqFR4E0Q5k4Thjw"
-      },
-      {
-        "id": 247314,
-        "category": 14,
-        "name": "Ys VIII: Lacrimosa of Dana",
-        "uid": "476439"
-      }
-    ],
-    "name": "Ys VIII: Lacrimosa of Dana",
-    "platforms": [
-      6,
-      46,
-      48,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 65625,
-        "human": "2016-Jul-21",
-        "platform": 46,
-        "y": 2016
-      },
-      {
-        "id": 65626,
-        "human": "2017-May-25",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 93333,
-        "human": "2017-Sep-12",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 93334,
-        "human": "2017-Sep-12",
-        "platform": 46,
-        "y": 2017
-      },
-      {
-        "id": 93335,
-        "human": "2017-Sep-15",
-        "platform": 46,
-        "y": 2017
-      },
-      {
-        "id": 93336,
-        "human": "2017-Sep-15",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 149025,
-        "human": "2018-Jun-28",
-        "platform": 130,
-        "y": 2018
-      },
-      {
-        "id": 149475,
-        "human": "2018-Jun-29",
-        "platform": 130,
-        "y": 2018
-      },
-      {
-        "id": 149476,
-        "human": "2018-Jun-26",
-        "platform": 130,
-        "y": 2018
-      },
-      {
-        "id": 151562,
-        "human": "2018-Apr-17",
-        "platform": 6,
-        "y": 2018
-      }
-    ],
-    "slug": "ys-viii-lacrimosa-of-dana"
   },
   "501": {
     "id": 501,
@@ -26337,69 +28841,6 @@
       }
     ],
     "slug": "rise-of-the-tomb-raider-20-year-celebration"
-  },
-  "106122": {
-    "id": 106122,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1313359,
-        "category": 1,
-        "name": "EXAPUNKS",
-        "uid": "716490",
-        "url": "https://store.steampowered.com/app/716490",
-        "year": 2018
-      },
-      {
-        "id": 1370600,
-        "category": 14,
-        "name": "EXAPUNKS",
-        "uid": "508761",
-        "url": "https://www.giantbomb.com/game/3030-69464/"
-      },
-      {
-        "id": 1574915,
-        "category": 3,
-        "name": "EXAPUNKS",
-        "uid": "69464",
-        "url": "https://www.giantbomb.com/games/3030-69464/",
-        "year": 2018
-      }
-    ],
-    "name": "EXAPUNKS",
-    "platforms": [
-      3,
-      6,
-      14,
-      92
-    ],
-    "release_dates": [
-      {
-        "id": 160274,
-        "human": "2018-Oct-22",
-        "platform": 6,
-        "y": 2018
-      },
-      {
-        "id": 160275,
-        "human": "2018-Oct-22",
-        "platform": 14,
-        "y": 2018
-      },
-      {
-        "id": 160276,
-        "human": "2018-Oct-22",
-        "platform": 3,
-        "y": 2018
-      },
-      {
-        "id": 160277,
-        "human": "2018-Oct-22",
-        "platform": 92,
-        "y": 2018
-      }
-    ],
-    "slug": "exapunks"
   },
   "539": {
     "id": 539,

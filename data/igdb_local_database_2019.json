@@ -1,47 +1,61 @@
 {
-  "1595": {
-    "id": 1595,
+  "68287": {
+    "id": 68287,
     "category": 0,
     "external_games": [
       {
-        "id": 120653,
+        "id": 185381,
+        "category": 1,
+        "name": "LEFT ALIVE\u2122",
+        "uid": "714370"
+      },
+      {
+        "id": 185904,
         "category": 3,
-        "name": "Star Citizen",
-        "uid": "40011",
-        "url": "https://www.giantbomb.com/games/3030-40011/"
+        "name": "Left Alive",
+        "uid": "61459",
+        "url": "https://www.giantbomb.com/games/3030-61459/",
+        "year": 2018
       },
       {
-        "id": 190128,
-        "category": 10,
-        "name": "Star Citizen",
-        "uid": "UCxc2nb2R5D_0rYSwuf0Rp_A",
-        "url": "https://gaming.youtube.com/game/UCxc2nb2R5D_0rYSwuf0Rp_A"
-      },
-      {
-        "id": 245254,
+        "id": 252438,
         "category": 14,
-        "name": "Star Citizen",
-        "uid": "71375"
+        "name": "Left Alive",
+        "uid": "499012"
       }
     ],
-    "name": "Star Citizen",
+    "name": "Left Alive",
     "platforms": [
-      3,
-      6
+      6,
+      48
     ],
     "release_dates": [
       {
-        "id": 163819,
-        "human": "TBD",
-        "platform": 6
+        "id": 158212,
+        "human": "2019-Feb-28",
+        "platform": 48,
+        "y": 2019
       },
       {
-        "id": 163820,
-        "human": "TBD",
-        "platform": 3
+        "id": 159761,
+        "human": "2019-Mar-05",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 159762,
+        "human": "2019-Mar-05",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 159763,
+        "human": "2019-Mar-05",
+        "platform": 6,
+        "y": 2019
       }
     ],
-    "slug": "star-citizen"
+    "slug": "left-alive"
   },
   "118711": {
     "id": 118711,
@@ -109,6 +123,2154 @@
       }
     ],
     "slug": "minecraft-pocket-edition"
+  },
+  "119504": {
+    "id": 119504,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1724995,
+        "category": 1,
+        "name": "Monster Girl Island: Prologue",
+        "uid": "943700",
+        "url": "https://store.steampowered.com/app/943700",
+        "year": 2019
+      }
+    ],
+    "name": "Monster Girl Island: Prologue",
+    "slug": "monster-girl-island-prologue"
+  },
+  "74701": {
+    "id": 74701,
+    "alternative_names": [
+      {
+        "id": 22422,
+        "comment": "Other",
+        "name": "Jedi: Fallen Order"
+      },
+      {
+        "id": 26531,
+        "name": "STAR WARS Jedi: Fallen Order\u2122"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 576336,
+        "category": 3,
+        "name": "Untitled Respawn Star Wars Game",
+        "uid": "66000",
+        "url": "https://www.giantbomb.com/games/3030-66000/",
+        "year": 2020
+      },
+      {
+        "id": 1836038,
+        "category": 1,
+        "name": "STAR WARS Jedi: Fallen Order\u2122 ",
+        "uid": "1172380",
+        "url": "https://store.steampowered.com/app/1172380",
+        "year": 2019
+      }
+    ],
+    "name": "Star Wars Jedi: Fallen Order",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 168143,
+        "human": "2019-Nov-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 168144,
+        "human": "2019-Nov-15",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 168145,
+        "human": "2019-Nov-15",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 168146,
+        "human": "2019-Nov-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 168147,
+        "human": "2019-Nov-15",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 168148,
+        "human": "2019-Nov-15",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "star-wars-jedi-fallen-order"
+  },
+  "76253": {
+    "id": 76253,
+    "alternative_names": [
+      {
+        "id": 12809,
+        "name": "Devil May Cry V"
+      },
+      {
+        "id": 23155,
+        "name": "DMC 5"
+      },
+      {
+        "id": 23156,
+        "name": "DMC V"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1457753,
+        "category": 3,
+        "name": "Devil May Cry 5",
+        "uid": "68910",
+        "url": "https://www.giantbomb.com/games/3030-68910/",
+        "year": 2019
+      },
+      {
+        "id": 1697303,
+        "category": 14,
+        "name": "Devil May Cry 5",
+        "uid": "506412",
+        "url": "https://www.giantbomb.com/game/3030-68910/"
+      },
+      {
+        "id": 1708273,
+        "category": 10,
+        "name": "Devil May Cry 5",
+        "uid": "UCUwxRcd4PE8hEf8JYjCbYvQ",
+        "url": "https://www.youtube.com/watch?v=UCUwxRcd4PE8hEf8JYjCbYvQ"
+      },
+      {
+        "id": 1712407,
+        "category": 1,
+        "name": "Devil May Cry 5",
+        "uid": "601150",
+        "url": "https://store.steampowered.com/app/601150",
+        "year": 2019
+      }
+    ],
+    "name": "Devil May Cry 5",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 161927,
+        "human": "2019-Mar-08",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 161928,
+        "human": "2019-Mar-08",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 161929,
+        "human": "2019-Mar-08",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "devil-may-cry-5"
+  },
+  "103301": {
+    "id": 103301,
+    "alternative_names": [
+      {
+        "id": 22428,
+        "name": "Wolfenstein Youngblood"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1457762,
+        "category": 3,
+        "name": "Wolfenstein: Youngblood",
+        "uid": "68919",
+        "url": "https://www.giantbomb.com/games/3030-68919/",
+        "year": 2019
+      },
+      {
+        "id": 1714050,
+        "category": 1,
+        "name": "Wolfenstein: Youngblood",
+        "uid": "1056960",
+        "url": "https://store.steampowered.com/app/1056960",
+        "year": 2019
+      }
+    ],
+    "name": "Wolfenstein: Youngblood",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 167125,
+        "human": "2019-Jul-26",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 167126,
+        "human": "2019-Jul-26",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 167127,
+        "human": "2019-Jul-26",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 167128,
+        "human": "2019-Jul-26",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 179308,
+        "human": "2019",
+        "platform": 170,
+        "y": 2019
+      }
+    ],
+    "slug": "wolfenstein-youngblood"
+  },
+  "72945": {
+    "id": 72945,
+    "category": 0,
+    "name": "Wolfenstein: Youngblood - Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 167667,
+        "human": "2019-Jul-26",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 167668,
+        "human": "2019-Jul-26",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 167669,
+        "human": "2019-Jul-26",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 167670,
+        "human": "2019-Jul-26",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "wolfenstein-youngblood-deluxe-edition"
+  },
+  "103018": {
+    "id": 103018,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 916536,
+        "category": 1,
+        "name": "Team Sonic Racing\u2122",
+        "uid": "785260",
+        "url": "https://store.steampowered.com/app/785260",
+        "year": 0
+      },
+      {
+        "id": 1457583,
+        "category": 3,
+        "name": "Team Sonic Racing",
+        "uid": "68739",
+        "url": "https://www.giantbomb.com/games/3030-68739/",
+        "year": 2018
+      },
+      {
+        "id": 1709269,
+        "category": 14,
+        "name": "Team Sonic Racing",
+        "uid": "506235"
+      }
+    ],
+    "name": "Team Sonic Racing",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 185082,
+        "human": "2019-May-21",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 185083,
+        "human": "2019-May-21",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 185084,
+        "human": "2019-May-21",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 185085,
+        "human": "2019-May-21",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "team-sonic-racing"
+  },
+  "118218": {
+    "id": 118218,
+    "alternative_names": [
+      {
+        "id": 24593,
+        "comment": "Other",
+        "name": "Ghost Recon: Breakpoint"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1775432,
+        "category": 3,
+        "name": "Tom Clancy's Ghost Recon Breakpoint",
+        "uid": "73330",
+        "url": "https://www.giantbomb.com/games/3030-73330/",
+        "year": 2019
+      }
+    ],
+    "name": "Tom Clancy's Ghost Recon: Breakpoint",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 169385,
+        "human": "2019-Oct-04",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 169386,
+        "human": "2019-Oct-04",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 169387,
+        "human": "2019-Oct-04",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 179303,
+        "human": "2019",
+        "platform": 170,
+        "y": 2019
+      }
+    ],
+    "slug": "tom-clancys-ghost-recon-breakpoint"
+  },
+  "103331": {
+    "id": 103331,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1457780,
+        "category": 3,
+        "name": "Trover Saves the Universe",
+        "uid": "68939",
+        "url": "https://www.giantbomb.com/games/3030-68939/"
+      },
+      {
+        "id": 1713825,
+        "category": 1,
+        "name": "Trover Saves the Universe",
+        "uid": "1051200",
+        "url": "https://store.steampowered.com/app/1051200",
+        "year": 2019
+      }
+    ],
+    "name": "Trover Saves the Universe",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 166924,
+        "human": "2019-May-31",
+        "platform": 165,
+        "y": 2019
+      },
+      {
+        "id": 166925,
+        "human": "2019-May-31",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 169578,
+        "human": "2019-Jun-04",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 180248,
+        "human": "2019-Dec-03",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 180249,
+        "human": "2019-Nov-28",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "trover-saves-the-universe"
+  },
+  "118305": {
+    "id": 118305,
+    "category": 1,
+    "name": "Euro Truck Simulator 2: Road to the Black Sea",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 179854,
+        "human": "2019-May-10",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "euro-truck-simulator-2-road-to-the-black-sea"
+  },
+  "122644": {
+    "id": 122644,
+    "category": 2,
+    "name": "HITMAN 2 - New York",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 176578,
+        "human": "2019-Jun-25",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 176579,
+        "human": "2019-Jun-25",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 176580,
+        "human": "2019-Jun-25",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "hitman-2-new-york"
+  },
+  "122645": {
+    "id": 122645,
+    "category": 2,
+    "name": "HITMAN 2 - Haven Island",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 176581,
+        "human": "2019-Sep-24",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 176582,
+        "human": "2019-Sep-24",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 176583,
+        "human": "2019-Sep-24",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "hitman-2-haven-island"
+  },
+  "103269": {
+    "id": 103269,
+    "alternative_names": [
+      {
+        "id": 22420,
+        "comment": "Acronym",
+        "name": "DOA6"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1041492,
+        "category": 1,
+        "name": "DEAD OR ALIVE 6",
+        "uid": "838380",
+        "url": "https://store.steampowered.com/app/838380",
+        "year": 2019
+      },
+      {
+        "id": 1457720,
+        "category": 3,
+        "name": "Dead or Alive 6",
+        "uid": "68876",
+        "url": "https://www.giantbomb.com/games/3030-68876/",
+        "year": 2019
+      },
+      {
+        "id": 1709852,
+        "category": 14,
+        "name": "Dead or Alive 6",
+        "uid": "506376"
+      }
+    ],
+    "name": "Dead or Alive 6",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 163204,
+        "human": "2019-Mar-01",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 163205,
+        "human": "2019-Mar-01",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 163206,
+        "human": "2019-Mar-01",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "dead-or-alive-6"
+  },
+  "127061": {
+    "id": 127061,
+    "alternative_names": [
+      {
+        "id": 27827,
+        "comment": "Other",
+        "name": "The Walking Dead: Season 2 - Episode 5"
+      },
+      {
+        "id": 27828,
+        "comment": "Other",
+        "name": "The Walking Dead: Season Two - Episode 5"
+      },
+      {
+        "id": 27829,
+        "comment": "Other",
+        "name": "The Walking Dead: Season Two - No Going Back"
+      }
+    ],
+    "category": 6,
+    "name": "The Walking Dead: Season Two - Episode 5: No Going Back",
+    "platforms": [
+      6,
+      9,
+      12,
+      14,
+      34,
+      39,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 182046,
+        "human": "2019-Aug-16",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 182047,
+        "human": "2019-Aug-16",
+        "platform": 14,
+        "y": 2019
+      },
+      {
+        "id": 182048,
+        "human": "2019-Aug-16",
+        "platform": 9,
+        "y": 2019
+      },
+      {
+        "id": 182049,
+        "human": "2019-Aug-16",
+        "platform": 46,
+        "y": 2019
+      },
+      {
+        "id": 182050,
+        "human": "2014-Aug-27",
+        "platform": 12,
+        "y": 2014
+      },
+      {
+        "id": 182051,
+        "human": "2014-Aug-27",
+        "platform": 9,
+        "y": 2014
+      },
+      {
+        "id": 182052,
+        "human": "2014-Aug-27",
+        "platform": 46,
+        "y": 2014
+      },
+      {
+        "id": 182053,
+        "human": "2014-Aug-28",
+        "platform": 39,
+        "y": 2014
+      },
+      {
+        "id": 182054,
+        "human": "2014-Sep-19",
+        "platform": 34,
+        "y": 2014
+      },
+      {
+        "id": 182055,
+        "human": "2014-Oct-21",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 182056,
+        "human": "2014-Oct-21",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 182057,
+        "human": "2014-Oct-31",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 182058,
+        "human": "2014-Oct-31",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 182059,
+        "human": "TBD",
+        "platform": 130
+      }
+    ],
+    "slug": "the-walking-dead-season-two-episode-5-no-going-back"
+  },
+  "113295": {
+    "id": 113295,
+    "alternative_names": [
+      {
+        "id": 27914,
+        "comment": "Other",
+        "name": "The Walking Dead: The Final Season - Episode 3"
+      },
+      {
+        "id": 27915,
+        "comment": "Other",
+        "name": "The Walking Dead: The Final Season - Broken Toys"
+      }
+    ],
+    "category": 6,
+    "name": "The Walking Dead: The Final Season - Episode 3: Broken Toys",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 182298,
+        "human": "2019-Jan-15",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 182299,
+        "human": "2019-Jan-15",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 182300,
+        "human": "2019-Jan-15",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 182301,
+        "human": "2019-Jan-15",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "the-walking-dead-the-final-season-episode-3-broken-toys"
+  },
+  "114209": {
+    "id": 114209,
+    "alternative_names": [
+      {
+        "id": 27916,
+        "comment": "Other",
+        "name": "The Walking Dead: The Final Season - Episode 4"
+      },
+      {
+        "id": 27917,
+        "comment": "Other",
+        "name": "The Walking Dead: The Final Season - Take Us Back"
+      }
+    ],
+    "category": 6,
+    "name": "The Walking Dead: The Final Season - Episode 4: Take Us Back",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 182302,
+        "human": "2019-Mar-26",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 182303,
+        "human": "2019-Mar-26",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 182304,
+        "human": "2019-Mar-26",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 182305,
+        "human": "2019-Mar-26",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "the-walking-dead-the-final-season-episode-4-take-us-back"
+  },
+  "115452": {
+    "id": 115452,
+    "alternative_names": [
+      {
+        "id": 23880,
+        "comment": "Other",
+        "name": "Overlord: Mass for the Dead"
+      }
+    ],
+    "category": 0,
+    "name": "MASS FOR THE DEAD",
+    "platforms": [
+      34,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 165356,
+        "human": "2019-Feb-21",
+        "platform": 39,
+        "y": 2019
+      },
+      {
+        "id": 165357,
+        "human": "2019-Feb-21",
+        "platform": 34,
+        "y": 2019
+      }
+    ],
+    "slug": "mass-for-the-dead"
+  },
+  "25076": {
+    "id": 25076,
+    "alternative_names": [
+      {
+        "id": 7594,
+        "comment": "Acronym",
+        "name": "RDR2"
+      },
+      {
+        "id": 22246,
+        "name": "Red Dead Redemption II"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 105255,
+        "category": 3,
+        "name": "Red Dead Redemption 2",
+        "uid": "56725",
+        "url": "https://www.giantbomb.com/games/3030-56725/",
+        "year": 2018
+      },
+      {
+        "id": 210828,
+        "category": 11,
+        "name": "Red Dead Redemption 2",
+        "uid": "BPSWGQBW7R3G",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPSWGQBW7R3G",
+        "year": 2018
+      },
+      {
+        "id": 248276,
+        "category": 14,
+        "name": "Red Dead Redemption 2",
+        "uid": "493959"
+      },
+      {
+        "id": 1708337,
+        "category": 10,
+        "name": "Red Dead Redemption 2",
+        "uid": "UCxlDdW3aW7Sht6pM0TJ4Tag",
+        "url": "https://www.youtube.com/watch?v=UCxlDdW3aW7Sht6pM0TJ4Tag"
+      },
+      {
+        "id": 1837431,
+        "category": 1,
+        "name": "Red Dead Redemption 2",
+        "uid": "1174180",
+        "url": "https://store.steampowered.com/app/1174180",
+        "year": 2019
+      }
+    ],
+    "name": "Red Dead Redemption 2",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 137262,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 137263,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137264,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137265,
+        "human": "2018-Oct-26",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 137266,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 147060,
+        "human": "2018-Oct-26",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 177006,
+        "human": "2019-Nov-05",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 179286,
+        "human": "2019-Nov-19",
+        "platform": 170,
+        "y": 2019
+      }
+    ],
+    "slug": "red-dead-redemption-2"
+  },
+  "117514": {
+    "id": 117514,
+    "alternative_names": [
+      {
+        "id": 24340,
+        "comment": "Other",
+        "name": "The Telltale Definitive Series: The Walking Dead"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1806894,
+        "category": 3,
+        "name": "The Walking Dead: The Telltale Definitive Series",
+        "uid": "75682",
+        "url": "https://www.giantbomb.com/games/3030-75682/",
+        "year": 2019
+      }
+    ],
+    "name": "The Walking Dead: The Telltale Definitive Series",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 172273,
+        "human": "2019-Sep-10",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 172274,
+        "human": "2019-Sep-10",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 172275,
+        "human": "2019-Sep-10",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "the-walking-dead-the-telltale-definitive-series"
+  },
+  "11601": {
+    "id": 11601,
+    "alternative_names": [
+      {
+        "id": 4826,
+        "comment": "Japanese title",
+        "name": "\u30b3\u30fc\u30d7\u30b9\u30d1\u30fc\u30c6\u30a3\u30fc2 DEAD PATIENT"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 121254,
+        "category": 3,
+        "name": "Corpse Party 2: Dead Patient",
+        "uid": "39383",
+        "url": "https://www.giantbomb.com/games/3030-39383/",
+        "year": 2013
+      },
+      {
+        "id": 247872,
+        "category": 14,
+        "name": "Corpse Party 2: Dead Patient",
+        "uid": "67662"
+      },
+      {
+        "id": 1836159,
+        "category": 1,
+        "name": "Corpse Party 2: Dead Patient",
+        "uid": "940310",
+        "url": "https://store.steampowered.com/app/940310",
+        "year": 2019
+      }
+    ],
+    "name": "Corpse Party 2: Dead Patient",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 32042,
+        "human": "2013-May-29",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 178022,
+        "human": "2019-Oct-23",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "corpse-party-2-dead-patient"
+  },
+  "112407": {
+    "id": 112407,
+    "category": 0,
+    "name": "Dead or Alive Xtreme 3: Scarlet",
+    "platforms": [
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 163203,
+        "human": "2019-Mar-20",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "dead-or-alive-xtreme-3-scarlet"
+  },
+  "105058": {
+    "id": 105058,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1247725,
+        "category": 1,
+        "name": "Dead or School",
+        "uid": "789760",
+        "url": "https://store.steampowered.com/app/789760",
+        "year": 2018
+      },
+      {
+        "id": 1776346,
+        "category": 3,
+        "name": "Dead or School",
+        "uid": "74250",
+        "url": "https://www.giantbomb.com/games/3030-74250/",
+        "year": 2019
+      }
+    ],
+    "name": "Dead or School",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 155779,
+        "human": "TBD",
+        "platform": 6
+      },
+      {
+        "id": 155782,
+        "human": "TBD",
+        "platform": 49
+      },
+      {
+        "id": 175147,
+        "human": "2019-Aug-29",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 175148,
+        "human": "2019-Aug-29",
+        "platform": 130,
+        "y": 2019
+      }
+    ],
+    "slug": "dead-or-school"
+  },
+  "14729": {
+    "id": 14729,
+    "alternative_names": [
+      {
+        "id": 5808,
+        "comment": "Japanese title",
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXIV"
+      },
+      {
+        "id": 5809,
+        "name": "Final Fantasy XIV Online"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 189395,
+        "category": 10,
+        "name": "Final Fantasy XIV",
+        "uid": "UCIW6cREcEhF0DyoLHiXMCqA",
+        "url": "https://gaming.youtube.com/game/UCIW6cREcEhF0DyoLHiXMCqA"
+      }
+    ],
+    "name": "Final Fantasy XIV Online",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 41088,
+        "human": "2010-Sep-30",
+        "platform": 6,
+        "y": 2010
+      }
+    ],
+    "slug": "final-fantasy-xiv-online"
+  },
+  "386": {
+    "id": 386,
+    "alternative_names": [
+      {
+        "id": 1552,
+        "name": "Final Fantasy 14"
+      },
+      {
+        "id": 4071,
+        "comment": "Japanese title",
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXIV"
+      },
+      {
+        "id": 14465,
+        "comment": "Other",
+        "name": "FFXIV"
+      },
+      {
+        "id": 14466,
+        "comment": "Other",
+        "name": "FF14"
+      },
+      {
+        "id": 14467,
+        "comment": "Other",
+        "name": "Final Fantasy XIV Online"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 14109,
+        "category": 1,
+        "name": "FINAL FANTASY XIV: A Realm Reborn",
+        "uid": "39210"
+      },
+      {
+        "id": 132730,
+        "category": 3,
+        "name": "Final Fantasy XIV Online: A Realm Reborn",
+        "uid": "26847",
+        "url": "https://www.giantbomb.com/games/3030-26847/",
+        "year": 2010
+      },
+      {
+        "id": 188782,
+        "category": 10,
+        "name": "Final Fantasy XIV: A Realm Reborn",
+        "uid": "UC0WEqWoRL-L3VHYw8SIHGmA",
+        "url": "https://gaming.youtube.com/game/UC0WEqWoRL-L3VHYw8SIHGmA"
+      },
+      {
+        "id": 214595,
+        "category": 1,
+        "name": "FINAL FANTASY XIV Online Starter Edition (NA)",
+        "uid": "262341",
+        "url": "https://store.steampowered.com/app/39210",
+        "year": 2014
+      },
+      {
+        "id": 248960,
+        "category": 14,
+        "name": "FINAL FANTASY XIV Online",
+        "uid": "24241"
+      }
+    ],
+    "name": "Final Fantasy XIV: A Realm Reborn",
+    "platforms": [
+      6,
+      9,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 4603,
+        "human": "2013-Aug-27",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 4604,
+        "human": "2013-Aug-27",
+        "platform": 9,
+        "y": 2013
+      },
+      {
+        "id": 14422,
+        "human": "2014-Apr-05",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 103108,
+        "human": "2014-Apr-14",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 103109,
+        "human": "2014-Apr-14",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 103110,
+        "human": "2014-Apr-14",
+        "platform": 48,
+        "y": 2014
+      }
+    ],
+    "slug": "final-fantasy-xiv-a-realm-reborn"
+  },
+  "41854": {
+    "id": 41854,
+    "alternative_names": [
+      {
+        "id": 28302,
+        "comment": "Other",
+        "name": "Final Fantasy XIV Online: Collector's Edition"
+      },
+      {
+        "id": 28303,
+        "comment": "Acronym",
+        "name": "FFXIV: Collector's Edition"
+      },
+      {
+        "id": 28304,
+        "comment": "Acronym",
+        "name": "FFXIV Online: Collector's Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Final Fantasy XIV: Collector's Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 97665,
+        "human": "2010-Oct-22",
+        "platform": 6,
+        "y": 2010
+      }
+    ],
+    "slug": "final-fantasy-xiv-collectors-edition"
+  },
+  "26848": {
+    "id": 26848,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12382,
+        "category": 1,
+        "name": "Shovel Knight: Treasure Trove",
+        "uid": "250760"
+      },
+      {
+        "id": 78003,
+        "category": 5,
+        "name": "Shovel Knight: Treasure Trove",
+        "uid": "1207664823",
+        "url": "https://www.gog.com/game/shovel_knight",
+        "year": 2014
+      },
+      {
+        "id": 210889,
+        "category": 11,
+        "name": "Shovel Knight: Treasure Trove",
+        "uid": "BPFVSMS2MN7L",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPFVSMS2MN7L",
+        "year": 2015
+      }
+    ],
+    "name": "Shovel Knight: Treasure Trove",
+    "platforms": [
+      3,
+      6,
+      9,
+      14,
+      37,
+      41,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 64437,
+        "human": "2017-Mar-03",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 64438,
+        "human": "2017-Q2",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 64439,
+        "human": "2017-Q2",
+        "platform": 9,
+        "y": 2017
+      },
+      {
+        "id": 64440,
+        "human": "2017-Q2",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 64441,
+        "human": "2017-Q2",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 64442,
+        "human": "2017-Q2",
+        "platform": 41,
+        "y": 2017
+      },
+      {
+        "id": 64443,
+        "human": "2017-Q2",
+        "platform": 37,
+        "y": 2017
+      },
+      {
+        "id": 64444,
+        "human": "2017-Q2",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 64445,
+        "human": "2017-Q2",
+        "platform": 14,
+        "y": 2017
+      },
+      {
+        "id": 64446,
+        "human": "2017-Q2",
+        "platform": 3,
+        "y": 2017
+      },
+      {
+        "id": 136285,
+        "human": "2015-Apr-29",
+        "platform": 49,
+        "y": 2015
+      }
+    ],
+    "slug": "shovel-knight-treasure-trove"
+  },
+  "7444": {
+    "id": 7444,
+    "alternative_names": [
+      {
+        "id": 12943,
+        "comment": "Other",
+        "name": "Shovel Knight: Treasure Trove"
+      },
+      {
+        "id": 12944,
+        "comment": "Other",
+        "name": "Shovel Knight: Shovel of Hope"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 118846,
+        "category": 3,
+        "name": "Shovel Knight",
+        "uid": "42034",
+        "url": "https://www.giantbomb.com/games/3030-42034/",
+        "year": 2014
+      },
+      {
+        "id": 188842,
+        "category": 10,
+        "name": "Shovel Knight",
+        "uid": "UC2XU8A-Ievj-Prtpacxuexw",
+        "url": "https://gaming.youtube.com/game/UC2XU8A-Ievj-Prtpacxuexw"
+      },
+      {
+        "id": 246238,
+        "category": 14,
+        "name": "Shovel Knight",
+        "uid": "138583"
+      }
+    ],
+    "name": "Shovel Knight",
+    "platforms": [
+      3,
+      6,
+      9,
+      14,
+      37,
+      41,
+      45,
+      46,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 19297,
+        "human": "2014-Jun-26",
+        "platform": 6,
+        "y": 2014
+      },
+      {
+        "id": 28441,
+        "human": "2014-Jun-26",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 28442,
+        "human": "2014-Jun-26",
+        "platform": 37,
+        "y": 2014
+      },
+      {
+        "id": 51550,
+        "human": "2014-Sep-13",
+        "platform": 14,
+        "y": 2014
+      },
+      {
+        "id": 51551,
+        "human": "2014-Oct-08",
+        "platform": 3,
+        "y": 2014
+      },
+      {
+        "id": 51552,
+        "human": "2015-Apr-21",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 51553,
+        "human": "2015-Apr-21",
+        "platform": 46,
+        "y": 2015
+      },
+      {
+        "id": 51554,
+        "human": "2015-Apr-21",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 51555,
+        "human": "2015-Apr-29",
+        "platform": 49,
+        "y": 2015
+      },
+      {
+        "id": 105512,
+        "human": "2015-Apr-23",
+        "platform": 45,
+        "y": 2015
+      },
+      {
+        "id": 134086,
+        "human": "2015-Apr-21",
+        "platform": 45,
+        "y": 2015
+      },
+      {
+        "id": 134087,
+        "human": "2015-Apr-23",
+        "platform": 45,
+        "y": 2015
+      },
+      {
+        "id": 143129,
+        "human": "2014-Jun-26",
+        "platform": 37,
+        "y": 2014
+      },
+      {
+        "id": 143130,
+        "human": "2015-Jun-11",
+        "platform": 37,
+        "y": 2015
+      },
+      {
+        "id": 146502,
+        "human": "2014-Jun-26",
+        "platform": 41,
+        "y": 2014
+      },
+      {
+        "id": 146503,
+        "human": "2014-Nov-05",
+        "platform": 41,
+        "y": 2014
+      }
+    ],
+    "slug": "shovel-knight"
+  },
+  "14362": {
+    "id": 14362,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 109868,
+        "category": 3,
+        "name": "Detroit: Become Human",
+        "uid": "51351",
+        "url": "https://www.giantbomb.com/games/3030-51351/",
+        "year": 2018
+      },
+      {
+        "id": 190079,
+        "category": 10,
+        "name": "Detroit: Become Human",
+        "uid": "UCwJMs8uNMF6I3eyfDjCv4OA",
+        "url": "https://gaming.youtube.com/game/UCwJMs8uNMF6I3eyfDjCv4OA"
+      },
+      {
+        "id": 1191082,
+        "category": 14,
+        "name": "Detroit: Become Human",
+        "uid": "497480"
+      }
+    ],
+    "name": "Detroit: Become Human",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 152874,
+        "human": "2018-May-25",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 179968,
+        "human": "2019-Dec-12",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "detroit-become-human--1"
+  },
+  "110121": {
+    "id": 110121,
+    "alternative_names": [
+      {
+        "id": 24853,
+        "comment": "Japanese title",
+        "name": "\u30df\u30ce\u30ea\u30a2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1601169,
+        "category": 1,
+        "name": "Minoria",
+        "uid": "940910",
+        "url": "https://store.steampowered.com/app/940910",
+        "year": 2019
+      },
+      {
+        "id": 1775852,
+        "category": 3,
+        "name": "Minoria",
+        "uid": "73755",
+        "url": "https://www.giantbomb.com/games/3030-73755/",
+        "year": 2019
+      }
+    ],
+    "name": "Minoria",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 173650,
+        "human": "2019-Aug-27",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 185078,
+        "human": "2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "minoria"
+  },
+  "27241": {
+    "id": 27241,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 186543,
+        "category": 3,
+        "name": "Shovel Knight: King of the Cards",
+        "uid": "61126",
+        "url": "https://www.giantbomb.com/games/3030-61126/",
+        "year": 2018
+      }
+    ],
+    "name": "Shovel Knight: King of Cards",
+    "platforms": [
+      3,
+      6,
+      9,
+      14,
+      37,
+      41,
+      46,
+      48,
+      49,
+      130,
+      132
+    ],
+    "release_dates": [
+      {
+        "id": 179752,
+        "human": "2019-Dec-10",
+        "platform": 41,
+        "y": 2019
+      },
+      {
+        "id": 179753,
+        "human": "2019-Dec-10",
+        "platform": 37,
+        "y": 2019
+      },
+      {
+        "id": 179754,
+        "human": "2019-Dec-10",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 179755,
+        "human": "2019-Dec-10",
+        "platform": 14,
+        "y": 2019
+      },
+      {
+        "id": 179756,
+        "human": "2019-Dec-10",
+        "platform": 3,
+        "y": 2019
+      },
+      {
+        "id": 179757,
+        "human": "2019-Dec-10",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 179758,
+        "human": "2019-Dec-10",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 179759,
+        "human": "2019-Dec-10",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 182952,
+        "human": "2019-Dec-10",
+        "platform": 132,
+        "y": 2019
+      },
+      {
+        "id": 182953,
+        "human": "2019-Dec-10",
+        "platform": 9,
+        "y": 2019
+      },
+      {
+        "id": 182954,
+        "human": "2019-Dec-10",
+        "platform": 46,
+        "y": 2019
+      }
+    ],
+    "slug": "shovel-knight-king-of-cards"
+  },
+  "28168": {
+    "id": 28168,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102827,
+        "category": 3,
+        "name": "Code Vein",
+        "uid": "59194",
+        "url": "https://www.giantbomb.com/games/3030-59194/",
+        "year": 2018
+      },
+      {
+        "id": 343181,
+        "category": 14,
+        "name": "Code Vein",
+        "uid": "496697",
+        "url": "https://www.giantbomb.com/game/3030-59194/"
+      },
+      {
+        "id": 1726390,
+        "category": 1,
+        "name": "CODE VEIN",
+        "uid": "678960",
+        "url": "https://store.steampowered.com/app/678960",
+        "year": 2019
+      }
+    ],
+    "name": "Code Vein",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 171074,
+        "human": "2019-Sep-27",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 171075,
+        "human": "2019-Sep-27",
+        "platform": 49,
+        "y": 2019
+      },
+      {
+        "id": 171076,
+        "human": "2019-Sep-27",
+        "platform": 48,
+        "y": 2019
+      }
+    ],
+    "slug": "code-vein"
+  },
+  "126179": {
+    "id": 126179,
+    "alternative_names": [
+      {
+        "id": 27382,
+        "name": "DJMax Respect V"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1837433,
+        "category": 1,
+        "name": "DJMAX RESPECT V",
+        "uid": "960170",
+        "url": "https://store.steampowered.com/app/960170",
+        "year": 0
+      }
+    ],
+    "name": "DJMAX RESPECT V",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 182018,
+        "human": "2019-Dec-18",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "djmax-respect-v"
+  },
+  "54548": {
+    "id": 54548,
+    "alternative_names": [
+      {
+        "id": 23311,
+        "name": "Dragon Quest Builders 2: The God of Destruction Malroth and the Vacant Island"
+      },
+      {
+        "id": 25192,
+        "comment": "Japanese title",
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30af\u30a8\u30b9\u30c8\u30d3\u30eb\u30c0\u30fc\u30ba \u30a2\u30ec\u30d5\u30ac\u30eb\u30c9\u3092\u5fa9\u6d3b\u305b\u3088 2"
+      },
+      {
+        "id": 27370,
+        "name": "DRAGON QUEST BUILDERS\u2122 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101383,
+        "category": 3,
+        "name": "Dragon Quest Builders 2",
+        "uid": "60667",
+        "url": "https://www.giantbomb.com/games/3030-60667/"
+      },
+      {
+        "id": 1696970,
+        "category": 14,
+        "name": "Dragon Quest Builders 2",
+        "uid": "498210",
+        "url": "https://www.giantbomb.com/game/3030-60667/"
+      },
+      {
+        "id": 1708286,
+        "category": 10,
+        "name": "Dragon Quest Builders 2",
+        "uid": "UCkaHUWpmT4nO05vIGuxrS-Q",
+        "url": "https://www.youtube.com/watch?v=UCkaHUWpmT4nO05vIGuxrS-Q"
+      },
+      {
+        "id": 1708289,
+        "category": 10,
+        "name": "Dragon Quest Builders 2",
+        "uid": "UCRJor5XkrfZ_EY0b7cx7IpA",
+        "url": "https://www.youtube.com/watch?v=UCRJor5XkrfZ_EY0b7cx7IpA"
+      },
+      {
+        "id": 1708305,
+        "category": 10,
+        "name": "Dragon Quest Builders 2",
+        "uid": "UCep1n7eZehPTLM07ttMPjTA",
+        "url": "https://www.youtube.com/watch?v=UCep1n7eZehPTLM07ttMPjTA"
+      },
+      {
+        "id": 1836958,
+        "category": 1,
+        "name": "DRAGON QUEST BUILDERS 2",
+        "uid": "1072420",
+        "url": "https://store.steampowered.com/app/1072420",
+        "year": 2019
+      }
+    ],
+    "name": "Dragon Quest Builders 2",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 157761,
+        "human": "2018-Dec-20",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 157762,
+        "human": "2018-Dec-20",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 165058,
+        "human": "2019-Jul-12",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 165059,
+        "human": "2019-Jul-12",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 165098,
+        "human": "2019-Jul-12",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 165099,
+        "human": "2019-Jul-12",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 179903,
+        "human": "2019-Dec-10",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "dragon-quest-builders-2"
+  },
+  "119373": {
+    "id": 119373,
+    "alternative_names": [
+      {
+        "id": 27438,
+        "name": "SaGa Scarlet Grace Scarlet Ambition"
+      },
+      {
+        "id": 27439,
+        "name": "SaGa SCARLET GRACE: AMBITIONS\u2122"
+      }
+    ],
+    "category": 0,
+    "name": "SaGa SCARLET GRACE: AMBITIONS",
+    "platforms": [
+      6,
+      34,
+      39,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 175554,
+        "human": "2019-Dec-03",
+        "platform": 34,
+        "y": 2019
+      },
+      {
+        "id": 175555,
+        "human": "2019-Dec-03",
+        "platform": 39,
+        "y": 2019
+      },
+      {
+        "id": 175556,
+        "human": "2019-Dec-03",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 175557,
+        "human": "2019-Dec-03",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 175558,
+        "human": "2019-Dec-03",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 180708,
+        "human": "2018-Aug-02",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 180709,
+        "human": "2018-Aug-02",
+        "platform": 48,
+        "y": 2018
+      }
+    ],
+    "slug": "saga-scarlet-grace-ambitions"
+  },
+  "127153": {
+    "id": 127153,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1837434,
+        "category": 1,
+        "name": "Baldr Sky",
+        "uid": "741140",
+        "url": "https://store.steampowered.com/app/741140",
+        "year": 0
+      }
+    ],
+    "name": "Baldr Sky",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 182121,
+        "human": "2019-Dec-20",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "baldr-sky"
+  },
+  "68271": {
+    "id": 68271,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1637241,
+        "category": 1,
+        "name": "DARQ",
+        "uid": "433550",
+        "url": "https://store.steampowered.com/app/433550",
+        "year": 2019
+      },
+      {
+        "id": 1746983,
+        "category": 3,
+        "name": "Darq",
+        "uid": "74711",
+        "url": "https://www.giantbomb.com/games/3030-74711/",
+        "year": 2019
+      }
+    ],
+    "name": "Darq",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 174279,
+        "human": "2019-Aug-15",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "darq"
+  },
+  "1595": {
+    "id": 1595,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 120653,
+        "category": 3,
+        "name": "Star Citizen",
+        "uid": "40011",
+        "url": "https://www.giantbomb.com/games/3030-40011/"
+      },
+      {
+        "id": 190128,
+        "category": 10,
+        "name": "Star Citizen",
+        "uid": "UCxc2nb2R5D_0rYSwuf0Rp_A",
+        "url": "https://gaming.youtube.com/game/UCxc2nb2R5D_0rYSwuf0Rp_A"
+      },
+      {
+        "id": 245254,
+        "category": 14,
+        "name": "Star Citizen",
+        "uid": "71375"
+      }
+    ],
+    "name": "Star Citizen",
+    "platforms": [
+      3,
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 163819,
+        "human": "TBD",
+        "platform": 6
+      },
+      {
+        "id": 163820,
+        "human": "TBD",
+        "platform": 3
+      }
+    ],
+    "slug": "star-citizen"
   },
   "7360": {
     "id": 7360,
@@ -2191,39 +4353,6 @@
     ],
     "slug": "get-to-the-orange-door"
   },
-  "126179": {
-    "id": 126179,
-    "alternative_names": [
-      {
-        "id": 27382,
-        "name": "DJMax Respect V"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1837433,
-        "category": 1,
-        "name": "DJMAX RESPECT V",
-        "uid": "960170",
-        "url": "https://store.steampowered.com/app/960170",
-        "year": 0
-      }
-    ],
-    "name": "DJMAX RESPECT V",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 182018,
-        "human": "2019-Dec-18",
-        "platform": 6,
-        "y": 2019
-      }
-    ],
-    "slug": "djmax-respect-v"
-  },
   "37057": {
     "id": 37057,
     "alternative_names": [
@@ -2989,68 +5118,6 @@
       }
     ],
     "slug": "dota-2"
-  },
-  "122644": {
-    "id": 122644,
-    "category": 2,
-    "name": "HITMAN 2 - New York",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 176578,
-        "human": "2019-Jun-25",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 176579,
-        "human": "2019-Jun-25",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 176580,
-        "human": "2019-Jun-25",
-        "platform": 6,
-        "y": 2019
-      }
-    ],
-    "slug": "hitman-2-new-york"
-  },
-  "122645": {
-    "id": 122645,
-    "category": 2,
-    "name": "HITMAN 2 - Haven Island",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 176581,
-        "human": "2019-Sep-24",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 176582,
-        "human": "2019-Sep-24",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 176583,
-        "human": "2019-Sep-24",
-        "platform": 6,
-        "y": 2019
-      }
-    ],
-    "slug": "hitman-2-haven-island"
   },
   "19474": {
     "id": 19474,
@@ -5146,118 +7213,6 @@
     ],
     "slug": "yakuza-kiwami-2"
   },
-  "25076": {
-    "id": 25076,
-    "alternative_names": [
-      {
-        "id": 7594,
-        "comment": "Acronym",
-        "name": "RDR2"
-      },
-      {
-        "id": 22246,
-        "name": "Red Dead Redemption II"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 105255,
-        "category": 3,
-        "name": "Red Dead Redemption 2",
-        "uid": "56725",
-        "url": "https://www.giantbomb.com/games/3030-56725/",
-        "year": 2018
-      },
-      {
-        "id": 210828,
-        "category": 11,
-        "name": "Red Dead Redemption 2",
-        "uid": "BPSWGQBW7R3G",
-        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPSWGQBW7R3G",
-        "year": 2018
-      },
-      {
-        "id": 248276,
-        "category": 14,
-        "name": "Red Dead Redemption 2",
-        "uid": "493959"
-      },
-      {
-        "id": 1708337,
-        "category": 10,
-        "name": "Red Dead Redemption 2",
-        "uid": "UCxlDdW3aW7Sht6pM0TJ4Tag",
-        "url": "https://www.youtube.com/watch?v=UCxlDdW3aW7Sht6pM0TJ4Tag"
-      },
-      {
-        "id": 1837431,
-        "category": 1,
-        "name": "Red Dead Redemption 2",
-        "uid": "1174180",
-        "url": "https://store.steampowered.com/app/1174180",
-        "year": 2019
-      }
-    ],
-    "name": "Red Dead Redemption 2",
-    "platforms": [
-      6,
-      48,
-      49,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 137262,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 137263,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137264,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137265,
-        "human": "2018-Oct-26",
-        "platform": 48,
-        "y": 2018
-      },
-      {
-        "id": 137266,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 147060,
-        "human": "2018-Oct-26",
-        "platform": 49,
-        "y": 2018
-      },
-      {
-        "id": 177006,
-        "human": "2019-Nov-05",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 179286,
-        "human": "2019-Nov-19",
-        "platform": 170,
-        "y": 2019
-      }
-    ],
-    "slug": "red-dead-redemption-2"
-  },
   "103329": {
     "id": 103329,
     "category": 0,
@@ -6352,84 +8307,6 @@
     ],
     "slug": "metro-exodus-master-artyom-edition"
   },
-  "74701": {
-    "id": 74701,
-    "alternative_names": [
-      {
-        "id": 22422,
-        "comment": "Other",
-        "name": "Jedi: Fallen Order"
-      },
-      {
-        "id": 26531,
-        "name": "STAR WARS Jedi: Fallen Order\u2122"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 576336,
-        "category": 3,
-        "name": "Untitled Respawn Star Wars Game",
-        "uid": "66000",
-        "url": "https://www.giantbomb.com/games/3030-66000/",
-        "year": 2020
-      },
-      {
-        "id": 1836038,
-        "category": 1,
-        "name": "STAR WARS Jedi: Fallen Order\u2122 ",
-        "uid": "1172380",
-        "url": "https://store.steampowered.com/app/1172380",
-        "year": 2019
-      }
-    ],
-    "name": "Star Wars Jedi: Fallen Order",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 168143,
-        "human": "2019-Nov-15",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 168144,
-        "human": "2019-Nov-15",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 168145,
-        "human": "2019-Nov-15",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 168146,
-        "human": "2019-Nov-15",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 168147,
-        "human": "2019-Nov-15",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 168148,
-        "human": "2019-Nov-15",
-        "platform": 49,
-        "y": 2019
-      }
-    ],
-    "slug": "star-wars-jedi-fallen-order"
-  },
   "15830": {
     "id": 15830,
     "alternative_names": [
@@ -6781,83 +8658,6 @@
       }
     ],
     "slug": "dragon-ball-fighterz"
-  },
-  "76253": {
-    "id": 76253,
-    "alternative_names": [
-      {
-        "id": 12809,
-        "name": "Devil May Cry V"
-      },
-      {
-        "id": 23155,
-        "name": "DMC 5"
-      },
-      {
-        "id": 23156,
-        "name": "DMC V"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1457753,
-        "category": 3,
-        "name": "Devil May Cry 5",
-        "uid": "68910",
-        "url": "https://www.giantbomb.com/games/3030-68910/",
-        "year": 2019
-      },
-      {
-        "id": 1697303,
-        "category": 14,
-        "name": "Devil May Cry 5",
-        "uid": "506412",
-        "url": "https://www.giantbomb.com/game/3030-68910/"
-      },
-      {
-        "id": 1708273,
-        "category": 10,
-        "name": "Devil May Cry 5",
-        "uid": "UCUwxRcd4PE8hEf8JYjCbYvQ",
-        "url": "https://www.youtube.com/watch?v=UCUwxRcd4PE8hEf8JYjCbYvQ"
-      },
-      {
-        "id": 1712407,
-        "category": 1,
-        "name": "Devil May Cry 5",
-        "uid": "601150",
-        "url": "https://store.steampowered.com/app/601150",
-        "year": 2019
-      }
-    ],
-    "name": "Devil May Cry 5",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 161927,
-        "human": "2019-Mar-08",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 161928,
-        "human": "2019-Mar-08",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 161929,
-        "human": "2019-Mar-08",
-        "platform": 49,
-        "y": 2019
-      }
-    ],
-    "slug": "devil-may-cry-5"
   },
   "9835": {
     "id": 9835,
@@ -7549,73 +9349,6 @@
       }
     ],
     "slug": "touhou-luna-nights"
-  },
-  "119373": {
-    "id": 119373,
-    "alternative_names": [
-      {
-        "id": 27438,
-        "name": "SaGa Scarlet Grace Scarlet Ambition"
-      },
-      {
-        "id": 27439,
-        "name": "SaGa SCARLET GRACE: AMBITIONS\u2122"
-      }
-    ],
-    "category": 0,
-    "name": "SaGa SCARLET GRACE: AMBITIONS",
-    "platforms": [
-      6,
-      34,
-      39,
-      48,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 175554,
-        "human": "2019-Dec-03",
-        "platform": 34,
-        "y": 2019
-      },
-      {
-        "id": 175555,
-        "human": "2019-Dec-03",
-        "platform": 39,
-        "y": 2019
-      },
-      {
-        "id": 175556,
-        "human": "2019-Dec-03",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 175557,
-        "human": "2019-Dec-03",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 175558,
-        "human": "2019-Dec-03",
-        "platform": 130,
-        "y": 2019
-      },
-      {
-        "id": 180708,
-        "human": "2018-Aug-02",
-        "platform": 130,
-        "y": 2018
-      },
-      {
-        "id": 180709,
-        "human": "2018-Aug-02",
-        "platform": 48,
-        "y": 2018
-      }
-    ],
-    "slug": "saga-scarlet-grace-ambitions"
   },
   "120551": {
     "id": 120551,
@@ -9434,68 +11167,6 @@
     ],
     "slug": "monster-boy-and-the-cursed-kingdom"
   },
-  "103018": {
-    "id": 103018,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 916536,
-        "category": 1,
-        "name": "Team Sonic Racing\u2122",
-        "uid": "785260",
-        "url": "https://store.steampowered.com/app/785260",
-        "year": 0
-      },
-      {
-        "id": 1457583,
-        "category": 3,
-        "name": "Team Sonic Racing",
-        "uid": "68739",
-        "url": "https://www.giantbomb.com/games/3030-68739/",
-        "year": 2018
-      },
-      {
-        "id": 1709269,
-        "category": 14,
-        "name": "Team Sonic Racing",
-        "uid": "506235"
-      }
-    ],
-    "name": "Team Sonic Racing",
-    "platforms": [
-      6,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 185082,
-        "human": "2019-May-21",
-        "platform": 130,
-        "y": 2019
-      },
-      {
-        "id": 185083,
-        "human": "2019-May-21",
-        "platform": 48,
-        "y": 2019
-      },
-      {
-        "id": 185084,
-        "human": "2019-May-21",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 185085,
-        "human": "2019-May-21",
-        "platform": 6,
-        "y": 2019
-      }
-    ],
-    "slug": "team-sonic-racing"
-  },
   "21610": {
     "id": 21610,
     "alternative_names": [
@@ -9605,62 +11276,6 @@
       }
     ],
     "slug": "phoenix-wright-ace-attorney-trilogy"
-  },
-  "28168": {
-    "id": 28168,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 102827,
-        "category": 3,
-        "name": "Code Vein",
-        "uid": "59194",
-        "url": "https://www.giantbomb.com/games/3030-59194/",
-        "year": 2018
-      },
-      {
-        "id": 343181,
-        "category": 14,
-        "name": "Code Vein",
-        "uid": "496697",
-        "url": "https://www.giantbomb.com/game/3030-59194/"
-      },
-      {
-        "id": 1726390,
-        "category": 1,
-        "name": "CODE VEIN",
-        "uid": "678960",
-        "url": "https://store.steampowered.com/app/678960",
-        "year": 2019
-      }
-    ],
-    "name": "Code Vein",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 171074,
-        "human": "2019-Sep-27",
-        "platform": 6,
-        "y": 2019
-      },
-      {
-        "id": 171075,
-        "human": "2019-Sep-27",
-        "platform": 49,
-        "y": 2019
-      },
-      {
-        "id": 171076,
-        "human": "2019-Sep-27",
-        "platform": 48,
-        "y": 2019
-      }
-    ],
-    "slug": "code-vein"
   },
   "11775": {
     "id": 11775,
@@ -10337,5 +11952,71 @@
       }
     ],
     "slug": "destiny-2"
+  },
+  "3070": {
+    "id": 3070,
+    "alternative_names": [
+      {
+        "id": 9017,
+        "comment": "Acronym",
+        "name": "ets2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12812,
+        "category": 1,
+        "name": "Euro Truck Simulator 2",
+        "uid": "227300"
+      },
+      {
+        "id": 120478,
+        "category": 3,
+        "name": "Euro Truck Simulator 2",
+        "uid": "40197",
+        "url": "https://www.giantbomb.com/games/3030-40197/",
+        "year": 2012
+      },
+      {
+        "id": 189158,
+        "category": 10,
+        "name": "Euro Truck Simulator 2",
+        "uid": "UCDvcF2B9Aj2anJOMbvtE2bw",
+        "url": "https://gaming.youtube.com/game/UCDvcF2B9Aj2anJOMbvtE2bw"
+      },
+      {
+        "id": 245089,
+        "category": 14,
+        "name": "Euro Truck Simulator 2",
+        "uid": "75467"
+      }
+    ],
+    "name": "Euro Truck Simulator 2",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 6761,
+        "human": "2012-Oct-19",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 51307,
+        "human": "2015-Jan-29",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 122647,
+        "human": "2012-Oct-18",
+        "platform": 6,
+        "y": 2012
+      }
+    ],
+    "slug": "euro-truck-simulator-2"
   }
 }
