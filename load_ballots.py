@@ -183,7 +183,7 @@ def print_reviews(ballots,
 
 
 if __name__ == '__main__':
-    ballot_year = '2018'
+    ballot_year = '2019'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
     parsing_params = get_parsing_params(ballot_year=ballot_year)
     fake_author_name = False
