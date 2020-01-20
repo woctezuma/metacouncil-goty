@@ -71,7 +71,7 @@ The white-list allows to prevent the automatic disqualification of some games du
 ## Results
 
 Results are displayed:
--   on the Wiki ([GotY 2018](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2018), [GotY 2019](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2019)), [GotD 201X](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Decade_201X)),
+-   on the Wiki ([GotY 2018](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2018), [GotY 2019](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2019), [GotD 201X](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Decade_201X)),
 -   on MetaCouncil ([GotY 2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/), [GotY 2019](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019-results.1766/), [GotD 201X](https://metacouncil.com/threads/metacouncils-pc-games-of-the-decade-awards-2010-2019-results.1771/)).
 
 ## Alternative methods for game name matching
