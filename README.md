@@ -120,7 +120,7 @@ The mismatches observed with the 2018 dataset are counted, and the best performi
 5.  vanilla SteamSpy database with Levenshtein distance: 18 mismatches (same performance with and without constraint). 
 
 In summary, in order to minimize the number of manual edits necessary to extend the database and to fix name mismatches,
-the most promising method involves using the IGSB database with a constraint w.r.t. the release year.
+the most promising method involves using the IGDB database with a constraint w.r.t. the release year.
 
 ## References
 
