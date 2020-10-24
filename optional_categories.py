@@ -6,38 +6,28 @@ from steam_store_utils import get_link_to_store
 
 
 def get_optional_categories():
-    optional_categories = [
+    return [
         'best_dlc',
         'best_early_access',
         'best_vr',
         'best_turd',
     ]
 
-    return optional_categories
-
 
 def get_optional_ballots(ballots, category_name):
-    optional_ballots = [ballots[voter_name][category_name] for voter_name in ballots
+    return [ballots[voter_name][category_name] for voter_name in ballots
                         if category_name in ballots[voter_name]
                         and len(ballots[voter_name][category_name]) > 0]
 
-    return optional_ballots
-
 
 def filter_noise_from_optional_ballots(optional_ballots):
-    filtered_optional_ballots = []
-
-    for element in optional_ballots:
-        if not is_a_noisy_vote(element):
-            filtered_optional_ballots.append(element)
-
-    return filtered_optional_ballots
+    return [
+        element for element in optional_ballots if not is_a_noisy_vote(element)
+    ]
 
 
 def get_dummy_field():
-    dummy_field = 'dummy_preferences'
-
-    return dummy_field
+    return 'dummy_preferences'
 
 
 def format_optional_ballots_for_igdb_matching(optional_ballots,
@@ -47,8 +37,7 @@ def format_optional_ballots_for_igdb_matching(optional_ballots,
 
     dummy_voter = 'dummy_voter'
 
-    formatted_optional_ballots = dict()
-    formatted_optional_ballots[dummy_voter] = dict()
+    formatted_optional_ballots = {dummy_voter: {}}
     formatted_optional_ballots[dummy_voter][dummy_field] = dict(enumerate(optional_ballots))
 
     return formatted_optional_ballots
@@ -68,7 +57,7 @@ def match_optional_ballots(optional_ballots,
     from match_names import find_closest_app_id
 
     seen_game_names = set()
-    matches = dict()
+    matches = {}
     matched_optional_ballots = []
 
     dummy_field = get_dummy_field()
@@ -156,17 +145,13 @@ def match_optional_ballots(optional_ballots,
             if app_id_release_date is None:
                 app_id_release_date = 'an unknown date'
 
-            matches[raw_name] = dict()
+            matches[raw_name] = {}
             matches[raw_name]['matched_appID'] = appID
             matches[raw_name]['matched_name'] = app_name
             matches[raw_name]['matched_release_date'] = app_id_release_date
             matches[raw_name]['matched_url'] = app_url
 
-            if use_igdb:
-                id_description = 'IGDB id'
-            else:
-                id_description = 'AppID'
-
+            id_description = 'IGDB id' if use_igdb else 'AppID'
             print('\t{} ---> {}: {}\t;\t{} ({})'.format(raw_name,
                                                         id_description,
                                                         matches[raw_name]['matched_appID'],
@@ -186,7 +171,7 @@ def match_optional_ballots(optional_ballots,
 
 
 def count_optional_ballots(optional_ballots):
-    optional_counts = dict()
+    optional_counts = {}
 
     for element in optional_ballots:
         try:
@@ -224,11 +209,7 @@ def pretty_display(ranking):
         else:
             increment += 1
 
-        if num_votes > 1:
-            my_str = ' with #votes = '
-        else:
-            my_str = ' with #vote = '
-
+        my_str = ' with #votes = ' if num_votes > 1 else ' with #vote = '
         print('{0:2} | '.format(rank)
               + game_name.strip()
               + my_str + str(num_votes)

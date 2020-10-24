@@ -1,10 +1,11 @@
 def get_parsing_params(ballot_year='2018',
                        num_goty_games_per_voter=5,
                        num_gotd_games_per_voter=10):
-    parsing_params = dict()
+    parsing_params = {
+        'num_goty_games_per_voter': num_goty_games_per_voter,
+        'num_gotd_games_per_voter': num_gotd_games_per_voter,
+    }
 
-    parsing_params['num_goty_games_per_voter'] = num_goty_games_per_voter
-    parsing_params['num_gotd_games_per_voter'] = num_gotd_games_per_voter
 
     goty_description_index = num_goty_games_per_voter + 1
     gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
@@ -23,7 +24,6 @@ def get_parsing_params(ballot_year='2018',
         parsing_params['best_dlc'] = -3
         parsing_params['best_early_access'] = -2
         parsing_params['best_vr'] = None
-        parsing_params['best_turd'] = -1
     else:
         parsing_params['gotd_voted_games'] = [
             goty_description_index + i
@@ -34,8 +34,7 @@ def get_parsing_params(ballot_year='2018',
         parsing_params['best_dlc'] = -4
         parsing_params['best_early_access'] = -3
         parsing_params['best_vr'] = -2
-        parsing_params['best_turd'] = -1
-
+    parsing_params['best_turd'] = -1
     return parsing_params
 
 
@@ -61,7 +60,7 @@ def parse_votes(data,
 
     quote = '"'
 
-    ballots = dict()
+    ballots = {}
 
     for element in data:
         # Tokenize
@@ -101,10 +100,10 @@ def parse_votes(data,
             best_vr = None
 
         # Store the parsed data in a dictionary
-        ballots[voter_name] = dict()
+        ballots[voter_name] = {}
 
-        if len(voted_games) > 0:
-            ballots[voter_name][goty_field] = dict()
+        if voted_games:
+            ballots[voter_name][goty_field] = {}
             for (i, game_name) in enumerate(voted_games):
                 position = num_goty_games_per_voter - i
                 ballots[voter_name][goty_field][position] = game_name
@@ -114,8 +113,8 @@ def parse_votes(data,
         ballots[voter_name]['best_early_access'] = best_early_access
         ballots[voter_name]['best_turd'] = best_turd
 
-        if len(gotd_voted_games) > 0:
-            ballots[voter_name][gotd_field] = dict()
+        if gotd_voted_games:
+            ballots[voter_name][gotd_field] = {}
             for (i, game_name) in enumerate(gotd_voted_games):
                 position = num_gotd_games_per_voter - i
                 ballots[voter_name][gotd_field][position] = game_name
@@ -140,10 +139,8 @@ def load_ballots(input_filename,
     else:
         anonymized_data = load_and_anonymize(input_filename, file_encoding, fake_author_name=fake_author_name)
 
-    ballots = parse_votes(anonymized_data,
+    return parse_votes(anonymized_data,
                           parsing_params)
-
-    return ballots
 
 
 def print_reviews(ballots,
@@ -169,10 +166,10 @@ def print_reviews(ballots,
             # - 'n/a' as the first game for GotY, so that the mandatory field in the form can be bypassed,
             # - no submitted game for the following games for GotY, because the fields were optional anyway.
             continue
-        goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
-
         if goty_app_id == app_id:
             goty_review = ballots[voter_name][goty_review_field]
+
+            goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
 
             if goty_standardized_name not in seen_game_names:
                 seen_game_names.add(goty_standardized_name)

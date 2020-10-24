@@ -70,9 +70,7 @@ def get_default_distance_cut_off_for_difflib():
 
     similarity_cut_off = 0.6
 
-    distance_cut_off = 1 - similarity_cut_off
-
-    return distance_cut_off
+    return 1 - similarity_cut_off
 
 
 def find_closest_app_id(game_name_input,
@@ -130,7 +128,7 @@ def precompute_matches(raw_votes,
                        year_constraint='equality',
                        goty_field='goty_preferences'):
     seen_game_names = set()
-    matches = dict()
+    matches = {}
 
     steamspy_database = load_extended_steamspy_database()
 
@@ -148,11 +146,15 @@ def precompute_matches(raw_votes,
                                                                             use_levenshtein_distance=use_levenshtein_distance,
                                                                             year_constraint=year_constraint)
 
-                    element = dict()
-                    element['input_name'] = raw_name
-                    element['matched_appID'] = closest_appID
-                    element['matched_name'] = [steamspy_database[appID]['name'] for appID in closest_appID]
-                    element['match_distance'] = closest_distance
+                    element = {
+                        'input_name': raw_name,
+                        'matched_appID': closest_appID,
+                        'matched_name': [
+                            steamspy_database[appID]['name']
+                            for appID in closest_appID
+                        ],
+                        'match_distance': closest_distance,
+                    }
 
                     matches[raw_name] = element
 
@@ -201,9 +203,9 @@ def normalize_votes(raw_votes,
     normalized_votes = dict()
 
     for voter_name in raw_votes.keys():
-        normalized_votes[voter_name] = dict()
-        normalized_votes[voter_name]['ballots'] = dict()
-        normalized_votes[voter_name]['distances'] = dict()
+        normalized_votes[voter_name] = {}
+        normalized_votes[voter_name]['ballots'] = {}
+        normalized_votes[voter_name]['distances'] = {}
         for (position, game_name) in raw_votes[voter_name][goty_field].items():
 
             if game_name in matches.keys():

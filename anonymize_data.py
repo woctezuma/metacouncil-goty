@@ -1,11 +1,9 @@
 def get_data_folder():
-    data_folder = 'data/'
-    return data_folder
+    return 'data/'
 
 
 def get_anonymized_file_prefix():
-    anonymized_file_prefix = 'anonymized_'
-    return anonymized_file_prefix
+    return 'anonymized_'
 
 
 def load_input(filename, file_encoding='utf8'):
@@ -31,18 +29,16 @@ def remove_header(data, content_start_criterion='"1"'):
             break
         num_rows_header += 1
 
-    data_content = data[num_rows_header:]
-
-    return data_content
+    return data[num_rows_header:]
 
 
 def get_review_token_indices(ballot_year='2018'):
     # Valid for 2018 and 2019 data
     goty_description_token_index = 30
-    # Only valid for 2019 data
-    gotd_description_token_index = 52
-
     if int(ballot_year) == 2019:
+        # Only valid for 2019 data
+        gotd_description_token_index = 52
+
         review_token_indices = [goty_description_token_index,
                                 gotd_description_token_index]
     else:

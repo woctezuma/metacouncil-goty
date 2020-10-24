@@ -14,20 +14,17 @@ from load_ballots import load_ballots
 def get_link_to_igdb_website(igdb_id,
                              igdb_local_database,
                              hide_dummy_app_id=True):
-    igdb_base_url = 'https://www.igdb.com/games/'
-
     igdb_id_as_str = str(igdb_id)
 
     igdb_data = igdb_local_database[igdb_id_as_str]
     slug = igdb_data['slug']
 
     if int(igdb_id) > 0:
+        igdb_base_url = 'https://www.igdb.com/games/'
+
         link_to_store = '[URL=' + igdb_base_url + slug + '/]' + igdb_id_as_str + '[/URL]'
     else:
-        if hide_dummy_app_id:
-            link_to_store = 'n/a'
-        else:
-            link_to_store = igdb_id_as_str
+        link_to_store = 'n/a' if hide_dummy_app_id else igdb_id_as_str
     return link_to_store
 
 
@@ -38,16 +35,18 @@ def get_igdb_human_release_dates(igdb_id,
     igdb_data = igdb_local_database[igdb_id_as_str]
 
     try:
-        human_release_dates = set(
+        human_release_dates = {
             date['human']
             for date in igdb_data['release_dates']
-            if 'human' in date and (date['platform'] in get_pc_platform_range())
-        )
+            if 'human' in date
+            and (date['platform'] in get_pc_platform_range())
+        }
+
     except KeyError:
         # Unknown release date
         human_release_dates = [None]
 
-    if len(human_release_dates) > 0:
+    if human_release_dates:
         human_release_date_to_remember = max(human_release_dates)
     else:
         human_release_date_to_remember = None
@@ -58,29 +57,25 @@ def get_igdb_human_release_dates(igdb_id,
 def get_igdb_release_years(igdb_data,
                            target_release_year=None):
     try:
-        release_years = set(
-            date['y']
-            for date in igdb_data['release_dates']
-            if 'y' in date and (date['platform'] in get_pc_platform_range())
-        )
+        release_years = {date['y'] for date in igdb_data['release_dates']
+                    if 'y' in date and (date['platform'] in get_pc_platform_range())}
     except KeyError:
         # Unknown release date
         release_years = [None]
 
     year_to_remember = -1
 
-    if target_release_year is not None:
+    if target_release_year is not None and release_years:
         target_release_year_as_int = int(target_release_year)
 
-        if len(release_years) > 0:
-            if target_release_year_as_int in release_years:
-                year_to_remember = target_release_year_as_int
-            else:
-                the_most_recent_date = max(release_years)
-                year_to_remember = the_most_recent_date
+        if target_release_year_as_int in release_years:
+            year_to_remember = target_release_year_as_int
+        else:
+            the_most_recent_date = max(release_years)
+            year_to_remember = the_most_recent_date
 
-                if year_to_remember is None:
-                    year_to_remember = -1
+            if year_to_remember is None:
+                year_to_remember = -1
 
     return release_years, year_to_remember
 
@@ -111,7 +106,7 @@ def match_names_with_igdb(raw_votes,
                           year_constraint='equality'):
     seen_game_names = set()
     igdb_match_database = dict()
-    igdb_local_database = dict()
+    igdb_local_database = {}
 
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter][goty_field].values():
@@ -197,11 +192,11 @@ def print_igdb_matches(igdb_match_database,
                 cleaned_release_years = [int(year) for year in release_years if year is not None]
 
                 if year_constraint == 'equality':
-                    constraint_is_okay = any(year == int(constrained_release_year) for year in cleaned_release_years)
-                elif year_constraint == 'minimum':
-                    constraint_is_okay = any(year >= int(constrained_release_year) for year in cleaned_release_years)
+                    constraint_is_okay = int(constrained_release_year) in cleaned_release_years
                 elif year_constraint == 'maximum':
                     constraint_is_okay = any(year <= int(constrained_release_year) for year in cleaned_release_years)
+                elif year_constraint == 'minimum':
+                    constraint_is_okay = any(year >= int(constrained_release_year) for year in cleaned_release_years)
                 else:
                     # There is an issue if a constrained release year is provided without a valid type of constraint.
                     constraint_is_okay = False

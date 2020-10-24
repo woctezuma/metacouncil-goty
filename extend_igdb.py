@@ -15,9 +15,15 @@ def get_file_name_for_fixes_to_igdb_database(release_year=None,
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + prefix + 'igdb_' + database_type + '_database' + suffix + '.json'
-
-    return file_name
+    return (
+        get_data_folder()
+        + prefix
+        + 'igdb_'
+        + database_type
+        + '_database'
+        + suffix
+        + '.json'
+    )
 
 
 def load_fixes_to_igdb_database(release_year=None,
@@ -33,23 +39,19 @@ def load_fixes_to_igdb_database(release_year=None,
             fixes_to_igdb_database = json.load(f)
     except FileNotFoundError:
         print('File {} not found.'.format(file_name))
-        fixes_to_igdb_database = dict()
+        fixes_to_igdb_database = {}
 
     return fixes_to_igdb_database
 
 
 def load_fixes_to_igdb_local_database(release_year=None):
-    fixes_to_igdb_database = load_fixes_to_igdb_database(release_year=release_year,
+    return load_fixes_to_igdb_database(release_year=release_year,
                                                          database_type='local')
-
-    return fixes_to_igdb_database
 
 
 def load_fixes_to_igdb_match_database(release_year=None):
-    fixes_to_igdb_database = load_fixes_to_igdb_database(release_year=release_year,
+    return load_fixes_to_igdb_database(release_year=release_year,
                                                          database_type='match')
-
-    return fixes_to_igdb_database
 
 
 def extend_igdb_local_database(release_year=None,
@@ -78,11 +80,10 @@ def extend_igdb_match_database(release_year=None,
 
     extended_igdb_match_database = igdb_match_database
     for app_name in fixes_to_igdb_match_database.keys():
-        if app_name in igdb_match_database.keys():
-            if verbose:
-                print('Query name {} already exists in IGDB match database. Match will be overwritten.'.format(
-                    app_name
-                ))
+        if app_name in igdb_match_database.keys() and verbose:
+            print('Query name {} already exists in IGDB match database. Match will be overwritten.'.format(
+                app_name
+            ))
         extended_igdb_match_database[app_name] = fixes_to_igdb_match_database[app_name]
 
     return extended_igdb_match_database

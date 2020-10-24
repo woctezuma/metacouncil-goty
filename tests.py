@@ -97,7 +97,6 @@ class TestLoadBallotsMethods(unittest.TestCase):
                 self.assertEqual(parsing_params['best_dlc'], -3)
                 self.assertEqual(parsing_params['best_early_access'], -2)
                 self.assertEqual(parsing_params['best_vr'], None)
-                self.assertEqual(parsing_params['best_turd'], -1)
             else:
                 self.assertEqual(len(parsing_params['gotd_voted_games']), num_gotd_games_per_voter)
                 self.assertEqual(parsing_params['gotd_description'], gotd_description_index)
@@ -105,7 +104,8 @@ class TestLoadBallotsMethods(unittest.TestCase):
                 self.assertEqual(parsing_params['best_dlc'], -4)
                 self.assertEqual(parsing_params['best_early_access'], -3)
                 self.assertEqual(parsing_params['best_vr'], -2)
-                self.assertEqual(parsing_params['best_turd'], -1)
+
+            self.assertEqual(parsing_params['best_turd'], -1)
 
     def test_load_unanonymized_ballots(self):
         ballot_year = '2018'
@@ -169,7 +169,7 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
 
         # Add dummy vote for a game disqualified
         ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         ballots['dummy_voter_name']['goty_preferences'][1] = "Marvel's Spider-Man"  # exclusive to PS4
 
         (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
@@ -199,9 +199,7 @@ class TestMatchNamesMethods(unittest.TestCase):
     def get_ballots(ballot_year='2018'):
         input_filename = 'anonymized_dummy_goty_awards_' + ballot_year + '.csv'
 
-        ballots = load_ballots.load_ballots(input_filename)
-
-        return ballots
+        return load_ballots.load_ballots(input_filename)
 
     def test_precompute_matches(self):
         ballot_year = '2018'
@@ -254,7 +252,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
         # Add dummy vote for a game released in another year
         ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         ballots['dummy_voter_name']['goty_preferences'][1] = "Half-Life"  # released in 1998
 
         (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
@@ -469,18 +467,22 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     @staticmethod
     def get_read_dead_redemption_two():
-        igdb_data = {'id': 25076, 'name': 'Red Dead Redemption 2', 'platforms': [6, 48, 49, 170],
-                     'release_dates': [{'id': 137262, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
-                                       {'id': 137263, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
-                                       {'id': 137264, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
-                                       {'id': 137265, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
-                                       {'id': 137266, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
-                                       {'id': 147060, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
-                                       {'id': 177006, 'human': '2019-Nov-05', 'platform': 6, 'y': 2019},
-                                       {'id': 179286, 'human': '2019-Nov-19', 'platform': 170, 'y': 2019}],
-                     'slug': 'red-dead-redemption-2'}
-
-        return igdb_data
+        return {
+            'id': 25076,
+            'name': 'Red Dead Redemption 2',
+            'platforms': [6, 48, 49, 170],
+            'release_dates': [
+                {'id': 137262, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
+                {'id': 137263, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
+                {'id': 137264, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
+                {'id': 137265, 'human': '2018-Oct-26', 'platform': 48, 'y': 2018},
+                {'id': 137266, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
+                {'id': 147060, 'human': '2018-Oct-26', 'platform': 49, 'y': 2018},
+                {'id': 177006, 'human': '2019-Nov-05', 'platform': 6, 'y': 2019},
+                {'id': 179286, 'human': '2019-Nov-19', 'platform': 170, 'y': 2019},
+            ],
+            'slug': 'red-dead-redemption-2',
+        }
 
     def test_format_release_dates_for_manual_display(self):
         igdb_data = self.get_read_dead_redemption_two()
@@ -493,19 +495,15 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
 
     @staticmethod
     def get_dummy_match_database():
-        dummy_match_database = {
+        return {
             "Hello": [0],
             "World": [1, 2],
         }
 
-        return dummy_match_database
-
     @staticmethod
     def get_dummy_local_database():
         igdb_data = TestIGDBUtilsMethods.get_read_dead_redemption_two()
-        dummy_local_database = {"25076": igdb_data}
-
-        return dummy_local_database
+        return {"25076": igdb_data}
 
     def test_get_link_to_igdb_website_with_int_input(self):
         igdb_id = 25076
@@ -594,9 +592,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         dummy_voter = 'dummy_voter_name'
         goty_field = 'dummy_preferences'
 
-        ballots = dict()
-        ballots[dummy_voter] = dict()
-        ballots[dummy_voter][goty_field] = dict()
+        ballots = {dummy_voter: {}}
+        ballots[dummy_voter][goty_field] = {}
         ballots[dummy_voter][goty_field][1] = 'Hello'
         ballots[dummy_voter][goty_field][2] = 'Universe'
 
@@ -654,10 +651,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
     def test_get_igdb_file_name_suffix(self):
         for release_year in [None, '2018']:
             suffix = igdb_databases.get_igdb_file_name_suffix(release_year=release_year)
-            if release_year is None:
-                expected_suffix = ''
-            else:
-                expected_suffix = '_' + str(release_year)
+            expected_suffix = '' if release_year is None else '_' + str(release_year)
             self.assertEqual(suffix, expected_suffix)
 
     def test_get_igdb_match_database_file_name(self):
@@ -684,7 +678,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         self.assertTrue(data is not None)
 
     def test_save_igdb_match_database(self):
-        data = dict()
+        data = {}
         file_name = 'data/dummy_match_file_for_unit_test.json'
         igdb_databases.save_igdb_match_database(data, file_name=file_name)
         self.assertTrue(Path(file_name).exists())
@@ -695,7 +689,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         self.assertTrue(data is not None)
 
     def test_save_igdb_local_database(self):
-        data = dict()
+        data = {}
         file_name = 'data/dummy_local_file_for_unit_test.json'
         igdb_databases.save_igdb_local_database(data, file_name=file_name)
         self.assertTrue(Path(file_name).exists())

@@ -4,12 +4,7 @@ from anonymize_data import get_data_folder
 
 
 def get_igdb_file_name_suffix(release_year=None):
-    if release_year is None:
-        suffix = ''
-    else:
-        suffix = '_' + str(release_year)
-
-    return suffix
+    return '' if release_year is None else '_' + str(release_year)
 
 
 def get_igdb_match_database_file_name(release_year=None):
@@ -17,9 +12,7 @@ def get_igdb_match_database_file_name(release_year=None):
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + 'igdb_match_database' + suffix + '.json'
-
-    return file_name
+    return get_data_folder() + 'igdb_match_database' + suffix + '.json'
 
 
 def get_igdb_local_database_file_name(release_year=None):
@@ -27,9 +20,7 @@ def get_igdb_local_database_file_name(release_year=None):
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + 'igdb_local_database' + suffix + '.json'
-
-    return file_name
+    return get_data_folder() + 'igdb_local_database' + suffix + '.json'
 
 
 def load_igdb_match_database(release_year=None,

@@ -1,7 +1,7 @@
 def get_hard_coded_app_id_dict():
     # Matches, manually added, from game names to Steam appIDs
 
-    hard_coded_dict = {
+    return {
         # Manually fix matches for which the automatic name matching (based on Levenshtein distance) is wrong:
         "The Missing": "842910",
         "Pillars of Eternity 2": "560130",
@@ -24,23 +24,17 @@ def get_hard_coded_app_id_dict():
         "Epic Game Launcher": "-201",
     }
 
-    return hard_coded_dict
-
 
 def check_database_of_problematic_game_names(game_name):
     hard_coded_dict = get_hard_coded_app_id_dict()
 
-    is_a_problematic_game_name = bool(game_name in hard_coded_dict.keys())
-
-    return is_a_problematic_game_name
+    return bool(game_name in hard_coded_dict.keys())
 
 
 def find_hard_coded_app_id(game_name_input):
     hard_coded_dict = get_hard_coded_app_id_dict()
 
-    hard_coded_app_id = hard_coded_dict[game_name_input]
-
-    return hard_coded_app_id
+    return hard_coded_dict[game_name_input]
 
 
 if __name__ == '__main__':

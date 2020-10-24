@@ -2,34 +2,26 @@ from disqualify_vote_igdb import load_disqualified_igdb_ids
 
 
 def get_hard_coded_disqualified_app_ids():
-    disqualified_app_id_dict = {
-
+    return {
         "-1": {
             "reason": "Marvel's Spider-Man is not available on PC: it is exclusive to PS4.",
         },
-
     }
-
-    return disqualified_app_id_dict
 
 
 def get_hard_coded_noisy_votes():
-    noisy_votes = [
+    return [
         '-',
         'None played',
         'n/a',
         'N/A',
     ]
 
-    return noisy_votes
-
 
 def is_a_noisy_vote(game_name):
     noisy_votes = get_hard_coded_noisy_votes()
 
-    game_name_is_a_noisy_vote = bool(game_name == '' or (game_name in noisy_votes))
-
-    return game_name_is_a_noisy_vote
+    return bool(game_name == '' or (game_name in noisy_votes))
 
 
 def filter_out_votes_for_hard_coded_reasons(standardized_ballots,

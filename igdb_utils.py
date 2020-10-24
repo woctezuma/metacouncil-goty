@@ -29,34 +29,24 @@ def get_igdb_api_url(end_point=None):
 
 def get_igdb_api_url_for_games():
     end_point = '/games/'
-    igdb_api_url_for_games = get_igdb_api_url(end_point=end_point)
-
-    return igdb_api_url_for_games
+    return get_igdb_api_url(end_point=end_point)
 
 
 def get_igdb_api_url_for_release_dates():
     end_point = '/release_dates/'
-    igdb_api_url_for_release_dates = get_igdb_api_url(end_point=end_point)
-
-    return igdb_api_url_for_release_dates
+    return get_igdb_api_url(end_point=end_point)
 
 
 def get_time_stamp_for_year_start(year):
-    time_stamp_for_year_start = datetime.datetime(year, 1, 1).timestamp()
-
-    return time_stamp_for_year_start
+    return datetime.datetime(year, 1, 1).timestamp()
 
 
 def get_time_stamp_for_year_end(year):
-    time_stamp_for_year_end = get_time_stamp_for_year_start(year=year + 1)
-
-    return time_stamp_for_year_end
+    return get_time_stamp_for_year_start(year=year + 1)
 
 
 def get_igdb_user_key_file_name():
-    igdb_user_key_file_name = 'igdb_user_key.json'
-
-    return igdb_user_key_file_name
+    return 'igdb_user_key.json'
 
 
 def load_igdb_user_key():
@@ -75,21 +65,17 @@ def load_igdb_user_key():
 def get_igdb_request_headers():
     igdb_user_key = load_igdb_user_key()
 
-    headers = {
+    return {
         'user-key': igdb_user_key['user-key'],
         'Accept': 'application/json',
     }
 
-    return headers
-
 
 def get_igdb_request_params():
-    params = {
+    return {
         'fields': '*',  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
         'limit': 10,  # max value is 500
     }
-
-    return params
 
 
 def get_pc_platform_no():
@@ -102,17 +88,11 @@ def get_pc_platform_no():
     # portable_console 	    5
     # computer 	            6
 
-    pc_platform_no = 6
-
-    return pc_platform_no
+    return 6
 
 
 def get_pc_platform_range():
-    pc_platform_range = []
-
-    pc_platform_range.append(get_pc_platform_no())
-
-    return pc_platform_range
+    return [get_pc_platform_no()]
 
 
 def get_game_category_no():
@@ -126,9 +106,7 @@ def get_game_category_no():
 
     # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
 
-    game_category_no = [0, 3, 4]
-
-    return game_category_no
+    return [0, 3, 4]
 
 
 def get_dlc_category_no():
@@ -142,9 +120,7 @@ def get_dlc_category_no():
 
     # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
 
-    dlc_category_no = [1, 2]
-
-    return dlc_category_no
+    return [1, 2]
 
 
 def get_released_status_no():
@@ -159,9 +135,7 @@ def get_released_status_no():
 
     # Caveat: the release status is often missing from IGDB. Avoid using it for now, or you will get empty responses!
 
-    released_status_no = 0
-
-    return released_status_no
+    return 0
 
 
 def get_steam_service_no():
@@ -175,9 +149,7 @@ def get_steam_service_no():
     # twitch 	            14
     # android 	            15
 
-    steam_service_no = 1
-
-    return steam_service_no
+    return 1
 
 
 def append_filter_for_igdb_fields(igdb_fields,
@@ -186,8 +158,6 @@ def append_filter_for_igdb_fields(igdb_fields,
                                   use_parenthesis=False,
                                   comparison_symbol='='):
     where_statement = ' ; where '
-    conjunction_statement = ' & '
-
     if filter_name.startswith('platform'):
         # The filter name can be singular or plural:
         # - 'platforms' when used for games,
@@ -241,6 +211,8 @@ def append_filter_for_igdb_fields(igdb_fields,
         )
 
     if where_statement in igdb_fields:
+        conjunction_statement = ' & '
+
         igdb_fields += conjunction_statement + statement_to_append
     else:
         igdb_fields += where_statement + statement_to_append
@@ -249,15 +221,15 @@ def append_filter_for_igdb_fields(igdb_fields,
 
 
 def get_comparison_symbol(year_constraint='equality'):
-    if year_constraint == 'equality':
+    if year_constraint == 'equality' or year_constraint not in [
+        'minimum',
+        'maximum',
+    ]:
         comparison_symbol = '='
     elif year_constraint == 'minimum':
         comparison_symbol = '>='
-    elif year_constraint == 'maximum':
-        comparison_symbol = '<='
     else:
-        comparison_symbol = '='
-
+        comparison_symbol = '<='
     return comparison_symbol
 
 
@@ -528,7 +500,7 @@ def download_list_of_platforms(verbose=True):
 
 def format_list_of_platforms(raw_data_platforms,
                              verbose=True):
-    formatted_data_platforms = dict()
+    formatted_data_platforms = {}
 
     sorted_data_platforms = sorted(raw_data_platforms,
                                    key=lambda x: x['id'])
@@ -536,7 +508,7 @@ def format_list_of_platforms(raw_data_platforms,
     for e in sorted_data_platforms:
         id = e['id']
 
-        formatted_data_platforms[id] = dict()
+        formatted_data_platforms[id] = {}
         formatted_data_platforms[id]['slug'] = e['slug']
         formatted_data_platforms[id]['slug'] = e['name']
 
@@ -562,11 +534,8 @@ def format_list_of_platforms(raw_data_platforms,
 
 def format_release_dates_for_manual_display(element):
     if 'release_dates' in element:
-        release_years = set(
-            str(date['y'])
-            for date in element['release_dates']
-            if 'y' in date
-        )
+        release_years = {str(date['y']) for date in element['release_dates']
+                    if 'y' in date}
     else:
         release_years = None
 

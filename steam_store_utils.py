@@ -2,15 +2,12 @@ import steampi.api
 
 
 def get_link_to_store(app_id, hide_dummy_app_id=True):
-    steam_store_base_url = 'https://store.steampowered.com/app/'
-
     if int(app_id) > 0:
+        steam_store_base_url = 'https://store.steampowered.com/app/'
+
         link_to_store = '[URL=' + steam_store_base_url + app_id + '/]' + app_id + '[/URL]'
     else:
-        if hide_dummy_app_id:
-            link_to_store = 'n/a'
-        else:
-            link_to_store = app_id
+        link_to_store = 'n/a' if hide_dummy_app_id else app_id
     return link_to_store
 
 

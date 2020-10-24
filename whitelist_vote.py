@@ -2,15 +2,13 @@ from whitelist_vote_igdb import load_whitelisted_igdb_ids
 
 
 def get_hard_coded_whitelisted_app_ids():
-    whitelisted_app_id_dict = {
+    return {
 
         "0": {
             "reason": "[placeholder]",
         },
 
     }
-
-    return whitelisted_app_id_dict
 
 
 def load_whitelisted_ids(release_year=None,

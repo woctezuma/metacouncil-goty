@@ -7,9 +7,7 @@ from igdb_databases import get_igdb_file_name_suffix
 def get_file_name_for_disqualified_igdb_ids(release_year=None):
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + 'disqualified_igdb_ids' + suffix + '.json'
-
-    return file_name
+    return get_data_folder() + 'disqualified_igdb_ids' + suffix + '.json'
 
 
 def load_disqualified_igdb_ids(release_year=None):
@@ -20,7 +18,7 @@ def load_disqualified_igdb_ids(release_year=None):
             disqualified_igdb_ids = json.load(f)
     except FileNotFoundError:
         print('File {} not found.'.format(file_name))
-        disqualified_igdb_ids = dict()
+        disqualified_igdb_ids = {}
 
     return disqualified_igdb_ids
 

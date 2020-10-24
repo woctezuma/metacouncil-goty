@@ -85,7 +85,7 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
 
     print()
 
-    release_years = dict()
+    release_years = {}
     removed_app_ids = []
 
     for voter in standardized_ballots.keys():
@@ -181,9 +181,7 @@ def compute_schulze_ranking(standardized_ballots):
 
     (candidate_names, weighted_ranks) = adapt_votes_format_for_schulze_computations(standardized_ballots)
 
-    schulze_ranking = schulze.compute_ranks(candidate_names, weighted_ranks)
-
-    return schulze_ranking
+    return schulze.compute_ranks(candidate_names, weighted_ranks)
 
 
 def print_schulze_ranking(schulze_ranking,
@@ -229,18 +227,21 @@ def print_schulze_ranking(schulze_ranking,
 
 
 def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
-    standardized_ballots_for_tied_app_id_group = dict()
+    standardized_ballots_for_tied_app_id_group = {}
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]['ballots']
         positions = sorted(current_ballots.keys())
         current_app_ids = [current_ballots[position] for position in positions]
 
-        has_voted_for_at_least_one_tied_app_id = sum([bool(app_id in current_app_ids) for app_id in app_id_group]) > 0
+        has_voted_for_at_least_one_tied_app_id = (
+            sum(bool(app_id in current_app_ids) for app_id in app_id_group) > 0
+        )
+
 
         if has_voted_for_at_least_one_tied_app_id:
-            standardized_ballots_for_tied_app_id_group[voter_name] = dict()
-            standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = dict()
+            standardized_ballots_for_tied_app_id_group[voter_name] = {}
+            standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = {}
 
             new_ballots = [current_ballots[position] for position in positions
                            if current_ballots[position] in app_id_group]
@@ -252,7 +253,7 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
                 position = i + 1
                 standardized_ballots_for_tied_app_id_group[voter_name]['ballots'][position] = None
 
-    if len(standardized_ballots_for_tied_app_id_group) == 0:
+    if not standardized_ballots_for_tied_app_id_group:
         schulze_ranking_for_tied_app_id_group = [app_id_group]
     else:
         schulze_ranking_for_tied_app_id_group = compute_schulze_ranking(standardized_ballots_for_tied_app_id_group)
@@ -261,7 +262,7 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
 
 
 def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
-    untied_schulze_ranking = list()
+    untied_schulze_ranking = []
 
     for (group_no, appID_group) in enumerate(schulze_ranking):
         if len(appID_group) > 1:
@@ -334,7 +335,7 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
 
     max_num_ballots_per_person = 0
 
-    counter = dict()
+    counter = {}
     for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots'].values()
         max_num_ballots_per_person = max(max_num_ballots_per_person, len(current_ballots))
@@ -343,10 +344,7 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
         counter[voter] = sum(i in goty for i in vote)
 
     for num_votes in reversed(range(max_num_ballots_per_person + 1)):
-        l = []
-        for (v, c) in counter.items():
-            if c == num_votes:
-                l.append(v)
+        l = [v for (v, c) in counter.items() if c == num_votes]
         print('\n{} ballots included {} games present in the top {}.'.format(len(l), num_votes, len(goty)))
         if verbose:
             print(l)

@@ -21,7 +21,7 @@ def run_benchmark_for_steam_spy(raw_votes,
                                 use_levenshtein_distance=True,
                                 goty_field='goty_preferences'):
     seen_game_names = set()
-    matches = dict()
+    matches = {}
 
     # Caveat: do not use the extended SteamSpy database for a fair benchmark!
     steamspy_database = steamspypi.api.load()
@@ -46,11 +46,15 @@ def run_benchmark_for_steam_spy(raw_votes,
                     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
                     closest_distance = [dist[app_id] for app_id in closest_app_id]
 
-                    element = dict()
-                    element['input_name'] = raw_name
-                    element['matched_appID'] = closest_app_id
-                    element['matched_name'] = [steamspy_database[appID]['name'] for appID in closest_app_id]
-                    element['match_distance'] = closest_distance
+                    element = {
+                        'input_name': raw_name,
+                        'matched_appID': closest_app_id,
+                        'matched_name': [
+                            steamspy_database[appID]['name']
+                            for appID in closest_app_id
+                        ],
+                        'match_distance': closest_distance,
+                    }
 
                     matches[raw_name] = element
 
