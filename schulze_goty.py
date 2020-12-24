@@ -2,6 +2,7 @@ import steampi.calendar
 
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
+from extend_steamspy import get_release_year_for_problematic_app_id, get_app_name_for_problematic_app_id
 from extend_steamspy import load_extended_steamspy_database
 from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, get_igdb_human_release_dates
 from load_ballots import get_parsing_params
@@ -102,7 +103,7 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                 if not use_igdb and is_steamspy_api_paginated:
                     if app_id_as_str not in local_database:
                         local_database[app_id_as_str] = dict()
-                        local_database[app_id_as_str]['name'] = '[Not Available]'
+                        local_database[app_id_as_str]['name'] = get_app_name_for_problematic_app_id()
 
                 app_data = local_database[app_id_as_str]
                 app_name = app_data['name']
@@ -116,9 +117,7 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                         try:
                             release_years[app_id] = steampi.calendar.get_release_year(app_id)
                         except ValueError:
-                            # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
-                            release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
-                            release_years[app_id] = int(release_date_as_str.split(' ')[-1])
+                            release_years[app_id] = get_release_year_for_problematic_app_id(app_id=app_id)
                 if release_years[app_id] == int(target_release_year):
                     # Always keep the game, whichever the value of 'year_constraint' ('equality', 'minimum', 'maximum').
                     current_ballots_list.append(app_id)

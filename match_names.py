@@ -3,6 +3,7 @@ import steampi.text_distances
 
 from disqualify_vote import is_a_noisy_vote
 from extend_steamspy import load_extended_steamspy_database
+from extend_steamspy import get_release_year_for_problematic_app_id, get_app_name_for_problematic_app_id
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases, print_igdb_matches
 from igdb_match_names import transform_structure_of_matches
@@ -32,9 +33,7 @@ def constrain_app_id_search_by_year(dist,
                 try:
                     matched_release_year = steampi.calendar.get_release_year(first_match)
                 except ValueError:
-                    # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
-                    release_date_as_str = steampi.calendar.get_release_date_as_str(app_id = first_match)
-                    matched_release_year = int(release_date_as_str.split(' ')[-1])
+                    matched_release_year = get_release_year_for_problematic_app_id(app_id = first_match)
 
                 if year_constraint == 'equality':
                     # We want the matched release year to be equal to the target release year.
@@ -163,7 +162,7 @@ def precompute_matches(raw_votes,
                         for appID in closest_appID:
                             if appID not in steamspy_database:
                                 steamspy_database[appID] = dict()
-                                steamspy_database[appID]['name'] = '[Not Available]'
+                                steamspy_database[appID]['name'] = get_app_name_for_problematic_app_id()
 
                     element = dict()
                     element['input_name'] = raw_name

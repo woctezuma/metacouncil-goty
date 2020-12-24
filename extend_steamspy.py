@@ -1,3 +1,4 @@
+import steampi.calendar
 import steamspypi.api
 
 
@@ -92,6 +93,18 @@ def load_extended_steamspy_database(steamspy_database=None):
         extended_steamspy_database[app_id]["appid"] = int(app_id)
 
     return extended_steamspy_database
+
+
+def get_app_name_for_problematic_app_id():
+    return '[Not Available]'
+
+
+def get_release_year_for_problematic_app_id(app_id):
+    # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
+    release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
+    matched_release_year = release_date_as_str.split(' ')[-1]
+
+    return int(matched_release_year)
 
 
 if __name__ == '__main__':
