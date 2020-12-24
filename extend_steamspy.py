@@ -80,7 +80,7 @@ def get_hard_coded_steamspy_database_extension():
 
 def load_extended_steamspy_database(steamspy_database=None):
     if steamspy_database is None:
-        steamspy_database = steamspypi.api.load()
+        steamspy_database = steamspypi.load()
 
     hard_coded_steamspy_database_extension = get_hard_coded_steamspy_database_extension()
 

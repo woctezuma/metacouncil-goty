@@ -24,7 +24,7 @@ def run_benchmark_for_steam_spy(raw_votes,
     matches = dict()
 
     # Caveat: do not use the extended SteamSpy database for a fair benchmark!
-    steamspy_database = steamspypi.api.load()
+    steamspy_database = steamspypi.load()
 
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter][goty_field].values():
