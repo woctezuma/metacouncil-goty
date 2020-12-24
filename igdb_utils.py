@@ -9,7 +9,7 @@ import requests
 
 
 def get_igdb_api_url(end_point=None):
-    igdb_api_url = 'https://api-v3.igdb.com'
+    igdb_api_url = 'https://api.igdb.com/v4'
 
     if end_point is not None:
         url_separator = '/'

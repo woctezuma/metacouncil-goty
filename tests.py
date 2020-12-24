@@ -381,15 +381,15 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     def test_get_igdb_api_url(self):
         url = igdb_utils.get_igdb_api_url()
-        self.assertEqual(url, 'https://api-v3.igdb.com')
+        self.assertEqual(url, 'https://api.igdb.com/v4')
 
     def test_get_igdb_api_url_for_games(self):
         url = igdb_utils.get_igdb_api_url_for_games()
-        self.assertEqual(url, 'https://api-v3.igdb.com/games/')
+        self.assertEqual(url, 'https://api.igdb.com/v4/games/')
 
     def test_get_igdb_api_url_for_release_dates(self):
         url = igdb_utils.get_igdb_api_url_for_release_dates()
-        self.assertEqual(url, 'https://api-v3.igdb.com/release_dates/')
+        self.assertEqual(url, 'https://api.igdb.com/v4/release_dates/')
 
     def test_get_time_stamp_for_year_start(self):
         time_stamp = igdb_utils.get_time_stamp_for_year_start(year=1971)
