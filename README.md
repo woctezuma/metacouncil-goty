@@ -1,6 +1,6 @@
 # MetaCouncil's PC Games of the Year (GOTY) Awards
 
-[![Build status][build-image]][build]
+[![Build status with Github Action][build-image-action]][build-action]
 [![Updates][dependency-image]][pyup]
 [![Python 3][python3-image]][pyup]
 [![Code coverage][codecov-image]][codecov]
@@ -135,6 +135,9 @@ the most promising method involves using the IGDB database with a constraint w.r
 
 [build]: <https://travis-ci.org/woctezuma/metacouncil-goty>
 [build-image]: <https://travis-ci.org/woctezuma/metacouncil-goty.svg?branch=master>
+
+[build-action]: <https://github.com/woctezuma/metacouncil-goty/actions>
+[build-image-action]: <https://github.com/woctezuma/metacouncil-goty/workflows/Python application/badge.svg?branch=master>
 
 [pyup]: <https://pyup.io/repos/github/woctezuma/metacouncil-goty/>
 [dependency-image]: <https://pyup.io/repos/github/woctezuma/metacouncil-goty/shield.svg>
