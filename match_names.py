@@ -29,7 +29,12 @@ def constrain_app_id_search_by_year(dist,
                     and len(filtered_sorted_app_ids) > 0:
 
                 first_match = filtered_sorted_app_ids[0]
-                matched_release_year = steampi.calendar.get_release_year(first_match)
+                try:
+                    matched_release_year = steampi.calendar.get_release_year(first_match)
+                except ValueError:
+                    # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
+                    release_date_as_str = steampi.calendar.get_release_date_as_str(app_id = first_match)
+                    matched_release_year = int(release_date_as_str.split(' ')[-1])
 
                 if year_constraint == 'equality':
                     # We want the matched release year to be equal to the target release year.
@@ -81,7 +86,8 @@ def find_closest_app_id(game_name_input,
                         num_closest_neighbors=1,
                         max_num_tries_for_year=2,
                         use_levenshtein_distance=True,
-                        year_constraint='equality'):
+                        year_constraint='equality',
+                        is_steamspy_api_paginated=True):
     if use_levenshtein_distance:
         # n is not used by Levenshtein distance.
         n = None
@@ -110,9 +116,11 @@ def find_closest_app_id(game_name_input,
         closest_app_id = apply_hard_coded_fixes_to_app_id_search(game_name_input, filtered_sorted_app_ids,
                                                                  num_closest_neighbors)
 
-        if not use_levenshtein_distance:
+        if not use_levenshtein_distance or is_steamspy_api_paginated:
             # With difflib, computations are more expensive than with Levenshtein distance, therefore dist only contains
             # distances for a few entries. So, we set the distance to 0.4 (default cut-off) for all the other entries.
+            #
+            # Edit: moreover, due to the pagination recently adopted by SteamSpy API, dist misses many entries nowadays.
             for app_id in closest_app_id:
                 if app_id not in dist.keys():
                     dist[app_id] = get_default_distance_cut_off_for_difflib()
@@ -128,7 +136,8 @@ def precompute_matches(raw_votes,
                        max_num_tries_for_year=2,
                        use_levenshtein_distance=True,
                        year_constraint='equality',
-                       goty_field='goty_preferences'):
+                       goty_field='goty_preferences',
+                       is_steamspy_api_paginated=True):
     seen_game_names = set()
     matches = dict()
 
@@ -146,7 +155,15 @@ def precompute_matches(raw_votes,
                                                                             num_closest_neighbors,
                                                                             max_num_tries_for_year,
                                                                             use_levenshtein_distance=use_levenshtein_distance,
-                                                                            year_constraint=year_constraint)
+                                                                            year_constraint=year_constraint,
+                                                                            is_steamspy_api_paginated=is_steamspy_api_paginated)
+
+                    # Due to the pagination recently adopted by SteamSpy API, dist misses many entries nowadays.
+                    if is_steamspy_api_paginated:
+                        for appID in closest_appID:
+                            if appID not in steamspy_database:
+                                steamspy_database[appID] = dict()
+                                steamspy_database[appID]['name'] = '[Not Available]'
 
                     element = dict()
                     element['input_name'] = raw_name
