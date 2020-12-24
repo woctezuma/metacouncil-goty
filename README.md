@@ -115,7 +115,7 @@ A quantitative comparison is shown [in a benchmark](https://github.com/woctezuma
 The mismatches observed with the 2018 dataset are counted, and the best performing methods are:
 1.  IGDB database with a constraint w.r.t. the release year: **8 mismatches**,
 2.  IGDB database: 11 mismatches,
-3.  vanilla SteamSpy database with difflib matching and a constraint w.r.t. the release yar: 12 mismatches,
+3.  vanilla SteamSpy database with difflib matching and a constraint w.r.t. the release year: 12 mismatches,
 4.  vanilla SteamSpy database with difflib matching: 14 mismatches,
 5.  vanilla SteamSpy database with Levenshtein distance: 18 mismatches (same performance with and without constraint). 
 
