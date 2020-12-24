@@ -272,7 +272,9 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         # Add dummy vote for an Early Access game
         ballots['dummy_voter_name'] = dict()
         ballots['dummy_voter_name']['goty_preferences'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'][1] = 'SpyParty'  # app_id = '329070'
+        # The following is a game released in Early Access in 2018, and still in Early Access in 2020:
+        ballots['dummy_voter_name']['goty_preferences'][1] = 'Aim Lab'  # app_id = '714010'
+        # The following is a game released in 2018:
         ballots['dummy_voter_name']['goty_preferences'][2] = 'Celeste'  # app_id = '504230'
 
         (standardized_ballots, _) = match_names.standardize_ballots(ballots, release_year=ballot_year)
