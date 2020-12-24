@@ -95,8 +95,13 @@ def load_extended_steamspy_database(steamspy_database=None):
     return extended_steamspy_database
 
 
-def get_app_name_for_problematic_app_id():
-    return '[Not Available]'
+def get_app_name_for_problematic_app_id(app_id = None):
+    if app_id is None:
+        app_name = '[Not Available]'
+    else:
+        app_name = 'app_{}'.format(app_id)
+
+    return app_name
 
 
 def get_release_year_for_problematic_app_id(app_id):

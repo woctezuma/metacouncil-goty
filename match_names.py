@@ -33,7 +33,7 @@ def constrain_app_id_search_by_year(dist,
                 try:
                     matched_release_year = steampi.calendar.get_release_year(first_match)
                 except ValueError:
-                    matched_release_year = get_release_year_for_problematic_app_id(app_id = first_match)
+                    matched_release_year = get_release_year_for_problematic_app_id(app_id=first_match)
 
                 if year_constraint == 'equality':
                     # We want the matched release year to be equal to the target release year.
@@ -162,7 +162,7 @@ def precompute_matches(raw_votes,
                         for appID in closest_appID:
                             if appID not in steamspy_database:
                                 steamspy_database[appID] = dict()
-                                steamspy_database[appID]['name'] = get_app_name_for_problematic_app_id()
+                                steamspy_database[appID]['name'] = get_app_name_for_problematic_app_id(appID)
 
                     element = dict()
                     element['input_name'] = raw_name
