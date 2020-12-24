@@ -2,8 +2,8 @@ import steampi.calendar
 import steampi.text_distances
 
 from disqualify_vote import is_a_noisy_vote
-from extend_steamspy import load_extended_steamspy_database
 from extend_steamspy import get_release_year_for_problematic_app_id, get_app_name_for_problematic_app_id
+from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import check_database_of_problematic_game_names, find_hard_coded_app_id
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases, print_igdb_matches
 from igdb_match_names import transform_structure_of_matches
