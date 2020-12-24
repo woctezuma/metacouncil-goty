@@ -207,7 +207,11 @@ def print_schulze_ranking(schulze_ranking,
     print()
 
     def get_game_name(app_id):
-        return local_database[app_id]['name']
+        try:
+            output_game_name = local_database[app_id]['name']
+        except KeyError:
+            output_game_name = get_app_name_for_problematic_app_id(app_id)
+        return output_game_name
 
     offset = 0
 
