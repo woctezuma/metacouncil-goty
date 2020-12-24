@@ -73,7 +73,8 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                                              target_release_year,
                                              use_igdb=False,
                                              year_constraint='equality',
-                                             whitelisted_ids=None):
+                                             whitelisted_ids=None,
+                                             is_steamspy_api_paginated=True):
     # Objective: remove appID which gathered votes but were not released during the target release year
 
     if whitelisted_ids is None:
@@ -96,6 +97,13 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
             app_id = current_ballots[position]
             if app_id is not None:
                 app_id_as_str = str(app_id)
+
+                # Due to the pagination recently adopted by SteamSpy API, local_database can miss many entries nowadays.
+                if not use_igdb and is_steamspy_api_paginated:
+                    if app_id_as_str not in local_database:
+                        local_database[app_id_as_str] = dict()
+                        local_database[app_id_as_str]['name'] = '[Not Available]'
+
                 app_data = local_database[app_id_as_str]
                 app_name = app_data['name']
 
@@ -105,7 +113,12 @@ def filter_out_votes_for_wrong_release_years(standardized_ballots,
                                                                                           target_release_year=target_release_year)
                         release_years[app_id] = year_to_remember
                     else:
-                        release_years[app_id] = steampi.calendar.get_release_year(app_id)
+                        try:
+                            release_years[app_id] = steampi.calendar.get_release_year(app_id)
+                        except ValueError:
+                            # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
+                            release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
+                            release_years[app_id] = int(release_date_as_str.split(' ')[-1])
                 if release_years[app_id] == int(target_release_year):
                     # Always keep the game, whichever the value of 'year_constraint' ('equality', 'minimum', 'maximum').
                     current_ballots_list.append(app_id)
