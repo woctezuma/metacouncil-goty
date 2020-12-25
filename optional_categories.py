@@ -1,4 +1,5 @@
 from disqualify_vote import is_a_noisy_vote
+from igdb_credentials import download_latest_credentials
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases
 from igdb_match_names import get_link_to_igdb_website, get_igdb_human_release_dates
 from load_ballots import get_parsing_params
@@ -278,6 +279,10 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+    update_credentials = False
+
+    if update_credentials:
+        download_latest_credentials(verbose=False)
 
     parsing_params = get_parsing_params(ballot_year=ballot_year)
 

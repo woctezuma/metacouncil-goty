@@ -4,6 +4,7 @@ from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import get_release_year_for_problematic_app_id, get_app_name_for_problematic_app_id
 from extend_steamspy import load_extended_steamspy_database
+from igdb_credentials import download_latest_credentials
 from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, get_igdb_human_release_dates
 from load_ballots import get_parsing_params
 from load_ballots import load_ballots, print_reviews
@@ -446,6 +447,10 @@ if __name__ == '__main__':
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
     use_levenshtein_distance = True
+    update_credentials = False
+
+    if update_credentials:
+        download_latest_credentials(verbose=False)
 
     parsing_params = get_parsing_params(ballot_year=ballot_year)
 
