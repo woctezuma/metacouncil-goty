@@ -8,6 +8,7 @@ import extend_igdb
 import extend_steamspy
 import hard_coded_matches
 import igdb_databases
+import igdb_local_secrets
 import igdb_match_names
 import igdb_utils
 import load_ballots
@@ -402,11 +403,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         self.assertGreaterEqual(int(time_stamp), 31532400)
 
     def test_get_igdb_user_key_file_name(self):
-        file_name = igdb_utils.get_igdb_user_key_file_name()
+        file_name = igdb_local_secrets.get_igdb_user_key_file_name()
         self.assertEqual(file_name, 'igdb_user_key.json')
 
     def test_load_igdb_user_key(self):
-        igdb_user_key = igdb_utils.load_igdb_user_key()
+        igdb_user_key = igdb_local_secrets.load_igdb_user_key()
         self.assertTrue('user-key' in igdb_user_key)
 
     def test_get_igdb_request_headers(self):

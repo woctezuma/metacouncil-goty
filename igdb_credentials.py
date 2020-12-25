@@ -4,10 +4,7 @@ import json
 
 import requests
 
-from igdb_utils import (
-    load_igdb_user_key,
-    get_igdb_user_key_file_name,
-)
+from igdb_local_secrets import get_igdb_user_key_file_name, load_igdb_user_key
 
 
 def get_igdb_oauth_url():
