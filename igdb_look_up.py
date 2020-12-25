@@ -1,8 +1,8 @@
 import requests
 
 
+from igdb_credentials import load_credential_headers
 from igdb_local_secrets import load_igdb_user_key
-
 from igdb_utils import (
     get_igdb_api_url_for_games,
     get_igdb_fields_for_games,
@@ -24,6 +24,10 @@ def get_igdb_request_headers():
         "user-key": igdb_user_key["user-key"],
         "Accept": "application/json",
     }
+
+    # For IGDB API version 4:
+    headers_for_igdb_v4 = load_credential_headers()
+    headers.update(headers_for_igdb_v4)
 
     return headers
 
