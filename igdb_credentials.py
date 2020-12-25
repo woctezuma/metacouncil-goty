@@ -78,6 +78,9 @@ def save_credentials_to_disk(credentials):
     igdb_user_key = load_igdb_user_key()
     igdb_user_key.update(credentials)
 
+    time_dict = {"save_timestamp": get_unix_time_stamp()}
+    igdb_user_key.update(time_dict)
+
     with open(get_igdb_user_key_file_name(), "w") as f:
         json.dump(igdb_user_key, f)
 
