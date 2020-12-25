@@ -7,7 +7,6 @@ import requests
 from igdb_utils import (
     load_igdb_user_key,
     get_igdb_user_key_file_name,
-    get_igdb_api_url_for_games,
 )
 
 
@@ -96,25 +95,7 @@ def download_latest_credentials(verbose=True):
     return data
 
 
-def download_games(verbose=True):
-    response = requests.post(
-        url=get_igdb_api_url_for_games(),
-        headers=load_credential_headers(),
-    )
-
-    if response.ok:
-        data = response.json()
-    else:
-        data = None
-
-    if verbose:
-        print("Response (#fields={}): {}\n".format(len(data), data))
-
-    return data
-
-
 if __name__ == "__main__":
     # data = download_latest_credentials(verbose=True)
     client_params = load_client_params(verbose=True)
     credential_params = load_credential_headers(verbose=True)
-    data = download_games(verbose=True)
