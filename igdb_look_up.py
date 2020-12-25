@@ -182,6 +182,9 @@ def look_up_games_released_in_given_year(
 
 
 def download_list_of_platforms(verbose=True):
+    if verbose:
+        print("[query] all possible platforms")
+
     url = get_igdb_api_url(end_point="platforms")
     headers = get_igdb_request_headers()
 

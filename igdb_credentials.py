@@ -74,6 +74,9 @@ def save_credentials_to_disk(credentials):
 
 
 def download_latest_credentials(verbose=True):
+    if verbose:
+        print("[query] credentials")
+
     response = requests.post(
         url=get_igdb_oauth_url(),
         headers=get_default_headers(),
