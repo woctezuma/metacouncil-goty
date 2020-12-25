@@ -6,7 +6,8 @@ from extend_igdb import extend_igdb_match_database
 from igdb_databases import load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database, save_igdb_match_database
 from igdb_utils import get_steam_service_no, get_pc_platform_no
-from igdb_utils import look_up_game_name, get_pc_platform_range
+from igdb_utils import get_pc_platform_range
+from igdb_look_up import look_up_game_name
 from load_ballots import get_parsing_params
 from load_ballots import load_ballots
 

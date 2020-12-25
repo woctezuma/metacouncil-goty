@@ -3,7 +3,7 @@ import json
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix, load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database
-from igdb_utils import look_up_game_id
+from igdb_look_up import look_up_game_id
 
 
 def get_file_name_for_fixes_to_igdb_database(release_year=None,
