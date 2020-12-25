@@ -1,7 +1,6 @@
 import requests
 
-
-from igdb_credentials import load_credential_headers
+from igdb_credentials import load_credential_headers, download_latest_credentials
 from igdb_local_secrets import load_igdb_user_key
 from igdb_utils import (
     get_igdb_api_url_for_games,
@@ -254,6 +253,9 @@ def main():
     must_be_available_on_pc = True
     must_be_a_game = True
     verbose = True
+
+    # Ensure credentials are up-to-date
+    download_latest_credentials(verbose=verbose)
 
     game_name = "Red Dead"
 

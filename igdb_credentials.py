@@ -96,6 +96,6 @@ def download_latest_credentials(verbose=True):
 
 
 if __name__ == "__main__":
-    # data = download_latest_credentials(verbose=True)
+    data = download_latest_credentials(verbose=True)
     client_params = load_client_params(verbose=True)
     credential_params = load_credential_headers(verbose=True)
