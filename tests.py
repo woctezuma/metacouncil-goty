@@ -9,6 +9,7 @@ import extend_steamspy
 import hard_coded_matches
 import igdb_databases
 import igdb_local_secrets
+import igdb_look_up
 import igdb_match_names
 import igdb_utils
 import load_ballots
@@ -411,7 +412,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         self.assertTrue('user-key' in igdb_user_key)
 
     def test_get_igdb_request_headers(self):
-        headers = igdb_utils.get_igdb_request_headers()
+        headers = igdb_look_up.get_igdb_request_headers()
         self.assertTrue('Accept' in headers)
         self.assertEqual(headers['Accept'], 'application/json')
 

@@ -5,8 +5,6 @@
 import datetime
 import time
 
-from igdb_local_secrets import load_igdb_user_key
-
 
 def get_unix_time_stamp():
     # Reference: https://stackoverflow.com/a/49362936
@@ -61,17 +59,6 @@ def get_time_stamp_for_year_end(year):
     time_stamp_for_year_end = get_time_stamp_for_year_start(year=year + 1)
 
     return time_stamp_for_year_end
-
-
-def get_igdb_request_headers():
-    igdb_user_key = load_igdb_user_key()
-
-    headers = {
-        'user-key': igdb_user_key['user-key'],
-        'Accept': 'application/json',
-    }
-
-    return headers
 
 
 def get_igdb_request_params():

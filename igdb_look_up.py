@@ -1,8 +1,10 @@
 import requests
 
+
+from igdb_local_secrets import load_igdb_user_key
+
 from igdb_utils import (
     get_igdb_api_url_for_games,
-    get_igdb_request_headers,
     get_igdb_fields_for_games,
     get_igdb_request_params,
     append_filter_for_igdb_fields,
@@ -12,6 +14,18 @@ from igdb_utils import (
     format_release_dates_for_manual_display,
     format_list_of_platforms,
 )
+
+
+def get_igdb_request_headers():
+    igdb_user_key = load_igdb_user_key()
+
+    # For IGDB API version 3:
+    headers = {
+        "user-key": igdb_user_key["user-key"],
+        "Accept": "application/json",
+    }
+
+    return headers
 
 
 def look_up_game_name(
