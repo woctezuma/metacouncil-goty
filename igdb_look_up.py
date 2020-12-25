@@ -1,3 +1,5 @@
+import time
+
 import requests
 
 from igdb_credentials import load_credential_headers, download_latest_credentials
@@ -13,6 +15,41 @@ from igdb_utils import (
     format_release_dates_for_manual_display,
     format_list_of_platforms,
 )
+
+
+def get_igdb_rate_limits():
+    # Reference: https://api-docs.igdb.com/
+
+    igdb_rate_limits = {
+        # There is a rate limit of 4 requests per second.
+        # If you go over this limit you will receive a response with status code 429 Too Many Requests.
+        "num_requests_per_second": 4,
+        # Alternatively, encode this piece of information as such:
+        "num_requests": 4,
+        "num_seconds": 1,
+        # You are able to have up to 8 open requests at any moment in time.
+        # This can occur if requests take longer than 1 second to respond when multiple requests are being made.
+        "max_num_open_requests": 8,
+    }
+
+    return igdb_rate_limits
+
+
+def wait_for_cooldown(num_requests, start_time, igdb_rate_limits=None):
+    if igdb_rate_limits is None:
+        igdb_rate_limits = get_igdb_rate_limits()
+
+    if num_requests % igdb_rate_limits["num_requests"] == 0:
+        elapsed_time = time.time() - start_time
+
+        cooldown_duration = igdb_rate_limits["num_seconds"] - elapsed_time
+        if cooldown_duration > 0:
+            time.sleep(cooldown_duration)
+        new_start_time = time.time()
+    else:
+        new_start_time = start_time
+
+    return new_start_time
 
 
 def get_igdb_request_headers():

@@ -1,4 +1,5 @@
 import copy
+import time
 
 from disqualify_vote import is_a_noisy_vote
 from extend_igdb import extend_both_igdb_databases
@@ -7,7 +8,7 @@ from igdb_databases import load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database, save_igdb_match_database
 from igdb_utils import get_steam_service_no, get_pc_platform_no
 from igdb_utils import get_pc_platform_range
-from igdb_look_up import look_up_game_name
+from igdb_look_up import look_up_game_name, wait_for_cooldown
 from load_ballots import get_parsing_params
 from load_ballots import load_ballots
 
@@ -113,6 +114,8 @@ def match_names_with_igdb(raw_votes,
     seen_game_names = set()
     igdb_match_database = dict()
     igdb_local_database = dict()
+    num_requests = 0
+    start_time = time.time()
 
     for voter in raw_votes.keys():
         for raw_name in raw_votes[voter][goty_field].values():
@@ -127,6 +130,8 @@ def match_names_with_igdb(raw_votes,
                                                      must_be_available_on_pc=must_be_available_on_pc,
                                                      must_be_a_game=must_be_a_game,
                                                      year_constraint=year_constraint)
+                    num_requests += 1
+                    start_time = wait_for_cooldown(num_requests=num_requests, start_time=start_time)
 
                     try:
                         igdb_best_match = igdb_matches[0]
@@ -137,6 +142,8 @@ def match_names_with_igdb(raw_votes,
                                                          enforced_year=None,
                                                          must_be_available_on_pc=must_be_available_on_pc,
                                                          must_be_a_game=must_be_a_game)
+                        num_requests += 1
+                        start_time = wait_for_cooldown(num_requests=num_requests, start_time=start_time)
 
                         try:
                             igdb_best_match = igdb_matches[0]
@@ -147,6 +154,8 @@ def match_names_with_igdb(raw_votes,
                                                              enforced_year=None,
                                                              must_be_available_on_pc=False,
                                                              must_be_a_game=False)
+                            num_requests += 1
+                            start_time = wait_for_cooldown(num_requests=num_requests, start_time=start_time)
 
                     igdb_matched_ids = []
 

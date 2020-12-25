@@ -1,9 +1,10 @@
 import json
+import time
 
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix, load_igdb_local_database, load_igdb_match_database
 from igdb_databases import save_igdb_local_database
-from igdb_look_up import look_up_game_id
+from igdb_look_up import look_up_game_id, wait_for_cooldown
 
 
 def get_file_name_for_fixes_to_igdb_database(release_year=None,
@@ -108,6 +109,7 @@ def fill_in_blanks_in_the_local_database(release_year=None,
 
     augmented_igdb_local_database = igdb_local_database
     num_additional_entries = 0
+    start_time = time.time()
 
     for igdb_id in required_igdb_ids:
         igdb_id_as_str = str(igdb_id)
@@ -126,6 +128,7 @@ def fill_in_blanks_in_the_local_database(release_year=None,
 
             augmented_igdb_local_database[igdb_id_as_str] = data
             num_additional_entries += 1
+            start_time = wait_for_cooldown(num_requests=num_additional_entries, start_time=start_time)
 
     if save_to_disk and num_additional_entries > 0:
         save_igdb_local_database(augmented_igdb_local_database,
