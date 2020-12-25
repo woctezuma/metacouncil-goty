@@ -92,18 +92,19 @@ class TestLoadBallotsMethods(unittest.TestCase):
             self.assertEqual(len(parsing_params['voted_games']), num_goty_games_per_voter)
             self.assertEqual(parsing_params['goty_description'], goty_description_index)
 
-            if int(ballot_year) == 2018:
+            if int(ballot_year) == 2019:
+                self.assertEqual(len(parsing_params['gotd_voted_games']), num_gotd_games_per_voter)
+                self.assertEqual(parsing_params['gotd_description'], gotd_description_index)
+            else:
                 self.assertEqual(len(parsing_params['gotd_voted_games']), 0)
                 self.assertEqual(parsing_params['gotd_description'], None)
 
+            if int(ballot_year) == 2018:
                 self.assertEqual(parsing_params['best_dlc'], -3)
                 self.assertEqual(parsing_params['best_early_access'], -2)
                 self.assertEqual(parsing_params['best_vr'], None)
                 self.assertEqual(parsing_params['best_turd'], -1)
             else:
-                self.assertEqual(len(parsing_params['gotd_voted_games']), num_gotd_games_per_voter)
-                self.assertEqual(parsing_params['gotd_description'], gotd_description_index)
-
                 self.assertEqual(parsing_params['best_dlc'], -4)
                 self.assertEqual(parsing_params['best_early_access'], -3)
                 self.assertEqual(parsing_params['best_vr'], -2)

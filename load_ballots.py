@@ -16,21 +16,24 @@ def get_parsing_params(ballot_year='2018',
     ]
     parsing_params['goty_description'] = goty_description_index
 
-    if int(ballot_year) == 2018:
-        parsing_params['gotd_voted_games'] = []
-        parsing_params['gotd_description'] = None
-
-        parsing_params['best_dlc'] = -3
-        parsing_params['best_early_access'] = -2
-        parsing_params['best_vr'] = None
-        parsing_params['best_turd'] = -1
-    else:
+    # NB: if the ballot year ends with a "9", e.g. "2019", then it is the last year of its decade, and there is a GotD.
+    if int(ballot_year) % 10 == 9:
         parsing_params['gotd_voted_games'] = [
             goty_description_index + i
             for i in range(1, num_gotd_games_per_voter + 1)
         ]
         parsing_params['gotd_description'] = gotd_description_index
+    else:
+        parsing_params['gotd_voted_games'] = []
+        parsing_params['gotd_description'] = None
 
+    # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
+    if int(ballot_year) == 2018:
+        parsing_params['best_dlc'] = -3
+        parsing_params['best_early_access'] = -2
+        parsing_params['best_vr'] = None
+        parsing_params['best_turd'] = -1
+    else:
         parsing_params['best_dlc'] = -4
         parsing_params['best_early_access'] = -3
         parsing_params['best_vr'] = -2
