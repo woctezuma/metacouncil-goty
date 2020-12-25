@@ -1,6 +1,7 @@
 # Reference: https://api-docs.igdb.com/#breaking-changes
 
 import json
+import time
 
 import requests
 
@@ -61,6 +62,16 @@ def load_credential_headers(verbose=False):
         print("Headers (#fields={}): {}\n".format(len(headers), headers))
 
     return headers
+
+
+def get_unix_time_stamp():
+    # Reference: https://stackoverflow.com/a/49362936
+
+    unix_time_stamp = time.time()
+
+    unix_time_stamp_as_int = int(unix_time_stamp)
+
+    return unix_time_stamp_as_int
 
 
 def save_credentials_to_disk(credentials):

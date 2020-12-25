@@ -3,17 +3,6 @@
 # Reference: https://api-docs.igdb.com/?kotlin#endpoints
 
 import datetime
-import time
-
-
-def get_unix_time_stamp():
-    # Reference: https://stackoverflow.com/a/49362936
-
-    unix_time_stamp = time.time()
-
-    unix_time_stamp_as_int = int(unix_time_stamp)
-
-    return unix_time_stamp_as_int
 
 
 def get_igdb_api_url(end_point=None):
