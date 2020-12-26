@@ -1,6 +1,21 @@
 {
+  "The Forest": [
+    99425,
+    134250,
+    7504,
+    21961,
+    102313,
+    107021,
+    15457
+  ],
+  "Montster Hunter World": [],
+  "Frost Punk": [],
+  "Megaman 11": [],
+  "Dragon Quest XI: Shadows of an Elusive Age": [],
+  "SOULCALIBUR VI - 2B": [],
   "Fallout 76": [
-    103020
+    103020,
+    103308
   ],
   "Shadow of The Tomb Raider": [
     99123,
@@ -12,21 +27,11 @@
     99121,
     99230
   ],
-  "Epic Game Launcher": [],
-  "F76": [],
-  "Kingom Come: Deliverance": [],
   "Fear Effect Sedna": [
     30847
   ],
   "Star Control: Origins": [
     25311
-  ],
-  "CSGO: Danger Zone": [],
-  "Artifact": [
-    54572,
-    83182,
-    76753,
-    113320
   ],
   "Atlas": [
     113116,
@@ -35,11 +40,6 @@
     27318,
     121507,
     3225
-  ],
-  "Squares": [
-    106816,
-    87186,
-    76318
   ],
   "Metal Gear Survive": [
     22703
@@ -51,18 +51,11 @@
     29272,
     124938
   ],
-  "Beat Saber": [
-    83731,
-    117901
-  ],
   "My Time at Portia": [
     43165
   ],
   "ION MAIDEN": [
     54844
-  ],
-  "Hades": [
-    96354
   ],
   "Staxel": [
     37294
@@ -71,16 +64,14 @@
     19530
   ],
   "Phoenix Point": [
-    27804
+    27804,
+    138979
   ],
   "Slay the Spire": [
     40477
   ],
   "Touhou Luna Nights": [
     105447
-  ],
-  "Rimworld": [
-    9789
   ],
   "Them's Fightin' Herds": [
     18280
@@ -94,16 +85,17 @@
   "Battletech Flashpoint": [
     107258
   ],
-  "XCOM 2: War of the Chosen - Tactical Legacy Pack": [],
+  "XCOM 2: War of the Chosen - Tactical Legacy Pack": [
+    110871
+  ],
   "Prey Mooncrash": [
     103300
   ],
   "Prey - Mooncrash": [
-    117748,
-    103306
+    103300
   ],
   "Wolfenstein II: The Freedom Chronicles - Episode 2": [
-    75847
+    75843
   ],
   "Path of Exile: Betrayal": [
     112085
@@ -115,9 +107,8 @@
   "The Orb Vallis (Warframe Expansion)": [],
   "Faeria - Puzzle Pack Elements": [],
   "WORLD OF FINAL FANTASY\u00ae MAXIMA Upgrade": [],
-  "Un Pueblo De Nada": [],
-  "SOULCALIBUR VI - 2B": [
-    76885
+  "Un Pueblo De Nada": [
+    131740
   ],
   "Tom Clancy's Rainbow Six Siege - Year 3 Pass": [],
   "Rainbow Six Siege: Season 4 Pass": [],
@@ -131,7 +122,6 @@
   "Battletech": [
     18279
   ],
-  "Dragon Quest XI: Shadows of an Elusive Age": [],
   "Pillars of Eternity II: Deadfire": [
     26951
   ],
@@ -142,6 +132,9 @@
   ],
   "Megaquarium": [
     28072
+  ],
+  "Rimworld": [
+    9789
   ],
   "Yakuza 0": [
     11397
@@ -170,18 +163,18 @@
     9643
   ],
   "Far Cry 5": [
-    83888,
     28552,
     95960,
     53011,
     53012,
     83886,
-    83889
+    83889,
+    83888
   ],
   "DUSK": [
     25260,
-    13062,
-    104005
+    104005,
+    13062
   ],
   "Mega Man 11": [
     76723
@@ -199,7 +192,9 @@
   "DELTARUNE": [
     111563
   ],
-  "Deltarune Chapter 1": [],
+  "Deltarune Chapter 1": [
+    111563
+  ],
   "The Legend of Heroes: Trails of Cold Steel II": [
     13558
   ],
@@ -214,10 +209,10 @@
     3603,
     6285,
     5181,
+    1376,
     46182,
     5178,
     4225,
-    1376,
     5180,
     4755
   ],
@@ -270,7 +265,16 @@
     125126,
     109423
   ],
-  "Squidlit": [],
+  "Squidlit": [
+    86574
+  ],
+  "Artifact": [
+    54572,
+    83182,
+    76753,
+    113320,
+    111226
+  ],
   "CHRONO TRIGGER\u00ae": [
     1802
   ],
@@ -322,7 +326,6 @@
   "Unavowed": [
     27867
   ],
-  "Megaman 11": [],
   "Dragon Quest XI": [
     11667
   ],
@@ -375,26 +378,26 @@
     125126,
     109423
   ],
-  "Meritocracy of the Oni & Blade": [],
+  "Meritocracy of the Oni & Blade": [
+    105216
+  ],
   "Ghost of a Tale": [
     7684
   ],
-  "Heart Beat": [],
+  "Heart Beat": [
+    128695
+  ],
   "EXAPUNKS": [
     106122
   ],
   "Shenmue 1 & 2": [
     96391
   ],
-  "The Forest": [
-    7504,
-    21961,
-    102313,
-    107021,
-    15457
-  ],
   "Crash Bandicoot\u2122 N. Sane Trilogy": [
-    26196
+    26196,
+    135449,
+    135451,
+    135450
   ],
   "The Council": [
     78547
@@ -411,7 +414,6 @@
     27117,
     109309
   ],
-  "Montster Hunter World": [],
   "Katamari Damacy Reroll": [
     109458
   ],
@@ -431,6 +433,9 @@
   "BattleTech": [
     18279
   ],
+  "Beat Saber": [
+    83731
+  ],
   "ATOM RPG": [
     28160
   ],
@@ -441,12 +446,11 @@
     18279
   ],
   "Valkyria Chronicles 4": [
-    75848
+    120621
   ],
   "Gris": [
     22917
   ],
-  "Frost Punk": [],
   "Book of Demons": [
     22747
   ],
