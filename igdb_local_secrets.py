@@ -21,8 +21,9 @@ def load_igdb_user_key():
             # For version 4 of IGDB API:
             "client_id": None,
             "client_secret": None,
-            "token_type": None,
-            "access_token": None,
+            # The following are temporary credentials which should be obtained with the pair (id, secret) above:
+            "token_type": "",
+            "access_token": "",
         }
 
     return igdb_user_key
