@@ -21,6 +21,8 @@ def load_igdb_user_key():
             # For version 4 of IGDB API:
             "client_id": None,
             "client_secret": None,
+            "token_type": None,
+            "access_token": None,
         }
 
     return igdb_user_key
