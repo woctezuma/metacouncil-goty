@@ -273,7 +273,7 @@ def display_optional_ballots(input_filename,
 
 
 if __name__ == '__main__':
-    ballot_year = '2019'
+    ballot_year = '2020'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
     use_igdb = True
     retrieve_igdb_data_from_scratch = False
