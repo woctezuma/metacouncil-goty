@@ -1,4 +1,16 @@
 {
+  "-201": {
+    "id": -201,
+    "name": "Epic Games Launcher (software)",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2018,
+        "human": "2018-Dec-06"
+      }
+    ],
+    "slug": null
+  },
   "-885940": {
     "id": -885940,
     "name": "Meritocracy of the Oni & Blade",
@@ -17,26 +29,20 @@
     ],
     "slug": null
   },
-  "-201": {
-    "id": -201,
-    "name": "Epic Games Launcher (software)",
+  "-427680": {
+    "id": -427680,
+    "name": "Zwei: The Arges Adventure",
     "release_dates": [
       {
         "platform": 6,
         "y": 2018,
-        "human": "2018-Dec-06"
+        "human": "2018-Jan-24"
       }
     ],
-    "slug": null
-  },
-  "-6": {
-    "id": -6,
-    "name": "Un Pueblo De Nada",
-    "release_dates": [
+    "external_games": [
       {
-        "platform": 6,
-        "y": 2018,
-        "human": "2018-Jan-25"
+        "category": 1,
+        "uid": "427680"
       }
     ],
     "slug": null
