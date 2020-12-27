@@ -79,7 +79,7 @@ class TestLoadBallotsMethods(unittest.TestCase):
         goty_description_index = num_goty_games_per_voter + 1
         gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
 
-        for ballot_year in ['2018', '2019']:
+        for ballot_year in ['2018', '2019', '2020']:
             parsing_params = load_ballots.get_parsing_params(ballot_year=ballot_year)
 
             self.assertEqual(len(parsing_params.keys()), num_parameters)
