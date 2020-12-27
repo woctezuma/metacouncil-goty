@@ -15,7 +15,8 @@ game, and the best VR game. Exceptionally, for 2019, there is also an award for 
 
 ## Method
 
-Ballots are cast on MetaCouncil ([2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/), [2019](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019.1729/)) and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
+Ballots are cast on MetaCouncil ([2018][ballots-2018], [2019][ballots-2019], [2020][ballots-2020])
+and processed with [our implementation](https://github.com/woctezuma/steam-era-goty) of Schulze method.
 
 ## Usage
 
@@ -71,8 +72,16 @@ The white-list allows to prevent the automatic disqualification of some games du
 ## Results
 
 Results are displayed:
--   on the Wiki ([GotY 2018](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2018), [GotY 2019](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2019), [GotD 201X](https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Decade_201X)),
--   on MetaCouncil ([GotY 2018](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/), [GotY 2019](https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019-results.1766/), [GotD 201X](https://metacouncil.com/threads/metacouncils-pc-games-of-the-decade-awards-2010-2019-results.1771/)).
+-   on the Wiki:
+    - [GotY 2018][results-2018-wiki],
+    - [GotY 2019][results-2019-wiki],
+    - [GotD 201X][results-201X-wiki],
+    - [GotY 2020][results-2020-wiki],
+-   on MetaCouncil:
+    - [GotY 2018][results-2018],
+    - [GotY 2019][results-2019],
+    - [GotD 201X][results-201X],
+    - [GotD 2020][results-2020].
 
 ## Alternative methods for game name matching
 
@@ -148,3 +157,17 @@ the most promising method involves using the IGDB database with a constraint w.r
 
 [codacy]: <https://www.codacy.com/app/woctezuma/metacouncil-goty>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/d072d73231a24a5b91bc72c59737ca7d> 
+
+[ballots-2018]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/>
+[ballots-2019]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019.1729/>
+[ballots-2020]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2020.2259/>
+
+[results-2018]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/>
+[results-2019]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019-results.1766/>
+[results-201X]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-decade-awards-2010-2019-results.1771/>
+[results-2020]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2020-results.TODO/>
+
+[results-2018-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2018>
+[results-2019-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2019>
+[results-201X-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Decade_201X>
+[results-2020-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2020>
