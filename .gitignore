@@ -1,6 +1,9 @@
 .idea/
 venv/
 __pycache__/
-data/
+data/*_dummy_*.csv
+data/dummy*.json
+data/pc_gaming_metacouncil_goty_awards_20*.csv
 .scannerwork/
 igdb_user_key.json
+
