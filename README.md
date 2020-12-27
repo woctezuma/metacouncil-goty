@@ -81,7 +81,7 @@ Results are displayed:
     - [GotY 2018][results-2018],
     - [GotY 2019][results-2019],
     - [GotD 201X][results-201X],
-    - [GotD 2020][results-2020].
+    - [GotY 2020][results-2020].
 
 ## Alternative methods for game name matching
 
