@@ -1,4 +1,2616 @@
 {
+  "75239": {
+    "id": 75239,
+    "alternative_names": [
+      {
+        "id": 50093,
+        "comment": "Korean title",
+        "name": "\uc2a4\ud3a0\ub801\ud0a4 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 196740,
+        "category": 3,
+        "name": "Spelunky 2",
+        "uid": "62377",
+        "url": "https://www.giantbomb.com/games/3030-62377/"
+      },
+      {
+        "id": 198176,
+        "category": 6,
+        "name": "Spelunky 2",
+        "uid": "ed463a0d2fb6c180518b4daff9bb69c3",
+        "url": "http://www.pushsquare.com/games/ps4/spelunky_2"
+      },
+      {
+        "id": 1906621,
+        "category": 14,
+        "name": "Spelunky 2",
+        "uid": "499859",
+        "url": "https://www.twitch.tv/directory/game/Spelunky%202"
+      }
+    ],
+    "name": "Spelunky 2",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 210477,
+        "human": "Sep 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 210478,
+        "human": "Sep 29, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 221938,
+        "human": "2021",
+        "platform": 130,
+        "y": 2021
+      }
+    ],
+    "slug": "spelunky-2"
+  },
+  "70828": {
+    "id": 70828,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186730,
+        "category": 3,
+        "name": "Raji: An Ancient Epic",
+        "uid": "60930",
+        "url": "https://www.giantbomb.com/games/3030-60930/"
+      },
+      {
+        "id": 187577,
+        "category": 1,
+        "name": "Raji: An Ancient Epic",
+        "uid": "730390"
+      },
+      {
+        "id": 1317465,
+        "category": 12,
+        "name": "Raji: An Ancient Epic",
+        "uid": "5ecd21e979f642039d2c2493a32d290d",
+        "url": "http://www.nintendolife.com/games/switch-eshop/raji_an_ancient_epic"
+      },
+      {
+        "id": 1905833,
+        "category": 14,
+        "name": "Raji: An Ancient Epic",
+        "uid": "498471",
+        "url": "https://www.twitch.tv/directory/game/Raji%3A%20An%20Ancient%20Epic"
+      }
+    ],
+    "name": "Raji: An Ancient Epic",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 206937,
+        "human": "Aug 18, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 208469,
+        "human": "Oct 15, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 208470,
+        "human": "Oct 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208471,
+        "human": "Oct 15, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "raji-an-ancient-epic"
+  },
+  "132907": {
+    "id": 132907,
+    "alternative_names": [
+      {
+        "id": 53391,
+        "comment": "Alternative spelling",
+        "name": "There Is No Game: Wrong Dimension"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1860695,
+        "category": 1,
+        "name": "There is no game : Wrong dimension",
+        "uid": "1240210",
+        "url": "https://store.steampowered.com/app/1240210",
+        "year": 2020
+      },
+      {
+        "id": 1939053,
+        "category": 14,
+        "name": "There Is No Game: Wrong dimension",
+        "uid": "519100",
+        "url": "https://www.twitch.tv/directory/game/There%20Is%20No%20Game%3A%20Wrong%20dimension/"
+      }
+    ],
+    "name": "There Is No Game : Wrong Dimension",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 206376,
+        "human": "Aug 06, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 206377,
+        "human": "Aug 06, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "there-is-no-game-wrong-dimension"
+  },
+  "136604": {
+    "id": 136604,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1942020,
+        "category": 20,
+        "name": "Control Ultimate Edition (PS4)",
+        "uid": "B08H9K6R64",
+        "url": "https://amazon.fr/dp/B08H9K6R64"
+      },
+      {
+        "id": 1942108,
+        "category": 20,
+        "name": "Control Ultimate Edition (Xbox One)",
+        "uid": "B08H9K7MQL"
+      },
+      {
+        "id": 1942794,
+        "category": 20,
+        "uid": "B08HF6WH7M"
+      },
+      {
+        "id": 1942816,
+        "category": 20,
+        "uid": "B08HF8BNMM"
+      },
+      {
+        "id": 1942989,
+        "category": 20,
+        "name": "Control Ultimate Edition - Xbox One",
+        "uid": "B08L7H3LDH"
+      },
+      {
+        "id": 1943012,
+        "category": 20,
+        "name": "Control Ultimate Edition - PlayStation 4",
+        "uid": "B08L7NFCW6"
+      },
+      {
+        "id": 1997262,
+        "category": 20,
+        "name": "Control Ultimate Edition (PS5)",
+        "uid": "B08R1XLRSD",
+        "url": "https://amazon.co.uk/dp/B08R1XLRSD"
+      },
+      {
+        "id": 1997298,
+        "category": 20,
+        "name": "Control Ultimate Edition (Xbox Series X)",
+        "uid": "B08R1THRNY",
+        "url": "https://amazon.co.uk/dp/B08R1THRNY"
+      }
+    ],
+    "name": "Control: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 206510,
+        "human": "Aug 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 206511,
+        "human": "Sep 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 206512,
+        "human": "Sep 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 216110,
+        "human": "Oct 28, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 222273,
+        "human": "Feb 02, 2021",
+        "platform": 169,
+        "y": 2021
+      },
+      {
+        "id": 222274,
+        "human": "Feb 02, 2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "control-ultimate-edition"
+  },
+  "133004": {
+    "id": 133004,
+    "alternative_names": [
+      {
+        "id": 37994,
+        "comment": "Working title",
+        "name": "Assassin's Creed Kingdom"
+      },
+      {
+        "id": 50273,
+        "comment": "Korean title",
+        "name": "\uc5b4\uc314\uc2e0 \ud06c\ub9ac\ub4dc \ubc1c\ud560\ub77c"
+      },
+      {
+        "id": 52028,
+        "comment": "Alternative spelling",
+        "name": "Assassin's Creed: Valhalla"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1864092,
+        "category": 3,
+        "name": "Assassin's Creed Valhalla",
+        "uid": "78229",
+        "url": "https://www.giantbomb.com/games/3030-78229/",
+        "year": 2020
+      },
+      {
+        "id": 1918669,
+        "category": 14,
+        "name": "Assassin's Creed Valhalla",
+        "uid": "517330",
+        "url": "https://www.twitch.tv/directory/game/Assassin's%20Creed%20Valhalla"
+      },
+      {
+        "id": 1928401,
+        "category": 20,
+        "uid": "B087XTT5GZ"
+      },
+      {
+        "id": 1928441,
+        "category": 20,
+        "uid": "B087XR383W"
+      },
+      {
+        "id": 1935070,
+        "category": 20,
+        "uid": "B087XR2X4N"
+      },
+      {
+        "id": 1936054,
+        "category": 20,
+        "uid": "B087QRXNHL"
+      },
+      {
+        "id": 1938171,
+        "category": 20,
+        "uid": "B087VDQFCK"
+      },
+      {
+        "id": 1941732,
+        "category": 20,
+        "uid": "B08KSW1D6H"
+      },
+      {
+        "id": 1942017,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Standard - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT2MMGM"
+      },
+      {
+        "id": 1942518,
+        "category": 20,
+        "uid": "B08FS5HKTR"
+      },
+      {
+        "id": 1942842,
+        "category": 20,
+        "uid": "B08KT23JDP"
+      },
+      {
+        "id": 1942987,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Standard - PRE-PURCHASE - Xbox Series X [Digital Code]",
+        "uid": "B08LB5FNT8"
+      },
+      {
+        "id": 1996628,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla - Standard Edition - [PlayStation 5]",
+        "uid": "B08KJMW6C9",
+        "url": "https://amazon.de/dp/B08KJMW6C9"
+      },
+      {
+        "id": 1996636,
+        "category": 20,
+        "name": "Assassin's Creed: Valhalla (PS5)",
+        "uid": "B08NVHZGJ3",
+        "url": "https://amazon.co.uk/dp/B08NVHZGJ3"
+      }
+    ],
+    "name": "Assassin's Creed Valhalla",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 209837,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 209838,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 209839,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 209840,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 213504,
+        "human": "Nov 10, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 213505,
+        "human": "Nov 12, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 213506,
+        "human": "Nov 12, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 213507,
+        "human": "Nov 19, 2020",
+        "platform": 167,
+        "y": 2020
+      }
+    ],
+    "slug": "assassins-creed-valhalla"
+  },
+  "134119": {
+    "id": 134119,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928864,
+        "category": 20,
+        "uid": "B087XTSGLQ"
+      },
+      {
+        "id": 1929208,
+        "category": 20,
+        "uid": "B087XXXRK6"
+      },
+      {
+        "id": 1934795,
+        "category": 20,
+        "uid": "B087XQT2YW"
+      },
+      {
+        "id": 1936296,
+        "category": 20,
+        "uid": "B0881ZZ4H7"
+      },
+      {
+        "id": 1936586,
+        "category": 20,
+        "uid": "B087XQJWMF"
+      },
+      {
+        "id": 1936987,
+        "category": 20,
+        "uid": "B087RZF761"
+      },
+      {
+        "id": 1937266,
+        "category": 20,
+        "uid": "B087RZGZTD"
+      },
+      {
+        "id": 1937438,
+        "category": 20,
+        "uid": "B087QSVCK4"
+      },
+      {
+        "id": 1941519,
+        "category": 20,
+        "uid": "B08G25T87J"
+      },
+      {
+        "id": 1941593,
+        "category": 20,
+        "uid": "B08KSYCJWC"
+      },
+      {
+        "id": 1941940,
+        "category": 20,
+        "name": "Assassins Creed Valhalla Gold Edition (PS5)",
+        "uid": "B08G5RHS8P"
+      },
+      {
+        "id": 1941945,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Gold - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT1R48F"
+      },
+      {
+        "id": 1942581,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Gold Steelbook Edition - PlayStation 5",
+        "uid": "B08FS7BCR4"
+      },
+      {
+        "id": 1942770,
+        "category": 20,
+        "uid": "B08G91DBJX"
+      },
+      {
+        "id": 1942878,
+        "category": 20,
+        "uid": "B08KT628B7"
+      },
+      {
+        "id": 1942998,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Gold - PRE-PURCHASE - Xbox Series X [Digital Code]",
+        "uid": "B08LB7PP4K"
+      },
+      {
+        "id": 1996670,
+        "category": 20,
+        "name": "Assassin's Creed: Valhalla - Gold Edition (PS5)",
+        "uid": "B08NVM8RMB",
+        "url": "https://amazon.co.uk/dp/B08NVM8RMB"
+      },
+      {
+        "id": 1996758,
+        "category": 20,
+        "name": "Assassin's Creed: Valhalla - Gold Edition (PS5)",
+        "uid": "B08P7979LJ",
+        "url": "https://amazon.co.uk/dp/B08P7979LJ"
+      }
+    ],
+    "name": "Assassin's Creed Valhalla: Gold Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 205508,
+        "human": "Nov 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 216313,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 216314,
+        "human": "Nov 12, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 216315,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 216316,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 216459,
+        "human": "Nov 10, 2020",
+        "platform": 170,
+        "y": 2020
+      }
+    ],
+    "slug": "assassins-creed-valhalla-gold-edition"
+  },
+  "141160": {
+    "id": 141160,
+    "category": 0,
+    "name": "Assassin's Creed Valhalla: Collector's Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 218876,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218877,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218878,
+        "human": "Nov 10, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 218879,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218880,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 218881,
+        "human": "Nov 10, 2020",
+        "platform": 170,
+        "y": 2020
+      }
+    ],
+    "slug": "assassins-creed-valhalla-collectors-edition"
+  },
+  "136132": {
+    "id": 136132,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1929437,
+        "category": 20,
+        "uid": "B087XR8NLS",
+        "url": "https://amazon.com/dp/B087XR8NLS"
+      },
+      {
+        "id": 1934072,
+        "category": 20,
+        "uid": "B087VCY2WL"
+      },
+      {
+        "id": 1934236,
+        "category": 20,
+        "uid": "B087VDG2PB"
+      },
+      {
+        "id": 1941823,
+        "category": 20,
+        "uid": "B08KSX3DY9"
+      },
+      {
+        "id": 1941883,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Ultimate - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT1JKCG"
+      },
+      {
+        "id": 1942870,
+        "category": 20,
+        "uid": "B08KT275N7"
+      },
+      {
+        "id": 1943001,
+        "category": 20,
+        "name": "Assassin's Creed Valhalla Ultimate - PRE-PURCHASE - Xbox Series X [Digital Code]",
+        "uid": "B08LB241YP"
+      },
+      {
+        "id": 1996631,
+        "category": 20,
+        "name": "Assassin's Creed: Valhalla - Ultimate Edition (PS5)",
+        "uid": "B08NVMJM8J",
+        "url": "https://amazon.co.uk/dp/B08NVMJM8J"
+      }
+    ],
+    "name": "Assassin's Creed Valhalla: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 216318,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 216319,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 216320,
+        "human": "Nov 12, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 216321,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 216322,
+        "human": "Nov 10, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 216323,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "assassins-creed-valhalla-ultimate-edition"
+  },
+  "135735": {
+    "id": 135735,
+    "alternative_names": [
+      {
+        "id": 37510,
+        "comment": "Alternative title",
+        "name": "THE FINAL HOURS OF HALF-LIFE: ALYX"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1947723,
+        "category": 14,
+        "name": "Half-Life: Alyx - Final Hours",
+        "uid": "2112050882",
+        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx%20-%20Final%20Hours"
+      }
+    ],
+    "name": "Half-Life: Alyx - Final Hours",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203935,
+        "human": "Jul 09, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "half-life-alyx-final-hours"
+  },
+  "107218": {
+    "id": 107218,
+    "alternative_names": [
+      {
+        "id": 22885,
+        "comment": "Working title",
+        "name": "Codename Kartoffel"
+      },
+      {
+        "id": 36292,
+        "comment": "Alternative spelling",
+        "name": "Desperados 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1478055,
+        "category": 6,
+        "name": "Desperados III",
+        "uid": "163b40cc93e994b04f2ba0d99ecf8784",
+        "url": "http://www.pushsquare.com/games/ps4/desperados_iii",
+        "year": 2019
+      },
+      {
+        "id": 1486071,
+        "category": 1,
+        "name": "Desperados III",
+        "uid": "610370",
+        "url": "https://store.steampowered.com/app/610370",
+        "year": 2019
+      },
+      {
+        "id": 1682841,
+        "category": 3,
+        "name": "Desperados III",
+        "uid": "69956",
+        "url": "https://www.giantbomb.com/games/3030-69956/",
+        "year": 2019
+      },
+      {
+        "id": 1911528,
+        "category": 14,
+        "name": "Desperados III",
+        "uid": "509212",
+        "url": "https://www.twitch.tv/directory/game/Desperados%20III"
+      },
+      {
+        "id": 1928943,
+        "category": 20,
+        "uid": "B07GPSFW14",
+        "url": "https://amazon.com/dp/B07GPSFW14"
+      },
+      {
+        "id": 1929521,
+        "category": 20,
+        "uid": "B07GPP7P7P",
+        "url": "https://amazon.com/dp/B07GPP7P7P"
+      },
+      {
+        "id": 1932184,
+        "category": 20,
+        "uid": "B07GPS5411"
+      },
+      {
+        "id": 1932252,
+        "category": 20,
+        "uid": "B0896B2JX7"
+      },
+      {
+        "id": 1933499,
+        "category": 20,
+        "uid": "B07GQ89JKC"
+      },
+      {
+        "id": 1936304,
+        "category": 20,
+        "uid": "B07GQ45SNP"
+      },
+      {
+        "id": 1937585,
+        "category": 20,
+        "uid": "B088TV8J9R"
+      }
+    ],
+    "name": "Desperados III",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 193466,
+        "human": "Jun 16, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 193467,
+        "human": "Jun 16, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 193468,
+        "human": "Jun 16, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "desperados-iii"
+  },
+  "118607": {
+    "id": 118607,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1722179,
+        "category": 1,
+        "name": "art of rally",
+        "uid": "550320",
+        "url": "https://store.steampowered.com/app/550320",
+        "year": 2019
+      },
+      {
+        "id": 1980563,
+        "category": 14,
+        "name": "art of rally",
+        "uid": "318092374",
+        "url": "https://www.twitch.tv/directory/game/art%20of%20rally"
+      }
+    ],
+    "name": "art of rally",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 211483,
+        "human": "Sep 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 211484,
+        "human": "Sep 23, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 211485,
+        "human": "Sep 23, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "art-of-rally"
+  },
+  "113115": {
+    "id": 113115,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1685853,
+        "category": 6,
+        "name": "The Last Campfire",
+        "uid": "9b106706ccf2fa415f960aaf88d67af7",
+        "url": "http://www.pushsquare.com/games/ps4/last_campfire"
+      },
+      {
+        "id": 1686427,
+        "category": 1,
+        "name": "The Last Campfire",
+        "uid": "990630",
+        "url": "https://store.steampowered.com/app/990630",
+        "year": 2019
+      },
+      {
+        "id": 1744296,
+        "category": 3,
+        "name": "The Last Campfire",
+        "uid": "71300",
+        "url": "https://www.giantbomb.com/games/3030-71300/",
+        "year": 2019
+      },
+      {
+        "id": 1912395,
+        "category": 14,
+        "name": "The Last Campfire",
+        "uid": "510585",
+        "url": "https://www.twitch.tv/directory/game/The%20Last%20Campfire"
+      }
+    ],
+    "name": "The Last Campfire",
+    "platforms": [
+      6,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 208126,
+        "human": "Aug 27, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208127,
+        "human": "Aug 27, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208128,
+        "human": "Aug 27, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 208129,
+        "human": "Aug 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 208130,
+        "human": "Aug 27, 2020",
+        "platform": 39,
+        "y": 2020
+      }
+    ],
+    "slug": "the-last-campfire"
+  },
+  "132139": {
+    "id": 132139,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1861028,
+        "category": 1,
+        "name": "XCOM: Chimera Squad",
+        "uid": "882100",
+        "url": "https://store.steampowered.com/app/882100",
+        "year": 2020
+      },
+      {
+        "id": 1864358,
+        "category": 3,
+        "name": "XCOM: Chimera Squad",
+        "uid": "77960",
+        "url": "https://www.giantbomb.com/games/3030-77960/"
+      },
+      {
+        "id": 1918418,
+        "category": 14,
+        "name": "XCOM: Chimera Squad",
+        "uid": "517063",
+        "url": "https://www.twitch.tv/directory/game/XCOM%3A%20Chimera%20Squad"
+      }
+    ],
+    "name": "XCOM: Chimera Squad",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 193075,
+        "human": "Apr 24, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "xcom-chimera-squad"
+  },
+  "103298": {
+    "id": 103298,
+    "alternative_names": [
+      {
+        "id": 50203,
+        "comment": "Korean title",
+        "name": "\ub460 \uc774\ud130\ub110"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1026790,
+        "category": 6,
+        "name": "Doom Eternal",
+        "uid": "6918b8588657f9814d03451df8d21c46",
+        "url": "http://www.pushsquare.com/games/ps4/doom_eternal"
+      },
+      {
+        "id": 1375928,
+        "category": 12,
+        "name": "DOOM Eternal",
+        "uid": "4d19adf27a8bee0d1994edb7f04528ce",
+        "url": "http://www.nintendolife.com/games/nintendo-switch/doom_eternal"
+      },
+      {
+        "id": 1457760,
+        "category": 3,
+        "name": "Doom Eternal",
+        "uid": "68917",
+        "url": "https://www.giantbomb.com/games/3030-68917/"
+      },
+      {
+        "id": 1594239,
+        "category": 19,
+        "name": "DOOM Eternal",
+        "uid": "78e105--65988",
+        "url": "https://www.gamespress.com/product.asp?c=78e105--65988"
+      },
+      {
+        "id": 1709395,
+        "category": 14,
+        "name": "Doom Eternal",
+        "uid": "506442",
+        "url": "https://www.twitch.tv/directory/game/Doom Eternal"
+      },
+      {
+        "id": 1859197,
+        "category": 1,
+        "name": "DOOM Eternal",
+        "uid": "782330",
+        "url": "https://store.steampowered.com/app/782330",
+        "year": 2020
+      },
+      {
+        "id": 1865502,
+        "category": 20,
+        "uid": "B07WFHQKFV"
+      },
+      {
+        "id": 1865555,
+        "category": 20,
+        "uid": "B07WJQCJ6M"
+      },
+      {
+        "id": 1865725,
+        "category": 20,
+        "uid": "B083PK1J1Z"
+      },
+      {
+        "id": 1928445,
+        "category": 20,
+        "uid": "B07DJX3Y19",
+        "url": "https://amazon.com/dp/B07DJX3Y19"
+      },
+      {
+        "id": 1928511,
+        "category": 20,
+        "uid": "B07DJX3VZS",
+        "url": "https://amazon.com/dp/B07DJX3VZS"
+      },
+      {
+        "id": 1929673,
+        "category": 20,
+        "uid": "B07DK1C1Y4",
+        "url": "https://amazon.com/dp/B07DK1C1Y4"
+      },
+      {
+        "id": 1930120,
+        "category": 20,
+        "uid": "B07DKKS9X3",
+        "url": "https://amazon.co.uk/dp/B07DKKS9X3"
+      },
+      {
+        "id": 1930312,
+        "category": 20,
+        "uid": "B07SK4Z48F",
+        "url": "https://amazon.com/dp/B07SK4Z48F"
+      },
+      {
+        "id": 1930317,
+        "category": 20,
+        "uid": "B07HDJLSF2",
+        "url": "https://amazon.com/dp/B07HDJLSF2"
+      },
+      {
+        "id": 1930349,
+        "category": 20,
+        "uid": "B07W1ZXKS5",
+        "url": "https://amazon.co.jp/dp/B07W1ZXKS5"
+      },
+      {
+        "id": 1930705,
+        "category": 20,
+        "uid": "B07HDJLQCY",
+        "url": "https://amazon.com/dp/B07HDJLQCY"
+      },
+      {
+        "id": 1931877,
+        "category": 20,
+        "uid": "B0876YKLY2"
+      },
+      {
+        "id": 1933457,
+        "category": 20,
+        "uid": "B07WHM57VM"
+      },
+      {
+        "id": 1933981,
+        "category": 20,
+        "uid": "B07Z5MKKZ8"
+      },
+      {
+        "id": 1935879,
+        "category": 20,
+        "uid": "B07DKKCF8Y"
+      },
+      {
+        "id": 1936172,
+        "category": 20,
+        "uid": "B07DP5G8DB"
+      },
+      {
+        "id": 1936174,
+        "category": 20,
+        "uid": "B083VM39L5"
+      },
+      {
+        "id": 1936442,
+        "category": 20,
+        "uid": "B07DNTF32X"
+      },
+      {
+        "id": 1936523,
+        "category": 20,
+        "uid": "B07DNTVWKH"
+      },
+      {
+        "id": 1936937,
+        "category": 20,
+        "uid": "B07DP3G9HY"
+      },
+      {
+        "id": 1937768,
+        "category": 20,
+        "uid": "B07DNWYP2S"
+      },
+      {
+        "id": 1938204,
+        "category": 20,
+        "uid": "B07DNGRHG7"
+      },
+      {
+        "id": 1938456,
+        "category": 20,
+        "uid": "B07WMSTPB3",
+        "url": "https://amazon.de/dp/B07WMSTPB3"
+      },
+      {
+        "id": 1997147,
+        "category": 20,
+        "name": "DOOM Eternal: Standard Edition - Switch [Digital Code]",
+        "uid": "B08PP9H2HF",
+        "url": "https://amazon.com/dp/B08PP9H2HF"
+      },
+      {
+        "id": 1997222,
+        "category": 20,
+        "name": "DOOM Eternal|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
+        "uid": "B08QDJRQXB",
+        "url": "https://amazon.jp/dp/B08QDJRQXB"
+      }
+    ],
+    "name": "DOOM Eternal",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169,
+      203
+    ],
+    "release_dates": [
+      {
+        "id": 177145,
+        "human": "Mar 20, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 177146,
+        "human": "Mar 20, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 177147,
+        "human": "Mar 20, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 195840,
+        "human": "Mar 20, 2020",
+        "platform": 203,
+        "y": 2020
+      },
+      {
+        "id": 219928,
+        "human": "Dec 08, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 221406,
+        "human": "TBD",
+        "platform": 167
+      },
+      {
+        "id": 221407,
+        "human": "TBD",
+        "platform": 169
+      }
+    ],
+    "slug": "doom-eternal"
+  },
+  "119888": {
+    "id": 119888,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1932127,
+        "category": 20,
+        "uid": "B07SJ2WPH4"
+      },
+      {
+        "id": 1932157,
+        "category": 20,
+        "uid": "B07SK4CZPB"
+      },
+      {
+        "id": 1932334,
+        "category": 20,
+        "uid": "B07SG16WQN"
+      },
+      {
+        "id": 1933497,
+        "category": 20,
+        "uid": "B07SY33R68"
+      },
+      {
+        "id": 1933680,
+        "category": 20,
+        "uid": "B07SSTQGGL"
+      }
+    ],
+    "name": "DOOM: Eternal - Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 190956,
+        "human": "Mar 20, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 190957,
+        "human": "Mar 20, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 190958,
+        "human": "Mar 20, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "doom-eternal-deluxe-edition"
+  },
+  "36595": {
+    "id": 36595,
+    "alternative_names": [
+      {
+        "id": 52129,
+        "comment": "Korean title",
+        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
+      },
+      {
+        "id": 52681,
+        "comment": "Japanese title - original",
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186796,
+        "category": 3,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "60864",
+        "url": "https://www.giantbomb.com/games/3030-60864/",
+        "year": 2018
+      },
+      {
+        "id": 1593322,
+        "category": 19,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "054464--61519",
+        "url": "https://www.gamespress.com/product.asp?c=054464--61519",
+        "year": 2018
+      },
+      {
+        "id": 1725109,
+        "category": 12,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "87078262a04f767c035b56e32f0f1983",
+        "url": "http://www.nintendolife.com/games/switch-eshop/sakuna_of_rice_and_ruin"
+      },
+      {
+        "id": 1905804,
+        "category": 14,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "498405",
+        "url": "https://www.twitch.tv/directory/game/Sakuna%3A%20Of%20Rice%20And%20Ruin"
+      },
+      {
+        "id": 1941685,
+        "category": 20,
+        "uid": "B08F51L9HF"
+      },
+      {
+        "id": 1941711,
+        "category": 20,
+        "uid": "B08F4ZQMG2"
+      },
+      {
+        "id": 1942159,
+        "category": 20,
+        "uid": "B08CSH8QK1"
+      },
+      {
+        "id": 1942316,
+        "category": 20,
+        "uid": "B08CSHC19D"
+      },
+      {
+        "id": 1942779,
+        "category": 20,
+        "uid": "B08DPF28KP"
+      },
+      {
+        "id": 1942810,
+        "category": 20,
+        "uid": "B08DPDTWY5"
+      },
+      {
+        "id": 1996602,
+        "category": 20,
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
+        "uid": "B08N5B85MS",
+        "url": "https://amazon.jp/dp/B08N5B85MS"
+      }
+    ],
+    "name": "Sakuna: Of Rice and Ruin",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 217915,
+        "human": "Nov 10, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217916,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217917,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217918,
+        "human": "Nov 20, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217919,
+        "human": "Nov 20, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217920,
+        "human": "Nov 12, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217921,
+        "human": "Nov 12, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "sakuna-of-rice-and-ruin"
+  },
+  "119295": {
+    "id": 119295,
+    "alternative_names": [
+      {
+        "id": 40362,
+        "comment": "Acronym",
+        "name": "MSFS"
+      },
+      {
+        "id": 40363,
+        "comment": "Alternative title",
+        "name": "MSFS 2020"
+      },
+      {
+        "id": 40364,
+        "comment": "Alternative title",
+        "name": "MSFS2020"
+      },
+      {
+        "id": 50219,
+        "comment": "Korean title",
+        "name": "\ub9c8\uc774\ud06c\ub85c\uc18c\ud504\ud2b8 \ud50c\ub77c\uc774\ud2b8 \uc2dc\ubbac\ub808\uc774\ud130"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1775862,
+        "category": 3,
+        "name": "Microsoft Flight Simulator",
+        "uid": "73765",
+        "url": "https://www.giantbomb.com/games/3030-73765/",
+        "year": 2020
+      },
+      {
+        "id": 1914508,
+        "category": 14,
+        "name": "Microsoft Flight Simulator",
+        "uid": "7193",
+        "url": "https://www.twitch.tv/directory/game/Microsoft%20Flight%20Simulator"
+      },
+      {
+        "id": 1941505,
+        "category": 20,
+        "uid": "B08G291HMG"
+      },
+      {
+        "id": 1942724,
+        "category": 20,
+        "uid": "B08F351K1H"
+      }
+    ],
+    "name": "Microsoft Flight Simulator",
+    "platforms": [
+      6,
+      49,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 204222,
+        "human": "Aug 18, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 204223,
+        "human": "Aug 18, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 221519,
+        "human": "Q2 2021",
+        "platform": 169,
+        "y": 2021
+      }
+    ],
+    "slug": "microsoft-flight-simulator"
+  },
+  "124954": {
+    "id": 124954,
+    "alternative_names": [
+      {
+        "id": 26375,
+        "comment": "Other",
+        "name": "Crusader Kings 3"
+      },
+      {
+        "id": 50484,
+        "comment": "Acronym",
+        "name": "CK3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1806834,
+        "category": 3,
+        "name": "Crusader Kings III",
+        "uid": "75742",
+        "url": "https://www.giantbomb.com/games/3030-75742/"
+      },
+      {
+        "id": 1836639,
+        "category": 1,
+        "name": "Crusader Kings III",
+        "uid": "1158310",
+        "url": "https://store.steampowered.com/app/1158310",
+        "year": 2020
+      },
+      {
+        "id": 1916335,
+        "category": 14,
+        "name": "Crusader Kings III",
+        "uid": "514888",
+        "url": "https://www.twitch.tv/directory/game/Crusader%20Kings%20III"
+      },
+      {
+        "id": 1942819,
+        "category": 20,
+        "uid": "B08CS52XNR"
+      }
+    ],
+    "name": "Crusader Kings III",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 195836,
+        "human": "Sep 01, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 195837,
+        "human": "Sep 01, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 195838,
+        "human": "Sep 01, 2020",
+        "platform": 3,
+        "y": 2020
+      }
+    ],
+    "slug": "crusader-kings-iii"
+  },
+  "26950": {
+    "id": 26950,
+    "alternative_names": [
+      {
+        "id": 38002,
+        "comment": "Working title",
+        "name": "The Avengers Project"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104095,
+        "category": 3,
+        "name": "The Avengers Project",
+        "uid": "57912",
+        "url": "https://www.giantbomb.com/games/3030-57912/"
+      },
+      {
+        "id": 1724799,
+        "category": 6,
+        "name": "Marvel's Avengers",
+        "uid": "e3e32d583e321f21a740240932c5f939",
+        "url": "http://www.pushsquare.com/games/ps4/marvels_avengers",
+        "year": 2020
+      },
+      {
+        "id": 1925431,
+        "category": 14,
+        "name": "Marvel's Avengers",
+        "uid": "495321",
+        "url": "https://www.twitch.tv/directory/game/Marvel's%20Avengers"
+      },
+      {
+        "id": 1928457,
+        "category": 20,
+        "uid": "B07SFZX5CH",
+        "url": "https://amazon.com/dp/B07SFZX5CH"
+      },
+      {
+        "id": 1928757,
+        "category": 20,
+        "uid": "B07SK56TM6",
+        "url": "https://amazon.com/dp/B07SK56TM6"
+      },
+      {
+        "id": 1933510,
+        "category": 20,
+        "uid": "B084SCGJQK"
+      },
+      {
+        "id": 1934139,
+        "category": 20,
+        "uid": "B07SYSKPJP"
+      },
+      {
+        "id": 1934577,
+        "category": 20,
+        "uid": "B08777F4WF"
+      },
+      {
+        "id": 1935626,
+        "category": 20,
+        "uid": "B08774C61T"
+      },
+      {
+        "id": 1936023,
+        "category": 20,
+        "uid": "B084SCDR14"
+      },
+      {
+        "id": 1936213,
+        "category": 20,
+        "uid": "B08519H19Y"
+      },
+      {
+        "id": 1936490,
+        "category": 20,
+        "uid": "B07T7NXSC3"
+      },
+      {
+        "id": 1936712,
+        "category": 20,
+        "uid": "B07TDFSRQ4"
+      },
+      {
+        "id": 1936940,
+        "category": 20,
+        "uid": "B084PVVDR5"
+      },
+      {
+        "id": 1937217,
+        "category": 20,
+        "uid": "B084PVRJRQ"
+      },
+      {
+        "id": 1938330,
+        "category": 20,
+        "uid": "B07SYSNFW9"
+      },
+      {
+        "id": 1938384,
+        "category": 20,
+        "uid": "B07SSZZ23S",
+        "url": "https://amazon.de/dp/B07SSZZ23S"
+      },
+      {
+        "id": 1941762,
+        "category": 20,
+        "uid": "B07SVNGBBF"
+      },
+      {
+        "id": 1942967,
+        "category": 20,
+        "name": "Marvel Avengers (PS4)",
+        "uid": "B082YPRGPC"
+      },
+      {
+        "id": 1996642,
+        "category": 20,
+        "name": "Marvel's Avengers (Xbox One) - Import UK",
+        "uid": "B07SVNLBY9",
+        "url": "https://amazon.fr/dp/B07SVNLBY9"
+      }
+    ],
+    "name": "Marvel's Avengers",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 185098,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 185099,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 185100,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 214485,
+        "human": "Sep 04, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 222356,
+        "human": "Q1 2021",
+        "platform": 169,
+        "y": 2021
+      },
+      {
+        "id": 222357,
+        "human": "Q1 2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "marvels-avengers"
+  },
+  "132980": {
+    "id": 132980,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928629,
+        "category": 20,
+        "uid": "B084SCW1Y9",
+        "url": "https://amazon.com/dp/B084SCW1Y9"
+      },
+      {
+        "id": 1929157,
+        "category": 20,
+        "uid": "B084SFN9ZM",
+        "url": "https://amazon.com/dp/B084SFN9ZM"
+      },
+      {
+        "id": 1933263,
+        "category": 20,
+        "uid": "B084SCDR15",
+        "url": "https://amazon.fr/dp/B084SCDR15"
+      },
+      {
+        "id": 1936051,
+        "category": 20,
+        "uid": "B084SCGJQH"
+      },
+      {
+        "id": 1936287,
+        "category": 20,
+        "uid": "B084TKXZ77"
+      },
+      {
+        "id": 1936667,
+        "category": 20,
+        "uid": "B084THBMFL"
+      },
+      {
+        "id": 1937133,
+        "category": 20,
+        "uid": "B084LKB9CL"
+      },
+      {
+        "id": 1942525,
+        "category": 20,
+        "name": "Marvel's Avengers Deluxe Edition - Xbox One [Digital Code]",
+        "uid": "B08GMG87V8"
+      }
+    ],
+    "name": "Marvel's Avengers: Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 208757,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208758,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208759,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-deluxe-edition"
+  },
+  "138179": {
+    "id": 138179,
+    "category": 2,
+    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 218720,
+        "human": "Dec 08, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218721,
+        "human": "Dec 08, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 218722,
+        "human": "Dec 08, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218723,
+        "human": "Dec 08, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 218724,
+        "human": "Dec 08, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218725,
+        "human": "Dec 08, 2020",
+        "platform": 170,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-kate-bishop-taking-aim"
+  },
+  "133844": {
+    "id": 133844,
+    "category": 0,
+    "name": "Marvel's Avengers: Exclusive Digital Edition",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 208754,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-exclusive-digital-edition"
+  },
+  "2903": {
+    "id": 2903,
+    "alternative_names": [
+      {
+        "id": 30677,
+        "comment": "Japanese title",
+        "name": "\u30a6\u30a9\u30fc\u30d5\u30ec\u30fc\u30e0"
+      },
+      {
+        "id": 30678,
+        "comment": "Korean title",
+        "name": "\uc6cc\ud504\ub808\uc784"
+      },
+      {
+        "id": 30679,
+        "comment": "Chinese title",
+        "name": "\u661f\u9645\u6218\u7532"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12768,
+        "category": 1,
+        "name": "Warframe",
+        "uid": "230410"
+      },
+      {
+        "id": 74207,
+        "category": 4,
+        "name": "Warframe",
+        "uid": "2648",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=2648",
+        "year": 2013
+      },
+      {
+        "id": 84452,
+        "category": 6,
+        "name": "Warframe",
+        "uid": "a0218f0fca5f92c0a8e98a8695afd1e7",
+        "url": "http://www.pushsquare.com/games/ps4/warframe",
+        "year": 2013
+      },
+      {
+        "id": 93664,
+        "category": 4,
+        "name": "Warframe",
+        "uid": "3144",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=3144",
+        "year": 2013
+      },
+      {
+        "id": 93866,
+        "category": 4,
+        "name": "Warframe",
+        "uid": "3545",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=3545",
+        "year": 2014
+      },
+      {
+        "id": 121804,
+        "category": 3,
+        "name": "Warframe",
+        "uid": "38788",
+        "url": "https://www.giantbomb.com/games/3030-38788/",
+        "year": 2013
+      },
+      {
+        "id": 189796,
+        "category": 10,
+        "name": "Warframe",
+        "uid": "UCqPaoLApkhCqzn4E_GCZMBw",
+        "url": "https://gaming.youtube.com/game/UCqPaoLApkhCqzn4E_GCZMBw"
+      },
+      {
+        "id": 211099,
+        "category": 11,
+        "name": "Warframe",
+        "uid": "BPS3XF74B9V1",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPS3XF74B9V1",
+        "year": 2014
+      },
+      {
+        "id": 245079,
+        "category": 14,
+        "name": "Warframe",
+        "uid": "66170",
+        "url": "https://www.twitch.tv/directory/game/Warframe"
+      },
+      {
+        "id": 401947,
+        "category": 16,
+        "name": "Warframe",
+        "uid": "UP2097-CUSA00080_00-WARFRAMEFINAL001",
+        "url": "https://www.playstation.com/en-us/games/warframe-ps4/",
+        "year": 2013
+      },
+      {
+        "id": 1238327,
+        "category": 18,
+        "name": "Warframe",
+        "uid": "1482870140",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPS3XF74B9V1",
+        "year": 2014
+      },
+      {
+        "id": 1281814,
+        "category": 12,
+        "name": "Warframe",
+        "uid": "46c3ad7c681b50d0ffec4d8d4bba8073",
+        "url": "http://www.nintendolife.com/games/nintendo-switch/warframe"
+      },
+      {
+        "id": 1624728,
+        "category": 12,
+        "name": "Warframe",
+        "uid": "dd268dd382bde74084c0fd8a4025efa1",
+        "url": "http://www.nintendolife.com/games/switch-eshop/warframe",
+        "year": 2018
+      }
+    ],
+    "name": "Warframe",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167
+    ],
+    "release_dates": [
+      {
+        "id": 28269,
+        "human": "Nov 15, 2013",
+        "platform": 48,
+        "y": 2013
+      },
+      {
+        "id": 54356,
+        "human": "Mar 25, 2013",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 54357,
+        "human": "Sep 02, 2014",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 54358,
+        "human": "Feb 22, 2014",
+        "platform": 48,
+        "y": 2014
+      },
+      {
+        "id": 136443,
+        "human": "Sep 02, 2014",
+        "platform": 49,
+        "y": 2014
+      },
+      {
+        "id": 158435,
+        "human": "Nov 20, 2018",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 219715,
+        "human": "Nov 26, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 219716,
+        "human": "Nov 29, 2013",
+        "platform": 48,
+        "y": 2013
+      }
+    ],
+    "slug": "warframe"
+  },
+  "137295": {
+    "id": 137295,
+    "category": 2,
+    "name": "Warframe: Heart of Deimos",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 208367,
+        "human": "Aug 25, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 208368,
+        "human": "Aug 25, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208369,
+        "human": "Aug 25, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208370,
+        "human": "Aug 27, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "warframe-heart-of-deimos"
+  },
+  "11137": {
+    "id": 11137,
+    "alternative_names": [
+      {
+        "id": 30577,
+        "comment": "Japanese title",
+        "name": "\u30b7\u30fc\u30aa\u30d6\u30b7\u30fc\u30d5\u30b9"
+      },
+      {
+        "id": 30578,
+        "comment": "Korean title",
+        "name": "\ub3c4\ub451\uc758 \ubc14\ub2e4"
+      },
+      {
+        "id": 30579,
+        "comment": "Chinese title",
+        "name": "\u76d7\u8d3c\u4e4b\u6d77"
+      },
+      {
+        "id": 30580,
+        "comment": "Portuguese title",
+        "name": "Mar dos Ladr\u00f5es"
+      },
+      {
+        "id": 30581,
+        "comment": "German title",
+        "name": "Meer der Diebe"
+      },
+      {
+        "id": 30582,
+        "comment": "French title",
+        "name": "Mer de voleurs"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 111223,
+        "category": 3,
+        "name": "Sea of Thieves",
+        "uid": "49966",
+        "url": "https://www.giantbomb.com/games/3030-49966/",
+        "year": 2017
+      },
+      {
+        "id": 190256,
+        "category": 10,
+        "name": "Sea of Thieves",
+        "uid": "UCZRDzmHJs6woiPL1JlkDHMA",
+        "url": "https://gaming.youtube.com/game/UCZRDzmHJs6woiPL1JlkDHMA"
+      },
+      {
+        "id": 249212,
+        "category": 14,
+        "name": "Sea of Thieves",
+        "uid": "490377",
+        "url": "https://www.twitch.tv/directory/game/Sea of Thieves"
+      },
+      {
+        "id": 308241,
+        "category": 11,
+        "name": "Sea of Thieves",
+        "uid": "9MVQ2J7BXZJD",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/9MVQ2J7BXZJD",
+        "year": 2018
+      },
+      {
+        "id": 1303072,
+        "category": 18,
+        "name": "Sea of Thieves",
+        "uid": "1717113201",
+        "url": "https://account.xbox.com/en-US/gameinfohub?titleid=1717113201"
+      },
+      {
+        "id": 1593323,
+        "category": 19,
+        "name": "Sea of Thieves",
+        "uid": "e73bd7--52693",
+        "url": "https://www.gamespress.com/product.asp?c=e73bd7--52693",
+        "year": 2018
+      },
+      {
+        "id": 1929446,
+        "category": 20,
+        "uid": "B00ZPT59YS",
+        "url": "https://amazon.com/dp/B00ZPT59YS"
+      },
+      {
+        "id": 1929548,
+        "category": 20,
+        "uid": "B07W8XNMCM",
+        "url": "https://amazon.com/dp/B07W8XNMCM"
+      },
+      {
+        "id": 1936678,
+        "category": 20,
+        "uid": "B00ZSCCY7C"
+      },
+      {
+        "id": 1937237,
+        "category": 20,
+        "uid": "B071JYSCC1"
+      },
+      {
+        "id": 1937447,
+        "category": 20,
+        "uid": "B00ZFNLT66"
+      },
+      {
+        "id": 1937815,
+        "category": 20,
+        "uid": "B00ZRKAL7K"
+      }
+    ],
+    "name": "Sea of Thieves",
+    "platforms": [
+      6,
+      49,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 130641,
+        "human": "Mar 20, 2018",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 130642,
+        "human": "Mar 20, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 214352,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      }
+    ],
+    "slug": "sea-of-thieves"
+  },
+  "131676": {
+    "id": 131676,
+    "category": 1,
+    "name": "RimWorld: Royalty",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 189539,
+        "human": "Feb 24, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 190949,
+        "human": "Feb 24, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 190950,
+        "human": "Feb 24, 2020",
+        "platform": 3,
+        "y": 2020
+      }
+    ],
+    "slug": "rimworld-royalty"
+  },
+  "28028": {
+    "id": 28028,
+    "alternative_names": [
+      {
+        "id": 8350,
+        "name": "Total War: Warhammer 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 792,
+        "category": 1,
+        "name": "Total War: WARHAMMER II",
+        "uid": "594570"
+      },
+      {
+        "id": 91753,
+        "category": 7,
+        "name": "Total War: WARHAMMER II",
+        "uid": "totalwarwarhammerii",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=totalwarwarhammerii"
+      },
+      {
+        "id": 102125,
+        "category": 3,
+        "name": "Total War: Warhammer II",
+        "uid": "59912",
+        "url": "https://www.giantbomb.com/games/3030-59912/",
+        "year": 2017
+      },
+      {
+        "id": 190132,
+        "category": 10,
+        "name": "Total War: Warhammer II",
+        "uid": "UCxe6X-wprXjjhg1blubWCuQ",
+        "url": "https://gaming.youtube.com/game/UCxe6X-wprXjjhg1blubWCuQ"
+      },
+      {
+        "id": 254268,
+        "category": 14,
+        "name": "Total War: Warhammer II",
+        "uid": "497434",
+        "url": "https://www.twitch.tv/directory/game/Total War: Warhammer II"
+      }
+    ],
+    "name": "Total War: Warhammer II",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 115800,
+        "human": "Sep 28, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 134787,
+        "human": "Sep 28, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 161218,
+        "human": "Nov 20, 2018",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 161219,
+        "human": "Nov 20, 2018",
+        "platform": 3,
+        "y": 2018
+      }
+    ],
+    "slug": "total-war-warhammer-ii"
+  },
+  "81190": {
+    "id": 81190,
+    "alternative_names": [
+      {
+        "id": 19484,
+        "name": "Total War: Mortal Empires"
+      }
+    ],
+    "category": 1,
+    "name": "Total War: Warhammer II - Mortal Empires",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 134794,
+        "human": "Oct 26, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 134795,
+        "human": "Oct 26, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "total-war-warhammer-ii-mortal-empires"
+  },
+  "4131": {
+    "id": 4131,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1937637,
+        "category": 20,
+        "uid": "B073527J6C"
+      }
+    ],
+    "name": "Total War: Warhammer II - Limited Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 115540,
+        "human": "Sep 28, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "total-war-warhammer-ii-limited-edition"
+  },
+  "81192": {
+    "id": 81192,
+    "category": 1,
+    "name": "Total War: Warhammer II - Blood for the Blood God II",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 134801,
+        "human": "Oct 26, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 134802,
+        "human": "Oct 26, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "total-war-warhammer-ii-blood-for-the-blood-god-ii"
+  },
+  "117146": {
+    "id": 117146,
+    "category": 1,
+    "name": "Total War: Warhammer II - The Prophet & The Warlock",
+    "slug": "total-war-warhammer-ii-the-prophet-and-the-warlock"
+  },
+  "9759": {
+    "id": 9759,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 113765,
+        "category": 3,
+        "name": "King's Quest",
+        "uid": "47353",
+        "url": "https://www.giantbomb.com/games/3030-47353/",
+        "year": 2015
+      },
+      {
+        "id": 349110,
+        "category": 14,
+        "name": "King's Quest (tentative title)",
+        "uid": "461400",
+        "url": "https://www.twitch.tv/directory/game/King's Quest (tentative title)"
+      }
+    ],
+    "name": "Total War: Warhammer II - Serpent God Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 115539,
+        "human": "Sep 28, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "total-war-warhammer-ii-serpent-god-edition"
+  },
+  "81191": {
+    "id": 81191,
+    "category": 1,
+    "name": "Total War: Warhammer II - Rise of the Tomb Kings",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 134797,
+        "human": "Jan 23, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 134798,
+        "human": "Jan 23, 2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "total-war-warhammer-ii-rise-of-the-tomb-kings"
+  },
+  "110863": {
+    "id": 110863,
+    "category": 1,
+    "name": "Total War: Warhammer II - Curse of the Vampire Coast",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 162108,
+        "human": "Nov 08, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 162109,
+        "human": "Nov 08, 2018",
+        "platform": 14,
+        "y": 2018
+      }
+    ],
+    "slug": "total-war-warhammer-ii-curse-of-the-vampire-coast"
+  },
+  "113357": {
+    "id": 113357,
+    "category": 1,
+    "name": "Total War Warhammer II: Curse of the Vampire Coast",
+    "slug": "total-war-warhammer-ii-curse-of-the-vampire-coast--1"
+  },
   "129364": {
     "id": 129364,
     "alternative_names": [
@@ -3156,78 +5768,6 @@
     ],
     "slug": "nexomon-extinction"
   },
-  "124954": {
-    "id": 124954,
-    "alternative_names": [
-      {
-        "id": 26375,
-        "comment": "Other",
-        "name": "Crusader Kings 3"
-      },
-      {
-        "id": 50484,
-        "comment": "Acronym",
-        "name": "CK3"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1806834,
-        "category": 3,
-        "name": "Crusader Kings III",
-        "uid": "75742",
-        "url": "https://www.giantbomb.com/games/3030-75742/"
-      },
-      {
-        "id": 1836639,
-        "category": 1,
-        "name": "Crusader Kings III",
-        "uid": "1158310",
-        "url": "https://store.steampowered.com/app/1158310",
-        "year": 2020
-      },
-      {
-        "id": 1916335,
-        "category": 14,
-        "name": "Crusader Kings III",
-        "uid": "514888",
-        "url": "https://www.twitch.tv/directory/game/Crusader%20Kings%20III"
-      },
-      {
-        "id": 1942819,
-        "category": 20,
-        "uid": "B08CS52XNR"
-      }
-    ],
-    "name": "Crusader Kings III",
-    "platforms": [
-      3,
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 195836,
-        "human": "Sep 01, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 195837,
-        "human": "Sep 01, 2020",
-        "platform": 14,
-        "y": 2020
-      },
-      {
-        "id": 195838,
-        "human": "Sep 01, 2020",
-        "platform": 3,
-        "y": 2020
-      }
-    ],
-    "slug": "crusader-kings-iii"
-  },
   "134706": {
     "id": 134706,
     "alternative_names": [
@@ -3398,311 +5938,6 @@
       }
     ],
     "slug": "star-wars-squadrons"
-  },
-  "103298": {
-    "id": 103298,
-    "alternative_names": [
-      {
-        "id": 50203,
-        "comment": "Korean title",
-        "name": "\ub460 \uc774\ud130\ub110"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1026790,
-        "category": 6,
-        "name": "Doom Eternal",
-        "uid": "6918b8588657f9814d03451df8d21c46",
-        "url": "http://www.pushsquare.com/games/ps4/doom_eternal"
-      },
-      {
-        "id": 1375928,
-        "category": 12,
-        "name": "DOOM Eternal",
-        "uid": "4d19adf27a8bee0d1994edb7f04528ce",
-        "url": "http://www.nintendolife.com/games/nintendo-switch/doom_eternal"
-      },
-      {
-        "id": 1457760,
-        "category": 3,
-        "name": "Doom Eternal",
-        "uid": "68917",
-        "url": "https://www.giantbomb.com/games/3030-68917/"
-      },
-      {
-        "id": 1594239,
-        "category": 19,
-        "name": "DOOM Eternal",
-        "uid": "78e105--65988",
-        "url": "https://www.gamespress.com/product.asp?c=78e105--65988"
-      },
-      {
-        "id": 1709395,
-        "category": 14,
-        "name": "Doom Eternal",
-        "uid": "506442",
-        "url": "https://www.twitch.tv/directory/game/Doom Eternal"
-      },
-      {
-        "id": 1859197,
-        "category": 1,
-        "name": "DOOM Eternal",
-        "uid": "782330",
-        "url": "https://store.steampowered.com/app/782330",
-        "year": 2020
-      },
-      {
-        "id": 1865502,
-        "category": 20,
-        "uid": "B07WFHQKFV"
-      },
-      {
-        "id": 1865555,
-        "category": 20,
-        "uid": "B07WJQCJ6M"
-      },
-      {
-        "id": 1865725,
-        "category": 20,
-        "uid": "B083PK1J1Z"
-      },
-      {
-        "id": 1928445,
-        "category": 20,
-        "uid": "B07DJX3Y19",
-        "url": "https://amazon.com/dp/B07DJX3Y19"
-      },
-      {
-        "id": 1928511,
-        "category": 20,
-        "uid": "B07DJX3VZS",
-        "url": "https://amazon.com/dp/B07DJX3VZS"
-      },
-      {
-        "id": 1929673,
-        "category": 20,
-        "uid": "B07DK1C1Y4",
-        "url": "https://amazon.com/dp/B07DK1C1Y4"
-      },
-      {
-        "id": 1930120,
-        "category": 20,
-        "uid": "B07DKKS9X3",
-        "url": "https://amazon.co.uk/dp/B07DKKS9X3"
-      },
-      {
-        "id": 1930312,
-        "category": 20,
-        "uid": "B07SK4Z48F",
-        "url": "https://amazon.com/dp/B07SK4Z48F"
-      },
-      {
-        "id": 1930317,
-        "category": 20,
-        "uid": "B07HDJLSF2",
-        "url": "https://amazon.com/dp/B07HDJLSF2"
-      },
-      {
-        "id": 1930349,
-        "category": 20,
-        "uid": "B07W1ZXKS5",
-        "url": "https://amazon.co.jp/dp/B07W1ZXKS5"
-      },
-      {
-        "id": 1930705,
-        "category": 20,
-        "uid": "B07HDJLQCY",
-        "url": "https://amazon.com/dp/B07HDJLQCY"
-      },
-      {
-        "id": 1931877,
-        "category": 20,
-        "uid": "B0876YKLY2"
-      },
-      {
-        "id": 1933457,
-        "category": 20,
-        "uid": "B07WHM57VM"
-      },
-      {
-        "id": 1933981,
-        "category": 20,
-        "uid": "B07Z5MKKZ8"
-      },
-      {
-        "id": 1935879,
-        "category": 20,
-        "uid": "B07DKKCF8Y"
-      },
-      {
-        "id": 1936172,
-        "category": 20,
-        "uid": "B07DP5G8DB"
-      },
-      {
-        "id": 1936174,
-        "category": 20,
-        "uid": "B083VM39L5"
-      },
-      {
-        "id": 1936442,
-        "category": 20,
-        "uid": "B07DNTF32X"
-      },
-      {
-        "id": 1936523,
-        "category": 20,
-        "uid": "B07DNTVWKH"
-      },
-      {
-        "id": 1936937,
-        "category": 20,
-        "uid": "B07DP3G9HY"
-      },
-      {
-        "id": 1937768,
-        "category": 20,
-        "uid": "B07DNWYP2S"
-      },
-      {
-        "id": 1938204,
-        "category": 20,
-        "uid": "B07DNGRHG7"
-      },
-      {
-        "id": 1938456,
-        "category": 20,
-        "uid": "B07WMSTPB3",
-        "url": "https://amazon.de/dp/B07WMSTPB3"
-      },
-      {
-        "id": 1997147,
-        "category": 20,
-        "name": "DOOM Eternal: Standard Edition - Switch [Digital Code]",
-        "uid": "B08PP9H2HF",
-        "url": "https://amazon.com/dp/B08PP9H2HF"
-      },
-      {
-        "id": 1997222,
-        "category": 20,
-        "name": "DOOM Eternal|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
-        "uid": "B08QDJRQXB",
-        "url": "https://amazon.jp/dp/B08QDJRQXB"
-      }
-    ],
-    "name": "DOOM Eternal",
-    "platforms": [
-      6,
-      48,
-      49,
-      130,
-      167,
-      169,
-      203
-    ],
-    "release_dates": [
-      {
-        "id": 177145,
-        "human": "Mar 20, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 177146,
-        "human": "Mar 20, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 177147,
-        "human": "Mar 20, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 195840,
-        "human": "Mar 20, 2020",
-        "platform": 203,
-        "y": 2020
-      },
-      {
-        "id": 219928,
-        "human": "Dec 08, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 221406,
-        "human": "TBD",
-        "platform": 167
-      },
-      {
-        "id": 221407,
-        "human": "TBD",
-        "platform": 169
-      }
-    ],
-    "slug": "doom-eternal"
-  },
-  "119888": {
-    "id": 119888,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1932127,
-        "category": 20,
-        "uid": "B07SJ2WPH4"
-      },
-      {
-        "id": 1932157,
-        "category": 20,
-        "uid": "B07SK4CZPB"
-      },
-      {
-        "id": 1932334,
-        "category": 20,
-        "uid": "B07SG16WQN"
-      },
-      {
-        "id": 1933497,
-        "category": 20,
-        "uid": "B07SY33R68"
-      },
-      {
-        "id": 1933680,
-        "category": 20,
-        "uid": "B07SSTQGGL"
-      }
-    ],
-    "name": "DOOM: Eternal - Deluxe Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 190956,
-        "human": "Mar 20, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 190957,
-        "human": "Mar 20, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 190958,
-        "human": "Mar 20, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "doom-eternal-deluxe-edition"
   },
   "133887": {
     "id": 133887,
@@ -4877,109 +7112,6 @@
       }
     ],
     "slug": "resident-evil-3-collectors-edition"
-  },
-  "136604": {
-    "id": 136604,
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1942020,
-        "category": 20,
-        "name": "Control Ultimate Edition (PS4)",
-        "uid": "B08H9K6R64",
-        "url": "https://amazon.fr/dp/B08H9K6R64"
-      },
-      {
-        "id": 1942108,
-        "category": 20,
-        "name": "Control Ultimate Edition (Xbox One)",
-        "uid": "B08H9K7MQL"
-      },
-      {
-        "id": 1942794,
-        "category": 20,
-        "uid": "B08HF6WH7M"
-      },
-      {
-        "id": 1942816,
-        "category": 20,
-        "uid": "B08HF8BNMM"
-      },
-      {
-        "id": 1942989,
-        "category": 20,
-        "name": "Control Ultimate Edition - Xbox One",
-        "uid": "B08L7H3LDH"
-      },
-      {
-        "id": 1943012,
-        "category": 20,
-        "name": "Control Ultimate Edition - PlayStation 4",
-        "uid": "B08L7NFCW6"
-      },
-      {
-        "id": 1997262,
-        "category": 20,
-        "name": "Control Ultimate Edition (PS5)",
-        "uid": "B08R1XLRSD",
-        "url": "https://amazon.co.uk/dp/B08R1XLRSD"
-      },
-      {
-        "id": 1997298,
-        "category": 20,
-        "name": "Control Ultimate Edition (Xbox Series X)",
-        "uid": "B08R1THRNY",
-        "url": "https://amazon.co.uk/dp/B08R1THRNY"
-      }
-    ],
-    "name": "Control: Ultimate Edition",
-    "platforms": [
-      6,
-      48,
-      49,
-      130,
-      167,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 206510,
-        "human": "Aug 27, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 206511,
-        "human": "Sep 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 206512,
-        "human": "Sep 10, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 216110,
-        "human": "Oct 28, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 222273,
-        "human": "Feb 02, 2021",
-        "platform": 169,
-        "y": 2021
-      },
-      {
-        "id": 222274,
-        "human": "Feb 02, 2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "control-ultimate-edition"
   },
   "72870": {
     "id": 72870,
@@ -6522,39 +8654,6 @@
       }
     ],
     "slug": "half-life-alyx"
-  },
-  "135735": {
-    "id": 135735,
-    "alternative_names": [
-      {
-        "id": 37510,
-        "comment": "Alternative title",
-        "name": "THE FINAL HOURS OF HALF-LIFE: ALYX"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1947723,
-        "category": 14,
-        "name": "Half-Life: Alyx - Final Hours",
-        "uid": "2112050882",
-        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx%20-%20Final%20Hours"
-      }
-    ],
-    "name": "Half-Life: Alyx - Final Hours",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 203935,
-        "human": "Jul 09, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "half-life-alyx-final-hours"
   },
   "132058": {
     "id": 132058,
@@ -10115,5 +12214,166 @@
       }
     ],
     "slug": "journey"
+  },
+  "90558": {
+    "id": 90558,
+    "alternative_names": [
+      {
+        "id": 52186,
+        "comment": "Korean title",
+        "name": "\uc0c8\ud2f0\uc2a4\ud329\ud1a0\ub9ac"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1057206,
+        "category": 1,
+        "name": "Satisfactory",
+        "uid": "526870",
+        "url": "https://store.steampowered.com/app/526870",
+        "year": 0
+      },
+      {
+        "id": 1457792,
+        "category": 3,
+        "name": "Satisfactory",
+        "uid": "68951",
+        "url": "https://www.giantbomb.com/games/3030-68951/"
+      },
+      {
+        "id": 1724683,
+        "category": 14,
+        "name": "Satisfactory",
+        "uid": "506456",
+        "url": "https://www.twitch.tv/directory/game/Satisfactory"
+      }
+    ],
+    "name": "Satisfactory",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 166391,
+        "human": "Mar 19, 2019",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "satisfactory"
+  },
+  "129240": {
+    "id": 129240,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1863702,
+        "category": 1,
+        "name": "The Wonderful 101: Remastered",
+        "uid": "1190400",
+        "url": "https://store.steampowered.com/app/1190400",
+        "year": 2020
+      },
+      {
+        "id": 1928453,
+        "category": 20,
+        "uid": "B086CSWT12",
+        "url": "https://amazon.com/dp/B086CSWT12"
+      },
+      {
+        "id": 1929292,
+        "category": 20,
+        "uid": "B085DSDFHV",
+        "url": "https://amazon.com/dp/B085DSDFHV"
+      },
+      {
+        "id": 1930831,
+        "category": 20,
+        "uid": "B0856BF5Q2",
+        "url": "https://amazon.co.jp/dp/B0856BF5Q2"
+      },
+      {
+        "id": 1930931,
+        "category": 20,
+        "uid": "B0856B5HYW",
+        "url": "https://amazon.co.jp/dp/B0856B5HYW"
+      },
+      {
+        "id": 1932467,
+        "category": 20,
+        "uid": "B00DS5S2GS"
+      },
+      {
+        "id": 1933095,
+        "category": 20,
+        "uid": "B0862HJBQN"
+      },
+      {
+        "id": 1935435,
+        "category": 20,
+        "uid": "B0856BBQG3"
+      },
+      {
+        "id": 1935533,
+        "category": 20,
+        "uid": "B0856B3K67"
+      },
+      {
+        "id": 1936181,
+        "category": 20,
+        "uid": "B0857Z48FL"
+      },
+      {
+        "id": 1941511,
+        "category": 20,
+        "uid": "B0862H1SLF"
+      }
+    ],
+    "name": "The Wonderful 101: Remastered",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 189666,
+        "human": "May 19, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 189667,
+        "human": "May 19, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 189668,
+        "human": "May 19, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 189669,
+        "human": "May 22, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 189670,
+        "human": "May 22, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 189671,
+        "human": "May 22, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "the-wonderful-101-remastered"
   }
 }
