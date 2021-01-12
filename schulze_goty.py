@@ -177,7 +177,8 @@ def adapt_votes_format_for_schulze_computations(standardized_ballots):
                 currently_seen_candidates.add(app_id)
 
         remaining_app_ids = candidate_names.difference(currently_seen_candidates)
-        current_ranking.append(remaining_app_ids)
+        if len(remaining_app_ids) > 0:
+            current_ranking.append(remaining_app_ids)
 
         current_weight = 1
         weighted_ranks.append((current_ranking, current_weight))
