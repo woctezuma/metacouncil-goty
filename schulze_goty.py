@@ -1,3 +1,5 @@
+from collections import Counter
+
 import steampi.calendar
 
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
@@ -276,9 +278,25 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
     if len(standardized_ballots_for_tied_app_id_group) == 0:
         schulze_ranking_for_tied_app_id_group = [app_id_group]
     else:
+        display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, positions)
         schulze_ranking_for_tied_app_id_group = compute_schulze_ranking(standardized_ballots_for_tied_app_id_group)
 
     return schulze_ranking_for_tied_app_id_group
+
+
+def display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, positions):
+    print('\nInfo regarding tie with appIDs in {}'.format(app_id_group))
+
+    for position in positions:
+        ballots_at_position = [
+            current_vote['ballots'][position]
+            for current_vote in standardized_ballots_for_tied_app_id_group.values()
+        ]
+        count_at_position = Counter(ballots_at_position)
+        if any(k is not None for k in count_at_position):
+            print('Position n°{} ; {}'.format(position, count_at_position))
+
+    return
 
 
 def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
