@@ -285,7 +285,7 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
             schulze_ranking_for_tied_app_id_group = try_to_break_ties_in_app_id_group(appID_group, standardized_ballots)
 
             if len(schulze_ranking_for_tied_app_id_group) > 1:
-                print('\nAt least one tie has been broken for group n°{}'.format(group_no))
+                print('\nAt least one tie has been broken for group n°{}'.format(group_no + 1))
 
             for untied_app_id_group in schulze_ranking_for_tied_app_id_group:
                 untied_schulze_ranking.append(untied_app_id_group)
