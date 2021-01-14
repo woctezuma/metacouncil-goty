@@ -290,6 +290,7 @@ if __name__ == '__main__':
     release_year = ballot_year
 
     display_optional_ballots(input_filename,
+                             filter_noise=True,
                              release_year=release_year,
                              use_igdb=use_igdb,
                              retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
