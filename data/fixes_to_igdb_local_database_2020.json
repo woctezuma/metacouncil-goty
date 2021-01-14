@@ -3,5 +3,23 @@
     "id": -202,
     "name": "null",
     "slug": null
+  },
+  "-1421760": {
+    "id": -1421760,
+    "name": "What Comes After",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2020,
+        "human": "2020-Nov-05"
+      }
+    ],
+    "external_games": [
+      {
+        "category": 1,
+        "uid": "1421760"
+      }
+    ],
+    "slug": null
   }
 }
