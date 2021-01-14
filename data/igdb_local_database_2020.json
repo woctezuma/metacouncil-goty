@@ -1498,6 +1498,159 @@
     ],
     "slug": "terraria"
   },
+  "2639": {
+    "id": 2639,
+    "alternative_names": [
+      {
+        "id": 36226,
+        "comment": "Working title",
+        "name": "Project P-100"
+      },
+      {
+        "id": 36227,
+        "comment": "Other",
+        "name": "The Wonderful 101: Remastered"
+      },
+      {
+        "id": 36228,
+        "comment": "Japanese title - translated",
+        "name": "ザ・ワンダフル ワン・オー・ワン"
+      },
+      {
+        "id": 36229,
+        "comment": "Japanese title - translated",
+        "name": "ザ・ワンダフル ワン・オー・ワン： リマスタード"
+      },
+      {
+        "id": 47993,
+        "comment": "Other Alias",
+        "name": "Project P-100"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 37175,
+        "category": 2,
+        "name": "The Wonderful 101",
+        "uid": "16087",
+        "url": "https://thegamesdb.net/game.php?id=16087"
+      },
+      {
+        "id": 74601,
+        "category": 4,
+        "name": "The Wonderful 101",
+        "uid": "3091",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=3091",
+        "year": 2013
+      },
+      {
+        "id": 122027,
+        "category": 3,
+        "name": "The Wonderful 101",
+        "uid": "38553",
+        "url": "https://www.giantbomb.com/games/3030-38553/",
+        "year": 2013
+      },
+      {
+        "id": 221113,
+        "category": 12,
+        "name": "The Wonderful 101",
+        "uid": "d833185df3bf5d02e7d8857adbc8ceaf",
+        "url": "http://www.nintendolife.com/games/wiiu/wonderful_101",
+        "year": 2013
+      },
+      {
+        "id": 246187,
+        "category": 14,
+        "name": "The Wonderful 101",
+        "uid": "65964",
+        "url": "https://www.twitch.tv/directory/game/The Wonderful 101"
+      }
+    ],
+    "name": "The Wonderful 101",
+    "platforms": [
+      6,
+      41,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 144350,
+        "human": "Sep 15, 2013",
+        "platform": 41,
+        "y": 2013
+      },
+      {
+        "id": 144351,
+        "human": "Aug 23, 2013",
+        "platform": 41,
+        "y": 2013
+      },
+      {
+        "id": 144352,
+        "human": "Aug 24, 2013",
+        "platform": 41,
+        "y": 2013
+      },
+      {
+        "id": 199808,
+        "human": "May 19, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 199809,
+        "human": "May 19, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 199810,
+        "human": "May 19, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 199811,
+        "human": "May 22, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 199812,
+        "human": "May 22, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 199813,
+        "human": "May 22, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 199814,
+        "human": "Jun 11, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 199815,
+        "human": "Jun 11, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 199816,
+        "human": "Jun 11, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "the-wonderful-101"
+  },
   "2903": {
     "id": 2903,
     "alternative_names": [
@@ -2147,6 +2300,78 @@
       }
     ],
     "slug": "agatha-christie-and-then-there-were-none"
+  },
+  "5614": {
+    "id": 5614,
+    "alternative_names": [
+      {
+        "id": 30796,
+        "name": "Kentucky Route Zero: PC Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12755,
+        "category": 1,
+        "name": "Kentucky Route Zero",
+        "uid": "231200"
+      },
+      {
+        "id": 119634,
+        "category": 3,
+        "name": "Kentucky Route Zero",
+        "uid": "41082",
+        "url": "https://www.giantbomb.com/games/3030-41082/",
+        "year": 2013
+      },
+      {
+        "id": 245595,
+        "category": 14,
+        "name": "Kentucky Route Zero",
+        "uid": "103445",
+        "url": "https://www.twitch.tv/directory/game/Kentucky Route Zero"
+      },
+      {
+        "id": 1929450,
+        "category": 20,
+        "uid": "B0848GDZ2S",
+        "url": "https://amazon.com/dp/B0848GDZ2S"
+      }
+    ],
+    "name": "Kentucky Route Zero",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 13649,
+        "human": "Jan 07, 2013",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 13650,
+        "human": "Jan 07, 2013",
+        "platform": 14,
+        "y": 2013
+      },
+      {
+        "id": 13651,
+        "human": "Jan 07, 2013",
+        "platform": 3,
+        "y": 2013
+      },
+      {
+        "id": 122423,
+        "human": "Jan 07, 2013",
+        "platform": 6,
+        "y": 2013
+      }
+    ],
+    "slug": "kentucky-route-zero"
   },
   "6739": {
     "id": 6739,
@@ -4354,6 +4579,55 @@
     ],
     "slug": "the-last-of-us-part-ii"
   },
+  "26268": {
+    "id": 26268,
+    "alternative_names": [
+      {
+        "id": 22091,
+        "comment": "Other",
+        "name": "Fae Tactics: The Girl Who Destroyed The World"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1686248,
+        "category": 1,
+        "name": "Fae Tactics",
+        "uid": "995980",
+        "url": "https://store.steampowered.com/app/995980",
+        "year": 2019
+      },
+      {
+        "id": 1773434,
+        "category": 3,
+        "name": "Fae Tactics",
+        "uid": "71321",
+        "url": "https://www.giantbomb.com/games/3030-71321/",
+        "year": 2019
+      },
+      {
+        "id": 1927980,
+        "category": 14,
+        "name": "Fae Tactics",
+        "uid": "510616",
+        "url": "https://www.twitch.tv/directory/game/Fae%20Tactics"
+      }
+    ],
+    "name": "Fae Tactics",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 204631,
+        "human": "Jul 31, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "fae-tactics"
+  },
   "26472": {
     "id": 26472,
     "alternative_names": [
@@ -4964,6 +5238,52 @@
     ],
     "slug": "serious-sam-4"
   },
+  "27082": {
+    "id": 27082,
+    "alternative_names": [
+      {
+        "id": 30732,
+        "comment": "Japanese title",
+        "name": "ラフト"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104425,
+        "category": 3,
+        "name": "Raft",
+        "uid": "57574",
+        "url": "https://www.giantbomb.com/games/3030-57574/"
+      },
+      {
+        "id": 184997,
+        "category": 1,
+        "name": "Raft",
+        "uid": "648800"
+      },
+      {
+        "id": 248967,
+        "category": 14,
+        "name": "Raft",
+        "uid": "494925",
+        "url": "https://www.twitch.tv/directory/game/Raft"
+      }
+    ],
+    "name": "Raft",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 151013,
+        "human": "May 23, 2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "raft"
+  },
   "27134": {
     "id": 27134,
     "category": 0,
@@ -5442,6 +5762,81 @@
       }
     ],
     "slug": "titanfall-2-ultimate-edition"
+  },
+  "28528": {
+    "id": 28528,
+    "alternative_names": [
+      {
+        "id": 23566,
+        "name": "roki"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1748024,
+        "category": 12,
+        "name": "Röki",
+        "uid": "1ab403fa3272fd9510df6425d2e1cc81",
+        "url": "http://www.nintendolife.com/games/switch-eshop/roki"
+      },
+      {
+        "id": 1836025,
+        "category": 1,
+        "name": "Röki",
+        "uid": "1067540",
+        "url": "https://store.steampowered.com/app/1067540",
+        "year": 2020
+      },
+      {
+        "id": 1857704,
+        "category": 3,
+        "name": "Röki",
+        "uid": "76367",
+        "url": "https://www.giantbomb.com/games/3030-76367/",
+        "year": 2020
+      },
+      {
+        "id": 1916927,
+        "category": 14,
+        "name": "Röki",
+        "uid": "515517",
+        "url": "https://www.twitch.tv/directory/game/R%C3%B6ki"
+      }
+    ],
+    "name": "Röki",
+    "platforms": [
+      6,
+      14,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 199955,
+        "human": "Jul 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 201543,
+        "human": "Jul 23, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 201544,
+        "human": "Jul 23, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 201546,
+        "human": "Jul 23, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "roki"
   },
   "28818": {
     "id": 28818,
@@ -6408,6 +6803,59 @@
     ],
     "slug": "super-meat-boy-forever"
   },
+  "52006": {
+    "id": 52006,
+    "alternative_names": [
+      {
+        "id": 30764,
+        "comment": "Japanese title",
+        "name": "ノイタ"
+      },
+      {
+        "id": 30765,
+        "comment": "Korean title",
+        "name": "노이타"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1038910,
+        "category": 1,
+        "name": "Noita",
+        "uid": "881100",
+        "url": "https://store.steampowered.com/app/881100",
+        "year": 0
+      },
+      {
+        "id": 1456243,
+        "category": 3,
+        "name": "Noita",
+        "uid": "68227",
+        "url": "https://www.giantbomb.com/games/3030-68227/"
+      },
+      {
+        "id": 1910545,
+        "category": 14,
+        "name": "Noita",
+        "uid": "505705",
+        "url": "https://www.twitch.tv/directory/game/Noita"
+      }
+    ],
+    "name": "Noita",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 211427,
+        "human": "Oct 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "noita"
+  },
   "53805": {
     "id": 53805,
     "category": 0,
@@ -6929,6 +7377,47 @@
       }
     ],
     "slug": "golf-extreme"
+  },
+  "82463": {
+    "id": 82463,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 210224,
+        "category": 1,
+        "name": "Sky Haven",
+        "uid": "674090",
+        "url": "https://store.steampowered.com/app/674090",
+        "year": 2018
+      },
+      {
+        "id": 1883922,
+        "category": 14,
+        "name": "Sky Haven",
+        "uid": "518922",
+        "url": "https://www.twitch.tv/directory/game/Sky%20Haven"
+      }
+    ],
+    "name": "Sky Haven",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 220328,
+        "human": "Nov 25, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 220329,
+        "human": "Nov 25, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "sky-haven"
   },
   "87343": {
     "id": 87343,
@@ -7499,6 +7988,109 @@
       }
     ],
     "slug": "macrotis-a-mothers-journey"
+  },
+  "101448": {
+    "id": 101448,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1838825,
+        "category": 1,
+        "name": "Carto",
+        "uid": "1172450",
+        "url": "https://store.steampowered.com/app/1172450",
+        "year": 2020
+      },
+      {
+        "id": 1883088,
+        "category": 14,
+        "name": "Carto",
+        "uid": "518087",
+        "url": "https://www.twitch.tv/directory/game/Carto"
+      }
+    ],
+    "name": "Carto",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 208316,
+        "human": "Oct 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 208317,
+        "human": "Oct 27, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 208318,
+        "human": "Oct 27, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 208319,
+        "human": "Oct 27, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208320,
+        "human": "Oct 27, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "carto"
+  },
+  "103246": {
+    "id": 103246,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1689211,
+        "category": 1,
+        "name": "Space Haven",
+        "uid": "979110",
+        "url": "https://store.steampowered.com/app/979110",
+        "year": 0
+      },
+      {
+        "id": 1743796,
+        "category": 3,
+        "name": "Space Haven",
+        "uid": "71735",
+        "url": "https://www.giantbomb.com/games/3030-71735/"
+      },
+      {
+        "id": 1912705,
+        "category": 14,
+        "name": "Space Haven",
+        "uid": "511009",
+        "url": "https://www.twitch.tv/directory/game/Space%20Haven"
+      }
+    ],
+    "name": "Space Haven",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203553,
+        "human": "May 21, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "space-haven"
   },
   "103292": {
     "id": 103292,
@@ -8316,6 +8908,152 @@
     ],
     "slug": "streets-of-rage-4"
   },
+  "110474": {
+    "id": 110474,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1617337,
+        "category": 3,
+        "name": "Minecraft: Dungeons",
+        "uid": "70421",
+        "url": "https://www.giantbomb.com/games/3030-70421/",
+        "year": 2019
+      },
+      {
+        "id": 1708811,
+        "category": 14,
+        "name": "Minecraft Dungeons",
+        "uid": "509725",
+        "url": "https://www.twitch.tv/directory/game/Minecraft%20Dungeons"
+      },
+      {
+        "id": 1724800,
+        "category": 6,
+        "name": "Minecraft: Dungeons",
+        "uid": "57b763da83e71f6cb03c1aeed423b99f",
+        "url": "http://www.pushsquare.com/games/ps4/minecraft_dungeons",
+        "year": 2020
+      },
+      {
+        "id": 1724890,
+        "category": 12,
+        "name": "Minecraft Dungeons",
+        "uid": "fc43c4e8e89f25806954a8edc4848c7c",
+        "url": "http://www.nintendolife.com/games/nintendo-switch/minecraft_dungeons",
+        "year": 2
+      },
+      {
+        "id": 1928388,
+        "category": 20,
+        "uid": "B08893GH86",
+        "url": "https://amazon.com/dp/B08893GH86"
+      },
+      {
+        "id": 1928490,
+        "category": 20,
+        "uid": "B07SR1FMM2",
+        "url": "https://amazon.com/dp/B07SR1FMM2"
+      },
+      {
+        "id": 1928809,
+        "category": 20,
+        "uid": "B0898B8Z8Y",
+        "url": "https://amazon.com/dp/B0898B8Z8Y"
+      },
+      {
+        "id": 1934176,
+        "category": 20,
+        "uid": "B08558J5XQ"
+      },
+      {
+        "id": 1935825,
+        "category": 20,
+        "uid": "B0855872B7"
+      },
+      {
+        "id": 1936035,
+        "category": 20,
+        "uid": "B085586YWT"
+      },
+      {
+        "id": 1936326,
+        "category": 20,
+        "uid": "B08558PJJ7"
+      },
+      {
+        "id": 1937128,
+        "category": 20,
+        "uid": "B08558JMDP"
+      },
+      {
+        "id": 1937224,
+        "category": 20,
+        "uid": "B08558DBYN"
+      },
+      {
+        "id": 1938070,
+        "category": 20,
+        "uid": "B0855877HL"
+      },
+      {
+        "id": 1942263,
+        "category": 20,
+        "uid": "B08DD5559K"
+      },
+      {
+        "id": 1942804,
+        "category": 20,
+        "uid": "B08FTMDSDT"
+      },
+      {
+        "id": 1942893,
+        "category": 20,
+        "uid": "B08G2NQ43C"
+      },
+      {
+        "id": 1943963,
+        "category": 20,
+        "name": "Minecraft Dungeons|オンラインコード版",
+        "uid": "B08M4NKC31",
+        "url": "https://amazon.co.jp/dp/B08M4NKC31"
+      }
+    ],
+    "name": "Minecraft Dungeons",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 192295,
+        "human": "May 26, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 192296,
+        "human": "May 26, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 192297,
+        "human": "May 26, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 192298,
+        "human": "May 26, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons"
+  },
   "110863": {
     "id": 110863,
     "category": 1,
@@ -8339,6 +9077,123 @@
       }
     ],
     "slug": "total-war-warhammer-ii-curse-of-the-vampire-coast"
+  },
+  "111393": {
+    "id": 111393,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1939792,
+        "category": 14,
+        "name": "Kingdom Rush Vengeance",
+        "uid": "519467",
+        "url": "https://www.twitch.tv/directory/game/Kingdom%20Rush%20Vengeance/"
+      }
+    ],
+    "name": "Kingdom Rush Vengeance",
+    "platforms": [
+      6,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 215912,
+        "human": "Oct 15, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 219600,
+        "human": "Nov 22, 2018",
+        "platform": 39,
+        "y": 2018
+      }
+    ],
+    "slug": "kingdom-rush-vengeance"
+  },
+  "111469": {
+    "id": 111469,
+    "alternative_names": [
+      {
+        "id": 50178,
+        "comment": "Korean title",
+        "name": "어몽 어스"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1606754,
+        "category": 1,
+        "name": "Among Us",
+        "uid": "945360",
+        "url": "https://store.steampowered.com/app/945360",
+        "year": 2018
+      },
+      {
+        "id": 1617861,
+        "category": 3,
+        "name": "Among Us",
+        "uid": "70938",
+        "url": "https://www.giantbomb.com/games/3030-70938/",
+        "year": 2018
+      },
+      {
+        "id": 1708978,
+        "category": 14,
+        "name": "Among Us",
+        "uid": "510218",
+        "url": "https://www.twitch.tv/directory/game/Among Us"
+      }
+    ],
+    "name": "Among Us",
+    "platforms": [
+      6,
+      34,
+      39,
+      49,
+      130,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 180625,
+        "human": "Jun 15, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 180626,
+        "human": "Jun 15, 2018",
+        "platform": 39,
+        "y": 2018
+      },
+      {
+        "id": 180627,
+        "human": "Jun 15, 2018",
+        "platform": 34,
+        "y": 2018
+      },
+      {
+        "id": 221941,
+        "human": "Dec 15, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 222236,
+        "human": "2021",
+        "platform": 49,
+        "y": 2021
+      },
+      {
+        "id": 222237,
+        "human": "2021",
+        "platform": 169,
+        "y": 2021
+      }
+    ],
+    "slug": "among-us"
   },
   "111650": {
     "id": 111650,
@@ -8426,6 +9281,82 @@
       }
     ],
     "slug": "warcraft-iii-reforged-spoils-of-war-edition"
+  },
+  "111717": {
+    "id": 111717,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1608746,
+        "category": 1,
+        "name": "One Step From Eden",
+        "uid": "960690",
+        "url": "https://store.steampowered.com/app/960690",
+        "year": 3
+      },
+      {
+        "id": 1617274,
+        "category": 3,
+        "name": "One Step from Eden",
+        "uid": "70359",
+        "url": "https://www.giantbomb.com/games/3030-70359/",
+        "year": 2018
+      },
+      {
+        "id": 1708757,
+        "category": 14,
+        "name": "One Step from Eden",
+        "uid": "509642",
+        "url": "https://www.twitch.tv/directory/game/One Step from Eden"
+      }
+    ],
+    "name": "One Step From Eden",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 189188,
+        "human": "Mar 26, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 189189,
+        "human": "Mar 26, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 189190,
+        "human": "Mar 26, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 189191,
+        "human": "Mar 26, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 202959,
+        "human": "Jun 14, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 202960,
+        "human": "Jun 06, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "one-step-from-eden"
   },
   "112104": {
     "id": 112104,
@@ -9016,6 +9947,297 @@
       }
     ],
     "slug": "resident-evil-3"
+  },
+  "115427": {
+    "id": 115427,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1710186,
+        "category": 6,
+        "name": "Haven",
+        "uid": "fbe119cee88e29463053ed728297820c",
+        "url": "http://www.pushsquare.com/games/ps4/haven"
+      },
+      {
+        "id": 1710296,
+        "category": 1,
+        "name": "Haven",
+        "uid": "983970",
+        "url": "https://store.steampowered.com/app/983970",
+        "year": 2020
+      },
+      {
+        "id": 1746483,
+        "category": 3,
+        "name": "Haven",
+        "uid": "72225",
+        "url": "https://www.giantbomb.com/games/3030-72225/",
+        "year": 2020
+      },
+      {
+        "id": 1753379,
+        "category": 12,
+        "name": "Haven",
+        "uid": "86246d65ead37201bcec33478f8c9a91",
+        "url": "http://www.nintendolife.com/games/switch-eshop/haven"
+      },
+      {
+        "id": 1913089,
+        "category": 14,
+        "name": "Haven",
+        "uid": "511465",
+        "url": "https://www.twitch.tv/directory/game/Haven"
+      }
+    ],
+    "name": "Haven",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 216004,
+        "human": "Dec 03, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 216006,
+        "human": "Q1 2021",
+        "platform": 130,
+        "y": 2021
+      },
+      {
+        "id": 216007,
+        "human": "Dec 03, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 216008,
+        "human": "Dec 03, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 216009,
+        "human": "Dec 03, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 216031,
+        "human": "Q1 2021",
+        "platform": 48,
+        "y": 2021
+      }
+    ],
+    "slug": "haven"
+  },
+  "116589": {
+    "id": 116589,
+    "alternative_names": [
+      {
+        "id": 26084,
+        "comment": "Formerly known as",
+        "name": "Shantae 5"
+      },
+      {
+        "id": 52133,
+        "comment": "Korean title",
+        "name": "샨테와 일곱 사이렌"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1721720,
+        "category": 6,
+        "name": "Shantae 5",
+        "uid": "4aef36ac1007df0a4ba0541f70433486",
+        "url": "http://www.pushsquare.com/games/ps4/shantae_5",
+        "year": 2019
+      },
+      {
+        "id": 1774769,
+        "category": 3,
+        "name": "Shantae 5",
+        "uid": "72661",
+        "url": "https://www.giantbomb.com/games/3030-72661/",
+        "year": 2019
+      },
+      {
+        "id": 1913485,
+        "category": 14,
+        "name": "Shantae and the Seven Sirens",
+        "uid": "511830",
+        "url": "https://www.twitch.tv/directory/game/Shantae%20and%20the%20Seven%20Sirens"
+      }
+    ],
+    "name": "Shantae and the Seven Sirens",
+    "platforms": [
+      6,
+      39,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 195397,
+        "human": "Mar 27, 2020",
+        "platform": 39,
+        "y": 2020
+      },
+      {
+        "id": 195398,
+        "human": "May 28, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 195399,
+        "human": "May 28, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 195400,
+        "human": "May 28, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 195405,
+        "human": "May 28, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "shantae-and-the-seven-sirens"
+  },
+  "116634": {
+    "id": 116634,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1770730,
+        "category": 1,
+        "name": "Beyond a Steel Sky",
+        "uid": "1146310",
+        "url": "https://store.steampowered.com/app/1146310",
+        "year": 0
+      },
+      {
+        "id": 1774773,
+        "category": 3,
+        "name": "Beyond A Steel Sky",
+        "uid": "72665",
+        "url": "https://www.giantbomb.com/games/3030-72665/"
+      },
+      {
+        "id": 1913489,
+        "category": 14,
+        "name": "Beyond A Steel Sky",
+        "uid": "511824",
+        "url": "https://www.twitch.tv/directory/game/Beyond%20A%20Steel%20Sky"
+      }
+    ],
+    "name": "Beyond a Steel Sky",
+    "platforms": [
+      3,
+      6,
+      14,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 202875,
+        "human": "Jul 16, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 221027,
+        "human": "Jul 16, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 224611,
+        "human": "Jun 25, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 224612,
+        "human": "Jun 25, 2020",
+        "platform": 39,
+        "y": 2020
+      }
+    ],
+    "slug": "beyond-a-steel-sky"
+  },
+  "117058": {
+    "id": 117058,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1714760,
+        "category": 1,
+        "name": "Lair of the Clockwork God",
+        "uid": "1060600",
+        "url": "https://store.steampowered.com/app/1060600",
+        "year": 2019
+      },
+      {
+        "id": 1774860,
+        "category": 3,
+        "name": "Lair of the Clockwork God",
+        "uid": "72753",
+        "url": "https://www.giantbomb.com/games/3030-72753/",
+        "year": 2019
+      },
+      {
+        "id": 1913572,
+        "category": 14,
+        "name": "Lair of the Clockwork God",
+        "uid": "511985",
+        "url": "https://www.twitch.tv/directory/game/Lair%20of%20the%20Clockwork%20God"
+      }
+    ],
+    "name": "Lair of the Clockwork God",
+    "platforms": [
+      6,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 189388,
+        "human": "Feb 21, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 210842,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 222358,
+        "human": "Sep 04, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "lair-of-the-clockwork-god"
   },
   "117146": {
     "id": 117146,
@@ -10544,6 +11766,165 @@
     ],
     "slug": "not-tonight-take-back-control-edition"
   },
+  "121500": {
+    "id": 121500,
+    "alternative_names": [
+      {
+        "id": 26247,
+        "comment": "Other",
+        "name": "Cook Serve Delicious 3"
+      },
+      {
+        "id": 50467,
+        "comment": "Acronym",
+        "name": "CSD3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1732700,
+        "category": 1,
+        "name": "Cook, Serve, Delicious! 3?!",
+        "uid": "1000030",
+        "url": "https://store.steampowered.com/app/1000030",
+        "year": 2020
+      },
+      {
+        "id": 1747198,
+        "category": 3,
+        "name": "Cook, Serve, Delicious! 3?!",
+        "uid": "74598",
+        "url": "https://www.giantbomb.com/games/3030-74598/"
+      },
+      {
+        "id": 1754330,
+        "category": 6,
+        "name": "Cook, Serve, Delicious! 3?!",
+        "uid": "a0664fbb8d33e6c94700244813418855",
+        "url": "http://www.pushsquare.com/games/ps4/cook_serve_delicious_3",
+        "year": 2020
+      },
+      {
+        "id": 1915264,
+        "category": 14,
+        "name": "Cook, Serve, Delicious! 3?!",
+        "uid": "513770",
+        "url": "https://www.twitch.tv/directory/game/Cook%2C%20Serve%2C%20Delicious!%203%3F!"
+      }
+    ],
+    "name": "Cook, Serve, Delicious! 3?!",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 213469,
+        "human": "Oct 14, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 213470,
+        "human": "Oct 14, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 213471,
+        "human": "Oct 14, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 213479,
+        "human": "Oct 14, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 214055,
+        "human": "Oct 14, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "cook-serve-delicious-3"
+  },
+  "121989": {
+    "id": 121989,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1737696,
+        "category": 1,
+        "name": "Help Will Come Tomorrow",
+        "uid": "1119600",
+        "url": "https://store.steampowered.com/app/1119600",
+        "year": 2020
+      },
+      {
+        "id": 1753437,
+        "category": 12,
+        "name": "Help Will Come Tomorrow",
+        "uid": "1d1cc4cfd2e7feb828295bb8dc424f81",
+        "url": "http://www.nintendolife.com/games/switch-eshop/help_will_come_tomorrow",
+        "year": 2020
+      },
+      {
+        "id": 1856902,
+        "category": 3,
+        "name": "Help Will Come Tomorrow",
+        "uid": "77167",
+        "url": "https://www.giantbomb.com/games/3030-77167/"
+      },
+      {
+        "id": 1917671,
+        "category": 14,
+        "name": "Help Will Come Tomorrow",
+        "uid": "516284",
+        "url": "https://www.twitch.tv/directory/game/Help%20Will%20Come%20Tomorrow"
+      }
+    ],
+    "name": "Help Will Come Tomorrow",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 190503,
+        "human": "Apr 21, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 191770,
+        "human": "Apr 21, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 194160,
+        "human": "Apr 21, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 194682,
+        "human": "Apr 22, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "help-will-come-tomorrow"
+  },
   "122312": {
     "id": 122312,
     "alternative_names": [
@@ -10795,6 +12176,55 @@
     ],
     "slug": "teardown"
   },
+  "123902": {
+    "id": 123902,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1805991,
+        "category": 3,
+        "name": "Murder by Numbers",
+        "uid": "75652",
+        "url": "https://www.giantbomb.com/games/3030-75652/",
+        "year": 2020
+      },
+      {
+        "id": 1837268,
+        "category": 1,
+        "name": "Murder by Numbers",
+        "uid": "1140290",
+        "url": "https://store.steampowered.com/app/1140290",
+        "year": 2020
+      },
+      {
+        "id": 1916253,
+        "category": 14,
+        "name": "Murder by Numbers",
+        "uid": "514804",
+        "url": "https://www.twitch.tv/directory/game/Murder%20by%20Numbers"
+      }
+    ],
+    "name": "Murder by Numbers",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 188125,
+        "human": "Mar 05, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 188126,
+        "human": "Mar 06, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "murder-by-numbers"
+  },
   "123991": {
     "id": 123991,
     "alternative_names": [
@@ -10978,6 +12408,71 @@
     ],
     "slug": "crusader-kings-iii"
   },
+  "126095": {
+    "id": 126095,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1835729,
+        "category": 6,
+        "name": "Street Fighter V: Champion Edition",
+        "uid": "9786d5ec6e04753de36416ad8db71011",
+        "url": "http://www.pushsquare.com/games/ps4/street_fighter_v_champion_edition",
+        "year": 2020
+      },
+      {
+        "id": 1928692,
+        "category": 20,
+        "uid": "B081P74CMG",
+        "url": "https://amazon.com/dp/B081P74CMG"
+      },
+      {
+        "id": 1931907,
+        "category": 20,
+        "uid": "B08527TKG9"
+      },
+      {
+        "id": 1935025,
+        "category": 20,
+        "uid": "B081QHDVQH"
+      },
+      {
+        "id": 1936408,
+        "category": 20,
+        "uid": "B081ZKPHBX"
+      },
+      {
+        "id": 1936567,
+        "category": 20,
+        "uid": "B081VPDL5Q"
+      },
+      {
+        "id": 1937424,
+        "category": 20,
+        "uid": "B081ZKMNHF"
+      }
+    ],
+    "name": "Street Fighter V: Champion Edition",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 188299,
+        "human": "Feb 14, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217235,
+        "human": "Feb 14, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "street-fighter-v-champion-edition"
+  },
   "126098": {
     "id": 126098,
     "alternative_names": [
@@ -11040,6 +12535,113 @@
     ],
     "slug": "half-life-alyx"
   },
+  "127493": {
+    "id": 127493,
+    "alternative_names": [
+      {
+        "id": 31076,
+        "comment": "Acronym",
+        "name": "DCT"
+      },
+      {
+        "id": 33040,
+        "comment": "Japanese title - original",
+        "name": "デスカムトゥルー"
+      },
+      {
+        "id": 50286,
+        "comment": "Korean title",
+        "name": "데스 컴 트루"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1857105,
+        "category": 3,
+        "name": "Death Come True",
+        "uid": "76963",
+        "url": "https://www.giantbomb.com/games/3030-76963/",
+        "year": 2020
+      },
+      {
+        "id": 1917480,
+        "category": 14,
+        "name": "Death Come True",
+        "uid": "516088",
+        "url": "https://www.twitch.tv/directory/game/Death%20Come%20True"
+      },
+      {
+        "id": 1942243,
+        "category": 20,
+        "uid": "B08FMZ9V9N"
+      },
+      {
+        "id": 1942448,
+        "category": 20,
+        "uid": "B08FMYKWWT"
+      }
+    ],
+    "name": "Death Come True",
+    "platforms": [
+      6,
+      34,
+      39,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 209932,
+        "human": "Jun 24, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 209933,
+        "human": "Jul 17, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 209935,
+        "human": "Jun 25, 2020",
+        "platform": 34,
+        "y": 2020
+      },
+      {
+        "id": 209936,
+        "human": "Jun 25, 2020",
+        "platform": 39,
+        "y": 2020
+      },
+      {
+        "id": 209937,
+        "human": "Jun 25, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 209938,
+        "human": "Jun 26, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 209939,
+        "human": "Jun 27, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 219383,
+        "human": "Nov 12, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "death-come-true"
+  },
   "127816": {
     "id": 127816,
     "category": 0,
@@ -11087,6 +12689,52 @@
       }
     ],
     "slug": "paradise-killer"
+  },
+  "127939": {
+    "id": 127939,
+    "alternative_names": [
+      {
+        "id": 34803,
+        "comment": "Chinese title - simplified",
+        "name": "了不起的修仙模拟器"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1858404,
+        "category": 3,
+        "name": "Amazing Cultivation Simulator",
+        "uid": "77301",
+        "url": "https://www.giantbomb.com/games/3030-77301/"
+      },
+      {
+        "id": 1917797,
+        "category": 14,
+        "name": "Amazing Cultivation Simulator",
+        "uid": "516440",
+        "url": "https://www.twitch.tv/directory/game/Amazing%20Cultivation%20Simulator"
+      }
+    ],
+    "name": "Amazing Cultivation Simulator",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 212003,
+        "human": "Jan 11, 2019",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 220996,
+        "human": "Nov 25, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "amazing-cultivation-simulator"
   },
   "128832": {
     "id": 128832,
@@ -11414,6 +13062,40 @@
       }
     ],
     "slug": "krystopia-novas-journey"
+  },
+  "129386": {
+    "id": 129386,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1851366,
+        "category": 1,
+        "name": "Come on-be with you",
+        "uid": "1238470",
+        "url": "https://store.steampowered.com/app/1238470",
+        "year": 2020
+      },
+      {
+        "id": 1991002,
+        "category": 14,
+        "name": "Come on-be with you",
+        "uid": "1831064866",
+        "url": "https://www.twitch.tv/directory/game/Come%20on-be%20with%20you"
+      }
+    ],
+    "name": "Come on-be with you",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 199251,
+        "human": "Feb 13, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "come-on-be-with-you"
   },
   "129483": {
     "id": 129483,
@@ -11778,6 +13460,74 @@
     ],
     "slug": "wacky-golf-land"
   },
+  "131845": {
+    "id": 131845,
+    "alternative_names": [
+      {
+        "id": 49857,
+        "comment": "Working title",
+        "name": "A Monster’s Expedition (Through Human Exhibitions)"
+      },
+      {
+        "id": 49858,
+        "comment": "Alternative title",
+        "name": "A Monster’s Expedition (Through Puzzling Exhibitions)"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1860876,
+        "category": 1,
+        "name": "A Monster's Expedition",
+        "uid": "1052990",
+        "url": "https://store.steampowered.com/app/1052990",
+        "year": 2020
+      },
+      {
+        "id": 1864753,
+        "category": 3,
+        "name": "A Monster's Expedition",
+        "uid": "77563",
+        "url": "https://www.giantbomb.com/games/3030-77563/",
+        "year": 2020
+      },
+      {
+        "id": 1918043,
+        "category": 14,
+        "name": "A Monster's Expedition",
+        "uid": "516688",
+        "url": "https://www.twitch.tv/directory/game/A%20Monster's%20Expedition"
+      }
+    ],
+    "name": "A Monster's Expedition",
+    "platforms": [
+      6,
+      14,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 209262,
+        "human": "Sep 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 209263,
+        "human": "Sep 10, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 212097,
+        "human": "Sep 10, 2020",
+        "platform": 39,
+        "y": 2020
+      }
+    ],
+    "slug": "a-monsters-expedition"
+  },
   "132058": {
     "id": 132058,
     "category": 0,
@@ -11860,6 +13610,145 @@
       }
     ],
     "slug": "xcom-chimera-squad"
+  },
+  "132145": {
+    "id": 132145,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928528,
+        "category": 20,
+        "uid": "B086MGYBS5",
+        "url": "https://amazon.com/dp/B086MGYBS5"
+      },
+      {
+        "id": 1928577,
+        "category": 20,
+        "uid": "B086MC14FZ",
+        "url": "https://amazon.com/dp/B086MC14FZ"
+      },
+      {
+        "id": 1928699,
+        "category": 20,
+        "uid": "B089881567",
+        "url": "https://amazon.com/dp/B089881567"
+      },
+      {
+        "id": 1934179,
+        "category": 20,
+        "uid": "B0855854RZ"
+      },
+      {
+        "id": 1935888,
+        "category": 20,
+        "uid": "B085589TYK"
+      },
+      {
+        "id": 1935903,
+        "category": 20,
+        "uid": "B08558552F"
+      },
+      {
+        "id": 1936747,
+        "category": 20,
+        "uid": "B085582XWF"
+      },
+      {
+        "id": 1937006,
+        "category": 20,
+        "uid": "B08558S773"
+      },
+      {
+        "id": 1937135,
+        "category": 20,
+        "uid": "B08558DH8Y"
+      },
+      {
+        "id": 1941621,
+        "category": 20,
+        "uid": "B08FJRNT64"
+      },
+      {
+        "id": 1941683,
+        "category": 20,
+        "uid": "B08D6RPS2Z"
+      },
+      {
+        "id": 1941845,
+        "category": 20,
+        "name": "Minecraft Dungeons - Hero Edition (PS4)",
+        "uid": "B08FXX1LS3"
+      },
+      {
+        "id": 1941884,
+        "category": 20,
+        "name": "Minecraft Dungeons (Nintendo Switch)",
+        "uid": "B08FV3CTVN"
+      },
+      {
+        "id": 1942136,
+        "category": 20,
+        "name": "Minecraft Dungeons - Hero Edition – Xbox",
+        "uid": "B08FN6FBD6"
+      },
+      {
+        "id": 1942196,
+        "category": 20,
+        "name": "Minecraft Dungeons Hero Edition - PlayStation 4",
+        "uid": "B08FP2HY4B"
+      },
+      {
+        "id": 1942277,
+        "category": 20,
+        "uid": "B08FRF92HG"
+      },
+      {
+        "id": 1942290,
+        "category": 20,
+        "uid": "B08FRBJZ6R"
+      },
+      {
+        "id": 1942394,
+        "category": 20,
+        "name": "Minecraft Dungeons Hero Edition - Nintendo Switch",
+        "uid": "B08F3CXZJQ"
+      },
+      {
+        "id": 1942744,
+        "category": 20,
+        "uid": "B08FTRMWK7"
+      },
+      {
+        "id": 1942864,
+        "category": 20,
+        "uid": "B08GMBTM6D"
+      },
+      {
+        "id": 1942973,
+        "category": 20,
+        "uid": "B08L52R4Z2"
+      },
+      {
+        "id": 1943945,
+        "category": 20,
+        "name": "Minecraft Dungeons Hero Edition|オンラインコード版",
+        "uid": "B08M4Q56YH",
+        "url": "https://amazon.co.jp/dp/B08M4Q56YH"
+      }
+    ],
+    "name": "Minecraft Dungeons: Hero Edition",
+    "platforms": [
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 216729,
+        "human": "Sep 08, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons-hero-edition"
   },
   "132155": {
     "id": 132155,
@@ -12314,6 +14203,40 @@
       }
     ],
     "slug": "assassins-creed-valhalla"
+  },
+  "133149": {
+    "id": 133149,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1861713,
+        "category": 1,
+        "name": "Post Void",
+        "uid": "1285670",
+        "url": "https://store.steampowered.com/app/1285670",
+        "year": 0
+      },
+      {
+        "id": 1939074,
+        "category": 14,
+        "name": "Post Void",
+        "uid": "519109",
+        "url": "https://www.twitch.tv/directory/game/Post%20Void/"
+      }
+    ],
+    "name": "Post Void",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 213055,
+        "human": "Aug 06, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "post-void"
   },
   "133259": {
     "id": 133259,
@@ -13204,6 +15127,49 @@
     ],
     "slug": "command-and-conquer-red-alert-remastered"
   },
+  "134483": {
+    "id": 134483,
+    "alternative_names": [
+      {
+        "id": 36050,
+        "comment": "Chinese title - traditional",
+        "name": "槍火重生"
+      },
+      {
+        "id": 36051,
+        "comment": "Chinese title - simplified",
+        "name": "枪火重生"
+      },
+      {
+        "id": 36052,
+        "comment": "Chinese - romanized (pinyin)",
+        "name": "Qianghuo chongsheng"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1882646,
+        "category": 14,
+        "name": "Gunfire Reborn",
+        "uid": "517645",
+        "url": "https://www.twitch.tv/directory/game/Gunfire%20Reborn"
+      }
+    ],
+    "name": "Gunfire Reborn",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 198777,
+        "human": "May 22, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "gunfire-reborn"
+  },
   "134502": {
     "id": 134502,
     "category": 4,
@@ -13509,6 +15475,99 @@
     ],
     "slug": "pubg-mobile-season-13"
   },
+  "135400": {
+    "id": 135400,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1929196,
+        "category": 20,
+        "uid": "B082J7S5L6"
+      },
+      {
+        "id": 1933938,
+        "category": 20,
+        "uid": "B082KW6F8Z"
+      },
+      {
+        "id": 1934073,
+        "category": 20,
+        "uid": "B082KHYFDQ"
+      },
+      {
+        "id": 1934312,
+        "category": 20,
+        "uid": "B082J3D5HN"
+      },
+      {
+        "id": 1936429,
+        "category": 20,
+        "uid": "B082PBHQ3W"
+      }
+    ],
+    "name": "Minecraft",
+    "platforms": [
+      6,
+      34,
+      39,
+      48,
+      49,
+      74,
+      130,
+      132
+    ],
+    "release_dates": [
+      {
+        "id": 201513,
+        "human": "Jun 21, 2018",
+        "platform": 130,
+        "y": 2018
+      },
+      {
+        "id": 201514,
+        "human": "Sep 20, 2017",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 201638,
+        "human": "Sep 20, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 201639,
+        "human": "Sep 20, 2017",
+        "platform": 39,
+        "y": 2017
+      },
+      {
+        "id": 201640,
+        "human": "Sep 20, 2017",
+        "platform": 34,
+        "y": 2017
+      },
+      {
+        "id": 201641,
+        "human": "Dec 19, 2019",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 215808,
+        "human": "Sep 20, 2017",
+        "platform": 74,
+        "y": 2017
+      },
+      {
+        "id": 215809,
+        "human": "Sep 20, 2017",
+        "platform": 132,
+        "y": 2017
+      }
+    ],
+    "slug": "minecraft--1"
+  },
   "135557": {
     "id": 135557,
     "category": 0,
@@ -13556,6 +15615,82 @@
     ],
     "slug": "golf-on-mars"
   },
+  "135565": {
+    "id": 135565,
+    "category": 1,
+    "name": "Minecraft Dungeons: Jungle Awakens",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 202857,
+        "human": "Jul 01, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 202858,
+        "human": "Jul 01, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 202859,
+        "human": "Jul 01, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 202860,
+        "human": "Jul 01, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons-jungle-awakens"
+  },
+  "135658": {
+    "id": 135658,
+    "alternative_names": [
+      {
+        "id": 37354,
+        "comment": "Russian title",
+        "name": "завтра не наступит без ██████"
+      },
+      {
+        "id": 53138,
+        "comment": "Portuguese title",
+        "name": "o amanhã não virá para aqueles sem █████"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1957107,
+        "category": 14,
+        "name": "tomorrow won't come for those without ██████",
+        "uid": "83378280",
+        "url": "https://www.twitch.tv/directory/game/tomorrow%20won't%20come%20for%20those%20without%20%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88"
+      }
+    ],
+    "name": "tomorrow won't come for those without ██████",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203525,
+        "human": "May 23, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "tomorrow-wont-come-for-those-without-number-number-number-number-number-number"
+  },
   "135735": {
     "id": 135735,
     "alternative_names": [
@@ -13588,6 +15723,32 @@
       }
     ],
     "slug": "half-life-alyx-final-hours"
+  },
+  "135789": {
+    "id": 135789,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1883491,
+        "category": 14,
+        "name": "Townscaper",
+        "uid": "518491",
+        "url": "https://www.twitch.tv/directory/game/Townscaper"
+      }
+    ],
+    "name": "Townscaper",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 204064,
+        "human": "Jun 30, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "townscaper"
   },
   "135930": {
     "id": 135930,
@@ -14443,6 +16604,227 @@
     ],
     "slug": "apex-legends-season-6"
   },
+  "137001": {
+    "id": 137001,
+    "alternative_names": [
+      {
+        "id": 52051,
+        "comment": "Korean title",
+        "name": "콜 오브 듀티: 블랙 옵스 콜드 워"
+      },
+      {
+        "id": 52317,
+        "comment": "Alternative title",
+        "name": "Black Ops Cold War"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1807422,
+        "category": 3,
+        "name": "Call of Duty 2020 (working title)",
+        "uid": "73518",
+        "url": "https://www.giantbomb.com/games/3030-73518/",
+        "year": 2020
+      },
+      {
+        "id": 1914278,
+        "category": 14,
+        "name": "Call of Duty 2020 (working title)",
+        "uid": "512709",
+        "url": "https://www.twitch.tv/directory/game/Call%20of%20Duty%202020%20(working%20title)"
+      },
+      {
+        "id": 1941841,
+        "category": 20,
+        "uid": "B08J8C9X1B"
+      },
+      {
+        "id": 1941968,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War Standard PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08J87NYPZ"
+      },
+      {
+        "id": 1942071,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War - Cross-Gen Bundle - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT2N329"
+      },
+      {
+        "id": 1942162,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War",
+        "uid": "B08GR4QMC9"
+      },
+      {
+        "id": 1942269,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War",
+        "uid": "B08GR4TW97"
+      },
+      {
+        "id": 1942280,
+        "category": 20,
+        "uid": "B08GSL4GDF"
+      },
+      {
+        "id": 1942469,
+        "category": 20,
+        "uid": "B08GS2G1KV"
+      },
+      {
+        "id": 1942486,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War Standard Edition - PRE-PURCHASE - Xbox One [Digital Code]",
+        "uid": "B08J4TP57G"
+      },
+      {
+        "id": 1942519,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War",
+        "uid": "B08GR4GNRN"
+      },
+      {
+        "id": 1942562,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War",
+        "uid": "B08GR4GNRK"
+      },
+      {
+        "id": 1942647,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War - Ultimate Edition - PRE-PURCHASE - Xbox Series X [Digital Code]",
+        "uid": "B08KYYDRDL"
+      },
+      {
+        "id": 1942680,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War - Cross-Gen Bundle - PRE-PURCHASE - Xbox Series X [Digital Code]",
+        "uid": "B08KYYZP9S"
+      },
+      {
+        "id": 1942872,
+        "category": 20,
+        "uid": "B08J87QQK1"
+      },
+      {
+        "id": 1996685,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War (Xbox One) - Import",
+        "uid": "B07SNSCNK3",
+        "url": "https://amazon.fr/dp/B07SNSCNK3"
+      },
+      {
+        "id": 1996735,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War - Import espagnol",
+        "uid": "B08MBRNGN4",
+        "url": "https://amazon.fr/dp/B08MBRNGN4"
+      },
+      {
+        "id": 1996745,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War (PS4) - Import UK",
+        "uid": "B07SKJBZQF",
+        "url": "https://amazon.fr/dp/B07SKJBZQF"
+      },
+      {
+        "id": 1996770,
+        "category": 20,
+        "name": "Call of Duty: Black Ops Cold War (Xbox Series X) - Import UK",
+        "uid": "B07SKJ9GJJ",
+        "url": "https://amazon.fr/dp/B07SKJ9GJJ"
+      },
+      {
+        "id": 1996795,
+        "category": 20,
+        "name": "Call Of Duty: Black Ops Cold War (PS4)",
+        "uid": "B08NWCPM3L",
+        "url": "https://amazon.co.uk/dp/B08NWCPM3L"
+      }
+    ],
+    "name": "Call of Duty: Black Ops Cold War",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 208121,
+        "human": "Nov 13, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 208122,
+        "human": "Nov 13, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208123,
+        "human": "Nov 13, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 208124,
+        "human": "Nov 13, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208125,
+        "human": "Nov 13, 2020",
+        "platform": 169,
+        "y": 2020
+      }
+    ],
+    "slug": "call-of-duty-black-ops-cold-war"
+  },
+  "137133": {
+    "id": 137133,
+    "category": 1,
+    "name": "Minecraft Dungeons: Creeping Winter",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 212239,
+        "human": "Sep 08, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 212240,
+        "human": "Sep 08, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 212241,
+        "human": "Sep 08, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 212242,
+        "human": "Sep 08, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons-creeping-winter"
+  },
   "137294": {
     "id": 137294,
     "alternative_names": [
@@ -15228,6 +17610,61 @@
     ],
     "slug": "grey-skies-a-war-of-the-worlds-story"
   },
+  "140757": {
+    "id": 140757,
+    "alternative_names": [
+      {
+        "id": 51917,
+        "comment": "Japanese title - original",
+        "name": "白華の檻 ~緋色の欠片4~ 四季の詩"
+      },
+      {
+        "id": 51918,
+        "comment": "Alternative title",
+        "name": "Scarlet Fate 2: Seasons of love"
+      },
+      {
+        "id": 51919,
+        "comment": "Alternative title",
+        "name": "Shall we Date?: Scarlet Fate II ~Seasons of Love~"
+      }
+    ],
+    "category": 0,
+    "name": "Shirahana no Ori - Hiiro no Kakera 4: Shiki no Uta",
+    "platforms": [
+      6,
+      34,
+      38,
+      39
+    ],
+    "release_dates": [
+      {
+        "id": 217134,
+        "human": "Sep 05, 2013",
+        "platform": 38,
+        "y": 2013
+      },
+      {
+        "id": 217135,
+        "human": "Nov 25, 2015",
+        "platform": 39,
+        "y": 2015
+      },
+      {
+        "id": 217136,
+        "human": "Nov 25, 2015",
+        "platform": 34,
+        "y": 2015
+      },
+      {
+        "id": 217137,
+        "human": "Jun 07, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "shirahana-no-ori-hiiro-no-kakera-4-shiki-no-uta"
+  },
   "140895": {
     "id": 140895,
     "category": 0,
@@ -15683,6 +18120,51 @@
     ],
     "slug": "myst--1"
   },
+  "141574": {
+    "id": 141574,
+    "category": 7,
+    "name": "Call of Duty: Black Ops Cold War - Season 1",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 221575,
+        "human": "Dec 16, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 221576,
+        "human": "Dec 16, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 221577,
+        "human": "Dec 16, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 221578,
+        "human": "Dec 16, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 221579,
+        "human": "Dec 16, 2020",
+        "platform": 167,
+        "y": 2020
+      }
+    ],
+    "slug": "call-of-duty-black-ops-cold-war-season-1"
+  },
   "141575": {
     "id": 141575,
     "category": 7,
@@ -15727,5 +18209,55 @@
       }
     ],
     "slug": "rocket-league-season-2"
+  },
+  "142117": {
+    "id": 142117,
+    "category": 0,
+    "name": "Space Raft",
+    "platforms": [
+      18
+    ],
+    "release_dates": [
+      {
+        "id": 223475,
+        "human": "Nov 25, 2020",
+        "platform": 18,
+        "y": 2020
+      }
+    ],
+    "slug": "space-raft"
+  },
+  "142160": {
+    "id": 142160,
+    "alternative_names": [
+      {
+        "id": 53633,
+        "comment": "Abbreviation",
+        "name": "Howling Peaks"
+      }
+    ],
+    "category": 1,
+    "external_games": [
+      {
+        "id": 1997371,
+        "category": 20,
+        "name": "Minecraft Dungeons Howling Peaks - Switch [Digital Code]",
+        "uid": "B08R4M5WTS",
+        "url": "https://amazon.com/dp/B08R4M5WTS"
+      }
+    ],
+    "name": "Minecraft Dungeons: Howling Peaks",
+    "platforms": [
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 223617,
+        "human": "Dec 09, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "minecraft-dungeons-howling-peaks"
   }
 }
