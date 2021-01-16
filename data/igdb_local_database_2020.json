@@ -1,4 +1,1891 @@
 {
+  "119886": {
+    "id": 119886,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1725279,
+        "category": 1,
+        "name": "Still There",
+        "uid": "1063490",
+        "url": "https://store.steampowered.com/app/1063490",
+        "year": 2019
+      },
+      {
+        "id": 1746913,
+        "category": 3,
+        "name": "Still There",
+        "uid": "74649",
+        "url": "https://www.giantbomb.com/games/3030-74649/"
+      },
+      {
+        "id": 1818067,
+        "category": 12,
+        "name": "Still There",
+        "uid": "94e3120f44fb8b5c7aae8e7be5d3633a",
+        "url": "http://www.nintendolife.com/games/switch-eshop/still_there",
+        "year": 2019
+      },
+      {
+        "id": 1915313,
+        "category": 14,
+        "name": "Still There",
+        "uid": "513805",
+        "url": "https://www.twitch.tv/directory/game/Still%20There"
+      }
+    ],
+    "name": "Still There",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 180090,
+        "human": "Nov 20, 2019",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "still-there"
+  },
+  "69244": {
+    "id": 69244,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186032,
+        "category": 3,
+        "name": "Still Time",
+        "uid": "61331",
+        "url": "https://www.giantbomb.com/games/3030-61331/",
+        "year": 2017
+      },
+      {
+        "id": 398959,
+        "category": 16,
+        "name": "Still Time",
+        "uid": "UP2310-PCSE01098_00-STILLTIMESIAEPSV",
+        "url": "https://www.playstation.com/en-us/games/still-time-psvita/",
+        "year": 2017
+      },
+      {
+        "id": 398977,
+        "category": 16,
+        "name": "Still Time",
+        "uid": "UP2310-CUSA08346_00-STILLTIMESIAEPS4",
+        "url": "https://www.playstation.com/en-us/games/still-time-ps4/",
+        "year": 2017
+      },
+      {
+        "id": 1594135,
+        "category": 19,
+        "name": "Still Time",
+        "uid": "307a3c--62480",
+        "url": "https://www.gamespress.com/product.asp?c=307a3c--62480"
+      },
+      {
+        "id": 1906064,
+        "category": 14,
+        "name": "Still Time",
+        "uid": "498882",
+        "url": "https://www.twitch.tv/directory/game/Still%20Time"
+      }
+    ],
+    "name": "Still Time",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 158856,
+        "human": "TBD",
+        "platform": 6
+      }
+    ],
+    "slug": "still-time"
+  },
+  "6175": {
+    "id": 6175,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13974,
+        "category": 1,
+        "name": "Still Life",
+        "uid": "46480"
+      },
+      {
+        "id": 78138,
+        "category": 5,
+        "name": "Still Life",
+        "uid": "1207658882",
+        "url": "https://www.gog.com/game/still_life",
+        "year": 2005
+      },
+      {
+        "id": 90626,
+        "category": 7,
+        "name": "Still Life",
+        "uid": "stilllife",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=stilllife"
+      },
+      {
+        "id": 99095,
+        "category": 8,
+        "name": "Still Life",
+        "uid": "DD-STILL-LIFE",
+        "url": "https://uk.gamersgate.com/DD-STILL-LIFE/still-life",
+        "year": 2008
+      },
+      {
+        "id": 154149,
+        "category": 3,
+        "name": "Still Life",
+        "uid": "3141",
+        "url": "https://www.giantbomb.com/games/3030-3141/",
+        "year": 2005
+      },
+      {
+        "id": 247024,
+        "category": 14,
+        "name": "Still Life",
+        "uid": "2884",
+        "url": "https://www.twitch.tv/directory/game/Still Life"
+      }
+    ],
+    "name": "Still Life",
+    "platforms": [
+      6,
+      11
+    ],
+    "release_dates": [
+      {
+        "id": 22322,
+        "human": "Apr 15, 2005",
+        "platform": 6,
+        "y": 2005
+      },
+      {
+        "id": 22323,
+        "human": "Jun 03, 2005",
+        "platform": 6,
+        "y": 2005
+      },
+      {
+        "id": 22324,
+        "human": "Jun 03, 2005",
+        "platform": 11,
+        "y": 2005
+      },
+      {
+        "id": 22325,
+        "human": "Jun 06, 2005",
+        "platform": 11,
+        "y": 2005
+      }
+    ],
+    "slug": "still-life"
+  },
+  "10992": {
+    "id": 10992,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 141251,
+        "category": 3,
+        "name": "Time Stand Still",
+        "uid": "17328",
+        "url": "https://www.giantbomb.com/games/3030-17328/",
+        "year": 2006
+      },
+      {
+        "id": 1920300,
+        "category": 14,
+        "name": "Time Stand Still",
+        "uid": "15885",
+        "url": "https://www.twitch.tv/directory/game/Time%20Stand%20Still"
+      }
+    ],
+    "name": "Time Stand Still",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 40679,
+        "human": "2006",
+        "platform": 6,
+        "y": 2006
+      }
+    ],
+    "slug": "time-stand-still"
+  },
+  "6176": {
+    "id": 6176,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13973,
+        "category": 1,
+        "name": "Still Life 2",
+        "uid": "46490"
+      },
+      {
+        "id": 78139,
+        "category": 5,
+        "name": "Still Life 2",
+        "uid": "1207659007",
+        "url": "https://www.gog.com/game/still_life_2",
+        "year": 2009
+      },
+      {
+        "id": 90628,
+        "category": 7,
+        "name": "Still Life 2",
+        "uid": "stilllifeii",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=stilllifeii"
+      },
+      {
+        "id": 99096,
+        "category": 8,
+        "name": "Still Life 2",
+        "uid": "DD-STILL-LIFE-2",
+        "url": "https://uk.gamersgate.com/DD-STILL-LIFE-2/still-life-2",
+        "year": 2009
+      },
+      {
+        "id": 135681,
+        "category": 3,
+        "name": "Still Life 2",
+        "uid": "23594",
+        "url": "https://www.giantbomb.com/games/3030-23594/",
+        "year": 2009
+      },
+      {
+        "id": 249534,
+        "category": 14,
+        "name": "Still Life 2",
+        "uid": "21392",
+        "url": "https://www.twitch.tv/directory/game/Still Life 2"
+      }
+    ],
+    "name": "Still Life 2",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 22326,
+        "human": "Apr 03, 2009",
+        "platform": 6,
+        "y": 2009
+      },
+      {
+        "id": 22327,
+        "human": "Aug 10, 2009",
+        "platform": 6,
+        "y": 2009
+      },
+      {
+        "id": 22328,
+        "human": "Jun 26, 2009",
+        "platform": 14,
+        "y": 2009
+      }
+    ],
+    "slug": "still-life-2"
+  },
+  "96275": {
+    "id": 96275,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 397938,
+        "category": 1,
+        "name": "The Stillness of the Wind",
+        "uid": "828900",
+        "url": "https://store.steampowered.com/app/828900",
+        "year": 0
+      },
+      {
+        "id": 1458004,
+        "category": 3,
+        "name": "The Stillness of the Wind",
+        "uid": "69366",
+        "url": "https://www.giantbomb.com/games/3030-69366/"
+      },
+      {
+        "id": 1704550,
+        "category": 12,
+        "name": "The Stillness of the Wind",
+        "uid": "433476833a3e75eb4a0b26e4d1148b00",
+        "url": "http://www.nintendolife.com/games/switch-eshop/stillness_of_the_wind",
+        "year": 2019
+      },
+      {
+        "id": 1708445,
+        "category": 14,
+        "name": "The Stillness of the Wind",
+        "uid": "508670",
+        "url": "https://www.twitch.tv/directory/game/The Stillness of the Wind"
+      }
+    ],
+    "name": "The Stillness of the Wind",
+    "platforms": [
+      6,
+      14,
+      39,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 164385,
+        "human": "Feb 07, 2019",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 164386,
+        "human": "Feb 07, 2019",
+        "platform": 39,
+        "y": 2019
+      },
+      {
+        "id": 164880,
+        "human": "Feb 07, 2019",
+        "platform": 130,
+        "y": 2019
+      },
+      {
+        "id": 189229,
+        "human": "Feb 07, 2019",
+        "platform": 14,
+        "y": 2019
+      }
+    ],
+    "slug": "the-stillness-of-the-wind"
+  },
+  "41952": {
+    "id": 41952,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 60272,
+        "category": 1,
+        "name": "Still Not Dead",
+        "uid": "337290"
+      },
+      {
+        "id": 99097,
+        "category": 8,
+        "name": "Still Not Dead",
+        "uid": "DD-STILL-NOT-DEAD",
+        "url": "https://uk.gamersgate.com/DD-STILL-NOT-DEAD/stil-not-dead",
+        "year": 2017
+      },
+      {
+        "id": 576125,
+        "category": 3,
+        "name": "Still Not Dead",
+        "uid": "65785",
+        "url": "https://www.giantbomb.com/games/3030-65785/",
+        "year": 2018
+      },
+      {
+        "id": 1908932,
+        "category": 14,
+        "name": "Still Not Dead",
+        "uid": "503257",
+        "url": "https://www.twitch.tv/directory/game/Still%20Not%20Dead"
+      }
+    ],
+    "name": "Still Not Dead",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 88672,
+        "human": "Jul 10, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "still-not-dead"
+  },
+  "31476": {
+    "id": 31476,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 3225,
+        "category": 1,
+        "name": "The Final Days: I'm Still Alive",
+        "uid": "522700"
+      },
+      {
+        "id": 91326,
+        "category": 7,
+        "name": "The Final Days: I'm Still Alive",
+        "uid": "finaldaysimstillalive",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=finaldaysimstillalive"
+      },
+      {
+        "id": 580164,
+        "category": 3,
+        "name": "The Final Days: I'm Still Alive",
+        "uid": "67887",
+        "url": "https://www.giantbomb.com/games/3030-67887/",
+        "year": 2016
+      },
+      {
+        "id": 1927485,
+        "category": 14,
+        "name": "The Final Days: I'm Still Alive",
+        "uid": "505408",
+        "url": "https://www.twitch.tv/directory/game/The%20Final%20Days%3A%20I'm%20Still%20Alive"
+      }
+    ],
+    "name": "The Final Days: I'm Still Alive",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 74733,
+        "human": "Sep 02, 2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "the-final-days-im-still-alive"
+  },
+  "30405": {
+    "id": 30405,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1899,
+        "category": 1,
+        "name": "Gulman 4: Still alive",
+        "uid": "559900"
+      },
+      {
+        "id": 1992465,
+        "category": 14,
+        "name": "Gulman 4: Still alive",
+        "uid": "856814848",
+        "url": "https://www.twitch.tv/directory/game/Gulman%204%3A%20Still%20alive"
+      }
+    ],
+    "name": "Gulman 4: Still alive",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 73280,
+        "human": "Dec 20, 2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "gulman-4-still-alive"
+  },
+  "12204": {
+    "id": 12204,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8940,
+        "category": 1,
+        "name": "Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad",
+        "uid": "359050"
+      },
+      {
+        "id": 111990,
+        "category": 3,
+        "name": "Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad?",
+        "uid": "49180",
+        "url": "https://www.giantbomb.com/games/3030-49180/",
+        "year": 2015
+      },
+      {
+        "id": 247294,
+        "category": 14,
+        "name": "Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad?",
+        "uid": "489974",
+        "url": "https://www.twitch.tv/directory/game/Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad?"
+      }
+    ],
+    "name": "Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad?",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 34660,
+        "human": "Sep 02, 2015",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 120804,
+        "human": "Sep 02, 2015",
+        "platform": 6,
+        "y": 2015
+      }
+    ],
+    "slug": "shower-with-your-dad-simulator-2015-do-you-still-shower-with-your-dad"
+  },
+  "139376": {
+    "id": 139376,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1983911,
+        "category": 14,
+        "name": "A Game of Thrones: The Board Game - Digital Edition",
+        "uid": "2060873614",
+        "url": "https://www.twitch.tv/directory/game/A%20Game%20of%20Thrones%3A%20The%20Board%20Game%20-%20Digital%20Edition"
+      }
+    ],
+    "name": "A Game of Thrones: The Board Game - Digital Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 213032,
+        "human": "Oct 06, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "a-game-of-thrones-the-board-game-digital-edition"
+  },
+  "75140": {
+    "id": 75140,
+    "alternative_names": [
+      {
+        "id": 37378,
+        "comment": "Alternative spelling",
+        "name": "KARDS - The WWII Card Game"
+      },
+      {
+        "id": 37408,
+        "comment": "Alternative title",
+        "name": "Kards: The World War II Collectible Card Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 188414,
+        "category": 3,
+        "name": "Kards: The World War II Collectible Card Game",
+        "uid": "62260",
+        "url": "https://www.giantbomb.com/games/3030-62260/",
+        "year": 2018
+      },
+      {
+        "id": 252932,
+        "category": 14,
+        "name": "Kards: The World War II Collectible Card Game",
+        "uid": "499790",
+        "url": "https://www.twitch.tv/directory/game/Kards: The World War II Collectible Card Game"
+      },
+      {
+        "id": 1715936,
+        "category": 1,
+        "name": "Kards",
+        "uid": "544810",
+        "url": "https://store.steampowered.com/app/544810",
+        "year": 2019
+      }
+    ],
+    "name": "KARDS: The WWII Card Game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203651,
+        "human": "Apr 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "kards-the-wwii-card-game"
+  },
+  "133945": {
+    "id": 133945,
+    "alternative_names": [
+      {
+        "id": 34749,
+        "comment": "Other",
+        "name": "World War Z - GOTY Edition"
+      },
+      {
+        "id": 34750,
+        "comment": "Other",
+        "name": "World War Z - Game of the Year Edition"
+      },
+      {
+        "id": 34751,
+        "comment": "Other",
+        "name": "World War Z Game of the Year Edition"
+      },
+      {
+        "id": 34752,
+        "comment": "Other",
+        "name": "World War Z GOTY Edition"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1942333,
+        "category": 20,
+        "uid": "B08GSJ4LNT"
+      },
+      {
+        "id": 1942463,
+        "category": 20,
+        "uid": "B08GSJWG54"
+      }
+    ],
+    "name": "World War Z: Game of the Year Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 195927,
+        "human": "May 05, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 195928,
+        "human": "May 05, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 195929,
+        "human": "May 05, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "world-war-z-game-of-the-year-edition"
+  },
+  "132907": {
+    "id": 132907,
+    "alternative_names": [
+      {
+        "id": 53391,
+        "comment": "Alternative spelling",
+        "name": "There Is No Game: Wrong Dimension"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1860695,
+        "category": 1,
+        "name": "There is no game : Wrong dimension",
+        "uid": "1240210",
+        "url": "https://store.steampowered.com/app/1240210",
+        "year": 2020
+      },
+      {
+        "id": 1939053,
+        "category": 14,
+        "name": "There Is No Game: Wrong dimension",
+        "uid": "519100",
+        "url": "https://www.twitch.tv/directory/game/There%20Is%20No%20Game%3A%20Wrong%20dimension/"
+      }
+    ],
+    "name": "There Is No Game : Wrong Dimension",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 206376,
+        "human": "Aug 06, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 206377,
+        "human": "Aug 06, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "there-is-no-game-wrong-dimension"
+  },
+  "130212": {
+    "id": 130212,
+    "alternative_names": [
+      {
+        "id": 37086,
+        "comment": "Alternative spelling",
+        "name": "Werewolf Voice - Best Board Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1856529,
+        "category": 1,
+        "name": "Werewolf Voice - Best Board Game",
+        "uid": "1153880",
+        "url": "https://store.steampowered.com/app/1153880",
+        "year": 2019
+      },
+      {
+        "id": 1969742,
+        "category": 14,
+        "name": "Werewolf Voice: Best Board Game",
+        "uid": "1709572614",
+        "url": "https://www.twitch.tv/directory/game/Werewolf%20Voice%3A%20Best%20Board%20Game"
+      }
+    ],
+    "name": "Werewolf Voice: Best Board Game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 202701,
+        "human": "May 08, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "werewolf-voice-best-board-game"
+  },
+  "114146": {
+    "id": 114146,
+    "alternative_names": [
+      {
+        "id": 51751,
+        "comment": "Alternative spelling",
+        "name": "Angry Video Game Nerd 1 & 2 Deluxe"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1719672,
+        "category": 12,
+        "name": "Angry Video Game Nerd: I & II Deluxe",
+        "uid": "66314a5947261e82e90316cd85c429fe",
+        "url": "http://www.nintendolife.com/games/switch-eshop/angry_video_game_nerd_i_and_ii_deluxe"
+      },
+      {
+        "id": 1860765,
+        "category": 1,
+        "name": "Angry Video Game Nerd I & II Deluxe",
+        "uid": "1162960",
+        "url": "https://store.steampowered.com/app/1162960",
+        "year": 0
+      },
+      {
+        "id": 1993561,
+        "category": 14,
+        "name": "Angry Video Game Nerd I & II Deluxe",
+        "uid": "2010022669",
+        "url": "https://www.twitch.tv/directory/game/Angry%20Video%20Game%20Nerd%20I%20%26%20II%20Deluxe"
+      }
+    ],
+    "name": "Angry Video Game Nerd I & II Deluxe",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 216463,
+        "human": "Oct 29, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "angry-video-game-nerd-i-and-ii-deluxe"
+  },
+  "130213": {
+    "id": 130213,
+    "alternative_names": [
+      {
+        "id": 37002,
+        "comment": "Alternative spelling",
+        "name": "Hardcore Maze Cube - Puzzle Survival Game"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1856531,
+        "category": 1,
+        "name": "Hardcore Maze Cube - Puzzle Survival Game",
+        "uid": "1153980",
+        "url": "https://store.steampowered.com/app/1153980",
+        "year": 2020
+      },
+      {
+        "id": 1993543,
+        "category": 14,
+        "name": "Hardcore Maze Cube: Puzzle Survival Game",
+        "uid": "1671040217",
+        "url": "https://www.twitch.tv/directory/game/Hardcore%20Maze%20Cube%3A%20Puzzle%20Survival%20Game"
+      }
+    ],
+    "name": "Hardcore Maze Cube: Puzzle Survival Game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 202255,
+        "human": "Jan 29, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "hardcore-maze-cube-puzzle-survival-game"
+  },
+  "132522": {
+    "id": 132522,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1859797,
+        "category": 1,
+        "name": "There is no game : Jam Edition 2015",
+        "uid": "1241700",
+        "url": "https://store.steampowered.com/app/1241700",
+        "year": 2020
+      },
+      {
+        "id": 1952845,
+        "category": 14,
+        "name": "There is no game : Jam Edition 2015",
+        "uid": "180279984",
+        "url": "https://www.twitch.tv/directory/game/There%20is%20no%20game%20%3A%20Jam%20Edition%202015"
+      }
+    ],
+    "name": "There Is No Game: Jam Edition 2015",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 222795,
+        "human": "Mar 18, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "there-is-no-game-jam-edition-2015"
+  },
+  "129212": {
+    "id": 129212,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1851938,
+        "category": 1,
+        "name": "There a no Armadillos in this game",
+        "uid": "1235220",
+        "url": "https://store.steampowered.com/app/1235220",
+        "year": 2020
+      },
+      {
+        "id": 1978048,
+        "category": 14,
+        "name": "There a no Armadillos in this game",
+        "uid": "744598058",
+        "url": "https://www.twitch.tv/directory/game/There%20a%20no%20Armadillos%20in%20this%20game"
+      }
+    ],
+    "name": "There a no Armadillos in this game",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 202616,
+        "human": "Feb 14, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "there-a-no-armadillos-in-this-game"
+  },
+  "113797": {
+    "id": 113797,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1690026,
+        "category": 1,
+        "name": "DCL - The Game",
+        "uid": "964570",
+        "url": "https://store.steampowered.com/app/964570",
+        "year": 2019
+      },
+      {
+        "id": 1754486,
+        "category": 6,
+        "name": "DCL: The Game",
+        "uid": "489636ae27f201c5b25ea95631be8567",
+        "url": "http://www.pushsquare.com/games/ps4/dcl_the_game"
+      },
+      {
+        "id": 1781195,
+        "category": 3,
+        "name": "DCL - The Game: FPV Drone Racing",
+        "uid": "72288",
+        "url": "https://www.giantbomb.com/games/3030-72288/"
+      },
+      {
+        "id": 1913144,
+        "category": 14,
+        "name": "DCL - The Game: FPV Drone Racing",
+        "uid": "511539",
+        "url": "https://www.twitch.tv/directory/game/DCL%20-%20The%20Game%3A%20FPV%20Drone%20Racing"
+      }
+    ],
+    "name": "DCL - The Game",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 177471,
+        "human": "Jan 28, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 194583,
+        "human": "Feb 18, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "dcl-the-game"
+  },
+  "35130": {
+    "id": 35130,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8260,
+        "category": 1,
+        "name": "Chronicon",
+        "uid": "375480"
+      },
+      {
+        "id": 110681,
+        "category": 3,
+        "name": "Chronicon",
+        "uid": "50528",
+        "url": "https://www.giantbomb.com/games/3030-50528/",
+        "year": 2015
+      },
+      {
+        "id": 343229,
+        "category": 14,
+        "name": "Chronicon",
+        "uid": "491485",
+        "url": "https://www.twitch.tv/directory/game/Chronicon"
+      }
+    ],
+    "name": "Chronicon",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 80650,
+        "human": "Jul 28, 2015",
+        "platform": 6,
+        "y": 2015
+      }
+    ],
+    "slug": "chronicon"
+  },
+  "136409": {
+    "id": 136409,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1966408,
+        "category": 14,
+        "name": "Embracelet",
+        "uid": "1766677411",
+        "url": "https://www.twitch.tv/directory/game/Embracelet"
+      }
+    ],
+    "name": "Embracelet",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 211848,
+        "human": "Sep 24, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 211849,
+        "human": "Sep 24, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "embracelet"
+  },
+  "125628": {
+    "id": 125628,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1858077,
+        "category": 3,
+        "name": "Tell Me Why",
+        "uid": "75996",
+        "url": "https://www.giantbomb.com/games/3030-75996/",
+        "year": 2020
+      },
+      {
+        "id": 1916580,
+        "category": 14,
+        "name": "Tell Me Why",
+        "uid": "515156",
+        "url": "https://www.twitch.tv/directory/game/Tell%20Me%20Why"
+      },
+      {
+        "id": 1942543,
+        "category": 20,
+        "name": "Tell Me Why Standard - Xbox One [Digital Code]",
+        "uid": "B08FS3X4F9"
+      }
+    ],
+    "name": "Tell Me Why",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 205279,
+        "human": "Aug 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 205280,
+        "human": "Aug 27, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "tell-me-why"
+  },
+  "51528": {
+    "id": 51528,
+    "alternative_names": [
+      {
+        "id": 25011,
+        "name": "Sam Barlow's Telling Lies"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1714010,
+        "category": 1,
+        "name": "Telling Lies",
+        "uid": "762830",
+        "url": "https://store.steampowered.com/app/762830",
+        "year": 2019
+      },
+      {
+        "id": 1775899,
+        "category": 3,
+        "name": "Telling Lies",
+        "uid": "73802",
+        "url": "https://www.giantbomb.com/games/3030-73802/",
+        "year": 2019
+      },
+      {
+        "id": 1914544,
+        "category": 14,
+        "name": "Telling Lies",
+        "uid": "513009",
+        "url": "https://www.twitch.tv/directory/game/Telling%20Lies"
+      },
+      {
+        "id": 1935343,
+        "category": 20,
+        "uid": "B088C4ZGR3"
+      }
+    ],
+    "name": "Telling Lies",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 174884,
+        "human": "Aug 23, 2019",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 174885,
+        "human": "Aug 23, 2019",
+        "platform": 14,
+        "y": 2019
+      },
+      {
+        "id": 193581,
+        "human": "Apr 28, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 193582,
+        "human": "Apr 28, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 193583,
+        "human": "Apr 28, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "telling-lies"
+  },
+  "112104": {
+    "id": 112104,
+    "alternative_names": [
+      {
+        "id": 36094,
+        "comment": "Alternative title",
+        "name": "Command & Conquer Remastered Collection: 25th Anniversary Edition"
+      },
+      {
+        "id": 36095,
+        "comment": "Alternative title",
+        "name": "Command & Conquer Remastered Collection: 25th Anniversary Edition"
+      },
+      {
+        "id": 36096,
+        "comment": "Alternative spelling",
+        "name": "Command & Conquer: Remaster"
+      },
+      {
+        "id": 36097,
+        "comment": "Acronym",
+        "name": "C&C: Remastered"
+      },
+      {
+        "id": 36098,
+        "comment": "Alternative spelling",
+        "name": "C&C: Remaster"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1882838,
+        "category": 14,
+        "name": "Command & Conquer Remastered Collection",
+        "uid": "517837",
+        "url": "https://www.twitch.tv/directory/game/Command%20%26%20Conquer%20Remastered%20Collection"
+      },
+      {
+        "id": 1928361,
+        "category": 20,
+        "uid": "B0882G76YD",
+        "url": "https://amazon.com/dp/B0882G76YD"
+      },
+      {
+        "id": 1928492,
+        "category": 20,
+        "uid": "B086QN8C57",
+        "url": "https://amazon.com/dp/B086QN8C57"
+      },
+      {
+        "id": 1934055,
+        "category": 20,
+        "uid": "B085PNK7GD"
+      }
+    ],
+    "name": "Command & Conquer Remastered Collection",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 197751,
+        "human": "Jun 05, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "command-and-conquer-remastered-collection"
+  },
+  "128832": {
+    "id": 128832,
+    "category": 0,
+    "name": "Command & Conquer: Remastered",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 194606,
+        "human": "Jun 05, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "command-and-conquer-remastered"
+  },
+  "134362": {
+    "id": 134362,
+    "category": 0,
+    "name": "Command & Conquer: Red Alert Remastered",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 199033,
+        "human": "Jun 05, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "command-and-conquer-red-alert-remastered"
+  },
+  "72870": {
+    "id": 72870,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1865639,
+        "category": 20,
+        "uid": "B07TBLGT8J"
+      },
+      {
+        "id": 1865821,
+        "category": 20,
+        "uid": "B07THC6RDF"
+      },
+      {
+        "id": 1928322,
+        "category": 20,
+        "uid": "B07STWQ38X",
+        "url": "https://amazon.com/dp/B07STWQ38X"
+      },
+      {
+        "id": 1928748,
+        "category": 20,
+        "uid": "B076BJ723V"
+      },
+      {
+        "id": 1928848,
+        "category": 20,
+        "uid": "B077SBGNXH",
+        "url": "https://amazon.fr/dp/B077SBGNXH"
+      },
+      {
+        "id": 1930292,
+        "category": 20,
+        "uid": "B07D2NY7RW",
+        "url": "https://amazon.com/dp/B07D2NY7RW"
+      },
+      {
+        "id": 1931573,
+        "category": 20,
+        "uid": "B07L38666Q"
+      },
+      {
+        "id": 1933397,
+        "category": 20,
+        "uid": "B07SKX31M8"
+      },
+      {
+        "id": 1933649,
+        "category": 20,
+        "uid": "B076VNR2C4"
+      },
+      {
+        "id": 1933869,
+        "category": 20,
+        "uid": "B07RXH442W"
+      },
+      {
+        "id": 1934076,
+        "category": 20,
+        "uid": "B0766658WB"
+      },
+      {
+        "id": 1935040,
+        "category": 20,
+        "uid": "B076V2Q6WZ"
+      },
+      {
+        "id": 1937273,
+        "category": 20,
+        "uid": "B07798FWNN"
+      },
+      {
+        "id": 1942692,
+        "category": 20,
+        "name": "Horizon Zero Dawn Complete Edition - PC [Online Game Code]",
+        "uid": "B08GQTZK2T"
+      }
+    ],
+    "name": "Horizon Zero Dawn Complete Edition",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 130573,
+        "human": "Dec 06, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 203015,
+        "human": "Aug 07, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "horizon-zero-dawn-complete-edition"
+  },
+  "128157": {
+    "id": 128157,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1841435,
+        "category": 1,
+        "name": "The Walking Evil",
+        "uid": "1215870",
+        "url": "https://store.steampowered.com/app/1215870",
+        "year": 2020
+      },
+      {
+        "id": 1991712,
+        "category": 14,
+        "name": "The Walking Evil",
+        "uid": "1216368101",
+        "url": "https://www.twitch.tv/directory/game/The%20Walking%20Evil"
+      }
+    ],
+    "name": "The Walking Evil",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 220474,
+        "human": "May 01, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "the-walking-evil"
+  },
+  "134626": {
+    "id": 134626,
+    "category": 0,
+    "name": "Kurenkisho Quolta Amadeus EG",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 199662,
+        "human": "Apr 11, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "kurenkisho-quolta-amadeus-eg"
+  },
+  "123861": {
+    "id": 123861,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1777130,
+        "category": 1,
+        "name": "Songs of Syx",
+        "uid": "1162750",
+        "url": "https://store.steampowered.com/app/1162750",
+        "year": 0
+      },
+      {
+        "id": 1857320,
+        "category": 3,
+        "name": "Songs of Syx",
+        "uid": "76745",
+        "url": "https://www.giantbomb.com/games/3030-76745/"
+      },
+      {
+        "id": 1917280,
+        "category": 14,
+        "name": "Songs of Syx",
+        "uid": "515865",
+        "url": "https://www.twitch.tv/directory/game/Songs%20of%20Syx"
+      }
+    ],
+    "name": "Songs of Syx",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 210243,
+        "human": "Sep 21, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 210244,
+        "human": "Sep 21, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 210245,
+        "human": "Sep 21, 2020",
+        "platform": 3,
+        "y": 2020
+      }
+    ],
+    "slug": "songs-of-syx"
+  },
+  "15536": {
+    "id": 15536,
+    "alternative_names": [
+      {
+        "id": 12867,
+        "comment": "Acronym",
+        "name": "EoT"
+      },
+      {
+        "id": 30492,
+        "comment": "French title",
+        "name": "\u00c9chapper \u00e0 Tarkov"
+      },
+      {
+        "id": 30493,
+        "comment": "Japanese title",
+        "name": "\u30bf\u30eb\u30b3\u30d5\u304b\u3089\u306e\u8131\u51fa"
+      },
+      {
+        "id": 30495,
+        "comment": "Chinese title",
+        "name": "\u9003\u79bb\u5854\u5c14\u79d1\u592b"
+      },
+      {
+        "id": 50231,
+        "comment": "Korean title",
+        "name": "\uc774\uc2a4\ucf00\uc774\ud504 \ud504\ub86c \ud0c0\ub974\ucf54\ud504"
+      },
+      {
+        "id": 53530,
+        "comment": "Korean Alternative",
+        "name": "\ud0c0\ub974\ucf54\ud504"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 108174,
+        "category": 3,
+        "name": "Escape From Tarkov",
+        "uid": "53106",
+        "url": "https://www.giantbomb.com/games/3030-53106/",
+        "year": 2016
+      },
+      {
+        "id": 190201,
+        "category": 10,
+        "name": "Escape from Tarkov",
+        "uid": "UCyTy6nLmZiUGHhNyqTuotVg",
+        "url": "https://gaming.youtube.com/game/UCyTy6nLmZiUGHhNyqTuotVg"
+      },
+      {
+        "id": 281199,
+        "category": 14,
+        "name": "Escape From Tarkov",
+        "uid": "491931",
+        "url": "https://www.twitch.tv/directory/game/Escape From Tarkov"
+      }
+    ],
+    "name": "Escape From Tarkov",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 180064,
+        "human": "Aug 04, 2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "escape-from-tarkov"
+  },
+  "132141": {
+    "id": 132141,
+    "category": 1,
+    "external_games": [
+      {
+        "id": 1928805,
+        "category": 20,
+        "uid": "B07DD9571M",
+        "url": "https://amazon.com/dp/B07DD9571M"
+      },
+      {
+        "id": 1928984,
+        "category": 20,
+        "uid": "B07DD9571S",
+        "url": "https://amazon.com/dp/B07DD9571S"
+      },
+      {
+        "id": 1932206,
+        "category": 20,
+        "uid": "B07DDD9VK7"
+      }
+    ],
+    "name": "Fallout 76: Wastelanders",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 193095,
+        "human": "Apr 14, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 193096,
+        "human": "Apr 14, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 193097,
+        "human": "Apr 14, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-wastelanders"
+  },
+  "141570": {
+    "id": 141570,
+    "category": 7,
+    "name": "Fallout 76: Season 2 - Armor Ace",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 221567,
+        "human": "Sep 15, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 221568,
+        "human": "Sep 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 221569,
+        "human": "Sep 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-season-2-armor-ace"
+  },
+  "141569": {
+    "id": 141569,
+    "category": 7,
+    "name": "Fallout 76: Season 1 - The Legendary Run",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 221564,
+        "human": "Jun 30, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 221565,
+        "human": "Jun 30, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 221566,
+        "human": "Jun 30, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-season-1-the-legendary-run"
+  },
+  "141571": {
+    "id": 141571,
+    "category": 7,
+    "name": "Fallout 76: Season 3 - The Scribe of Avalon",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 221570,
+        "human": "Dec 15, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 221571,
+        "human": "Dec 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 221572,
+        "human": "Dec 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-season-3-the-scribe-of-avalon"
+  },
+  "132975": {
+    "id": 132975,
+    "category": 0,
+    "name": "Fallout 76: Wastelanders - Deluxe Edition",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 194202,
+        "human": "Apr 14, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 194203,
+        "human": "Apr 14, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-wastelanders-deluxe-edition"
+  },
+  "142167": {
+    "id": 142167,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1997353,
+        "category": 20,
+        "name": "Fallout 76: Brotherhood Recruitment Bundle - Xbox One [Digital Code]",
+        "uid": "B08R761MLM",
+        "url": "https://amazon.com/dp/B08R761MLM"
+      }
+    ],
+    "name": "Fallout 76: Brotherhood Recruitment Bundle",
+    "platforms": [
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 223647,
+        "human": "Dec 01, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 223648,
+        "human": "Dec 01, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "fallout-76-brotherhood-recruitment-bundle"
+  },
+  "134829": {
+    "id": 134829,
+    "category": 1,
+    "name": "Remnant: From the Ashes - Subject 2923",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 199912,
+        "human": "Aug 20, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 199913,
+        "human": "Aug 20, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 199914,
+        "human": "Aug 20, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "remnant-from-the-ashes-subject-2923"
+  },
+  "132138": {
+    "id": 132138,
+    "category": 1,
+    "name": "Remnant: From the Ashes - Swamp of Corsus",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 193069,
+        "human": "Apr 28, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 193070,
+        "human": "TBD",
+        "platform": 49
+      },
+      {
+        "id": 193071,
+        "human": "TBD",
+        "platform": 48
+      }
+    ],
+    "slug": "remnant-from-the-ashes-swamp-of-corsus"
+  },
+  "138379": {
+    "id": 138379,
+    "category": 1,
+    "name": "Dying Light: Hellraid",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 209864,
+        "human": "Aug 13, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dying-light-hellraid"
+  },
+  "140666": {
+    "id": 140666,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1943873,
+        "category": 20,
+        "name": "Dying Light Anniversary Edition - Xbox One",
+        "uid": "B08LX14TGL",
+        "url": "https://amazon.com/dp/B08LX14TGL"
+      },
+      {
+        "id": 1943881,
+        "category": 20,
+        "name": "Dying Light Anniversary Edition - PlayStation 4",
+        "uid": "B08LWYKYJ1",
+        "url": "https://amazon.com/dp/B08LWYKYJ1"
+      }
+    ],
+    "name": "Dying Light: Anniversary Edition",
+    "platforms": [
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 216701,
+        "human": "Dec 08, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 216702,
+        "human": "Dec 08, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "dying-light-anniversary-edition"
+  },
   "386": {
     "id": 386,
     "alternative_names": [
@@ -9,7 +1896,7 @@
       {
         "id": 4071,
         "comment": "Japanese title",
-        "name": "ファイナルファンタジーXIV"
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXIV"
       },
       {
         "id": 14465,
@@ -182,12 +2069,12 @@
       {
         "id": 37833,
         "comment": "Japanese title - original",
-        "name": "ファンタシースターオンライン２"
+        "name": "\u30d5\u30a1\u30f3\u30bf\u30b7\u30fc\u30b9\u30bf\u30fc\u30aa\u30f3\u30e9\u30a4\u30f3\uff12"
       },
       {
         "id": 37834,
         "comment": "Chinese title - simplified",
-        "name": "夢幻之星Online2"
+        "name": "\u5922\u5e7b\u4e4b\u661fOnline2"
       },
       {
         "id": 37835,
@@ -373,7 +2260,7 @@
       {
         "id": 400956,
         "category": 16,
-        "name": "Journey™",
+        "name": "Journey\u2122",
         "uid": "UP9000-CUSA00694_00-JOURNEYPS4061115",
         "url": "https://www.playstation.com/en-us/games/journey-ps4/",
         "year": 2015
@@ -381,7 +2268,7 @@
       {
         "id": 402798,
         "category": 16,
-        "name": "Journey™",
+        "name": "Journey\u2122",
         "uid": "UP9000-NPUA80275_00-JOURNEYYYPRIVATE",
         "url": "https://www.playstation.com/en-us/games/journey-ps3/",
         "year": 2012
@@ -482,12 +2369,12 @@
       {
         "id": 30477,
         "comment": "Japanese title",
-        "name": "カウンター ストライク: グローバル攻勢"
+        "name": "\u30ab\u30a6\u30f3\u30bf\u30fc \u30b9\u30c8\u30e9\u30a4\u30af: \u30b0\u30ed\u30fc\u30d0\u30eb\u653b\u52e2"
       },
       {
         "id": 30478,
         "comment": "Chinese title",
-        "name": "反恐精英：全球攻势"
+        "name": "\u53cd\u6050\u7cbe\u82f1\uff1a\u5168\u7403\u653b\u52bf"
       },
       {
         "id": 30479,
@@ -497,7 +2384,7 @@
       {
         "id": 30480,
         "comment": "Korean title",
-        "name": "카운터 스트라이크"
+        "name": "\uce74\uc6b4\ud130 \uc2a4\ud2b8\ub77c\uc774\ud06c"
       },
       {
         "id": 32102,
@@ -657,17 +2544,17 @@
       {
         "id": 30666,
         "comment": "Japanese title",
-        "name": "スター市民"
+        "name": "\u30b9\u30bf\u30fc\u5e02\u6c11"
       },
       {
         "id": 30667,
         "comment": "Korean title",
-        "name": "스타 시티즌"
+        "name": "\uc2a4\ud0c0 \uc2dc\ud2f0\uc98c"
       },
       {
         "id": 30668,
         "comment": "Chinese title",
-        "name": "星际公民"
+        "name": "\u661f\u9645\u516c\u6c11"
       }
     ],
     "category": 0,
@@ -733,7 +2620,7 @@
       {
         "id": 50101,
         "comment": "Korean title",
-        "name": "사이버펑크 2077"
+        "name": "\uc0ac\uc774\ubc84\ud391\ud06c 2077"
       }
     ],
     "category": 0,
@@ -1172,7 +3059,7 @@
       {
         "id": 214221,
         "category": 11,
-        "name": "Terraria – Xbox 360 Edition",
+        "name": "Terraria \u2013 Xbox 360 Edition",
         "uid": "xbox36066acd000-77fe-1000-9115-d802464f0802",
         "url": "http://marketplace.xbox.com/en-US/Product/Terraria-Xbox-360-Edition/66acd000-77fe-1000-9115-d802464f0802",
         "year": 2013
@@ -1514,12 +3401,12 @@
       {
         "id": 36228,
         "comment": "Japanese title - translated",
-        "name": "ザ・ワンダフル ワン・オー・ワン"
+        "name": "\u30b6\u30fb\u30ef\u30f3\u30c0\u30d5\u30eb \u30ef\u30f3\u30fb\u30aa\u30fc\u30fb\u30ef\u30f3"
       },
       {
         "id": 36229,
         "comment": "Japanese title - translated",
-        "name": "ザ・ワンダフル ワン・オー・ワン： リマスタード"
+        "name": "\u30b6\u30fb\u30ef\u30f3\u30c0\u30d5\u30eb \u30ef\u30f3\u30fb\u30aa\u30fc\u30fb\u30ef\u30f3\uff1a \u30ea\u30de\u30b9\u30bf\u30fc\u30c9"
       },
       {
         "id": 47993,
@@ -1657,17 +3544,17 @@
       {
         "id": 30677,
         "comment": "Japanese title",
-        "name": "ウォーフレーム"
+        "name": "\u30a6\u30a9\u30fc\u30d5\u30ec\u30fc\u30e0"
       },
       {
         "id": 30678,
         "comment": "Korean title",
-        "name": "워프레임"
+        "name": "\uc6cc\ud504\ub808\uc784"
       },
       {
         "id": 30679,
         "comment": "Chinese title",
-        "name": "星际战甲"
+        "name": "\u661f\u9645\u6218\u7532"
       }
     ],
     "category": 0,
@@ -1838,7 +3725,7 @@
       {
         "id": 4072,
         "comment": "Japanese title",
-        "name": "ペルソナ4 ザ・ゴールデン"
+        "name": "\u30da\u30eb\u30bd\u30ca4 \u30b6\u30fb\u30b4\u30fc\u30eb\u30c7\u30f3"
       },
       {
         "id": 13414,
@@ -1903,7 +3790,7 @@
       {
         "id": 402443,
         "category": 16,
-        "name": "Persona®4 Golden™",
+        "name": "Persona\u00ae4 Golden\u2122",
         "uid": "UP0005-PCSE00120_00-PERSONA4GOLDEN01",
         "url": "https://www.playstation.com/en-us/games/persona-4-golden-psvita/",
         "year": 2012
@@ -2017,7 +3904,7 @@
       {
         "id": 50343,
         "comment": "Korean title",
-        "name": "노 맨즈 스카이"
+        "name": "\ub178 \ub9e8\uc988 \uc2a4\uce74\uc774"
       }
     ],
     "category": 0,
@@ -2069,7 +3956,7 @@
       {
         "id": 400065,
         "category": 16,
-        "name": "No Man's Sky™",
+        "name": "No Man's Sky\u2122",
         "uid": "UP2034-CUSA04841_00-NMSDIGITAL000001",
         "url": "https://www.playstation.com/en-us/games/no-mans-sky-ps4/",
         "year": 2016
@@ -2531,17 +4418,17 @@
       {
         "id": 30632,
         "comment": "Chinese title",
-        "name": "光晕大师酋长合集"
+        "name": "\u5149\u6655\u5927\u5e08\u914b\u957f\u5408\u96c6"
       },
       {
         "id": 30633,
         "comment": "Japanese title",
-        "name": "Halo：マスターチーフコレクション"
+        "name": "Halo\uff1a\u30de\u30b9\u30bf\u30fc\u30c1\u30fc\u30d5\u30b3\u30ec\u30af\u30b7\u30e7\u30f3"
       },
       {
         "id": 30634,
         "comment": "Korean title",
-        "name": "헤일로 : 마스터 치프 컬렉션"
+        "name": "\ud5e4\uc77c\ub85c : \ub9c8\uc2a4\ud130 \uce58\ud504 \uceec\ub809\uc158"
       },
       {
         "id": 30635,
@@ -2707,22 +4594,22 @@
       {
         "id": 30577,
         "comment": "Japanese title",
-        "name": "シーオブシーフス"
+        "name": "\u30b7\u30fc\u30aa\u30d6\u30b7\u30fc\u30d5\u30b9"
       },
       {
         "id": 30578,
         "comment": "Korean title",
-        "name": "도둑의 바다"
+        "name": "\ub3c4\ub451\uc758 \ubc14\ub2e4"
       },
       {
         "id": 30579,
         "comment": "Chinese title",
-        "name": "盗贼之海"
+        "name": "\u76d7\u8d3c\u4e4b\u6d77"
       },
       {
         "id": 30580,
         "comment": "Portuguese title",
-        "name": "Mar dos Ladrões"
+        "name": "Mar dos Ladr\u00f5es"
       },
       {
         "id": 30581,
@@ -2854,7 +4741,7 @@
       {
         "id": 48946,
         "comment": "Other Alias",
-        "name": "Horizon Zero Dawn™"
+        "name": "Horizon Zero Dawn\u2122"
       }
     ],
     "category": 0,
@@ -2998,17 +4885,17 @@
       {
         "id": 30544,
         "comment": "Japanese title",
-        "name": "ロケットリーグ"
+        "name": "\u30ed\u30b1\u30c3\u30c8\u30ea\u30fc\u30b0"
       },
       {
         "id": 30545,
         "comment": "Korean title",
-        "name": "로켓 리그"
+        "name": "\ub85c\ucf13 \ub9ac\uadf8"
       },
       {
         "id": 30546,
         "comment": "Chinese title",
-        "name": "火箭联盟"
+        "name": "\u706b\u7bad\u8054\u76df"
       }
     ],
     "category": 0,
@@ -3069,7 +4956,7 @@
       {
         "id": 210854,
         "category": 11,
-        "name": "Rocket League®",
+        "name": "Rocket League\u00ae",
         "uid": "C125W9BG2K0V",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C125W9BG2K0V",
         "year": 2016
@@ -3107,7 +4994,7 @@
       {
         "id": 1238177,
         "category": 18,
-        "name": "Rocket League®",
+        "name": "Rocket League\u00ae",
         "uid": "558797228",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C125W9BG2K0V",
         "year": 2016
@@ -3236,7 +5123,7 @@
       {
         "id": 4940,
         "comment": "Japanese title",
-        "name": "シェンムー3"
+        "name": "\u30b7\u30a7\u30f3\u30e0\u30fc3"
       },
       {
         "id": 11473,
@@ -3526,7 +5413,7 @@
       {
         "id": 401017,
         "category": 16,
-        "name": "FINAL FANTASY® XIV: Heavensward™",
+        "name": "FINAL FANTASY\u00ae XIV: Heavensward\u2122",
         "uid": "UP0082-CUSA00288_00-FFXIVEXPS400001A",
         "url": "https://www.playstation.com/en-us/games/final-fantasy-xiv-heavensward-ps4/",
         "year": 2015
@@ -3534,7 +5421,7 @@
       {
         "id": 401019,
         "category": 16,
-        "name": "FINAL FANTASY® XIV: Heavensward™",
+        "name": "FINAL FANTASY\u00ae XIV: Heavensward\u2122",
         "uid": "UP0082-NPUB31255_00-FFXIVEXPS300001A",
         "url": "https://www.playstation.com/en-us/games/final-fantasy-xiv-a-realm-reborn-ps3/final-fantasy-xiv-heavensward-ps3/",
         "year": 2015
@@ -3586,17 +5473,17 @@
       {
         "id": 5808,
         "comment": "Japanese title",
-        "name": "ファイナルファンタジーXIV"
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXIV"
       },
       {
         "id": 30595,
         "comment": "Chinese title",
-        "name": "最终幻想XIV在线"
+        "name": "\u6700\u7ec8\u5e7b\u60f3XIV\u5728\u7ebf"
       },
       {
         "id": 30596,
         "comment": "Korean title",
-        "name": "파이널 판타지 XIV"
+        "name": "\ud30c\uc774\ub110 \ud310\ud0c0\uc9c0 XIV"
       }
     ],
     "category": 0,
@@ -3642,12 +5529,12 @@
       {
         "id": 48899,
         "comment": "Other Alias",
-        "name": "Titanfall® 2"
+        "name": "Titanfall\u00ae 2"
       },
       {
         "id": 50347,
         "comment": "Korean title",
-        "name": "타이탄폴 2"
+        "name": "\ud0c0\uc774\ud0c4\ud3f4 2"
       }
     ],
     "category": 0,
@@ -3692,7 +5579,7 @@
       {
         "id": 211045,
         "category": 11,
-        "name": "Titanfall® 2",
+        "name": "Titanfall\u00ae 2",
         "uid": "C0X2HNVH08FB",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C0X2HNVH08FB",
         "year": 2016
@@ -3715,7 +5602,7 @@
       {
         "id": 1237616,
         "category": 18,
-        "name": "Titanfall® 2",
+        "name": "Titanfall\u00ae 2",
         "uid": "1145574011",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C0X2HNVH08FB",
         "year": 2016
@@ -3821,17 +5708,17 @@
       {
         "id": 30663,
         "comment": "Japanese title",
-        "name": "ボーダーランズ3"
+        "name": "\u30dc\u30fc\u30c0\u30fc\u30e9\u30f3\u30ba3"
       },
       {
         "id": 30664,
         "comment": "Korean title",
-        "name": "보더랜드 3"
+        "name": "\ubcf4\ub354\ub79c\ub4dc 3"
       },
       {
         "id": 30665,
         "comment": "Chinese title",
-        "name": "无主之地3"
+        "name": "\u65e0\u4e3b\u4e4b\u57303"
       }
     ],
     "category": 0,
@@ -4009,27 +5896,27 @@
       {
         "id": 30534,
         "comment": "Japanese title",
-        "name": "デスストランディング"
+        "name": "\u30c7\u30b9\u30b9\u30c8\u30e9\u30f3\u30c7\u30a3\u30f3\u30b0"
       },
       {
         "id": 30535,
         "comment": "Japanese title",
-        "name": "死の座礁"
+        "name": "\u6b7b\u306e\u5ea7\u7901"
       },
       {
         "id": 30536,
         "comment": "Chinese title",
-        "name": "死亡搁浅"
+        "name": "\u6b7b\u4ea1\u6401\u6d45"
       },
       {
         "id": 30537,
         "comment": "French title",
-        "name": "Échouement de la Mort"
+        "name": "\u00c9chouement de la Mort"
       },
       {
         "id": 50221,
         "comment": "Korean title",
-        "name": "데스 스트랜딩"
+        "name": "\ub370\uc2a4 \uc2a4\ud2b8\ub79c\ub529"
       }
     ],
     "category": 0,
@@ -4195,7 +6082,7 @@
       {
         "id": 52050,
         "comment": "Korean title",
-        "name": "웨이스트랜드 3"
+        "name": "\uc6e8\uc774\uc2a4\ud2b8\ub79c\ub4dc 3"
       }
     ],
     "category": 0,
@@ -4308,17 +6195,17 @@
       {
         "id": 37360,
         "comment": "Chinese title - traditional",
-        "name": "高爾夫與朋友"
+        "name": "\u9ad8\u723e\u592b\u8207\u670b\u53cb"
       },
       {
         "id": 37361,
         "comment": "Japanese title - original",
-        "name": " 友達とゴルフ"
+        "name": " \u53cb\u9054\u3068\u30b4\u30eb\u30d5"
       },
       {
         "id": 37362,
         "comment": "Chinese title - simplified",
-        "name": " 高尔夫与朋友"
+        "name": " \u9ad8\u5c14\u592b\u4e0e\u670b\u53cb"
       }
     ],
     "category": 0,
@@ -4439,12 +6326,12 @@
       {
         "id": 37403,
         "comment": "Russian title",
-        "name": "Одни из нас: Часть II"
+        "name": "\u041e\u0434\u043d\u0438 \u0438\u0437 \u043d\u0430\u0441: \u0427\u0430\u0441\u0442\u044c II"
       },
       {
         "id": 49846,
         "comment": "Alternative spelling",
-        "name": "The Last of Us™ Part II"
+        "name": "The Last of Us\u2122 Part II"
       }
     ],
     "category": 0,
@@ -4560,7 +6447,7 @@
       {
         "id": 1996798,
         "category": 20,
-        "name": "【PS4】The Last of Us Part II【特別販売用】 【CEROレーティング「Z」】",
+        "name": "\u3010PS4\u3011The Last of Us Part II\u3010\u7279\u5225\u8ca9\u58f2\u7528\u3011 \u3010CERO\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u300cZ\u300d\u3011",
         "uid": "B08NF7SPWX",
         "url": "https://amazon.jp/dp/B08NF7SPWX"
       }
@@ -4738,12 +6625,12 @@
       {
         "id": 8377,
         "comment": "Japanese title",
-        "name": "英雄伝説 閃の軌跡Ⅲ"
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u9583\u306e\u8ecc\u8de1\u2162"
       },
       {
         "id": 8378,
         "comment": "Japanese title",
-        "name": "Eiyū Densetsu: Sen no Kiseki Surī"
+        "name": "Eiy\u016b Densetsu: Sen no Kiseki Sur\u012b"
       }
     ],
     "category": 0,
@@ -4936,7 +6823,7 @@
       {
         "id": 84619,
         "category": 7,
-        "name": "Final Fantasy® Xiv: Stormblood",
+        "name": "Final Fantasy\u00ae Xiv: Stormblood",
         "uid": "finalfantasyxivstormblood",
         "url": "https://isthereanydeal.com/#/page:game/info/?plain=finalfantasyxivstormblood"
       },
@@ -5177,7 +7064,7 @@
       {
         "id": 50404,
         "comment": "Korean title",
-        "name": "시리어스 샘 4"
+        "name": "\uc2dc\ub9ac\uc5b4\uc2a4 \uc0d8 4"
       }
     ],
     "category": 0,
@@ -5244,7 +7131,7 @@
       {
         "id": 30732,
         "comment": "Japanese title",
-        "name": "ラフト"
+        "name": "\u30e9\u30d5\u30c8"
       }
     ],
     "category": 0,
@@ -5510,12 +7397,12 @@
       {
         "id": 32215,
         "comment": "Japanese title - original",
-        "name": "十三機兵防衛圏"
+        "name": "\u5341\u4e09\u6a5f\u5175\u9632\u885b\u570f"
       },
       {
         "id": 32216,
         "comment": "Japanese title - romanization",
-        "name": "Jūsan-ki heibōeiken"
+        "name": "J\u016bsan-ki heib\u014deiken"
       }
     ],
     "category": 0,
@@ -5776,14 +7663,14 @@
       {
         "id": 1748024,
         "category": 12,
-        "name": "Röki",
+        "name": "R\u00f6ki",
         "uid": "1ab403fa3272fd9510df6425d2e1cc81",
         "url": "http://www.nintendolife.com/games/switch-eshop/roki"
       },
       {
         "id": 1836025,
         "category": 1,
-        "name": "Röki",
+        "name": "R\u00f6ki",
         "uid": "1067540",
         "url": "https://store.steampowered.com/app/1067540",
         "year": 2020
@@ -5791,7 +7678,7 @@
       {
         "id": 1857704,
         "category": 3,
-        "name": "Röki",
+        "name": "R\u00f6ki",
         "uid": "76367",
         "url": "https://www.giantbomb.com/games/3030-76367/",
         "year": 2020
@@ -5799,12 +7686,12 @@
       {
         "id": 1916927,
         "category": 14,
-        "name": "Röki",
+        "name": "R\u00f6ki",
         "uid": "515517",
         "url": "https://www.twitch.tv/directory/game/R%C3%B6ki"
       }
     ],
-    "name": "Röki",
+    "name": "R\u00f6ki",
     "platforms": [
       6,
       14,
@@ -5945,7 +7832,7 @@
       {
         "id": 38247,
         "comment": "Japanese title - original",
-        "name": "龍が如く7 光と闇の行方"
+        "name": "\u9f8d\u304c\u5982\u304f7 \u5149\u3068\u95c7\u306e\u884c\u65b9"
       },
       {
         "id": 38248,
@@ -5960,7 +7847,7 @@
       {
         "id": 50185,
         "comment": "Korean title",
-        "name": "용과 같이7 빛과 어둠의 행방"
+        "name": "\uc6a9\uacfc \uac19\uc7747 \ube5b\uacfc \uc5b4\ub460\uc758 \ud589\ubc29"
       }
     ],
     "category": 0,
@@ -5976,7 +7863,7 @@
       {
         "id": 1775006,
         "category": 3,
-        "name": "Ryū ga Gotoku 7",
+        "name": "Ry\u016b ga Gotoku 7",
         "uid": "72901",
         "url": "https://www.giantbomb.com/games/3030-72901/",
         "year": 2020
@@ -5994,7 +7881,7 @@
       {
         "id": 1913710,
         "category": 14,
-        "name": "Shin Ryū ga Gotoku",
+        "name": "Shin Ry\u016b ga Gotoku",
         "uid": "512121",
         "url": "https://www.twitch.tv/directory/game/Shin%20Ry%C5%AB%20ga%20Gotoku"
       },
@@ -6070,12 +7957,12 @@
       {
         "id": 52129,
         "comment": "Korean title",
-        "name": "천수의 사쿠나히메"
+        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
       },
       {
         "id": 52681,
         "comment": "Japanese title - original",
-        "name": "天穂のサクナヒメ"
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
       }
     ],
     "category": 0,
@@ -6143,7 +8030,7 @@
       {
         "id": 1996602,
         "category": 20,
-        "name": "天穂のサクナヒメ|オンラインコード版",
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
         "uid": "B08N5B85MS",
         "url": "https://amazon.jp/dp/B08N5B85MS"
       }
@@ -6211,7 +8098,7 @@
       {
         "id": 29523,
         "comment": "Japanese title",
-        "name": "モンスターハンター：ワールド"
+        "name": "\u30e2\u30f3\u30b9\u30bf\u30fc\u30cf\u30f3\u30bf\u30fc\uff1a\u30ef\u30fc\u30eb\u30c9"
       },
       {
         "id": 49006,
@@ -6221,12 +8108,12 @@
       {
         "id": 50251,
         "comment": "Korean title",
-        "name": "몬스터 헌터: 월드"
+        "name": "\ubaac\uc2a4\ud130 \ud5cc\ud130: \uc6d4\ub4dc"
       },
       {
         "id": 50252,
         "comment": "Korean Acronym",
-        "name": "몬헌월드"
+        "name": "\ubaac\ud5cc\uc6d4\ub4dc"
       }
     ],
     "category": 0,
@@ -6271,7 +8158,7 @@
       {
         "id": 210711,
         "category": 11,
-        "name": "MONSTER HUNTER: WORLD™",
+        "name": "MONSTER HUNTER: WORLD\u2122",
         "uid": "BNG91PT95LQN",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNG91PT95LQN",
         "year": 0
@@ -6301,7 +8188,7 @@
       {
         "id": 1236958,
         "category": 18,
-        "name": "MONSTER HUNTER: WORLD™",
+        "name": "MONSTER HUNTER: WORLD\u2122",
         "uid": "226054795",
         "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BNG91PT95LQN",
         "year": 0
@@ -6809,12 +8696,12 @@
       {
         "id": 30764,
         "comment": "Japanese title",
-        "name": "ノイタ"
+        "name": "\u30ce\u30a4\u30bf"
       },
       {
         "id": 30765,
         "comment": "Korean title",
-        "name": "노이타"
+        "name": "\ub178\uc774\ud0c0"
       }
     ],
     "category": 0,
@@ -6863,7 +8750,7 @@
       {
         "id": 91611,
         "category": 7,
-        "name": "Titanfall® 2 Deluxe Edition",
+        "name": "Titanfall\u00ae 2 Deluxe Edition",
         "uid": "titanfalliideluxeedition",
         "url": "https://isthereanydeal.com/#/page:game/info/?plain=titanfalliideluxeedition"
       },
@@ -7071,106 +8958,6 @@
     ],
     "slug": "raji-an-ancient-epic"
   },
-  "72870": {
-    "id": 72870,
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1865639,
-        "category": 20,
-        "uid": "B07TBLGT8J"
-      },
-      {
-        "id": 1865821,
-        "category": 20,
-        "uid": "B07THC6RDF"
-      },
-      {
-        "id": 1928322,
-        "category": 20,
-        "uid": "B07STWQ38X",
-        "url": "https://amazon.com/dp/B07STWQ38X"
-      },
-      {
-        "id": 1928748,
-        "category": 20,
-        "uid": "B076BJ723V"
-      },
-      {
-        "id": 1928848,
-        "category": 20,
-        "uid": "B077SBGNXH",
-        "url": "https://amazon.fr/dp/B077SBGNXH"
-      },
-      {
-        "id": 1930292,
-        "category": 20,
-        "uid": "B07D2NY7RW",
-        "url": "https://amazon.com/dp/B07D2NY7RW"
-      },
-      {
-        "id": 1931573,
-        "category": 20,
-        "uid": "B07L38666Q"
-      },
-      {
-        "id": 1933397,
-        "category": 20,
-        "uid": "B07SKX31M8"
-      },
-      {
-        "id": 1933649,
-        "category": 20,
-        "uid": "B076VNR2C4"
-      },
-      {
-        "id": 1933869,
-        "category": 20,
-        "uid": "B07RXH442W"
-      },
-      {
-        "id": 1934076,
-        "category": 20,
-        "uid": "B0766658WB"
-      },
-      {
-        "id": 1935040,
-        "category": 20,
-        "uid": "B076V2Q6WZ"
-      },
-      {
-        "id": 1937273,
-        "category": 20,
-        "uid": "B07798FWNN"
-      },
-      {
-        "id": 1942692,
-        "category": 20,
-        "name": "Horizon Zero Dawn Complete Edition - PC [Online Game Code]",
-        "uid": "B08GQTZK2T"
-      }
-    ],
-    "name": "Horizon Zero Dawn Complete Edition",
-    "platforms": [
-      6,
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 130573,
-        "human": "Dec 06, 2017",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 203015,
-        "human": "Aug 07, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "horizon-zero-dawn-complete-edition"
-  },
   "74556": {
     "id": 74556,
     "alternative_names": [
@@ -7199,7 +8986,7 @@
       {
         "id": 50093,
         "comment": "Korean title",
-        "name": "스펠렁키 2"
+        "name": "\uc2a4\ud3a0\ub801\ud0a4 2"
       }
     ],
     "category": 0,
@@ -7529,7 +9316,7 @@
       {
         "id": 52186,
         "comment": "Korean title",
-        "name": "새티스팩토리"
+        "name": "\uc0c8\ud2f0\uc2a4\ud329\ud1a0\ub9ac"
       }
     ],
     "category": 0,
@@ -7577,7 +9364,7 @@
       {
         "id": 37381,
         "comment": "Japanese title - original",
-        "name": "ロードス島戦記　ディードリット イン ワンダーラビリンス"
+        "name": "\u30ed\u30fc\u30c9\u30b9\u5cf6\u6226\u8a18\u3000\u30c7\u30a3\u30fc\u30c9\u30ea\u30c3\u30c8 \u30a4\u30f3 \u30ef\u30f3\u30c0\u30fc\u30e9\u30d3\u30ea\u30f3\u30b9"
       },
       {
         "id": 37382,
@@ -8103,7 +9890,7 @@
       {
         "id": 50377,
         "comment": "Korean title",
-        "name": "기어스 5"
+        "name": "\uae30\uc5b4\uc2a4 5"
       }
     ],
     "category": 0,
@@ -8221,7 +10008,7 @@
       {
         "id": 50203,
         "comment": "Korean title",
-        "name": "둠 이터널"
+        "name": "\ub460 \uc774\ud130\ub110"
       }
     ],
     "category": 0,
@@ -8403,7 +10190,7 @@
       {
         "id": 1997222,
         "category": 20,
-        "name": "DOOM Eternal|オンラインコード版",
+        "name": "DOOM Eternal|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
         "uid": "B08QDJRQXB",
         "url": "https://amazon.jp/dp/B08QDJRQXB"
       }
@@ -8757,17 +10544,17 @@
       {
         "id": 34173,
         "comment": "Japanese title - original",
-        "name": "ベア・ナックルIV"
+        "name": "\u30d9\u30a2\u30fb\u30ca\u30c3\u30af\u30ebIV"
       },
       {
         "id": 34174,
         "comment": "Russian title",
-        "name": "Улицы ярости 4"
+        "name": "\u0423\u043b\u0438\u0446\u044b \u044f\u0440\u043e\u0441\u0442\u0438 4"
       },
       {
         "id": 34175,
         "comment": "Chinese title - traditional",
-        "name": "格鬥三人組4"
+        "name": "\u683c\u9b25\u4e09\u4eba\u7d444"
       }
     ],
     "category": 0,
@@ -9014,7 +10801,7 @@
       {
         "id": 1943963,
         "category": 20,
-        "name": "Minecraft Dungeons|オンラインコード版",
+        "name": "Minecraft Dungeons|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
         "uid": "B08M4NKC31",
         "url": "https://amazon.co.jp/dp/B08M4NKC31"
       }
@@ -9117,7 +10904,7 @@
       {
         "id": 50178,
         "comment": "Korean title",
-        "name": "어몽 어스"
+        "name": "\uc5b4\ubabd \uc5b4\uc2a4"
       }
     ],
     "category": 0,
@@ -9201,12 +10988,12 @@
       {
         "id": 30646,
         "comment": "Japanese title",
-        "name": "ウォークラフトIII: Reforged"
+        "name": "\u30a6\u30a9\u30fc\u30af\u30e9\u30d5\u30c8III: Reforged"
       },
       {
         "id": 30647,
         "comment": "Korean title",
-        "name": "워크래프트 III : 진부한"
+        "name": "\uc6cc\ud06c\ub798\ud504\ud2b8 III : \uc9c4\ubd80\ud55c"
       },
       {
         "id": 30648,
@@ -9358,76 +11145,6 @@
     ],
     "slug": "one-step-from-eden"
   },
-  "112104": {
-    "id": 112104,
-    "alternative_names": [
-      {
-        "id": 36094,
-        "comment": "Alternative title",
-        "name": "Command & Conquer Remastered Collection: 25th Anniversary Edition"
-      },
-      {
-        "id": 36095,
-        "comment": "Alternative title",
-        "name": "Command & Conquer Remastered Collection: 25th Anniversary Edition"
-      },
-      {
-        "id": 36096,
-        "comment": "Alternative spelling",
-        "name": "Command & Conquer: Remaster"
-      },
-      {
-        "id": 36097,
-        "comment": "Acronym",
-        "name": "C&C: Remastered"
-      },
-      {
-        "id": 36098,
-        "comment": "Alternative spelling",
-        "name": "C&C: Remaster"
-      }
-    ],
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1882838,
-        "category": 14,
-        "name": "Command & Conquer Remastered Collection",
-        "uid": "517837",
-        "url": "https://www.twitch.tv/directory/game/Command%20%26%20Conquer%20Remastered%20Collection"
-      },
-      {
-        "id": 1928361,
-        "category": 20,
-        "uid": "B0882G76YD",
-        "url": "https://amazon.com/dp/B0882G76YD"
-      },
-      {
-        "id": 1928492,
-        "category": 20,
-        "uid": "B086QN8C57",
-        "url": "https://amazon.com/dp/B086QN8C57"
-      },
-      {
-        "id": 1934055,
-        "category": 20,
-        "uid": "B085PNK7GD"
-      }
-    ],
-    "name": "Command & Conquer Remastered Collection",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 197751,
-        "human": "Jun 05, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "command-and-conquer-remastered-collection"
-  },
   "112412": {
     "id": 112412,
     "alternative_names": [
@@ -9444,17 +11161,17 @@
       {
         "id": 30599,
         "comment": "Japanese title",
-        "name": "ファイナルファンタジーXIV：シャドウブリンガー"
+        "name": "\u30d5\u30a1\u30a4\u30ca\u30eb\u30d5\u30a1\u30f3\u30bf\u30b8\u30fcXIV\uff1a\u30b7\u30e3\u30c9\u30a6\u30d6\u30ea\u30f3\u30ac\u30fc"
       },
       {
         "id": 30600,
         "comment": "Korean title",
-        "name": "파이널 판타지 XIV : 암흑 인도자"
+        "name": "\ud30c\uc774\ub110 \ud310\ud0c0\uc9c0 XIV : \uc554\ud751 \uc778\ub3c4\uc790"
       },
       {
         "id": 30601,
         "comment": "Chinese title",
-        "name": "最终幻想XIV：暗影使者"
+        "name": "\u6700\u7ec8\u5e7b\u60f3XIV\uff1a\u6697\u5f71\u4f7f\u8005"
       }
     ],
     "category": 2,
@@ -9646,7 +11363,7 @@
       {
         "id": 50170,
         "comment": "Korean title",
-        "name": "하데스"
+        "name": "\ud558\ub370\uc2a4"
       }
     ],
     "category": 0,
@@ -9817,7 +11534,7 @@
       {
         "id": 50643,
         "comment": "Japanese title - original",
-        "name": "バイオハザード RE:3"
+        "name": "\u30d0\u30a4\u30aa\u30cf\u30b6\u30fc\u30c9 RE:3"
       }
     ],
     "category": 0,
@@ -10050,7 +11767,7 @@
       {
         "id": 52133,
         "comment": "Korean title",
-        "name": "샨테와 일곱 사이렌"
+        "name": "\uc0e8\ud14c\uc640 \uc77c\uacf1 \uc0ac\uc774\ub80c"
       }
     ],
     "category": 0,
@@ -10544,7 +12261,7 @@
       {
         "id": 50217,
         "comment": "Korean title",
-        "name": "발더스 게이트 3"
+        "name": "\ubc1c\ub354\uc2a4 \uac8c\uc774\ud2b8 3"
       }
     ],
     "category": 0,
@@ -10616,7 +12333,7 @@
       {
         "id": 50102,
         "comment": "Korean title",
-        "name": "원신"
+        "name": "\uc6d0\uc2e0"
       }
     ],
     "category": 0,
@@ -10707,7 +12424,7 @@
       {
         "id": 50219,
         "comment": "Korean title",
-        "name": "마이크로소프트 플라이트 시뮬레이터"
+        "name": "\ub9c8\uc774\ud06c\ub85c\uc18c\ud504\ud2b8 \ud50c\ub77c\uc774\ud2b8 \uc2dc\ubbac\ub808\uc774\ud130"
       }
     ],
     "category": 0,
@@ -11223,7 +12940,7 @@
       {
         "id": 1996402,
         "category": 20,
-        "name": "Immortals Fenyx Rising Standard | Xbox - Code à télécharger",
+        "name": "Immortals Fenyx Rising Standard | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW51SFC",
         "url": "https://amazon.fr/dp/B08MW51SFC"
       },
@@ -11251,7 +12968,7 @@
       {
         "id": 1997174,
         "category": 20,
-        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Code à télécharger",
+        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08PQFMH5V",
         "url": "https://amazon.fr/dp/B08PQFMH5V"
       },
@@ -11344,7 +13061,7 @@
       {
         "id": 38529,
         "comment": "Japanese title - original",
-        "name": "聖剣伝説3 トライアルズ オブ マナ"
+        "name": "\u8056\u5263\u4f1d\u8aac3 \u30c8\u30e9\u30a4\u30a2\u30eb\u30ba \u30aa\u30d6 \u30de\u30ca"
       }
     ],
     "category": 0,
@@ -12045,7 +13762,7 @@
       {
         "id": 50471,
         "comment": "Alternative spelling",
-        "name": "Medal of Honor™: Above and Beyond"
+        "name": "Medal of Honor\u2122: Above and Beyond"
       }
     ],
     "category": 0,
@@ -12546,12 +14263,12 @@
       {
         "id": 33040,
         "comment": "Japanese title - original",
-        "name": "デスカムトゥルー"
+        "name": "\u30c7\u30b9\u30ab\u30e0\u30c8\u30a5\u30eb\u30fc"
       },
       {
         "id": 50286,
         "comment": "Korean title",
-        "name": "데스 컴 트루"
+        "name": "\ub370\uc2a4 \ucef4 \ud2b8\ub8e8"
       }
     ],
     "category": 0,
@@ -12696,7 +14413,7 @@
       {
         "id": 34803,
         "comment": "Chinese title - simplified",
-        "name": "了不起的修仙模拟器"
+        "name": "\u4e86\u4e0d\u8d77\u7684\u4fee\u4ed9\u6a21\u62df\u5668"
       }
     ],
     "category": 0,
@@ -12735,23 +14452,6 @@
       }
     ],
     "slug": "amazing-cultivation-simulator"
-  },
-  "128832": {
-    "id": 128832,
-    "category": 0,
-    "name": "Command & Conquer: Remastered",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 194606,
-        "human": "Jun 05, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "command-and-conquer-remastered"
   },
   "129001": {
     "id": 129001,
@@ -13036,7 +14736,7 @@
       {
         "id": 1850170,
         "category": 1,
-        "name": "Krystopia: Nova´s Journey",
+        "name": "Krystopia: Nova\u00b4s Journey",
         "uid": "1225120",
         "url": "https://store.steampowered.com/app/1225120",
         "year": 2020
@@ -13044,12 +14744,12 @@
       {
         "id": 1995126,
         "category": 14,
-        "name": "Krystopia: Nova´s Journey",
+        "name": "Krystopia: Nova\u00b4s Journey",
         "uid": "1569657154",
         "url": "https://www.twitch.tv/directory/game/Krystopia%3A%20Nova%C2%B4s%20Journey"
       }
     ],
-    "name": "Krystopia: Nova´s Journey",
+    "name": "Krystopia: Nova\u00b4s Journey",
     "platforms": [
       6
     ],
@@ -13466,12 +15166,12 @@
       {
         "id": 49857,
         "comment": "Working title",
-        "name": "A Monster’s Expedition (Through Human Exhibitions)"
+        "name": "A Monster\u2019s Expedition (Through Human Exhibitions)"
       },
       {
         "id": 49858,
         "comment": "Alternative title",
-        "name": "A Monster’s Expedition (Through Puzzling Exhibitions)"
+        "name": "A Monster\u2019s Expedition (Through Puzzling Exhibitions)"
       }
     ],
     "category": 0,
@@ -13688,7 +15388,7 @@
       {
         "id": 1942136,
         "category": 20,
-        "name": "Minecraft Dungeons - Hero Edition – Xbox",
+        "name": "Minecraft Dungeons - Hero Edition \u2013 Xbox",
         "uid": "B08FN6FBD6"
       },
       {
@@ -13731,7 +15431,7 @@
       {
         "id": 1943945,
         "category": 20,
-        "name": "Minecraft Dungeons Hero Edition|オンラインコード版",
+        "name": "Minecraft Dungeons Hero Edition|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
         "uid": "B08M4Q56YH",
         "url": "https://amazon.co.jp/dp/B08M4Q56YH"
       }
@@ -13846,7 +15546,7 @@
       {
         "id": 52046,
         "comment": "Korean title",
-        "name": "파스모포비아"
+        "name": "\ud30c\uc2a4\ubaa8\ud3ec\ube44\uc544"
       }
     ],
     "category": 0,
@@ -13914,54 +15614,6 @@
       }
     ],
     "slug": "new-yankee-8-journey-of-odysseus"
-  },
-  "132907": {
-    "id": 132907,
-    "alternative_names": [
-      {
-        "id": 53391,
-        "comment": "Alternative spelling",
-        "name": "There Is No Game: Wrong Dimension"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1860695,
-        "category": 1,
-        "name": "There is no game : Wrong dimension",
-        "uid": "1240210",
-        "url": "https://store.steampowered.com/app/1240210",
-        "year": 2020
-      },
-      {
-        "id": 1939053,
-        "category": 14,
-        "name": "There Is No Game: Wrong dimension",
-        "uid": "519100",
-        "url": "https://www.twitch.tv/directory/game/There%20Is%20No%20Game%3A%20Wrong%20dimension/"
-      }
-    ],
-    "name": "There Is No Game : Wrong Dimension",
-    "platforms": [
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 206376,
-        "human": "Aug 06, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 206377,
-        "human": "Aug 06, 2020",
-        "platform": 14,
-        "y": 2020
-      }
-    ],
-    "slug": "there-is-no-game-wrong-dimension"
   },
   "132980": {
     "id": 132980,
@@ -14051,7 +15703,7 @@
       {
         "id": 50273,
         "comment": "Korean title",
-        "name": "어쌔신 크리드 발할라"
+        "name": "\uc5b4\uc314\uc2e0 \ud06c\ub9ac\ub4dc \ubc1c\ud560\ub77c"
       },
       {
         "id": 52028,
@@ -14309,7 +15961,7 @@
       {
         "id": 33255,
         "comment": "Stylized title",
-        "name": "Tony Hawk's™ Pro Skater™ 1 + 2"
+        "name": "Tony Hawk's\u2122 Pro Skater\u2122 1 + 2"
       }
     ],
     "category": 3,
@@ -14516,7 +16168,7 @@
       {
         "id": 50218,
         "comment": "Korean title",
-        "name": "마피아 데피니티브 에디션"
+        "name": "\ub9c8\ud53c\uc544 \ub370\ud53c\ub2c8\ud2f0\ube0c \uc5d0\ub514\uc158"
       }
     ],
     "category": 0,
@@ -14745,7 +16397,7 @@
       {
         "id": 36557,
         "comment": "Alternative spelling",
-        "name": "EA SPORTS™ FIFA 21"
+        "name": "EA SPORTS\u2122 FIFA 21"
       },
       {
         "id": 36558,
@@ -14755,7 +16407,7 @@
       {
         "id": 50234,
         "comment": "Korean title",
-        "name": "피파 21"
+        "name": "\ud53c\ud30c 21"
       }
     ],
     "category": 0,
@@ -15110,35 +16762,18 @@
     ],
     "slug": "assassins-creed-valhalla-gold-edition"
   },
-  "134362": {
-    "id": 134362,
-    "category": 0,
-    "name": "Command & Conquer: Red Alert Remastered",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 199033,
-        "human": "Jun 05, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "command-and-conquer-red-alert-remastered"
-  },
   "134483": {
     "id": 134483,
     "alternative_names": [
       {
         "id": 36050,
         "comment": "Chinese title - traditional",
-        "name": "槍火重生"
+        "name": "\u69cd\u706b\u91cd\u751f"
       },
       {
         "id": 36051,
         "comment": "Chinese title - simplified",
-        "name": "枪火重生"
+        "name": "\u67aa\u706b\u91cd\u751f"
       },
       {
         "id": 36052,
@@ -15207,7 +16842,7 @@
       {
         "id": 50183,
         "comment": "Korean title",
-        "name": "스타워즈: 스쿼드론"
+        "name": "\uc2a4\ud0c0\uc6cc\uc988: \uc2a4\ucffc\ub4dc\ub860"
       }
     ],
     "category": 0,
@@ -15659,12 +17294,12 @@
       {
         "id": 37354,
         "comment": "Russian title",
-        "name": "завтра не наступит без ██████"
+        "name": "\u0437\u0430\u0432\u0442\u0440\u0430 \u043d\u0435 \u043d\u0430\u0441\u0442\u0443\u043f\u0438\u0442 \u0431\u0435\u0437 \u2588\u2588\u2588\u2588\u2588\u2588"
       },
       {
         "id": 53138,
         "comment": "Portuguese title",
-        "name": "o amanhã não virá para aqueles sem █████"
+        "name": "o amanh\u00e3 n\u00e3o vir\u00e1 para aqueles sem \u2588\u2588\u2588\u2588\u2588"
       }
     ],
     "category": 0,
@@ -15672,12 +17307,12 @@
       {
         "id": 1957107,
         "category": 14,
-        "name": "tomorrow won't come for those without ██████",
+        "name": "tomorrow won't come for those without \u2588\u2588\u2588\u2588\u2588\u2588",
         "uid": "83378280",
         "url": "https://www.twitch.tv/directory/game/tomorrow%20won't%20come%20for%20those%20without%20%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88"
       }
     ],
-    "name": "tomorrow won't come for those without ██████",
+    "name": "tomorrow won't come for those without \u2588\u2588\u2588\u2588\u2588\u2588",
     "platforms": [
       6
     ],
@@ -15954,7 +17589,7 @@
       {
         "id": 37852,
         "comment": "Alternative title",
-        "name": "EA SPORTS™ FIFA 21 Ultimate Edition"
+        "name": "EA SPORTS\u2122 FIFA 21 Ultimate Edition"
       }
     ],
     "category": 0,
@@ -16610,7 +18245,7 @@
       {
         "id": 52051,
         "comment": "Korean title",
-        "name": "콜 오브 듀티: 블랙 옵스 콜드 워"
+        "name": "\ucf5c \uc624\ube0c \ub4c0\ud2f0: \ube14\ub799 \uc635\uc2a4 \ucf5c\ub4dc \uc6cc"
       },
       {
         "id": 52317,
@@ -16953,7 +18588,7 @@
   "138179": {
     "id": 138179,
     "category": 2,
-    "name": "Marvel’s Avengers: Kate Bishop - Taking AIM",
+    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
     "platforms": [
       6,
       48,
@@ -17090,7 +18725,7 @@
       {
         "id": 50677,
         "comment": "German title",
-        "name": "Die Sims 4 PLUS Star Wars: Reise nach Batuu"
+        "name": "Die Sims 4 PLUS\u00a0Star Wars: Reise nach Batuu"
       }
     ],
     "category": 3,
@@ -17150,7 +18785,7 @@
       {
         "id": 1997107,
         "category": 20,
-        "name": "Les Sims 4 + Pack de jeu Star Wars : Voyage sur Batuu (GP9) | Téléchargement PC - Code Origin",
+        "name": "Les Sims 4 + Pack de jeu Star Wars : Voyage sur Batuu (GP9) | T\u00e9l\u00e9chargement PC - Code Origin",
         "uid": "B08PQXC1J7",
         "url": "https://amazon.fr/dp/B08PQXC1J7"
       },
@@ -17225,7 +18860,7 @@
       {
         "id": 1941904,
         "category": 20,
-        "name": "Immortals Fenyx Rising  Gold (PS4)",
+        "name": "Immortals Fenyx Rising\u00a0 Gold (PS4)",
         "uid": "B08HP4JJMM"
       },
       {
@@ -17295,7 +18930,7 @@
       {
         "id": 1996376,
         "category": 20,
-        "name": "Immortals Fenyx Rising Gold | Xbox - Code à télécharger",
+        "name": "Immortals Fenyx Rising Gold | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW45YCQ",
         "url": "https://amazon.fr/dp/B08MW45YCQ"
       },
@@ -17316,7 +18951,7 @@
       {
         "id": 1997215,
         "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Code à télécharger",
+        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08PQHJ6Z1",
         "url": "https://amazon.fr/dp/B08PQHJ6Z1"
       }
@@ -17415,7 +19050,7 @@
       {
         "id": 1996353,
         "category": 20,
-        "name": "The Sims 4 Snowy Escape | Xbox - Code à télécharger",
+        "name": "The Sims 4 Snowy Escape | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW5L5F1",
         "url": "https://amazon.fr/dp/B08MW5L5F1"
       },
@@ -17616,7 +19251,7 @@
       {
         "id": 51917,
         "comment": "Japanese title - original",
-        "name": "白華の檻 ~緋色の欠片4~ 四季の詩"
+        "name": "\u767d\u83ef\u306e\u6abb ~\u7dcb\u8272\u306e\u6b20\u72474~ \u56db\u5b63\u306e\u8a69"
       },
       {
         "id": 51918,
@@ -17686,14 +19321,14 @@
       {
         "id": 1996469,
         "category": 20,
-        "name": "APEX Legends Champions | Xbox - Code à télécharger",
+        "name": "APEX Legends Champions | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW5MB6N",
         "url": "https://amazon.fr/dp/B08MW5MB6N"
       },
       {
         "id": 1996552,
         "category": 20,
-        "name": "APEX LEGENDS Champions Edition | Téléchargement PC - Code Origin",
+        "name": "APEX LEGENDS Champions Edition | T\u00e9l\u00e9chargement PC - Code Origin",
         "uid": "B08MXNSSYJ",
         "url": "https://amazon.fr/dp/B08MXNSSYJ"
       },
@@ -17775,7 +19410,7 @@
       {
         "id": 1996472,
         "category": 20,
-        "name": "Borderlands 3: Next Level | Xbox - Code à télécharger",
+        "name": "Borderlands 3: Next Level | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW4D5J1",
         "url": "https://amazon.fr/dp/B08MW4D5J1"
       },
@@ -17789,7 +19424,7 @@
       {
         "id": 1997184,
         "category": 20,
-        "name": "Borderlands 3 Next Level Edition | Xbox - Code à télécharger",
+        "name": "Borderlands 3 Next Level Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08PQH3742",
         "url": "https://amazon.fr/dp/B08PQH3742"
       },
@@ -17862,7 +19497,7 @@
       {
         "id": 1996410,
         "category": 20,
-        "name": "Borderlands 3: Ultimate | Xbox - Code à télécharger",
+        "name": "Borderlands 3: Ultimate | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08MW4D5J5",
         "url": "https://amazon.fr/dp/B08MW4D5J5"
       },
@@ -17897,7 +19532,7 @@
       {
         "id": 1997170,
         "category": 20,
-        "name": "Borderlands 3 Ultimate Edition | Xbox - Code à télécharger",
+        "name": "Borderlands 3 Ultimate Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
         "uid": "B08PQJWSN9",
         "url": "https://amazon.fr/dp/B08PQJWSN9"
       },
@@ -18259,5 +19894,36 @@
       }
     ],
     "slug": "minecraft-dungeons-howling-peaks"
+  },
+  "140878": {
+    "id": 140878,
+    "alternative_names": [
+      {
+        "id": 52054,
+        "comment": "Alternative title",
+        "name": "Sam & Max: Save the World Remastered"
+      }
+    ],
+    "category": 0,
+    "name": "Sam & Max: Save the World",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 217567,
+        "human": "Dec 02, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217568,
+        "human": "Dec 02, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "sam-and-max-save-the-world"
   }
 }
