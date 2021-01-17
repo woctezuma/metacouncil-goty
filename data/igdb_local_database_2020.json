@@ -1,4 +1,1723 @@
 {
+  "133905": {
+    "id": 133905,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1930701,
+        "category": 20,
+        "uid": "B089M2FPMY",
+        "url": "https://amazon.com/dp/B089M2FPMY"
+      },
+      {
+        "id": 1939217,
+        "category": 14,
+        "name": "Nexomon: Extinction",
+        "uid": "519179",
+        "url": "https://www.twitch.tv/directory/game/Nexomon%3A%20Extinction/"
+      },
+      {
+        "id": 1942895,
+        "category": 20,
+        "uid": "B088G7FJL3"
+      },
+      {
+        "id": 1942922,
+        "category": 20,
+        "uid": "B088G4CCMZ"
+      }
+    ],
+    "name": "Nexomon: Extinction",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 204976,
+        "human": "Aug 28, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 204977,
+        "human": "Aug 28, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 204978,
+        "human": "Aug 28, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 204979,
+        "human": "Aug 28, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 204980,
+        "human": "Aug 28, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "nexomon-extinction"
+  },
+  "132344": {
+    "id": 132344,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1859949,
+        "category": 1,
+        "name": "Higurashi When They Cry Hou - Ch.8 Matsuribayashi",
+        "uid": "1243670",
+        "url": "https://store.steampowered.com/app/1243670",
+        "year": 2020
+      },
+      {
+        "id": 1964319,
+        "category": 14,
+        "name": "Higurashi When They Cry Hou - Ch.8 Matsuribayashi",
+        "uid": "86656582",
+        "url": "https://www.twitch.tv/directory/game/Higurashi%20When%20They%20Cry%20Hou%20-%20Ch.8%20Matsuribayashi"
+      }
+    ],
+    "name": "Higurashi When They Cry Hou - Ch.8 Matsuribayashi",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 197978,
+        "human": "Aug 13, 2006",
+        "platform": 6,
+        "y": 2006
+      },
+      {
+        "id": 197979,
+        "human": "May 14, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 197980,
+        "human": "May 14, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 197981,
+        "human": "May 14, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "higurashi-when-they-cry-hou-ch-dot-8-matsuribayashi"
+  },
+  "37001": {
+    "id": 37001,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102136,
+        "category": 3,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "59902",
+        "url": "https://www.giantbomb.com/games/3030-59902/"
+      },
+      {
+        "id": 1593474,
+        "category": 19,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "b8129f--61707",
+        "url": "https://www.gamespress.com/product.asp?c=b8129f--61707",
+        "year": 2019
+      },
+      {
+        "id": 1838397,
+        "category": 1,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "1057090",
+        "url": "https://store.steampowered.com/app/1057090",
+        "year": 2020
+      },
+      {
+        "id": 1926574,
+        "category": 14,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "497412",
+        "url": "https://www.twitch.tv/directory/game/Ori%20and%20the%20Will%20of%20the%20Wisps"
+      },
+      {
+        "id": 1928566,
+        "category": 20,
+        "uid": "B07DJRPZWY",
+        "url": "https://amazon.com/dp/B07DJRPZWY"
+      },
+      {
+        "id": 1932730,
+        "category": 20,
+        "uid": "B082PBZ7GH"
+      },
+      {
+        "id": 1934098,
+        "category": 20,
+        "uid": "B07FGKPF8P"
+      },
+      {
+        "id": 1936325,
+        "category": 20,
+        "uid": "B083FPN695"
+      },
+      {
+        "id": 1936521,
+        "category": 20,
+        "uid": "B07ZJMQBVF"
+      },
+      {
+        "id": 1937328,
+        "category": 20,
+        "uid": "B07SSV8LVQ"
+      },
+      {
+        "id": 1941749,
+        "category": 20,
+        "uid": "B08KGW65VF"
+      },
+      {
+        "id": 1942006,
+        "category": 20,
+        "name": "Ori and The Will of The Wisps (Nintendo Switch)",
+        "uid": "B08KG3YYY1"
+      },
+      {
+        "id": 1942550,
+        "category": 20,
+        "name": "Ori and the Will of The Wisps - Nintendo Switch",
+        "uid": "B08KHD9V74"
+      }
+    ],
+    "name": "Ori and the Will of the Wisps",
+    "platforms": [
+      6,
+      49,
+      130,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 211066,
+        "human": "Sep 17, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217321,
+        "human": "Mar 11, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 217322,
+        "human": "Mar 11, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217323,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      }
+    ],
+    "slug": "ori-and-the-will-of-the-wisps"
+  },
+  "132907": {
+    "id": 132907,
+    "alternative_names": [
+      {
+        "id": 53391,
+        "comment": "Alternative spelling",
+        "name": "There Is No Game: Wrong Dimension"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1860695,
+        "category": 1,
+        "name": "There is no game : Wrong dimension",
+        "uid": "1240210",
+        "url": "https://store.steampowered.com/app/1240210",
+        "year": 2020
+      },
+      {
+        "id": 1939053,
+        "category": 14,
+        "name": "There Is No Game: Wrong dimension",
+        "uid": "519100",
+        "url": "https://www.twitch.tv/directory/game/There%20Is%20No%20Game%3A%20Wrong%20dimension/"
+      }
+    ],
+    "name": "There Is No Game : Wrong Dimension",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 206376,
+        "human": "Aug 06, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 206377,
+        "human": "Aug 06, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "there-is-no-game-wrong-dimension"
+  },
+  "77752": {
+    "id": 77752,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 197033,
+        "category": 3,
+        "name": "Creeper World 4",
+        "uid": "62876",
+        "url": "https://www.giantbomb.com/games/3030-62876/"
+      },
+      {
+        "id": 1704122,
+        "category": 1,
+        "name": "Creeper World 4",
+        "uid": "848480",
+        "url": "https://store.steampowered.com/app/848480",
+        "year": 0
+      },
+      {
+        "id": 1906926,
+        "category": 14,
+        "name": "Creeper World 4",
+        "uid": "500389",
+        "url": "https://www.twitch.tv/directory/game/Creeper%20World%204"
+      }
+    ],
+    "name": "Creeper World 4",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 219418,
+        "human": "Dec 03, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "creeper-world-4"
+  },
+  "133887": {
+    "id": 133887,
+    "alternative_names": [
+      {
+        "id": 33227,
+        "comment": "Other",
+        "name": "Tony Hawk's Pro Skater 1 and 2"
+      },
+      {
+        "id": 33228,
+        "comment": "Other",
+        "name": "Tony Hawk's Pro Skater 1 and 2 Collection"
+      },
+      {
+        "id": 33255,
+        "comment": "Stylized title",
+        "name": "Tony Hawk's\u2122 Pro Skater\u2122 1 + 2"
+      }
+    ],
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1882498,
+        "category": 14,
+        "name": "Tony Hawk's Pro Skater 1+2",
+        "uid": "517497",
+        "url": "https://www.twitch.tv/directory/game/Tony%20Hawk's%20Pro%20Skater%201%2B2"
+      },
+      {
+        "id": 1928434,
+        "category": 20,
+        "uid": "B088J1DJ2G"
+      },
+      {
+        "id": 1928720,
+        "category": 20,
+        "uid": "B088HYTLRG"
+      },
+      {
+        "id": 1934054,
+        "category": 20,
+        "uid": "B088HPL635"
+      },
+      {
+        "id": 1934192,
+        "category": 20,
+        "uid": "B088HR8LBV"
+      },
+      {
+        "id": 1935818,
+        "category": 20,
+        "uid": "B0883NXHKZ",
+        "url": "https://amazon.fr/dp/B0883NXHKZ"
+      },
+      {
+        "id": 1936052,
+        "category": 20,
+        "uid": "B0883MP6CQ",
+        "url": "https://amazon.fr/dp/B0883MP6CQ"
+      },
+      {
+        "id": 1936623,
+        "category": 20,
+        "uid": "B0889BD537"
+      },
+      {
+        "id": 1937912,
+        "category": 20,
+        "uid": "B088HNL147"
+      },
+      {
+        "id": 1941592,
+        "category": 20,
+        "uid": "B08FCXNF8Q"
+      },
+      {
+        "id": 1941688,
+        "category": 20,
+        "uid": "B08FCWTM3W"
+      },
+      {
+        "id": 1942046,
+        "category": 20,
+        "name": "Tony Hawk's Pro Skater 1 & 2 (PS4)",
+        "uid": "B08HJZD4DQ"
+      },
+      {
+        "id": 1942119,
+        "category": 20,
+        "name": "Tony Hawk's Pro Skater 1 + 2: Standard | Xbox - Download Code",
+        "uid": "B08JVMH9C1"
+      },
+      {
+        "id": 1942563,
+        "category": 20,
+        "name": "Tony Hawk's Pro Skater 1 + 2 Standard Edition - Xbox One [Digital Code]",
+        "uid": "B08J4TKLYT"
+      },
+      {
+        "id": 1942726,
+        "category": 20,
+        "uid": "B08FTNP9RJ"
+      },
+      {
+        "id": 1942790,
+        "category": 20,
+        "uid": "B08FTK4VGY"
+      },
+      {
+        "id": 1942861,
+        "category": 20,
+        "uid": "B08F632GRV"
+      },
+      {
+        "id": 1942876,
+        "category": 20,
+        "uid": "B08F612GRQ"
+      }
+    ],
+    "name": "Tony Hawk's Pro Skater 1+2",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 195616,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 195617,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 195618,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "tony-hawks-pro-skater-1-plus-2"
+  },
+  "139601": {
+    "id": 139601,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1965910,
+        "category": 14,
+        "name": "Cats Organized Neatly",
+        "uid": "646496154",
+        "url": "https://www.twitch.tv/directory/game/Cats%20Organized%20Neatly"
+      }
+    ],
+    "name": "Cats Organized Neatly",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 214230,
+        "human": "Oct 12, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "cats-organized-neatly"
+  },
+  "116056": {
+    "id": 116056,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1712563,
+        "category": 1,
+        "name": "Merchant of the Skies",
+        "uid": "1040070",
+        "url": "https://store.steampowered.com/app/1040070",
+        "year": 2019
+      },
+      {
+        "id": 1747010,
+        "category": 3,
+        "name": "Merchant of the Skies",
+        "uid": "74434",
+        "url": "https://www.giantbomb.com/games/3030-74434/"
+      },
+      {
+        "id": 1915114,
+        "category": 14,
+        "name": "Merchant of the Skies",
+        "uid": "513617",
+        "url": "https://www.twitch.tv/directory/game/Merchant%20of%20the%20Skies"
+      }
+    ],
+    "name": "Merchant of the Skies",
+    "platforms": [
+      3,
+      6,
+      14,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 203683,
+        "human": "Apr 17, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 203684,
+        "human": "Apr 17, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 203685,
+        "human": "Apr 17, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 206244,
+        "human": "Jul 30, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "merchant-of-the-skies"
+  },
+  "125624": {
+    "id": 125624,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1857103,
+        "category": 3,
+        "name": "Grounded",
+        "uid": "76965",
+        "url": "https://www.giantbomb.com/games/3030-76965/",
+        "year": 2020
+      },
+      {
+        "id": 1858444,
+        "category": 1,
+        "name": "Grounded",
+        "uid": "962130",
+        "url": "https://store.steampowered.com/app/962130",
+        "year": 0
+      },
+      {
+        "id": 1917482,
+        "category": 14,
+        "name": "Grounded",
+        "uid": "516086",
+        "url": "https://www.twitch.tv/directory/game/Grounded"
+      }
+    ],
+    "name": "Grounded",
+    "platforms": [
+      6,
+      49,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 214321,
+        "human": "TBD",
+        "platform": 49
+      },
+      {
+        "id": 214323,
+        "human": "TBD",
+        "platform": 169
+      },
+      {
+        "id": 225034,
+        "human": "Jul 28, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "grounded"
+  },
+  "140506": {
+    "id": 140506,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1994504,
+        "category": 14,
+        "name": "The Grounding",
+        "uid": "183064312",
+        "url": "https://www.twitch.tv/directory/game/The%20Grounding"
+      }
+    ],
+    "name": "The Grounding",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 216044,
+        "human": "Sep 16, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "the-grounding"
+  },
+  "128292": {
+    "id": 128292,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1844489,
+        "category": 1,
+        "name": "Dead Ground Arcade",
+        "uid": "1200350",
+        "url": "https://store.steampowered.com/app/1200350",
+        "year": 2020
+      },
+      {
+        "id": 1993939,
+        "category": 14,
+        "name": "Dead Ground Arcade",
+        "uid": "907109948",
+        "url": "https://www.twitch.tv/directory/game/Dead%20Ground%20Arcade"
+      }
+    ],
+    "name": "Dead Ground Arcade",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 200168,
+        "human": "Apr 02, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dead-ground-arcade"
+  },
+  "118272": {
+    "id": 118272,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1721714,
+        "category": 6,
+        "name": "Predator: Hunting Grounds",
+        "uid": "fa9799ec85e5e7210f099985d5dadca2",
+        "url": "http://www.pushsquare.com/games/ps4/predator_hunting_grounds",
+        "year": 2020
+      },
+      {
+        "id": 1775434,
+        "category": 3,
+        "name": "Predator: Hunting Grounds",
+        "uid": "73332",
+        "url": "https://www.giantbomb.com/games/3030-73332/",
+        "year": 2020
+      },
+      {
+        "id": 1914109,
+        "category": 14,
+        "name": "Predator: Hunting Grounds",
+        "uid": "512551",
+        "url": "https://www.twitch.tv/directory/game/Predator%3A%20Hunting%20Grounds"
+      },
+      {
+        "id": 1928469,
+        "category": 20,
+        "uid": "B082LQT4X5",
+        "url": "https://amazon.com/dp/B082LQT4X5"
+      },
+      {
+        "id": 1934344,
+        "category": 20,
+        "uid": "B082SS8788"
+      },
+      {
+        "id": 1934617,
+        "category": 20,
+        "uid": "B082SSN4MX"
+      },
+      {
+        "id": 1936075,
+        "category": 20,
+        "uid": "B087R7VDYH"
+      },
+      {
+        "id": 1936169,
+        "category": 20,
+        "uid": "B084XQNC5R"
+      },
+      {
+        "id": 1937087,
+        "category": 20,
+        "uid": "B084QLDS1Y"
+      },
+      {
+        "id": 1938218,
+        "category": 20,
+        "uid": "B082JH1NM6"
+      }
+    ],
+    "name": "Predator: Hunting Grounds",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 181315,
+        "human": "Apr 24, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 181599,
+        "human": "Apr 24, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "predator-hunting-grounds"
+  },
+  "132973": {
+    "id": 132973,
+    "category": 0,
+    "name": "Predator: Hunting Grounds - Digital Deluxe Edition",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 194194,
+        "human": "Apr 24, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "predator-hunting-grounds-digital-deluxe-edition"
+  },
+  "113344": {
+    "id": 113344,
+    "alternative_names": [
+      {
+        "id": 30589,
+        "comment": "Japanese title",
+        "name": "\u30e2\u30f3\u30b9\u30bf\u30fc\u30cf\u30f3\u30bf\u30fc\u30ef\u30fc\u30eb\u30c9\uff1a\u30a2\u30a4\u30b9\u30dc\u30fc\u30f3"
+      },
+      {
+        "id": 30590,
+        "comment": "Korean title",
+        "name": "\ubaac\uc2a4\ud130 \ud5cc\ud130 : \uc6d4\ub4dc-\uc544\uc774\uc2a4 \ubcf8"
+      },
+      {
+        "id": 30591,
+        "comment": "Chinese title",
+        "name": "\u602a\u7269\u730e\u4eba\u4e16\u754c\u51b0\u539f"
+      }
+    ],
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1721701,
+        "category": 6,
+        "name": "Monster Hunter: World - Iceborne",
+        "uid": "9f24299085836dfc38e185fde72e1e3d",
+        "url": "http://www.pushsquare.com/games/ps4/monster_hunter_world_-_iceborne",
+        "year": 2019
+      },
+      {
+        "id": 1724801,
+        "category": 6,
+        "name": "Monster Hunter World: Iceborne",
+        "uid": "f78d7948457b22c7cfc145dbeb66d983",
+        "url": "http://www.pushsquare.com/games/ps4/monster_hunter_world_iceborne",
+        "year": 2019
+      },
+      {
+        "id": 1932181,
+        "category": 20,
+        "uid": "B07W5X4LB1"
+      },
+      {
+        "id": 1935458,
+        "category": 20,
+        "uid": "B07RS9J8D4"
+      },
+      {
+        "id": 1935752,
+        "category": 20,
+        "uid": "B07RS8SW34"
+      },
+      {
+        "id": 1937694,
+        "category": 20,
+        "uid": "B07RN6W6M5"
+      }
+    ],
+    "name": "Monster Hunter: World - Iceborne",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 169398,
+        "human": "Sep 06, 2019",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 187392,
+        "human": "Jan 09, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 187393,
+        "human": "Sep 06, 2019",
+        "platform": 49,
+        "y": 2019
+      }
+    ],
+    "slug": "monster-hunter-world-iceborne"
+  },
+  "15894": {
+    "id": 15894,
+    "alternative_names": [
+      {
+        "id": 12019,
+        "comment": "Other",
+        "name": "Hearts of Iron 4"
+      },
+      {
+        "id": 22732,
+        "comment": "Acronym",
+        "name": "HOI 4"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 7556,
+        "category": 1,
+        "name": "Hearts of Iron IV",
+        "uid": "394360"
+      },
+      {
+        "id": 115840,
+        "category": 3,
+        "name": "Hearts of Iron IV",
+        "uid": "45214",
+        "url": "https://www.giantbomb.com/games/3030-45214/",
+        "year": 2016
+      },
+      {
+        "id": 189897,
+        "category": 10,
+        "name": "Hearts of Iron IV",
+        "uid": "UCsnBZhzfmI7apQmJbAIegBQ",
+        "url": "https://gaming.youtube.com/game/UCsnBZhzfmI7apQmJbAIegBQ"
+      },
+      {
+        "id": 245142,
+        "category": 14,
+        "name": "Hearts of Iron IV",
+        "uid": "459327",
+        "url": "https://www.twitch.tv/directory/game/Hearts of Iron IV"
+      },
+      {
+        "id": 1938180,
+        "category": 20,
+        "uid": "B017L66JBO"
+      }
+    ],
+    "name": "Hearts of Iron IV",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 51247,
+        "human": "Jun 06, 2016",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 51248,
+        "human": "Jun 06, 2016",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 51249,
+        "human": "Jun 06, 2016",
+        "platform": 3,
+        "y": 2016
+      },
+      {
+        "id": 121522,
+        "human": "Jun 06, 2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv"
+  },
+  "47308": {
+    "id": 47308,
+    "category": 0,
+    "name": "Hearts of Iron IV: Hero Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168103,
+        "human": "2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv-hero-edition"
+  },
+  "115063": {
+    "id": 115063,
+    "category": 2,
+    "name": "Hearts of Iron IV: Man the Guns",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 164801,
+        "human": "Feb 28, 2019",
+        "platform": 6,
+        "y": 2019
+      }
+    ],
+    "slug": "hearts-of-iron-iv-man-the-guns"
+  },
+  "53178": {
+    "id": 53178,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 85360,
+        "category": 7,
+        "name": "Hearts of Iron IV: Cadet Edition",
+        "uid": "heartsofironivcadetedition",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=heartsofironivcadetedition"
+      }
+    ],
+    "name": "Hearts of Iron IV: Cadet Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168100,
+        "human": "2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv-cadet-edition"
+  },
+  "53179": {
+    "id": 53179,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 85362,
+        "category": 7,
+        "name": "Hearts of Iron IV: Colonel Edition",
+        "uid": "heartsofironivcoloneledition",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=heartsofironivcoloneledition"
+      }
+    ],
+    "name": "Hearts of Iron IV: Colonel Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168102,
+        "human": "2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv-colonel-edition"
+  },
+  "53180": {
+    "id": 53180,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 85364,
+        "category": 7,
+        "name": "Hearts of Iron IV: Death or Dishonor",
+        "uid": "heartsofironivdeathordishonor",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=heartsofironivdeathordishonor"
+      }
+    ],
+    "name": "Hearts of Iron IV: Death or Dishonor",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 164907,
+        "human": "Jun 14, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "hearts-of-iron-iv-death-or-dishonor"
+  },
+  "115112": {
+    "id": 115112,
+    "category": 2,
+    "name": "Hearts of Iron IV: Waking the Tiger",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 164906,
+        "human": "Mar 08, 2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "hearts-of-iron-iv-waking-the-tiger"
+  },
+  "53181": {
+    "id": 53181,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 85366,
+        "category": 7,
+        "name": "Hearts of Iron IV: Field Marshal Edition",
+        "uid": "heartsofironivfieldmarshaledition",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=heartsofironivfieldmarshaledition"
+      }
+    ],
+    "name": "Hearts of Iron IV: Field Marshal Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 168101,
+        "human": "2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv-field-marshal-edition"
+  },
+  "53182": {
+    "id": 53182,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 85368,
+        "category": 7,
+        "name": "Hearts of Iron IV: Together for Victory",
+        "uid": "heartsofironivtogetherforvictory",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=heartsofironivtogetherforvictory"
+      }
+    ],
+    "name": "Hearts of Iron IV: Together for Victory",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 164908,
+        "human": "Dec 15, 2016",
+        "platform": 6,
+        "y": 2016
+      }
+    ],
+    "slug": "hearts-of-iron-iv-together-for-victory"
+  },
+  "113150": {
+    "id": 113150,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1685386,
+        "category": 1,
+        "name": "Lightmatter",
+        "uid": "994140",
+        "url": "https://store.steampowered.com/app/994140",
+        "year": 2019
+      },
+      {
+        "id": 1857518,
+        "category": 3,
+        "name": "Lightmatter",
+        "uid": "76546",
+        "url": "https://www.giantbomb.com/games/3030-76546/"
+      },
+      {
+        "id": 1917088,
+        "category": 14,
+        "name": "Lightmatter",
+        "uid": "515684",
+        "url": "https://www.twitch.tv/directory/game/Lightmatter"
+      }
+    ],
+    "name": "Lightmatter",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 183407,
+        "human": "Jan 15, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 183408,
+        "human": "Jan 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 183409,
+        "human": "Jan 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "lightmatter"
+  },
+  "121885": {
+    "id": 121885,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1736278,
+        "category": 1,
+        "name": "Filament",
+        "uid": "1137350",
+        "url": "https://store.steampowered.com/app/1137350",
+        "year": 1
+      },
+      {
+        "id": 1864644,
+        "category": 3,
+        "name": "Filament",
+        "uid": "77673",
+        "url": "https://www.giantbomb.com/games/3030-77673/"
+      },
+      {
+        "id": 1918145,
+        "category": 14,
+        "name": "Filament",
+        "uid": "516769",
+        "url": "https://www.twitch.tv/directory/game/Filament"
+      }
+    ],
+    "name": "Filament",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 191272,
+        "human": "Apr 23, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "filament"
+  },
+  "119357": {
+    "id": 119357,
+    "alternative_names": [
+      {
+        "id": 40196,
+        "comment": "Working title",
+        "name": "Gods & Monsters"
+      },
+      {
+        "id": 52789,
+        "comment": "Working title",
+        "name": "Gods and Monsters"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1724790,
+        "category": 6,
+        "name": "Gods & Monsters",
+        "uid": "45ee2695d16f40c89b71d943e29f2339",
+        "url": "http://www.pushsquare.com/games/ps4/gods_and_monsters",
+        "year": 2020
+      },
+      {
+        "id": 1724872,
+        "category": 12,
+        "name": "Gods & Monsters",
+        "uid": "c0f23af7f623403b5416373c35a6f6f1",
+        "url": "http://www.nintendolife.com/games/nintendo-switch/gods_and_monsters",
+        "year": 2020
+      },
+      {
+        "id": 1775886,
+        "category": 3,
+        "name": "Gods & Monsters",
+        "uid": "73789",
+        "url": "https://www.giantbomb.com/games/3030-73789/",
+        "year": 2020
+      },
+      {
+        "id": 1806459,
+        "category": 6,
+        "name": "Gods & Monsters",
+        "uid": "c5a4d0147dbfc092ed09425b8c826b1d",
+        "url": "http://www.pushsquare.com/games/ps5/gods_and_monsters"
+      },
+      {
+        "id": 1914531,
+        "category": 14,
+        "name": "Gods & Monsters",
+        "uid": "513001",
+        "url": "https://www.twitch.tv/directory/game/Gods%20%26%20Monsters"
+      },
+      {
+        "id": 1929668,
+        "category": 20,
+        "uid": "B07SL75QDP",
+        "url": "https://amazon.com/dp/B07SL75QDP"
+      },
+      {
+        "id": 1930006,
+        "category": 20,
+        "uid": "B07SFZV3BN",
+        "url": "https://amazon.com/dp/B07SFZV3BN"
+      },
+      {
+        "id": 1933929,
+        "category": 20,
+        "uid": "B07SZW4L3M"
+      },
+      {
+        "id": 1935034,
+        "category": 20,
+        "uid": "B07SK5F16D",
+        "url": "https://amazon.jp/dp/B07SK5F16D"
+      },
+      {
+        "id": 1936789,
+        "category": 20,
+        "uid": "B07SV2GCGF"
+      },
+      {
+        "id": 1937697,
+        "category": 20,
+        "uid": "B07SX9K6XL"
+      },
+      {
+        "id": 1941611,
+        "category": 20,
+        "uid": "B08HW1X453"
+      },
+      {
+        "id": 1942383,
+        "category": 20,
+        "uid": "B08JCWS4TQ"
+      },
+      {
+        "id": 1942426,
+        "category": 20,
+        "uid": "B08JCWQ6VF"
+      },
+      {
+        "id": 1942683,
+        "category": 20,
+        "uid": "B08HTF5KKB"
+      },
+      {
+        "id": 1943104,
+        "category": 20,
+        "name": "Immortals Fenyx Rising - PRE PURCHASE Standard - Xbox One [Digital Code]",
+        "uid": "B08LPKZPTF"
+      },
+      {
+        "id": 1996344,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard | Xbox - Download Code",
+        "uid": "B08MW531VP",
+        "url": "https://amazon.de/dp/B08MW531VP"
+      },
+      {
+        "id": 1996363,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard | Xbox - Download Code",
+        "uid": "B08MW7FNM3",
+        "url": "https://amazon.co.uk/dp/B08MW7FNM3"
+      },
+      {
+        "id": 1996402,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
+        "uid": "B08MW51SFC",
+        "url": "https://amazon.fr/dp/B08MW51SFC"
+      },
+      {
+        "id": 1996613,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard - Switch [Digital Code]",
+        "uid": "B08NDD528K",
+        "url": "https://amazon.com/dp/B08NDD528K"
+      },
+      {
+        "id": 1997111,
+        "category": 20,
+        "name": "Immortals Fenyx Rising PS5",
+        "uid": "B08HZGX937",
+        "url": "https://amazon.es/dp/B08HZGX937"
+      },
+      {
+        "id": 1997149,
+        "category": 20,
+        "name": "Immortals Fenyx Rising (PS5)",
+        "uid": "B08PX34NL3",
+        "url": "https://amazon.co.uk/dp/B08PX34NL3"
+      },
+      {
+        "id": 1997174,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
+        "uid": "B08PQFMH5V",
+        "url": "https://amazon.fr/dp/B08PQFMH5V"
+      },
+      {
+        "id": 1997219,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Download Code",
+        "uid": "B08PQ9H63N",
+        "url": "https://amazon.de/dp/B08PQ9H63N"
+      },
+      {
+        "id": 1997225,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Download Code",
+        "uid": "B08PQFBYV7",
+        "url": "https://amazon.co.uk/dp/B08PQFBYV7"
+      },
+      {
+        "id": 1997275,
+        "category": 20,
+        "name": "Immortals Fenyx Rising - Standard Edition - [PlayStation 5]",
+        "uid": "B08M8GMB7B",
+        "url": "https://amazon.de/dp/B08M8GMB7B"
+      }
+    ],
+    "name": "Immortals Fenyx Rising",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 209940,
+        "human": "Dec 03, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 209942,
+        "human": "Dec 03, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 209943,
+        "human": "Dec 03, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 209944,
+        "human": "Dec 03, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 209947,
+        "human": "Dec 03, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 210480,
+        "human": "Dec 03, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 210481,
+        "human": "Dec 03, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "immortals-fenyx-rising"
+  },
+  "139859": {
+    "id": 139859,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1941725,
+        "category": 20,
+        "uid": "B08HVZKZ4V"
+      },
+      {
+        "id": 1941756,
+        "category": 20,
+        "uid": "B08HW1X2G5"
+      },
+      {
+        "id": 1941792,
+        "category": 20,
+        "uid": "B08HVZ3694"
+      },
+      {
+        "id": 1941886,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold (Xbox One/Series X)",
+        "uid": "B08HP4H85L"
+      },
+      {
+        "id": 1941904,
+        "category": 20,
+        "name": "Immortals Fenyx Rising\u00a0 Gold (PS4)",
+        "uid": "B08HP4JJMM"
+      },
+      {
+        "id": 1941998,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold (PS5)",
+        "uid": "B08HP4LVHS"
+      },
+      {
+        "id": 1942225,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition - PlayStation 4",
+        "uid": "B08HTDHX5D"
+      },
+      {
+        "id": 1942358,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition - Nintendo Switch",
+        "uid": "B08HTJ9P55"
+      },
+      {
+        "id": 1942379,
+        "category": 20,
+        "uid": "B08JCYH675"
+      },
+      {
+        "id": 1942466,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition - Xbox One",
+        "uid": "B08HTDCSDB"
+      },
+      {
+        "id": 1942708,
+        "category": 20,
+        "uid": "B08HZH9JLD"
+      },
+      {
+        "id": 1942763,
+        "category": 20,
+        "uid": "B08HZG4NSW"
+      },
+      {
+        "id": 1942795,
+        "category": 20,
+        "uid": "B08HZDZTY9"
+      },
+      {
+        "id": 1943102,
+        "category": 20,
+        "name": "Immortals Fenyx Rising - PRE PURCHASE Gold - Xbox One [Digital Code]",
+        "uid": "B08LPJ228L"
+      },
+      {
+        "id": 1996365,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold | Xbox - Download Code",
+        "uid": "B08MW5FFYL",
+        "url": "https://amazon.de/dp/B08MW5FFYL"
+      },
+      {
+        "id": 1996366,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold | Xbox - Download Code",
+        "uid": "B08MW5H65L",
+        "url": "https://amazon.co.uk/dp/B08MW5H65L"
+      },
+      {
+        "id": 1996376,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
+        "uid": "B08MW45YCQ",
+        "url": "https://amazon.fr/dp/B08MW45YCQ"
+      },
+      {
+        "id": 1997169,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Download Code",
+        "uid": "B08PQ9BGLS",
+        "url": "https://amazon.co.uk/dp/B08PQ9BGLS"
+      },
+      {
+        "id": 1997201,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Download Code",
+        "uid": "B08PQH13NL",
+        "url": "https://amazon.de/dp/B08PQH13NL"
+      },
+      {
+        "id": 1997215,
+        "category": 20,
+        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
+        "uid": "B08PQHJ6Z1",
+        "url": "https://amazon.fr/dp/B08PQHJ6Z1"
+      }
+    ],
+    "name": "Immortals Fenyx Rising: Gold Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 217671,
+        "human": "Dec 03, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217672,
+        "human": "Dec 03, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217673,
+        "human": "Dec 03, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 217674,
+        "human": "Dec 03, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 217675,
+        "human": "Dec 03, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "immortals-fenyx-rising-gold-edition"
+  },
+  "14394": {
+    "id": 14394,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 8678,
+        "category": 1,
+        "name": "Battle Brothers",
+        "uid": "365360"
+      },
+      {
+        "id": 76691,
+        "category": 5,
+        "name": "Battle Brothers",
+        "uid": "1590012242",
+        "url": "https://www.gog.com/game/battle_brothers",
+        "year": 2017
+      },
+      {
+        "id": 81484,
+        "category": 7,
+        "name": "Battle Brothers",
+        "uid": "battlebrothers",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=battlebrothers"
+      },
+      {
+        "id": 110930,
+        "category": 3,
+        "name": "Battle Brothers",
+        "uid": "50269",
+        "url": "https://www.giantbomb.com/games/3030-50269/",
+        "year": 2017
+      },
+      {
+        "id": 284207,
+        "category": 14,
+        "name": "Battle Brothers",
+        "uid": "490771",
+        "url": "https://www.twitch.tv/directory/game/Battle Brothers"
+      }
+    ],
+    "name": "Battle Brothers",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 67497,
+        "human": "Mar 24, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 118868,
+        "human": "Mar 24, 2017",
+        "platform": 6,
+        "y": 2017
+      }
+    ],
+    "slug": "battle-brothers"
+  },
+  "113990": {
+    "id": 113990,
+    "category": 1,
+    "name": "Battle Brothers: Beasts & Exploration",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 163660,
+        "human": "Nov 29, 2018",
+        "platform": 6,
+        "y": 2018
+      }
+    ],
+    "slug": "battle-brothers-beasts-and-exploration"
+  },
+  "124963": {
+    "id": 124963,
+    "category": 1,
+    "name": "Battle Brothers: Warriors of the North",
+    "slug": "battle-brothers-warriors-of-the-north"
+  },
   "119886": {
     "id": 119886,
     "category": 0,
@@ -683,54 +2402,6 @@
       }
     ],
     "slug": "world-war-z-game-of-the-year-edition"
-  },
-  "132907": {
-    "id": 132907,
-    "alternative_names": [
-      {
-        "id": 53391,
-        "comment": "Alternative spelling",
-        "name": "There Is No Game: Wrong Dimension"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1860695,
-        "category": 1,
-        "name": "There is no game : Wrong dimension",
-        "uid": "1240210",
-        "url": "https://store.steampowered.com/app/1240210",
-        "year": 2020
-      },
-      {
-        "id": 1939053,
-        "category": 14,
-        "name": "There Is No Game: Wrong dimension",
-        "uid": "519100",
-        "url": "https://www.twitch.tv/directory/game/There%20Is%20No%20Game%3A%20Wrong%20dimension/"
-      }
-    ],
-    "name": "There Is No Game : Wrong Dimension",
-    "platforms": [
-      6,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 206376,
-        "human": "Aug 06, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 206377,
-        "human": "Aug 06, 2020",
-        "platform": 14,
-        "y": 2020
-      }
-    ],
-    "slug": "there-is-no-game-wrong-dimension"
   },
   "130212": {
     "id": 130212,
@@ -8282,124 +9953,6 @@
     ],
     "slug": "monster-hunter-world"
   },
-  "37001": {
-    "id": 37001,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 102136,
-        "category": 3,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "59902",
-        "url": "https://www.giantbomb.com/games/3030-59902/"
-      },
-      {
-        "id": 1593474,
-        "category": 19,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "b8129f--61707",
-        "url": "https://www.gamespress.com/product.asp?c=b8129f--61707",
-        "year": 2019
-      },
-      {
-        "id": 1838397,
-        "category": 1,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "1057090",
-        "url": "https://store.steampowered.com/app/1057090",
-        "year": 2020
-      },
-      {
-        "id": 1926574,
-        "category": 14,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "497412",
-        "url": "https://www.twitch.tv/directory/game/Ori%20and%20the%20Will%20of%20the%20Wisps"
-      },
-      {
-        "id": 1928566,
-        "category": 20,
-        "uid": "B07DJRPZWY",
-        "url": "https://amazon.com/dp/B07DJRPZWY"
-      },
-      {
-        "id": 1932730,
-        "category": 20,
-        "uid": "B082PBZ7GH"
-      },
-      {
-        "id": 1934098,
-        "category": 20,
-        "uid": "B07FGKPF8P"
-      },
-      {
-        "id": 1936325,
-        "category": 20,
-        "uid": "B083FPN695"
-      },
-      {
-        "id": 1936521,
-        "category": 20,
-        "uid": "B07ZJMQBVF"
-      },
-      {
-        "id": 1937328,
-        "category": 20,
-        "uid": "B07SSV8LVQ"
-      },
-      {
-        "id": 1941749,
-        "category": 20,
-        "uid": "B08KGW65VF"
-      },
-      {
-        "id": 1942006,
-        "category": 20,
-        "name": "Ori and The Will of The Wisps (Nintendo Switch)",
-        "uid": "B08KG3YYY1"
-      },
-      {
-        "id": 1942550,
-        "category": 20,
-        "name": "Ori and the Will of The Wisps - Nintendo Switch",
-        "uid": "B08KHD9V74"
-      }
-    ],
-    "name": "Ori and the Will of the Wisps",
-    "platforms": [
-      6,
-      49,
-      130,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 211066,
-        "human": "Sep 17, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217321,
-        "human": "Mar 11, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 217322,
-        "human": "Mar 11, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217323,
-        "human": "Nov 10, 2020",
-        "platform": 169,
-        "y": 2020
-      }
-    ],
-    "slug": "ori-and-the-will-of-the-wisps"
-  },
   "37057": {
     "id": 37057,
     "alternative_names": [
@@ -12810,246 +14363,6 @@
     ],
     "slug": "pistol-whip"
   },
-  "119357": {
-    "id": 119357,
-    "alternative_names": [
-      {
-        "id": 40196,
-        "comment": "Working title",
-        "name": "Gods & Monsters"
-      },
-      {
-        "id": 52789,
-        "comment": "Working title",
-        "name": "Gods and Monsters"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1724790,
-        "category": 6,
-        "name": "Gods & Monsters",
-        "uid": "45ee2695d16f40c89b71d943e29f2339",
-        "url": "http://www.pushsquare.com/games/ps4/gods_and_monsters",
-        "year": 2020
-      },
-      {
-        "id": 1724872,
-        "category": 12,
-        "name": "Gods & Monsters",
-        "uid": "c0f23af7f623403b5416373c35a6f6f1",
-        "url": "http://www.nintendolife.com/games/nintendo-switch/gods_and_monsters",
-        "year": 2020
-      },
-      {
-        "id": 1775886,
-        "category": 3,
-        "name": "Gods & Monsters",
-        "uid": "73789",
-        "url": "https://www.giantbomb.com/games/3030-73789/",
-        "year": 2020
-      },
-      {
-        "id": 1806459,
-        "category": 6,
-        "name": "Gods & Monsters",
-        "uid": "c5a4d0147dbfc092ed09425b8c826b1d",
-        "url": "http://www.pushsquare.com/games/ps5/gods_and_monsters"
-      },
-      {
-        "id": 1914531,
-        "category": 14,
-        "name": "Gods & Monsters",
-        "uid": "513001",
-        "url": "https://www.twitch.tv/directory/game/Gods%20%26%20Monsters"
-      },
-      {
-        "id": 1929668,
-        "category": 20,
-        "uid": "B07SL75QDP",
-        "url": "https://amazon.com/dp/B07SL75QDP"
-      },
-      {
-        "id": 1930006,
-        "category": 20,
-        "uid": "B07SFZV3BN",
-        "url": "https://amazon.com/dp/B07SFZV3BN"
-      },
-      {
-        "id": 1933929,
-        "category": 20,
-        "uid": "B07SZW4L3M"
-      },
-      {
-        "id": 1935034,
-        "category": 20,
-        "uid": "B07SK5F16D",
-        "url": "https://amazon.jp/dp/B07SK5F16D"
-      },
-      {
-        "id": 1936789,
-        "category": 20,
-        "uid": "B07SV2GCGF"
-      },
-      {
-        "id": 1937697,
-        "category": 20,
-        "uid": "B07SX9K6XL"
-      },
-      {
-        "id": 1941611,
-        "category": 20,
-        "uid": "B08HW1X453"
-      },
-      {
-        "id": 1942383,
-        "category": 20,
-        "uid": "B08JCWS4TQ"
-      },
-      {
-        "id": 1942426,
-        "category": 20,
-        "uid": "B08JCWQ6VF"
-      },
-      {
-        "id": 1942683,
-        "category": 20,
-        "uid": "B08HTF5KKB"
-      },
-      {
-        "id": 1943104,
-        "category": 20,
-        "name": "Immortals Fenyx Rising - PRE PURCHASE Standard - Xbox One [Digital Code]",
-        "uid": "B08LPKZPTF"
-      },
-      {
-        "id": 1996344,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard | Xbox - Download Code",
-        "uid": "B08MW531VP",
-        "url": "https://amazon.de/dp/B08MW531VP"
-      },
-      {
-        "id": 1996363,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard | Xbox - Download Code",
-        "uid": "B08MW7FNM3",
-        "url": "https://amazon.co.uk/dp/B08MW7FNM3"
-      },
-      {
-        "id": 1996402,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
-        "uid": "B08MW51SFC",
-        "url": "https://amazon.fr/dp/B08MW51SFC"
-      },
-      {
-        "id": 1996613,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard - Switch [Digital Code]",
-        "uid": "B08NDD528K",
-        "url": "https://amazon.com/dp/B08NDD528K"
-      },
-      {
-        "id": 1997111,
-        "category": 20,
-        "name": "Immortals Fenyx Rising PS5",
-        "uid": "B08HZGX937",
-        "url": "https://amazon.es/dp/B08HZGX937"
-      },
-      {
-        "id": 1997149,
-        "category": 20,
-        "name": "Immortals Fenyx Rising (PS5)",
-        "uid": "B08PX34NL3",
-        "url": "https://amazon.co.uk/dp/B08PX34NL3"
-      },
-      {
-        "id": 1997174,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
-        "uid": "B08PQFMH5V",
-        "url": "https://amazon.fr/dp/B08PQFMH5V"
-      },
-      {
-        "id": 1997219,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Download Code",
-        "uid": "B08PQ9H63N",
-        "url": "https://amazon.de/dp/B08PQ9H63N"
-      },
-      {
-        "id": 1997225,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Standard Edition | Xbox - Download Code",
-        "uid": "B08PQFBYV7",
-        "url": "https://amazon.co.uk/dp/B08PQFBYV7"
-      },
-      {
-        "id": 1997275,
-        "category": 20,
-        "name": "Immortals Fenyx Rising - Standard Edition - [PlayStation 5]",
-        "uid": "B08M8GMB7B",
-        "url": "https://amazon.de/dp/B08M8GMB7B"
-      }
-    ],
-    "name": "Immortals Fenyx Rising",
-    "platforms": [
-      6,
-      48,
-      49,
-      130,
-      167,
-      169,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 209940,
-        "human": "Dec 03, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 209942,
-        "human": "Dec 03, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 209943,
-        "human": "Dec 03, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 209944,
-        "human": "Dec 03, 2020",
-        "platform": 167,
-        "y": 2020
-      },
-      {
-        "id": 209947,
-        "human": "Dec 03, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 210480,
-        "human": "Dec 03, 2020",
-        "platform": 170,
-        "y": 2020
-      },
-      {
-        "id": 210481,
-        "human": "Dec 03, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "immortals-fenyx-rising"
-  },
   "119391": {
     "id": 119391,
     "alternative_names": [
@@ -15945,223 +17258,6 @@
     ],
     "slug": "marvels-avengers-exclusive-digital-edition"
   },
-  "133887": {
-    "id": 133887,
-    "alternative_names": [
-      {
-        "id": 33227,
-        "comment": "Other",
-        "name": "Tony Hawk's Pro Skater 1 and 2"
-      },
-      {
-        "id": 33228,
-        "comment": "Other",
-        "name": "Tony Hawk's Pro Skater 1 and 2 Collection"
-      },
-      {
-        "id": 33255,
-        "comment": "Stylized title",
-        "name": "Tony Hawk's\u2122 Pro Skater\u2122 1 + 2"
-      }
-    ],
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1882498,
-        "category": 14,
-        "name": "Tony Hawk's Pro Skater 1+2",
-        "uid": "517497",
-        "url": "https://www.twitch.tv/directory/game/Tony%20Hawk's%20Pro%20Skater%201%2B2"
-      },
-      {
-        "id": 1928434,
-        "category": 20,
-        "uid": "B088J1DJ2G"
-      },
-      {
-        "id": 1928720,
-        "category": 20,
-        "uid": "B088HYTLRG"
-      },
-      {
-        "id": 1934054,
-        "category": 20,
-        "uid": "B088HPL635"
-      },
-      {
-        "id": 1934192,
-        "category": 20,
-        "uid": "B088HR8LBV"
-      },
-      {
-        "id": 1935818,
-        "category": 20,
-        "uid": "B0883NXHKZ",
-        "url": "https://amazon.fr/dp/B0883NXHKZ"
-      },
-      {
-        "id": 1936052,
-        "category": 20,
-        "uid": "B0883MP6CQ",
-        "url": "https://amazon.fr/dp/B0883MP6CQ"
-      },
-      {
-        "id": 1936623,
-        "category": 20,
-        "uid": "B0889BD537"
-      },
-      {
-        "id": 1937912,
-        "category": 20,
-        "uid": "B088HNL147"
-      },
-      {
-        "id": 1941592,
-        "category": 20,
-        "uid": "B08FCXNF8Q"
-      },
-      {
-        "id": 1941688,
-        "category": 20,
-        "uid": "B08FCWTM3W"
-      },
-      {
-        "id": 1942046,
-        "category": 20,
-        "name": "Tony Hawk's Pro Skater 1 & 2 (PS4)",
-        "uid": "B08HJZD4DQ"
-      },
-      {
-        "id": 1942119,
-        "category": 20,
-        "name": "Tony Hawk's Pro Skater 1 + 2: Standard | Xbox - Download Code",
-        "uid": "B08JVMH9C1"
-      },
-      {
-        "id": 1942563,
-        "category": 20,
-        "name": "Tony Hawk's Pro Skater 1 + 2 Standard Edition - Xbox One [Digital Code]",
-        "uid": "B08J4TKLYT"
-      },
-      {
-        "id": 1942726,
-        "category": 20,
-        "uid": "B08FTNP9RJ"
-      },
-      {
-        "id": 1942790,
-        "category": 20,
-        "uid": "B08FTK4VGY"
-      },
-      {
-        "id": 1942861,
-        "category": 20,
-        "uid": "B08F632GRV"
-      },
-      {
-        "id": 1942876,
-        "category": 20,
-        "uid": "B08F612GRQ"
-      }
-    ],
-    "name": "Tony Hawk's Pro Skater 1+2",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 195616,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 195617,
-        "human": "Sep 04, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 195618,
-        "human": "Sep 04, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "tony-hawks-pro-skater-1-plus-2"
-  },
-  "133905": {
-    "id": 133905,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1930701,
-        "category": 20,
-        "uid": "B089M2FPMY",
-        "url": "https://amazon.com/dp/B089M2FPMY"
-      },
-      {
-        "id": 1939217,
-        "category": 14,
-        "name": "Nexomon: Extinction",
-        "uid": "519179",
-        "url": "https://www.twitch.tv/directory/game/Nexomon%3A%20Extinction/"
-      },
-      {
-        "id": 1942895,
-        "category": 20,
-        "uid": "B088G7FJL3"
-      },
-      {
-        "id": 1942922,
-        "category": 20,
-        "uid": "B088G4CCMZ"
-      }
-    ],
-    "name": "Nexomon: Extinction",
-    "platforms": [
-      6,
-      14,
-      48,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 204976,
-        "human": "Aug 28, 2020",
-        "platform": 14,
-        "y": 2020
-      },
-      {
-        "id": 204977,
-        "human": "Aug 28, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 204978,
-        "human": "Aug 28, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 204979,
-        "human": "Aug 28, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 204980,
-        "human": "Aug 28, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "nexomon-extinction"
-  },
   "134070": {
     "id": 134070,
     "alternative_names": [
@@ -18831,172 +19927,6 @@
       }
     ],
     "slug": "the-sims-4-plus-journey-to-batuu"
-  },
-  "139859": {
-    "id": 139859,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1941725,
-        "category": 20,
-        "uid": "B08HVZKZ4V"
-      },
-      {
-        "id": 1941756,
-        "category": 20,
-        "uid": "B08HW1X2G5"
-      },
-      {
-        "id": 1941792,
-        "category": 20,
-        "uid": "B08HVZ3694"
-      },
-      {
-        "id": 1941886,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold (Xbox One/Series X)",
-        "uid": "B08HP4H85L"
-      },
-      {
-        "id": 1941904,
-        "category": 20,
-        "name": "Immortals Fenyx Rising\u00a0 Gold (PS4)",
-        "uid": "B08HP4JJMM"
-      },
-      {
-        "id": 1941998,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold (PS5)",
-        "uid": "B08HP4LVHS"
-      },
-      {
-        "id": 1942225,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition - PlayStation 4",
-        "uid": "B08HTDHX5D"
-      },
-      {
-        "id": 1942358,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition - Nintendo Switch",
-        "uid": "B08HTJ9P55"
-      },
-      {
-        "id": 1942379,
-        "category": 20,
-        "uid": "B08JCYH675"
-      },
-      {
-        "id": 1942466,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition - Xbox One",
-        "uid": "B08HTDCSDB"
-      },
-      {
-        "id": 1942708,
-        "category": 20,
-        "uid": "B08HZH9JLD"
-      },
-      {
-        "id": 1942763,
-        "category": 20,
-        "uid": "B08HZG4NSW"
-      },
-      {
-        "id": 1942795,
-        "category": 20,
-        "uid": "B08HZDZTY9"
-      },
-      {
-        "id": 1943102,
-        "category": 20,
-        "name": "Immortals Fenyx Rising - PRE PURCHASE Gold - Xbox One [Digital Code]",
-        "uid": "B08LPJ228L"
-      },
-      {
-        "id": 1996365,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold | Xbox - Download Code",
-        "uid": "B08MW5FFYL",
-        "url": "https://amazon.de/dp/B08MW5FFYL"
-      },
-      {
-        "id": 1996366,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold | Xbox - Download Code",
-        "uid": "B08MW5H65L",
-        "url": "https://amazon.co.uk/dp/B08MW5H65L"
-      },
-      {
-        "id": 1996376,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
-        "uid": "B08MW45YCQ",
-        "url": "https://amazon.fr/dp/B08MW45YCQ"
-      },
-      {
-        "id": 1997169,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Download Code",
-        "uid": "B08PQ9BGLS",
-        "url": "https://amazon.co.uk/dp/B08PQ9BGLS"
-      },
-      {
-        "id": 1997201,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Download Code",
-        "uid": "B08PQH13NL",
-        "url": "https://amazon.de/dp/B08PQH13NL"
-      },
-      {
-        "id": 1997215,
-        "category": 20,
-        "name": "Immortals Fenyx Rising Gold Edition | Xbox - Code \u00e0 t\u00e9l\u00e9charger",
-        "uid": "B08PQHJ6Z1",
-        "url": "https://amazon.fr/dp/B08PQHJ6Z1"
-      }
-    ],
-    "name": "Immortals Fenyx Rising: Gold Edition",
-    "platforms": [
-      6,
-      48,
-      49,
-      130,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 217671,
-        "human": "Dec 03, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217672,
-        "human": "Dec 03, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217673,
-        "human": "Dec 03, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 217674,
-        "human": "Dec 03, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 217675,
-        "human": "Dec 03, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "immortals-fenyx-rising-gold-edition"
   },
   "140050": {
     "id": 140050,
