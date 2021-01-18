@@ -1,4 +1,272 @@
 {
+  "13548": {
+    "id": 13548,
+    "alternative_names": [
+      {
+        "id": 5546,
+        "comment": "Japanese title",
+        "name": "\u3046\u305f\u308f\u308c\u308b\u3082\u306e \u507d\u308a\u306e\u4eee\u9762"
+      },
+      {
+        "id": 7977,
+        "name": "Utawarerumono: False Mask"
+      },
+      {
+        "id": 19987,
+        "comment": "Other",
+        "name": "Utawarerumono: Itsuwari no Kamen"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 55765,
+        "category": 2,
+        "name": "Utawarerumono: Mask of Deception",
+        "uid": "45940",
+        "url": "https://thegamesdb.net/game.php?id=45940"
+      },
+      {
+        "id": 84326,
+        "category": 6,
+        "name": "Utawarerumono: Mask of Deception",
+        "uid": "da5b291b129df4df2ac8cc81c8af54ed",
+        "url": "http://www.pushsquare.com/games/ps4/utawarerumono_mask_of_deception",
+        "year": 2017
+      },
+      {
+        "id": 111807,
+        "category": 3,
+        "name": "Utawarerumono: Mask Of Deception",
+        "uid": "49369",
+        "url": "https://www.giantbomb.com/games/3030-49369/",
+        "year": 2015
+      },
+      {
+        "id": 399262,
+        "category": 16,
+        "name": "Utawarerumono: Mask of Deception",
+        "uid": "UP2611-CUSA06004_00-UTAWAREITSUKAMEN",
+        "url": "https://www.playstation.com/en-us/games/utawarerumono-mask-of-deception-ps4/",
+        "year": 2017
+      },
+      {
+        "id": 399264,
+        "category": 16,
+        "name": "Utawarerumono: Mask of Deception",
+        "uid": "UP2611-PCSE00959_00-UTAWAREITSUKAMEN",
+        "url": "https://www.playstation.com/en-us/games/utawarerumono-mask-of-deception-psvita/",
+        "year": 2017
+      },
+      {
+        "id": 1843229,
+        "category": 1,
+        "name": "Utawarerumono: Mask of Deception",
+        "uid": "1149550",
+        "url": "https://store.steampowered.com/app/1149550",
+        "year": 2020
+      },
+      {
+        "id": 1924062,
+        "category": 14,
+        "name": "Utawarerumono: Itsuwari no Kamen",
+        "uid": "489682",
+        "url": "https://www.twitch.tv/directory/game/Utawarerumono%3A%20Itsuwari%20no%20Kamen"
+      }
+    ],
+    "name": "Utawarerumono: Mask of Deception",
+    "platforms": [
+      6,
+      9,
+      46,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 38886,
+        "human": "Sep 24, 2015",
+        "platform": 9,
+        "y": 2015
+      },
+      {
+        "id": 38887,
+        "human": "Sep 24, 2015",
+        "platform": 48,
+        "y": 2015
+      },
+      {
+        "id": 38888,
+        "human": "Sep 24, 2015",
+        "platform": 46,
+        "y": 2015
+      },
+      {
+        "id": 106708,
+        "human": "May 23, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 106709,
+        "human": "May 23, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 112204,
+        "human": "May 23, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 112205,
+        "human": "May 23, 2017",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 112206,
+        "human": "May 23, 2017",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 112207,
+        "human": "May 23, 2017",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 184333,
+        "human": "Jan 23, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "utawarerumono-mask-of-deception"
+  },
+  "26834": {
+    "id": 26834,
+    "alternative_names": [
+      {
+        "id": 8049,
+        "comment": "Japanese title",
+        "name": "\u3046\u305f\u308f\u308c\u308b\u3082\u306e \u4e8c\u4eba\u306e\u767d\u7687"
+      },
+      {
+        "id": 20013,
+        "comment": "Other",
+        "name": "Utawarerumono: Futari no Hakuoro"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 109558,
+        "category": 3,
+        "name": "Utawarerumono: Mask Of Truth",
+        "uid": "51676",
+        "url": "https://www.giantbomb.com/games/3030-51676/",
+        "year": 2016
+      },
+      {
+        "id": 198354,
+        "category": 6,
+        "name": "Utawarerumono: Mask of Truth",
+        "uid": "6885d9b328b2c4e6a833f5a0f675751b",
+        "url": "http://www.pushsquare.com/games/ps4/utawarerumono_mask_of_truth",
+        "year": 2017
+      },
+      {
+        "id": 370643,
+        "category": 14,
+        "name": "Utawarerumono: Futari no Hakuoro",
+        "uid": "491968",
+        "url": "https://www.twitch.tv/directory/game/Utawarerumono: Futari no Hakuoro"
+      },
+      {
+        "id": 1843258,
+        "category": 1,
+        "name": "Utawarerumono: Mask of Truth",
+        "uid": "1151440",
+        "url": "https://store.steampowered.com/app/1151440",
+        "year": 2020
+      },
+      {
+        "id": 1934786,
+        "category": 20,
+        "uid": "B01N4PIA32"
+      },
+      {
+        "id": 1935008,
+        "category": 20,
+        "uid": "B01N4PIC40"
+      },
+      {
+        "id": 1935742,
+        "category": 20,
+        "uid": "B01DD28SNM"
+      }
+    ],
+    "name": "Utawarerumono: Mask of Truth",
+    "platforms": [
+      6,
+      9,
+      46,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 64411,
+        "human": "Sep 21, 2016",
+        "platform": 9,
+        "y": 2016
+      },
+      {
+        "id": 64412,
+        "human": "Sep 21, 2016",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 64413,
+        "human": "Sep 21, 2016",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 112202,
+        "human": "Sep 05, 2017",
+        "platform": 46,
+        "y": 2017
+      },
+      {
+        "id": 112203,
+        "human": "Sep 05, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 135120,
+        "human": "Sep 05, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 135121,
+        "human": "Sep 05, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 184334,
+        "human": "Jan 23, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "utawarerumono-mask-of-truth"
+  },
   "133905": {
     "id": 133905,
     "category": 0,
@@ -20855,5 +21123,113 @@
       }
     ],
     "slug": "sam-and-max-save-the-world"
+  },
+  "23322": {
+    "id": 23322,
+    "alternative_names": [
+      {
+        "id": 30958,
+        "comment": "Japanese title",
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u96f6\u306e\u8ecc\u8de1 (PC, PSP)"
+      },
+      {
+        "id": 30959,
+        "comment": "Japanese title",
+        "name": "Eiyuu Densetsu Zero no Kiseki (PC, PSP)"
+      },
+      {
+        "id": 30960,
+        "comment": "Japanese title",
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u96f6\u306e\u8ecc\u8de1 Evolution (PS Vita)"
+      },
+      {
+        "id": 30961,
+        "comment": "Japanese title",
+        "name": "Eiyuu Densetsu Zero no Kiseki Evolution (PS Vita) "
+      },
+      {
+        "id": 30962,
+        "comment": "Japanese title",
+        "name": "\u82f1\u96c4\u4f1d\u8aac \u96f6\u306e\u8ecc\u8de1: \u6539 (PS4)"
+      },
+      {
+        "id": 30963,
+        "comment": "Japanese title",
+        "name": "Eiyuu Densetsu Zero no Kiseki: Kai (PS4)"
+      },
+      {
+        "id": 30964,
+        "name": "The Legend of Heroes: Trails to Zero"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 124842,
+        "category": 3,
+        "name": "Eiyuu Densetsu: Zero no Kiseki",
+        "uid": "35456",
+        "url": "https://www.giantbomb.com/games/3030-35456/",
+        "year": 2010
+      },
+      {
+        "id": 1185941,
+        "category": 14,
+        "name": "Eiyuu Densetsu: Zero no Kiseki",
+        "uid": "31809",
+        "url": "https://www.twitch.tv/directory/game/Eiyuu Densetsu: Zero no Kiseki"
+      },
+      {
+        "id": 1934379,
+        "category": 20,
+        "uid": "B084CBMQYL"
+      },
+      {
+        "id": 1935506,
+        "category": 20,
+        "uid": "B084CBGNT5"
+      },
+      {
+        "id": 1990895,
+        "category": 14,
+        "name": "The Legend of Heroes: Trails of Zero",
+        "uid": "1536443295",
+        "url": "https://www.twitch.tv/directory/game/The%20Legend%20of%20Heroes%3A%20Trails%20of%20Zero"
+      }
+    ],
+    "name": "The Legend of Heroes: Zero no Kiseki",
+    "platforms": [
+      6,
+      38,
+      46,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 55980,
+        "human": "Sep 30, 2010",
+        "platform": 38,
+        "y": 2010
+      },
+      {
+        "id": 55981,
+        "human": "Jun 13, 2013",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 173509,
+        "human": "Oct 18, 2012",
+        "platform": 46,
+        "y": 2012
+      },
+      {
+        "id": 190989,
+        "human": "Apr 23, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "the-legend-of-heroes-zero-no-kiseki"
   }
 }
