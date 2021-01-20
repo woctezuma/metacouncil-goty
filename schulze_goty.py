@@ -317,8 +317,46 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, thresh
     else:
         display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, threshold_n)
         schulze_ranking_for_tied_app_id_group = compute_schulze_ranking(standardized_ballots_for_tied_app_id_group)
+        schulze_ranking_for_tied_app_id_group = unwind_ranking(input_ranking=schulze_ranking_for_tied_app_id_group,
+                                                               app_id_group=app_id_group,
+                                                               standardized_ballots=standardized_ballots,
+                                                               threshold_n=threshold_n)
 
     return schulze_ranking_for_tied_app_id_group
+
+
+def unwind_ranking(input_ranking,
+                   app_id_group,
+                   standardized_ballots,
+                   threshold_n):
+    if len(input_ranking) == 1:
+        print('Tie still there. Trying again with a higher threshold.')
+        output_ranking = try_to_break_ties_in_app_id_group(app_id_group,
+                                                           standardized_ballots,
+                                                           threshold_n=threshold_n + 1)
+    else:
+        print('Tie has been partially broken: {}'.format(input_ranking))
+        output_ranking = dissect_ranking(input_ranking=input_ranking,
+                                         standardized_ballots=standardized_ballots)
+
+    return output_ranking
+
+
+def dissect_ranking(input_ranking,
+                    standardized_ballots):
+    output_ranking = []
+
+    for small_app_id_group in input_ranking:
+        if len(small_app_id_group) == 1:
+            output_ranking.append(small_app_id_group)
+        else:
+            print('Looking more closely at a **strictly** smaller tie: {}'.format(small_app_id_group))
+            untied_ranking = try_to_break_ties_in_app_id_group(small_app_id_group,
+                                                               standardized_ballots,
+                                                               threshold_n=None)
+            output_ranking += untied_ranking
+
+    return output_ranking
 
 
 def display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, threshold_n):
