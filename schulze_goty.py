@@ -295,17 +295,11 @@ def build_standardized_ballots_for_tie(app_id_group, standardized_ballots, thres
     return standardized_ballots_for_tied_app_id_group
 
 
-def get_default_threshold(num_tied_app_ids):
-    threshold_n = 1
-
-    return threshold_n
-
-
 def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, threshold_n=None):
     num_tied_app_ids = len(app_id_group)
 
     if threshold_n is None:
-        threshold_n = get_default_threshold(num_tied_app_ids=num_tied_app_ids)
+        threshold_n = 1
 
     standardized_ballots_for_tied_app_id_group = build_standardized_ballots_for_tie(app_id_group,
                                                                                     standardized_ballots,
