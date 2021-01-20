@@ -314,16 +314,16 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, thresh
     if len(standardized_ballots_for_tied_app_id_group) == 0:
         schulze_ranking_for_tied_app_id_group = [app_id_group]
     else:
-        display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group)
+        display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, threshold_n)
         schulze_ranking_for_tied_app_id_group = compute_schulze_ranking(standardized_ballots_for_tied_app_id_group)
 
     return schulze_ranking_for_tied_app_id_group
 
 
-def display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group):
+def display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, threshold_n):
     positions = get_positions_for_every_voter(standardized_ballots_for_tied_app_id_group)
 
-    print('\nInfo regarding tie with appIDs in {}'.format(app_id_group))
+    print('\nInfo regarding tie with appIDs in {} with threshold = {}'.format(app_id_group, threshold_n))
 
     for position in positions:
         ballots_at_position = [
