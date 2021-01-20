@@ -269,7 +269,6 @@ def build_standardized_ballots_for_tie(app_id_group, standardized_ballots, thres
         threshold_n = 1
 
     standardized_ballots_for_tied_app_id_group = dict()
-    num_tied_app_ids = len(app_id_group)
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]['ballots']
@@ -297,6 +296,8 @@ def build_standardized_ballots_for_tie(app_id_group, standardized_ballots, thres
 
 
 def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, threshold_n=None):
+    num_tied_app_ids = len(app_id_group)
+
     if threshold_n is None:
         threshold_n = 1
 
