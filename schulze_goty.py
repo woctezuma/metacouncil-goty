@@ -264,7 +264,7 @@ def get_positions_for_every_voter(ballots_for_every_voter):
     return sorted(positions_for_every_voter)
 
 
-def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, threshold_n=None):
+def build_standardized_ballots_for_tie(app_id_group, standardized_ballots, threshold_n=None):
     if threshold_n is None:
         threshold_n = 1
 
@@ -292,6 +292,17 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, thresh
             for i in range(len(new_ballots), len(current_ballots)):
                 position = i + 1
                 standardized_ballots_for_tied_app_id_group[voter_name]['ballots'][position] = None
+
+    return standardized_ballots_for_tied_app_id_group
+
+
+def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, threshold_n=None):
+    if threshold_n is None:
+        threshold_n = 1
+
+    standardized_ballots_for_tied_app_id_group = build_standardized_ballots_for_tie(app_id_group,
+                                                                                    standardized_ballots,
+                                                                                    threshold_n=threshold_n)
 
     if len(standardized_ballots_for_tied_app_id_group) == 0:
         schulze_ranking_for_tied_app_id_group = [app_id_group]
