@@ -264,10 +264,12 @@ def get_positions_for_every_voter(ballots_for_every_voter):
     return sorted(positions_for_every_voter)
 
 
-def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots):
+def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, threshold_n=None):
+    if threshold_n is None:
+        threshold_n = 1
+
     standardized_ballots_for_tied_app_id_group = dict()
     num_tied_app_ids = len(app_id_group)
-    threshold_n = 1
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]['ballots']
