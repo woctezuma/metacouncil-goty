@@ -312,6 +312,7 @@ def try_to_break_ties_in_app_id_group(app_id_group, standardized_ballots, thresh
                                                                                     threshold_n=threshold_n)
 
     if len(standardized_ballots_for_tied_app_id_group) == 0:
+        print('Cannot break the tie.')
         schulze_ranking_for_tied_app_id_group = [app_id_group]
     else:
         display_info_about_tie(app_id_group, standardized_ballots_for_tied_app_id_group, threshold_n)
