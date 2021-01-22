@@ -1,4 +1,3819 @@
 {
+  "26673": {
+    "id": 26673,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1455414,
+        "category": 3,
+        "name": "Omori",
+        "uid": "68038",
+        "url": "https://www.giantbomb.com/games/3030-68038/"
+      },
+      {
+        "id": 1770883,
+        "category": 1,
+        "name": "OMORI",
+        "uid": "1150690",
+        "url": "https://store.steampowered.com/app/1150690",
+        "year": 2019
+      },
+      {
+        "id": 1927520,
+        "category": 14,
+        "name": "Omori",
+        "uid": "505786",
+        "url": "https://www.twitch.tv/directory/game/Omori"
+      }
+    ],
+    "name": "OMORI",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 220146,
+        "human": "Dec 25, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "omori"
+  },
+  "114009": {
+    "id": 114009,
+    "alternative_names": [
+      {
+        "id": 52326,
+        "comment": "Other Alias",
+        "name": "Project Z"
+      },
+      {
+        "id": 52327,
+        "comment": "Working title",
+        "name": "Dragon Ball Game - Project Z"
+      },
+      {
+        "id": 52328,
+        "comment": "Japanese title - original",
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30dc\u30fc\u30eb Z KAKAROT"
+      },
+      {
+        "id": 52329,
+        "comment": "Japanese title - romanization",
+        "name": "Doragon B\u014dru Zetto Kakarotto"
+      },
+      {
+        "id": 52330,
+        "comment": "Acronym",
+        "name": "DBZ: Kakarot"
+      },
+      {
+        "id": 52331,
+        "comment": "Acronym",
+        "name": "DBZ Kakarot"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1704098,
+        "category": 6,
+        "name": "Dragon Ball: Project Z",
+        "uid": "f41d9eb3cc452229840f47a9484bfe68",
+        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_project_z",
+        "year": 2019
+      },
+      {
+        "id": 1724777,
+        "category": 6,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "9d9a8503234640d91a08b5d1dcfccf5f",
+        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_z_kakarot",
+        "year": 2020
+      },
+      {
+        "id": 1748855,
+        "category": 1,
+        "name": "DRAGON BALL Z: KAKAROT",
+        "uid": "851850",
+        "url": "https://store.steampowered.com/app/851850",
+        "year": 2020
+      },
+      {
+        "id": 1774032,
+        "category": 3,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "71920",
+        "url": "https://www.giantbomb.com/games/3030-71920/",
+        "year": 2020
+      },
+      {
+        "id": 1865402,
+        "category": 20,
+        "uid": "B07SYMCBMX"
+      },
+      {
+        "id": 1865552,
+        "category": 20,
+        "uid": "B07TTT1HCK"
+      },
+      {
+        "id": 1865581,
+        "category": 20,
+        "uid": "B07XJZS6L2"
+      },
+      {
+        "id": 1865661,
+        "category": 20,
+        "uid": "B07T4D3RLF"
+      },
+      {
+        "id": 1865772,
+        "category": 20,
+        "uid": "B07QXYBGT2"
+      },
+      {
+        "id": 1865883,
+        "category": 20,
+        "uid": "B07XS1QM6R"
+      },
+      {
+        "id": 1912840,
+        "category": 14,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "511195",
+        "url": "https://www.twitch.tv/directory/game/Dragon%20Ball%20Z%3A%20Kakarot"
+      },
+      {
+        "id": 1928429,
+        "category": 20,
+        "uid": "B07N3GM3KY",
+        "url": "https://amazon.com/dp/B07N3GM3KY"
+      },
+      {
+        "id": 1928668,
+        "category": 20,
+        "uid": "B07N3GLVZZ",
+        "url": "https://amazon.com/dp/B07N3GLVZZ"
+      },
+      {
+        "id": 1931741,
+        "category": 20,
+        "uid": "B083VB13WT"
+      },
+      {
+        "id": 1932220,
+        "category": 20,
+        "uid": "B07XYRNZW6"
+      },
+      {
+        "id": 1932865,
+        "category": 20,
+        "uid": "B07XM9P4HW"
+      },
+      {
+        "id": 1936289,
+        "category": 20,
+        "uid": "B07R3V112G"
+      },
+      {
+        "id": 1936724,
+        "category": 20,
+        "uid": "B07XL54Z1H"
+      },
+      {
+        "id": 1936981,
+        "category": 20,
+        "uid": "B07T4D3RLD"
+      },
+      {
+        "id": 1937425,
+        "category": 20,
+        "uid": "B07V36ZVVQ"
+      },
+      {
+        "id": 1938187,
+        "category": 20,
+        "uid": "B07T5F8MFS"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 179028,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 179029,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 179030,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot"
+  },
+  "141113": {
+    "id": 141113,
+    "category": 3,
+    "name": "DRAGON BALL Z: KAKAROT - Season Pass",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218694,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218695,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218696,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-season-pass"
+  },
+  "136138": {
+    "id": 136138,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1932050,
+        "category": 20,
+        "uid": "B082K2NMYD"
+      },
+      {
+        "id": 1933085,
+        "category": 20,
+        "uid": "B083V9YFXV"
+      },
+      {
+        "id": 1936784,
+        "category": 20,
+        "uid": "B07XTY3QH7"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT - Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218684,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218685,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218686,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-deluxe-edition"
+  },
+  "136271": {
+    "id": 136271,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1932274,
+        "category": 20,
+        "uid": "B082JRVJKB"
+      },
+      {
+        "id": 1932910,
+        "category": 20,
+        "uid": "B083V9ZHHG"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT - Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218688,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218689,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218690,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-ultimate-edition"
+  },
+  "26950": {
+    "id": 26950,
+    "alternative_names": [
+      {
+        "id": 38002,
+        "comment": "Working title",
+        "name": "The Avengers Project"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104095,
+        "category": 3,
+        "name": "The Avengers Project",
+        "uid": "57912",
+        "url": "https://www.giantbomb.com/games/3030-57912/"
+      },
+      {
+        "id": 1724799,
+        "category": 6,
+        "name": "Marvel's Avengers",
+        "uid": "e3e32d583e321f21a740240932c5f939",
+        "url": "http://www.pushsquare.com/games/ps4/marvels_avengers",
+        "year": 2020
+      },
+      {
+        "id": 1925431,
+        "category": 14,
+        "name": "Marvel's Avengers",
+        "uid": "495321",
+        "url": "https://www.twitch.tv/directory/game/Marvel's%20Avengers"
+      },
+      {
+        "id": 1928457,
+        "category": 20,
+        "uid": "B07SFZX5CH",
+        "url": "https://amazon.com/dp/B07SFZX5CH"
+      },
+      {
+        "id": 1928757,
+        "category": 20,
+        "uid": "B07SK56TM6",
+        "url": "https://amazon.com/dp/B07SK56TM6"
+      },
+      {
+        "id": 1933510,
+        "category": 20,
+        "uid": "B084SCGJQK"
+      },
+      {
+        "id": 1934139,
+        "category": 20,
+        "uid": "B07SYSKPJP"
+      },
+      {
+        "id": 1934577,
+        "category": 20,
+        "uid": "B08777F4WF"
+      },
+      {
+        "id": 1935626,
+        "category": 20,
+        "uid": "B08774C61T"
+      },
+      {
+        "id": 1936023,
+        "category": 20,
+        "uid": "B084SCDR14"
+      },
+      {
+        "id": 1936213,
+        "category": 20,
+        "uid": "B08519H19Y"
+      },
+      {
+        "id": 1936490,
+        "category": 20,
+        "uid": "B07T7NXSC3"
+      },
+      {
+        "id": 1936712,
+        "category": 20,
+        "uid": "B07TDFSRQ4"
+      },
+      {
+        "id": 1936940,
+        "category": 20,
+        "uid": "B084PVVDR5"
+      },
+      {
+        "id": 1937217,
+        "category": 20,
+        "uid": "B084PVRJRQ"
+      },
+      {
+        "id": 1938330,
+        "category": 20,
+        "uid": "B07SYSNFW9"
+      },
+      {
+        "id": 1938384,
+        "category": 20,
+        "uid": "B07SSZZ23S",
+        "url": "https://amazon.de/dp/B07SSZZ23S"
+      },
+      {
+        "id": 1941762,
+        "category": 20,
+        "uid": "B07SVNGBBF"
+      },
+      {
+        "id": 1942967,
+        "category": 20,
+        "name": "Marvel Avengers (PS4)",
+        "uid": "B082YPRGPC"
+      },
+      {
+        "id": 1996642,
+        "category": 20,
+        "name": "Marvel's Avengers (Xbox One) - Import UK",
+        "uid": "B07SVNLBY9",
+        "url": "https://amazon.fr/dp/B07SVNLBY9"
+      }
+    ],
+    "name": "Marvel's Avengers",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 185098,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 185099,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 185100,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 214485,
+        "human": "Sep 04, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 222356,
+        "human": "Q1 2021",
+        "platform": 169,
+        "y": 2021
+      },
+      {
+        "id": 222357,
+        "human": "Q1 2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "marvels-avengers"
+  },
+  "132980": {
+    "id": 132980,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928629,
+        "category": 20,
+        "uid": "B084SCW1Y9",
+        "url": "https://amazon.com/dp/B084SCW1Y9"
+      },
+      {
+        "id": 1929157,
+        "category": 20,
+        "uid": "B084SFN9ZM",
+        "url": "https://amazon.com/dp/B084SFN9ZM"
+      },
+      {
+        "id": 1933263,
+        "category": 20,
+        "uid": "B084SCDR15",
+        "url": "https://amazon.fr/dp/B084SCDR15"
+      },
+      {
+        "id": 1936051,
+        "category": 20,
+        "uid": "B084SCGJQH"
+      },
+      {
+        "id": 1936287,
+        "category": 20,
+        "uid": "B084TKXZ77"
+      },
+      {
+        "id": 1936667,
+        "category": 20,
+        "uid": "B084THBMFL"
+      },
+      {
+        "id": 1937133,
+        "category": 20,
+        "uid": "B084LKB9CL"
+      },
+      {
+        "id": 1942525,
+        "category": 20,
+        "name": "Marvel's Avengers Deluxe Edition - Xbox One [Digital Code]",
+        "uid": "B08GMG87V8"
+      }
+    ],
+    "name": "Marvel's Avengers: Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 208757,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208758,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208759,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-deluxe-edition"
+  },
+  "138179": {
+    "id": 138179,
+    "category": 2,
+    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 218720,
+        "human": "Dec 08, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218721,
+        "human": "Dec 08, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 218722,
+        "human": "Dec 08, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218723,
+        "human": "Dec 08, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 218724,
+        "human": "Dec 08, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218725,
+        "human": "Dec 08, 2020",
+        "platform": 170,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-kate-bishop-taking-aim"
+  },
+  "133844": {
+    "id": 133844,
+    "category": 0,
+    "name": "Marvel's Avengers: Exclusive Digital Edition",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 208754,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-exclusive-digital-edition"
+  },
+  "9608": {
+    "id": 9608,
+    "alternative_names": [
+      {
+        "id": 36072,
+        "comment": "Alternative spelling",
+        "name": "Mount and Blade 2: Bannerlord"
+      },
+      {
+        "id": 36897,
+        "comment": "Alternative spelling",
+        "name": "Mount & Blade 2: Bannerlord"
+      },
+      {
+        "id": 48167,
+        "comment": "Other Alias",
+        "name": "Mount and Blade 2"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 120802,
+        "category": 3,
+        "name": "Mount & Blade II: Bannerlord",
+        "uid": "39861",
+        "url": "https://www.giantbomb.com/games/3030-39861/"
+      },
+      {
+        "id": 189078,
+        "category": 10,
+        "name": "Mount & Blade II: Bannerlord",
+        "uid": "UCbw5GcTiBrBi9Cdc4U5oXTw",
+        "url": "https://gaming.youtube.com/game/UCbw5GcTiBrBi9Cdc4U5oXTw"
+      },
+      {
+        "id": 249026,
+        "category": 14,
+        "name": "Mount & Blade II: Bannerlord",
+        "uid": "68351",
+        "url": "https://www.twitch.tv/directory/game/Mount & Blade II: Bannerlord"
+      },
+      {
+        "id": 1859556,
+        "category": 1,
+        "name": "Mount & Blade II: Bannerlord",
+        "uid": "261550",
+        "url": "https://store.steampowered.com/app/261550",
+        "year": 2020
+      }
+    ],
+    "name": "Mount & Blade II: Bannerlord",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 192003,
+        "human": "Mar 30, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "mount-and-blade-ii-bannerlord"
+  },
+  "127842": {
+    "id": 127842,
+    "alternative_names": [
+      {
+        "id": 50168,
+        "comment": "Korean title",
+        "name": "\uc2a4\uceec"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1840350,
+        "category": 1,
+        "name": "Skul: The Hero Slayer",
+        "uid": "1147560",
+        "url": "https://store.steampowered.com/app/1147560",
+        "year": 1
+      },
+      {
+        "id": 1857826,
+        "category": 3,
+        "name": "Skul: The Hero Slayer",
+        "uid": "76245",
+        "url": "https://www.giantbomb.com/games/3030-76245/"
+      },
+      {
+        "id": 1916813,
+        "category": 14,
+        "name": "Skul: The Hero Slayer",
+        "uid": "515386",
+        "url": "https://www.twitch.tv/directory/game/Skul%3A%20The%20Hero%20Slayer"
+      }
+    ],
+    "name": "Skul: The Hero Slayer",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 225707,
+        "human": "Jan 21, 2021",
+        "platform": 6,
+        "y": 2021
+      }
+    ],
+    "slug": "skul-the-hero-slayer"
+  },
+  "125175": {
+    "id": 125175,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1806694,
+        "category": 3,
+        "name": "World of Warcraft: Shadowlands",
+        "uid": "75882",
+        "url": "https://www.giantbomb.com/games/3030-75882/",
+        "year": 2020
+      }
+    ],
+    "name": "World of Warcraft: Shadowlands",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 216137,
+        "human": "Nov 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 216138,
+        "human": "Nov 23, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "world-of-warcraft-shadowlands"
+  },
+  "136998": {
+    "id": 136998,
+    "alternative_names": [
+      {
+        "id": 39628,
+        "comment": "Abbreviation",
+        "name": "WoW: SL CE"
+      }
+    ],
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1941866,
+        "category": 20,
+        "uid": "B08CL88NHP"
+      }
+    ],
+    "name": "World of Warcraft: Shadowlands - Collector's Edition",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 222715,
+        "human": "Nov 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 222716,
+        "human": "Nov 23, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "world-of-warcraft-shadowlands-collectors-edition"
+  },
+  "124993": {
+    "id": 124993,
+    "category": 2,
+    "name": "Stellaris: Federations",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 191466,
+        "human": "Mar 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "stellaris-federations"
+  },
+  "125277": {
+    "id": 125277,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1850342,
+        "category": 1,
+        "name": "Alwa's Legacy",
+        "uid": "1205900",
+        "url": "https://store.steampowered.com/app/1205900",
+        "year": 2020
+      },
+      {
+        "id": 1883270,
+        "category": 14,
+        "name": "Alwa's Legacy",
+        "uid": "518269",
+        "url": "https://www.twitch.tv/directory/game/Alwa's%20Legacy"
+      }
+    ],
+    "name": "Alwa's Legacy",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 199087,
+        "human": "Jun 17, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 211753,
+        "human": "Sep 29, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "alwas-legacy"
+  },
+  "3277": {
+    "id": 3277,
+    "alternative_names": [
+      {
+        "id": 31202,
+        "comment": "Japanese title",
+        "name": "\u30e9\u30b9\u30c8"
+      },
+      {
+        "id": 50172,
+        "comment": "Korean title",
+        "name": "\ub7ec\uc2a4\ud2b8"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 12325,
+        "category": 1,
+        "name": "Rust",
+        "uid": "252490"
+      },
+      {
+        "id": 117972,
+        "category": 3,
+        "name": "Rust",
+        "uid": "42984",
+        "url": "https://www.giantbomb.com/games/3030-42984/",
+        "year": 2013
+      },
+      {
+        "id": 190271,
+        "category": 10,
+        "name": "Rust",
+        "uid": "UCzX-kfpwMlOg7nso9hFSR3w",
+        "url": "https://gaming.youtube.com/game/UCzX-kfpwMlOg7nso9hFSR3w"
+      },
+      {
+        "id": 245072,
+        "category": 14,
+        "name": "Rust",
+        "uid": "263490",
+        "url": "https://www.twitch.tv/directory/game/Rust"
+      },
+      {
+        "id": 1828052,
+        "category": 6,
+        "name": "Rust",
+        "uid": "72f97067182b105b849e4d74a43c3efb",
+        "url": "http://www.pushsquare.com/games/ps4/rust",
+        "year": 2020
+      }
+    ],
+    "name": "Rust",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 136668,
+        "human": "Feb 08, 2018",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 136669,
+        "human": "Feb 08, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 136670,
+        "human": "Feb 08, 2018",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 179597,
+        "human": "2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 181659,
+        "human": "2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "rust"
+  },
+  "134283": {
+    "id": 134283,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1981122,
+        "category": 14,
+        "name": "Age of Rust",
+        "uid": "628270034",
+        "url": "https://www.twitch.tv/directory/game/Age%20of%20Rust"
+      }
+    ],
+    "name": "Age of Rust",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 197620,
+        "human": "Dec 01, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 197621,
+        "human": "Dec 01, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "age-of-rust"
+  },
+  "26870": {
+    "id": 26870,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101415,
+        "category": 3,
+        "name": "Necrobarista",
+        "uid": "60629",
+        "url": "https://www.giantbomb.com/games/3030-60629/",
+        "year": 2017
+      },
+      {
+        "id": 654501,
+        "category": 1,
+        "name": "Necrobarista",
+        "uid": "725270",
+        "url": "https://store.steampowered.com/app/725270",
+        "year": 2018
+      },
+      {
+        "id": 1417443,
+        "category": 6,
+        "name": "Necrobarista",
+        "uid": "5ae8381e350dae81914b3d2140411c57",
+        "url": "http://www.pushsquare.com/games/ps4/necrobarista",
+        "year": 2019
+      },
+      {
+        "id": 1453781,
+        "category": 12,
+        "name": "Necrobarista",
+        "uid": "5281be29186ca66d4556104a675aac0a",
+        "url": "http://www.nintendolife.com/games/switch-eshop/necrobarista",
+        "year": 2019
+      },
+      {
+        "id": 1593471,
+        "category": 19,
+        "name": "Necrobarista",
+        "uid": "2f9547--66740",
+        "url": "https://www.gamespress.com/product.asp?c=2f9547--66740",
+        "year": 2019
+      },
+      {
+        "id": 1926984,
+        "category": 14,
+        "name": "Necrobarista",
+        "uid": "498176",
+        "url": "https://www.twitch.tv/directory/game/Necrobarista"
+      }
+    ],
+    "name": "Necrobarista",
+    "platforms": [
+      6,
+      39,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 204409,
+        "human": "Jul 22, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 204620,
+        "human": "Jul 17, 2020",
+        "platform": 39,
+        "y": 2020
+      },
+      {
+        "id": 220080,
+        "human": "2021",
+        "platform": 130,
+        "y": 2021
+      },
+      {
+        "id": 220081,
+        "human": "2021",
+        "platform": 48,
+        "y": 2021
+      }
+    ],
+    "slug": "necrobarista"
+  },
+  "26673": {
+    "id": 26673,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1455414,
+        "category": 3,
+        "name": "Omori",
+        "uid": "68038",
+        "url": "https://www.giantbomb.com/games/3030-68038/"
+      },
+      {
+        "id": 1770883,
+        "category": 1,
+        "name": "OMORI",
+        "uid": "1150690",
+        "url": "https://store.steampowered.com/app/1150690",
+        "year": 2019
+      },
+      {
+        "id": 1927520,
+        "category": 14,
+        "name": "Omori",
+        "uid": "505786",
+        "url": "https://www.twitch.tv/directory/game/Omori"
+      }
+    ],
+    "name": "OMORI",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 220146,
+        "human": "Dec 25, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "omori"
+  },
+  "26869": {
+    "id": 26869,
+    "alternative_names": [
+      {
+        "id": 28926,
+        "comment": "Japanese title",
+        "name": "Kyofu no Sekai"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 209253,
+        "category": 3,
+        "name": "World of Horror",
+        "uid": "64436",
+        "url": "https://www.giantbomb.com/games/3030-64436/"
+      },
+      {
+        "id": 1341048,
+        "category": 6,
+        "name": "World of Horror",
+        "uid": "885771c229bcc9dbcd86f620a20cf102",
+        "url": "http://www.pushsquare.com/games/ps4/world_of_horror",
+        "year": 2019
+      },
+      {
+        "id": 1347003,
+        "category": 12,
+        "name": "World of Horror",
+        "uid": "38b4fe0336b47a9ac578e5f73af3b313",
+        "url": "http://www.nintendolife.com/games/switch-eshop/world_of_horror",
+        "year": 2019
+      },
+      {
+        "id": 1592643,
+        "category": 1,
+        "name": "WORLD OF HORROR",
+        "uid": "913740",
+        "url": "https://store.steampowered.com/app/913740",
+        "year": 0
+      },
+      {
+        "id": 1593492,
+        "category": 19,
+        "name": "World of Horror",
+        "uid": "6a2d8f--66531",
+        "url": "https://www.gamespress.com/product.asp?c=6a2d8f--66531",
+        "year": 2019
+      },
+      {
+        "id": 1927280,
+        "category": 14,
+        "name": "World of Horror",
+        "uid": "501951",
+        "url": "https://www.twitch.tv/directory/game/World%20of%20Horror"
+      }
+    ],
+    "name": "World of Horror",
+    "platforms": [
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 185643,
+        "human": "Feb 20, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 214374,
+        "human": "May 05, 2020",
+        "platform": 14,
+        "y": 2020
+      }
+    ],
+    "slug": "world-of-horror"
+  },
+  "140517": {
+    "id": 140517,
+    "category": 2,
+    "name": "Gears 5 - Hivebusters",
+    "platforms": [
+      6,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 221389,
+        "human": "Dec 15, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 221390,
+        "human": "Dec 15, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "gears-5-hivebusters"
+  },
+  "107315": {
+    "id": 107315,
+    "alternative_names": [
+      {
+        "id": 22946,
+        "comment": "Other",
+        "name": "Below Zero"
+      }
+    ],
+    "category": 4,
+    "external_games": [
+      {
+        "id": 1597030,
+        "category": 19,
+        "name": "Subnautica: Below Zero",
+        "uid": "cfe767--66896",
+        "url": "https://www.gamespress.com/product.asp?c=cfe767--66896"
+      },
+      {
+        "id": 1704132,
+        "category": 1,
+        "name": "Subnautica: Below Zero",
+        "uid": "848450",
+        "url": "https://store.steampowered.com/app/848450",
+        "year": 2019
+      },
+      {
+        "id": 1708275,
+        "category": 10,
+        "name": "Subnautica: Below Zero",
+        "uid": "UCmUB40JrJomjYtJBrs-1bUA",
+        "url": "https://www.youtube.com/watch?v=UCmUB40JrJomjYtJBrs-1bUA"
+      },
+      {
+        "id": 1709971,
+        "category": 14,
+        "name": "Subnautica: Below Zero",
+        "uid": "511212",
+        "url": "https://www.twitch.tv/directory/game/Subnautica: Below Zero"
+      },
+      {
+        "id": 1746810,
+        "category": 3,
+        "name": "Subnautica: Below Zero",
+        "uid": "71937",
+        "url": "https://www.giantbomb.com/games/3030-71937/",
+        "year": 2019
+      }
+    ],
+    "name": "Subnautica: Below Zero",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 157815,
+        "human": "TBD",
+        "platform": 48
+      },
+      {
+        "id": 157816,
+        "human": "TBD",
+        "platform": 49
+      },
+      {
+        "id": 164391,
+        "human": "Jan 30, 2019",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 164392,
+        "human": "Jan 30, 2019",
+        "platform": 14,
+        "y": 2019
+      },
+      {
+        "id": 206953,
+        "human": "2021",
+        "platform": 130,
+        "y": 2021
+      }
+    ],
+    "slug": "subnautica-below-zero"
+  },
+  "37001": {
+    "id": 37001,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 102136,
+        "category": 3,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "59902",
+        "url": "https://www.giantbomb.com/games/3030-59902/"
+      },
+      {
+        "id": 1593474,
+        "category": 19,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "b8129f--61707",
+        "url": "https://www.gamespress.com/product.asp?c=b8129f--61707",
+        "year": 2019
+      },
+      {
+        "id": 1838397,
+        "category": 1,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "1057090",
+        "url": "https://store.steampowered.com/app/1057090",
+        "year": 2020
+      },
+      {
+        "id": 1926574,
+        "category": 14,
+        "name": "Ori and the Will of the Wisps",
+        "uid": "497412",
+        "url": "https://www.twitch.tv/directory/game/Ori%20and%20the%20Will%20of%20the%20Wisps"
+      },
+      {
+        "id": 1928566,
+        "category": 20,
+        "uid": "B07DJRPZWY",
+        "url": "https://amazon.com/dp/B07DJRPZWY"
+      },
+      {
+        "id": 1932730,
+        "category": 20,
+        "uid": "B082PBZ7GH"
+      },
+      {
+        "id": 1934098,
+        "category": 20,
+        "uid": "B07FGKPF8P"
+      },
+      {
+        "id": 1936325,
+        "category": 20,
+        "uid": "B083FPN695"
+      },
+      {
+        "id": 1936521,
+        "category": 20,
+        "uid": "B07ZJMQBVF"
+      },
+      {
+        "id": 1937328,
+        "category": 20,
+        "uid": "B07SSV8LVQ"
+      },
+      {
+        "id": 1941749,
+        "category": 20,
+        "uid": "B08KGW65VF"
+      },
+      {
+        "id": 1942006,
+        "category": 20,
+        "name": "Ori and The Will of The Wisps (Nintendo Switch)",
+        "uid": "B08KG3YYY1"
+      },
+      {
+        "id": 1942550,
+        "category": 20,
+        "name": "Ori and the Will of The Wisps - Nintendo Switch",
+        "uid": "B08KHD9V74"
+      }
+    ],
+    "name": "Ori and the Will of the Wisps",
+    "platforms": [
+      6,
+      49,
+      130,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 211066,
+        "human": "Sep 17, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217321,
+        "human": "Mar 11, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 217322,
+        "human": "Mar 11, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217323,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      }
+    ],
+    "slug": "ori-and-the-will-of-the-wisps"
+  },
+  "107218": {
+    "id": 107218,
+    "alternative_names": [
+      {
+        "id": 22885,
+        "comment": "Working title",
+        "name": "Codename Kartoffel"
+      },
+      {
+        "id": 36292,
+        "comment": "Alternative spelling",
+        "name": "Desperados 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1478055,
+        "category": 6,
+        "name": "Desperados III",
+        "uid": "163b40cc93e994b04f2ba0d99ecf8784",
+        "url": "http://www.pushsquare.com/games/ps4/desperados_iii",
+        "year": 2019
+      },
+      {
+        "id": 1486071,
+        "category": 1,
+        "name": "Desperados III",
+        "uid": "610370",
+        "url": "https://store.steampowered.com/app/610370",
+        "year": 2019
+      },
+      {
+        "id": 1682841,
+        "category": 3,
+        "name": "Desperados III",
+        "uid": "69956",
+        "url": "https://www.giantbomb.com/games/3030-69956/",
+        "year": 2019
+      },
+      {
+        "id": 1911528,
+        "category": 14,
+        "name": "Desperados III",
+        "uid": "509212",
+        "url": "https://www.twitch.tv/directory/game/Desperados%20III"
+      },
+      {
+        "id": 1928943,
+        "category": 20,
+        "uid": "B07GPSFW14",
+        "url": "https://amazon.com/dp/B07GPSFW14"
+      },
+      {
+        "id": 1929521,
+        "category": 20,
+        "uid": "B07GPP7P7P",
+        "url": "https://amazon.com/dp/B07GPP7P7P"
+      },
+      {
+        "id": 1932184,
+        "category": 20,
+        "uid": "B07GPS5411"
+      },
+      {
+        "id": 1932252,
+        "category": 20,
+        "uid": "B0896B2JX7"
+      },
+      {
+        "id": 1933499,
+        "category": 20,
+        "uid": "B07GQ89JKC"
+      },
+      {
+        "id": 1936304,
+        "category": 20,
+        "uid": "B07GQ45SNP"
+      },
+      {
+        "id": 1937585,
+        "category": 20,
+        "uid": "B088TV8J9R"
+      }
+    ],
+    "name": "Desperados III",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 193466,
+        "human": "Jun 16, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 193467,
+        "human": "Jun 16, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 193468,
+        "human": "Jun 16, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "desperados-iii"
+  },
+  "134706": {
+    "id": 134706,
+    "alternative_names": [
+      {
+        "id": 36219,
+        "comment": "Alternative spelling",
+        "name": "Star Wars Squadrons"
+      },
+      {
+        "id": 50183,
+        "comment": "Korean title",
+        "name": "\uc2a4\ud0c0\uc6cc\uc988: \uc2a4\ucffc\ub4dc\ub860"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1883060,
+        "category": 14,
+        "name": "Star Wars: Squadrons",
+        "uid": "518059",
+        "url": "https://www.twitch.tv/directory/game/Star%20Wars%3A%20Squadrons"
+      },
+      {
+        "id": 1928419,
+        "category": 20,
+        "uid": "B089F7Y472"
+      },
+      {
+        "id": 1928516,
+        "category": 20,
+        "uid": "B089F8R7SQ"
+      },
+      {
+        "id": 1933467,
+        "category": 20,
+        "uid": "B08B6QBD53"
+      },
+      {
+        "id": 1934069,
+        "category": 20,
+        "uid": "B089ZF96YG"
+      },
+      {
+        "id": 1934163,
+        "category": 20,
+        "uid": "B089ZDZ6B8"
+      },
+      {
+        "id": 1934737,
+        "category": 20,
+        "uid": "B08B8BZFCC"
+      },
+      {
+        "id": 1935408,
+        "category": 20,
+        "uid": "B08BG4175N"
+      },
+      {
+        "id": 1935457,
+        "category": 20,
+        "uid": "B08BG2VBKZ"
+      },
+      {
+        "id": 1935851,
+        "category": 20,
+        "uid": "B08B6PJDN8"
+      },
+      {
+        "id": 1935945,
+        "category": 20,
+        "uid": "B089X3H36B"
+      },
+      {
+        "id": 1936158,
+        "category": 20,
+        "uid": "B08B9BM1J4"
+      },
+      {
+        "id": 1936869,
+        "category": 20,
+        "uid": "B089Z64936"
+      },
+      {
+        "id": 1938250,
+        "category": 20,
+        "uid": "B089ZFHRCB"
+      },
+      {
+        "id": 1941752,
+        "category": 20,
+        "uid": "B08B7KJB7D"
+      },
+      {
+        "id": 1941813,
+        "category": 20,
+        "uid": "B08HT5G1TT"
+      },
+      {
+        "id": 1942040,
+        "category": 20,
+        "name": "STAR WARS SQUADRONS (Pre-Purchase) | Xbox One - Download Code",
+        "uid": "B08HSLKXTX"
+      },
+      {
+        "id": 1942534,
+        "category": 20,
+        "name": "Star Wars Squadrons - Steam PC [Online Game Code]",
+        "uid": "B08GPKC3TW"
+      },
+      {
+        "id": 1942629,
+        "category": 20,
+        "name": "Star Wars: Squadrons - Xbox One [Digital Code]",
+        "uid": "B08J4V4H6J"
+      },
+      {
+        "id": 1942844,
+        "category": 20,
+        "uid": "B08HSP3PRV"
+      }
+    ],
+    "name": "Star Wars: Squadrons",
+    "platforms": [
+      6,
+      48,
+      49,
+      162,
+      163,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 200105,
+        "human": "Oct 02, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 200106,
+        "human": "Oct 02, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 200107,
+        "human": "Oct 02, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 212797,
+        "human": "Oct 02, 2020",
+        "platform": 165,
+        "y": 2020
+      },
+      {
+        "id": 212798,
+        "human": "Oct 02, 2020",
+        "platform": 162,
+        "y": 2020
+      },
+      {
+        "id": 212799,
+        "human": "Oct 02, 2020",
+        "platform": 163,
+        "y": 2020
+      }
+    ],
+    "slug": "star-wars-squadrons"
+  },
+  "36550": {
+    "id": 36550,
+    "alternative_names": [
+      {
+        "id": 38247,
+        "comment": "Japanese title - original",
+        "name": "\u9f8d\u304c\u5982\u304f7 \u5149\u3068\u95c7\u306e\u884c\u65b9"
+      },
+      {
+        "id": 38248,
+        "comment": "Alternative title",
+        "name": "Yakuza 7"
+      },
+      {
+        "id": 38249,
+        "comment": "Japanese title - romanization",
+        "name": "Ryu ga Gotoku 7: Hikari to Yami no Yukue"
+      },
+      {
+        "id": 50185,
+        "comment": "Korean title",
+        "name": "\uc6a9\uacfc \uac19\uc7747 \ube5b\uacfc \uc5b4\ub460\uc758 \ud589\ubc29"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1755010,
+        "category": 6,
+        "name": "Yakuza: Like a Dragon",
+        "uid": "a71ceb650c0d6f4d0bbae0b879049719",
+        "url": "http://www.pushsquare.com/games/ps4/yakuza_like_a_dragon",
+        "year": 2020
+      },
+      {
+        "id": 1775006,
+        "category": 3,
+        "name": "Ry\u016b ga Gotoku 7",
+        "uid": "72901",
+        "url": "https://www.giantbomb.com/games/3030-72901/",
+        "year": 2020
+      },
+      {
+        "id": 1865858,
+        "category": 20,
+        "uid": "B07WZS3X28"
+      },
+      {
+        "id": 1865934,
+        "category": 20,
+        "uid": "B07X61KJ8Y"
+      },
+      {
+        "id": 1913710,
+        "category": 14,
+        "name": "Shin Ry\u016b ga Gotoku",
+        "uid": "512121",
+        "url": "https://www.twitch.tv/directory/game/Shin%20Ry%C5%AB%20ga%20Gotoku"
+      },
+      {
+        "id": 1933050,
+        "category": 20,
+        "uid": "B0889CMW4S",
+        "url": "https://amazon.fr/dp/B0889CMW4S"
+      },
+      {
+        "id": 1941512,
+        "category": 20,
+        "uid": "B08KJFW7BC"
+      },
+      {
+        "id": 1941952,
+        "category": 20,
+        "name": "Yakuza: Like A Dragon (PS5)",
+        "uid": "B08KF6T7CG"
+      }
+    ],
+    "name": "Yakuza: Like a Dragon",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 207992,
+        "human": "Jan 16, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 209962,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 217343,
+        "human": "Mar 02, 2021",
+        "platform": 167,
+        "y": 2021
+      },
+      {
+        "id": 217344,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 217345,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217346,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "yakuza-like-a-dragon"
+  },
+  "136492": {
+    "id": 136492,
+    "category": 0,
+    "name": "Yakuza: Like a Dragon - Hero Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 218148,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218149,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218150,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 219652,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 219653,
+        "human": "2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "yakuza-like-a-dragon-hero-edition"
+  },
+  "136493": {
+    "id": 136493,
+    "category": 0,
+    "name": "Yakuza: Like a Dragon - Legendary Hero Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 218145,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218146,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218147,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 219654,
+        "human": "Nov 10, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 219655,
+        "human": "2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "yakuza-like-a-dragon-legendary-hero-edition"
+  },
+  "126098": {
+    "id": 126098,
+    "alternative_names": [
+      {
+        "id": 27124,
+        "name": "Half Life: Alyx"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1836952,
+        "category": 1,
+        "name": "Half-Life: Alyx",
+        "uid": "546560",
+        "url": "https://store.steampowered.com/app/546560",
+        "year": 2020
+      },
+      {
+        "id": 1858005,
+        "category": 3,
+        "name": "Half-Life: Alyx",
+        "uid": "76068",
+        "url": "https://www.giantbomb.com/games/3030-76068/",
+        "year": 2020
+      },
+      {
+        "id": 1916645,
+        "category": 14,
+        "name": "Half-Life: Alyx",
+        "uid": "515195",
+        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx"
+      }
+    ],
+    "name": "Half-Life: Alyx",
+    "platforms": [
+      161,
+      162,
+      163
+    ],
+    "release_dates": [
+      {
+        "id": 189002,
+        "human": "Mar 23, 2020",
+        "platform": 163,
+        "y": 2020
+      },
+      {
+        "id": 189003,
+        "human": "Mar 23, 2020",
+        "platform": 162,
+        "y": 2020
+      },
+      {
+        "id": 189004,
+        "human": "Mar 23, 2020",
+        "platform": 161,
+        "y": 2020
+      }
+    ],
+    "slug": "half-life-alyx"
+  },
+  "135735": {
+    "id": 135735,
+    "alternative_names": [
+      {
+        "id": 37510,
+        "comment": "Alternative title",
+        "name": "THE FINAL HOURS OF HALF-LIFE: ALYX"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1947723,
+        "category": 14,
+        "name": "Half-Life: Alyx - Final Hours",
+        "uid": "2112050882",
+        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx%20-%20Final%20Hours"
+      }
+    ],
+    "name": "Half-Life: Alyx - Final Hours",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203935,
+        "human": "Jul 09, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "half-life-alyx-final-hours"
+  },
+  "1372": {
+    "id": 1372,
+    "alternative_names": [
+      {
+        "id": 13437,
+        "comment": "Other",
+        "name": "CS: Global Offensive"
+      },
+      {
+        "id": 13438,
+        "comment": "Other",
+        "name": "Counterstrike: Global Offensive"
+      },
+      {
+        "id": 30477,
+        "comment": "Japanese title",
+        "name": "\u30ab\u30a6\u30f3\u30bf\u30fc \u30b9\u30c8\u30e9\u30a4\u30af: \u30b0\u30ed\u30fc\u30d0\u30eb\u653b\u52e2"
+      },
+      {
+        "id": 30478,
+        "comment": "Chinese title",
+        "name": "\u53cd\u6050\u7cbe\u82f1\uff1a\u5168\u7403\u653b\u52bf"
+      },
+      {
+        "id": 30479,
+        "comment": "Portuguese title",
+        "name": "Counter-Strike: Ofensiva Global"
+      },
+      {
+        "id": 30480,
+        "comment": "Korean title",
+        "name": "\uce74\uc6b4\ud130 \uc2a4\ud2b8\ub77c\uc774\ud06c"
+      },
+      {
+        "id": 32102,
+        "comment": "Acronym",
+        "name": "CS:GO"
+      },
+      {
+        "id": 32103,
+        "comment": "Acronym",
+        "name": "CSGO"
+      },
+      {
+        "id": 47545,
+        "comment": "Other Alias",
+        "name": "Counterstrike: Global Offensive"
+      },
+      {
+        "id": 47546,
+        "comment": "Other Alias",
+        "name": "CSGO"
+      },
+      {
+        "id": 47547,
+        "comment": "Other Alias",
+        "name": "the bomb has been planted"
+      },
+      {
+        "id": 47548,
+        "comment": "Other Alias",
+        "name": "CS:GO"
+      },
+      {
+        "id": 47549,
+        "comment": "Other Alias",
+        "name": "CS: Global Offensive"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 15147,
+        "category": 1,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "730"
+      },
+      {
+        "id": 38869,
+        "category": 2,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "10771",
+        "url": "https://thegamesdb.net/game.php?id=10771"
+      },
+      {
+        "id": 79263,
+        "category": 6,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "f488871611a234a5604f03001532a580",
+        "url": "http://www.pushsquare.com/games/ps3/counter_strike_global_offensive",
+        "year": 2012
+      },
+      {
+        "id": 124257,
+        "category": 3,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "36113",
+        "url": "https://www.giantbomb.com/games/3030-36113/",
+        "year": 2012
+      },
+      {
+        "id": 189392,
+        "category": 10,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "UCiVA5GplC-m8qzChGuzahRg",
+        "url": "https://gaming.youtube.com/game/UCiVA5GplC-m8qzChGuzahRg"
+      },
+      {
+        "id": 245101,
+        "category": 14,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "32399",
+        "url": "https://www.twitch.tv/directory/game/Counter-Strike: Global Offensive"
+      },
+      {
+        "id": 402578,
+        "category": 16,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "UP2061-NPUB30589_00-HDDBOOTCSGO00001",
+        "url": "https://www.playstation.com/en-us/games/counter-strike-global-offensive-ps3/",
+        "year": 2012
+      },
+      {
+        "id": 1185085,
+        "category": 10,
+        "name": "Counter-Strike Online",
+        "uid": "UCDKcJ-GmhLMkRxPqW9H2n2w",
+        "url": "https://www.youtube.com/watch?v=UCDKcJ-GmhLMkRxPqW9H2n2w"
+      },
+      {
+        "id": 1304873,
+        "category": 18,
+        "name": "Counter-Strike: Global Offensive",
+        "uid": "1480659546",
+        "url": "https://account.xbox.com/en-US/gameinfohub?titleid=1480659546"
+      }
+    ],
+    "name": "Counter-Strike: Global Offensive",
+    "platforms": [
+      3,
+      6,
+      9,
+      12,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 6386,
+        "human": "Aug 21, 2012",
+        "platform": 6,
+        "y": 2012
+      },
+      {
+        "id": 20118,
+        "human": "Aug 21, 2012",
+        "platform": 14,
+        "y": 2012
+      },
+      {
+        "id": 20119,
+        "human": "Aug 21, 2012",
+        "platform": 12,
+        "y": 2012
+      },
+      {
+        "id": 20120,
+        "human": "Aug 21, 2012",
+        "platform": 9,
+        "y": 2012
+      },
+      {
+        "id": 29818,
+        "human": "Aug 21, 2012",
+        "platform": 3,
+        "y": 2012
+      },
+      {
+        "id": 102262,
+        "human": "Aug 21, 2012",
+        "platform": 9,
+        "y": 2012
+      }
+    ],
+    "slug": "counter-strike-global-offensive"
+  },
+  "111837": {
+    "id": 111837,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1615056,
+        "category": 1,
+        "name": "Cloudpunk",
+        "uid": "746850",
+        "url": "https://store.steampowered.com/app/746850",
+        "year": 2019
+      },
+      {
+        "id": 1744205,
+        "category": 3,
+        "name": "Cloudpunk",
+        "uid": "71381",
+        "url": "https://www.giantbomb.com/games/3030-71381/"
+      },
+      {
+        "id": 1912451,
+        "category": 14,
+        "name": "Cloudpunk",
+        "uid": "510649",
+        "url": "https://www.twitch.tv/directory/game/Cloudpunk"
+      },
+      {
+        "id": 1942593,
+        "category": 20,
+        "name": "Cloudpunk\u00a0 - Nintendo Switch Standard Edition",
+        "uid": "B08DKX9HTM"
+      },
+      {
+        "id": 1942685,
+        "category": 20,
+        "name": "Cloudpunk\u00a0 - Xbox One Standard Edition",
+        "uid": "B08DKWC3F8"
+      },
+      {
+        "id": 1942687,
+        "category": 20,
+        "name": "Cloudpunk\u00a0 - PlayStation 4 Standard Edition",
+        "uid": "B08DKVCKLX"
+      },
+      {
+        "id": 1942802,
+        "category": 20,
+        "uid": "B087SCCYDW"
+      },
+      {
+        "id": 1996523,
+        "category": 20,
+        "name": "Cloudpunk (Xbox One)",
+        "uid": "B08N3DLRY9",
+        "url": "https://amazon.co.uk/dp/B08N3DLRY9"
+      }
+    ],
+    "name": "Cloudpunk",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 190539,
+        "human": "Apr 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 215723,
+        "human": "Oct 15, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 215724,
+        "human": "Oct 15, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 215725,
+        "human": "Oct 15, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "cloudpunk"
+  },
+  "25581": {
+    "id": 25581,
+    "alternative_names": [
+      {
+        "id": 24282,
+        "name": "Iron Harvest: 1920+"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186788,
+        "category": 3,
+        "name": "Iron Harvest",
+        "uid": "60872",
+        "url": "https://www.giantbomb.com/games/3030-60872/",
+        "year": 2019
+      },
+      {
+        "id": 197696,
+        "category": 6,
+        "name": "Iron Harvest",
+        "uid": "bc088fda64be9d8336ee53d9db23ccbb",
+        "url": "http://www.pushsquare.com/games/ps4/iron_harvest"
+      },
+      {
+        "id": 1191409,
+        "category": 14,
+        "name": "Iron Harvest",
+        "uid": "498423",
+        "url": "https://www.twitch.tv/directory/game/Iron Harvest"
+      },
+      {
+        "id": 1593752,
+        "category": 19,
+        "name": "Iron Harvest",
+        "uid": "dac2b1--59100",
+        "url": "https://www.gamespress.com/product.asp?c=dac2b1--59100"
+      },
+      {
+        "id": 1738076,
+        "category": 1,
+        "name": "Iron Harvest",
+        "uid": "826630",
+        "url": "https://store.steampowered.com/app/826630",
+        "year": 2020
+      }
+    ],
+    "name": "Iron Harvest",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 166575,
+        "human": "TBD",
+        "platform": 48
+      },
+      {
+        "id": 166576,
+        "human": "TBD",
+        "platform": 49
+      },
+      {
+        "id": 174589,
+        "human": "Sep 01, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "iron-harvest"
+  },
+  "36595": {
+    "id": 36595,
+    "alternative_names": [
+      {
+        "id": 52129,
+        "comment": "Korean title",
+        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
+      },
+      {
+        "id": 52681,
+        "comment": "Japanese title - original",
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186796,
+        "category": 3,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "60864",
+        "url": "https://www.giantbomb.com/games/3030-60864/",
+        "year": 2018
+      },
+      {
+        "id": 1593322,
+        "category": 19,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "054464--61519",
+        "url": "https://www.gamespress.com/product.asp?c=054464--61519",
+        "year": 2018
+      },
+      {
+        "id": 1725109,
+        "category": 12,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "87078262a04f767c035b56e32f0f1983",
+        "url": "http://www.nintendolife.com/games/switch-eshop/sakuna_of_rice_and_ruin"
+      },
+      {
+        "id": 1905804,
+        "category": 14,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "498405",
+        "url": "https://www.twitch.tv/directory/game/Sakuna%3A%20Of%20Rice%20And%20Ruin"
+      },
+      {
+        "id": 1941685,
+        "category": 20,
+        "uid": "B08F51L9HF"
+      },
+      {
+        "id": 1941711,
+        "category": 20,
+        "uid": "B08F4ZQMG2"
+      },
+      {
+        "id": 1942159,
+        "category": 20,
+        "uid": "B08CSH8QK1"
+      },
+      {
+        "id": 1942316,
+        "category": 20,
+        "uid": "B08CSHC19D"
+      },
+      {
+        "id": 1942779,
+        "category": 20,
+        "uid": "B08DPF28KP"
+      },
+      {
+        "id": 1942810,
+        "category": 20,
+        "uid": "B08DPDTWY5"
+      },
+      {
+        "id": 1996602,
+        "category": 20,
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
+        "uid": "B08N5B85MS",
+        "url": "https://amazon.jp/dp/B08N5B85MS"
+      }
+    ],
+    "name": "Sakuna: Of Rice and Ruin",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 217915,
+        "human": "Nov 10, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217916,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217917,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217918,
+        "human": "Nov 20, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217919,
+        "human": "Nov 20, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217920,
+        "human": "Nov 12, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217921,
+        "human": "Nov 12, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "sakuna-of-rice-and-ruin"
+  },
+  "36476": {
+    "id": 36476,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 60,
+        "category": 1,
+        "name": "Hellpoint",
+        "uid": "628670"
+      },
+      {
+        "id": 103066,
+        "category": 3,
+        "name": "Hellpoint",
+        "uid": "58950",
+        "url": "https://www.giantbomb.com/games/3030-58950/",
+        "year": 2018
+      },
+      {
+        "id": 1585144,
+        "category": 6,
+        "name": "Hellpoint",
+        "uid": "1369794235981994cd552b33aa4159ea",
+        "url": "http://www.pushsquare.com/games/ps4/hellpoint",
+        "year": 2019
+      },
+      {
+        "id": 1593461,
+        "category": 19,
+        "name": "Hellpoint",
+        "uid": "b87938--66905",
+        "url": "https://www.gamespress.com/product.asp?c=b87938--66905",
+        "year": 2019
+      },
+      {
+        "id": 1926072,
+        "category": 14,
+        "name": "Hellpoint",
+        "uid": "496421",
+        "url": "https://www.twitch.tv/directory/game/Hellpoint"
+      },
+      {
+        "id": 1941522,
+        "category": 20,
+        "name": "Hellpoint (Nintendo Switch)",
+        "uid": "B08GYY7JG9"
+      },
+      {
+        "id": 1941825,
+        "category": 20,
+        "name": "Hellpoint (PS4)",
+        "uid": "B08GYZ89CD"
+      },
+      {
+        "id": 1942557,
+        "category": 20,
+        "name": "Hellpoint - Nintendo Switch",
+        "uid": "B08HTM7T7P",
+        "url": "https://amazon.jp/dp/B08HTM7T7P"
+      },
+      {
+        "id": 1942653,
+        "category": 20,
+        "name": "Hellpoint - PlayStation 4",
+        "uid": "B08HTJ775R",
+        "url": "https://amazon.jp/dp/B08HTJ775R"
+      }
+    ],
+    "name": "Hellpoint",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 203406,
+        "human": "Jul 30, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 203407,
+        "human": "Jul 30, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 203408,
+        "human": "Jul 30, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 211743,
+        "human": "Jul 30, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 211744,
+        "human": "Jul 30, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 224927,
+        "human": "Feb 25, 2021",
+        "platform": 130,
+        "y": 2021
+      }
+    ],
+    "slug": "hellpoint"
+  },
+  "130063": {
+    "id": 130063,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1856370,
+        "category": 1,
+        "name": "Hellpoint: The Thespian Feast",
+        "uid": "1243140",
+        "url": "https://store.steampowered.com/app/1243140",
+        "year": 2020
+      },
+      {
+        "id": 1972320,
+        "category": 14,
+        "name": "Hellpoint: The Thespian Feast",
+        "uid": "1164153610",
+        "url": "https://www.twitch.tv/directory/game/Hellpoint%3A%20The%20Thespian%20Feast"
+      }
+    ],
+    "name": "Hellpoint: The Thespian Feast",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 195925,
+        "human": "Feb 20, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "hellpoint-the-thespian-feast"
+  },
+  "115036": {
+    "id": 115036,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1704965,
+        "category": 1,
+        "name": "Ring of Pain",
+        "uid": "998740",
+        "url": "https://store.steampowered.com/app/998740",
+        "year": 2019
+      },
+      {
+        "id": 1864624,
+        "category": 3,
+        "name": "Ring of Pain",
+        "uid": "77693",
+        "url": "https://www.giantbomb.com/games/3030-77693/",
+        "year": 2020
+      },
+      {
+        "id": 1918164,
+        "category": 14,
+        "name": "Ring of Pain",
+        "uid": "516806",
+        "url": "https://www.twitch.tv/directory/game/Ring%20of%20Pain"
+      }
+    ],
+    "name": "Ring of Pain",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 209105,
+        "human": "Oct 15, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "ring-of-pain"
+  },
+  "132050": {
+    "id": 132050,
+    "alternative_names": [
+      {
+        "id": 31365,
+        "comment": "Formerly known as",
+        "name": "Dungeonhaven"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1859375,
+        "category": 1,
+        "name": "Mortal Shell",
+        "uid": "1110910",
+        "url": "https://store.steampowered.com/app/1110910",
+        "year": 0
+      },
+      {
+        "id": 1864514,
+        "category": 3,
+        "name": "Mortal Shell",
+        "uid": "77803",
+        "url": "https://www.giantbomb.com/games/3030-77803/",
+        "year": 2020
+      },
+      {
+        "id": 1918269,
+        "category": 14,
+        "name": "Mortal Shell",
+        "uid": "516915",
+        "url": "https://www.twitch.tv/directory/game/Mortal%20Shell"
+      },
+      {
+        "id": 1941520,
+        "category": 20,
+        "uid": "B08FTSH9V8"
+      },
+      {
+        "id": 1941600,
+        "category": 20,
+        "uid": "B08HTRY8W2"
+      },
+      {
+        "id": 1941929,
+        "category": 20,
+        "name": "Mortal Shell (PS4)",
+        "uid": "B08G5RTGCF"
+      },
+      {
+        "id": 1941995,
+        "category": 20,
+        "name": "Mortal Shell (PC) Code in Box",
+        "uid": "B08G66VS87"
+      },
+      {
+        "id": 1942007,
+        "category": 20,
+        "name": "Mortal Shell (Xbox One / Xbox Series X)",
+        "uid": "B08G5ZJDB7"
+      },
+      {
+        "id": 1942215,
+        "category": 20,
+        "name": "Mortal Shell - PlayStation 4",
+        "uid": "B08GMXX6PV"
+      },
+      {
+        "id": 1942450,
+        "category": 20,
+        "name": "Mortal Shell - Xbox One",
+        "uid": "B08GMY7B96"
+      },
+      {
+        "id": 1942743,
+        "category": 20,
+        "uid": "B08FTQHZPL"
+      }
+    ],
+    "name": "Mortal Shell",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 205996,
+        "human": "Aug 18, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 205997,
+        "human": "Aug 18, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 205998,
+        "human": "Aug 18, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "mortal-shell"
+  },
+  "121752": {
+    "id": 121752,
+    "alternative_names": [
+      {
+        "id": 50324,
+        "comment": "Korean title",
+        "name": "\uace0\uc2a4\ud2b8\ub7ec\ub108"
+      },
+      {
+        "id": 53793,
+        "comment": "Japanese title - translated",
+        "name": "\u30b4\u30fc\u30b9\u30c8\u30e9\u30f3\u30ca\u30fc"
+      },
+      {
+        "id": 53823,
+        "comment": "Japanese title - original",
+        "name": "\u30b4\u30fc\u30b9\u30c8\u30e9\u30f3\u30ca\u30fc"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1737351,
+        "category": 1,
+        "name": "Ghostrunner",
+        "uid": "1139900",
+        "url": "https://store.steampowered.com/app/1139900",
+        "year": 2020
+      },
+      {
+        "id": 1747039,
+        "category": 12,
+        "name": "Ghostrunner",
+        "uid": "76b85b340a780e0c75f6058cb4e45384",
+        "url": "http://www.nintendolife.com/games/switch-eshop/ghostrunner",
+        "year": 2020
+      },
+      {
+        "id": 1754845,
+        "category": 6,
+        "name": "Ghostrunner",
+        "uid": "986666e9428e2ef392d8b3d904a5d939",
+        "url": "http://www.pushsquare.com/games/ps4/ghostrunner",
+        "year": 2019
+      },
+      {
+        "id": 1778015,
+        "category": 3,
+        "name": "Ghostrunner",
+        "uid": "74796",
+        "url": "https://www.giantbomb.com/games/3030-74796/",
+        "year": 2020
+      },
+      {
+        "id": 1915446,
+        "category": 14,
+        "name": "Ghostrunner",
+        "uid": "513971",
+        "url": "https://www.twitch.tv/directory/game/Ghostrunner"
+      },
+      {
+        "id": 1996351,
+        "category": 20,
+        "name": "Ghostrunner(\u30b4\u30fc\u30b9\u30c8\u30e9\u30f3\u30ca\u30fc) - PS4 \u3010CERO\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u300cZ\u300d\u3011 (\u3010\u521d\u56de\u7279\u5178\u3011\u30aa\u30ea\u30b8\u30ca\u30eb\u30c7\u30b6\u30a4\u30f3\u6b66\u5668DLC\u300c\u5200\u300d(\u30d6\u30eb\u30fc) \u5c01\u5165 & \u30aa\u30ea\u30b8\u30ca\u30eb\u30b5\u30a6\u30f3\u30c9\u30c8\u30e9\u30c3\u30afCD(20\u66f2)\u540c\u68b1 & \u3010Amazon.co.jp\u9650\u5b9a\u7279\u5178\u3011\u30aa\u30ea\u30b8\u30ca\u30eb\u30c7\u30b8\u30bf\u30eb\u58c1\u7d19\u30bb\u30c3\u30c8 \u540c\u68b1)",
+        "uid": "B08MX77XML",
+        "url": "https://amazon.jp/dp/B08MX77XML"
+      },
+      {
+        "id": 1996585,
+        "category": 20,
+        "name": "Ghostrunner(\u30b4\u30fc\u30b9\u30c8\u30e9\u30f3\u30ca\u30fc) - PS4 \u3010CERO\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u300cZ\u300d\u3011 (\u3010\u521d\u56de\u7279\u5178\u3011\u30aa\u30ea\u30b8\u30ca\u30eb\u30c7\u30b6\u30a4\u30f3\u6b66\u5668DLC\u300c\u5200\u300d(\u30d6\u30eb\u30fc) \u5c01\u5165 & \u30aa\u30ea\u30b8\u30ca\u30eb\u30b5\u30a6\u30f3\u30c9\u30c8\u30e9\u30c3\u30afCD(20\u66f2) \u540c\u68b1)",
+        "uid": "B08NBTBBZS",
+        "url": "https://amazon.jp/dp/B08NBTBBZS"
+      },
+      {
+        "id": 1997322,
+        "category": 20,
+        "name": "Ghostrunner Standard - Switch [Digital Code]",
+        "uid": "B08R4M4VNW",
+        "url": "https://amazon.com/dp/B08R4M4VNW"
+      }
+    ],
+    "name": "Ghostrunner",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 210814,
+        "human": "Oct 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 210815,
+        "human": "Oct 27, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 210816,
+        "human": "Oct 27, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 216614,
+        "human": "Nov 30, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "ghostrunner"
+  },
+  "26192": {
+    "id": 26192,
+    "alternative_names": [
+      {
+        "id": 36692,
+        "comment": "Alternative title",
+        "name": "The Last of Us 2"
+      },
+      {
+        "id": 36693,
+        "comment": "Alternative spelling",
+        "name": "The Last of Us Part 2"
+      },
+      {
+        "id": 37403,
+        "comment": "Russian title",
+        "name": "\u041e\u0434\u043d\u0438 \u0438\u0437 \u043d\u0430\u0441: \u0427\u0430\u0441\u0442\u044c II"
+      },
+      {
+        "id": 49846,
+        "comment": "Alternative spelling",
+        "name": "The Last of Us\u2122 Part II"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 83682,
+        "category": 6,
+        "name": "The Last of Us: Part II",
+        "uid": "d7ee8f97a2c4096c90d9535b6abc0f44",
+        "url": "http://www.pushsquare.com/games/ps4/last_of_us_part_ii",
+        "year": 2018
+      },
+      {
+        "id": 104768,
+        "category": 3,
+        "name": "The Last of Us Part II",
+        "uid": "57216",
+        "url": "https://www.giantbomb.com/games/3030-57216/"
+      },
+      {
+        "id": 251395,
+        "category": 14,
+        "name": "The Last of Us Part II",
+        "uid": "494552",
+        "url": "https://www.twitch.tv/directory/game/The Last of Us Part II"
+      },
+      {
+        "id": 1593872,
+        "category": 19,
+        "name": "The Last of Us Part II",
+        "uid": "07db44--59518",
+        "url": "https://www.gamespress.com/product.asp?c=07db44--59518"
+      },
+      {
+        "id": 1683583,
+        "category": 6,
+        "name": "The Last of Us: Part II",
+        "uid": "277d4d4d2490545d01f5264a96922eec",
+        "url": "http://www.pushsquare.com/games/ps5/last_of_us_part_ii"
+      },
+      {
+        "id": 1928306,
+        "category": 20,
+        "uid": "B07DJRFSDF",
+        "url": "https://amazon.co.jp/dp/B07DJRFSDF"
+      },
+      {
+        "id": 1931703,
+        "category": 20,
+        "uid": "B01LTI9IEU",
+        "url": "https://amazon.fr/dp/B01LTI9IEU"
+      },
+      {
+        "id": 1933325,
+        "category": 20,
+        "uid": "B086QFN2JK"
+      },
+      {
+        "id": 1934045,
+        "category": 20,
+        "uid": "B086NHL5M8"
+      },
+      {
+        "id": 1934046,
+        "category": 20,
+        "uid": "B01MTX8L70"
+      },
+      {
+        "id": 1934062,
+        "category": 20,
+        "uid": "B07YQ8JMSH"
+      },
+      {
+        "id": 1934992,
+        "category": 20,
+        "uid": "B07YC9WLXD"
+      },
+      {
+        "id": 1935679,
+        "category": 20,
+        "uid": "B07YCC7KV3"
+      },
+      {
+        "id": 1936414,
+        "category": 20,
+        "uid": "B0777XHSRJ"
+      },
+      {
+        "id": 1936415,
+        "category": 20,
+        "uid": "B086QGYJP4"
+      },
+      {
+        "id": 1936828,
+        "category": 20,
+        "uid": "B07DLS9N8V"
+      },
+      {
+        "id": 1936829,
+        "category": 20,
+        "uid": "B0886WK7YH"
+      },
+      {
+        "id": 1936929,
+        "category": 20,
+        "uid": "B07YP38H87"
+      },
+      {
+        "id": 1937314,
+        "category": 20,
+        "uid": "B01N6IVNU6"
+      },
+      {
+        "id": 1996798,
+        "category": 20,
+        "name": "\u3010PS4\u3011The Last of Us Part II\u3010\u7279\u5225\u8ca9\u58f2\u7528\u3011 \u3010CERO\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u300cZ\u300d\u3011",
+        "uid": "B08NF7SPWX",
+        "url": "https://amazon.jp/dp/B08NF7SPWX"
+      }
+    ],
+    "name": "The Last of Us Part II",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 194106,
+        "human": "Jun 19, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "the-last-of-us-part-ii"
+  },
+  "135955": {
+    "id": 135955,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928348,
+        "category": 20,
+        "uid": "B07YBXD45K",
+        "url": "https://amazon.co.jp/dp/B07YBXD45K"
+      },
+      {
+        "id": 1932306,
+        "category": 20,
+        "uid": "B07ZG6GC8X"
+      },
+      {
+        "id": 1933390,
+        "category": 20,
+        "uid": "B07YCLHD52"
+      },
+      {
+        "id": 1934049,
+        "category": 20,
+        "uid": "B07YCVDQTV"
+      },
+      {
+        "id": 1934664,
+        "category": 20,
+        "uid": "B07YCB4STS"
+      },
+      {
+        "id": 1935430,
+        "category": 20,
+        "uid": "B07YC96M7Z"
+      },
+      {
+        "id": 1936421,
+        "category": 20,
+        "uid": "B07Z5P6TG1"
+      },
+      {
+        "id": 1936874,
+        "category": 20,
+        "uid": "B07YL1N4MM"
+      }
+    ],
+    "name": "The Last of Us Part II: Collector's Edition",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 208660,
+        "human": "Jun 19, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "the-last-of-us-part-ii-collectors-edition"
+  },
+  "112613": {
+    "id": 112613,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1683297,
+        "category": 1,
+        "name": "Prodeus",
+        "uid": "964800",
+        "url": "https://store.steampowered.com/app/964800",
+        "year": 2019
+      },
+      {
+        "id": 1775526,
+        "category": 3,
+        "name": "Prodeus",
+        "uid": "73428",
+        "url": "https://www.giantbomb.com/games/3030-73428/"
+      },
+      {
+        "id": 1914197,
+        "category": 14,
+        "name": "Prodeus",
+        "uid": "512629",
+        "url": "https://www.twitch.tv/directory/game/Prodeus"
+      }
+    ],
+    "name": "Prodeus",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 209579,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "prodeus"
+  },
+  "116781": {
+    "id": 116781,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1714121,
+        "category": 1,
+        "name": "Little Witch Nobeta",
+        "uid": "1049890",
+        "url": "https://store.steampowered.com/app/1049890",
+        "year": 2020
+      },
+      {
+        "id": 1857578,
+        "category": 3,
+        "name": "Little Witch Nobeta",
+        "uid": "76489",
+        "url": "https://www.giantbomb.com/games/3030-76489/"
+      },
+      {
+        "id": 1917036,
+        "category": 14,
+        "name": "Little Witch Nobeta",
+        "uid": "515621",
+        "url": "https://www.twitch.tv/directory/game/Little%20Witch%20Nobeta"
+      }
+    ],
+    "name": "Little Witch Nobeta",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 203539,
+        "human": "Jun 24, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "little-witch-nobeta"
+  },
+  "8204": {
+    "id": 8204,
+    "alternative_names": [
+      {
+        "id": 25710,
+        "comment": "Former title",
+        "name": "iRacing.com"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11950,
+        "category": 1,
+        "name": "iRacing",
+        "uid": "266410"
+      },
+      {
+        "id": 137561,
+        "category": 3,
+        "name": "iRacing.com",
+        "uid": "21472",
+        "url": "https://www.giantbomb.com/games/3030-21472/",
+        "year": 2008
+      },
+      {
+        "id": 189268,
+        "category": 10,
+        "name": "IRacing",
+        "uid": "UCgBTrGzAgRpLqu5MZ3z5l7w",
+        "url": "https://gaming.youtube.com/game/UCgBTrGzAgRpLqu5MZ3z5l7w"
+      },
+      {
+        "id": 245309,
+        "category": 14,
+        "name": "iRacing.com",
+        "uid": "19554",
+        "url": "https://www.twitch.tv/directory/game/iRacing.com"
+      }
+    ],
+    "name": "iRacing",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 212653,
+        "human": "Aug 26, 2008",
+        "platform": 6,
+        "y": 2008
+      }
+    ],
+    "slug": "iracing"
+  },
+  "25657": {
+    "id": 25657,
+    "alternative_names": [
+      {
+        "id": 22232,
+        "comment": "Acronym",
+        "name": "D2"
+      },
+      {
+        "id": 30529,
+        "comment": "Chinese title",
+        "name": "\u547d\u8fd02"
+      },
+      {
+        "id": 30530,
+        "comment": "Japanese title",
+        "name": "\u30c7\u30b9\u30c6\u30a3\u30cb\u30fc 2"
+      },
+      {
+        "id": 50089,
+        "comment": "Korean title",
+        "name": "\ub370\uc2a4\ud2f0\ub2c8 \uac00\ub514\uc5b8\uc988"
+      },
+      {
+        "id": 50260,
+        "comment": "Other",
+        "name": "Destiny: Guardians"
+      },
+      {
+        "id": 50261,
+        "comment": "Other",
+        "name": "Destiny Guardians"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 75783,
+        "category": 4,
+        "name": "Destiny 2",
+        "uid": "4569",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=4569",
+        "year": 2017
+      },
+      {
+        "id": 79431,
+        "category": 6,
+        "name": "Destiny 2",
+        "uid": "0134d5f492944d8020c649a36279f30d",
+        "url": "http://www.pushsquare.com/games/ps4/destiny_2",
+        "year": 2017
+      },
+      {
+        "id": 83330,
+        "category": 7,
+        "name": "Destiny 2",
+        "uid": "destinyii",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=destinyii"
+      },
+      {
+        "id": 94305,
+        "category": 4,
+        "name": "Destiny 2",
+        "uid": "4567",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=4567",
+        "year": 2017
+      },
+      {
+        "id": 94306,
+        "category": 4,
+        "name": "Destiny 2",
+        "uid": "4568",
+        "url": "http://api.co-optimus.com/games.php?search=true&id=4568",
+        "year": 2017
+      },
+      {
+        "id": 108623,
+        "category": 3,
+        "name": "Destiny 2",
+        "uid": "52647",
+        "url": "https://www.giantbomb.com/games/3030-52647/",
+        "year": 2017
+      },
+      {
+        "id": 188915,
+        "category": 10,
+        "name": "Destiny 2",
+        "uid": "UC6b15BC4476LvwXFoHl3pCA",
+        "url": "https://gaming.youtube.com/game/UC6b15BC4476LvwXFoHl3pCA"
+      },
+      {
+        "id": 250771,
+        "category": 14,
+        "name": "Destiny 2",
+        "uid": "497057",
+        "url": "https://www.twitch.tv/directory/game/Destiny 2"
+      },
+      {
+        "id": 307189,
+        "category": 11,
+        "name": "Destiny 2",
+        "uid": "BPQ955FQFPH6",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPQ955FQFPH6",
+        "year": 2017
+      },
+      {
+        "id": 398916,
+        "category": 16,
+        "name": "Destiny 2",
+        "uid": "UP0002-CUSA05042_00-DESTINYTHEGAME02",
+        "url": "https://www.playstation.com/en-us/games/destiny-2-ps4/",
+        "year": 2017
+      },
+      {
+        "id": 1238538,
+        "category": 18,
+        "name": "Destiny 2",
+        "uid": "144389848",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/BPQ955FQFPH6",
+        "year": 2017
+      },
+      {
+        "id": 1725303,
+        "category": 1,
+        "name": "Destiny 2",
+        "uid": "1085660",
+        "url": "https://store.steampowered.com/app/1085660",
+        "year": 2019
+      },
+      {
+        "id": 1929120,
+        "category": 20,
+        "uid": "B06XPNX59W",
+        "url": "https://amazon.com/dp/B06XPNX59W"
+      },
+      {
+        "id": 1929442,
+        "category": 20,
+        "uid": "B06XPLD1C6",
+        "url": "https://amazon.com/dp/B06XPLD1C6"
+      },
+      {
+        "id": 1932060,
+        "category": 20,
+        "uid": "B06XPPQD2V"
+      },
+      {
+        "id": 1935328,
+        "category": 20,
+        "uid": "B071ZGB49M"
+      },
+      {
+        "id": 1937158,
+        "category": 20,
+        "uid": "B074MJFSGZ"
+      },
+      {
+        "id": 1937986,
+        "category": 20,
+        "uid": "B06XXKZCSM"
+      }
+    ],
+    "name": "Destiny 2",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      203
+    ],
+    "release_dates": [
+      {
+        "id": 84576,
+        "human": "Sep 06, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 84577,
+        "human": "Sep 06, 2017",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 134570,
+        "human": "Sep 06, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 134571,
+        "human": "Sep 06, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 149141,
+        "human": "Sep 06, 2017",
+        "platform": 49,
+        "y": 2017
+      },
+      {
+        "id": 163954,
+        "human": "Oct 24, 2017",
+        "platform": 6,
+        "y": 2017
+      },
+      {
+        "id": 213693,
+        "human": "Nov 19, 2019",
+        "platform": 203,
+        "y": 2019
+      },
+      {
+        "id": 220977,
+        "human": "Dec 08, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 220978,
+        "human": "Dec 08, 2020",
+        "platform": 169,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2"
+  },
+  "134830": {
+    "id": 134830,
+    "alternative_names": [
+      {
+        "id": 50159,
+        "comment": "Korean title",
+        "name": "\ub370\uc2a4\ud2f0\ub2c8 \uac00\ub514\uc5b8\uc988: \ube5b\uc758 \uc800\ud3b8"
+      }
+    ],
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1941744,
+        "category": 20,
+        "uid": "B08KSWLHHR"
+      },
+      {
+        "id": 1942117,
+        "category": 20,
+        "name": "Destiny 2: Beyond Light + Season - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT1XRSN"
+      },
+      {
+        "id": 1942147,
+        "category": 20,
+        "name": "Destiny 2: Beyond Light Standard - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT2BXM6"
+      },
+      {
+        "id": 1942868,
+        "category": 20,
+        "uid": "B08KT5JC8B"
+      },
+      {
+        "id": 1942883,
+        "category": 20,
+        "uid": "B08KT2SL3B"
+      }
+    ],
+    "name": "Destiny 2: Beyond Light",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 205526,
+        "human": "Nov 10, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 205527,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 205528,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 205529,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2-beyond-light"
+  },
+  "139825": {
+    "id": 139825,
+    "category": 2,
+    "external_games": [
+      {
+        "id": 1941980,
+        "category": 20,
+        "name": "Destiny 2: Beyond Light Deluxe - PRE-PURCHASE | Xbox - Download Code",
+        "uid": "B08KT1QNRW"
+      },
+      {
+        "id": 1942862,
+        "category": 20,
+        "uid": "B08KT47Y64"
+      }
+    ],
+    "name": "Destiny 2: Beyond Light - Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 220114,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 220115,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 220116,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2-beyond-light-deluxe-edition"
+  },
+  "135150": {
+    "id": 135150,
+    "alternative_names": [
+      {
+        "id": 36389,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Season of Arrivals"
+      },
+      {
+        "id": 36390,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Shadowkeep - Year 3: Season 11"
+      },
+      {
+        "id": 36391,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Year 3 - Season 11"
+      }
+    ],
+    "category": 7,
+    "name": "Destiny 2: Shadowkeep - Season of Arrivals",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 200550,
+        "human": "Jun 09, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 200551,
+        "human": "Jun 09, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 200552,
+        "human": "Jun 09, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2-shadowkeep-season-of-arrivals"
+  },
+  "135147": {
+    "id": 135147,
+    "alternative_names": [
+      {
+        "id": 36384,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Shadowkeep - Year 3: Season 10"
+      },
+      {
+        "id": 36385,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Season of the Worthy"
+      },
+      {
+        "id": 36386,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Year 3 - Season 10"
+      }
+    ],
+    "category": 7,
+    "name": "Destiny 2: Shadowkeep - Season of the Worthy",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 200544,
+        "human": "Mar 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 200545,
+        "human": "Mar 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 200546,
+        "human": "Mar 10, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2-shadowkeep-season-of-the-worthy"
+  },
+  "140978": {
+    "id": 140978,
+    "alternative_names": [
+      {
+        "id": 52477,
+        "comment": "Alternative title",
+        "name": "Destiny 2: Season of the Hunt"
+      },
+      {
+        "id": 52478,
+        "comment": "Abbreviation",
+        "name": "Season of the Hunt"
+      }
+    ],
+    "category": 7,
+    "name": "Destiny 2: Beyond Light - Season of the Hunt",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 219031,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 219032,
+        "human": "Nov 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 219033,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "destiny-2-beyond-light-season-of-the-hunt"
+  },
   "13548": {
     "id": 13548,
     "alternative_names": [
@@ -390,124 +4205,6 @@
       }
     ],
     "slug": "higurashi-when-they-cry-hou-ch-dot-8-matsuribayashi"
-  },
-  "37001": {
-    "id": 37001,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 102136,
-        "category": 3,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "59902",
-        "url": "https://www.giantbomb.com/games/3030-59902/"
-      },
-      {
-        "id": 1593474,
-        "category": 19,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "b8129f--61707",
-        "url": "https://www.gamespress.com/product.asp?c=b8129f--61707",
-        "year": 2019
-      },
-      {
-        "id": 1838397,
-        "category": 1,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "1057090",
-        "url": "https://store.steampowered.com/app/1057090",
-        "year": 2020
-      },
-      {
-        "id": 1926574,
-        "category": 14,
-        "name": "Ori and the Will of the Wisps",
-        "uid": "497412",
-        "url": "https://www.twitch.tv/directory/game/Ori%20and%20the%20Will%20of%20the%20Wisps"
-      },
-      {
-        "id": 1928566,
-        "category": 20,
-        "uid": "B07DJRPZWY",
-        "url": "https://amazon.com/dp/B07DJRPZWY"
-      },
-      {
-        "id": 1932730,
-        "category": 20,
-        "uid": "B082PBZ7GH"
-      },
-      {
-        "id": 1934098,
-        "category": 20,
-        "uid": "B07FGKPF8P"
-      },
-      {
-        "id": 1936325,
-        "category": 20,
-        "uid": "B083FPN695"
-      },
-      {
-        "id": 1936521,
-        "category": 20,
-        "uid": "B07ZJMQBVF"
-      },
-      {
-        "id": 1937328,
-        "category": 20,
-        "uid": "B07SSV8LVQ"
-      },
-      {
-        "id": 1941749,
-        "category": 20,
-        "uid": "B08KGW65VF"
-      },
-      {
-        "id": 1942006,
-        "category": 20,
-        "name": "Ori and The Will of The Wisps (Nintendo Switch)",
-        "uid": "B08KG3YYY1"
-      },
-      {
-        "id": 1942550,
-        "category": 20,
-        "name": "Ori and the Will of The Wisps - Nintendo Switch",
-        "uid": "B08KHD9V74"
-      }
-    ],
-    "name": "Ori and the Will of the Wisps",
-    "platforms": [
-      6,
-      49,
-      130,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 211066,
-        "human": "Sep 17, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217321,
-        "human": "Mar 11, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 217322,
-        "human": "Mar 11, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217323,
-        "human": "Nov 10, 2020",
-        "platform": 169,
-        "y": 2020
-      }
-    ],
-    "slug": "ori-and-the-will-of-the-wisps"
   },
   "132907": {
     "id": 132907,
@@ -4292,191 +7989,6 @@
     ],
     "slug": "journey"
   },
-  "1372": {
-    "id": 1372,
-    "alternative_names": [
-      {
-        "id": 13437,
-        "comment": "Other",
-        "name": "CS: Global Offensive"
-      },
-      {
-        "id": 13438,
-        "comment": "Other",
-        "name": "Counterstrike: Global Offensive"
-      },
-      {
-        "id": 30477,
-        "comment": "Japanese title",
-        "name": "\u30ab\u30a6\u30f3\u30bf\u30fc \u30b9\u30c8\u30e9\u30a4\u30af: \u30b0\u30ed\u30fc\u30d0\u30eb\u653b\u52e2"
-      },
-      {
-        "id": 30478,
-        "comment": "Chinese title",
-        "name": "\u53cd\u6050\u7cbe\u82f1\uff1a\u5168\u7403\u653b\u52bf"
-      },
-      {
-        "id": 30479,
-        "comment": "Portuguese title",
-        "name": "Counter-Strike: Ofensiva Global"
-      },
-      {
-        "id": 30480,
-        "comment": "Korean title",
-        "name": "\uce74\uc6b4\ud130 \uc2a4\ud2b8\ub77c\uc774\ud06c"
-      },
-      {
-        "id": 32102,
-        "comment": "Acronym",
-        "name": "CS:GO"
-      },
-      {
-        "id": 32103,
-        "comment": "Acronym",
-        "name": "CSGO"
-      },
-      {
-        "id": 47545,
-        "comment": "Other Alias",
-        "name": "Counterstrike: Global Offensive"
-      },
-      {
-        "id": 47546,
-        "comment": "Other Alias",
-        "name": "CSGO"
-      },
-      {
-        "id": 47547,
-        "comment": "Other Alias",
-        "name": "the bomb has been planted"
-      },
-      {
-        "id": 47548,
-        "comment": "Other Alias",
-        "name": "CS:GO"
-      },
-      {
-        "id": 47549,
-        "comment": "Other Alias",
-        "name": "CS: Global Offensive"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 15147,
-        "category": 1,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "730"
-      },
-      {
-        "id": 38869,
-        "category": 2,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "10771",
-        "url": "https://thegamesdb.net/game.php?id=10771"
-      },
-      {
-        "id": 79263,
-        "category": 6,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "f488871611a234a5604f03001532a580",
-        "url": "http://www.pushsquare.com/games/ps3/counter_strike_global_offensive",
-        "year": 2012
-      },
-      {
-        "id": 124257,
-        "category": 3,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "36113",
-        "url": "https://www.giantbomb.com/games/3030-36113/",
-        "year": 2012
-      },
-      {
-        "id": 189392,
-        "category": 10,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "UCiVA5GplC-m8qzChGuzahRg",
-        "url": "https://gaming.youtube.com/game/UCiVA5GplC-m8qzChGuzahRg"
-      },
-      {
-        "id": 245101,
-        "category": 14,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "32399",
-        "url": "https://www.twitch.tv/directory/game/Counter-Strike: Global Offensive"
-      },
-      {
-        "id": 402578,
-        "category": 16,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "UP2061-NPUB30589_00-HDDBOOTCSGO00001",
-        "url": "https://www.playstation.com/en-us/games/counter-strike-global-offensive-ps3/",
-        "year": 2012
-      },
-      {
-        "id": 1185085,
-        "category": 10,
-        "name": "Counter-Strike Online",
-        "uid": "UCDKcJ-GmhLMkRxPqW9H2n2w",
-        "url": "https://www.youtube.com/watch?v=UCDKcJ-GmhLMkRxPqW9H2n2w"
-      },
-      {
-        "id": 1304873,
-        "category": 18,
-        "name": "Counter-Strike: Global Offensive",
-        "uid": "1480659546",
-        "url": "https://account.xbox.com/en-US/gameinfohub?titleid=1480659546"
-      }
-    ],
-    "name": "Counter-Strike: Global Offensive",
-    "platforms": [
-      3,
-      6,
-      9,
-      12,
-      14
-    ],
-    "release_dates": [
-      {
-        "id": 6386,
-        "human": "Aug 21, 2012",
-        "platform": 6,
-        "y": 2012
-      },
-      {
-        "id": 20118,
-        "human": "Aug 21, 2012",
-        "platform": 14,
-        "y": 2012
-      },
-      {
-        "id": 20119,
-        "human": "Aug 21, 2012",
-        "platform": 12,
-        "y": 2012
-      },
-      {
-        "id": 20120,
-        "human": "Aug 21, 2012",
-        "platform": 9,
-        "y": 2012
-      },
-      {
-        "id": 29818,
-        "human": "Aug 21, 2012",
-        "platform": 3,
-        "y": 2012
-      },
-      {
-        "id": 102262,
-        "human": "Aug 21, 2012",
-        "platform": 9,
-        "y": 2012
-      }
-    ],
-    "slug": "counter-strike-global-offensive"
-  },
   "1595": {
     "id": 1595,
     "alternative_names": [
@@ -8249,162 +11761,6 @@
     "name": "Terraria: Otherworld",
     "slug": "terraria-otherworld"
   },
-  "26192": {
-    "id": 26192,
-    "alternative_names": [
-      {
-        "id": 36692,
-        "comment": "Alternative title",
-        "name": "The Last of Us 2"
-      },
-      {
-        "id": 36693,
-        "comment": "Alternative spelling",
-        "name": "The Last of Us Part 2"
-      },
-      {
-        "id": 37403,
-        "comment": "Russian title",
-        "name": "\u041e\u0434\u043d\u0438 \u0438\u0437 \u043d\u0430\u0441: \u0427\u0430\u0441\u0442\u044c II"
-      },
-      {
-        "id": 49846,
-        "comment": "Alternative spelling",
-        "name": "The Last of Us\u2122 Part II"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 83682,
-        "category": 6,
-        "name": "The Last of Us: Part II",
-        "uid": "d7ee8f97a2c4096c90d9535b6abc0f44",
-        "url": "http://www.pushsquare.com/games/ps4/last_of_us_part_ii",
-        "year": 2018
-      },
-      {
-        "id": 104768,
-        "category": 3,
-        "name": "The Last of Us Part II",
-        "uid": "57216",
-        "url": "https://www.giantbomb.com/games/3030-57216/"
-      },
-      {
-        "id": 251395,
-        "category": 14,
-        "name": "The Last of Us Part II",
-        "uid": "494552",
-        "url": "https://www.twitch.tv/directory/game/The Last of Us Part II"
-      },
-      {
-        "id": 1593872,
-        "category": 19,
-        "name": "The Last of Us Part II",
-        "uid": "07db44--59518",
-        "url": "https://www.gamespress.com/product.asp?c=07db44--59518"
-      },
-      {
-        "id": 1683583,
-        "category": 6,
-        "name": "The Last of Us: Part II",
-        "uid": "277d4d4d2490545d01f5264a96922eec",
-        "url": "http://www.pushsquare.com/games/ps5/last_of_us_part_ii"
-      },
-      {
-        "id": 1928306,
-        "category": 20,
-        "uid": "B07DJRFSDF",
-        "url": "https://amazon.co.jp/dp/B07DJRFSDF"
-      },
-      {
-        "id": 1931703,
-        "category": 20,
-        "uid": "B01LTI9IEU",
-        "url": "https://amazon.fr/dp/B01LTI9IEU"
-      },
-      {
-        "id": 1933325,
-        "category": 20,
-        "uid": "B086QFN2JK"
-      },
-      {
-        "id": 1934045,
-        "category": 20,
-        "uid": "B086NHL5M8"
-      },
-      {
-        "id": 1934046,
-        "category": 20,
-        "uid": "B01MTX8L70"
-      },
-      {
-        "id": 1934062,
-        "category": 20,
-        "uid": "B07YQ8JMSH"
-      },
-      {
-        "id": 1934992,
-        "category": 20,
-        "uid": "B07YC9WLXD"
-      },
-      {
-        "id": 1935679,
-        "category": 20,
-        "uid": "B07YCC7KV3"
-      },
-      {
-        "id": 1936414,
-        "category": 20,
-        "uid": "B0777XHSRJ"
-      },
-      {
-        "id": 1936415,
-        "category": 20,
-        "uid": "B086QGYJP4"
-      },
-      {
-        "id": 1936828,
-        "category": 20,
-        "uid": "B07DLS9N8V"
-      },
-      {
-        "id": 1936829,
-        "category": 20,
-        "uid": "B0886WK7YH"
-      },
-      {
-        "id": 1936929,
-        "category": 20,
-        "uid": "B07YP38H87"
-      },
-      {
-        "id": 1937314,
-        "category": 20,
-        "uid": "B01N6IVNU6"
-      },
-      {
-        "id": 1996798,
-        "category": 20,
-        "name": "\u3010PS4\u3011The Last of Us Part II\u3010\u7279\u5225\u8ca9\u58f2\u7528\u3011 \u3010CERO\u30ec\u30fc\u30c6\u30a3\u30f3\u30b0\u300cZ\u300d\u3011",
-        "uid": "B08NF7SPWX",
-        "url": "https://amazon.jp/dp/B08NF7SPWX"
-      }
-    ],
-    "name": "The Last of Us Part II",
-    "platforms": [
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 194106,
-        "human": "Jun 19, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "the-last-of-us-part-ii"
-  },
   "26268": {
     "id": 26268,
     "alternative_names": [
@@ -8822,180 +12178,6 @@
       }
     ],
     "slug": "final-fantasy-xiv-stormblood"
-  },
-  "26950": {
-    "id": 26950,
-    "alternative_names": [
-      {
-        "id": 38002,
-        "comment": "Working title",
-        "name": "The Avengers Project"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 104095,
-        "category": 3,
-        "name": "The Avengers Project",
-        "uid": "57912",
-        "url": "https://www.giantbomb.com/games/3030-57912/"
-      },
-      {
-        "id": 1724799,
-        "category": 6,
-        "name": "Marvel's Avengers",
-        "uid": "e3e32d583e321f21a740240932c5f939",
-        "url": "http://www.pushsquare.com/games/ps4/marvels_avengers",
-        "year": 2020
-      },
-      {
-        "id": 1925431,
-        "category": 14,
-        "name": "Marvel's Avengers",
-        "uid": "495321",
-        "url": "https://www.twitch.tv/directory/game/Marvel's%20Avengers"
-      },
-      {
-        "id": 1928457,
-        "category": 20,
-        "uid": "B07SFZX5CH",
-        "url": "https://amazon.com/dp/B07SFZX5CH"
-      },
-      {
-        "id": 1928757,
-        "category": 20,
-        "uid": "B07SK56TM6",
-        "url": "https://amazon.com/dp/B07SK56TM6"
-      },
-      {
-        "id": 1933510,
-        "category": 20,
-        "uid": "B084SCGJQK"
-      },
-      {
-        "id": 1934139,
-        "category": 20,
-        "uid": "B07SYSKPJP"
-      },
-      {
-        "id": 1934577,
-        "category": 20,
-        "uid": "B08777F4WF"
-      },
-      {
-        "id": 1935626,
-        "category": 20,
-        "uid": "B08774C61T"
-      },
-      {
-        "id": 1936023,
-        "category": 20,
-        "uid": "B084SCDR14"
-      },
-      {
-        "id": 1936213,
-        "category": 20,
-        "uid": "B08519H19Y"
-      },
-      {
-        "id": 1936490,
-        "category": 20,
-        "uid": "B07T7NXSC3"
-      },
-      {
-        "id": 1936712,
-        "category": 20,
-        "uid": "B07TDFSRQ4"
-      },
-      {
-        "id": 1936940,
-        "category": 20,
-        "uid": "B084PVVDR5"
-      },
-      {
-        "id": 1937217,
-        "category": 20,
-        "uid": "B084PVRJRQ"
-      },
-      {
-        "id": 1938330,
-        "category": 20,
-        "uid": "B07SYSNFW9"
-      },
-      {
-        "id": 1938384,
-        "category": 20,
-        "uid": "B07SSZZ23S",
-        "url": "https://amazon.de/dp/B07SSZZ23S"
-      },
-      {
-        "id": 1941762,
-        "category": 20,
-        "uid": "B07SVNGBBF"
-      },
-      {
-        "id": 1942967,
-        "category": 20,
-        "name": "Marvel Avengers (PS4)",
-        "uid": "B082YPRGPC"
-      },
-      {
-        "id": 1996642,
-        "category": 20,
-        "name": "Marvel's Avengers (Xbox One) - Import UK",
-        "uid": "B07SVNLBY9",
-        "url": "https://amazon.fr/dp/B07SVNLBY9"
-      }
-    ],
-    "name": "Marvel's Avengers",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 185098,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 185099,
-        "human": "Sep 04, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 185100,
-        "human": "Sep 04, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 214485,
-        "human": "Sep 04, 2020",
-        "platform": 170,
-        "y": 2020
-      },
-      {
-        "id": 222356,
-        "human": "Q1 2021",
-        "platform": 169,
-        "y": 2021
-      },
-      {
-        "id": 222357,
-        "human": "Q1 2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "marvels-avengers"
   },
   "27011": {
     "id": 27011,
@@ -9764,267 +12946,6 @@
       }
     ],
     "slug": "ballisticng"
-  },
-  "36550": {
-    "id": 36550,
-    "alternative_names": [
-      {
-        "id": 38247,
-        "comment": "Japanese title - original",
-        "name": "\u9f8d\u304c\u5982\u304f7 \u5149\u3068\u95c7\u306e\u884c\u65b9"
-      },
-      {
-        "id": 38248,
-        "comment": "Alternative title",
-        "name": "Yakuza 7"
-      },
-      {
-        "id": 38249,
-        "comment": "Japanese title - romanization",
-        "name": "Ryu ga Gotoku 7: Hikari to Yami no Yukue"
-      },
-      {
-        "id": 50185,
-        "comment": "Korean title",
-        "name": "\uc6a9\uacfc \uac19\uc7747 \ube5b\uacfc \uc5b4\ub460\uc758 \ud589\ubc29"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1755010,
-        "category": 6,
-        "name": "Yakuza: Like a Dragon",
-        "uid": "a71ceb650c0d6f4d0bbae0b879049719",
-        "url": "http://www.pushsquare.com/games/ps4/yakuza_like_a_dragon",
-        "year": 2020
-      },
-      {
-        "id": 1775006,
-        "category": 3,
-        "name": "Ry\u016b ga Gotoku 7",
-        "uid": "72901",
-        "url": "https://www.giantbomb.com/games/3030-72901/",
-        "year": 2020
-      },
-      {
-        "id": 1865858,
-        "category": 20,
-        "uid": "B07WZS3X28"
-      },
-      {
-        "id": 1865934,
-        "category": 20,
-        "uid": "B07X61KJ8Y"
-      },
-      {
-        "id": 1913710,
-        "category": 14,
-        "name": "Shin Ry\u016b ga Gotoku",
-        "uid": "512121",
-        "url": "https://www.twitch.tv/directory/game/Shin%20Ry%C5%AB%20ga%20Gotoku"
-      },
-      {
-        "id": 1933050,
-        "category": 20,
-        "uid": "B0889CMW4S",
-        "url": "https://amazon.fr/dp/B0889CMW4S"
-      },
-      {
-        "id": 1941512,
-        "category": 20,
-        "uid": "B08KJFW7BC"
-      },
-      {
-        "id": 1941952,
-        "category": 20,
-        "name": "Yakuza: Like A Dragon (PS5)",
-        "uid": "B08KF6T7CG"
-      }
-    ],
-    "name": "Yakuza: Like a Dragon",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 207992,
-        "human": "Jan 16, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 209962,
-        "human": "Nov 10, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 217343,
-        "human": "Mar 02, 2021",
-        "platform": 167,
-        "y": 2021
-      },
-      {
-        "id": 217344,
-        "human": "Nov 10, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 217345,
-        "human": "Nov 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217346,
-        "human": "Nov 10, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "yakuza-like-a-dragon"
-  },
-  "36595": {
-    "id": 36595,
-    "alternative_names": [
-      {
-        "id": 52129,
-        "comment": "Korean title",
-        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
-      },
-      {
-        "id": 52681,
-        "comment": "Japanese title - original",
-        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 186796,
-        "category": 3,
-        "name": "Sakuna: Of Rice And Ruin",
-        "uid": "60864",
-        "url": "https://www.giantbomb.com/games/3030-60864/",
-        "year": 2018
-      },
-      {
-        "id": 1593322,
-        "category": 19,
-        "name": "Sakuna: Of Rice and Ruin",
-        "uid": "054464--61519",
-        "url": "https://www.gamespress.com/product.asp?c=054464--61519",
-        "year": 2018
-      },
-      {
-        "id": 1725109,
-        "category": 12,
-        "name": "Sakuna: Of Rice and Ruin",
-        "uid": "87078262a04f767c035b56e32f0f1983",
-        "url": "http://www.nintendolife.com/games/switch-eshop/sakuna_of_rice_and_ruin"
-      },
-      {
-        "id": 1905804,
-        "category": 14,
-        "name": "Sakuna: Of Rice And Ruin",
-        "uid": "498405",
-        "url": "https://www.twitch.tv/directory/game/Sakuna%3A%20Of%20Rice%20And%20Ruin"
-      },
-      {
-        "id": 1941685,
-        "category": 20,
-        "uid": "B08F51L9HF"
-      },
-      {
-        "id": 1941711,
-        "category": 20,
-        "uid": "B08F4ZQMG2"
-      },
-      {
-        "id": 1942159,
-        "category": 20,
-        "uid": "B08CSH8QK1"
-      },
-      {
-        "id": 1942316,
-        "category": 20,
-        "uid": "B08CSHC19D"
-      },
-      {
-        "id": 1942779,
-        "category": 20,
-        "uid": "B08DPF28KP"
-      },
-      {
-        "id": 1942810,
-        "category": 20,
-        "uid": "B08DPDTWY5"
-      },
-      {
-        "id": 1996602,
-        "category": 20,
-        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
-        "uid": "B08N5B85MS",
-        "url": "https://amazon.jp/dp/B08N5B85MS"
-      }
-    ],
-    "name": "Sakuna: Of Rice and Ruin",
-    "platforms": [
-      6,
-      48,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 217915,
-        "human": "Nov 10, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217916,
-        "human": "Nov 10, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217917,
-        "human": "Nov 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217918,
-        "human": "Nov 20, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217919,
-        "human": "Nov 20, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217920,
-        "human": "Nov 12, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217921,
-        "human": "Nov 12, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "sakuna-of-rice-and-ruin"
   },
   "36926": {
     "id": 36926,
@@ -12240,119 +15161,6 @@
       }
     ],
     "slug": "inmost"
-  },
-  "107218": {
-    "id": 107218,
-    "alternative_names": [
-      {
-        "id": 22885,
-        "comment": "Working title",
-        "name": "Codename Kartoffel"
-      },
-      {
-        "id": 36292,
-        "comment": "Alternative spelling",
-        "name": "Desperados 3"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1478055,
-        "category": 6,
-        "name": "Desperados III",
-        "uid": "163b40cc93e994b04f2ba0d99ecf8784",
-        "url": "http://www.pushsquare.com/games/ps4/desperados_iii",
-        "year": 2019
-      },
-      {
-        "id": 1486071,
-        "category": 1,
-        "name": "Desperados III",
-        "uid": "610370",
-        "url": "https://store.steampowered.com/app/610370",
-        "year": 2019
-      },
-      {
-        "id": 1682841,
-        "category": 3,
-        "name": "Desperados III",
-        "uid": "69956",
-        "url": "https://www.giantbomb.com/games/3030-69956/",
-        "year": 2019
-      },
-      {
-        "id": 1911528,
-        "category": 14,
-        "name": "Desperados III",
-        "uid": "509212",
-        "url": "https://www.twitch.tv/directory/game/Desperados%20III"
-      },
-      {
-        "id": 1928943,
-        "category": 20,
-        "uid": "B07GPSFW14",
-        "url": "https://amazon.com/dp/B07GPSFW14"
-      },
-      {
-        "id": 1929521,
-        "category": 20,
-        "uid": "B07GPP7P7P",
-        "url": "https://amazon.com/dp/B07GPP7P7P"
-      },
-      {
-        "id": 1932184,
-        "category": 20,
-        "uid": "B07GPS5411"
-      },
-      {
-        "id": 1932252,
-        "category": 20,
-        "uid": "B0896B2JX7"
-      },
-      {
-        "id": 1933499,
-        "category": 20,
-        "uid": "B07GQ89JKC"
-      },
-      {
-        "id": 1936304,
-        "category": 20,
-        "uid": "B07GQ45SNP"
-      },
-      {
-        "id": 1937585,
-        "category": 20,
-        "uid": "B088TV8J9R"
-      }
-    ],
-    "name": "Desperados III",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 193466,
-        "human": "Jun 16, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 193467,
-        "human": "Jun 16, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 193468,
-        "human": "Jun 16, 2020",
-        "platform": 49,
-        "y": 2020
-      }
-    ],
-    "slug": "desperados-iii"
   },
   "107262": {
     "id": 107262,
@@ -15771,68 +18579,6 @@
     ],
     "slug": "street-fighter-v-champion-edition"
   },
-  "126098": {
-    "id": 126098,
-    "alternative_names": [
-      {
-        "id": 27124,
-        "name": "Half Life: Alyx"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1836952,
-        "category": 1,
-        "name": "Half-Life: Alyx",
-        "uid": "546560",
-        "url": "https://store.steampowered.com/app/546560",
-        "year": 2020
-      },
-      {
-        "id": 1858005,
-        "category": 3,
-        "name": "Half-Life: Alyx",
-        "uid": "76068",
-        "url": "https://www.giantbomb.com/games/3030-76068/",
-        "year": 2020
-      },
-      {
-        "id": 1916645,
-        "category": 14,
-        "name": "Half-Life: Alyx",
-        "uid": "515195",
-        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx"
-      }
-    ],
-    "name": "Half-Life: Alyx",
-    "platforms": [
-      161,
-      162,
-      163
-    ],
-    "release_dates": [
-      {
-        "id": 189002,
-        "human": "Mar 23, 2020",
-        "platform": 163,
-        "y": 2020
-      },
-      {
-        "id": 189003,
-        "human": "Mar 23, 2020",
-        "platform": 162,
-        "y": 2020
-      },
-      {
-        "id": 189004,
-        "human": "Mar 23, 2020",
-        "platform": 161,
-        "y": 2020
-      }
-    ],
-    "slug": "half-life-alyx"
-  },
   "127493": {
     "id": 127493,
     "alternative_names": [
@@ -17196,83 +19942,6 @@
     ],
     "slug": "new-yankee-8-journey-of-odysseus"
   },
-  "132980": {
-    "id": 132980,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1928629,
-        "category": 20,
-        "uid": "B084SCW1Y9",
-        "url": "https://amazon.com/dp/B084SCW1Y9"
-      },
-      {
-        "id": 1929157,
-        "category": 20,
-        "uid": "B084SFN9ZM",
-        "url": "https://amazon.com/dp/B084SFN9ZM"
-      },
-      {
-        "id": 1933263,
-        "category": 20,
-        "uid": "B084SCDR15",
-        "url": "https://amazon.fr/dp/B084SCDR15"
-      },
-      {
-        "id": 1936051,
-        "category": 20,
-        "uid": "B084SCGJQH"
-      },
-      {
-        "id": 1936287,
-        "category": 20,
-        "uid": "B084TKXZ77"
-      },
-      {
-        "id": 1936667,
-        "category": 20,
-        "uid": "B084THBMFL"
-      },
-      {
-        "id": 1937133,
-        "category": 20,
-        "uid": "B084LKB9CL"
-      },
-      {
-        "id": 1942525,
-        "category": 20,
-        "name": "Marvel's Avengers Deluxe Edition - Xbox One [Digital Code]",
-        "uid": "B08GMG87V8"
-      }
-    ],
-    "name": "Marvel's Avengers: Deluxe Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 208757,
-        "human": "Sep 04, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 208758,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 208759,
-        "human": "Sep 04, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-deluxe-edition"
-  },
   "133004": {
     "id": 133004,
     "alternative_names": [
@@ -17508,23 +20177,6 @@
       }
     ],
     "slug": "apex-legends-season-5"
-  },
-  "133844": {
-    "id": 133844,
-    "category": 0,
-    "name": "Marvel's Avengers: Exclusive Digital Edition",
-    "platforms": [
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 208754,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-exclusive-digital-edition"
   },
   "134070": {
     "id": 134070,
@@ -18195,177 +20847,6 @@
     ],
     "slug": "atom-rpg-trudograd"
   },
-  "134706": {
-    "id": 134706,
-    "alternative_names": [
-      {
-        "id": 36219,
-        "comment": "Alternative spelling",
-        "name": "Star Wars Squadrons"
-      },
-      {
-        "id": 50183,
-        "comment": "Korean title",
-        "name": "\uc2a4\ud0c0\uc6cc\uc988: \uc2a4\ucffc\ub4dc\ub860"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1883060,
-        "category": 14,
-        "name": "Star Wars: Squadrons",
-        "uid": "518059",
-        "url": "https://www.twitch.tv/directory/game/Star%20Wars%3A%20Squadrons"
-      },
-      {
-        "id": 1928419,
-        "category": 20,
-        "uid": "B089F7Y472"
-      },
-      {
-        "id": 1928516,
-        "category": 20,
-        "uid": "B089F8R7SQ"
-      },
-      {
-        "id": 1933467,
-        "category": 20,
-        "uid": "B08B6QBD53"
-      },
-      {
-        "id": 1934069,
-        "category": 20,
-        "uid": "B089ZF96YG"
-      },
-      {
-        "id": 1934163,
-        "category": 20,
-        "uid": "B089ZDZ6B8"
-      },
-      {
-        "id": 1934737,
-        "category": 20,
-        "uid": "B08B8BZFCC"
-      },
-      {
-        "id": 1935408,
-        "category": 20,
-        "uid": "B08BG4175N"
-      },
-      {
-        "id": 1935457,
-        "category": 20,
-        "uid": "B08BG2VBKZ"
-      },
-      {
-        "id": 1935851,
-        "category": 20,
-        "uid": "B08B6PJDN8"
-      },
-      {
-        "id": 1935945,
-        "category": 20,
-        "uid": "B089X3H36B"
-      },
-      {
-        "id": 1936158,
-        "category": 20,
-        "uid": "B08B9BM1J4"
-      },
-      {
-        "id": 1936869,
-        "category": 20,
-        "uid": "B089Z64936"
-      },
-      {
-        "id": 1938250,
-        "category": 20,
-        "uid": "B089ZFHRCB"
-      },
-      {
-        "id": 1941752,
-        "category": 20,
-        "uid": "B08B7KJB7D"
-      },
-      {
-        "id": 1941813,
-        "category": 20,
-        "uid": "B08HT5G1TT"
-      },
-      {
-        "id": 1942040,
-        "category": 20,
-        "name": "STAR WARS SQUADRONS (Pre-Purchase) | Xbox One - Download Code",
-        "uid": "B08HSLKXTX"
-      },
-      {
-        "id": 1942534,
-        "category": 20,
-        "name": "Star Wars Squadrons - Steam PC [Online Game Code]",
-        "uid": "B08GPKC3TW"
-      },
-      {
-        "id": 1942629,
-        "category": 20,
-        "name": "Star Wars: Squadrons - Xbox One [Digital Code]",
-        "uid": "B08J4V4H6J"
-      },
-      {
-        "id": 1942844,
-        "category": 20,
-        "uid": "B08HSP3PRV"
-      }
-    ],
-    "name": "Star Wars: Squadrons",
-    "platforms": [
-      6,
-      48,
-      49,
-      162,
-      163,
-      165
-    ],
-    "release_dates": [
-      {
-        "id": 200105,
-        "human": "Oct 02, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 200106,
-        "human": "Oct 02, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 200107,
-        "human": "Oct 02, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 212797,
-        "human": "Oct 02, 2020",
-        "platform": 165,
-        "y": 2020
-      },
-      {
-        "id": 212798,
-        "human": "Oct 02, 2020",
-        "platform": 162,
-        "y": 2020
-      },
-      {
-        "id": 212799,
-        "human": "Oct 02, 2020",
-        "platform": 163,
-        "y": 2020
-      }
-    ],
-    "slug": "star-wars-squadrons"
-  },
   "135144": {
     "id": 135144,
     "alternative_names": [
@@ -18690,39 +21171,6 @@
     ],
     "slug": "tomorrow-wont-come-for-those-without-number-number-number-number-number-number"
   },
-  "135735": {
-    "id": 135735,
-    "alternative_names": [
-      {
-        "id": 37510,
-        "comment": "Alternative title",
-        "name": "THE FINAL HOURS OF HALF-LIFE: ALYX"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1947723,
-        "category": 14,
-        "name": "Half-Life: Alyx - Final Hours",
-        "uid": "2112050882",
-        "url": "https://www.twitch.tv/directory/game/Half-Life%3A%20Alyx%20-%20Final%20Hours"
-      }
-    ],
-    "name": "Half-Life: Alyx - Final Hours",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 203935,
-        "human": "Jul 09, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "half-life-alyx-final-hours"
-  },
   "135789": {
     "id": 135789,
     "category": 0,
@@ -18774,66 +21222,6 @@
       }
     ],
     "slug": "exiles-journey"
-  },
-  "135955": {
-    "id": 135955,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1928348,
-        "category": 20,
-        "uid": "B07YBXD45K",
-        "url": "https://amazon.co.jp/dp/B07YBXD45K"
-      },
-      {
-        "id": 1932306,
-        "category": 20,
-        "uid": "B07ZG6GC8X"
-      },
-      {
-        "id": 1933390,
-        "category": 20,
-        "uid": "B07YCLHD52"
-      },
-      {
-        "id": 1934049,
-        "category": 20,
-        "uid": "B07YCVDQTV"
-      },
-      {
-        "id": 1934664,
-        "category": 20,
-        "uid": "B07YCB4STS"
-      },
-      {
-        "id": 1935430,
-        "category": 20,
-        "uid": "B07YC96M7Z"
-      },
-      {
-        "id": 1936421,
-        "category": 20,
-        "uid": "B07Z5P6TG1"
-      },
-      {
-        "id": 1936874,
-        "category": 20,
-        "uid": "B07YL1N4MM"
-      }
-    ],
-    "name": "The Last of Us Part II: Collector's Edition",
-    "platforms": [
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 208660,
-        "human": "Jun 19, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "the-last-of-us-part-ii-collectors-edition"
   },
   "135956": {
     "id": 135956,
@@ -19324,96 +21712,6 @@
       }
     ],
     "slug": "fifa-21-legacy-edition"
-  },
-  "136492": {
-    "id": 136492,
-    "category": 0,
-    "name": "Yakuza: Like a Dragon - Hero Edition",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 218148,
-        "human": "Nov 10, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 218149,
-        "human": "Nov 10, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218150,
-        "human": "Nov 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 219652,
-        "human": "Nov 10, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 219653,
-        "human": "2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "yakuza-like-a-dragon-hero-edition"
-  },
-  "136493": {
-    "id": 136493,
-    "category": 0,
-    "name": "Yakuza: Like a Dragon - Legendary Hero Edition",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 218145,
-        "human": "Nov 10, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 218146,
-        "human": "Nov 10, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218147,
-        "human": "Nov 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 219654,
-        "human": "Nov 10, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 219655,
-        "human": "2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "yakuza-like-a-dragon-legendary-hero-edition"
   },
   "136502": {
     "id": 136502,
@@ -19949,58 +22247,6 @@
     ],
     "slug": "warframe-heart-of-deimos"
   },
-  "138179": {
-    "id": 138179,
-    "category": 2,
-    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 218720,
-        "human": "Dec 08, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218721,
-        "human": "Dec 08, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 218722,
-        "human": "Dec 08, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 218723,
-        "human": "Dec 08, 2020",
-        "platform": 167,
-        "y": 2020
-      },
-      {
-        "id": 218724,
-        "human": "Dec 08, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 218725,
-        "human": "Dec 08, 2020",
-        "platform": 170,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-kate-bishop-taking-aim"
-  },
   "138354": {
     "id": 138354,
     "category": 2,
@@ -20387,30 +22633,6 @@
       }
     ],
     "slug": "control-ultimate-edition-cloud-version"
-  },
-  "140517": {
-    "id": 140517,
-    "category": 2,
-    "name": "Gears 5 - Hivebusters",
-    "platforms": [
-      6,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 221389,
-        "human": "Dec 15, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 221390,
-        "human": "Dec 15, 2020",
-        "platform": 49,
-        "y": 2020
-      }
-    ],
-    "slug": "gears-5-hivebusters"
   },
   "140628": {
     "id": 140628,
@@ -21231,5 +23453,375 @@
       }
     ],
     "slug": "the-legend-of-heroes-zero-no-kiseki"
+  },
+  "89354": {
+    "id": 89354,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 260923,
+        "category": 1,
+        "name": "Supraland",
+        "uid": "813630",
+        "url": "https://store.steampowered.com/app/813630",
+        "year": 2018
+      },
+      {
+        "id": 576866,
+        "category": 3,
+        "name": "Supraland",
+        "uid": "66505",
+        "url": "https://www.giantbomb.com/games/3030-66505/"
+      },
+      {
+        "id": 1190910,
+        "category": 14,
+        "name": "Supraland",
+        "uid": "504059",
+        "url": "https://www.twitch.tv/directory/game/Supraland"
+      },
+      {
+        "id": 1996461,
+        "category": 20,
+        "name": "Supraland Standard - Switch [Digital Code]",
+        "uid": "B08MLWFRZ4",
+        "url": "https://amazon.com/dp/B08MLWFRZ4"
+      }
+    ],
+    "name": "Supraland",
+    "platforms": [
+      6,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 168038,
+        "human": "Apr 05, 2019",
+        "platform": 6,
+        "y": 2019
+      },
+      {
+        "id": 217696,
+        "human": "Oct 22, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 218030,
+        "human": "Oct 22, 2020",
+        "platform": 49,
+        "y": 2020
+      }
+    ],
+    "slug": "supraland"
+  },
+  "114009": {
+    "id": 114009,
+    "alternative_names": [
+      {
+        "id": 52326,
+        "comment": "Other Alias",
+        "name": "Project Z"
+      },
+      {
+        "id": 52327,
+        "comment": "Working title",
+        "name": "Dragon Ball Game - Project Z"
+      },
+      {
+        "id": 52328,
+        "comment": "Japanese title - original",
+        "name": "\u30c9\u30e9\u30b4\u30f3\u30dc\u30fc\u30eb Z KAKAROT"
+      },
+      {
+        "id": 52329,
+        "comment": "Japanese title - romanization",
+        "name": "Doragon B\u014dru Zetto Kakarotto"
+      },
+      {
+        "id": 52330,
+        "comment": "Acronym",
+        "name": "DBZ: Kakarot"
+      },
+      {
+        "id": 52331,
+        "comment": "Acronym",
+        "name": "DBZ Kakarot"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1704098,
+        "category": 6,
+        "name": "Dragon Ball: Project Z",
+        "uid": "f41d9eb3cc452229840f47a9484bfe68",
+        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_project_z",
+        "year": 2019
+      },
+      {
+        "id": 1724777,
+        "category": 6,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "9d9a8503234640d91a08b5d1dcfccf5f",
+        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_z_kakarot",
+        "year": 2020
+      },
+      {
+        "id": 1748855,
+        "category": 1,
+        "name": "DRAGON BALL Z: KAKAROT",
+        "uid": "851850",
+        "url": "https://store.steampowered.com/app/851850",
+        "year": 2020
+      },
+      {
+        "id": 1774032,
+        "category": 3,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "71920",
+        "url": "https://www.giantbomb.com/games/3030-71920/",
+        "year": 2020
+      },
+      {
+        "id": 1865402,
+        "category": 20,
+        "uid": "B07SYMCBMX"
+      },
+      {
+        "id": 1865552,
+        "category": 20,
+        "uid": "B07TTT1HCK"
+      },
+      {
+        "id": 1865581,
+        "category": 20,
+        "uid": "B07XJZS6L2"
+      },
+      {
+        "id": 1865661,
+        "category": 20,
+        "uid": "B07T4D3RLF"
+      },
+      {
+        "id": 1865772,
+        "category": 20,
+        "uid": "B07QXYBGT2"
+      },
+      {
+        "id": 1865883,
+        "category": 20,
+        "uid": "B07XS1QM6R"
+      },
+      {
+        "id": 1912840,
+        "category": 14,
+        "name": "Dragon Ball Z: Kakarot",
+        "uid": "511195",
+        "url": "https://www.twitch.tv/directory/game/Dragon%20Ball%20Z%3A%20Kakarot"
+      },
+      {
+        "id": 1928429,
+        "category": 20,
+        "uid": "B07N3GM3KY",
+        "url": "https://amazon.com/dp/B07N3GM3KY"
+      },
+      {
+        "id": 1928668,
+        "category": 20,
+        "uid": "B07N3GLVZZ",
+        "url": "https://amazon.com/dp/B07N3GLVZZ"
+      },
+      {
+        "id": 1931741,
+        "category": 20,
+        "uid": "B083VB13WT"
+      },
+      {
+        "id": 1932220,
+        "category": 20,
+        "uid": "B07XYRNZW6"
+      },
+      {
+        "id": 1932865,
+        "category": 20,
+        "uid": "B07XM9P4HW"
+      },
+      {
+        "id": 1936289,
+        "category": 20,
+        "uid": "B07R3V112G"
+      },
+      {
+        "id": 1936724,
+        "category": 20,
+        "uid": "B07XL54Z1H"
+      },
+      {
+        "id": 1936981,
+        "category": 20,
+        "uid": "B07T4D3RLD"
+      },
+      {
+        "id": 1937425,
+        "category": 20,
+        "uid": "B07V36ZVVQ"
+      },
+      {
+        "id": 1938187,
+        "category": 20,
+        "uid": "B07T5F8MFS"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 179028,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 179029,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 179030,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot"
+  },
+  "141113": {
+    "id": 141113,
+    "category": 3,
+    "name": "DRAGON BALL Z: KAKAROT - Season Pass",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218694,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218695,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218696,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-season-pass"
+  },
+  "136138": {
+    "id": 136138,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1932050,
+        "category": 20,
+        "uid": "B082K2NMYD"
+      },
+      {
+        "id": 1933085,
+        "category": 20,
+        "uid": "B083V9YFXV"
+      },
+      {
+        "id": 1936784,
+        "category": 20,
+        "uid": "B07XTY3QH7"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT - Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218684,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218685,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218686,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-deluxe-edition"
+  },
+  "136271": {
+    "id": 136271,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1932274,
+        "category": 20,
+        "uid": "B082JRVJKB"
+      },
+      {
+        "id": 1932910,
+        "category": 20,
+        "uid": "B083V9ZHHG"
+      }
+    ],
+    "name": "DRAGON BALL Z: KAKAROT - Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 218688,
+        "human": "Jan 17, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218689,
+        "human": "Jan 17, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218690,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "dragon-ball-z-kakarot-ultimate-edition"
   }
 }
