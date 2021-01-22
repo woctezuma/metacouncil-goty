@@ -28,5 +28,23 @@
       }
     ],
     "slug": null
+  },
+  "-1093730": {
+    "id": -1093730,
+    "name": "Supraland Crash",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2020,
+        "human": "2020-Jul-03"
+      }
+    ],
+    "external_games": [
+      {
+        "category": 1,
+        "uid": "1093730"
+      }
+    ],
+    "slug": null
   }
 }
