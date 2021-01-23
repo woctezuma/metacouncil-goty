@@ -1,4 +1,1154 @@
 {
+  "19460": {
+    "id": 19460,
+    "alternative_names": [
+      {
+        "id": 36782,
+        "comment": "Japanese title - original",
+        "name": "\u4e0d\u601d\u8b70\u306e\u30c0\u30f3\u30b8\u30e7\u30f3 \u98a8\u6765\u306e\u30b7\u30ec\u30f35plus \u30d5\u30a9\u30fc\u30c1\u30e5\u30f3\u30bf\u30ef\u30fc\u3068\u904b\u547d\u306e\u30c0\u30a4\u30b9"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 57046,
+        "category": 2,
+        "name": "Shiren The Wanderer: The Tower of Fortune and the Dice of Fate",
+        "uid": "40207",
+        "url": "https://thegamesdb.net/game.php?id=40207"
+      },
+      {
+        "id": 1932688,
+        "category": 20,
+        "uid": "B00V2W74DG"
+      },
+      {
+        "id": 1932783,
+        "category": 20,
+        "uid": "B0041N56P6"
+      },
+      {
+        "id": 1934961,
+        "category": 20,
+        "uid": "B01BM6TESY"
+      },
+      {
+        "id": 1958368,
+        "category": 14,
+        "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
+        "uid": "1155471828",
+        "url": "https://www.twitch.tv/directory/game/Shiren%20the%20Wanderer%3A%20The%20Tower%20of%20Fortune%20and%20the%20Dice%20of%20Fate"
+      }
+    ],
+    "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
+    "platforms": [
+      6,
+      20,
+      46
+    ],
+    "release_dates": [
+      {
+        "id": 154267,
+        "human": "Dec 09, 2010",
+        "platform": 20,
+        "y": 2010
+      },
+      {
+        "id": 154268,
+        "human": "Jun 04, 2015",
+        "platform": 46,
+        "y": 2015
+      },
+      {
+        "id": 154269,
+        "human": "Jul 26, 2016",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 220310,
+        "human": "Dec 03, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "shiren-the-wanderer-the-tower-of-fortune-and-the-dice-of-fate"
+  },
+  "2985": {
+    "id": 2985,
+    "alternative_names": [
+      {
+        "id": 4072,
+        "comment": "Japanese title",
+        "name": "\u30da\u30eb\u30bd\u30ca4 \u30b6\u30fb\u30b4\u30fc\u30eb\u30c7\u30f3"
+      },
+      {
+        "id": 13414,
+        "comment": "Other",
+        "name": "Persona 4: The Golden"
+      },
+      {
+        "id": 13415,
+        "comment": "Other",
+        "name": "P4G"
+      },
+      {
+        "id": 47580,
+        "comment": "Other Alias",
+        "name": "Persona 4: The Golden"
+      },
+      {
+        "id": 47581,
+        "comment": "Other Alias",
+        "name": "P4G"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 56789,
+        "category": 2,
+        "name": "Persona 4 Golden",
+        "uid": "12554",
+        "url": "https://thegamesdb.net/game.php?id=12554"
+      },
+      {
+        "id": 81689,
+        "category": 6,
+        "name": "Persona 4 Golden",
+        "uid": "56055c66af4c044a49b0a19df62e538a",
+        "url": "http://www.pushsquare.com/games/psvita/persona_4_golden",
+        "year": 2012
+      },
+      {
+        "id": 124107,
+        "category": 3,
+        "name": "Persona 4 Golden",
+        "uid": "36273",
+        "url": "https://www.giantbomb.com/games/3030-36273/",
+        "year": 2012
+      },
+      {
+        "id": 188939,
+        "category": 10,
+        "name": "Persona 4 Golden",
+        "uid": "UC7aS389wYuUE1Bnv4MpGmAQ",
+        "url": "https://gaming.youtube.com/game/UC7aS389wYuUE1Bnv4MpGmAQ"
+      },
+      {
+        "id": 246344,
+        "category": 14,
+        "name": "Persona 4 Golden",
+        "uid": "32542",
+        "url": "https://www.twitch.tv/directory/game/Persona 4 Golden"
+      },
+      {
+        "id": 402443,
+        "category": 16,
+        "name": "Persona\u00ae4 Golden\u2122",
+        "uid": "UP0005-PCSE00120_00-PERSONA4GOLDEN01",
+        "url": "https://www.playstation.com/en-us/games/persona-4-golden-psvita/",
+        "year": 2012
+      },
+      {
+        "id": 1931984,
+        "category": 20,
+        "uid": "B007W8S2MG"
+      },
+      {
+        "id": 1932105,
+        "category": 20,
+        "uid": "B009RH725S"
+      },
+      {
+        "id": 1932647,
+        "category": 20,
+        "uid": "B00QLG65M4"
+      },
+      {
+        "id": 1932692,
+        "category": 20,
+        "uid": "B005MNMGFW"
+      },
+      {
+        "id": 1936816,
+        "category": 20,
+        "uid": "B00TPD1FG6"
+      }
+    ],
+    "name": "Persona 4 Golden",
+    "platforms": [
+      6,
+      46
+    ],
+    "release_dates": [
+      {
+        "id": 104838,
+        "human": "Jun 15, 2012",
+        "platform": 46,
+        "y": 2012
+      },
+      {
+        "id": 104839,
+        "human": "Nov 20, 2012",
+        "platform": 46,
+        "y": 2012
+      },
+      {
+        "id": 104840,
+        "human": "Feb 22, 2013",
+        "platform": 46,
+        "y": 2013
+      },
+      {
+        "id": 199782,
+        "human": "Jun 13, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "persona-4-golden"
+  },
+  "36595": {
+    "id": 36595,
+    "alternative_names": [
+      {
+        "id": 52129,
+        "comment": "Korean title",
+        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
+      },
+      {
+        "id": 52681,
+        "comment": "Japanese title - original",
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 186796,
+        "category": 3,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "60864",
+        "url": "https://www.giantbomb.com/games/3030-60864/",
+        "year": 2018
+      },
+      {
+        "id": 1593322,
+        "category": 19,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "054464--61519",
+        "url": "https://www.gamespress.com/product.asp?c=054464--61519",
+        "year": 2018
+      },
+      {
+        "id": 1725109,
+        "category": 12,
+        "name": "Sakuna: Of Rice and Ruin",
+        "uid": "87078262a04f767c035b56e32f0f1983",
+        "url": "http://www.nintendolife.com/games/switch-eshop/sakuna_of_rice_and_ruin"
+      },
+      {
+        "id": 1905804,
+        "category": 14,
+        "name": "Sakuna: Of Rice And Ruin",
+        "uid": "498405",
+        "url": "https://www.twitch.tv/directory/game/Sakuna%3A%20Of%20Rice%20And%20Ruin"
+      },
+      {
+        "id": 1941685,
+        "category": 20,
+        "uid": "B08F51L9HF"
+      },
+      {
+        "id": 1941711,
+        "category": 20,
+        "uid": "B08F4ZQMG2"
+      },
+      {
+        "id": 1942159,
+        "category": 20,
+        "uid": "B08CSH8QK1"
+      },
+      {
+        "id": 1942316,
+        "category": 20,
+        "uid": "B08CSHC19D"
+      },
+      {
+        "id": 1942779,
+        "category": 20,
+        "uid": "B08DPF28KP"
+      },
+      {
+        "id": 1942810,
+        "category": 20,
+        "uid": "B08DPDTWY5"
+      },
+      {
+        "id": 1996602,
+        "category": 20,
+        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
+        "uid": "B08N5B85MS",
+        "url": "https://amazon.jp/dp/B08N5B85MS"
+      }
+    ],
+    "name": "Sakuna: Of Rice and Ruin",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 217915,
+        "human": "Nov 10, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217916,
+        "human": "Nov 10, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217917,
+        "human": "Nov 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217918,
+        "human": "Nov 20, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217919,
+        "human": "Nov 20, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 217920,
+        "human": "Nov 12, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 217921,
+        "human": "Nov 12, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "sakuna-of-rice-and-ruin"
+  },
+  "90055": {
+    "id": 90055,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1724763,
+        "category": 6,
+        "name": "Carrion",
+        "uid": "f5116450e37b4331ed3df77fab96f15c",
+        "url": "http://www.pushsquare.com/games/ps4/carrion",
+        "year": 2020
+      },
+      {
+        "id": 1724994,
+        "category": 1,
+        "name": "CARRION",
+        "uid": "953490",
+        "url": "https://store.steampowered.com/app/953490",
+        "year": 2020
+      },
+      {
+        "id": 1775878,
+        "category": 3,
+        "name": "Carrion",
+        "uid": "73781",
+        "url": "https://www.giantbomb.com/games/3030-73781/",
+        "year": 2020
+      },
+      {
+        "id": 1914523,
+        "category": 14,
+        "name": "Carrion",
+        "uid": "512973",
+        "url": "https://www.twitch.tv/directory/game/Carrion"
+      }
+    ],
+    "name": "Carrion",
+    "platforms": [
+      3,
+      6,
+      14,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 204011,
+        "human": "Jul 23, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 204012,
+        "human": "Jul 23, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 204013,
+        "human": "Jul 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 204014,
+        "human": "Jul 23, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 204016,
+        "human": "Jul 23, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "carrion"
+  },
+  "26950": {
+    "id": 26950,
+    "alternative_names": [
+      {
+        "id": 38002,
+        "comment": "Working title",
+        "name": "The Avengers Project"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 104095,
+        "category": 3,
+        "name": "The Avengers Project",
+        "uid": "57912",
+        "url": "https://www.giantbomb.com/games/3030-57912/"
+      },
+      {
+        "id": 1724799,
+        "category": 6,
+        "name": "Marvel's Avengers",
+        "uid": "e3e32d583e321f21a740240932c5f939",
+        "url": "http://www.pushsquare.com/games/ps4/marvels_avengers",
+        "year": 2020
+      },
+      {
+        "id": 1925431,
+        "category": 14,
+        "name": "Marvel's Avengers",
+        "uid": "495321",
+        "url": "https://www.twitch.tv/directory/game/Marvel's%20Avengers"
+      },
+      {
+        "id": 1928457,
+        "category": 20,
+        "uid": "B07SFZX5CH",
+        "url": "https://amazon.com/dp/B07SFZX5CH"
+      },
+      {
+        "id": 1928757,
+        "category": 20,
+        "uid": "B07SK56TM6",
+        "url": "https://amazon.com/dp/B07SK56TM6"
+      },
+      {
+        "id": 1933510,
+        "category": 20,
+        "uid": "B084SCGJQK"
+      },
+      {
+        "id": 1934139,
+        "category": 20,
+        "uid": "B07SYSKPJP"
+      },
+      {
+        "id": 1934577,
+        "category": 20,
+        "uid": "B08777F4WF"
+      },
+      {
+        "id": 1935626,
+        "category": 20,
+        "uid": "B08774C61T"
+      },
+      {
+        "id": 1936023,
+        "category": 20,
+        "uid": "B084SCDR14"
+      },
+      {
+        "id": 1936213,
+        "category": 20,
+        "uid": "B08519H19Y"
+      },
+      {
+        "id": 1936490,
+        "category": 20,
+        "uid": "B07T7NXSC3"
+      },
+      {
+        "id": 1936712,
+        "category": 20,
+        "uid": "B07TDFSRQ4"
+      },
+      {
+        "id": 1936940,
+        "category": 20,
+        "uid": "B084PVVDR5"
+      },
+      {
+        "id": 1937217,
+        "category": 20,
+        "uid": "B084PVRJRQ"
+      },
+      {
+        "id": 1938330,
+        "category": 20,
+        "uid": "B07SYSNFW9"
+      },
+      {
+        "id": 1938384,
+        "category": 20,
+        "uid": "B07SSZZ23S",
+        "url": "https://amazon.de/dp/B07SSZZ23S"
+      },
+      {
+        "id": 1941762,
+        "category": 20,
+        "uid": "B07SVNGBBF"
+      },
+      {
+        "id": 1942967,
+        "category": 20,
+        "name": "Marvel Avengers (PS4)",
+        "uid": "B082YPRGPC"
+      },
+      {
+        "id": 1996642,
+        "category": 20,
+        "name": "Marvel's Avengers (Xbox One) - Import UK",
+        "uid": "B07SVNLBY9",
+        "url": "https://amazon.fr/dp/B07SVNLBY9"
+      }
+    ],
+    "name": "Marvel's Avengers",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 185098,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 185099,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 185100,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 214485,
+        "human": "Sep 04, 2020",
+        "platform": 170,
+        "y": 2020
+      },
+      {
+        "id": 222356,
+        "human": "Q1 2021",
+        "platform": 169,
+        "y": 2021
+      },
+      {
+        "id": 222357,
+        "human": "Q1 2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "marvels-avengers"
+  },
+  "132980": {
+    "id": 132980,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1928629,
+        "category": 20,
+        "uid": "B084SCW1Y9",
+        "url": "https://amazon.com/dp/B084SCW1Y9"
+      },
+      {
+        "id": 1929157,
+        "category": 20,
+        "uid": "B084SFN9ZM",
+        "url": "https://amazon.com/dp/B084SFN9ZM"
+      },
+      {
+        "id": 1933263,
+        "category": 20,
+        "uid": "B084SCDR15",
+        "url": "https://amazon.fr/dp/B084SCDR15"
+      },
+      {
+        "id": 1936051,
+        "category": 20,
+        "uid": "B084SCGJQH"
+      },
+      {
+        "id": 1936287,
+        "category": 20,
+        "uid": "B084TKXZ77"
+      },
+      {
+        "id": 1936667,
+        "category": 20,
+        "uid": "B084THBMFL"
+      },
+      {
+        "id": 1937133,
+        "category": 20,
+        "uid": "B084LKB9CL"
+      },
+      {
+        "id": 1942525,
+        "category": 20,
+        "name": "Marvel's Avengers Deluxe Edition - Xbox One [Digital Code]",
+        "uid": "B08GMG87V8"
+      }
+    ],
+    "name": "Marvel's Avengers: Deluxe Edition",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 208757,
+        "human": "Sep 04, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 208758,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 208759,
+        "human": "Sep 04, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-deluxe-edition"
+  },
+  "138179": {
+    "id": 138179,
+    "category": 2,
+    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
+    "release_dates": [
+      {
+        "id": 218720,
+        "human": "Dec 08, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 218721,
+        "human": "Dec 08, 2020",
+        "platform": 169,
+        "y": 2020
+      },
+      {
+        "id": 218722,
+        "human": "Dec 08, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 218723,
+        "human": "Dec 08, 2020",
+        "platform": 167,
+        "y": 2020
+      },
+      {
+        "id": 218724,
+        "human": "Dec 08, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 218725,
+        "human": "Dec 08, 2020",
+        "platform": 170,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-kate-bishop-taking-aim"
+  },
+  "133844": {
+    "id": 133844,
+    "category": 0,
+    "name": "Marvel's Avengers: Exclusive Digital Edition",
+    "platforms": [
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 208754,
+        "human": "Sep 04, 2020",
+        "platform": 48,
+        "y": 2020
+      }
+    ],
+    "slug": "marvels-avengers-exclusive-digital-edition"
+  },
+  "105416": {
+    "id": 105416,
+    "alternative_names": [
+      {
+        "id": 34929,
+        "comment": "Alternative spelling",
+        "name": "TWD: Saints & Sinners"
+      },
+      {
+        "id": 34930,
+        "comment": "Alternative spelling",
+        "name": "The Walking Dead: Saints and Sinners"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1776861,
+        "category": 1,
+        "name": "The Walking Dead: Saints & Sinners",
+        "uid": "916840",
+        "url": "https://store.steampowered.com/app/916840",
+        "year": 2020
+      },
+      {
+        "id": 1857317,
+        "category": 3,
+        "name": "The Walking Dead: Saints & Sinners ",
+        "uid": "76748",
+        "url": "https://www.giantbomb.com/games/3030-76748/"
+      },
+      {
+        "id": 1917283,
+        "category": 14,
+        "name": "The Walking Dead: Saints & Sinners",
+        "uid": "515862",
+        "url": "https://www.twitch.tv/directory/game/The%20Walking%20Dead%3A%20Saints%20%26%20Sinners"
+      },
+      {
+        "id": 1942848,
+        "category": 20,
+        "uid": "B08H65146F"
+      }
+    ],
+    "name": "The Walking Dead: Saints & Sinners",
+    "platforms": [
+      6,
+      48,
+      162,
+      165
+    ],
+    "release_dates": [
+      {
+        "id": 180314,
+        "human": "Jan 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 196087,
+        "human": "May 05, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 198328,
+        "human": "Jan 23, 2020",
+        "platform": 162,
+        "y": 2020
+      },
+      {
+        "id": 211347,
+        "human": "May 05, 2020",
+        "platform": 165,
+        "y": 2020
+      }
+    ],
+    "slug": "the-walking-dead-saints-and-sinners"
+  },
+  "17000": {
+    "id": 17000,
+    "alternative_names": [
+      {
+        "id": 30705,
+        "comment": "Japanese title",
+        "name": "\u30b9\u30bf\u30fc\u30c7\u30e5\u30fc\u30d0\u30ec\u30fc"
+      },
+      {
+        "id": 30706,
+        "comment": "Korean title",
+        "name": "Stardew \uacc4\uace1"
+      },
+      {
+        "id": 30707,
+        "comment": "Chinese title",
+        "name": "\u661f\u9732\u8c37\u7269\u8bed"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 6873,
+        "category": 1,
+        "name": "Stardew Valley",
+        "uid": "413150"
+      },
+      {
+        "id": 78112,
+        "category": 5,
+        "name": "Stardew Valley",
+        "uid": "1453375253",
+        "url": "https://www.gog.com/game/stardew_valley",
+        "year": 2016
+      },
+      {
+        "id": 83101,
+        "category": 6,
+        "name": "Stardew Valley",
+        "uid": "203b5c52ffc4460e33da65dbaadd8f28",
+        "url": "http://www.pushsquare.com/games/ps4/stardew_valley",
+        "year": 2016
+      },
+      {
+        "id": 110317,
+        "category": 3,
+        "name": "Stardew Valley",
+        "uid": "50899",
+        "url": "https://www.giantbomb.com/games/3030-50899/",
+        "year": 2016
+      },
+      {
+        "id": 189129,
+        "category": 10,
+        "name": "Stardew Valley",
+        "uid": "UCdA5b9jfGKAM53cqKn3snuA",
+        "url": "https://gaming.youtube.com/game/UCdA5b9jfGKAM53cqKn3snuA"
+      },
+      {
+        "id": 210932,
+        "category": 11,
+        "name": "Stardew Valley",
+        "uid": "C3D891Z6TNQM",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C3D891Z6TNQM",
+        "year": 2016
+      },
+      {
+        "id": 220560,
+        "category": 12,
+        "name": "Stardew Valley",
+        "uid": "107258af6d99a8f7270c25d59033f5e2",
+        "url": "http://www.nintendolife.com/games/switch-eshop/stardew_valley",
+        "year": 2017
+      },
+      {
+        "id": 220561,
+        "category": 12,
+        "name": "Stardew Valley",
+        "uid": "a16c2396f6aa4c39379a1dc4b1010a17",
+        "url": "http://www.nintendolife.com/games/wiiu-eshop/stardew_valley"
+      },
+      {
+        "id": 245765,
+        "category": 14,
+        "name": "Stardew Valley",
+        "uid": "490744",
+        "url": "https://www.twitch.tv/directory/game/Stardew Valley"
+      },
+      {
+        "id": 399684,
+        "category": 16,
+        "name": "Stardew Valley",
+        "uid": "UP2456-CUSA06840_00-STARDEW00000SIEA",
+        "url": "https://www.playstation.com/en-us/games/stardew-valley-ps4/",
+        "year": 2016
+      },
+      {
+        "id": 749957,
+        "category": 6,
+        "name": "Stardew Valley",
+        "uid": "2dee87ce937ed9a44acbda8d71a87b54",
+        "url": "http://www.pushsquare.com/games/psvita/stardew_valley",
+        "year": 2018
+      },
+      {
+        "id": 1037620,
+        "category": 16,
+        "name": "Stardew Valley",
+        "uid": "UP2456-PCSE01235_00-STARDEW00000SIEA",
+        "url": "https://www.playstation.com/en-us/games/stardew-valley-psvita/",
+        "year": 2018
+      },
+      {
+        "id": 1238190,
+        "category": 18,
+        "name": "Stardew Valley",
+        "uid": "306230746",
+        "url": "https://www.microsoft.com/en-us/store/p/igdb.com/C3D891Z6TNQM",
+        "year": 2016
+      },
+      {
+        "id": 1931325,
+        "category": 20,
+        "uid": "B07CZHRDG2"
+      },
+      {
+        "id": 1932098,
+        "category": 20,
+        "uid": "B07D1X81VB"
+      },
+      {
+        "id": 1933748,
+        "category": 20,
+        "uid": "B00EY3FC48"
+      },
+      {
+        "id": 1933955,
+        "category": 20,
+        "uid": "B07HLZKDDJ"
+      },
+      {
+        "id": 1934257,
+        "category": 20,
+        "uid": "B07KJ1FM1Y"
+      },
+      {
+        "id": 1937499,
+        "category": 20,
+        "uid": "B07KKGWVQ6"
+      },
+      {
+        "id": 1937683,
+        "category": 20,
+        "uid": "B004UOWX1Q"
+      },
+      {
+        "id": 1941507,
+        "category": 20,
+        "uid": "B08FJQBCXY"
+      },
+      {
+        "id": 1941902,
+        "category": 20,
+        "name": "Stardew Valley (Nintendo Switch)",
+        "uid": "B08F8KRRGL"
+      },
+      {
+        "id": 1942829,
+        "category": 20,
+        "uid": "B08FJSQKXD"
+      },
+      {
+        "id": 1943112,
+        "category": 20,
+        "uid": "B08LFSJP1R"
+      }
+    ],
+    "name": "Stardew Valley",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      46,
+      48,
+      49,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 45397,
+        "human": "Feb 26, 2016",
+        "platform": 6,
+        "y": 2016
+      },
+      {
+        "id": 61569,
+        "human": "Jul 29, 2016",
+        "platform": 3,
+        "y": 2016
+      },
+      {
+        "id": 61570,
+        "human": "Jul 29, 2016",
+        "platform": 14,
+        "y": 2016
+      },
+      {
+        "id": 61572,
+        "human": "Dec 13, 2016",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 61573,
+        "human": "Dec 14, 2016",
+        "platform": 49,
+        "y": 2016
+      },
+      {
+        "id": 61574,
+        "human": "Dec 14, 2016",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 115520,
+        "human": "Dec 14, 2016",
+        "platform": 48,
+        "y": 2016
+      },
+      {
+        "id": 115521,
+        "human": "Oct 05, 2017",
+        "platform": 130,
+        "y": 2017
+      },
+      {
+        "id": 152528,
+        "human": "May 22, 2018",
+        "platform": 46,
+        "y": 2018
+      },
+      {
+        "id": 159757,
+        "human": "Feb 14, 2018",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 159758,
+        "human": "Oct 24, 2018",
+        "platform": 39,
+        "y": 2018
+      },
+      {
+        "id": 179183,
+        "human": "Mar 14, 2019",
+        "platform": 34,
+        "y": 2019
+      }
+    ],
+    "slug": "stardew-valley"
+  },
+  "42895": {
+    "id": 42895,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 55684,
+        "category": 2,
+        "name": "Stardew Valley: Collector's Edition",
+        "uid": "44591",
+        "url": "https://thegamesdb.net/game.php?id=44591"
+      },
+      {
+        "id": 1594131,
+        "category": 19,
+        "name": "Stardew Valley Collector's Edition",
+        "uid": "918a49--60972",
+        "url": "https://www.gamespress.com/product.asp?c=918a49--60972"
+      },
+      {
+        "id": 1929095,
+        "category": 20,
+        "uid": "B01N199PG7",
+        "url": "https://amazon.com/dp/B01N199PG7"
+      },
+      {
+        "id": 1929160,
+        "category": 20,
+        "uid": "B01MYGIPU5",
+        "url": "https://amazon.com/dp/B01MYGIPU5"
+      },
+      {
+        "id": 1930801,
+        "category": 20,
+        "uid": "B07JMFXPL6",
+        "url": "https://amazon.co.jp/dp/B07JMFXPL6"
+      },
+      {
+        "id": 1935483,
+        "category": 20,
+        "uid": "B07JXFPNSX"
+      }
+    ],
+    "name": "Stardew Valley: Collector's Edition",
+    "platforms": [
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 89807,
+        "human": "May 11, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 158854,
+        "human": "TBD",
+        "platform": 49
+      }
+    ],
+    "slug": "stardew-valley-collectors-edition"
+  },
   "26673": {
     "id": 26673,
     "category": 0,
@@ -347,326 +1497,6 @@
       }
     ],
     "slug": "dragon-ball-z-kakarot-ultimate-edition"
-  },
-  "26950": {
-    "id": 26950,
-    "alternative_names": [
-      {
-        "id": 38002,
-        "comment": "Working title",
-        "name": "The Avengers Project"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 104095,
-        "category": 3,
-        "name": "The Avengers Project",
-        "uid": "57912",
-        "url": "https://www.giantbomb.com/games/3030-57912/"
-      },
-      {
-        "id": 1724799,
-        "category": 6,
-        "name": "Marvel's Avengers",
-        "uid": "e3e32d583e321f21a740240932c5f939",
-        "url": "http://www.pushsquare.com/games/ps4/marvels_avengers",
-        "year": 2020
-      },
-      {
-        "id": 1925431,
-        "category": 14,
-        "name": "Marvel's Avengers",
-        "uid": "495321",
-        "url": "https://www.twitch.tv/directory/game/Marvel's%20Avengers"
-      },
-      {
-        "id": 1928457,
-        "category": 20,
-        "uid": "B07SFZX5CH",
-        "url": "https://amazon.com/dp/B07SFZX5CH"
-      },
-      {
-        "id": 1928757,
-        "category": 20,
-        "uid": "B07SK56TM6",
-        "url": "https://amazon.com/dp/B07SK56TM6"
-      },
-      {
-        "id": 1933510,
-        "category": 20,
-        "uid": "B084SCGJQK"
-      },
-      {
-        "id": 1934139,
-        "category": 20,
-        "uid": "B07SYSKPJP"
-      },
-      {
-        "id": 1934577,
-        "category": 20,
-        "uid": "B08777F4WF"
-      },
-      {
-        "id": 1935626,
-        "category": 20,
-        "uid": "B08774C61T"
-      },
-      {
-        "id": 1936023,
-        "category": 20,
-        "uid": "B084SCDR14"
-      },
-      {
-        "id": 1936213,
-        "category": 20,
-        "uid": "B08519H19Y"
-      },
-      {
-        "id": 1936490,
-        "category": 20,
-        "uid": "B07T7NXSC3"
-      },
-      {
-        "id": 1936712,
-        "category": 20,
-        "uid": "B07TDFSRQ4"
-      },
-      {
-        "id": 1936940,
-        "category": 20,
-        "uid": "B084PVVDR5"
-      },
-      {
-        "id": 1937217,
-        "category": 20,
-        "uid": "B084PVRJRQ"
-      },
-      {
-        "id": 1938330,
-        "category": 20,
-        "uid": "B07SYSNFW9"
-      },
-      {
-        "id": 1938384,
-        "category": 20,
-        "uid": "B07SSZZ23S",
-        "url": "https://amazon.de/dp/B07SSZZ23S"
-      },
-      {
-        "id": 1941762,
-        "category": 20,
-        "uid": "B07SVNGBBF"
-      },
-      {
-        "id": 1942967,
-        "category": 20,
-        "name": "Marvel Avengers (PS4)",
-        "uid": "B082YPRGPC"
-      },
-      {
-        "id": 1996642,
-        "category": 20,
-        "name": "Marvel's Avengers (Xbox One) - Import UK",
-        "uid": "B07SVNLBY9",
-        "url": "https://amazon.fr/dp/B07SVNLBY9"
-      }
-    ],
-    "name": "Marvel's Avengers",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 185098,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 185099,
-        "human": "Sep 04, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 185100,
-        "human": "Sep 04, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 214485,
-        "human": "Sep 04, 2020",
-        "platform": 170,
-        "y": 2020
-      },
-      {
-        "id": 222356,
-        "human": "Q1 2021",
-        "platform": 169,
-        "y": 2021
-      },
-      {
-        "id": 222357,
-        "human": "Q1 2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "marvels-avengers"
-  },
-  "132980": {
-    "id": 132980,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1928629,
-        "category": 20,
-        "uid": "B084SCW1Y9",
-        "url": "https://amazon.com/dp/B084SCW1Y9"
-      },
-      {
-        "id": 1929157,
-        "category": 20,
-        "uid": "B084SFN9ZM",
-        "url": "https://amazon.com/dp/B084SFN9ZM"
-      },
-      {
-        "id": 1933263,
-        "category": 20,
-        "uid": "B084SCDR15",
-        "url": "https://amazon.fr/dp/B084SCDR15"
-      },
-      {
-        "id": 1936051,
-        "category": 20,
-        "uid": "B084SCGJQH"
-      },
-      {
-        "id": 1936287,
-        "category": 20,
-        "uid": "B084TKXZ77"
-      },
-      {
-        "id": 1936667,
-        "category": 20,
-        "uid": "B084THBMFL"
-      },
-      {
-        "id": 1937133,
-        "category": 20,
-        "uid": "B084LKB9CL"
-      },
-      {
-        "id": 1942525,
-        "category": 20,
-        "name": "Marvel's Avengers Deluxe Edition - Xbox One [Digital Code]",
-        "uid": "B08GMG87V8"
-      }
-    ],
-    "name": "Marvel's Avengers: Deluxe Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 208757,
-        "human": "Sep 04, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 208758,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 208759,
-        "human": "Sep 04, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-deluxe-edition"
-  },
-  "138179": {
-    "id": 138179,
-    "category": 2,
-    "name": "Marvel\u2019s Avengers: Kate Bishop - Taking AIM",
-    "platforms": [
-      6,
-      48,
-      49,
-      167,
-      169,
-      170
-    ],
-    "release_dates": [
-      {
-        "id": 218720,
-        "human": "Dec 08, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218721,
-        "human": "Dec 08, 2020",
-        "platform": 169,
-        "y": 2020
-      },
-      {
-        "id": 218722,
-        "human": "Dec 08, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 218723,
-        "human": "Dec 08, 2020",
-        "platform": 167,
-        "y": 2020
-      },
-      {
-        "id": 218724,
-        "human": "Dec 08, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 218725,
-        "human": "Dec 08, 2020",
-        "platform": 170,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-kate-bishop-taking-aim"
-  },
-  "133844": {
-    "id": 133844,
-    "category": 0,
-    "name": "Marvel's Avengers: Exclusive Digital Edition",
-    "platforms": [
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 208754,
-        "human": "Sep 04, 2020",
-        "platform": 48,
-        "y": 2020
-      }
-    ],
-    "slug": "marvels-avengers-exclusive-digital-edition"
   },
   "9608": {
     "id": 9608,
@@ -1125,47 +1955,6 @@
       }
     ],
     "slug": "necrobarista"
-  },
-  "26673": {
-    "id": 26673,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1455414,
-        "category": 3,
-        "name": "Omori",
-        "uid": "68038",
-        "url": "https://www.giantbomb.com/games/3030-68038/"
-      },
-      {
-        "id": 1770883,
-        "category": 1,
-        "name": "OMORI",
-        "uid": "1150690",
-        "url": "https://store.steampowered.com/app/1150690",
-        "year": 2019
-      },
-      {
-        "id": 1927520,
-        "category": 14,
-        "name": "Omori",
-        "uid": "505786",
-        "url": "https://www.twitch.tv/directory/game/Omori"
-      }
-    ],
-    "name": "OMORI",
-    "platforms": [
-      6
-    ],
-    "release_dates": [
-      {
-        "id": 220146,
-        "human": "Dec 25, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "omori"
   },
   "26869": {
     "id": 26869,
@@ -23516,312 +24305,157 @@
     ],
     "slug": "supraland"
   },
-  "114009": {
-    "id": 114009,
+  "19460": {
+    "id": 19460,
     "alternative_names": [
       {
-        "id": 52326,
-        "comment": "Other Alias",
-        "name": "Project Z"
-      },
-      {
-        "id": 52327,
-        "comment": "Working title",
-        "name": "Dragon Ball Game - Project Z"
-      },
-      {
-        "id": 52328,
+        "id": 36782,
         "comment": "Japanese title - original",
-        "name": "\u30c9\u30e9\u30b4\u30f3\u30dc\u30fc\u30eb Z KAKAROT"
-      },
-      {
-        "id": 52329,
-        "comment": "Japanese title - romanization",
-        "name": "Doragon B\u014dru Zetto Kakarotto"
-      },
-      {
-        "id": 52330,
-        "comment": "Acronym",
-        "name": "DBZ: Kakarot"
-      },
-      {
-        "id": 52331,
-        "comment": "Acronym",
-        "name": "DBZ Kakarot"
+        "name": "\u4e0d\u601d\u8b70\u306e\u30c0\u30f3\u30b8\u30e7\u30f3 \u98a8\u6765\u306e\u30b7\u30ec\u30f35plus \u30d5\u30a9\u30fc\u30c1\u30e5\u30f3\u30bf\u30ef\u30fc\u3068\u904b\u547d\u306e\u30c0\u30a4\u30b9"
       }
     ],
     "category": 0,
     "external_games": [
       {
-        "id": 1704098,
-        "category": 6,
-        "name": "Dragon Ball: Project Z",
-        "uid": "f41d9eb3cc452229840f47a9484bfe68",
-        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_project_z",
-        "year": 2019
+        "id": 57046,
+        "category": 2,
+        "name": "Shiren The Wanderer: The Tower of Fortune and the Dice of Fate",
+        "uid": "40207",
+        "url": "https://thegamesdb.net/game.php?id=40207"
       },
       {
-        "id": 1724777,
-        "category": 6,
-        "name": "Dragon Ball Z: Kakarot",
-        "uid": "9d9a8503234640d91a08b5d1dcfccf5f",
-        "url": "http://www.pushsquare.com/games/ps4/dragon_ball_z_kakarot",
-        "year": 2020
-      },
-      {
-        "id": 1748855,
-        "category": 1,
-        "name": "DRAGON BALL Z: KAKAROT",
-        "uid": "851850",
-        "url": "https://store.steampowered.com/app/851850",
-        "year": 2020
-      },
-      {
-        "id": 1774032,
-        "category": 3,
-        "name": "Dragon Ball Z: Kakarot",
-        "uid": "71920",
-        "url": "https://www.giantbomb.com/games/3030-71920/",
-        "year": 2020
-      },
-      {
-        "id": 1865402,
+        "id": 1932688,
         "category": 20,
-        "uid": "B07SYMCBMX"
+        "uid": "B00V2W74DG"
       },
       {
-        "id": 1865552,
+        "id": 1932783,
         "category": 20,
-        "uid": "B07TTT1HCK"
+        "uid": "B0041N56P6"
       },
       {
-        "id": 1865581,
+        "id": 1934961,
         "category": 20,
-        "uid": "B07XJZS6L2"
+        "uid": "B01BM6TESY"
       },
       {
-        "id": 1865661,
-        "category": 20,
-        "uid": "B07T4D3RLF"
-      },
-      {
-        "id": 1865772,
-        "category": 20,
-        "uid": "B07QXYBGT2"
-      },
-      {
-        "id": 1865883,
-        "category": 20,
-        "uid": "B07XS1QM6R"
-      },
-      {
-        "id": 1912840,
+        "id": 1958368,
         "category": 14,
-        "name": "Dragon Ball Z: Kakarot",
-        "uid": "511195",
-        "url": "https://www.twitch.tv/directory/game/Dragon%20Ball%20Z%3A%20Kakarot"
-      },
-      {
-        "id": 1928429,
-        "category": 20,
-        "uid": "B07N3GM3KY",
-        "url": "https://amazon.com/dp/B07N3GM3KY"
-      },
-      {
-        "id": 1928668,
-        "category": 20,
-        "uid": "B07N3GLVZZ",
-        "url": "https://amazon.com/dp/B07N3GLVZZ"
-      },
-      {
-        "id": 1931741,
-        "category": 20,
-        "uid": "B083VB13WT"
-      },
-      {
-        "id": 1932220,
-        "category": 20,
-        "uid": "B07XYRNZW6"
-      },
-      {
-        "id": 1932865,
-        "category": 20,
-        "uid": "B07XM9P4HW"
-      },
-      {
-        "id": 1936289,
-        "category": 20,
-        "uid": "B07R3V112G"
-      },
-      {
-        "id": 1936724,
-        "category": 20,
-        "uid": "B07XL54Z1H"
-      },
-      {
-        "id": 1936981,
-        "category": 20,
-        "uid": "B07T4D3RLD"
-      },
-      {
-        "id": 1937425,
-        "category": 20,
-        "uid": "B07V36ZVVQ"
-      },
-      {
-        "id": 1938187,
-        "category": 20,
-        "uid": "B07T5F8MFS"
+        "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
+        "uid": "1155471828",
+        "url": "https://www.twitch.tv/directory/game/Shiren%20the%20Wanderer%3A%20The%20Tower%20of%20Fortune%20and%20the%20Dice%20of%20Fate"
       }
     ],
-    "name": "DRAGON BALL Z: KAKAROT",
+    "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
     "platforms": [
       6,
-      48,
-      49
+      20,
+      46
     ],
     "release_dates": [
       {
-        "id": 179028,
-        "human": "Jan 17, 2020",
-        "platform": 49,
-        "y": 2020
+        "id": 154267,
+        "human": "Dec 09, 2010",
+        "platform": 20,
+        "y": 2010
       },
       {
-        "id": 179029,
-        "human": "Jan 17, 2020",
-        "platform": 48,
-        "y": 2020
+        "id": 154268,
+        "human": "Jun 04, 2015",
+        "platform": 46,
+        "y": 2015
       },
       {
-        "id": 179030,
-        "human": "Jan 17, 2020",
+        "id": 154269,
+        "human": "Jul 26, 2016",
+        "platform": 46,
+        "y": 2016
+      },
+      {
+        "id": 220310,
+        "human": "Dec 03, 2020",
         "platform": 6,
         "y": 2020
       }
     ],
-    "slug": "dragon-ball-z-kakarot"
+    "slug": "shiren-the-wanderer-the-tower-of-fortune-and-the-dice-of-fate"
   },
-  "141113": {
-    "id": 141113,
-    "category": 3,
-    "name": "DRAGON BALL Z: KAKAROT - Season Pass",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 218694,
-        "human": "Jan 17, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 218695,
-        "human": "Jan 17, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218696,
-        "human": "Jan 17, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "dragon-ball-z-kakarot-season-pass"
-  },
-  "136138": {
-    "id": 136138,
+  "90055": {
+    "id": 90055,
     "category": 0,
     "external_games": [
       {
-        "id": 1932050,
-        "category": 20,
-        "uid": "B082K2NMYD"
+        "id": 1724763,
+        "category": 6,
+        "name": "Carrion",
+        "uid": "f5116450e37b4331ed3df77fab96f15c",
+        "url": "http://www.pushsquare.com/games/ps4/carrion",
+        "year": 2020
       },
       {
-        "id": 1933085,
-        "category": 20,
-        "uid": "B083V9YFXV"
+        "id": 1724994,
+        "category": 1,
+        "name": "CARRION",
+        "uid": "953490",
+        "url": "https://store.steampowered.com/app/953490",
+        "year": 2020
       },
       {
-        "id": 1936784,
-        "category": 20,
-        "uid": "B07XTY3QH7"
+        "id": 1775878,
+        "category": 3,
+        "name": "Carrion",
+        "uid": "73781",
+        "url": "https://www.giantbomb.com/games/3030-73781/",
+        "year": 2020
+      },
+      {
+        "id": 1914523,
+        "category": 14,
+        "name": "Carrion",
+        "uid": "512973",
+        "url": "https://www.twitch.tv/directory/game/Carrion"
       }
     ],
-    "name": "DRAGON BALL Z: KAKAROT - Deluxe Edition",
+    "name": "Carrion",
     "platforms": [
+      3,
       6,
-      48,
-      49
+      14,
+      49,
+      130
     ],
     "release_dates": [
       {
-        "id": 218684,
-        "human": "Jan 17, 2020",
-        "platform": 48,
+        "id": 204011,
+        "human": "Jul 23, 2020",
+        "platform": 3,
         "y": 2020
       },
       {
-        "id": 218685,
-        "human": "Jan 17, 2020",
+        "id": 204012,
+        "human": "Jul 23, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 204013,
+        "human": "Jul 23, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 204014,
+        "human": "Jul 23, 2020",
         "platform": 49,
         "y": 2020
       },
       {
-        "id": 218686,
-        "human": "Jan 17, 2020",
-        "platform": 6,
+        "id": 204016,
+        "human": "Jul 23, 2020",
+        "platform": 130,
         "y": 2020
       }
     ],
-    "slug": "dragon-ball-z-kakarot-deluxe-edition"
-  },
-  "136271": {
-    "id": 136271,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1932274,
-        "category": 20,
-        "uid": "B082JRVJKB"
-      },
-      {
-        "id": 1932910,
-        "category": 20,
-        "uid": "B083V9ZHHG"
-      }
-    ],
-    "name": "DRAGON BALL Z: KAKAROT - Ultimate Edition",
-    "platforms": [
-      6,
-      48,
-      49
-    ],
-    "release_dates": [
-      {
-        "id": 218688,
-        "human": "Jan 17, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 218689,
-        "human": "Jan 17, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 218690,
-        "human": "Jan 17, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "dragon-ball-z-kakarot-ultimate-edition"
+    "slug": "carrion"
   }
 }
