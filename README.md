@@ -171,7 +171,7 @@ the most promising method involves using the IGDB database with a constraint w.r
 [results-2018]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/>
 [results-2019]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019-results.1766/>
 [results-201X]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-decade-awards-2010-2019-results.1771/>
-[results-2020]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2020-results.TODO/>
+[results-2020]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2020-results.2280/>
 
 [results-2018-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2018>
 [results-2019-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2019>
