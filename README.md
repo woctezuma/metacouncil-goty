@@ -38,6 +38,12 @@ python schulze_gotd.py
 python optional_categories.py
 ```
 
+-   To generate a message to thank voters, run:
+
+```bash
+python generate_thanks.py
+```
+
 ### With SteamSpy
 
 -   If needed, edit hard-coded values below, then run the three aforementioned scripts again:
