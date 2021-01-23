@@ -135,13 +135,23 @@ def parse_votes(data,
 def load_ballots(input_filename,
                  file_encoding='utf8',
                  fake_author_name=True,
+                 data_folder=None,
                  parsing_params=None):
     from anonymize_data import get_anonymized_file_prefix, load_input, load_and_anonymize
 
     if input_filename.startswith(get_anonymized_file_prefix()):
-        anonymized_data = load_input(input_filename, file_encoding)
+        anonymized_data = load_input(
+            input_filename,
+            file_encoding,
+            data_folder=data_folder
+        )
     else:
-        anonymized_data = load_and_anonymize(input_filename, file_encoding, fake_author_name=fake_author_name)
+        anonymized_data = load_and_anonymize(
+            input_filename,
+            file_encoding,
+            fake_author_name=fake_author_name,
+            data_folder=data_folder,
+        )
 
     ballots = parse_votes(anonymized_data,
                           parsing_params)

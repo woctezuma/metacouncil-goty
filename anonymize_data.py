@@ -8,10 +8,13 @@ def get_anonymized_file_prefix():
     return anonymized_file_prefix
 
 
-def load_input(filename, file_encoding='utf8'):
+def load_input(filename, file_encoding='utf8', data_folder=None):
+    if data_folder is None:
+        data_folder = get_data_folder()
+
     data = []
 
-    full_path_to_file = get_data_folder() + filename
+    full_path_to_file = data_folder + filename
 
     with open(full_path_to_file, 'r', encoding=file_encoding) as f:
         for line in f.readlines():
@@ -114,10 +117,11 @@ def load_and_anonymize(input_filename,
                        fake_author_name=True,
                        review_token_indices=None,
                        redact_reviews=False,
+                       data_folder=None,
                        verbose=True):
     output_filename = get_anonymized_file_prefix() + input_filename
 
-    data = load_input(input_filename, file_encoding)
+    data = load_input(input_filename, file_encoding, data_folder=data_folder)
 
     data_content = remove_header(data, content_start_criterion='"1"')
 
