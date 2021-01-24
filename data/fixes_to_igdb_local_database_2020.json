@@ -46,5 +46,23 @@
       }
     ],
     "slug": null
+  },
+  "-1285160": {
+    "id": -1285160,
+    "name": "Depanneur Nocturne",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2020,
+        "human": "2020-May-26"
+      }
+    ],
+    "external_games": [
+      {
+        "category": 1,
+        "uid": "1285160"
+      }
+    ],
+    "slug": null
   }
 }
