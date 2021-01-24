@@ -6,7 +6,7 @@
 [![Code coverage][codecov-image]][codecov]
 [![Code Quality][codacy-image]][codacy]
 
-![MetaCouncil GOTY banner](https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.png)
+![MetaCouncil GOTY banner][generic-goty-cover]
 
 ## Introduction
 
@@ -169,6 +169,8 @@ the most promising method involves using the IGDB database with a constraint w.r
 
 [codacy]: <https://www.codacy.com/app/woctezuma/metacouncil-goty>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/d072d73231a24a5b91bc72c59737ca7d> 
+
+[generic-goty-cover]: <https://raw.githubusercontent.com/wiki/woctezuma/metacouncil-goty/metacouncil-goty-banner.jpg>
 
 [ballots-2018]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018.473/>
 [ballots-2019]: <https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2019.1729/>
