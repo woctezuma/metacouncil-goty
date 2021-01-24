@@ -139,7 +139,7 @@ def load_and_anonymize(input_filename,
 
 
 if __name__ == '__main__':
-    ballot_year = '2019'
+    ballot_year = '2020'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
     review_token_indices = get_review_token_indices(ballot_year)
