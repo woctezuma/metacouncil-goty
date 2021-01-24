@@ -163,7 +163,8 @@ def print_reviews(ballots,
                   matches,
                   app_id,
                   goty_field='goty_preferences',
-                  goty_review_field=None):
+                  goty_review_field=None,
+                  export_for_forum=True):
     if goty_review_field is None:
         goty_review_field = goty_field.replace('_preferences', '_description')
 
@@ -191,8 +192,13 @@ def print_reviews(ballots,
                 seen_game_names.add(goty_standardized_name)
                 print('\n[game] ' + goty_standardized_name)
 
-            print('\nReviewer: ' + voter_name)
+            if export_for_forum:
+                print(f'\n[quote="{voter_name}"]')
+            else:
+                print('\nReviewer: ' + voter_name)
             print(goty_review)
+            if export_for_forum:
+                print('[/quote]')
 
     return
 
