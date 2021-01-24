@@ -1,4 +1,939 @@
 {
+  "109475": {
+    "id": 109475,
+    "alternative_names": [
+      {
+        "id": 23056,
+        "comment": "Japanese title",
+        "name": "\u30a2\u30ba\u30fc\u30eb\u30ec\u30fc\u30f3 \u30af\u30ed\u30b9\u30a6\u30a7\u30fc\u30d6"
+      },
+      {
+        "id": 50323,
+        "comment": "Korean title",
+        "name": "\ubcbd\ub78c\ud56d\ub85c \ud06c\ub85c\uc2a4\uc6e8\uc774\ube0c"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1775548,
+        "category": 3,
+        "name": "Azur Lane: Crosswave",
+        "uid": "73450",
+        "url": "https://www.giantbomb.com/games/3030-73450/",
+        "year": 2019
+      },
+      {
+        "id": 1837468,
+        "category": 1,
+        "name": "Azur Lane: Crosswave",
+        "uid": "1150080",
+        "url": "https://store.steampowered.com/app/1150080",
+        "year": 2020
+      },
+      {
+        "id": 1865886,
+        "category": 20,
+        "uid": "B07Q214C46"
+      },
+      {
+        "id": 1914217,
+        "category": 14,
+        "name": "Azur Lane: Crosswave",
+        "uid": "512653",
+        "url": "https://www.twitch.tv/directory/game/Azur%20Lane%3A%20Crosswave"
+      },
+      {
+        "id": 1931245,
+        "category": 20,
+        "uid": "B0895X5J6W",
+        "url": "https://amazon.co.jp/dp/B0895X5J6W"
+      },
+      {
+        "id": 1934627,
+        "category": 20,
+        "uid": "B07PYTN41D"
+      },
+      {
+        "id": 1934678,
+        "category": 20,
+        "uid": "B083NMQY12"
+      },
+      {
+        "id": 1934960,
+        "category": 20,
+        "uid": "B07PYTN41F"
+      },
+      {
+        "id": 1935548,
+        "category": 20,
+        "uid": "B0895X4WGW"
+      },
+      {
+        "id": 1996677,
+        "category": 20,
+        "name": "Azur Lane: Crosswave - Nintendo Switch",
+        "uid": "B08NYMXP6G",
+        "url": "https://amazon.com/dp/B08NYMXP6G"
+      }
+    ],
+    "name": "Azur Lane: Crosswave",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 166838,
+        "human": "Aug 29, 2019",
+        "platform": 48,
+        "y": 2019
+      },
+      {
+        "id": 186567,
+        "human": "Feb 13, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 187707,
+        "human": "Feb 21, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 206964,
+        "human": "Sep 17, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 224398,
+        "human": "Feb 16, 2021",
+        "platform": 130,
+        "y": 2021
+      }
+    ],
+    "slug": "azur-lane-crosswave"
+  },
+  "86504": {
+    "id": 86504,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1319449,
+        "category": 1,
+        "name": "In Other Waters",
+        "uid": "890720",
+        "url": "https://store.steampowered.com/app/890720",
+        "year": 0
+      },
+      {
+        "id": 1777949,
+        "category": 3,
+        "name": "In Other Waters",
+        "uid": "74734",
+        "url": "https://www.giantbomb.com/games/3030-74734/"
+      },
+      {
+        "id": 1928161,
+        "category": 14,
+        "name": "In Other Waters",
+        "uid": "513918",
+        "url": "https://www.twitch.tv/directory/game/In%20Other%20Waters"
+      }
+    ],
+    "name": "In Other Waters",
+    "platforms": [
+      6,
+      14,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 191753,
+        "human": "Apr 03, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 191754,
+        "human": "Apr 03, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 191755,
+        "human": "Apr 03, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "in-other-waters"
+  },
+  "138844": {
+    "id": 138844,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1978610,
+        "category": 14,
+        "name": "Water Womb World",
+        "uid": "999069536",
+        "url": "https://www.twitch.tv/directory/game/Water%20Womb%20World"
+      }
+    ],
+    "name": "Water Womb World",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 210558,
+        "human": "Jun 11, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "water-womb-world"
+  },
+  "136422": {
+    "id": 136422,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1991357,
+        "category": 14,
+        "name": "wood and water and rock",
+        "uid": "1027770090",
+        "url": "https://www.twitch.tv/directory/game/wood%20and%20water%20and%20rock"
+      }
+    ],
+    "name": "wood and water and rock",
+    "platforms": [
+      3,
+      6,
+      14,
+      34
+    ],
+    "release_dates": [
+      {
+        "id": 205582,
+        "human": "Jan 17, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 205583,
+        "human": "Jan 17, 2020",
+        "platform": 14,
+        "y": 2020
+      },
+      {
+        "id": 205584,
+        "human": "Jan 17, 2020",
+        "platform": 3,
+        "y": 2020
+      },
+      {
+        "id": 205585,
+        "human": "Jan 17, 2020",
+        "platform": 34,
+        "y": 2020
+      }
+    ],
+    "slug": "wood-and-water-and-rock"
+  },
+  "132085": {
+    "id": 132085,
+    "alternative_names": [
+      {
+        "id": 31457,
+        "comment": "Translated title",
+        "name": "Wet Summer Days"
+      },
+      {
+        "id": 31458,
+        "comment": "PlayStation title",
+        "name": "Water Summer"
+      },
+      {
+        "id": 51656,
+        "comment": "Japanese title - original",
+        "name": "\u6c34\u590f~SUIKA~"
+      },
+      {
+        "id": 51657,
+        "comment": "Alternative title",
+        "name": "Suika: Regular Edition"
+      },
+      {
+        "id": 51658,
+        "comment": "Alternative title",
+        "name": "Suika: All Ages Edition"
+      }
+    ],
+    "category": 0,
+    "name": "Suika",
+    "platforms": [
+      6,
+      7,
+      23,
+      34,
+      372
+    ],
+    "release_dates": [
+      {
+        "id": 192715,
+        "human": "Jul 18, 2002",
+        "platform": 7,
+        "y": 2002
+      },
+      {
+        "id": 192716,
+        "human": "Jul 18, 2002",
+        "platform": 23,
+        "y": 2002
+      },
+      {
+        "id": 192717,
+        "human": "Sep 30, 2011",
+        "platform": 34,
+        "y": 2011
+      },
+      {
+        "id": 216136,
+        "human": "Jul 25, 2003",
+        "platform": 6,
+        "y": 2003
+      },
+      {
+        "id": 221604,
+        "human": "Apr 24, 2020",
+        "platform": 372,
+        "y": 2020
+      }
+    ],
+    "slug": "suika"
+  },
+  "140878": {
+    "id": 140878,
+    "alternative_names": [
+      {
+        "id": 52054,
+        "comment": "Alternative title",
+        "name": "Sam & Max: Save the World Remastered"
+      }
+    ],
+    "category": 0,
+    "name": "Sam & Max: Save the World",
+    "platforms": [
+      6,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 217567,
+        "human": "Dec 02, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 217568,
+        "human": "Dec 02, 2020",
+        "platform": 130,
+        "y": 2020
+      }
+    ],
+    "slug": "sam-and-max-save-the-world"
+  },
+  "11156": {
+    "id": 11156,
+    "alternative_names": [
+      {
+        "id": 9367,
+        "comment": "Other",
+        "name": "Horizon"
+      },
+      {
+        "id": 48946,
+        "comment": "Other Alias",
+        "name": "Horizon Zero Dawn\u2122"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 55256,
+        "category": 2,
+        "name": "Horizon Zero Dawn",
+        "uid": "29523",
+        "url": "https://thegamesdb.net/game.php?id=29523"
+      },
+      {
+        "id": 80155,
+        "category": 6,
+        "name": "Horizon: Zero Dawn",
+        "uid": "5256fe550ed7f9cdabb3a7411b139041",
+        "url": "http://www.pushsquare.com/games/ps4/horizon_zero_dawn",
+        "year": 2017
+      },
+      {
+        "id": 111217,
+        "category": 3,
+        "name": "Horizon Zero Dawn",
+        "uid": "49973",
+        "url": "https://www.giantbomb.com/games/3030-49973/",
+        "year": 2017
+      },
+      {
+        "id": 190112,
+        "category": 10,
+        "name": "Horizon Zero Dawn",
+        "uid": "UCwzYdbiHHzWm9xrGQMWt-vQ",
+        "url": "https://gaming.youtube.com/game/UCwzYdbiHHzWm9xrGQMWt-vQ"
+      },
+      {
+        "id": 249731,
+        "category": 14,
+        "name": "Horizon Zero Dawn",
+        "uid": "490374",
+        "url": "https://www.twitch.tv/directory/game/Horizon Zero Dawn"
+      },
+      {
+        "id": 399514,
+        "category": 16,
+        "name": "Horizon Zero Dawn",
+        "uid": "UP9000-CUSA01967_00-HORIZONZERODAWN1, UP9000-CUSA01967_00-HORIZONZERODAWN1",
+        "url": "https://www.playstation.com/en-us/games/horizon-zero-dawn-ps4/",
+        "year": 2017
+      },
+      {
+        "id": 1273020,
+        "category": 16,
+        "name": "Horizon Zero Dawn",
+        "uid": "UP9000-CUSA01967_00-HORIZONZERODAWN1",
+        "url": "https://www.playstation.com/en-us/games/horizon-zero-dawn-ps4/",
+        "year": 2017
+      },
+      {
+        "id": 1930108,
+        "category": 20,
+        "uid": "B00ZQC73O8",
+        "url": "https://amazon.com/dp/B00ZQC73O8"
+      },
+      {
+        "id": 1933053,
+        "category": 20,
+        "uid": "B00ZG1S88E"
+      },
+      {
+        "id": 1933823,
+        "category": 20,
+        "uid": "B06XC1WH2K"
+      },
+      {
+        "id": 1936367,
+        "category": 20,
+        "uid": "B00ZV86UX2"
+      },
+      {
+        "id": 1936379,
+        "category": 20,
+        "uid": "B06XZL1SWZ"
+      },
+      {
+        "id": 1936662,
+        "category": 20,
+        "uid": "B00ZR63WHU"
+      },
+      {
+        "id": 1936734,
+        "category": 20,
+        "uid": "B0777SQDXX"
+      },
+      {
+        "id": 1936851,
+        "category": 20,
+        "uid": "B07TJV6FN8"
+      },
+      {
+        "id": 1938263,
+        "category": 20,
+        "uid": "B00ZRQTKO4"
+      }
+    ],
+    "name": "Horizon Zero Dawn",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 65848,
+        "human": "Mar 02, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 103575,
+        "human": "Mar 01, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 103576,
+        "human": "Feb 28, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 203967,
+        "human": "Aug 07, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "horizon-zero-dawn"
+  },
+  "72870": {
+    "id": 72870,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1865639,
+        "category": 20,
+        "uid": "B07TBLGT8J"
+      },
+      {
+        "id": 1865821,
+        "category": 20,
+        "uid": "B07THC6RDF"
+      },
+      {
+        "id": 1928322,
+        "category": 20,
+        "uid": "B07STWQ38X",
+        "url": "https://amazon.com/dp/B07STWQ38X"
+      },
+      {
+        "id": 1928748,
+        "category": 20,
+        "uid": "B076BJ723V"
+      },
+      {
+        "id": 1928848,
+        "category": 20,
+        "uid": "B077SBGNXH",
+        "url": "https://amazon.fr/dp/B077SBGNXH"
+      },
+      {
+        "id": 1930292,
+        "category": 20,
+        "uid": "B07D2NY7RW",
+        "url": "https://amazon.com/dp/B07D2NY7RW"
+      },
+      {
+        "id": 1931573,
+        "category": 20,
+        "uid": "B07L38666Q"
+      },
+      {
+        "id": 1933397,
+        "category": 20,
+        "uid": "B07SKX31M8"
+      },
+      {
+        "id": 1933649,
+        "category": 20,
+        "uid": "B076VNR2C4"
+      },
+      {
+        "id": 1933869,
+        "category": 20,
+        "uid": "B07RXH442W"
+      },
+      {
+        "id": 1934076,
+        "category": 20,
+        "uid": "B0766658WB"
+      },
+      {
+        "id": 1935040,
+        "category": 20,
+        "uid": "B076V2Q6WZ"
+      },
+      {
+        "id": 1937273,
+        "category": 20,
+        "uid": "B07798FWNN"
+      },
+      {
+        "id": 1942692,
+        "category": 20,
+        "name": "Horizon Zero Dawn Complete Edition - PC [Online Game Code]",
+        "uid": "B08GQTZK2T"
+      }
+    ],
+    "name": "Horizon Zero Dawn Complete Edition",
+    "platforms": [
+      6,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 130573,
+        "human": "Dec 06, 2017",
+        "platform": 48,
+        "y": 2017
+      },
+      {
+        "id": 203015,
+        "human": "Aug 07, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "horizon-zero-dawn-complete-edition"
+  },
+  "56463": {
+    "id": 56463,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 103424,
+        "category": 3,
+        "name": "LUNA - The Shadow Dust",
+        "uid": "58590",
+        "url": "https://www.giantbomb.com/games/3030-58590/"
+      },
+      {
+        "id": 595104,
+        "category": 1,
+        "name": "LUNA The Shadow Dust",
+        "uid": "465100",
+        "url": "https://store.steampowered.com/app/465100",
+        "year": 2019
+      },
+      {
+        "id": 1925859,
+        "category": 14,
+        "name": "LUNA - The Shadow Dust",
+        "uid": "496058",
+        "url": "https://www.twitch.tv/directory/game/LUNA%20-%20The%20Shadow%20Dust"
+      }
+    ],
+    "name": "LUNA: The Shadow Dust",
+    "platforms": [
+      3,
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 184658,
+        "human": "Feb 13, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 184659,
+        "human": "Feb 13, 2020",
+        "platform": 3,
+        "y": 2020
+      }
+    ],
+    "slug": "luna-the-shadow-dust"
+  },
+  "128160": {
+    "id": 128160,
+    "alternative_names": [
+      {
+        "id": 28722,
+        "comment": "Japanese title",
+        "name": "\u30de\u30eb\u30b3\u3068\u9280\u6cb3\u7adc \uff5eMARCO\uff06GALAXY DRAGON\uff5e"
+      },
+      {
+        "id": 28723,
+        "comment": "Chinese title",
+        "name": "\u4e38\u5b50\u4e0e\u9280\u6cb3\u9f99"
+      },
+      {
+        "id": 29366,
+        "comment": "Alternate title",
+        "name": "Marco and The Galaxy Dragon"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 1841367,
+        "category": 1,
+        "name": "Marco & The Galaxy Dragon",
+        "uid": "1202540",
+        "url": "https://store.steampowered.com/app/1202540",
+        "year": 2020
+      },
+      {
+        "id": 1994439,
+        "category": 14,
+        "name": "Marco & The Galaxy Dragon",
+        "uid": "602811745",
+        "url": "https://www.twitch.tv/directory/game/Marco%20%26%20The%20Galaxy%20Dragon"
+      }
+    ],
+    "name": "Marco & The Galaxy Dragon",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 184697,
+        "human": "Feb 28, 2020",
+        "platform": 6,
+        "y": 2020
+      }
+    ],
+    "slug": "marco-and-the-galaxy-dragon"
+  },
+  "7767": {
+    "id": 7767,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 11433,
+        "category": 1,
+        "name": "Mini Metro",
+        "uid": "287980"
+      },
+      {
+        "id": 77586,
+        "category": 5,
+        "name": "Mini Metro",
+        "uid": "1434554947",
+        "url": "https://www.gog.com/game/mini_metro",
+        "year": 2015
+      },
+      {
+        "id": 87236,
+        "category": 7,
+        "name": "Mini Metro",
+        "uid": "minimetro",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=minimetro"
+      },
+      {
+        "id": 97623,
+        "category": 8,
+        "name": "Mini Metro",
+        "uid": "DD-MINIMETRO",
+        "url": "https://uk.gamersgate.com/DD-MINIMETRO/mini-metro",
+        "year": 2015
+      },
+      {
+        "id": 115431,
+        "category": 3,
+        "name": "Mini Metro",
+        "uid": "45639",
+        "url": "https://www.giantbomb.com/games/3030-45639/",
+        "year": 2015
+      },
+      {
+        "id": 218953,
+        "category": 12,
+        "name": "Mini Metro",
+        "uid": "612492cf166565b8128d9c9f59e2ec5c",
+        "url": "http://www.nintendolife.com/games/switch-eshop/mini_metro",
+        "year": 2018
+      },
+      {
+        "id": 223604,
+        "category": 13,
+        "name": "Mini Metro",
+        "uid": "1047760200",
+        "url": "https://itunes.apple.com/us/app/mini-metro/id1047760200?mt=12&uo=4",
+        "year": 2015
+      },
+      {
+        "id": 225072,
+        "category": 13,
+        "name": "Mini Metro",
+        "uid": "837860959",
+        "url": "https://itunes.apple.com/us/app/mini-metro/id837860959?mt=8&uo=4",
+        "year": 2015
+      },
+      {
+        "id": 312156,
+        "category": 14,
+        "name": "Mini Metro",
+        "uid": "459736",
+        "url": "https://www.twitch.tv/directory/game/Mini Metro"
+      },
+      {
+        "id": 352448,
+        "category": 15,
+        "name": "Mini Metro",
+        "uid": "nz.co.codepoint.minimetro",
+        "url": "https://play.google.com/store/apps/details?id=nz.co.codepoint.minimetro"
+      }
+    ],
+    "name": "Mini Metro",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      130
+    ],
+    "release_dates": [
+      {
+        "id": 59793,
+        "human": "Nov 06, 2015",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 59795,
+        "human": "Nov 06, 2015",
+        "platform": 3,
+        "y": 2015
+      },
+      {
+        "id": 59797,
+        "human": "Oct 18, 2016",
+        "platform": 34,
+        "y": 2016
+      },
+      {
+        "id": 129866,
+        "human": "Nov 06, 2015",
+        "platform": 6,
+        "y": 2015
+      },
+      {
+        "id": 147104,
+        "human": "Oct 22, 2015",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 149941,
+        "human": "Dec 25, 2015",
+        "platform": 39,
+        "y": 2015
+      },
+      {
+        "id": 156552,
+        "human": "Aug 10, 2018",
+        "platform": 130,
+        "y": 2018
+      }
+    ],
+    "slug": "mini-metro"
+  },
+  "136604": {
+    "id": 136604,
+    "category": 3,
+    "external_games": [
+      {
+        "id": 1942020,
+        "category": 20,
+        "name": "Control Ultimate Edition (PS4)",
+        "uid": "B08H9K6R64",
+        "url": "https://amazon.fr/dp/B08H9K6R64"
+      },
+      {
+        "id": 1942108,
+        "category": 20,
+        "name": "Control Ultimate Edition (Xbox One)",
+        "uid": "B08H9K7MQL"
+      },
+      {
+        "id": 1942794,
+        "category": 20,
+        "uid": "B08HF6WH7M"
+      },
+      {
+        "id": 1942816,
+        "category": 20,
+        "uid": "B08HF8BNMM"
+      },
+      {
+        "id": 1942989,
+        "category": 20,
+        "name": "Control Ultimate Edition - Xbox One",
+        "uid": "B08L7H3LDH"
+      },
+      {
+        "id": 1943012,
+        "category": 20,
+        "name": "Control Ultimate Edition - PlayStation 4",
+        "uid": "B08L7NFCW6"
+      },
+      {
+        "id": 1997262,
+        "category": 20,
+        "name": "Control Ultimate Edition (PS5)",
+        "uid": "B08R1XLRSD",
+        "url": "https://amazon.co.uk/dp/B08R1XLRSD"
+      },
+      {
+        "id": 1997298,
+        "category": 20,
+        "name": "Control Ultimate Edition (Xbox Series X)",
+        "uid": "B08R1THRNY",
+        "url": "https://amazon.co.uk/dp/B08R1THRNY"
+      }
+    ],
+    "name": "Control: Ultimate Edition",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
+    "release_dates": [
+      {
+        "id": 206510,
+        "human": "Aug 27, 2020",
+        "platform": 6,
+        "y": 2020
+      },
+      {
+        "id": 206511,
+        "human": "Sep 10, 2020",
+        "platform": 48,
+        "y": 2020
+      },
+      {
+        "id": 206512,
+        "human": "Sep 10, 2020",
+        "platform": 49,
+        "y": 2020
+      },
+      {
+        "id": 216110,
+        "human": "Oct 28, 2020",
+        "platform": 130,
+        "y": 2020
+      },
+      {
+        "id": 222273,
+        "human": "Feb 02, 2021",
+        "platform": 169,
+        "y": 2021
+      },
+      {
+        "id": 222274,
+        "human": "Feb 02, 2021",
+        "platform": 167,
+        "y": 2021
+      }
+    ],
+    "slug": "control-ultimate-edition"
+  },
   "19460": {
     "id": 19460,
     "alternative_names": [
@@ -3210,142 +4145,6 @@
       }
     ],
     "slug": "iron-harvest"
-  },
-  "36595": {
-    "id": 36595,
-    "alternative_names": [
-      {
-        "id": 52129,
-        "comment": "Korean title",
-        "name": "\ucc9c\uc218\uc758 \uc0ac\ucfe0\ub098\ud788\uba54"
-      },
-      {
-        "id": 52681,
-        "comment": "Japanese title - original",
-        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 186796,
-        "category": 3,
-        "name": "Sakuna: Of Rice And Ruin",
-        "uid": "60864",
-        "url": "https://www.giantbomb.com/games/3030-60864/",
-        "year": 2018
-      },
-      {
-        "id": 1593322,
-        "category": 19,
-        "name": "Sakuna: Of Rice and Ruin",
-        "uid": "054464--61519",
-        "url": "https://www.gamespress.com/product.asp?c=054464--61519",
-        "year": 2018
-      },
-      {
-        "id": 1725109,
-        "category": 12,
-        "name": "Sakuna: Of Rice and Ruin",
-        "uid": "87078262a04f767c035b56e32f0f1983",
-        "url": "http://www.nintendolife.com/games/switch-eshop/sakuna_of_rice_and_ruin"
-      },
-      {
-        "id": 1905804,
-        "category": 14,
-        "name": "Sakuna: Of Rice And Ruin",
-        "uid": "498405",
-        "url": "https://www.twitch.tv/directory/game/Sakuna%3A%20Of%20Rice%20And%20Ruin"
-      },
-      {
-        "id": 1941685,
-        "category": 20,
-        "uid": "B08F51L9HF"
-      },
-      {
-        "id": 1941711,
-        "category": 20,
-        "uid": "B08F4ZQMG2"
-      },
-      {
-        "id": 1942159,
-        "category": 20,
-        "uid": "B08CSH8QK1"
-      },
-      {
-        "id": 1942316,
-        "category": 20,
-        "uid": "B08CSHC19D"
-      },
-      {
-        "id": 1942779,
-        "category": 20,
-        "uid": "B08DPF28KP"
-      },
-      {
-        "id": 1942810,
-        "category": 20,
-        "uid": "B08DPDTWY5"
-      },
-      {
-        "id": 1996602,
-        "category": 20,
-        "name": "\u5929\u7a42\u306e\u30b5\u30af\u30ca\u30d2\u30e1|\u30aa\u30f3\u30e9\u30a4\u30f3\u30b3\u30fc\u30c9\u7248",
-        "uid": "B08N5B85MS",
-        "url": "https://amazon.jp/dp/B08N5B85MS"
-      }
-    ],
-    "name": "Sakuna: Of Rice and Ruin",
-    "platforms": [
-      6,
-      48,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 217915,
-        "human": "Nov 10, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217916,
-        "human": "Nov 10, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217917,
-        "human": "Nov 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217918,
-        "human": "Nov 20, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217919,
-        "human": "Nov 20, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 217920,
-        "human": "Nov 12, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 217921,
-        "human": "Nov 12, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "sakuna-of-rice-and-ruin"
   },
   "36476": {
     "id": 36476,
@@ -7715,106 +8514,6 @@
     ],
     "slug": "command-and-conquer-red-alert-remastered"
   },
-  "72870": {
-    "id": 72870,
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1865639,
-        "category": 20,
-        "uid": "B07TBLGT8J"
-      },
-      {
-        "id": 1865821,
-        "category": 20,
-        "uid": "B07THC6RDF"
-      },
-      {
-        "id": 1928322,
-        "category": 20,
-        "uid": "B07STWQ38X",
-        "url": "https://amazon.com/dp/B07STWQ38X"
-      },
-      {
-        "id": 1928748,
-        "category": 20,
-        "uid": "B076BJ723V"
-      },
-      {
-        "id": 1928848,
-        "category": 20,
-        "uid": "B077SBGNXH",
-        "url": "https://amazon.fr/dp/B077SBGNXH"
-      },
-      {
-        "id": 1930292,
-        "category": 20,
-        "uid": "B07D2NY7RW",
-        "url": "https://amazon.com/dp/B07D2NY7RW"
-      },
-      {
-        "id": 1931573,
-        "category": 20,
-        "uid": "B07L38666Q"
-      },
-      {
-        "id": 1933397,
-        "category": 20,
-        "uid": "B07SKX31M8"
-      },
-      {
-        "id": 1933649,
-        "category": 20,
-        "uid": "B076VNR2C4"
-      },
-      {
-        "id": 1933869,
-        "category": 20,
-        "uid": "B07RXH442W"
-      },
-      {
-        "id": 1934076,
-        "category": 20,
-        "uid": "B0766658WB"
-      },
-      {
-        "id": 1935040,
-        "category": 20,
-        "uid": "B076V2Q6WZ"
-      },
-      {
-        "id": 1937273,
-        "category": 20,
-        "uid": "B07798FWNN"
-      },
-      {
-        "id": 1942692,
-        "category": 20,
-        "name": "Horizon Zero Dawn Complete Edition - PC [Online Game Code]",
-        "uid": "B08GQTZK2T"
-      }
-    ],
-    "name": "Horizon Zero Dawn Complete Edition",
-    "platforms": [
-      6,
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 130573,
-        "human": "Dec 06, 2017",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 203015,
-        "human": "Aug 07, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "horizon-zero-dawn-complete-edition"
-  },
   "128157": {
     "id": 128157,
     "category": 0,
@@ -9959,141 +10658,6 @@
     ],
     "slug": "warframe"
   },
-  "2985": {
-    "id": 2985,
-    "alternative_names": [
-      {
-        "id": 4072,
-        "comment": "Japanese title",
-        "name": "\u30da\u30eb\u30bd\u30ca4 \u30b6\u30fb\u30b4\u30fc\u30eb\u30c7\u30f3"
-      },
-      {
-        "id": 13414,
-        "comment": "Other",
-        "name": "Persona 4: The Golden"
-      },
-      {
-        "id": 13415,
-        "comment": "Other",
-        "name": "P4G"
-      },
-      {
-        "id": 47580,
-        "comment": "Other Alias",
-        "name": "Persona 4: The Golden"
-      },
-      {
-        "id": 47581,
-        "comment": "Other Alias",
-        "name": "P4G"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 56789,
-        "category": 2,
-        "name": "Persona 4 Golden",
-        "uid": "12554",
-        "url": "https://thegamesdb.net/game.php?id=12554"
-      },
-      {
-        "id": 81689,
-        "category": 6,
-        "name": "Persona 4 Golden",
-        "uid": "56055c66af4c044a49b0a19df62e538a",
-        "url": "http://www.pushsquare.com/games/psvita/persona_4_golden",
-        "year": 2012
-      },
-      {
-        "id": 124107,
-        "category": 3,
-        "name": "Persona 4 Golden",
-        "uid": "36273",
-        "url": "https://www.giantbomb.com/games/3030-36273/",
-        "year": 2012
-      },
-      {
-        "id": 188939,
-        "category": 10,
-        "name": "Persona 4 Golden",
-        "uid": "UC7aS389wYuUE1Bnv4MpGmAQ",
-        "url": "https://gaming.youtube.com/game/UC7aS389wYuUE1Bnv4MpGmAQ"
-      },
-      {
-        "id": 246344,
-        "category": 14,
-        "name": "Persona 4 Golden",
-        "uid": "32542",
-        "url": "https://www.twitch.tv/directory/game/Persona 4 Golden"
-      },
-      {
-        "id": 402443,
-        "category": 16,
-        "name": "Persona\u00ae4 Golden\u2122",
-        "uid": "UP0005-PCSE00120_00-PERSONA4GOLDEN01",
-        "url": "https://www.playstation.com/en-us/games/persona-4-golden-psvita/",
-        "year": 2012
-      },
-      {
-        "id": 1931984,
-        "category": 20,
-        "uid": "B007W8S2MG"
-      },
-      {
-        "id": 1932105,
-        "category": 20,
-        "uid": "B009RH725S"
-      },
-      {
-        "id": 1932647,
-        "category": 20,
-        "uid": "B00QLG65M4"
-      },
-      {
-        "id": 1932692,
-        "category": 20,
-        "uid": "B005MNMGFW"
-      },
-      {
-        "id": 1936816,
-        "category": 20,
-        "uid": "B00TPD1FG6"
-      }
-    ],
-    "name": "Persona 4 Golden",
-    "platforms": [
-      6,
-      46
-    ],
-    "release_dates": [
-      {
-        "id": 104838,
-        "human": "Jun 15, 2012",
-        "platform": 46,
-        "y": 2012
-      },
-      {
-        "id": 104839,
-        "human": "Nov 20, 2012",
-        "platform": 46,
-        "y": 2012
-      },
-      {
-        "id": 104840,
-        "human": "Feb 22, 2013",
-        "platform": 46,
-        "y": 2013
-      },
-      {
-        "id": 199782,
-        "human": "Jun 13, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "persona-4-golden"
-  },
   "3021": {
     "id": 3021,
     "category": 0,
@@ -10969,155 +11533,6 @@
       }
     ],
     "slug": "sea-of-thieves"
-  },
-  "11156": {
-    "id": 11156,
-    "alternative_names": [
-      {
-        "id": 9367,
-        "comment": "Other",
-        "name": "Horizon"
-      },
-      {
-        "id": 48946,
-        "comment": "Other Alias",
-        "name": "Horizon Zero Dawn\u2122"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 55256,
-        "category": 2,
-        "name": "Horizon Zero Dawn",
-        "uid": "29523",
-        "url": "https://thegamesdb.net/game.php?id=29523"
-      },
-      {
-        "id": 80155,
-        "category": 6,
-        "name": "Horizon: Zero Dawn",
-        "uid": "5256fe550ed7f9cdabb3a7411b139041",
-        "url": "http://www.pushsquare.com/games/ps4/horizon_zero_dawn",
-        "year": 2017
-      },
-      {
-        "id": 111217,
-        "category": 3,
-        "name": "Horizon Zero Dawn",
-        "uid": "49973",
-        "url": "https://www.giantbomb.com/games/3030-49973/",
-        "year": 2017
-      },
-      {
-        "id": 190112,
-        "category": 10,
-        "name": "Horizon Zero Dawn",
-        "uid": "UCwzYdbiHHzWm9xrGQMWt-vQ",
-        "url": "https://gaming.youtube.com/game/UCwzYdbiHHzWm9xrGQMWt-vQ"
-      },
-      {
-        "id": 249731,
-        "category": 14,
-        "name": "Horizon Zero Dawn",
-        "uid": "490374",
-        "url": "https://www.twitch.tv/directory/game/Horizon Zero Dawn"
-      },
-      {
-        "id": 399514,
-        "category": 16,
-        "name": "Horizon Zero Dawn",
-        "uid": "UP9000-CUSA01967_00-HORIZONZERODAWN1, UP9000-CUSA01967_00-HORIZONZERODAWN1",
-        "url": "https://www.playstation.com/en-us/games/horizon-zero-dawn-ps4/",
-        "year": 2017
-      },
-      {
-        "id": 1273020,
-        "category": 16,
-        "name": "Horizon Zero Dawn",
-        "uid": "UP9000-CUSA01967_00-HORIZONZERODAWN1",
-        "url": "https://www.playstation.com/en-us/games/horizon-zero-dawn-ps4/",
-        "year": 2017
-      },
-      {
-        "id": 1930108,
-        "category": 20,
-        "uid": "B00ZQC73O8",
-        "url": "https://amazon.com/dp/B00ZQC73O8"
-      },
-      {
-        "id": 1933053,
-        "category": 20,
-        "uid": "B00ZG1S88E"
-      },
-      {
-        "id": 1933823,
-        "category": 20,
-        "uid": "B06XC1WH2K"
-      },
-      {
-        "id": 1936367,
-        "category": 20,
-        "uid": "B00ZV86UX2"
-      },
-      {
-        "id": 1936379,
-        "category": 20,
-        "uid": "B06XZL1SWZ"
-      },
-      {
-        "id": 1936662,
-        "category": 20,
-        "uid": "B00ZR63WHU"
-      },
-      {
-        "id": 1936734,
-        "category": 20,
-        "uid": "B0777SQDXX"
-      },
-      {
-        "id": 1936851,
-        "category": 20,
-        "uid": "B07TJV6FN8"
-      },
-      {
-        "id": 1938263,
-        "category": 20,
-        "uid": "B00ZRQTKO4"
-      }
-    ],
-    "name": "Horizon Zero Dawn",
-    "platforms": [
-      6,
-      48
-    ],
-    "release_dates": [
-      {
-        "id": 65848,
-        "human": "Mar 02, 2017",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 103575,
-        "human": "Mar 01, 2017",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 103576,
-        "human": "Feb 28, 2017",
-        "platform": 48,
-        "y": 2017
-      },
-      {
-        "id": 203967,
-        "human": "Aug 07, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "horizon-zero-dawn"
   },
   "11198": {
     "id": 11198,
@@ -22549,109 +22964,6 @@
     ],
     "slug": "journey-of-the-broken-circle"
   },
-  "136604": {
-    "id": 136604,
-    "category": 3,
-    "external_games": [
-      {
-        "id": 1942020,
-        "category": 20,
-        "name": "Control Ultimate Edition (PS4)",
-        "uid": "B08H9K6R64",
-        "url": "https://amazon.fr/dp/B08H9K6R64"
-      },
-      {
-        "id": 1942108,
-        "category": 20,
-        "name": "Control Ultimate Edition (Xbox One)",
-        "uid": "B08H9K7MQL"
-      },
-      {
-        "id": 1942794,
-        "category": 20,
-        "uid": "B08HF6WH7M"
-      },
-      {
-        "id": 1942816,
-        "category": 20,
-        "uid": "B08HF8BNMM"
-      },
-      {
-        "id": 1942989,
-        "category": 20,
-        "name": "Control Ultimate Edition - Xbox One",
-        "uid": "B08L7H3LDH"
-      },
-      {
-        "id": 1943012,
-        "category": 20,
-        "name": "Control Ultimate Edition - PlayStation 4",
-        "uid": "B08L7NFCW6"
-      },
-      {
-        "id": 1997262,
-        "category": 20,
-        "name": "Control Ultimate Edition (PS5)",
-        "uid": "B08R1XLRSD",
-        "url": "https://amazon.co.uk/dp/B08R1XLRSD"
-      },
-      {
-        "id": 1997298,
-        "category": 20,
-        "name": "Control Ultimate Edition (Xbox Series X)",
-        "uid": "B08R1THRNY",
-        "url": "https://amazon.co.uk/dp/B08R1THRNY"
-      }
-    ],
-    "name": "Control: Ultimate Edition",
-    "platforms": [
-      6,
-      48,
-      49,
-      130,
-      167,
-      169
-    ],
-    "release_dates": [
-      {
-        "id": 206510,
-        "human": "Aug 27, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 206511,
-        "human": "Sep 10, 2020",
-        "platform": 48,
-        "y": 2020
-      },
-      {
-        "id": 206512,
-        "human": "Sep 10, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 216110,
-        "human": "Oct 28, 2020",
-        "platform": 130,
-        "y": 2020
-      },
-      {
-        "id": 222273,
-        "human": "Feb 02, 2021",
-        "platform": 169,
-        "y": 2021
-      },
-      {
-        "id": 222274,
-        "human": "Feb 02, 2021",
-        "platform": 167,
-        "y": 2021
-      }
-    ],
-    "slug": "control-ultimate-edition"
-  },
   "136736": {
     "id": 136736,
     "alternative_names": [
@@ -24104,37 +24416,6 @@
     ],
     "slug": "minecraft-dungeons-howling-peaks"
   },
-  "140878": {
-    "id": 140878,
-    "alternative_names": [
-      {
-        "id": 52054,
-        "comment": "Alternative title",
-        "name": "Sam & Max: Save the World Remastered"
-      }
-    ],
-    "category": 0,
-    "name": "Sam & Max: Save the World",
-    "platforms": [
-      6,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 217567,
-        "human": "Dec 02, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 217568,
-        "human": "Dec 02, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "sam-and-max-save-the-world"
-  },
   "23322": {
     "id": 23322,
     "alternative_names": [
@@ -24304,158 +24585,5 @@
       }
     ],
     "slug": "supraland"
-  },
-  "19460": {
-    "id": 19460,
-    "alternative_names": [
-      {
-        "id": 36782,
-        "comment": "Japanese title - original",
-        "name": "\u4e0d\u601d\u8b70\u306e\u30c0\u30f3\u30b8\u30e7\u30f3 \u98a8\u6765\u306e\u30b7\u30ec\u30f35plus \u30d5\u30a9\u30fc\u30c1\u30e5\u30f3\u30bf\u30ef\u30fc\u3068\u904b\u547d\u306e\u30c0\u30a4\u30b9"
-      }
-    ],
-    "category": 0,
-    "external_games": [
-      {
-        "id": 57046,
-        "category": 2,
-        "name": "Shiren The Wanderer: The Tower of Fortune and the Dice of Fate",
-        "uid": "40207",
-        "url": "https://thegamesdb.net/game.php?id=40207"
-      },
-      {
-        "id": 1932688,
-        "category": 20,
-        "uid": "B00V2W74DG"
-      },
-      {
-        "id": 1932783,
-        "category": 20,
-        "uid": "B0041N56P6"
-      },
-      {
-        "id": 1934961,
-        "category": 20,
-        "uid": "B01BM6TESY"
-      },
-      {
-        "id": 1958368,
-        "category": 14,
-        "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
-        "uid": "1155471828",
-        "url": "https://www.twitch.tv/directory/game/Shiren%20the%20Wanderer%3A%20The%20Tower%20of%20Fortune%20and%20the%20Dice%20of%20Fate"
-      }
-    ],
-    "name": "Shiren the Wanderer: The Tower of Fortune and the Dice of Fate",
-    "platforms": [
-      6,
-      20,
-      46
-    ],
-    "release_dates": [
-      {
-        "id": 154267,
-        "human": "Dec 09, 2010",
-        "platform": 20,
-        "y": 2010
-      },
-      {
-        "id": 154268,
-        "human": "Jun 04, 2015",
-        "platform": 46,
-        "y": 2015
-      },
-      {
-        "id": 154269,
-        "human": "Jul 26, 2016",
-        "platform": 46,
-        "y": 2016
-      },
-      {
-        "id": 220310,
-        "human": "Dec 03, 2020",
-        "platform": 6,
-        "y": 2020
-      }
-    ],
-    "slug": "shiren-the-wanderer-the-tower-of-fortune-and-the-dice-of-fate"
-  },
-  "90055": {
-    "id": 90055,
-    "category": 0,
-    "external_games": [
-      {
-        "id": 1724763,
-        "category": 6,
-        "name": "Carrion",
-        "uid": "f5116450e37b4331ed3df77fab96f15c",
-        "url": "http://www.pushsquare.com/games/ps4/carrion",
-        "year": 2020
-      },
-      {
-        "id": 1724994,
-        "category": 1,
-        "name": "CARRION",
-        "uid": "953490",
-        "url": "https://store.steampowered.com/app/953490",
-        "year": 2020
-      },
-      {
-        "id": 1775878,
-        "category": 3,
-        "name": "Carrion",
-        "uid": "73781",
-        "url": "https://www.giantbomb.com/games/3030-73781/",
-        "year": 2020
-      },
-      {
-        "id": 1914523,
-        "category": 14,
-        "name": "Carrion",
-        "uid": "512973",
-        "url": "https://www.twitch.tv/directory/game/Carrion"
-      }
-    ],
-    "name": "Carrion",
-    "platforms": [
-      3,
-      6,
-      14,
-      49,
-      130
-    ],
-    "release_dates": [
-      {
-        "id": 204011,
-        "human": "Jul 23, 2020",
-        "platform": 3,
-        "y": 2020
-      },
-      {
-        "id": 204012,
-        "human": "Jul 23, 2020",
-        "platform": 14,
-        "y": 2020
-      },
-      {
-        "id": 204013,
-        "human": "Jul 23, 2020",
-        "platform": 6,
-        "y": 2020
-      },
-      {
-        "id": 204014,
-        "human": "Jul 23, 2020",
-        "platform": 49,
-        "y": 2020
-      },
-      {
-        "id": 204016,
-        "human": "Jul 23, 2020",
-        "platform": 130,
-        "y": 2020
-      }
-    ],
-    "slug": "carrion"
   }
 }
