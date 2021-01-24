@@ -68,9 +68,8 @@ def parse_votes(data,
 
     for element in data:
         # Tokenize
-        raw_tokens = element.split('";"')
-        # Adjust the first two tokens and the last token due to formatting
-        tokens = [t for t in raw_tokens[0].strip(quote).split(';"')] + raw_tokens[1:-1] + [raw_tokens[-1].strip(quote)]
+        raw_tokens = element.split(';')
+        tokens = [t.strip(quote) for t in raw_tokens]
 
         # Parse
         voter_name = tokens[parsing_params['voter_name']]
