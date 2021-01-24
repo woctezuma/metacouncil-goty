@@ -45,7 +45,7 @@ def get_review_token_indices(ballot_year='2018'):
     # Only valid for 2019 data
     gotd_description_token_index = 52
 
-    if int(ballot_year) == 2019:
+    if int(ballot_year) % 10 == 9:
         review_token_indices = [goty_description_token_index,
                                 gotd_description_token_index]
     else:
