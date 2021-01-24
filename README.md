@@ -44,6 +44,12 @@ python optional_categories.py
 python generate_thanks.py
 ```
 
+-   To anonymize data before uploading it to Github, run:
+
+```bash
+python anonymize_data.py
+```
+
 ### With SteamSpy
 
 -   If needed, edit hard-coded values below, then run the three aforementioned scripts again:
