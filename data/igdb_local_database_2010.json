@@ -1,4 +1,432 @@
 {
+  "36929": {
+    "id": 36929,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 101781,
+        "category": 3,
+        "name": "Pathfinder: Kingmaker",
+        "uid": "60263",
+        "url": "https://www.giantbomb.com/games/3030-60263/"
+      },
+      {
+        "id": 1192880,
+        "category": 14,
+        "name": "Pathfinder: Kingmaker",
+        "uid": "497818",
+        "url": "https://www.twitch.tv/directory/game/Pathfinder: Kingmaker"
+      },
+      {
+        "id": 1200719,
+        "category": 1,
+        "name": "Pathfinder: Kingmaker",
+        "uid": "640820",
+        "url": "https://store.steampowered.com/app/640820",
+        "year": 2018
+      }
+    ],
+    "name": "Pathfinder: Kingmaker",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49
+    ],
+    "release_dates": [
+      {
+        "id": 157832,
+        "human": "Sep 25, 2018",
+        "platform": 6,
+        "y": 2018
+      },
+      {
+        "id": 159198,
+        "human": "Sep 25, 2018",
+        "platform": 14,
+        "y": 2018
+      },
+      {
+        "id": 159199,
+        "human": "Sep 25, 2018",
+        "platform": 3,
+        "y": 2018
+      },
+      {
+        "id": 212012,
+        "human": "Sep 25, 2018",
+        "platform": 49,
+        "y": 2018
+      },
+      {
+        "id": 212013,
+        "human": "Sep 25, 2018",
+        "platform": 48,
+        "y": 2018
+      },
+      {
+        "id": 212014,
+        "human": "2021",
+        "platform": 48,
+        "y": 2021
+      },
+      {
+        "id": 212015,
+        "human": "2021",
+        "platform": 49,
+        "y": 2021
+      }
+    ],
+    "slug": "pathfinder-kingmaker"
+  },
+  "113": {
+    "id": 113,
+    "alternative_names": [
+      {
+        "id": 614,
+        "name": "Assassins Creed Brotherhood"
+      },
+      {
+        "id": 20658,
+        "comment": "Other",
+        "name": "AC Brotherhood"
+      },
+      {
+        "id": 20659,
+        "name": "ACB"
+      },
+      {
+        "id": 20660,
+        "name": "Assassins Creed: Brotherhood"
+      },
+      {
+        "id": 46776,
+        "comment": "Other Alias",
+        "name": "Assassins Creed: Brotherhood"
+      },
+      {
+        "id": 46777,
+        "comment": "Other Alias",
+        "name": "AC Brotherhood"
+      },
+      {
+        "id": 46778,
+        "comment": "Other Alias",
+        "name": "ACB"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13922,
+        "category": 1,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "48190"
+      },
+      {
+        "id": 23991,
+        "category": 2,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "8171",
+        "url": "https://thegamesdb.net/game.php?id=8171"
+      },
+      {
+        "id": 78875,
+        "category": 6,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "6a1e41c51084b14155376c98f8cf6a54",
+        "url": "http://www.pushsquare.com/games/ps3/assassins_creed_brotherhood",
+        "year": 2010
+      },
+      {
+        "id": 81177,
+        "category": 7,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "assassinscreedbrotherhood",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=assassinscreedbrotherhood"
+      },
+      {
+        "id": 95061,
+        "category": 8,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "DD-ACBH-UPLAY",
+        "url": "https://uk.gamersgate.com/DD-ACBH-UPLAY/assassins-creed-brotherhood",
+        "year": 2011
+      },
+      {
+        "id": 128873,
+        "category": 3,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "31001",
+        "url": "https://www.giantbomb.com/games/3030-31001/",
+        "year": 2010
+      },
+      {
+        "id": 189507,
+        "category": 10,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "UCkydzxMprw6fHq8NjVAympw",
+        "url": "https://gaming.youtube.com/game/UCkydzxMprw6fHq8NjVAympw"
+      },
+      {
+        "id": 213183,
+        "category": 11,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8025553085d",
+        "url": "http://marketplace.xbox.com/en-US/Product/Assassins-Creed-Brotherhood/66acd000-77fe-1000-9115-d8025553085d",
+        "year": 2010
+      },
+      {
+        "id": 246323,
+        "category": 14,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "27924",
+        "url": "https://www.twitch.tv/directory/game/Assassin's Creed: Brotherhood"
+      },
+      {
+        "id": 403222,
+        "category": 16,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "UP0001-NPUB30522_00-ACBROTPS3REMPKG1",
+        "url": "https://www.playstation.com/en-us/games/assassins-creed-brotherhood-ps3/",
+        "year": 2010
+      },
+      {
+        "id": 1305154,
+        "category": 18,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "1431504989",
+        "url": "https://account.xbox.com/en-US/gameinfohub?titleid=1431504989"
+      }
+    ],
+    "name": "Assassin's Creed: Brotherhood",
+    "platforms": [
+      6,
+      9,
+      12,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 64472,
+        "human": "Nov 16, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64473,
+        "human": "Mar 20, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64475,
+        "human": "Nov 18, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64476,
+        "human": "Mar 17, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64478,
+        "human": "Dec 09, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64479,
+        "human": "Jun 03, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64480,
+        "human": "Nov 18, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 64481,
+        "human": "Nov 18, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64482,
+        "human": "Mar 17, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 107363,
+        "human": "Nov 16, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107364,
+        "human": "Nov 19, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107365,
+        "human": "Dec 09, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 181631,
+        "human": "Nov 15, 2016",
+        "platform": 48,
+        "y": 2016
+      }
+    ],
+    "slug": "assassin-s-creed-brotherhood"
+  },
+  "24743": {
+    "id": 24743,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 81179,
+        "category": 7,
+        "name": "Assassin's Creed Brotherhood Deluxe Edition",
+        "uid": "assassinscreedbrotherhooddeluxeedition",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=assassinscreedbrotherhooddeluxeedition"
+      },
+      {
+        "id": 95063,
+        "category": 8,
+        "name": "Assassin's Creed Brotherhood Deluxe Edition",
+        "uid": "DD-ACBHDE",
+        "url": "https://uk.gamersgate.com/DD-ACBHDE/assassins-creed-brotherhood-deluxe-edition",
+        "year": 2011
+      }
+    ],
+    "name": "Assassin's Creed Brotherhood: Deluxe Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 173037,
+        "human": "Mar 18, 2011",
+        "platform": 6,
+        "y": 2011
+      }
+    ],
+    "slug": "assassins-creed-brotherhood-deluxe-edition"
+  },
+  "1881": {
+    "id": 1881,
+    "alternative_names": [
+      {
+        "id": 9254,
+        "name": "ARMA III"
+      },
+      {
+        "id": 13563,
+        "comment": "Other",
+        "name": "Arma 3"
+      },
+      {
+        "id": 18812,
+        "comment": "Other",
+        "name": "ArmA: Armed Assault "
+      },
+      {
+        "id": 47405,
+        "comment": "Other Alias",
+        "name": "ArmA III"
+      },
+      {
+        "id": 50299,
+        "comment": "Korean title",
+        "name": "\uc544\ub974\ub9c8 3"
+      },
+      {
+        "id": 52321,
+        "comment": "Japanese title - translated",
+        "name": "\u30a2\u30eb\u30de 3"
+      },
+      {
+        "id": 52322,
+        "comment": "Japanese title - translated",
+        "name": "\u30a2\u30fc\u30de 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13380,
+        "category": 1,
+        "name": "Arma 3",
+        "uid": "107410"
+      },
+      {
+        "id": 39715,
+        "category": 2,
+        "name": "Arma III",
+        "uid": "16136",
+        "url": "https://thegamesdb.net/game.php?id=16136"
+      },
+      {
+        "id": 81127,
+        "category": 7,
+        "name": "Arma 3",
+        "uid": "armaiii",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=armaiii"
+      },
+      {
+        "id": 124909,
+        "category": 3,
+        "name": "ArmA III",
+        "uid": "35383",
+        "url": "https://www.giantbomb.com/games/3030-35383/",
+        "year": 2013
+      },
+      {
+        "id": 245112,
+        "category": 14,
+        "name": "Arma 3",
+        "uid": "31750",
+        "url": "https://www.twitch.tv/directory/game/Arma 3"
+      }
+    ],
+    "name": "Arma 3",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 93379,
+        "human": "Sep 12, 2013",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 93380,
+        "human": "Aug 31, 2015",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 93381,
+        "human": "Aug 31, 2015",
+        "platform": 3,
+        "y": 2015
+      }
+    ],
+    "slug": "arma-3"
+  },
   "62151": {
     "id": 62151,
     "category": 0,
@@ -49587,5 +50015,352 @@
       }
     ],
     "slug": "the-walking-dead-the-telltale-definitive-series"
+  },
+  "113": {
+    "id": 113,
+    "alternative_names": [
+      {
+        "id": 614,
+        "name": "Assassins Creed Brotherhood"
+      },
+      {
+        "id": 20658,
+        "comment": "Other",
+        "name": "AC Brotherhood"
+      },
+      {
+        "id": 20659,
+        "name": "ACB"
+      },
+      {
+        "id": 20660,
+        "name": "Assassins Creed: Brotherhood"
+      },
+      {
+        "id": 46776,
+        "comment": "Other Alias",
+        "name": "Assassins Creed: Brotherhood"
+      },
+      {
+        "id": 46777,
+        "comment": "Other Alias",
+        "name": "AC Brotherhood"
+      },
+      {
+        "id": 46778,
+        "comment": "Other Alias",
+        "name": "ACB"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13922,
+        "category": 1,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "48190"
+      },
+      {
+        "id": 23991,
+        "category": 2,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "8171",
+        "url": "https://thegamesdb.net/game.php?id=8171"
+      },
+      {
+        "id": 78875,
+        "category": 6,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "6a1e41c51084b14155376c98f8cf6a54",
+        "url": "http://www.pushsquare.com/games/ps3/assassins_creed_brotherhood",
+        "year": 2010
+      },
+      {
+        "id": 81177,
+        "category": 7,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "assassinscreedbrotherhood",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=assassinscreedbrotherhood"
+      },
+      {
+        "id": 95061,
+        "category": 8,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "DD-ACBH-UPLAY",
+        "url": "https://uk.gamersgate.com/DD-ACBH-UPLAY/assassins-creed-brotherhood",
+        "year": 2011
+      },
+      {
+        "id": 128873,
+        "category": 3,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "31001",
+        "url": "https://www.giantbomb.com/games/3030-31001/",
+        "year": 2010
+      },
+      {
+        "id": 189507,
+        "category": 10,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "UCkydzxMprw6fHq8NjVAympw",
+        "url": "https://gaming.youtube.com/game/UCkydzxMprw6fHq8NjVAympw"
+      },
+      {
+        "id": 213183,
+        "category": 11,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "xbox36066acd000-77fe-1000-9115-d8025553085d",
+        "url": "http://marketplace.xbox.com/en-US/Product/Assassins-Creed-Brotherhood/66acd000-77fe-1000-9115-d8025553085d",
+        "year": 2010
+      },
+      {
+        "id": 246323,
+        "category": 14,
+        "name": "Assassin's Creed: Brotherhood",
+        "uid": "27924",
+        "url": "https://www.twitch.tv/directory/game/Assassin's Creed: Brotherhood"
+      },
+      {
+        "id": 403222,
+        "category": 16,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "UP0001-NPUB30522_00-ACBROTPS3REMPKG1",
+        "url": "https://www.playstation.com/en-us/games/assassins-creed-brotherhood-ps3/",
+        "year": 2010
+      },
+      {
+        "id": 1305154,
+        "category": 18,
+        "name": "Assassin's Creed Brotherhood",
+        "uid": "1431504989",
+        "url": "https://account.xbox.com/en-US/gameinfohub?titleid=1431504989"
+      }
+    ],
+    "name": "Assassin's Creed: Brotherhood",
+    "platforms": [
+      6,
+      9,
+      12,
+      48
+    ],
+    "release_dates": [
+      {
+        "id": 64472,
+        "human": "Nov 16, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64473,
+        "human": "Mar 20, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64475,
+        "human": "Nov 18, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64476,
+        "human": "Mar 17, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64478,
+        "human": "Dec 09, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64479,
+        "human": "Jun 03, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 64480,
+        "human": "Nov 18, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 64481,
+        "human": "Nov 18, 2010",
+        "platform": 12,
+        "y": 2010
+      },
+      {
+        "id": 64482,
+        "human": "Mar 17, 2011",
+        "platform": 6,
+        "y": 2011
+      },
+      {
+        "id": 107363,
+        "human": "Nov 16, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107364,
+        "human": "Nov 19, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 107365,
+        "human": "Dec 09, 2010",
+        "platform": 9,
+        "y": 2010
+      },
+      {
+        "id": 181631,
+        "human": "Nov 15, 2016",
+        "platform": 48,
+        "y": 2016
+      }
+    ],
+    "slug": "assassin-s-creed-brotherhood"
+  },
+  "24743": {
+    "id": 24743,
+    "category": 0,
+    "external_games": [
+      {
+        "id": 81179,
+        "category": 7,
+        "name": "Assassin's Creed Brotherhood Deluxe Edition",
+        "uid": "assassinscreedbrotherhooddeluxeedition",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=assassinscreedbrotherhooddeluxeedition"
+      },
+      {
+        "id": 95063,
+        "category": 8,
+        "name": "Assassin's Creed Brotherhood Deluxe Edition",
+        "uid": "DD-ACBHDE",
+        "url": "https://uk.gamersgate.com/DD-ACBHDE/assassins-creed-brotherhood-deluxe-edition",
+        "year": 2011
+      }
+    ],
+    "name": "Assassin's Creed Brotherhood: Deluxe Edition",
+    "platforms": [
+      6
+    ],
+    "release_dates": [
+      {
+        "id": 173037,
+        "human": "Mar 18, 2011",
+        "platform": 6,
+        "y": 2011
+      }
+    ],
+    "slug": "assassins-creed-brotherhood-deluxe-edition"
+  },
+  "1881": {
+    "id": 1881,
+    "alternative_names": [
+      {
+        "id": 9254,
+        "name": "ARMA III"
+      },
+      {
+        "id": 13563,
+        "comment": "Other",
+        "name": "Arma 3"
+      },
+      {
+        "id": 18812,
+        "comment": "Other",
+        "name": "ArmA: Armed Assault "
+      },
+      {
+        "id": 47405,
+        "comment": "Other Alias",
+        "name": "ArmA III"
+      },
+      {
+        "id": 50299,
+        "comment": "Korean title",
+        "name": "\uc544\ub974\ub9c8 3"
+      },
+      {
+        "id": 52321,
+        "comment": "Japanese title - translated",
+        "name": "\u30a2\u30eb\u30de 3"
+      },
+      {
+        "id": 52322,
+        "comment": "Japanese title - translated",
+        "name": "\u30a2\u30fc\u30de 3"
+      }
+    ],
+    "category": 0,
+    "external_games": [
+      {
+        "id": 13380,
+        "category": 1,
+        "name": "Arma 3",
+        "uid": "107410"
+      },
+      {
+        "id": 39715,
+        "category": 2,
+        "name": "Arma III",
+        "uid": "16136",
+        "url": "https://thegamesdb.net/game.php?id=16136"
+      },
+      {
+        "id": 81127,
+        "category": 7,
+        "name": "Arma 3",
+        "uid": "armaiii",
+        "url": "https://isthereanydeal.com/#/page:game/info/?plain=armaiii"
+      },
+      {
+        "id": 124909,
+        "category": 3,
+        "name": "ArmA III",
+        "uid": "35383",
+        "url": "https://www.giantbomb.com/games/3030-35383/",
+        "year": 2013
+      },
+      {
+        "id": 245112,
+        "category": 14,
+        "name": "Arma 3",
+        "uid": "31750",
+        "url": "https://www.twitch.tv/directory/game/Arma 3"
+      }
+    ],
+    "name": "Arma 3",
+    "platforms": [
+      3,
+      6,
+      14
+    ],
+    "release_dates": [
+      {
+        "id": 93379,
+        "human": "Sep 12, 2013",
+        "platform": 6,
+        "y": 2013
+      },
+      {
+        "id": 93380,
+        "human": "Aug 31, 2015",
+        "platform": 14,
+        "y": 2015
+      },
+      {
+        "id": 93381,
+        "human": "Aug 31, 2015",
+        "platform": 3,
+        "y": 2015
+      }
+    ],
+    "slug": "arma-3"
   }
 }
