@@ -1,4 +1,4 @@
-from anonymize_data import load_input, remove_header
+from anonymize_data import load_input, remove_header, get_anonymized_file_prefix
 from parsing_params import (
     get_categories,
     get_parsing_params,
@@ -18,7 +18,7 @@ def extract_tokens(input_tokens, ind_list, num_choices):
 
 
 def is_anonymized_file(fname):
-    return bool("anonymized" in fname)
+    return bool(get_anonymized_file_prefix() in fname)
 
 
 def parse_csv(fname, parsing_params):
