@@ -117,5 +117,8 @@ if __name__ == "__main__":
     params = get_parsing_params(year=ballot_year)
     print(params)
 
-    indices = convert_params_to_indices(params, offset=9)
+    indices = get_parsing_indices(year=ballot_year, is_anonymized=False)
+    print(indices)
+
+    indices = get_parsing_indices(year=ballot_year, is_anonymized=True)
     print(indices)
