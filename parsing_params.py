@@ -1,6 +1,3 @@
-from anonymize_data import load_input, remove_header
-
-
 def get_main_categories():
     # Caveat: the order matters!
     return ["goty", "gotd"]
@@ -75,7 +72,7 @@ def convert_params_to_indices(params, offset=9):
 
     last_index = voter_index
 
-    for categorie in get_main_categories():
+    for categorie in get_categories("main"):
         start, end, descr = get_next_indices(
             last_index=last_index, num_indices=params[categorie]["num_choices"]
         )
@@ -86,7 +83,7 @@ def convert_params_to_indices(params, offset=9):
             # range() will stop at end-1, and then the review is at index equal to end, so the last index is "end"
             last_index = end
 
-    for categorie in get_optional_categories():
+    for categorie in get_categories("optional"):
         start, end, descr = get_next_indices(
             last_index=last_index, num_indices=params[categorie]["num_choices"]
         )
@@ -98,77 +95,27 @@ def convert_params_to_indices(params, offset=9):
     return indices
 
 
-def extract_tokens(input_tokens, ind_list, num_choices):
-    d = dict()
-    for i, ind in enumerate(ind_list):
-        # Caveat: num_choices is not necessarily equal to len(ind_list)
-        position = num_choices - i
-        game_name = input_tokens[ind]
-        d[position] = game_name
-    return d
-
-
-def parse_csv(fname, params):
-    text_data = load_input(fname)
-
-    is_anonymized = "anonymized" in fname
-
+def get_parsing_offset(is_anonymized):
     if is_anonymized:
         offset = 0
     else:
-        text_data = remove_header(text_data)
         offset = 9
+    return offset
 
-    indices = convert_params_to_indices(params, offset=offset)
 
-    quote = '"'
+def get_parsing_indices(year, is_anonymized):
+    params = get_parsing_params(year=year)
+    offset = get_parsing_offset(is_anonymized)
+    indices = convert_params_to_indices(params, offset)
 
-    ballots = dict()
-
-    for line in text_data:
-        tokens = [token.strip(quote) for token in line.split(";")]
-
-        ind = indices["voter_name"]
-        voter_name = tokens[ind]
-
-        ballots[voter_name] = dict()
-
-        for categorie in get_main_categories():
-            ind = indices["review"][categorie]
-            if ind is None:
-                review = ""
-            else:
-                review = tokens[ind]
-
-            goty_review_field = f"{categorie}_description"
-            ballots[voter_name][goty_review_field] = review
-
-        for categorie_type in ["main", "optional"]:
-            for categorie in get_categories(categorie_type=categorie_type):
-                ind_list = indices[categorie_type][categorie]
-                d = extract_tokens(tokens, ind_list, params[categorie]["num_choices"])
-
-                goty_field = f"{categorie}_preferences"
-                ballots[voter_name][goty_field] = d
-
-        for categorie in get_optional_categories():
-            goty_field = f"{categorie}_preferences"
-            best_position = 1
-            try:
-                best_game = ballots[voter_name][goty_field][best_position]
-            except KeyError:
-                best_game = None
-
-            best_field = f"best_{categorie}"
-            ballots[voter_name][best_field] = best_game
-
-    return ballots
+    return indices
 
 
 if __name__ == "__main__":
     ballot_year = 2018
-    input_filename = f"anonymized_pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
 
     params = get_parsing_params(year=ballot_year)
-    ballots = parse_csv(fname=input_filename, params=params)
-    print(ballots)
+    print(params)
+
+    indices = convert_params_to_indices(params, offset=9)
+    print(indices)
