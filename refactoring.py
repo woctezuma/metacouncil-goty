@@ -2,6 +2,7 @@ from anonymize_data import load_input, remove_header
 
 
 def get_main_categories():
+    # Caveat: the order matters!
     return ["goty", "gotd"]
 
 
@@ -100,7 +101,7 @@ def extract_tokens(input_tokens, params, categorie, ind_list):
 def parse_csv(fname, params):
     text_data = load_input(fname)
 
-    is_anonymized = 'anonymized' in fname
+    is_anonymized = "anonymized" in fname
 
     if is_anonymized:
         offset = 0
@@ -124,11 +125,12 @@ def parse_csv(fname, params):
 
         for categorie in get_main_categories():
             ind = indices["review"][categorie]
-            goty_review_field = f"{categorie}_description"
             if ind is None:
-                review = ''
+                review = ""
             else:
                 review = tokens[ind]
+
+            goty_review_field = f"{categorie}_description"
             ballots[voter_name][goty_review_field] = review
 
         for categorie in get_main_categories():
@@ -146,11 +148,12 @@ def parse_csv(fname, params):
             ballots[voter_name][goty_field] = d
 
             best_position = 1
-            best_field = f"best_{categorie}"
             try:
                 best_game = d[best_position]
             except KeyError:
                 best_game = None
+
+            best_field = f"best_{categorie}"
             ballots[voter_name][best_field] = best_game
 
     return ballots
