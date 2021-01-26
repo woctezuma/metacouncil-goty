@@ -21,7 +21,7 @@ def is_anonymized_file(fname):
     return bool("anonymized" in fname)
 
 
-def parse_csv(fname, params):
+def parse_csv(fname, parsing_params):
     text_data = load_input(fname)
 
     is_anonymized = is_anonymized_file(fname)
@@ -31,7 +31,7 @@ def parse_csv(fname, params):
     if not is_anonymized:
         text_data = remove_header(text_data)
 
-    indices = convert_params_to_indices(params, offset=offset)
+    indices = convert_params_to_indices(parsing_params, offset=offset)
 
     quote = '"'
 
@@ -44,7 +44,9 @@ def parse_csv(fname, params):
 
         single_ballot = dict()
         single_ballot = fill_in_review(tokens, indices, single_ballot=single_ballot)
-        single_ballot = fill_in_game_list(tokens, indices, params, single_ballot=single_ballot)
+        single_ballot = fill_in_game_list(
+            tokens, indices, parsing_params=parsing_params, single_ballot=single_ballot
+        )
         single_ballot = fill_in_best_optional(single_ballot=single_ballot)
 
         ballots[voter_name] = single_ballot
@@ -73,11 +75,13 @@ def fill_in_review(tokens, indices, single_ballot):
     return single_ballot
 
 
-def fill_in_game_list(tokens, indices, params, single_ballot):
+def fill_in_game_list(tokens, indices, parsing_params, single_ballot):
     for categorie_type in ["main", "optional"]:
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]
-            d = extract_tokens(tokens, ind_list, params[categorie]["num_choices"])
+            d = extract_tokens(
+                tokens, ind_list, parsing_params[categorie]["num_choices"]
+            )
 
             goty_field = f"{categorie}_preferences"
             single_ballot[goty_field] = d
@@ -105,5 +109,5 @@ if __name__ == "__main__":
     input_filename = f"anonymized_pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
 
     params = get_parsing_params(year=ballot_year)
-    ballots = parse_csv(fname=input_filename, params=params)
+    ballots = parse_csv(fname=input_filename, parsing_params=params)
     print(ballots)
