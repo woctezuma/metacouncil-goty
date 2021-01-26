@@ -11,6 +11,15 @@ def get_optional_categories():
     return ["dlc", "early_access", "vr", "turd"]
 
 
+def get_categories(categorie_type="main"):
+    if categorie_type == "main":
+        categories = get_main_categories()
+    else:
+        categories = get_optional_categories()
+
+    return categories
+
+
 def get_default_parsing_params():
     params = dict()
 
@@ -89,10 +98,11 @@ def convert_params_to_indices(params, offset=9):
     return indices
 
 
-def extract_tokens(input_tokens, params, categorie, ind_list):
+def extract_tokens(input_tokens, ind_list, num_choices):
     d = dict()
     for i, ind in enumerate(ind_list):
-        position = params[categorie]["num_choices"] - i
+        # Caveat: num_choices is not necessarily equal to len(ind_list)
+        position = num_choices - i
         game_name = input_tokens[ind]
         d[position] = game_name
     return d
@@ -133,23 +143,19 @@ def parse_csv(fname, params):
             goty_review_field = f"{categorie}_description"
             ballots[voter_name][goty_review_field] = review
 
-        for categorie in get_main_categories():
-            ind_list = indices["main"][categorie]
-            d = extract_tokens(tokens, params, categorie, ind_list)
+        for categorie_type in ["main", "optional"]:
+            for categorie in get_categories(categorie_type=categorie_type):
+                ind_list = indices[categorie_type][categorie]
+                d = extract_tokens(tokens, ind_list, params[categorie]["num_choices"])
 
-            goty_field = f"{categorie}_preferences"
-            ballots[voter_name][goty_field] = d
+                goty_field = f"{categorie}_preferences"
+                ballots[voter_name][goty_field] = d
 
         for categorie in get_optional_categories():
-            ind_list = indices["optional"][categorie]
-            d = extract_tokens(tokens, params, categorie, ind_list)
-
             goty_field = f"{categorie}_preferences"
-            ballots[voter_name][goty_field] = d
-
             best_position = 1
             try:
-                best_game = d[best_position]
+                best_game = ballots[voter_name][goty_field][best_position]
             except KeyError:
                 best_game = None
 
