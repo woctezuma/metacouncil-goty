@@ -30,9 +30,11 @@ def get_default_parsing_params():
 
 
 def adjust_params_to_year(params, year):
+    # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
     if int(year) == 2018:
         params["vr"]["num_choices"] = 0
 
+    # NB: if the ballot year ends with a "9", e.g. "2019", then it is the last year of its decade, and there is a GotD.
     if int(year) % 10 == 9:
         params["gotd"]["num_choices"] = 10
     else:
