@@ -65,7 +65,7 @@ def fill_in_review(tokens, indices, single_ballot):
     for categorie in get_categories("main"):
         ind = indices["review"][categorie]
         if ind is None:
-            review = ""
+            review = None
         else:
             review = tokens[ind]
 
