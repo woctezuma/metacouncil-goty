@@ -26,11 +26,14 @@ def parse_csv(fname, parsing_params):
 
     is_anonymized = is_anonymized_file(fname)
 
-    offset = get_parsing_offset(is_anonymized=is_anonymized)
-
     if not is_anonymized:
         text_data = remove_header(text_data)
 
+    return parse_text_data(text_data, parsing_params, is_anonymized)
+
+
+def parse_text_data(text_data, parsing_params, is_anonymized):
+    offset = get_parsing_offset(is_anonymized=is_anonymized)
     indices = convert_params_to_indices(parsing_params, offset=offset)
 
     quote = '"'
