@@ -110,7 +110,8 @@ def match_names_with_igdb(raw_votes,
                           must_be_available_on_pc=True,
                           must_be_a_game=True,
                           goty_field='goty_preferences',
-                          year_constraint='equality'):
+                          year_constraint='equality',
+                          verbose=True):
     seen_game_names = set()
     igdb_match_database = dict()
     igdb_local_database = dict()
@@ -170,6 +171,12 @@ def match_names_with_igdb(raw_votes,
                     # Caveat: For now, matches returned by match_names_with_igdb() does not have the same structure as
                     #         matches returned by precompute_matches(). cf. transform_structure_of_matches()
                     igdb_match_database[raw_name] = igdb_matched_ids
+
+    if verbose:
+        recently_matched_game_names = sorted([name for name in seen_game_names if not is_a_noisy_vote(name)])
+        if len(recently_matched_game_names) > 0:
+            s = [f'\n{i}) {name}' for i, name in enumerate(recently_matched_game_names)]
+            print('[Changelog] {}'.format(s))
 
     return igdb_match_database, igdb_local_database
 
