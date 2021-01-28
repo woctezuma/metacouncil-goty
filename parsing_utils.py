@@ -7,12 +7,14 @@ from parsing_params import (
 )
 
 
-def extract_game_tokens(input_tokens, ind_list, num_choices):
+def extract_game_tokens(input_tokens, ind_list, num_choices, strip_game_name=True):
     d = dict()
     for i, ind in enumerate(ind_list):
         # Caveat: num_choices is not necessarily equal to len(ind_list)
         position = num_choices - i
         game_name = input_tokens[ind]
+        if strip_game_name:
+            game_name = game_name.strip()
         d[position] = game_name
     return d
 
