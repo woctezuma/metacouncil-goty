@@ -8,7 +8,6 @@ from extend_steamspy import get_release_year_for_problematic_app_id, get_app_nam
 from extend_steamspy import load_extended_steamspy_database
 from igdb_credentials import download_latest_credentials
 from igdb_match_names import get_igdb_release_years, get_link_to_igdb_website, get_igdb_human_release_dates
-from load_ballots import get_parsing_params
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
 from steam_store_utils import get_link_to_store, get_early_access_status
@@ -468,7 +467,6 @@ def print_voter_stats(schulze_ranking, standardized_ballots, num_app_id_groups_t
 
 def apply_pipeline(input_filename,
                    release_year='2018',
-                   fake_author_name=True,
                    try_to_break_ties=False,
                    use_igdb=False,
                    retrieve_igdb_data_from_scratch=True,
@@ -476,11 +474,8 @@ def apply_pipeline(input_filename,
                    use_levenshtein_distance=True,
                    goty_field='goty_preferences',
                    year_constraint='equality',
-                   parsing_params=None,
                    num_app_id_groups_to_display=7):
-    ballots = load_ballots(input_filename,
-                           fake_author_name=fake_author_name,
-                           parsing_params=parsing_params)
+    ballots = load_ballots(input_filename)
 
     # Standardize ballots
 
@@ -550,8 +545,6 @@ if __name__ == '__main__':
     if update_credentials:
         download_latest_credentials(verbose=False)
 
-    parsing_params = get_parsing_params(ballot_year=ballot_year)
-
     # Game of the Year
     goty_field = 'goty_preferences'
     release_year = ballot_year
@@ -559,7 +552,6 @@ if __name__ == '__main__':
 
     apply_pipeline(input_filename,
                    release_year=release_year,
-                   fake_author_name=False,
                    try_to_break_ties=True,
                    use_igdb=use_igdb,
                    retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
@@ -567,5 +559,4 @@ if __name__ == '__main__':
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
                    year_constraint=year_constraint,
-                   parsing_params=parsing_params,
                    num_app_id_groups_to_display=9)

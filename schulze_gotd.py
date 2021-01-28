@@ -1,5 +1,4 @@
 from igdb_credentials import download_latest_credentials
-from load_ballots import get_parsing_params
 from schulze_goty import apply_pipeline
 
 if __name__ == '__main__':
@@ -16,8 +15,6 @@ if __name__ == '__main__':
     if update_credentials:
         download_latest_credentials(verbose=False)
 
-    parsing_params = get_parsing_params(ballot_year=ballot_year)
-
     # Game of the Decade
     # Caveat: pay attention to the d in 'gotd'.
     goty_field = 'gotd_preferences'
@@ -31,7 +28,6 @@ if __name__ == '__main__':
 
     apply_pipeline(input_filename,
                    release_year=release_year,
-                   fake_author_name=False,
                    try_to_break_ties=False,
                    use_igdb=use_igdb,
                    retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
@@ -39,5 +35,4 @@ if __name__ == '__main__':
                    use_levenshtein_distance=use_levenshtein_distance,
                    goty_field=goty_field,
                    year_constraint=year_constraint,
-                   parsing_params=parsing_params,
                    num_app_id_groups_to_display=9)
