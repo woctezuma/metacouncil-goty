@@ -81,7 +81,7 @@ class TestAnonymizeDataMethods(unittest.TestCase):
     def test_load_and_anonymize(self):
         ballot_year = '2018'
         input_filename = 'dummy_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-        anonymized_data = anonymize_data.load_and_anonymize(input_filename)
+        anonymized_data = anonymize_data.load_and_anonymize(input_filename, ballot_year=ballot_year)
 
         self.assertEqual(len(anonymized_data), 3)
 
