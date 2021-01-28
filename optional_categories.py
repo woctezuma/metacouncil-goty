@@ -6,7 +6,7 @@ from load_ballots import get_parsing_params
 from steam_store_utils import get_link_to_store
 
 
-def get_optional_categories():
+def get_best_optional_categories():
     optional_categories = [
         'best_dlc',
         'best_early_access',
@@ -251,7 +251,7 @@ def display_optional_ballots(input_filename,
     ballots = load_ballots(input_filename,
                            parsing_params=parsing_params)
 
-    for category_name in get_optional_categories():
+    for category_name in get_best_optional_categories():
         print('\nCategory: ' + category_name)
 
         optional_ballots = get_optional_ballots(ballots, category_name)
