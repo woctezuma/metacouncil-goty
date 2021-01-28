@@ -15,6 +15,7 @@ import igdb_utils
 import load_ballots
 import match_names
 import optional_categories
+import parsing_params
 import schulze_goty
 import steam_store_utils
 import whitelist_vote
@@ -84,6 +85,61 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         anonymized_data = anonymize_data.load_and_anonymize(input_filename, ballot_year=ballot_year)
 
         self.assertEqual(len(anonymized_data), 3)
+
+
+class TestParsingParamsMethods(unittest.TestCase):
+
+    def test_get_parsing_indices(self):
+        num_parameters = 4
+
+        num_goty_games_per_voter = 5
+        num_gotd_games_per_voter = 10
+
+        goty_description_index = num_goty_games_per_voter + 1
+        gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
+
+        for ballot_year in ['2018', '2019', '2020']:
+            for is_anonymized in [True, False]:
+                indices = parsing_params.get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
+
+                self.assertEqual(len(indices.keys()), num_parameters)
+
+                if is_anonymized:
+                    offset = 0
+                else:
+                    offset = 9
+
+                self.assertEqual(indices['voter_name'], offset)
+
+                self.assertEqual(len(indices['main']['goty']), num_goty_games_per_voter)
+                self.assertEqual(indices['review']['goty'], goty_description_index + offset)
+
+                if int(ballot_year) == 2019:
+                    self.assertEqual(len(indices['main']['gotd']), num_gotd_games_per_voter)
+                    self.assertEqual(indices['review']['gotd'], gotd_description_index + offset)
+                    # caveat: GOTD below, because there exists a GOTD
+                    new_offset = gotd_description_index + offset
+                else:
+                    self.assertEqual(len(indices['main']['gotd']), 0)
+                    self.assertEqual(indices['review']['gotd'], None)
+                    # caveat: GOTY below, because there is **no** GOTD
+                    new_offset = goty_description_index + offset
+
+                self.assertEqual(len(indices['optional']['dlc']), 1)
+                self.assertEqual(len(indices['optional']['early_access']), 1)
+                if int(ballot_year) == 2018:
+                    self.assertEqual(len(indices['optional']['vr']), 0)
+                else:
+                    self.assertEqual(len(indices['optional']['vr']), 1)
+                self.assertEqual(len(indices['optional']['turd']), 1)
+
+                self.assertTrue((1+new_offset) in indices['optional']['dlc'])
+                self.assertTrue((2+new_offset) in indices['optional']['early_access'])
+                if int(ballot_year) == 2018:
+                    self.assertTrue((3+new_offset) in indices['optional']['turd'])
+                else:
+                    self.assertTrue((3+new_offset) in indices['optional']['vr'])
+                    self.assertTrue((4+new_offset) in indices['optional']['turd'])
 
 
 class TestLoadBallotsMethods(unittest.TestCase):
