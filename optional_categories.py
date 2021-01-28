@@ -2,7 +2,6 @@ from disqualify_vote import is_a_noisy_vote
 from igdb_credentials import download_latest_credentials
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases
 from igdb_match_names import get_link_to_igdb_website, get_igdb_human_release_dates
-from load_ballots import get_parsing_params
 from steam_store_utils import get_link_to_store
 
 
@@ -244,12 +243,10 @@ def display_optional_ballots(input_filename,
                              use_igdb=False,
                              retrieve_igdb_data_from_scratch=True,
                              apply_hard_coded_extension_and_fixes=True,
-                             use_levenshtein_distance=True,
-                             parsing_params=None):
+                             use_levenshtein_distance=True):
     from load_ballots import load_ballots
 
-    ballots = load_ballots(input_filename,
-                           parsing_params=parsing_params)
+    ballots = load_ballots(input_filename)
 
     for category_name in get_best_optional_categories():
         print('\nCategory: ' + category_name)
@@ -286,8 +283,6 @@ if __name__ == '__main__':
     if update_credentials:
         download_latest_credentials(verbose=False)
 
-    parsing_params = get_parsing_params(ballot_year=ballot_year)
-
     # Optional Categories of the Year
     release_year = ballot_year
 
@@ -297,5 +292,4 @@ if __name__ == '__main__':
                              use_igdb=use_igdb,
                              retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
                              apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                             use_levenshtein_distance=use_levenshtein_distance,
-                             parsing_params=parsing_params)
+                             use_levenshtein_distance=use_levenshtein_distance)
