@@ -36,6 +36,11 @@ def remove_header(data, content_start_criterion='"1"'):
 
     data_content = data[num_rows_header:]
 
+    if len(data_content) == 0:
+        # This situation occurs if the header has not been found, because the file was likely previously anonymized.
+        # Ensure that we do not skip all of the (already anonymized) data by trying to remove a non-existent header!
+        data_content = data
+
     return data_content
 
 
