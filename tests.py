@@ -45,6 +45,15 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
 
 class TestAnonymizeDataMethods(unittest.TestCase):
 
+    def test_get_author_name_token_index(self):
+        expected_author_token_index = 18
+        is_anonymized = False
+
+        for ballot_year in [2018, 2019, 2020]:
+            author_token_index = anonymize_data.get_author_name_token_index(ballot_year=ballot_year,
+                                                                            is_anonymized=is_anonymized)
+            self.assertTrue(expected_author_token_index == author_token_index)
+
     def test_get_review_token_indices(self):
         goty_description_token_index = 30
         gotd_description_token_index = 52
