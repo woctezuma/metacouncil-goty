@@ -1,159 +1,33 @@
-def get_parsing_params(ballot_year='2018',
-                       num_goty_games_per_voter=5,
-                       num_gotd_games_per_voter=10):
-    parsing_params = dict()
-
-    parsing_params['num_goty_games_per_voter'] = num_goty_games_per_voter
-    parsing_params['num_gotd_games_per_voter'] = num_gotd_games_per_voter
-
-    goty_description_index = num_goty_games_per_voter + 1
-    gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
-
-    parsing_params['voter_name'] = 0
-    parsing_params['voted_games'] = [
-        i
-        for i in range(1, num_goty_games_per_voter + 1)
-    ]
-    parsing_params['goty_description'] = goty_description_index
-
-    # NB: if the ballot year ends with a "9", e.g. "2019", then it is the last year of its decade, and there is a GotD.
-    if int(ballot_year) % 10 == 9:
-        parsing_params['gotd_voted_games'] = [
-            goty_description_index + i
-            for i in range(1, num_gotd_games_per_voter + 1)
-        ]
-        parsing_params['gotd_description'] = gotd_description_index
-    else:
-        parsing_params['gotd_voted_games'] = []
-        parsing_params['gotd_description'] = None
-
-    # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
-    if int(ballot_year) == 2018:
-        parsing_params['best_dlc'] = -3
-        parsing_params['best_early_access'] = -2
-        parsing_params['best_vr'] = None
-        parsing_params['best_turd'] = -1
-    else:
-        parsing_params['best_dlc'] = -4
-        parsing_params['best_early_access'] = -3
-        parsing_params['best_vr'] = -2
-        parsing_params['best_turd'] = -1
-
-    return parsing_params
+from parsing_params import get_adjusted_parsing_params
+from parsing_utils import parse_csv
 
 
-def parse_votes(data,
-                parsing_params=None,
-                ballot_year=None):
-    if ballot_year is None:
-        ballot_year = '2018'
+def get_ballot_file_name(ballot_year, is_anonymized=False):
+    from anonymize_data import get_anonymized_file_prefix
 
-    if parsing_params is None:
-        parsing_params = get_parsing_params(ballot_year=ballot_year)
+    fname = f'pc_gaming_metacouncil_goty_awards_{ballot_year}.csv'
+    if is_anonymized:
+        fname = get_anonymized_file_prefix() + fname
 
-    num_goty_games_per_voter = parsing_params['num_goty_games_per_voter']
-    num_gotd_games_per_voter = parsing_params['num_gotd_games_per_voter']
-
-    # Games of the Year (GotY)
-    goty_field = 'goty_preferences'
-    goty_review_field = 'goty_description'
-
-    # Games of the Decade (GotD)
-    gotd_field = 'gotd_preferences'
-    gotd_review_field = 'gotd_description'
-
-    quote = '"'
-
-    ballots = dict()
-
-    for element in data:
-        # Tokenize
-        raw_tokens = element.split(';')
-        tokens = [t.strip(quote) for t in raw_tokens]
-
-        # Parse
-        voter_name = tokens[parsing_params['voter_name']]
-
-        voted_games = [
-            tokens[i]
-            for i in parsing_params['voted_games']
-        ]
-
-        goty_description = tokens[parsing_params['goty_description']]
-
-        best_dlc = tokens[parsing_params['best_dlc']]
-        best_early_access = tokens[parsing_params['best_early_access']]
-        best_turd = tokens[parsing_params['best_turd']]
-
-        gotd_voted_games = [
-            tokens[i]
-            for i in parsing_params['gotd_voted_games']
-        ]
-
-        gotd_description_index = parsing_params['gotd_description']
-        try:
-            gotd_description = tokens[gotd_description_index]
-        except TypeError as e:
-            gotd_description = None
-
-        best_vr_index = parsing_params['best_vr']
-        try:
-            best_vr = tokens[best_vr_index]
-        except TypeError as e:
-            best_vr = None
-
-        # Store the parsed data in a dictionary
-        ballots[voter_name] = dict()
-
-        if len(voted_games) > 0:
-            ballots[voter_name][goty_field] = dict()
-            for (i, game_name) in enumerate(voted_games):
-                position = num_goty_games_per_voter - i
-                ballots[voter_name][goty_field][position] = game_name
-
-        ballots[voter_name][goty_review_field] = goty_description
-        ballots[voter_name]['best_dlc'] = best_dlc
-        ballots[voter_name]['best_early_access'] = best_early_access
-        ballots[voter_name]['best_turd'] = best_turd
-
-        if len(gotd_voted_games) > 0:
-            ballots[voter_name][gotd_field] = dict()
-            for (i, game_name) in enumerate(gotd_voted_games):
-                position = num_gotd_games_per_voter - i
-                ballots[voter_name][gotd_field][position] = game_name
-
-        if gotd_description is not None:
-            ballots[voter_name][gotd_review_field] = gotd_description
-
-        if best_vr is not None:
-            ballots[voter_name]['best_vr'] = best_vr
-
-    return ballots
+    return fname
 
 
-def load_ballots(input_filename,
-                 file_encoding='utf8',
-                 fake_author_name=True,
-                 data_folder=None,
-                 parsing_params=None):
-    from anonymize_data import get_anonymized_file_prefix, load_input, load_and_anonymize
+def convert_fname_to_year(fname, year_prefixe='20', num_digits=4):
+    year_index = fname.find(year_prefixe)
+    year_str = fname[year_index:(year_index + num_digits)]
+    ballot_year = int(year_str)
 
-    if input_filename.startswith(get_anonymized_file_prefix()):
-        anonymized_data = load_input(
-            input_filename,
-            file_encoding,
-            data_folder=data_folder
-        )
-    else:
-        anonymized_data = load_and_anonymize(
-            input_filename,
-            file_encoding,
-            fake_author_name=fake_author_name,
-            data_folder=data_folder,
-        )
+    return ballot_year
 
-    ballots = parse_votes(anonymized_data,
-                          parsing_params)
+
+def get_parsing_params(ballot_year):
+    return get_adjusted_parsing_params(year=ballot_year)
+
+
+def load_ballots(input_filename):
+    ballot_year = convert_fname_to_year(fname=input_filename)
+    parsing_params = get_parsing_params(ballot_year=ballot_year)
+    ballots = parse_csv(input_filename, parsing_params)
 
     return ballots
 
