@@ -1,3 +1,6 @@
+from parsing_params import get_parsing_indices
+
+
 def get_data_folder():
     data_folder = 'data/'
     return data_folder
@@ -44,30 +47,34 @@ def remove_header(data, content_start_criterion='"1"'):
     return data_content
 
 
-def get_review_token_indices(ballot_year='2018'):
-    # Valid for 2018 and 2019 data
-    goty_description_token_index = 30
-    # Only valid for 2019 data
-    gotd_description_token_index = 52
-
-    if int(ballot_year) % 10 == 9:
-        review_token_indices = [goty_description_token_index,
-                                gotd_description_token_index]
-    else:
-        review_token_indices = [goty_description_token_index]
+def get_review_token_indices(ballot_year='2018', is_anonymized=False):
+    indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
+    review_token_indices = [2 * v for v in indices['review'].values() if v is not None]
+    # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
+    # Expected results for a file which was not anonymized:
+    # - [30] for GOTY in 2018 and 2020
+    # - [30, 52] for GOTY and GOTD in 2019
 
     return review_token_indices
 
 
+def get_author_name_token_index(ballot_year='2018', is_anonymized=False):
+    indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
+    author_token_index = 2 * indices['voter_name']
+    # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
+    # Expected result for a file which was not anonymized: 18.
+
+    return author_token_index
+
+
 def anonymize(data,
-              author_name_token_index=18,
+              ballot_year,
               fake_author_name=True,
-              review_token_indices=None,
               redact_reviews=False,
               verbose=True):
-    if review_token_indices is None:
-        default_ballot_year = '2018'
-        review_token_indices = get_review_token_indices(ballot_year=default_ballot_year)
+    is_anonymized = False
+    author_name_token_index = get_author_name_token_index(ballot_year=ballot_year, is_anonymized=is_anonymized)
+    review_token_indices = get_review_token_indices(ballot_year=ballot_year, is_anonymized=is_anonymized)
 
     import re
 
@@ -118,9 +125,9 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
 
 
 def load_and_anonymize(input_filename,
+                       ballot_year,
                        file_encoding='utf-8',
                        fake_author_name=True,
-                       review_token_indices=None,
                        redact_reviews=False,
                        data_folder=None,
                        verbose=True):
@@ -130,11 +137,9 @@ def load_and_anonymize(input_filename,
 
     data_content = remove_header(data, content_start_criterion='"1"')
 
-    # Assumption: the name of the author appears as the 18th token on each line of the original data
     anonymized_data = anonymize(data_content,
-                                author_name_token_index=18,
+                                ballot_year=ballot_year,
                                 fake_author_name=fake_author_name,
-                                review_token_indices=review_token_indices,
                                 redact_reviews=redact_reviews,
                                 verbose=verbose)
 
@@ -147,14 +152,12 @@ if __name__ == '__main__':
     ballot_year = '2020'
     input_filename = 'pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
 
-    review_token_indices = get_review_token_indices(ballot_year)
-
     fake_author_name = True
     redact_reviews = False
     verbose = True
 
     anonymized_data = load_and_anonymize(input_filename,
+                                         ballot_year=ballot_year,
                                          fake_author_name=fake_author_name,
-                                         review_token_indices=review_token_indices,
                                          redact_reviews=redact_reviews,
                                          verbose=verbose)
