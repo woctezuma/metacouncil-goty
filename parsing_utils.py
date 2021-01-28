@@ -7,7 +7,7 @@ from parsing_params import (
 )
 
 
-def extract_tokens(input_tokens, ind_list, num_choices):
+def extract_game_tokens(input_tokens, ind_list, num_choices):
     d = dict()
     for i, ind in enumerate(ind_list):
         # Caveat: num_choices is not necessarily equal to len(ind_list)
@@ -82,7 +82,7 @@ def fill_in_game_list(tokens, indices, parsing_params, single_ballot):
     for categorie_type in ["main", "optional"]:
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]
-            d = extract_tokens(
+            d = extract_game_tokens(
                 tokens, ind_list, parsing_params[categorie]["num_choices"]
             )
 
