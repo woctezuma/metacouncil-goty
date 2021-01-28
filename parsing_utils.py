@@ -110,8 +110,10 @@ def fill_in_best_optional(single_ballot):
 
 
 if __name__ == "__main__":
+    from load_ballots import get_ballot_file_name
+
     ballot_year = 2018
-    input_filename = f"anonymized_pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
+    input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
 
     params = get_adjusted_parsing_params(year=ballot_year)
     ballots = parse_csv(fname=input_filename, parsing_params=params)

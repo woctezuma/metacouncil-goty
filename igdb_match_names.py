@@ -481,13 +481,11 @@ def transform_structure_of_matches(igdb_match_database,
 
 
 def main():
+    from load_ballots import get_ballot_file_name
+
     ballot_year = '2018'
-    input_filename = 'anonymized_pc_gaming_metacouncil_goty_awards_' + ballot_year + '.csv'
-
-    parsing_params = get_parsing_params(ballot_year=ballot_year)
-
-    ballots = load_ballots(input_filename,
-                           parsing_params=parsing_params)
+    input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
+    ballots = load_ballots(input_filename)
 
     release_year = ballot_year
 

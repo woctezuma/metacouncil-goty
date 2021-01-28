@@ -13,8 +13,9 @@ def generate_thank_you_message(ballots, verbose=True):
 
 
 if __name__ == "__main__":
-    ballot_year = "2020"
-    input_filename = "pc_gaming_metacouncil_goty_awards_" + ballot_year + ".csv"
+    from load_ballots import get_ballot_file_name
 
-    ballots = load_ballots(input_filename, fake_author_name=False)
+    ballot_year = "2020"
+    input_filename = get_ballot_file_name(ballot_year)
+    ballots = load_ballots(input_filename)
     sentence = generate_thank_you_message(ballots)
