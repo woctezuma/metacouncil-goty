@@ -1,7 +1,7 @@
 from anonymize_data import load_input, remove_header, get_anonymized_file_prefix
 from parsing_params import (
     get_categories,
-    get_parsing_params,
+    get_adjusted_parsing_params,
     convert_params_to_indices,
     get_parsing_offset,
 )
@@ -111,6 +111,6 @@ if __name__ == "__main__":
     ballot_year = 2018
     input_filename = f"anonymized_pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
 
-    params = get_parsing_params(year=ballot_year)
+    params = get_adjusted_parsing_params(year=ballot_year)
     ballots = parse_csv(fname=input_filename, parsing_params=params)
     print(ballots)

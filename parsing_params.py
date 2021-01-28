@@ -43,7 +43,7 @@ def adjust_params_to_year(params, year):
     return params
 
 
-def get_parsing_params(year):
+def get_adjusted_parsing_params(year):
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
@@ -106,7 +106,7 @@ def get_parsing_offset(is_anonymized):
 
 
 def get_parsing_indices(year, is_anonymized):
-    params = get_parsing_params(year=year)
+    params = get_adjusted_parsing_params(year=year)
     offset = get_parsing_offset(is_anonymized)
     indices = convert_params_to_indices(params, offset)
 
@@ -116,7 +116,7 @@ def get_parsing_indices(year, is_anonymized):
 if __name__ == "__main__":
     ballot_year = 2018
 
-    params = get_parsing_params(year=ballot_year)
+    params = get_adjusted_parsing_params(year=ballot_year)
     print(params)
 
     indices = get_parsing_indices(year=ballot_year, is_anonymized=False)
