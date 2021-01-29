@@ -16,10 +16,35 @@ import load_ballots
 import match_names
 import optional_categories
 import parsing_params
+import parsing_utils
 import schulze_goty
 import steam_store_utils
 import whitelist_vote
 import whitelist_vote_igdb
+
+
+class TestParsingUtilsMethods(unittest.TestCase):
+
+    def test_parse_text_data(self):
+        voter_name = '"MyTestUserName";'
+        goty_votes = '"Half-Life: Alyx";"The Walking Dead: Saints & Sinners";"Fall Guys";"Sakuna";"Yakuza";'
+        goty_descr = '''"I like the idea of a turn based Yakuza [..] game. Tl;DR, buy it, you won't regret it!";'''
+        optional_votes = '"Deep Rock Galactic";"Phasmophobia";"The Walking Dead: Saints & Sinners";"Cyberpunk 2077"'
+
+        line = voter_name + goty_votes + goty_descr + optional_votes
+
+        ballots = parsing_utils.parse_text_data(
+            text_data=[line],
+            parsing_params=parsing_utils.get_adjusted_parsing_params(2020),
+            is_anonymized=True,
+        )
+
+        self.assertTrue(ballots['MyTestUserName']['goty_description'].startswith("I like the idea"))
+        self.assertTrue(ballots['MyTestUserName']['goty_description'].endswith("you won't regret it!"))
+        self.assertEqual(ballots['MyTestUserName']['best_dlc'], 'Deep Rock Galactic')
+        self.assertEqual(ballots['MyTestUserName']['best_early_access'], 'Phasmophobia')
+        self.assertEqual(ballots['MyTestUserName']['best_vr'], 'The Walking Dead: Saints & Sinners')
+        self.assertEqual(ballots['MyTestUserName']['best_turd'], 'Cyberpunk 2077')
 
 
 class TestSteamStoreUtilsMethods(unittest.TestCase):
