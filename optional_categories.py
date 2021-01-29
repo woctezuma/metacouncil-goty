@@ -2,16 +2,12 @@ from disqualify_vote import is_a_noisy_vote
 from igdb_credentials import download_latest_credentials
 from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases
 from igdb_match_names import get_link_to_igdb_website, get_igdb_human_release_dates
+from parsing_params import get_optional_categories
 from steam_store_utils import get_link_to_store
 
 
 def get_best_optional_categories():
-    optional_categories = [
-        'best_dlc',
-        'best_early_access',
-        'best_vr',
-        'best_turd',
-    ]
+    optional_categories = [f'best_{categorie}' for categorie in get_optional_categories()]
 
     return optional_categories
 
