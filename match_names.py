@@ -251,6 +251,7 @@ def standardize_ballots(ballots,
                         must_be_a_game=True,
                         goty_field='goty_preferences',
                         year_constraint='equality',
+                        print_matches=True,
                         verbose=False):
     if use_igdb:
         # Using IGDB
@@ -276,10 +277,11 @@ def standardize_ballots(ballots,
                                                                                  year_constraint=year_constraint,
                                                                                  verbose=verbose)
 
-        print_igdb_matches(igdb_match_database,
-                           igdb_local_database,
-                           constrained_release_year=release_year,
-                           year_constraint=year_constraint)
+        if print_matches:
+            print_igdb_matches(igdb_match_database,
+                               igdb_local_database,
+                               constrained_release_year=release_year,
+                               year_constraint=year_constraint)
 
         matches = transform_structure_of_matches(
             igdb_match_database,
@@ -297,7 +299,8 @@ def standardize_ballots(ballots,
                                      year_constraint=year_constraint,
                                      goty_field=goty_field)
 
-        display_matches(matches, print_after_sort)
+        if print_matches:
+            display_matches(matches, print_after_sort)
 
     standardized_ballots = normalize_votes(ballots,
                                            matches,
