@@ -85,3 +85,4 @@ if __name__ == "__main__":
             year_constraint=year_constraint,
             print_matches=print_matches,
         )
+        print()
