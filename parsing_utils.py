@@ -43,7 +43,7 @@ def parse_text_data(text_data, parsing_params, is_anonymized):
     ballots = dict()
 
     for line in text_data:
-        tokens = [token.strip(quote) for token in line.split(";")]
+        tokens = [token.strip(quote) for token in line.split('";"')]
 
         voter_name = read_voter_name(tokens, indices)
 
