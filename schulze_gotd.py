@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     apply_pipeline(input_filename,
                    release_year=release_year,
-                   try_to_break_ties=False,
+                   try_to_break_ties=True,
                    use_igdb=use_igdb,
                    retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
                    apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
