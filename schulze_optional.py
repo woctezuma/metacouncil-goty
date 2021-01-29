@@ -18,6 +18,7 @@ def apply_pipeline_for_optional_categories(
         use_levenshtein_distance=True,
         goty_field="goty_preferences",
         year_constraint="equality",
+        print_matches=True,
 ):
     ballots = load_ballots(input_filename)
 
@@ -35,6 +36,7 @@ def apply_pipeline_for_optional_categories(
         must_be_a_game=False,
         goty_field=goty_field,
         year_constraint=year_constraint,
+        print_matches=print_matches,
     )
 
     # Apply Schulze method
@@ -68,6 +70,7 @@ if __name__ == "__main__":
     release_year = ballot_year
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
+    print_matches = False
 
     for categorie in get_optional_categories():
         goty_field = f"{categorie}_preferences"
@@ -80,4 +83,5 @@ if __name__ == "__main__":
             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
             goty_field=goty_field,
             year_constraint=year_constraint,
+            print_matches=print_matches,
         )
