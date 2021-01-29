@@ -534,8 +534,7 @@ if __name__ == '__main__':
     from load_ballots import get_ballot_file_name
 
     ballot_year = '2020'
-    input_filename = get_ballot_file_name(ballot_year)
-    # input_filename = 'anonymized_' + input_filename
+    input_filename = get_ballot_file_name(ballot_year, is_anonymized=False)
     use_igdb = True
     retrieve_igdb_data_from_scratch = False
     apply_hard_coded_extension_and_fixes = True
