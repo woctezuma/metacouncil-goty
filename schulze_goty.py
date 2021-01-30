@@ -474,6 +474,7 @@ def apply_pipeline(input_filename,
                    use_levenshtein_distance=True,
                    goty_field='goty_preferences',
                    year_constraint='equality',
+                   print_matches=True,
                    num_app_id_groups_to_display=7):
     ballots = load_ballots(input_filename)
 
@@ -487,7 +488,8 @@ def apply_pipeline(input_filename,
                                                           apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
                                                           use_levenshtein_distance=use_levenshtein_distance,
                                                           goty_field=goty_field,
-                                                          year_constraint=year_constraint)
+                                                          year_constraint=year_constraint,
+                                                          print_matches=print_matches)
 
     whitelisted_ids = load_whitelisted_ids(release_year=release_year,
                                            use_igdb=use_igdb)
