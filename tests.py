@@ -158,13 +158,13 @@ class TestParsingParamsMethods(unittest.TestCase):
                     self.assertEqual(len(indices['optional']['vr']), 1)
                 self.assertEqual(len(indices['optional']['turd']), 1)
 
-                self.assertTrue((1+new_offset) in indices['optional']['dlc'])
-                self.assertTrue((2+new_offset) in indices['optional']['early_access'])
+                self.assertTrue((1 + new_offset) in indices['optional']['dlc'])
+                self.assertTrue((2 + new_offset) in indices['optional']['early_access'])
                 if int(ballot_year) == 2018:
-                    self.assertTrue((3+new_offset) in indices['optional']['turd'])
+                    self.assertTrue((3 + new_offset) in indices['optional']['turd'])
                 else:
-                    self.assertTrue((3+new_offset) in indices['optional']['vr'])
-                    self.assertTrue((4+new_offset) in indices['optional']['turd'])
+                    self.assertTrue((3 + new_offset) in indices['optional']['vr'])
+                    self.assertTrue((4 + new_offset) in indices['optional']['turd'])
 
 
 class TestLoadBallotsMethods(unittest.TestCase):

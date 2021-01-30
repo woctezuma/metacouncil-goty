@@ -69,14 +69,14 @@ def get_igdb_request_headers():
 
 
 def look_up_game_name(
-    game_name,
-    enforced_year=None,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    enforced_platform=None,
-    enforced_game_category=None,
-    year_constraint="equality",
-    verbose=True,
+        game_name,
+        enforced_year=None,
+        must_be_available_on_pc=True,
+        must_be_a_game=True,
+        enforced_platform=None,
+        enforced_game_category=None,
+        year_constraint="equality",
+        verbose=True,
 ):
     if verbose:
         print(
@@ -123,14 +123,14 @@ def look_up_game_name(
 
 
 def look_up_game_id(
-    game_id,
-    enforced_year=None,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    enforced_platform=None,
-    enforced_game_category=None,
-    year_constraint="equality",
-    verbose=True,
+        game_id,
+        enforced_year=None,
+        must_be_available_on_pc=True,
+        must_be_a_game=True,
+        enforced_platform=None,
+        enforced_game_category=None,
+        year_constraint="equality",
+        verbose=True,
 ):
     if verbose:
         print(
@@ -180,7 +180,7 @@ def look_up_game_id(
 
 
 def look_up_games_released_in_given_year(
-    enforced_year, must_be_available_on_pc=True, enforced_platform=None, verbose=True
+        enforced_year, must_be_available_on_pc=True, enforced_platform=None, verbose=True
 ):
     if verbose:
         print(
@@ -245,7 +245,7 @@ def download_list_of_platforms(verbose=True):
 
 
 def manual_look_up(
-    input, must_be_a_game=False, must_be_available_on_pc=False, verbose=True
+        input, must_be_a_game=False, must_be_available_on_pc=False, verbose=True
 ):
     # Input can be:
     # - either a query game name,
