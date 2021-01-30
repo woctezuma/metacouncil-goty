@@ -65,13 +65,14 @@ def print_reviews(ballots,
                 seen_game_names.add(goty_standardized_name)
                 print('\n[game] ' + goty_standardized_name)
 
-            if export_for_forum:
-                print(f'\n[quote="{voter_name}"]')
-            else:
-                print('\nReviewer: ' + voter_name)
-            print(goty_review)
-            if export_for_forum:
-                print('[/quote]')
+            if len(goty_review) > 0:
+                if export_for_forum:
+                    print(f'\n[quote="{voter_name}"]')
+                else:
+                    print('\nReviewer: ' + voter_name)
+                print(goty_review)
+                if export_for_forum:
+                    print('[/quote]')
 
     return
 
