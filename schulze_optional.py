@@ -20,6 +20,8 @@ def apply_pipeline_for_optional_categories(
         goty_field="goty_preferences",
         year_constraint="equality",
         print_matches=True,
+        must_be_available_on_pc=False,
+        must_be_a_game=False,
 ):
     ballots = load_ballots(input_filename)
 
@@ -33,8 +35,8 @@ def apply_pipeline_for_optional_categories(
         retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
         apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
         use_levenshtein_distance=use_levenshtein_distance,
-        must_be_available_on_pc=True,
-        must_be_a_game=False,
+        must_be_available_on_pc=must_be_available_on_pc,
+        must_be_a_game=must_be_a_game,
         goty_field=goty_field,
         year_constraint=year_constraint,
         print_matches=print_matches,
@@ -77,6 +79,9 @@ if __name__ == "__main__":
         goty_field = f"{categorie}_preferences"
         year_constraint = "equality"
 
+        must_be_available_on_pc = False
+        must_be_a_game = False
+
         apply_pipeline_for_optional_categories(
             input_filename,
             release_year=release_year,
@@ -87,5 +92,7 @@ if __name__ == "__main__":
             goty_field=goty_field,
             year_constraint=year_constraint,
             print_matches=print_matches,
+            must_be_available_on_pc=must_be_available_on_pc,
+            must_be_a_game=must_be_a_game,
         )
         print()
