@@ -1,6 +1,15 @@
 {
-  " DARK SOULS™: Prepare To Die™ Edition ": [
-    81085
+  "Bioshock Infnite": [
+    538
+  ],
+  "DRAGON QUEST® XI: Echoes of an Elusive Age™ - Digital Edition of Light": [
+    11667
+  ],
+  "LIFE IS STRANGE COMPLETE SEASON (EPISODES 1-5)": [
+    7599
+  ],
+  "Pathfinder: Kingmaker - Enhanced Edition": [
+    36929
   ],
   "Batman: Arkham Asylum": [
     27862
@@ -8,29 +17,14 @@
   "Batman: Arkham City": [
     21704
   ],
-  "Bioshock Infnite ": [
-    538
-  ],
   "DARK SOULS™ II": [
     8222
-  ],
-  "DARK SOULS™: Prepare To Die™ Edition": [
-    81085
-  ],
-  "DRAGON QUEST® XI: Echoes of an Elusive Age™ - Digital Edition of Light": [
-    11667
-  ],
-  "Dark Souls ": [
-    81085
   ],
   "Dark Souls": [
     81085
   ],
-  "Darkest Dungeon": [
-    8965
-  ],
-  "Darkest Dungeon®": [
-    8965
+  "DARK SOULS™: Prepare To Die™ Edition": [
+    81085
   ],
   "Deus Ex: Human Revolution": [
     9740
@@ -50,50 +44,8 @@
   "Journey": [
     1352
   ],
-  "LIFE IS STRANGE COMPLETE SEASON (EPISODES 1-5)": [
-    7599
-  ],
-  "Metro 2033": [
-    80853
-  ],
-  "NieR:Automata": [
-    11208
-  ],
-  "NieR:Automata™ ": [
-    11208
-  ],
-  "NieR:Automata™": [
-    11208
-  ],
-  "Ori And the Blind Forest": [
-    19456
-  ],
-  "Ori and the Blind Forest": [
-    19456
-  ],
-  "Pathfinder: Kingmaker - Enhanced Edition": [
-    36929
-  ],
   "Red Dead Redemption": [
     434
-  ],
-  "Shovel Knight: Shovel of Hope": [
-    26848
-  ],
-  "Skyrim": [
-    19457
-  ],
-  "Sleeping Dogs": [
-    20228
-  ],
-  "Spelunky": [
-    3029
-  ],
-  "StarCraft II": [
-    46986
-  ],
-  "The Elder Scrolls V: Skyrim": [
-    19457
   ],
   "The Last of Us": [
     1009
@@ -104,10 +56,28 @@
   "The Witcher 2: Assassins of Kings": [
     20740
   ],
-  "XCOM 2": [
-    37060
+  "Metro 2033": [
+    80853
   ],
-  "XCOM® 2": [
-    37060
+  "Ori and the Blind Forest: Definitive Edition": [
+    7344
+  ],
+  "Sleeping Dogs": [
+    20228
+  ],
+  "The Elder Scrolls V: Skyrim Special Edition": [
+    472
+  ],
+  "XCOM 2: War of the Chosen": [
+    21427
+  ],
+  "NieR:Automata": [
+    11208
+  ],
+  "NieR:Automata™": [
+    11208
+  ],
+  "Minecraft": [
+    121
   ]
 }
