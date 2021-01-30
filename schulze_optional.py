@@ -13,6 +13,7 @@ def apply_pipeline_for_optional_categories(
         input_filename,
         release_year="2020",
         try_to_break_ties=True,
+        use_igdb=True,
         retrieve_igdb_data_from_scratch=True,
         apply_hard_coded_extension_and_fixes=True,
         use_levenshtein_distance=True,
@@ -28,7 +29,7 @@ def apply_pipeline_for_optional_categories(
         ballots,
         release_year,
         print_after_sort=False,
-        use_igdb=True,
+        use_igdb=use_igdb,
         retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
         apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
         use_levenshtein_distance=use_levenshtein_distance,
@@ -49,7 +50,7 @@ def apply_pipeline_for_optional_categories(
         )
 
     print_schulze_ranking(
-        schulze_ranking, target_release_year=release_year, use_igdb=True
+        schulze_ranking, target_release_year=release_year, use_igdb=use_igdb
     )
 
     return True
