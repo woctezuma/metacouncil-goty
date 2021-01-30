@@ -71,6 +71,7 @@ def anonymize(data,
               ballot_year,
               fake_author_name=True,
               redact_reviews=False,
+              faker_seed=0,
               verbose=True):
     is_anonymized = False
     author_name_token_index = get_author_name_token_index(ballot_year=ballot_year, is_anonymized=is_anonymized)
@@ -81,6 +82,7 @@ def anonymize(data,
     from faker import Faker
 
     fake = Faker('fr_FR')
+    fake.seed_instance(faker_seed)
 
     anonymized_data = []
 
