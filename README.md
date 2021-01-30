@@ -35,7 +35,11 @@ python schulze_gotd.py
 -   To compute the rankings for the optional categories (DLC / Ongoing, Early Access, VR, etc.), run:
 
 ```bash
+# if there is a single choice per optional category:
 python optional_categories.py
+
+# if there are several (ranked) choices per optional category:
+python schulze_optional.py
 ```
 
 -   To generate a message to thank voters, run:
