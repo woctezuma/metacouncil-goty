@@ -72,10 +72,10 @@ def anonymize(data,
               fake_author_name=True,
               redact_reviews=False,
               faker_seed=0,
+              input_is_anonymized=False,
               verbose=True):
-    is_anonymized = False
-    author_name_token_index = get_author_name_token_index(ballot_year=ballot_year, is_anonymized=is_anonymized)
-    review_token_indices = get_review_token_indices(ballot_year=ballot_year, is_anonymized=is_anonymized)
+    author_name_token_index = get_author_name_token_index(ballot_year=ballot_year, is_anonymized=input_is_anonymized)
+    review_token_indices = get_review_token_indices(ballot_year=ballot_year, is_anonymized=input_is_anonymized)
 
     import re
 
