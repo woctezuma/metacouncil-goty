@@ -10,41 +10,5 @@
       }
     ],
     "slug": null
-  },
-  "-885940": {
-    "id": -885940,
-    "name": "Meritocracy of the Oni & Blade",
-    "release_dates": [
-      {
-        "platform": 6,
-        "y": 2018,
-        "human": "2018-Sep-27"
-      }
-    ],
-    "external_games": [
-      {
-        "category": 1,
-        "uid": "885940"
-      }
-    ],
-    "slug": null
-  },
-  "-427680": {
-    "id": -427680,
-    "name": "Zwei: The Arges Adventure",
-    "release_dates": [
-      {
-        "platform": 6,
-        "y": 2018,
-        "human": "2018-Jan-24"
-      }
-    ],
-    "external_games": [
-      {
-        "category": 1,
-        "uid": "427680"
-      }
-    ],
-    "slug": null
   }
 }
