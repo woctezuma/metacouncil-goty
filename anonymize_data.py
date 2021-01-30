@@ -157,7 +157,7 @@ if __name__ == '__main__':
     input_filename = get_ballot_file_name(ballot_year)
 
     fake_author_name = True
-    redact_reviews = False
+    redact_reviews = True
     verbose = True
 
     anonymized_data = load_and_anonymize(input_filename,
