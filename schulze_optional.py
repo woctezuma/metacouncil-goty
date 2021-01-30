@@ -6,6 +6,8 @@ from schulze_goty import (
     compute_schulze_ranking,
     try_to_break_ties_in_schulze_ranking,
     print_schulze_ranking,
+    print_ballot_distribution_for_top_ranked_games,
+    print_voter_stats
 )
 
 
@@ -20,8 +22,10 @@ def apply_pipeline_for_optional_categories(
         goty_field="goty_preferences",
         year_constraint="equality",
         print_matches=True,
+        num_app_id_groups_to_display=3,
         must_be_available_on_pc=False,
         must_be_a_game=False,
+        verbose=False,
 ):
     ballots = load_ballots(input_filename)
 
@@ -54,6 +58,13 @@ def apply_pipeline_for_optional_categories(
     print_schulze_ranking(
         schulze_ranking, target_release_year=release_year, use_igdb=use_igdb
     )
+
+    if verbose:
+        print_ballot_distribution_for_top_ranked_games(schulze_ranking, standardized_ballots,
+                                                       num_app_id_groups_to_display=num_app_id_groups_to_display)
+
+        print_voter_stats(schulze_ranking, standardized_ballots,
+                          num_app_id_groups_to_display=num_app_id_groups_to_display)
 
     return True
 
