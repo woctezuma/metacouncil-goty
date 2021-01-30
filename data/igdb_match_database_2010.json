@@ -1,17 +1,7 @@
 {
-  "Pathfinder: Kingmaker": [
-    36929
-  ],
-  "Assassin's Creed Brotherhood": [
-    113,
-    24743
-  ],
-  "Arma 3": [
-    1881
-  ],
-  "Bioshock Infnite ": [],
+  "Bioshock Infnite": [],
   "Pathfinder: Kingmaker - Enhanced Edition": [],
-  "DRAGON QUEST\u00ae XI: Echoes of an Elusive Age\u2122 - Digital Edition of Light": [],
+  "DRAGON QUEST® XI: Echoes of an Elusive Age™ - Digital Edition of Light": [],
   "LIFE IS STRANGE COMPLETE SEASON (EPISODES 1-5)": [],
   "Life is Strange 2": [
     62151
@@ -26,9 +16,10 @@
   ],
   "Bioshock Infinite": [
     538,
+    41595,
     41598
   ],
-  "Battlefield\u2122 V": [
+  "Battlefield™ V": [
     83728,
     89571,
     140898
@@ -45,7 +36,7 @@
     1831,
     137291
   ],
-  "Tom Clancy\u2019s The Division\u2122": [
+  "Tom Clancy’s The Division™": [
     2114,
     90099,
     53822,
@@ -56,12 +47,12 @@
   "Deus Ex: Human Revolution - Director's Cut": [
     9740
   ],
-  "Darkest Dungeon\u00ae": [
+  "Darkest Dungeon®": [
     115425,
     8965,
     52836
   ],
-  "XCOM\u00ae 2": [
+  "XCOM® 2": [
     21427,
     10919,
     86268,
@@ -74,12 +65,12 @@
   "METAL GEAR SOLID V: THE PHANTOM PAIN": [
     1985
   ],
-  "Sid Meier's Civilization\u00ae V": [
+  "Sid Meier's Civilization® V": [
     866,
     50880,
     53610
   ],
-  "Assassin's Creed\u00ae Origins": [
+  "Assassin's Creed® Origins": [
     28540,
     39045,
     39044,
@@ -91,7 +82,9 @@
     472,
     37088,
     19457,
-    47445
+    41597,
+    47445,
+    44556
   ],
   "Counter-Strike: Global Offensive": [
     1372
@@ -99,7 +92,7 @@
   "Yakuza Kiwami 2": [
     55090
   ],
-  "The Witcher\u00ae 3: Wild Hunt": [
+  "The Witcher® 3: Wild Hunt": [
     1942,
     22439,
     119402
@@ -129,8 +122,8 @@
     70817,
     120105,
     139645,
-    8214,
     130093,
+    8214,
     6189,
     120851,
     35579
@@ -141,7 +134,7 @@
   "Return of the Obra Dinn": [
     9643
   ],
-  "DARK SOULS\u2122: REMASTERED": [
+  "DARK SOULS™: REMASTERED": [
     81085
   ],
   "Hollow Knight": [
@@ -180,10 +173,10 @@
   "A Plague Tale: Innocence": [
     27316
   ],
-  "HITMAN\u2122 2": [
+  "HITMAN™ 2": [
     103210
   ],
-  "DARK SOULS\u2122 II": [
+  "DARK SOULS™ II": [
     2368,
     8222
   ],
@@ -250,9 +243,12 @@
     19076
   ],
   "Diablo III": [
-    120
+    120,
+    136083,
+    136279,
+    136278
   ],
-  "DARK SOULS\u2122 III": [
+  "DARK SOULS™ III": [
     11133,
     9536,
     28210,
@@ -261,12 +257,12 @@
   "AMID EVIL": [
     74904
   ],
-  "DARK SOULS\u2122: Prepare To Die\u2122 Edition": [
+  "DARK SOULS™: Prepare To Die™ Edition": [
     21040
   ],
   "Spelunky": [
-    75239,
-    3029
+    3029,
+    75239
   ],
   "Deus Ex: Human Revolution": [
     43,
@@ -325,7 +321,7 @@
     21040,
     10139
   ],
-  "Life is Strange\u2122": [
+  "Life is Strange™": [
     7599,
     62151,
     41610,
@@ -364,10 +360,10 @@
   "METAL GEAR RISING: REVENGEANCE": [
     378
   ],
-  "NieR:Automata\u2122": [
+  "NieR:Automata™": [
     103294
   ],
-  "Sekiro\u2122: Shadows Die Twice": [
+  "Sekiro™: Shadows Die Twice": [
     76882,
     103282
   ],
@@ -385,7 +381,7 @@
   "Pathologic 2": [
     55322
   ],
-  "Alpha Protocol\u2122": [
+  "Alpha Protocol™": [
     2539
   ],
   "Prey": [
@@ -398,15 +394,18 @@
     1062,
     2602
   ],
-  "Spyro\u2122 Reignited Trilogy": [
-    87683
+  "Spyro™ Reignited Trilogy": [
+    87683,
+    142213,
+    142242,
+    142243
   ],
   "TEKKEN 7": [
     7498,
     53717,
     118704
   ],
-  "Crash Bandicoot\u2122 N. Sane Trilogy": [
+  "Crash Bandicoot™ N. Sane Trilogy": [
     26196,
     135449,
     135451,
@@ -415,9 +414,6 @@
   "Heave Ho": [
     116685,
     34629
-  ],
-  "Return of the Obra Dinn ": [
-    9643
   ],
   "Battle Brothers": [
     14394
@@ -453,6 +449,7 @@
   ],
   "Celeste": [
     26226,
+    142841,
     128844,
     131926
   ],
@@ -472,14 +469,17 @@
   "Ori and the Blind Forest: Definitive Edition": [
     19456
   ],
-  "Rayman\u00ae Origins": [
+  "Rayman® Origins": [
     981
   ],
   "The Witness": [
     5601
   ],
   "Deus Ex: Mankind Divided": [
-    9498
+    9498,
+    46024,
+    41644,
+    41645
   ],
   "The Witcher 2: Assassins of Kings Enhanced Edition": [
     20740
@@ -496,15 +496,18 @@
     82432,
     53273
   ],
-  "Mass Effect\u2122 3": [
+  "Mass Effect™ 3": [
     75,
     45180
   ],
-  "Nioh: Complete Edition / \u4ec1\u738b Complete Edition": [
+  "Nioh: Complete Edition / 仁王 Complete Edition": [
     68461
   ],
   "Dota 2": [
     2963
+  ],
+  "Pathfinder: Kingmaker": [
+    36929
   ],
   "Destiny 2": [
     25657,
@@ -523,7 +526,7 @@
     11667,
     110069
   ],
-  "SaGa SCARLET GRACE: AMBITIONS\u2122": [
+  "SaGa SCARLET GRACE: AMBITIONS™": [
     119373
   ],
   "Baldur's Gate 2: Enhanced Edition": [
@@ -534,7 +537,7 @@
     25532,
     45129
   ],
-  "DARK SOULS\u2122 II: Scholar of the First Sin": [
+  "DARK SOULS™ II: Scholar of the First Sin": [
     8222
   ],
   "Divinity: Original Sin Enhanced Edition": [
@@ -566,7 +569,7 @@
   "Age of Empires II: Definitive Edition": [
     55056
   ],
-  "Sid Meier\u2019s Civilization\u00ae\ufe0f V": [
+  "Sid Meier’s Civilization®️ V": [
     866,
     50880,
     53610
@@ -574,7 +577,7 @@
   "Stellaris": [
     11582
   ],
-  "Endless Legend\u2122\ufe0f": [
+  "Endless Legend™️": [
     9278
   ],
   "Cities: Skylines": [
@@ -722,21 +725,23 @@
     115775
   ],
   "Euro Truck Simulator 2": [
-    3070
+    52973,
+    3070,
+    52976,
+    52975,
+    52972,
+    52977
   ],
   "Minecraft": [
-    135400,
     129496,
     121,
+    135400,
     8339,
     110474,
     28407,
     46077,
     94049,
     118499
-  ],
-  "NieR:Automata\u2122 ": [
-    103294
   ],
   "Resident Evil 2": [
     19686,
@@ -805,17 +810,15 @@
     103337,
     52924
   ],
-  " DARK SOULS\u2122: Prepare To Die\u2122 Edition ": [
-    21040
-  ],
   "Shovel Knight: Shovel of Hope": [
     7444
   ],
   "The Talos Principle": [
     7386,
-    36775
+    36775,
+    53774
   ],
-  "Darksiders\u2122": [
+  "Darksiders™": [
     1270,
     1269,
     28380,
@@ -824,7 +827,7 @@
     20048,
     35283
   ],
-  "HITMAN\u2122": [
+  "HITMAN™": [
     11157,
     530,
     6073,
@@ -834,9 +837,9 @@
     5567,
     21580,
     59757,
-    74878
+    99073
   ],
-  "Assassin's Creed\u00ae Odyssey": [
+  "Assassin's Creed® Odyssey": [
     103054,
     125126,
     109423,
@@ -851,7 +854,7 @@
     28513,
     21729
   ],
-  "Endless Space\u00ae 2": [
+  "Endless Space® 2": [
     11550,
     114034
   ],
@@ -880,12 +883,18 @@
   ],
   "Metro: Last Light": [
     539,
-    50199
+    50199,
+    47429,
+    42992
   ],
   "The Witcher III: Wild Hunt": [
     1942,
     22439,
     119402
+  ],
+  "Assassin's Creed Brotherhood": [
+    113,
+    24743
   ],
   "Banished": [
     2002
@@ -898,6 +907,8 @@
     472,
     37088,
     19457,
+    44556,
+    41597,
     47445
   ],
   "The Return of Obra Dinn": [
@@ -947,7 +958,9 @@
     529,
     25467,
     2001,
+    142163,
     99950,
+    142159,
     51544
   ],
   "Batman: Arkham Asylum - Game of the Year Edition": [
@@ -971,23 +984,26 @@
   "VA-11 Hall-A: Cyberpunk Bartender Action": [
     15465
   ],
-  "FINAL FANTASY TYPE-0\u2122 HD": [
+  "FINAL FANTASY TYPE-0™ HD": [
     7399
   ],
   "FINAL FANTASY XV WINDOWS EDITION": [
     55034
   ],
-  "LIGHTNING RETURNS\u2122: FINAL FANTASY\u00ae XIII": [
+  "LIGHTNING RETURNS™: FINAL FANTASY® XIII": [
     2449
   ],
-  "Tom Clancy's Rainbow Six\u00ae Siege": [
+  "Tom Clancy's Rainbow Six® Siege": [
     7360,
     42921,
     118882,
     53820,
     118898
   ],
-  "Battlefield: Bad Company\u2122 2": [
+  "Arma 3": [
+    1881
+  ],
+  "Battlefield: Bad Company™ 2": [
     352
   ],
   "Age of Wonders III": [
@@ -1017,7 +1033,7 @@
   "Endless Legend": [
     9278
   ],
-  "STAR WARS Jedi: Fallen Order\u2122": [
+  "STAR WARS Jedi: Fallen Order™": [
     74701
   ],
   "Obduction": [
@@ -1069,7 +1085,7 @@
     5567,
     21580,
     59757,
-    74878
+    99073
   ],
   "Baldr Sky": [
     127153
@@ -1081,7 +1097,7 @@
     11781,
     11799
   ],
-  "Ni no Kuni\u2122 II: Revenant Kingdom": [
+  "Ni no Kuni™ II: Revenant Kingdom": [
     14748
   ],
   "Papo & Yo": [
@@ -1094,31 +1110,20 @@
     14587,
     51536
   ],
-  "Valiant Hearts ": [
+  "Valiant Hearts": [
     7327
   ],
-  "Minecraft ": [
-    135400,
-    129496,
-    121,
-    8339,
-    110474,
-    28407,
-    46077,
-    94049,
-    118499
-  ],
-  "MGSV ": [
+  "MGSV": [
     1985
   ],
-  "RDR2 ": [
+  "RDR2": [
     25076
   ],
   "GTA V": [
     1020,
     98077
   ],
-  "Titanfall ": [
+  "Titanfall": [
     2115,
     17447,
     36336,
@@ -1126,17 +1131,5 @@
     53805,
     28513,
     21729
-  ],
-  "Dark Souls ": [
-    2155,
-    11133,
-    2368,
-    81085,
-    9536,
-    28210,
-    47486,
-    8222,
-    21040,
-    10139
   ]
 }

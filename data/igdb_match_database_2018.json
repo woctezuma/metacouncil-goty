@@ -1,18 +1,7 @@
 {
-  "The Forest": [
-    99425,
-    134250,
-    7504,
-    21961,
-    102313,
-    107021,
-    15457
-  ],
-  "Montster Hunter World": [],
-  "Frost Punk": [],
-  "Megaman 11": [],
-  "Dragon Quest XI: Shadows of an Elusive Age": [],
-  "SOULCALIBUR VI - 2B": [],
+  "F76": [],
+  "Kingom Come: Deliverance": [],
+  "CSGO: Danger Zone": [],
   "Fallout 76": [
     103020,
     103308
@@ -27,6 +16,7 @@
     99121,
     99230
   ],
+  "Epic Game Launcher": [],
   "Fear Effect Sedna": [
     30847
   ],
@@ -36,10 +26,15 @@
   "Atlas": [
     113116,
     37066,
-    18868,
     27318,
     121507,
     3225
+  ],
+  "Squares": [
+    106816,
+    87186,
+    111884,
+    76318
   ],
   "Metal Gear Survive": [
     22703
@@ -56,6 +51,9 @@
   ],
   "ION MAIDEN": [
     54844
+  ],
+  "Hades": [
+    96354
   ],
   "Staxel": [
     37294
@@ -82,6 +80,18 @@
   "Oxygen Not Included": [
     19542
   ],
+  "Pinball FX3 - Williams Pinball: Volume 2": [],
+  "The Orb Vallis (Warframe Expansion)": [],
+  "Faeria - Puzzle Pack Elements": [],
+  "WORLD OF FINAL FANTASY® MAXIMA Upgrade": [],
+  "SOULCALIBUR VI - 2B": [],
+  "Tom Clancy's Rainbow Six Siege - Year 3 Pass": [],
+  "Rainbow Six Siege: Season 4 Pass": [],
+  "Valkyria Chronicles 4 - Squad E, to the Beach!": [],
+  "Dragon Quest XI: Shadows of an Elusive Age": [],
+  "Megaman 11": [],
+  "Montster Hunter World": [],
+  "Frost Punk": [],
   "Battletech Flashpoint": [
     107258
   ],
@@ -100,19 +110,12 @@
   "Path of Exile: Betrayal": [
     112085
   ],
-  "Pinball FX3 - Williams Pinball: Volume 2": [],
   "The Curse of the Pharaohs (Assassin's Creed Origins)": [
     17783
   ],
-  "The Orb Vallis (Warframe Expansion)": [],
-  "Faeria - Puzzle Pack Elements": [],
-  "WORLD OF FINAL FANTASY\u00ae MAXIMA Upgrade": [],
   "Un Pueblo De Nada": [
     131740
   ],
-  "Tom Clancy's Rainbow Six Siege - Year 3 Pass": [],
-  "Rainbow Six Siege: Season 4 Pass": [],
-  "Valkyria Chronicles 4 - Squad E, to the Beach!": [],
   "Dead Cells": [
     26855
   ],
@@ -139,7 +142,7 @@
   "Yakuza 0": [
     11397
   ],
-  "Assassin's Creed\u00ae Odyssey": [
+  "Assassin's Creed® Odyssey": [
     103054,
     125126,
     109423
@@ -260,11 +263,6 @@
     97690,
     107740
   ],
-  "Assassin's Creed Odyssey ": [
-    103054,
-    125126,
-    109423
-  ],
   "Squidlit": [
     86574
   ],
@@ -275,7 +273,7 @@
     113320,
     111226
   ],
-  "CHRONO TRIGGER\u00ae": [
+  "CHRONO TRIGGER®": [
     1802
   ],
   "Thronebreaker: The Witcher Tales": [
@@ -320,7 +318,7 @@
   "CrossCode": [
     35282
   ],
-  "HITMAN\u2122 2": [
+  "HITMAN™ 2": [
     103210
   ],
   "Unavowed": [
@@ -329,7 +327,7 @@
   "Dragon Quest XI": [
     11667
   ],
-  "Puyo Puyo\u2122Tetris\u00ae": [
+  "Puyo Puyo™Tetris®": [
     6866
   ],
   "Quarantine Circular": [
@@ -393,7 +391,16 @@
   "Shenmue 1 & 2": [
     96391
   ],
-  "Crash Bandicoot\u2122 N. Sane Trilogy": [
+  "The Forest": [
+    99425,
+    134250,
+    7504,
+    21961,
+    102313,
+    107021,
+    15457
+  ],
+  "Crash Bandicoot™ N. Sane Trilogy": [
     26196,
     135449,
     135451,
