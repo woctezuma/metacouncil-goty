@@ -79,8 +79,10 @@ if __name__ == "__main__":
         apply_pipeline_for_optional_categories(
             input_filename,
             release_year=release_year,
+            try_to_break_ties=True,
             retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+            use_levenshtein_distance=True,
             goty_field=goty_field,
             year_constraint=year_constraint,
             print_matches=print_matches,
