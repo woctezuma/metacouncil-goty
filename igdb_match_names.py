@@ -174,8 +174,8 @@ def match_names_with_igdb(raw_votes,
     if verbose:
         recently_matched_game_names = sorted([name for name in seen_game_names if not is_a_noisy_vote(name)])
         if len(recently_matched_game_names) > 0:
-            s = [f'\n{i}) {name}' for i, name in enumerate(recently_matched_game_names)]
-            print('[Changelog] {}'.format(s))
+            s = [f'{i+1}) {name}' for i, name in enumerate(recently_matched_game_names)]
+            print('[Changelog]\n{}\n'.format('\n'.join(s)))
 
     return igdb_match_database, igdb_local_database
 
