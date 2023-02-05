@@ -47,7 +47,7 @@ def filter_out_votes_for_hard_coded_reasons(
     else:
         disqualified_app_id_dict = get_hard_coded_disqualified_app_ids()
 
-    for voter in standardized_ballots.keys():
+    for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots']
 
         current_ballots_list = []

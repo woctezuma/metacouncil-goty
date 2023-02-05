@@ -19,7 +19,7 @@ def load_input(filename, file_encoding='utf8', data_folder=None):
 
     full_path_to_file = data_folder + filename
 
-    with open(full_path_to_file, 'r', encoding=file_encoding) as f:
+    with open(full_path_to_file, encoding=file_encoding) as f:
         for line in f.readlines():
             line = line.strip()
             # Remove empty lines and comments
@@ -104,7 +104,7 @@ def anonymize(
             for review_token_index in review_token_indices:
                 if verbose:
                     review_content = tokens[review_token_index]
-                    print('Redacting review content: {}'.format(review_content))
+                    print(f'Redacting review content: {review_content}')
                 tokens[review_token_index] = '""'
 
         # Remove leading metadata

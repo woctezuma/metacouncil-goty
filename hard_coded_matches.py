@@ -30,7 +30,7 @@ def get_hard_coded_app_id_dict():
 def check_database_of_problematic_game_names(game_name):
     hard_coded_dict = get_hard_coded_app_id_dict()
 
-    is_a_problematic_game_name = bool(game_name in hard_coded_dict.keys())
+    is_a_problematic_game_name = bool(game_name in hard_coded_dict)
 
     return is_a_problematic_game_name
 

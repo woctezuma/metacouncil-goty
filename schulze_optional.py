@@ -4,10 +4,10 @@ from match_names import standardize_ballots
 from parsing_params import get_optional_categories
 from schulze_goty import (
     compute_schulze_ranking,
-    try_to_break_ties_in_schulze_ranking,
-    print_schulze_ranking,
     print_ballot_distribution_for_top_ranked_games,
+    print_schulze_ranking,
     print_voter_stats,
+    try_to_break_ties_in_schulze_ranking,
 )
 
 

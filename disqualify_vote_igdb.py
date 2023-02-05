@@ -16,11 +16,11 @@ def load_disqualified_igdb_ids(release_year=None):
     file_name = get_file_name_for_disqualified_igdb_ids(release_year=release_year)
 
     try:
-        with open(file_name, 'r', encoding='utf-8') as f:
+        with open(file_name, encoding='utf-8') as f:
             disqualified_igdb_ids = json.load(f)
     except FileNotFoundError:
-        print('File {} not found.'.format(file_name))
-        disqualified_igdb_ids = dict()
+        print(f'File {file_name} not found.')
+        disqualified_igdb_ids = {}
 
     return disqualified_igdb_ids
 

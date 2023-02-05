@@ -1,7 +1,11 @@
 from disqualify_vote import is_a_noisy_vote
 from igdb_credentials import download_latest_credentials
-from igdb_match_names import download_igdb_local_databases, load_igdb_local_databases
-from igdb_match_names import get_link_to_igdb_website, get_igdb_human_release_dates
+from igdb_match_names import (
+    download_igdb_local_databases,
+    get_igdb_human_release_dates,
+    get_link_to_igdb_website,
+    load_igdb_local_databases,
+)
 from parsing_params import get_optional_categories
 from steam_store_utils import get_link_to_store
 
@@ -48,8 +52,8 @@ def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None
 
     dummy_voter = 'dummy_voter'
 
-    formatted_optional_ballots = dict()
-    formatted_optional_ballots[dummy_voter] = dict()
+    formatted_optional_ballots = {}
+    formatted_optional_ballots[dummy_voter] = {}
     formatted_optional_ballots[dummy_voter][dummy_field] = dict(
         enumerate(optional_ballots),
     )
@@ -73,7 +77,7 @@ def match_optional_ballots(
     from match_names import find_closest_app_id
 
     seen_game_names = set()
-    matches = dict()
+    matches = {}
     matched_optional_ballots = []
 
     dummy_field = get_dummy_field()
@@ -170,16 +174,13 @@ def match_optional_ballots(
             if app_id_release_date is None:
                 app_id_release_date = 'an unknown date'
 
-            matches[raw_name] = dict()
+            matches[raw_name] = {}
             matches[raw_name]['matched_appID'] = appID
             matches[raw_name]['matched_name'] = app_name
             matches[raw_name]['matched_release_date'] = app_id_release_date
             matches[raw_name]['matched_url'] = app_url
 
-            if use_igdb:
-                id_description = 'IGDB id'
-            else:
-                id_description = 'AppID'
+            id_description = 'IGDB id' if use_igdb else 'AppID'
 
             print(
                 '\t{} ---> {}: {}\t;\t{} ({})'.format(
@@ -203,7 +204,7 @@ def match_optional_ballots(
 
 
 def count_optional_ballots(optional_ballots):
-    optional_counts = dict()
+    optional_counts = {}
 
     for element in optional_ballots:
         try:
@@ -245,12 +246,9 @@ def pretty_display(ranking):
         else:
             increment += 1
 
-        if num_votes > 1:
-            my_str = ' with #votes = '
-        else:
-            my_str = ' with #vote = '
+        my_str = ' with #votes = ' if num_votes > 1 else ' with #vote = '
 
-        print('{0:2} | '.format(rank) + game_name.strip() + my_str + str(num_votes))
+        print(f'{rank:2} | ' + game_name.strip() + my_str + str(num_votes))
 
     return
 

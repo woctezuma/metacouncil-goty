@@ -2,13 +2,15 @@ import copy
 import time
 
 from disqualify_vote import is_a_noisy_vote
-from extend_igdb import extend_both_igdb_databases
-from extend_igdb import extend_igdb_match_database
-from igdb_databases import load_igdb_local_database, load_igdb_match_database
-from igdb_databases import save_igdb_local_database, save_igdb_match_database
+from extend_igdb import extend_both_igdb_databases, extend_igdb_match_database
+from igdb_databases import (
+    load_igdb_local_database,
+    load_igdb_match_database,
+    save_igdb_local_database,
+    save_igdb_match_database,
+)
 from igdb_look_up import look_up_game_name, wait_for_cooldown
-from igdb_utils import get_pc_platform_range
-from igdb_utils import get_steam_service_no, get_pc_platform_no
+from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_service_no
 from load_ballots import load_ballots
 
 
@@ -38,11 +40,11 @@ def get_igdb_human_release_dates(igdb_id, igdb_local_database):
     igdb_data = igdb_local_database[igdb_id_as_str]
 
     try:
-        human_release_dates = set(
+        human_release_dates = {
             date['human']
             for date in igdb_data['release_dates']
             if 'human' in date and (date['platform'] in get_pc_platform_range())
-        )
+        }
     except KeyError:
         # Unknown release date
         human_release_dates = [None]
@@ -57,11 +59,11 @@ def get_igdb_human_release_dates(igdb_id, igdb_local_database):
 
 def get_igdb_release_years(igdb_data, target_release_year=None):
     try:
-        release_years = set(
+        release_years = {
             date['y']
             for date in igdb_data['release_dates']
             if 'y' in date and (date['platform'] in get_pc_platform_range())
-        )
+        }
     except KeyError:
         # Unknown release date
         release_years = [None]
@@ -116,12 +118,12 @@ def match_names_with_igdb(
     verbose=True,
 ):
     seen_game_names = set()
-    igdb_match_database = dict()
-    igdb_local_database = dict()
+    igdb_match_database = {}
+    igdb_local_database = {}
     num_requests = 0
     start_time = time.time()
 
-    for voter in raw_votes.keys():
+    for voter in raw_votes:
         for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
@@ -145,7 +147,7 @@ def match_names_with_igdb(
                     try:
                         igdb_best_match = igdb_matches[0]
                     except IndexError:
-                        print('Relaxing the year constraint for {}'.format(raw_name))
+                        print(f'Relaxing the year constraint for {raw_name}')
 
                         igdb_matches = look_up_game_name(
                             game_name=formatted_game_name_for_igdb,
@@ -231,7 +233,7 @@ def print_igdb_matches(
 
             if len(release_years) > 1:
                 displayed_release_years = sorted(release_years)
-                print('[!]\tSeveral release years are found for {}.'.format(raw_name))
+                print(f'[!]\tSeveral release years are found for {raw_name}.')
             else:
                 try:
                     displayed_release_years = list(release_years)[0]
@@ -281,7 +283,7 @@ def print_igdb_matches(
                 ),
             )
         else:
-            print('[X]\t{}'.format(raw_name))
+            print(f'[X]\t{raw_name}')
 
     return
 
@@ -323,14 +325,14 @@ def download_igdb_local_databases(
                 release_year=release_year,
             )
         except FileNotFoundError:
-            previous_igdb_match_database = dict()
+            previous_igdb_match_database = {}
 
         try:
             previous_igdb_local_database = load_igdb_local_database(
                 release_year=release_year,
             )
         except FileNotFoundError:
-            previous_igdb_local_database = dict()
+            previous_igdb_local_database = {}
 
         igdb_match_database = merge_databases(
             igdb_match_database,
@@ -345,7 +347,7 @@ def download_igdb_local_databases(
     # Save data before applying any hard-coded change
     num_queries = 0
     for voter_name in ballots:
-        for game_position, game_name in ballots[voter_name][goty_field].items():
+        for _game_position, game_name in ballots[voter_name][goty_field].items():
             if not is_a_noisy_vote(game_name):
                 num_queries += 1
 
@@ -445,7 +447,7 @@ def load_igdb_local_databases(
     try:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
     except FileNotFoundError:
-        igdb_match_database = dict()
+        igdb_match_database = {}
 
     # Download missing data for some ballots
 
@@ -495,9 +497,9 @@ def load_igdb_local_databases(
 def transform_structure_of_matches(igdb_match_database, igdb_local_database):
     # Retro-compatibility with code written for SteamSpy
 
-    matches = dict()
+    matches = {}
 
-    for raw_name in igdb_match_database.keys():
+    for raw_name in igdb_match_database:
         igdb_matched_ids = [str(igdb_id) for igdb_id in igdb_match_database[raw_name]]
 
         igdb_matched_pc_release_dates = []
@@ -534,7 +536,7 @@ def transform_structure_of_matches(igdb_match_database, igdb_local_database):
 
         dummy_distances = [None for _ in igdb_matched_ids]
 
-        element = dict()
+        element = {}
         element['input_name'] = raw_name
         element[
             'matched_appID'

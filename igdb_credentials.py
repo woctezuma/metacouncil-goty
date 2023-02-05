@@ -24,7 +24,7 @@ def load_client_params(verbose=False):
     }
 
     if verbose:
-        print("Params (#fields={}): {}\n".format(len(params), params))
+        print(f"Params (#fields={len(params)}): {params}\n")
 
     return params
 
@@ -60,7 +60,7 @@ def load_credential_headers(verbose=False):
     )
 
     if verbose:
-        print("Headers (#fields={}): {}\n".format(len(headers), headers))
+        print(f"Headers (#fields={len(headers)}): {headers}\n")
 
     return headers
 
@@ -105,7 +105,7 @@ def download_latest_credentials(verbose=True):
         data = get_default_credentials()
 
     if verbose:
-        print("Response (#fields={}): {}\n".format(len(data), data))
+        print(f"Response (#fields={len(data)}): {data}\n")
 
     return data
 

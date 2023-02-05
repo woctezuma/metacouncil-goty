@@ -3,10 +3,10 @@ import steampi.text_distances
 
 from disqualify_vote import is_a_noisy_vote
 from extend_steamspy import (
-    get_release_year_for_problematic_app_id,
     get_app_name_for_problematic_app_id,
+    get_release_year_for_problematic_app_id,
+    load_extended_steamspy_database,
 )
-from extend_steamspy import load_extended_steamspy_database
 from hard_coded_matches import (
     check_database_of_problematic_game_names,
     find_hard_coded_app_id,
@@ -15,8 +15,8 @@ from igdb_match_names import (
     download_igdb_local_databases,
     load_igdb_local_databases,
     print_igdb_matches,
+    transform_structure_of_matches,
 )
-from igdb_match_names import transform_structure_of_matches
 
 
 def constrain_app_id_search_by_year(
@@ -176,11 +176,11 @@ def precompute_matches(
     is_steamspy_api_paginated=True,
 ):
     seen_game_names = set()
-    matches = dict()
+    matches = {}
 
     steamspy_database = load_extended_steamspy_database()
 
-    for voter in raw_votes.keys():
+    for voter in raw_votes:
         for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
@@ -201,12 +201,12 @@ def precompute_matches(
                     if is_steamspy_api_paginated:
                         for appID in closest_appID:
                             if appID not in steamspy_database:
-                                steamspy_database[appID] = dict()
+                                steamspy_database[appID] = {}
                                 steamspy_database[appID][
                                     'name'
                                 ] = get_app_name_for_problematic_app_id(appID)
 
-                    element = dict()
+                    element = {}
                     element['input_name'] = raw_name
                     element['matched_appID'] = closest_appID
                     element['matched_name'] = [
@@ -271,18 +271,18 @@ def normalize_votes(raw_votes, matches, goty_field='goty_preferences'):
     # Index of the first neighbor
     neighbor_reference_index = 0
 
-    normalized_votes = dict()
+    normalized_votes = {}
 
-    for voter_name in raw_votes.keys():
-        normalized_votes[voter_name] = dict()
-        normalized_votes[voter_name]['ballots'] = dict()
-        normalized_votes[voter_name]['distances'] = dict()
+    for voter_name in raw_votes:
+        normalized_votes[voter_name] = {}
+        normalized_votes[voter_name]['ballots'] = {}
+        normalized_votes[voter_name]['distances'] = {}
         for position, game_name in raw_votes[voter_name][goty_field].items():
-            if game_name in matches.keys():
+            if game_name in matches:
                 # Display game name before error due to absence of any matched IGDB ID, in order to make it easier to
                 # incrementally and manually add hard-coded matches:
                 if len(matches[game_name]['matched_appID']) == 0:
-                    print('[Warning] no match found for {}'.format(game_name))
+                    print(f'[Warning] no match found for {game_name}')
 
                 normalized_votes[voter_name]['ballots'][position] = matches[game_name][
                     'matched_appID'
@@ -376,7 +376,7 @@ def standardize_ballots(
 
 
 if __name__ == '__main__':
-    from load_ballots import load_ballots, get_ballot_file_name
+    from load_ballots import get_ballot_file_name, load_ballots
 
     ballot_year = '2018'
     input_filename = get_ballot_file_name(ballot_year)

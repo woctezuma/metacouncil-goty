@@ -338,14 +338,14 @@ def get_igdb_fields_for_release_dates(
 
 
 def format_list_of_platforms(raw_data_platforms, verbose=True):
-    formatted_data_platforms = dict()
+    formatted_data_platforms = {}
 
     sorted_data_platforms = sorted(raw_data_platforms, key=lambda x: x['id'])
 
     for e in sorted_data_platforms:
         id = e['id']
 
-        formatted_data_platforms[id] = dict()
+        formatted_data_platforms[id] = {}
         formatted_data_platforms[id]['slug'] = e['slug']
         formatted_data_platforms[id]['slug'] = e['name']
 
@@ -374,9 +374,9 @@ def format_list_of_platforms(raw_data_platforms, verbose=True):
 
 def format_release_dates_for_manual_display(element):
     if 'release_dates' in element:
-        release_years = set(
+        release_years = {
             str(date['y']) for date in element['release_dates'] if 'y' in date
-        )
+        }
     else:
         release_years = None
 

@@ -18,7 +18,7 @@ def get_categories(categorie_type="main"):
 
 
 def get_default_parsing_params():
-    params = dict()
+    params = {}
 
     for categorie in get_main_categories():
         params[categorie] = {"num_choices": 5}
@@ -54,10 +54,7 @@ def get_next_indices(last_index=0, num_indices=0):
     # The first index NOT to include
     end = num_indices + start
 
-    if num_indices > 0:
-        description_index = end
-    else:
-        description_index = None
+    description_index = end if num_indices > 0 else None
 
     return start, end, description_index
 
@@ -79,7 +76,7 @@ def convert_params_to_indices(params, offset=9):
             last_index=last_index,
             num_indices=params[categorie]["num_choices"],
         )
-        indices["main"][categorie] = [i for i in range(start, end)]
+        indices["main"][categorie] = list(range(start, end))
         indices["review"][categorie] = descr
 
         if descr is not None:
@@ -91,7 +88,7 @@ def convert_params_to_indices(params, offset=9):
             last_index=last_index,
             num_indices=params[categorie]["num_choices"],
         )
-        indices["optional"][categorie] = [i for i in range(start, end)]
+        indices["optional"][categorie] = list(range(start, end))
 
         # range() will stop at end-1, and then there is NO review for optional categories, so the last index is "end-1"
         last_index = end - 1
@@ -100,10 +97,7 @@ def convert_params_to_indices(params, offset=9):
 
 
 def get_parsing_offset(is_anonymized):
-    if is_anonymized:
-        offset = 0
-    else:
-        offset = 9
+    offset = 0 if is_anonymized else 9
     return offset
 
 

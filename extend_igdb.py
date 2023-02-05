@@ -6,8 +6,8 @@ from igdb_databases import (
     get_igdb_file_name_suffix,
     load_igdb_local_database,
     load_igdb_match_database,
+    save_igdb_local_database,
 )
-from igdb_databases import save_igdb_local_database
 from igdb_look_up import look_up_game_id, wait_for_cooldown
 
 
@@ -42,11 +42,11 @@ def load_fixes_to_igdb_database(release_year=None, database_type=None):
     )
 
     try:
-        with open(file_name, 'r', encoding='utf-8') as f:
+        with open(file_name, encoding='utf-8') as f:
             fixes_to_igdb_database = json.load(f)
     except FileNotFoundError:
-        print('File {} not found.'.format(file_name))
-        fixes_to_igdb_database = dict()
+        print(f'File {file_name} not found.')
+        fixes_to_igdb_database = {}
 
     return fixes_to_igdb_database
 
@@ -78,8 +78,8 @@ def extend_igdb_local_database(release_year=None, igdb_local_database=None):
     )
 
     extended_igdb_local_database = igdb_local_database
-    for igdb_id in fixes_to_igdb_local_database.keys():
-        if igdb_id in igdb_local_database.keys():
+    for igdb_id in fixes_to_igdb_local_database:
+        if igdb_id in igdb_local_database:
             print(
                 'IGDB ID {} already exists in IGDB local database. Data will be overwritten.'.format(
                     igdb_id,
@@ -103,8 +103,8 @@ def extend_igdb_match_database(
     )
 
     extended_igdb_match_database = igdb_match_database
-    for app_name in fixes_to_igdb_match_database.keys():
-        if app_name in igdb_match_database.keys():
+    for app_name in fixes_to_igdb_match_database:
+        if app_name in igdb_match_database:
             if verbose:
                 print(
                     'Query name {} already exists in IGDB match database. Match will be overwritten.'.format(

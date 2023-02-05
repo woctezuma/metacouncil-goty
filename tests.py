@@ -162,10 +162,7 @@ class TestParsingParamsMethods(unittest.TestCase):
 
                 self.assertEqual(len(indices.keys()), num_parameters)
 
-                if is_anonymized:
-                    offset = 0
-                else:
-                    offset = 9
+                offset = 0 if is_anonymized else 9
 
                 self.assertEqual(indices['voter_name'], offset)
 
@@ -305,8 +302,8 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         ballots = load_ballots.load_ballots(input_filename)
 
         # Add dummy vote for a game disqualified
-        ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name'] = {}
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         ballots['dummy_voter_name']['goty_preferences'][
             1
         ] = "Marvel's Spider-Man"  # exclusive to PS4
@@ -410,8 +407,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         ballots = load_ballots.load_ballots(input_filename)
 
         # Add dummy vote for a game released in another year
-        ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name'] = {}
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         ballots['dummy_voter_name']['goty_preferences'][
             1
         ] = "Half-Life"  # released in 1998
@@ -433,11 +430,11 @@ class TestSchulzeGotyMethods(unittest.TestCase):
     def test_filter_out_votes_for_early_access_titles(self):
         ballot_year = '2018'
 
-        ballots = dict()
+        ballots = {}
 
         # Add dummy vote for an Early Access game
-        ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name'] = {}
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         # The following is a game released in Early Access in 2018, and still in Early Access in 2020:
         ballots['dummy_voter_name']['goty_preferences'][
             1
@@ -843,9 +840,9 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         dummy_voter = 'dummy_voter_name'
         goty_field = 'dummy_preferences'
 
-        ballots = dict()
-        ballots[dummy_voter] = dict()
-        ballots[dummy_voter][goty_field] = dict()
+        ballots = {}
+        ballots[dummy_voter] = {}
+        ballots[dummy_voter][goty_field] = {}
         ballots[dummy_voter][goty_field][1] = 'Hello'
         ballots[dummy_voter][goty_field][2] = 'Universe'
 
@@ -877,11 +874,11 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_load_igdb_local_databases(self):
         ballot_year = '2018'
 
-        ballots = dict()
+        ballots = {}
 
         # Add dummy votes for the two actual GotY 2018 on MetaCouncil
-        ballots['dummy_voter_name'] = dict()
-        ballots['dummy_voter_name']['goty_preferences'] = dict()
+        ballots['dummy_voter_name'] = {}
+        ballots['dummy_voter_name']['goty_preferences'] = {}
         ballots['dummy_voter_name']['goty_preferences'][
             1
         ] = 'HITMAN 2'  # IGDB id = '103210'
@@ -923,10 +920,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
     def test_get_igdb_file_name_suffix(self):
         for release_year in [None, '2018']:
             suffix = igdb_databases.get_igdb_file_name_suffix(release_year=release_year)
-            if release_year is None:
-                expected_suffix = ''
-            else:
-                expected_suffix = '_' + str(release_year)
+            expected_suffix = '' if release_year is None else '_' + str(release_year)
             self.assertEqual(suffix, expected_suffix)
 
     def test_get_igdb_match_database_file_name(self):
@@ -961,7 +955,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         self.assertTrue(data is not None)
 
     def test_save_igdb_match_database(self):
-        data = dict()
+        data = {}
         file_name = 'data/dummy_match_file_for_unit_test.json'
         igdb_databases.save_igdb_match_database(data, file_name=file_name)
         self.assertTrue(Path(file_name).exists())
@@ -972,7 +966,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         self.assertTrue(data is not None)
 
     def test_save_igdb_local_database(self):
-        data = dict()
+        data = {}
         file_name = 'data/dummy_local_file_for_unit_test.json'
         igdb_databases.save_igdb_local_database(data, file_name=file_name)
         self.assertTrue(Path(file_name).exists())

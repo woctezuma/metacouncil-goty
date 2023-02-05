@@ -5,19 +5,19 @@ import steampi.calendar
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import (
-    get_release_year_for_problematic_app_id,
     get_app_name_for_problematic_app_id,
+    get_release_year_for_problematic_app_id,
+    load_extended_steamspy_database,
 )
-from extend_steamspy import load_extended_steamspy_database
 from igdb_credentials import download_latest_credentials
 from igdb_match_names import (
+    get_igdb_human_release_dates,
     get_igdb_release_years,
     get_link_to_igdb_website,
-    get_igdb_human_release_dates,
 )
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
-from steam_store_utils import get_link_to_store, get_early_access_status
+from steam_store_utils import get_early_access_status, get_link_to_store
 from whitelist_vote import load_whitelisted_ids
 
 
@@ -38,7 +38,7 @@ def filter_out_votes_for_early_access_titles(
             use_igdb=use_igdb,
         )
 
-    for voter in standardized_ballots.keys():
+    for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots']
 
         current_ballots_list = []
@@ -115,10 +115,10 @@ def filter_out_votes_for_wrong_release_years(
 
     print()
 
-    release_years = dict()
+    release_years = {}
     removed_app_ids = []
 
-    for voter in standardized_ballots.keys():
+    for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots']
 
         current_ballots_list = []
@@ -130,7 +130,7 @@ def filter_out_votes_for_wrong_release_years(
                 # Due to the pagination recently adopted by SteamSpy API, local_database can miss many entries nowadays.
                 if not use_igdb and is_steamspy_api_paginated:
                     if app_id_as_str not in local_database:
-                        local_database[app_id_as_str] = dict()
+                        local_database[app_id_as_str] = {}
                         local_database[app_id_as_str][
                             'name'
                         ] = get_app_name_for_problematic_app_id(app_id_as_str)
@@ -208,7 +208,7 @@ def filter_out_votes_for_wrong_release_years(
 def adapt_votes_format_for_schulze_computations(standardized_ballots):
     candidate_names = set()
 
-    for voter in standardized_ballots.keys():
+    for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots']
         for position in sorted(current_ballots.keys()):
             app_id = current_ballots[position]
@@ -217,7 +217,7 @@ def adapt_votes_format_for_schulze_computations(standardized_ballots):
 
     weighted_ranks = []
 
-    for voter in standardized_ballots.keys():
+    for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots']
         current_ranking = []
         currently_seen_candidates = set()
@@ -288,7 +288,7 @@ def print_schulze_ranking(schulze_ranking, target_release_year=None, use_igdb=Fa
                 app_id_release_date = 'an unknown date'
 
             print(
-                '{0:2} | '.format(rank + offset + 1)
+                f'{rank + offset + 1:2} | '
                 + game_name.strip()
                 + ' (appID: '
                 + app_url
@@ -326,7 +326,7 @@ def build_standardized_ballots_for_tie(
     if threshold_n is None:
         threshold_n = 1
 
-    standardized_ballots_for_tied_app_id_group = dict()
+    standardized_ballots_for_tied_app_id_group = {}
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]['ballots']
@@ -341,8 +341,8 @@ def build_standardized_ballots_for_tie(
         )
 
         if has_voted_for_at_least_n_tied_app_ids:
-            standardized_ballots_for_tied_app_id_group[voter_name] = dict()
-            standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = dict()
+            standardized_ballots_for_tied_app_id_group[voter_name] = {}
+            standardized_ballots_for_tied_app_id_group[voter_name]['ballots'] = {}
 
             new_ballots = [
                 current_ballots[position]
@@ -411,7 +411,7 @@ def unwind_ranking(input_ranking, app_id_group, standardized_ballots, threshold_
             threshold_n=threshold_n + 1,
         )
     else:
-        print('Tie has been partially broken: {}'.format(input_ranking))
+        print(f'Tie has been partially broken: {input_ranking}')
         output_ranking = dissect_ranking(
             input_ranking=input_ranking,
             standardized_ballots=standardized_ballots,
@@ -465,13 +465,13 @@ def display_info_about_tie(
         ]
         count_at_position = Counter(ballots_at_position)
         if any(k is not None for k in count_at_position):
-            print('Position n°{} ; {}'.format(position, count_at_position))
+            print(f'Position n°{position} ; {count_at_position}')
 
     return
 
 
 def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
-    untied_schulze_ranking = list()
+    untied_schulze_ranking = []
 
     for group_no, appID_group in enumerate(schulze_ranking):
         if len(appID_group) > 1:
@@ -500,7 +500,7 @@ def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots
     for appID in app_id_group:
         ballot_distribution = None
 
-        for voter_name in standardized_ballots.keys():
+        for voter_name in standardized_ballots:
             current_ballots = standardized_ballots[voter_name]['ballots']
 
             if ballot_distribution is None:
@@ -558,11 +558,11 @@ def print_voter_stats(
         for app_id in app_id_group:
             goty.append(int(app_id))
 
-    print('\nVoter stats are displayed based on the top {} games'.format(len(goty)))
+    print(f'\nVoter stats are displayed based on the top {len(goty)} games')
 
     max_num_ballots_per_person = 0
 
-    counter = dict()
+    counter = {}
     for voter in standardized_ballots:
         current_ballots = standardized_ballots[voter]['ballots'].values()
         max_num_ballots_per_person = max(

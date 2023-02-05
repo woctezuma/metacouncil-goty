@@ -2,18 +2,18 @@ import time
 
 import requests
 
-from igdb_credentials import load_credential_headers, download_latest_credentials
+from igdb_credentials import download_latest_credentials, load_credential_headers
 from igdb_local_secrets import load_igdb_user_key
 from igdb_utils import (
-    get_igdb_api_url_for_games,
-    get_igdb_fields_for_games,
-    get_igdb_request_params,
     append_filter_for_igdb_fields,
-    get_igdb_api_url,
-    get_igdb_api_url_for_release_dates,
-    get_igdb_fields_for_release_dates,
-    format_release_dates_for_manual_display,
     format_list_of_platforms,
+    format_release_dates_for_manual_display,
+    get_igdb_api_url,
+    get_igdb_api_url_for_games,
+    get_igdb_api_url_for_release_dates,
+    get_igdb_fields_for_games,
+    get_igdb_fields_for_release_dates,
+    get_igdb_request_params,
 )
 
 
@@ -117,7 +117,7 @@ def look_up_game_name(
     data = response.json()
 
     if verbose:
-        print("Response (#games={}): {}\n".format(len(data), data))
+        print(f"Response (#games={len(data)}): {data}\n")
 
     return data
 
@@ -174,7 +174,7 @@ def look_up_game_id(
     data = response.json()
 
     if verbose:
-        print("Response (#games={}): {}\n".format(len(data), data))
+        print(f"Response (#games={len(data)}): {data}\n")
 
     return data
 
@@ -215,7 +215,7 @@ def look_up_games_released_in_given_year(
     data = response.json()
 
     if verbose:
-        print("Response (#games={}): {}\n".format(len(data), data))
+        print(f"Response (#games={len(data)}): {data}\n")
 
     return data
 
@@ -242,7 +242,7 @@ def download_list_of_platforms(verbose=True):
     data = response.json()
 
     if verbose:
-        print("Response (#platforms={}): {}\n".format(len(data), data))
+        print(f"Response (#platforms={len(data)}): {data}\n")
 
     return data
 

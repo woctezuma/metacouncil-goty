@@ -129,8 +129,8 @@ def load_extended_steamspy_database(steamspy_database=None):
     )
 
     extended_steamspy_database = steamspy_database
-    for app_id in hard_coded_steamspy_database_extension.keys():
-        if app_id in steamspy_database.keys():
+    for app_id in hard_coded_steamspy_database_extension:
+        if app_id in steamspy_database:
             print(
                 'AppID {} already exists in SteamSpy database. The entry will be overwritten.'.format(
                     app_id,
@@ -145,10 +145,7 @@ def load_extended_steamspy_database(steamspy_database=None):
 
 
 def get_app_name_for_problematic_app_id(app_id=None):
-    if app_id is None:
-        app_name = '[Not Available]'
-    else:
-        app_name = 'app_{}'.format(app_id)
+    app_name = "[Not Available]" if app_id is None else f"app_{app_id}"
 
     return app_name
 

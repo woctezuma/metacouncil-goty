@@ -1,14 +1,14 @@
-from anonymize_data import load_input, remove_header, get_anonymized_file_prefix
+from anonymize_data import get_anonymized_file_prefix, load_input, remove_header
 from parsing_params import (
-    get_categories,
-    get_adjusted_parsing_params,
     convert_params_to_indices,
+    get_adjusted_parsing_params,
+    get_categories,
     get_parsing_offset,
 )
 
 
 def extract_game_tokens(input_tokens, ind_list, num_choices, strip_game_name=True):
-    d = dict()
+    d = {}
     for i, ind in enumerate(ind_list):
         # Caveat: num_choices is not necessarily equal to len(ind_list)
         position = num_choices - i
@@ -40,14 +40,14 @@ def parse_text_data(text_data, parsing_params, is_anonymized):
 
     quote = '"'
 
-    ballots = dict()
+    ballots = {}
 
     for line in text_data:
         tokens = [token.strip(quote) for token in line.split(';"')]
 
         voter_name = read_voter_name(tokens, indices)
 
-        single_ballot = dict()
+        single_ballot = {}
         single_ballot = fill_in_review(tokens, indices, single_ballot=single_ballot)
         single_ballot = fill_in_game_list(
             tokens,
@@ -72,10 +72,7 @@ def read_voter_name(tokens, indices):
 def fill_in_review(tokens, indices, single_ballot):
     for categorie in get_categories("main"):
         ind = indices["review"][categorie]
-        if ind is None:
-            review = None
-        else:
-            review = tokens[ind]
+        review = None if ind is None else tokens[ind]
 
         goty_review_field = f"{categorie}_description"
         single_ballot[goty_review_field] = review

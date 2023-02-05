@@ -11,9 +11,9 @@ from disqualify_vote import is_a_noisy_vote
 from igdb_match_names import load_igdb_local_databases, print_igdb_matches
 from load_ballots import load_ballots
 from match_names import (
-    precompute_matches,
-    display_matches,
     constrain_app_id_search_by_year,
+    display_matches,
+    precompute_matches,
 )
 
 
@@ -26,12 +26,12 @@ def run_benchmark_for_steam_spy(
     goty_field='goty_preferences',
 ):
     seen_game_names = set()
-    matches = dict()
+    matches = {}
 
     # Caveat: do not use the extended SteamSpy database for a fair benchmark!
     steamspy_database = steamspypi.load()
 
-    for voter in raw_votes.keys():
+    for voter in raw_votes:
         for raw_name in raw_votes[voter][goty_field].values():
             if raw_name not in seen_game_names:
                 seen_game_names.add(raw_name)
@@ -58,7 +58,7 @@ def run_benchmark_for_steam_spy(
                     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
                     closest_distance = [dist[app_id] for app_id in closest_app_id]
 
-                    element = dict()
+                    element = {}
                     element['input_name'] = raw_name
                     element['matched_appID'] = closest_app_id
                     element['matched_name'] = [
