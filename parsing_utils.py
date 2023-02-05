@@ -50,7 +50,10 @@ def parse_text_data(text_data, parsing_params, is_anonymized):
         single_ballot = dict()
         single_ballot = fill_in_review(tokens, indices, single_ballot=single_ballot)
         single_ballot = fill_in_game_list(
-            tokens, indices, parsing_params=parsing_params, single_ballot=single_ballot
+            tokens,
+            indices,
+            parsing_params=parsing_params,
+            single_ballot=single_ballot,
         )
         single_ballot = fill_in_best_optional(single_ballot=single_ballot)
 
@@ -85,7 +88,9 @@ def fill_in_game_list(tokens, indices, parsing_params, single_ballot):
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]
             d = extract_game_tokens(
-                tokens, ind_list, parsing_params[categorie]["num_choices"]
+                tokens,
+                ind_list,
+                parsing_params[categorie]["num_choices"],
             )
 
             goty_field = f"{categorie}_preferences"

@@ -55,7 +55,8 @@ def load_credential_headers(verbose=False):
     headers["Client-ID"] = igdb_user_key["client_id"]
 
     headers["Authorization"] = "{} {}".format(
-        igdb_user_key["token_type"].capitalize(), igdb_user_key["access_token"]
+        igdb_user_key["token_type"].capitalize(),
+        igdb_user_key["access_token"],
     )
 
     if verbose:

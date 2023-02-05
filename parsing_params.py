@@ -76,7 +76,8 @@ def convert_params_to_indices(params, offset=9):
 
     for categorie in get_categories("main"):
         start, end, descr = get_next_indices(
-            last_index=last_index, num_indices=params[categorie]["num_choices"]
+            last_index=last_index,
+            num_indices=params[categorie]["num_choices"],
         )
         indices["main"][categorie] = [i for i in range(start, end)]
         indices["review"][categorie] = descr
@@ -87,7 +88,8 @@ def convert_params_to_indices(params, offset=9):
 
     for categorie in get_categories("optional"):
         start, end, descr = get_next_indices(
-            last_index=last_index, num_indices=params[categorie]["num_choices"]
+            last_index=last_index,
+            num_indices=params[categorie]["num_choices"],
         )
         indices["optional"][categorie] = [i for i in range(start, end)]
 

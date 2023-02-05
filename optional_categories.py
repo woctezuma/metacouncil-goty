@@ -7,16 +7,21 @@ from steam_store_utils import get_link_to_store
 
 
 def get_best_optional_categories():
-    optional_categories = [f'best_{categorie}' for categorie in get_optional_categories()]
+    optional_categories = [
+        f'best_{categorie}' for categorie in get_optional_categories()
+    ]
 
     return optional_categories
 
 
 def get_optional_ballots(ballots, category_name):
-    optional_ballots = [ballots[voter_name][category_name] for voter_name in ballots
-                        if category_name in ballots[voter_name]
-                        and ballots[voter_name][category_name] is not None
-                        and len(ballots[voter_name][category_name]) > 0]
+    optional_ballots = [
+        ballots[voter_name][category_name]
+        for voter_name in ballots
+        if category_name in ballots[voter_name]
+        and ballots[voter_name][category_name] is not None
+        and len(ballots[voter_name][category_name]) > 0
+    ]
 
     return optional_ballots
 
@@ -37,8 +42,7 @@ def get_dummy_field():
     return dummy_field
 
 
-def format_optional_ballots_for_igdb_matching(optional_ballots,
-                                              dummy_field=None):
+def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None):
     if dummy_field is None:
         dummy_field = get_dummy_field()
 
@@ -46,19 +50,23 @@ def format_optional_ballots_for_igdb_matching(optional_ballots,
 
     formatted_optional_ballots = dict()
     formatted_optional_ballots[dummy_voter] = dict()
-    formatted_optional_ballots[dummy_voter][dummy_field] = dict(enumerate(optional_ballots))
+    formatted_optional_ballots[dummy_voter][dummy_field] = dict(
+        enumerate(optional_ballots),
+    )
 
     return formatted_optional_ballots
 
 
-def match_optional_ballots(optional_ballots,
-                           release_year=None,
-                           use_igdb=False,
-                           retrieve_igdb_data_from_scratch=True,
-                           apply_hard_coded_extension_and_fixes=True,
-                           must_be_available_on_pc=False,
-                           must_be_a_game=False,
-                           use_levenshtein_distance=True):
+def match_optional_ballots(
+    optional_ballots,
+    release_year=None,
+    use_igdb=False,
+    retrieve_igdb_data_from_scratch=True,
+    apply_hard_coded_extension_and_fixes=True,
+    must_be_available_on_pc=False,
+    must_be_a_game=False,
+    use_levenshtein_distance=True,
+):
     import steampi.calendar
 
     from extend_steamspy import load_extended_steamspy_database
@@ -70,8 +78,10 @@ def match_optional_ballots(optional_ballots,
 
     dummy_field = get_dummy_field()
 
-    formatted_optional_ballots = format_optional_ballots_for_igdb_matching(optional_ballots,
-                                                                           dummy_field=dummy_field)
+    formatted_optional_ballots = format_optional_ballots_for_igdb_matching(
+        optional_ballots,
+        dummy_field=dummy_field,
+    )
 
     if use_igdb:
         # Code inspired from standardize_ballots() in match_names.py
@@ -82,20 +92,24 @@ def match_optional_ballots(optional_ballots,
             # ii) databases are shared between optional categories, and there is a loop over the optional categories.
             extend_previous_databases = True
 
-            igdb_match_database, local_database = download_igdb_local_databases(formatted_optional_ballots,
-                                                                                release_year=release_year,
-                                                                                apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                                                                                extend_previous_databases=extend_previous_databases,
-                                                                                must_be_available_on_pc=must_be_available_on_pc,
-                                                                                must_be_a_game=must_be_a_game,
-                                                                                goty_field=dummy_field)
+            igdb_match_database, local_database = download_igdb_local_databases(
+                formatted_optional_ballots,
+                release_year=release_year,
+                apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                extend_previous_databases=extend_previous_databases,
+                must_be_available_on_pc=must_be_available_on_pc,
+                must_be_a_game=must_be_a_game,
+                goty_field=dummy_field,
+            )
         else:
-            igdb_match_database, local_database = load_igdb_local_databases(formatted_optional_ballots,
-                                                                            release_year=release_year,
-                                                                            apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                                                                            must_be_available_on_pc=must_be_available_on_pc,
-                                                                            must_be_a_game=must_be_a_game,
-                                                                            goty_field=dummy_field)
+            igdb_match_database, local_database = load_igdb_local_databases(
+                formatted_optional_ballots,
+                release_year=release_year,
+                apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+                must_be_available_on_pc=must_be_available_on_pc,
+                must_be_a_game=must_be_a_game,
+                goty_field=dummy_field,
+            )
     else:
         igdb_match_database = None
         local_database = load_extended_steamspy_database()
@@ -125,10 +139,11 @@ def match_optional_ballots(optional_ballots,
 
                     app_name = local_database[appID]['name']
 
-                    _, app_id_release_date = get_igdb_human_release_dates(appID,
-                                                                          local_database)
-                    app_url = get_link_to_igdb_website(appID,
-                                                       local_database)
+                    _, app_id_release_date = get_igdb_human_release_dates(
+                        appID,
+                        local_database,
+                    )
+                    app_url = get_link_to_igdb_website(appID, local_database)
                 else:
                     appID = None
                     app_name = None
@@ -138,9 +153,11 @@ def match_optional_ballots(optional_ballots,
             else:
                 # Using SteamSpy
 
-                (closest_appID, _) = find_closest_app_id(raw_name,
-                                                         steamspy_database=local_database,
-                                                         use_levenshtein_distance=use_levenshtein_distance)
+                (closest_appID, _) = find_closest_app_id(
+                    raw_name,
+                    steamspy_database=local_database,
+                    use_levenshtein_distance=use_levenshtein_distance,
+                )
 
                 appID = closest_appID[0]
 
@@ -164,12 +181,15 @@ def match_optional_ballots(optional_ballots,
             else:
                 id_description = 'AppID'
 
-            print('\t{} ---> {}: {}\t;\t{} ({})'.format(raw_name,
-                                                        id_description,
-                                                        matches[raw_name]['matched_appID'],
-                                                        matches[raw_name]['matched_name'],
-                                                        matches[raw_name]['matched_release_date'],
-                                                        ))
+            print(
+                '\t{} ---> {}: {}\t;\t{} ({})'.format(
+                    raw_name,
+                    id_description,
+                    matches[raw_name]['matched_appID'],
+                    matches[raw_name]['matched_name'],
+                    matches[raw_name]['matched_release_date'],
+                ),
+            )
 
         my_str = '{} (appID: {}, released on {})'.format(
             matches[raw_name]['matched_name'],
@@ -198,7 +218,11 @@ def compute_ranking_based_on_optional_ballots(optional_ballots):
     optional_counts = count_optional_ballots(optional_ballots)
 
     # Reference: https://stackoverflow.com/a/37693603
-    ranking = sorted(optional_counts.items(), key=lambda x: (- x[1], x[0]), reverse=False)
+    ranking = sorted(
+        optional_counts.items(),
+        key=lambda x: (-x[1], x[0]),
+        reverse=False,
+    )
 
     return ranking
 
@@ -226,21 +250,20 @@ def pretty_display(ranking):
         else:
             my_str = ' with #vote = '
 
-        print('{0:2} | '.format(rank)
-              + game_name.strip()
-              + my_str + str(num_votes)
-              )
+        print('{0:2} | '.format(rank) + game_name.strip() + my_str + str(num_votes))
 
     return
 
 
-def display_optional_ballots(input_filename,
-                             filter_noise=True,
-                             release_year=None,
-                             use_igdb=False,
-                             retrieve_igdb_data_from_scratch=True,
-                             apply_hard_coded_extension_and_fixes=True,
-                             use_levenshtein_distance=True):
+def display_optional_ballots(
+    input_filename,
+    filter_noise=True,
+    release_year=None,
+    use_igdb=False,
+    retrieve_igdb_data_from_scratch=True,
+    apply_hard_coded_extension_and_fixes=True,
+    use_levenshtein_distance=True,
+):
     from load_ballots import load_ballots
 
     ballots = load_ballots(input_filename)
@@ -253,12 +276,14 @@ def display_optional_ballots(input_filename,
         if filter_noise:
             optional_ballots = filter_noise_from_optional_ballots(optional_ballots)
 
-        optional_ballots = match_optional_ballots(optional_ballots,
-                                                  release_year=release_year,
-                                                  use_igdb=use_igdb,
-                                                  retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
-                                                  apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                                                  use_levenshtein_distance=use_levenshtein_distance)
+        optional_ballots = match_optional_ballots(
+            optional_ballots,
+            release_year=release_year,
+            use_igdb=use_igdb,
+            retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
+            apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+            use_levenshtein_distance=use_levenshtein_distance,
+        )
 
         ranking = compute_ranking_based_on_optional_ballots(optional_ballots)
         pretty_display(ranking)
@@ -283,10 +308,12 @@ if __name__ == '__main__':
     # Optional Categories of the Year
     release_year = ballot_year
 
-    display_optional_ballots(input_filename,
-                             filter_noise=True,
-                             release_year=release_year,
-                             use_igdb=use_igdb,
-                             retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
-                             apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                             use_levenshtein_distance=use_levenshtein_distance)
+    display_optional_ballots(
+        input_filename,
+        filter_noise=True,
+        release_year=release_year,
+        use_igdb=use_igdb,
+        retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
+        apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+        use_levenshtein_distance=use_levenshtein_distance,
+    )

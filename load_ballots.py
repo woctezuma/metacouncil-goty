@@ -14,7 +14,7 @@ def get_ballot_file_name(ballot_year, is_anonymized=False):
 
 def convert_fname_to_year(fname, year_prefixe='20', num_digits=4):
     year_index = fname.find(year_prefixe)
-    year_str = fname[year_index:(year_index + num_digits)]
+    year_str = fname[year_index : (year_index + num_digits)]
     ballot_year = int(year_str)
 
     return ballot_year
@@ -32,12 +32,14 @@ def load_ballots(input_filename):
     return ballots
 
 
-def print_reviews(ballots,
-                  matches,
-                  app_id,
-                  goty_field='goty_preferences',
-                  goty_review_field=None,
-                  export_for_forum=True):
+def print_reviews(
+    ballots,
+    matches,
+    app_id,
+    goty_field='goty_preferences',
+    goty_review_field=None,
+    export_for_forum=True,
+):
     if goty_review_field is None:
         goty_review_field = goty_field.replace('_preferences', '_description')
 
@@ -50,13 +52,17 @@ def print_reviews(ballots,
     for voter_name in ballots:
         goty_raw_name = ballots[voter_name][goty_field][goty_position]
         try:
-            goty_app_id = matches[goty_raw_name]['matched_appID'][neighbor_reference_index]
+            goty_app_id = matches[goty_raw_name]['matched_appID'][
+                neighbor_reference_index
+            ]
         except KeyError:
             # This happens if the voter did not submit any actual game at all, e.g.
             # - 'n/a' as the first game for GotY, so that the mandatory field in the form can be bypassed,
             # - no submitted game for the following games for GotY, because the fields were optional anyway.
             continue
-        goty_standardized_name = matches[goty_raw_name]['matched_name'][neighbor_reference_index]
+        goty_standardized_name = matches[goty_raw_name]['matched_name'][
+            neighbor_reference_index
+        ]
 
         if goty_app_id == app_id:
             goty_review = ballots[voter_name][goty_review_field]

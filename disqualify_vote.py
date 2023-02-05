@@ -3,11 +3,9 @@ from disqualify_vote_igdb import load_disqualified_igdb_ids
 
 def get_hard_coded_disqualified_app_ids():
     disqualified_app_id_dict = {
-
         "-1": {
             "reason": "Marvel's Spider-Man is not available on PC: it is exclusive to PS4.",
         },
-
     }
 
     return disqualified_app_id_dict
@@ -33,9 +31,11 @@ def is_a_noisy_vote(game_name):
     return game_name_is_a_noisy_vote
 
 
-def filter_out_votes_for_hard_coded_reasons(standardized_ballots,
-                                            release_year=None,
-                                            use_igdb=False):
+def filter_out_votes_for_hard_coded_reasons(
+    standardized_ballots,
+    release_year=None,
+    use_igdb=False,
+):
     # Objective: remove appID which gathered votes but were manually marked for disqualification
 
     print()
@@ -58,10 +58,15 @@ def filter_out_votes_for_hard_coded_reasons(standardized_ballots,
                     current_ballots_list.append(app_id)
                 else:
                     if app_id not in removed_app_ids:
-                        print('AppID ' + app_id + ' removed because ' + disqualified_app_id_dict[app_id]["reason"])
+                        print(
+                            'AppID '
+                            + app_id
+                            + ' removed because '
+                            + disqualified_app_id_dict[app_id]["reason"],
+                        )
                         removed_app_ids.append(app_id)
 
-        for (i, current_ballot) in enumerate(current_ballots_list):
+        for i, current_ballot in enumerate(current_ballots_list):
             position = i + 1
             standardized_ballots[voter]['ballots'][position] = current_ballot
         for i in range(len(current_ballots_list), len(current_ballots.keys())):

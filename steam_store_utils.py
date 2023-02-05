@@ -5,7 +5,9 @@ def get_link_to_store(app_id, hide_dummy_app_id=True):
     steam_store_base_url = 'https://store.steampowered.com/app/'
 
     if int(app_id) > 0:
-        link_to_store = '[URL=' + steam_store_base_url + app_id + '/]' + app_id + '[/URL]'
+        link_to_store = (
+            '[URL=' + steam_store_base_url + app_id + '/]' + app_id + '[/URL]'
+        )
     else:
         if hide_dummy_app_id:
             link_to_store = 'n/a'
@@ -21,7 +23,12 @@ def get_early_access_status(app_id):
         app_details = {}
 
     try:
-        is_early_access = bool(any(genre['description'] == 'Early Access' for genre in app_details['genres']))
+        is_early_access = bool(
+            any(
+                genre['description'] == 'Early Access'
+                for genre in app_details['genres']
+            ),
+        )
     except KeyError:
         is_early_access = False
 

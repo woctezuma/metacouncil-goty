@@ -26,13 +26,15 @@ if __name__ == '__main__':
     # release_year = None
     # year_constraint = None
 
-    apply_pipeline(input_filename,
-                   release_year=release_year,
-                   try_to_break_ties=True,
-                   use_igdb=use_igdb,
-                   retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
-                   apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
-                   use_levenshtein_distance=use_levenshtein_distance,
-                   goty_field=goty_field,
-                   year_constraint=year_constraint,
-                   num_app_id_groups_to_display=9)
+    apply_pipeline(
+        input_filename,
+        release_year=release_year,
+        try_to_break_ties=True,
+        use_igdb=use_igdb,
+        retrieve_igdb_data_from_scratch=retrieve_igdb_data_from_scratch,
+        apply_hard_coded_extension_and_fixes=apply_hard_coded_extension_and_fixes,
+        use_levenshtein_distance=use_levenshtein_distance,
+        goty_field=goty_field,
+        year_constraint=year_constraint,
+        num_app_id_groups_to_display=9,
+    )

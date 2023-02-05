@@ -33,7 +33,7 @@ def remove_header(data, content_start_criterion='"1"'):
     # Skip (header) lines until the first block of data content is encountered.
     num_rows_header = 0
     for row in data:
-        if row[0:len(content_start_criterion)] == content_start_criterion:
+        if row[0 : len(content_start_criterion)] == content_start_criterion:
             break
         num_rows_header += 1
 
@@ -67,15 +67,23 @@ def get_author_name_token_index(ballot_year='2018', is_anonymized=False):
     return author_token_index
 
 
-def anonymize(data,
-              ballot_year,
-              fake_author_name=True,
-              redact_reviews=False,
-              faker_seed=0,
-              input_is_anonymized=False,
-              verbose=True):
-    author_name_token_index = get_author_name_token_index(ballot_year=ballot_year, is_anonymized=input_is_anonymized)
-    review_token_indices = get_review_token_indices(ballot_year=ballot_year, is_anonymized=input_is_anonymized)
+def anonymize(
+    data,
+    ballot_year,
+    fake_author_name=True,
+    redact_reviews=False,
+    faker_seed=0,
+    input_is_anonymized=False,
+    verbose=True,
+):
+    author_name_token_index = get_author_name_token_index(
+        ballot_year=ballot_year,
+        is_anonymized=input_is_anonymized,
+    )
+    review_token_indices = get_review_token_indices(
+        ballot_year=ballot_year,
+        is_anonymized=input_is_anonymized,
+    )
 
     import re
 
@@ -126,24 +134,28 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
     return
 
 
-def load_and_anonymize(input_filename,
-                       ballot_year,
-                       file_encoding='utf-8',
-                       fake_author_name=True,
-                       redact_reviews=False,
-                       data_folder=None,
-                       verbose=True):
+def load_and_anonymize(
+    input_filename,
+    ballot_year,
+    file_encoding='utf-8',
+    fake_author_name=True,
+    redact_reviews=False,
+    data_folder=None,
+    verbose=True,
+):
     output_filename = get_anonymized_file_prefix() + input_filename
 
     data = load_input(input_filename, file_encoding, data_folder=data_folder)
 
     data_content = remove_header(data, content_start_criterion='"1"')
 
-    anonymized_data = anonymize(data_content,
-                                ballot_year=ballot_year,
-                                fake_author_name=fake_author_name,
-                                redact_reviews=redact_reviews,
-                                verbose=verbose)
+    anonymized_data = anonymize(
+        data_content,
+        ballot_year=ballot_year,
+        fake_author_name=fake_author_name,
+        redact_reviews=redact_reviews,
+        verbose=verbose,
+    )
 
     write_output(anonymized_data, output_filename, file_encoding)
 
@@ -160,8 +172,10 @@ if __name__ == '__main__':
     redact_reviews = True
     verbose = True
 
-    anonymized_data = load_and_anonymize(input_filename,
-                                         ballot_year=ballot_year,
-                                         fake_author_name=fake_author_name,
-                                         redact_reviews=redact_reviews,
-                                         verbose=verbose)
+    anonymized_data = load_and_anonymize(
+        input_filename,
+        ballot_year=ballot_year,
+        fake_author_name=fake_author_name,
+        redact_reviews=redact_reviews,
+        verbose=verbose,
+    )

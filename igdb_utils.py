@@ -147,11 +147,13 @@ def get_steam_service_no():
     return steam_service_no
 
 
-def append_filter_for_igdb_fields(igdb_fields,
-                                  filter_name,
-                                  filter_value,
-                                  use_parenthesis=False,
-                                  comparison_symbol='='):
+def append_filter_for_igdb_fields(
+    igdb_fields,
+    filter_name,
+    filter_value,
+    use_parenthesis=False,
+    comparison_symbol='=',
+):
     where_statement = ' ; where '
     conjunction_statement = ' & '
 
@@ -188,9 +190,9 @@ def append_filter_for_igdb_fields(igdb_fields,
                     num_enforced_game_categories -= len('()')
             else:
                 # Convert filter_value from a list of integers, e.g. [1,4], to a string, e.g. '1,4'.
-                filter_value = category_separator.join(str(category_no)
-                                                       for category_no in filter_value
-                                                       )
+                filter_value = category_separator.join(
+                    str(category_no) for category_no in filter_value
+                )
 
     if use_parenthesis:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
@@ -228,108 +230,117 @@ def get_comparison_symbol(year_constraint='equality'):
     return comparison_symbol
 
 
-def get_igdb_fields_for_games(must_be_available_on_pc=True,
-                              must_be_a_game=True,
-                              enforced_platform=None,
-                              enforced_game_category=None,
-                              enforced_year=None,
-                              year_constraint='equality'):
+def get_igdb_fields_for_games(
+    must_be_available_on_pc=True,
+    must_be_a_game=True,
+    enforced_platform=None,
+    enforced_game_category=None,
+    enforced_year=None,
+    year_constraint='equality',
+):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
     field_separator = ', '
 
-    igdb_fields_for_games = field_separator.join([
-        'name',
-        'slug',
-        'platforms',
-        'category',
-        'release_dates.y',
-        'release_dates.platform',
-        'release_dates.human',
-        'external_games.category',
-        'external_games.name',
-        'external_games.uid',
-        'external_games.url',
-        'external_games.year',
-        'alternative_names.comment',
-        'alternative_names.name',
-    ])
+    igdb_fields_for_games = field_separator.join(
+        [
+            'name',
+            'slug',
+            'platforms',
+            'category',
+            'release_dates.y',
+            'release_dates.platform',
+            'release_dates.human',
+            'external_games.category',
+            'external_games.name',
+            'external_games.uid',
+            'external_games.url',
+            'external_games.year',
+            'alternative_names.comment',
+            'alternative_names.name',
+        ],
+    )
 
     if must_be_available_on_pc or enforced_platform is not None:
-
         if enforced_platform is None:
             enforced_platform = get_pc_platform_no()
 
-        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
-                                                              'platforms',
-                                                              enforced_platform,
-                                                              use_parenthesis=True,
-                                                              )
+        igdb_fields_for_games = append_filter_for_igdb_fields(
+            igdb_fields_for_games,
+            'platforms',
+            enforced_platform,
+            use_parenthesis=True,
+        )
 
     if must_be_a_game or enforced_game_category is not None:
-
         if enforced_game_category is None:
             enforced_game_category = get_game_category_no()
 
-        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
-                                                              'category',
-                                                              enforced_game_category,
-                                                              )
+        igdb_fields_for_games = append_filter_for_igdb_fields(
+            igdb_fields_for_games,
+            'category',
+            enforced_game_category,
+        )
 
     if enforced_year is not None:
         comparison_symbol = get_comparison_symbol(year_constraint=year_constraint)
 
-        igdb_fields_for_games = append_filter_for_igdb_fields(igdb_fields_for_games,
-                                                              'release_dates.y',
-                                                              enforced_year,
-                                                              comparison_symbol=comparison_symbol)
+        igdb_fields_for_games = append_filter_for_igdb_fields(
+            igdb_fields_for_games,
+            'release_dates.y',
+            enforced_year,
+            comparison_symbol=comparison_symbol,
+        )
 
     return igdb_fields_for_games
 
 
-def get_igdb_fields_for_release_dates(must_be_available_on_pc=True,
-                                      enforced_platform=None,
-                                      enforced_year=None):
+def get_igdb_fields_for_release_dates(
+    must_be_available_on_pc=True,
+    enforced_platform=None,
+    enforced_year=None,
+):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
     field_separator = ', '
 
-    igdb_fields_for_release_dates = field_separator.join([
-        'game.name',
-        'game.slug',
-        'game.platforms',
-        'game.category',
-        'platform',
-        'human',
-        'y',
-    ])
+    igdb_fields_for_release_dates = field_separator.join(
+        [
+            'game.name',
+            'game.slug',
+            'game.platforms',
+            'game.category',
+            'platform',
+            'human',
+            'y',
+        ],
+    )
 
     if must_be_available_on_pc or enforced_platform is not None:
-
         if enforced_platform is None:
             enforced_platform = get_pc_platform_no()
 
-        igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
-                                                                      'platform',
-                                                                      enforced_platform,
-                                                                      use_parenthesis=True,
-                                                                      )
+        igdb_fields_for_release_dates = append_filter_for_igdb_fields(
+            igdb_fields_for_release_dates,
+            'platform',
+            enforced_platform,
+            use_parenthesis=True,
+        )
 
     if enforced_year is not None:
-        igdb_fields_for_release_dates = append_filter_for_igdb_fields(igdb_fields_for_release_dates,
-                                                                      'y',
-                                                                      enforced_year,
-                                                                      )
+        igdb_fields_for_release_dates = append_filter_for_igdb_fields(
+            igdb_fields_for_release_dates,
+            'y',
+            enforced_year,
+        )
 
     return igdb_fields_for_release_dates
 
 
-def format_list_of_platforms(raw_data_platforms,
-                             verbose=True):
+def format_list_of_platforms(raw_data_platforms, verbose=True):
     formatted_data_platforms = dict()
 
-    sorted_data_platforms = sorted(raw_data_platforms,
-                                   key=lambda x: x['id'])
+    sorted_data_platforms = sorted(raw_data_platforms, key=lambda x: x['id'])
 
     for e in sorted_data_platforms:
         id = e['id']
@@ -350,10 +361,13 @@ def format_list_of_platforms(raw_data_platforms,
             if category == get_pc_platform_no():
                 slug = formatted_data_platforms[id]['slug']
 
-                print('Category: {} ; ID: {} ; Slug: {}'.format(category,
-                                                                id,
-                                                                slug,
-                                                                ))
+                print(
+                    'Category: {} ; ID: {} ; Slug: {}'.format(
+                        category,
+                        id,
+                        slug,
+                    ),
+                )
 
     return formatted_data_platforms
 
@@ -361,9 +375,7 @@ def format_list_of_platforms(raw_data_platforms,
 def format_release_dates_for_manual_display(element):
     if 'release_dates' in element:
         release_years = set(
-            str(date['y'])
-            for date in element['release_dates']
-            if 'y' in date
+            str(date['y']) for date in element['release_dates'] if 'y' in date
         )
     else:
         release_years = None
