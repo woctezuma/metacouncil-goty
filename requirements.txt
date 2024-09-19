@@ -1,4 +1,4 @@
-Faker==24.2.0
+Faker==29.0.0
 schulze==0.1
 steamspypi==1.1.1
 steampi==0.5.2
