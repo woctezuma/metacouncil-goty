@@ -22,7 +22,7 @@ def get_hard_coded_noisy_votes():
 def is_a_noisy_vote(game_name):
     noisy_votes = get_hard_coded_noisy_votes()
 
-    return bool(game_name == "" or (game_name in noisy_votes))
+    return bool(not game_name or (game_name in noisy_votes))
 
 
 def filter_out_votes_for_hard_coded_reasons(
