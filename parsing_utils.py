@@ -64,9 +64,7 @@ def parse_text_data(text_data, parsing_params, is_anonymized):
 
 def read_voter_name(tokens, indices):
     ind = indices["voter_name"]
-    voter_name = tokens[ind]
-
-    return voter_name
+    return tokens[ind]
 
 
 def fill_in_review(tokens, indices, single_ballot):

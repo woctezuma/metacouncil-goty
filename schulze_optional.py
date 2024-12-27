@@ -26,12 +26,12 @@ def apply_pipeline_for_optional_categories(
     must_be_available_on_pc=False,
     must_be_a_game=False,
     verbose=False,
-):
+) -> bool:
     ballots = load_ballots(input_filename)
 
     # Standardize ballots
 
-    (standardized_ballots, matches) = standardize_ballots(
+    (standardized_ballots, _matches) = standardize_ballots(
         ballots,
         release_year,
         print_after_sort=False,

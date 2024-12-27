@@ -1,6 +1,5 @@
 import steampi.calendar
 import steampi.text_distances
-
 from disqualify_vote import is_a_noisy_vote
 from extend_steamspy import (
     get_app_name_for_problematic_app_id,
@@ -101,9 +100,7 @@ def get_default_distance_cut_off_for_difflib():
 
     similarity_cut_off = 0.6
 
-    distance_cut_off = 1 - similarity_cut_off
-
-    return distance_cut_off
+    return 1 - similarity_cut_off
 
 
 def find_closest_app_id(
@@ -157,7 +154,7 @@ def find_closest_app_id(
             #
             # Edit: moreover, due to the pagination recently adopted by SteamSpy API, dist misses many entries nowadays.
             for app_id in closest_app_id:
-                if app_id not in dist.keys():
+                if app_id not in dist:
                     dist[app_id] = get_default_distance_cut_off_for_difflib()
 
     closest_distance = [dist[app_id] for app_id in closest_app_id]
@@ -219,7 +216,7 @@ def precompute_matches(
     return matches
 
 
-def display_matches(matches, print_after_sort=True):
+def display_matches(matches, print_after_sort=True) -> None:
     # Index of the neighbor used to sort keys of the matches dictionary
     neighbor_reference_index = 0
 
@@ -263,8 +260,6 @@ def display_matches(matches, print_after_sort=True):
                 )
 
     print()
-
-    return
 
 
 def normalize_votes(raw_votes, matches, goty_field="goty_preferences"):

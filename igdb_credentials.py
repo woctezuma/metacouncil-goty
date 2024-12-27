@@ -4,14 +4,11 @@ import json
 import time
 
 import requests
-
 from igdb_local_secrets import get_igdb_user_key_file_name, load_igdb_user_key
 
 
-def get_igdb_oauth_url():
-    igdb_oauth_url = "https://id.twitch.tv/oauth2/token"
-
-    return igdb_oauth_url
+def get_igdb_oauth_url() -> str:
+    return "https://id.twitch.tv/oauth2/token"
 
 
 def load_client_params(verbose=False):
@@ -30,21 +27,17 @@ def load_client_params(verbose=False):
 
 
 def get_default_headers():
-    headers = {
+    return {
         "Accept": "application/json",
     }
 
-    return headers
-
 
 def get_default_credentials():
-    data = {
+    return {
         "access_token": "",
         "expires_in": 0,
         "token_type": "",
     }
-
-    return data
 
 
 def load_credential_headers(verbose=False):
@@ -70,22 +63,18 @@ def get_unix_time_stamp():
 
     unix_time_stamp = time.time()
 
-    unix_time_stamp_as_int = int(unix_time_stamp)
-
-    return unix_time_stamp_as_int
+    return int(unix_time_stamp)
 
 
-def save_credentials_to_disk(credentials):
+def save_credentials_to_disk(credentials) -> None:
     igdb_user_key = load_igdb_user_key()
     igdb_user_key.update(credentials)
 
     time_dict = {"save_timestamp": get_unix_time_stamp()}
     igdb_user_key.update(time_dict)
 
-    with open(get_igdb_user_key_file_name(), "w") as f:
+    with open(get_igdb_user_key_file_name(), "w", encoding="utf-8") as f:
         json.dump(igdb_user_key, f)
-
-    return
 
 
 def download_latest_credentials(verbose=True):

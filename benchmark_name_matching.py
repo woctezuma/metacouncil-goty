@@ -6,7 +6,6 @@
 import steampi.calendar
 import steampi.text_distances
 import steamspypi.api
-
 from disqualify_vote import is_a_noisy_vote
 from igdb_match_names import load_igdb_local_databases, print_igdb_matches
 from load_ballots import load_ballots
@@ -71,7 +70,7 @@ def run_benchmark_for_steam_spy(
     return matches
 
 
-def main():
+def main() -> bool:
     from load_ballots import get_ballot_file_name
 
     ballot_year = "2018"

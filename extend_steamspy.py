@@ -5,7 +5,7 @@ import steamspypi.api
 def get_hard_coded_steamspy_database_extension():
     # Entries manually added to SteamSpy's database
 
-    database_extension = {
+    return {
         # Dummy (negative) Steam appIDs for games absent from Steam, e.g. console games or PC games from other stores.
         "-1": {
             "name": "Marvel's Spider-Man",
@@ -117,8 +117,6 @@ def get_hard_coded_steamspy_database_extension():
         },
     }
 
-    return database_extension
-
 
 def load_extended_steamspy_database(steamspy_database=None):
     if steamspy_database is None:
@@ -132,9 +130,7 @@ def load_extended_steamspy_database(steamspy_database=None):
     for app_id in hard_coded_steamspy_database_extension:
         if app_id in steamspy_database:
             print(
-                "AppID {} already exists in SteamSpy database. The entry will be overwritten.".format(
-                    app_id,
-                ),
+                f"AppID {app_id} already exists in SteamSpy database. The entry will be overwritten.",
             )
         extended_steamspy_database[app_id] = hard_coded_steamspy_database_extension[
             app_id
@@ -144,10 +140,8 @@ def load_extended_steamspy_database(steamspy_database=None):
     return extended_steamspy_database
 
 
-def get_app_name_for_problematic_app_id(app_id=None):
-    app_name = "[Not Available]" if app_id is None else f"app_{app_id}"
-
-    return app_name
+def get_app_name_for_problematic_app_id(app_id=None) -> str:
+    return "[Not Available]" if app_id is None else f"app_{app_id}"
 
 
 def get_release_year_for_problematic_app_id(app_id):

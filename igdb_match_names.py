@@ -26,11 +26,10 @@ def get_link_to_igdb_website(igdb_id, igdb_local_database, hide_dummy_app_id=Tru
         link_to_store = (
             "[URL=" + igdb_base_url + slug + "/]" + igdb_id_as_str + "[/URL]"
         )
+    elif hide_dummy_app_id:
+        link_to_store = "n/a"
     else:
-        if hide_dummy_app_id:
-            link_to_store = "n/a"
-        else:
-            link_to_store = igdb_id_as_str
+        link_to_store = igdb_id_as_str
     return link_to_store
 
 
@@ -99,10 +98,7 @@ def format_game_name_for_igdb(raw_name, verbose=True):
 
     if verbose:
         print(
-            "Game name is reformatted from {} to {}".format(
-                raw_name,
-                formatted_game_name_for_igdb,
-            ),
+            f"Game name is reformatted from {raw_name} to {formatted_game_name_for_igdb}",
         )
 
     return formatted_game_name_for_igdb
@@ -145,7 +141,7 @@ def match_names_with_igdb(
                     )
 
                     try:
-                        igdb_best_match = igdb_matches[0]
+                        igdb_matches[0]
                     except IndexError:
                         print(f"Relaxing the year constraint for {raw_name}")
 
@@ -162,12 +158,10 @@ def match_names_with_igdb(
                         )
 
                         try:
-                            igdb_best_match = igdb_matches[0]
+                            igdb_matches[0]
                         except IndexError:
                             print(
-                                "Relaxing all of the constraints for {}".format(
-                                    raw_name,
-                                ),
+                                f"Relaxing all of the constraints for {raw_name}",
                             )
 
                             igdb_matches = look_up_game_name(
@@ -214,7 +208,7 @@ def print_igdb_matches(
     igdb_local_database,
     constrained_release_year=None,
     year_constraint="equality",
-):
+) -> None:
     sorted_input_names = sorted(igdb_match_database.keys())
 
     for raw_name in sorted_input_names:
@@ -228,7 +222,7 @@ def print_igdb_matches(
         if igdb_best_matched_id is not None:
             igdb_data = igdb_local_database[str(igdb_best_matched_id)]
 
-            release_years, year_to_remember = get_igdb_release_years(
+            release_years, _year_to_remember = get_igdb_release_years(
                 igdb_data,
                 target_release_year=constrained_release_year,
             )
@@ -238,7 +232,7 @@ def print_igdb_matches(
                 print(f"[!]\tSeveral release years are found for {raw_name}.")
             else:
                 try:
-                    displayed_release_years = list(release_years)[0]
+                    displayed_release_years = next(iter(release_years))
                 except IndexError:
                     displayed_release_years = None
 
@@ -268,12 +262,7 @@ def print_igdb_matches(
 
                 if not constraint_is_okay:
                     print(
-                        "[!]\tRelease year(s) ({}) do not match the ballot year ({}, constraint:{}) for {}.".format(
-                            displayed_release_years,
-                            constrained_release_year,
-                            year_constraint,
-                            raw_name,
-                        ),
+                        f"[!]\tRelease year(s) ({displayed_release_years}) do not match the ballot year ({constrained_release_year}, constraint:{year_constraint}) for {raw_name}.",
                     )
 
             print(
@@ -286,8 +275,6 @@ def print_igdb_matches(
             )
         else:
             print(f"[X]\t{raw_name}")
-
-    return
 
 
 def merge_databases(new_database, previous_database):
@@ -349,7 +336,7 @@ def download_igdb_local_databases(
     # Save data before applying any hard-coded change
     num_queries = 0
     for voter_name in ballots:
-        for _game_position, game_name in ballots[voter_name][goty_field].items():
+        for game_name in ballots[voter_name][goty_field].values():
             if not is_a_noisy_vote(game_name):
                 num_queries += 1
 
@@ -558,7 +545,7 @@ def transform_structure_of_matches(igdb_match_database, igdb_local_database):
     return matches
 
 
-def main():
+def main() -> bool:
     from load_ballots import get_ballot_file_name
 
     ballot_year = "2018"

@@ -1,14 +1,12 @@
 from parsing_params import get_parsing_indices
 
 
-def get_data_folder():
-    data_folder = "data/"
-    return data_folder
+def get_data_folder() -> str:
+    return "data/"
 
 
-def get_anonymized_file_prefix():
-    anonymized_file_prefix = "anonymized_"
-    return anonymized_file_prefix
+def get_anonymized_file_prefix() -> str:
+    return "anonymized_"
 
 
 def load_input(filename, file_encoding="utf8", data_folder=None):
@@ -20,7 +18,7 @@ def load_input(filename, file_encoding="utf8", data_folder=None):
     full_path_to_file = data_folder + filename
 
     with open(full_path_to_file, encoding=file_encoding) as f:
-        for line in f.readlines():
+        for line in f:
             line = line.strip()
             # Remove empty lines and comments
             if len(line) > 0 and line[0:2] != "# ":
@@ -49,22 +47,18 @@ def remove_header(data, content_start_criterion='"1"'):
 
 def get_review_token_indices(ballot_year="2018", is_anonymized=False):
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    review_token_indices = [2 * v for v in indices["review"].values() if v is not None]
+    return [2 * v for v in indices["review"].values() if v is not None]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected results for a file which was not anonymized:
     # - [30] for GOTY in 2018 and 2020
     # - [30, 52] for GOTY and GOTD in 2019
 
-    return review_token_indices
-
 
 def get_author_name_token_index(ballot_year="2018", is_anonymized=False):
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    author_token_index = 2 * indices["voter_name"]
+    return 2 * indices["voter_name"]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected result for a file which was not anonymized: 18.
-
-    return author_token_index
 
 
 def anonymize(
@@ -118,7 +112,7 @@ def anonymize(
     return anonymized_data
 
 
-def write_output(anonymized_data, output_filename, file_encoding="utf8"):
+def write_output(anonymized_data, output_filename, file_encoding="utf8") -> None:
     import pathlib
 
     full_path_to_file = get_data_folder() + output_filename
@@ -130,8 +124,6 @@ def write_output(anonymized_data, output_filename, file_encoding="utf8"):
     with open(full_path_to_file, "w", encoding=file_encoding) as outfile:
         for element in anonymized_data:
             print(element, file=outfile)
-
-    return
 
 
 def load_and_anonymize(

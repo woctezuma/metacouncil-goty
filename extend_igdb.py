@@ -19,7 +19,7 @@ def get_file_name_for_fixes_to_igdb_database(release_year=None, database_type=No
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = (
+    return (
         get_data_folder()
         + prefix
         + "igdb_"
@@ -28,8 +28,6 @@ def get_file_name_for_fixes_to_igdb_database(release_year=None, database_type=No
         + suffix
         + ".json"
     )
-
-    return file_name
 
 
 def load_fixes_to_igdb_database(release_year=None, database_type=None):
@@ -52,21 +50,17 @@ def load_fixes_to_igdb_database(release_year=None, database_type=None):
 
 
 def load_fixes_to_igdb_local_database(release_year=None):
-    fixes_to_igdb_database = load_fixes_to_igdb_database(
+    return load_fixes_to_igdb_database(
         release_year=release_year,
         database_type="local",
     )
 
-    return fixes_to_igdb_database
-
 
 def load_fixes_to_igdb_match_database(release_year=None):
-    fixes_to_igdb_database = load_fixes_to_igdb_database(
+    return load_fixes_to_igdb_database(
         release_year=release_year,
         database_type="match",
     )
-
-    return fixes_to_igdb_database
 
 
 def extend_igdb_local_database(release_year=None, igdb_local_database=None):
@@ -81,9 +75,7 @@ def extend_igdb_local_database(release_year=None, igdb_local_database=None):
     for igdb_id in fixes_to_igdb_local_database:
         if igdb_id in igdb_local_database:
             print(
-                "IGDB ID {} already exists in IGDB local database. Data will be overwritten.".format(
-                    igdb_id,
-                ),
+                f"IGDB ID {igdb_id} already exists in IGDB local database. Data will be overwritten.",
             )
         extended_igdb_local_database[igdb_id] = fixes_to_igdb_local_database[igdb_id]
 
@@ -107,9 +99,7 @@ def extend_igdb_match_database(
         if app_name in igdb_match_database:
             if verbose:
                 print(
-                    "Query name {} already exists in IGDB match database. Match will be overwritten.".format(
-                        app_name,
-                    ),
+                    f"Query name {app_name} already exists in IGDB match database. Match will be overwritten.",
                 )
         extended_igdb_match_database[app_name] = fixes_to_igdb_match_database[app_name]
 
@@ -147,10 +137,7 @@ def fill_in_blanks_in_the_local_database(
 
         is_a_real_igdb_id = bool(igdb_id > 0)
 
-        if (
-            is_a_real_igdb_id
-            and igdb_id_as_str not in augmented_igdb_local_database.keys()
-        ):
+        if is_a_real_igdb_id and igdb_id_as_str not in augmented_igdb_local_database:
             # Give as much freedom as possible: we **know** the IGDB ID (and it is a real IGDB ID since it is positive),
             # but we ignore the reason why the matching previously failed. It is likely due a combination of missing
             # information about the PC release on IGDB, and our parameters constraining the search to PC games.
@@ -210,12 +197,12 @@ def extend_both_igdb_databases(
     return extended_igdb_match_database, extended_igdb_local_database
 
 
-def main():
+def main() -> bool:
     release_year = "2018"
 
     (
-        extended_igdb_match_database,
-        extended_igdb_local_database,
+        _extended_igdb_match_database,
+        _extended_igdb_local_database,
     ) = extend_both_igdb_databases(release_year=release_year)
 
     return True

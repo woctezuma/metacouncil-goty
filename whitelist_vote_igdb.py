@@ -7,9 +7,7 @@ from igdb_databases import get_igdb_file_name_suffix
 def get_file_name_for_whitelisted_igdb_ids(release_year=None):
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + "whitelisted_igdb_ids" + suffix + ".json"
-
-    return file_name
+    return get_data_folder() + "whitelisted_igdb_ids" + suffix + ".json"
 
 
 def load_whitelisted_igdb_ids(release_year=None):
@@ -25,10 +23,10 @@ def load_whitelisted_igdb_ids(release_year=None):
     return whitelisted_igdb_ids
 
 
-def main():
+def main() -> bool:
     release_year = "2018"
 
-    whitelisted_igdb_ids = load_whitelisted_igdb_ids(release_year=release_year)
+    load_whitelisted_igdb_ids(release_year=release_year)
 
     return True
 

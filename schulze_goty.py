@@ -1,7 +1,6 @@
 from collections import Counter
 
 import steampi.calendar
-
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import (
@@ -138,10 +137,10 @@ def filter_out_votes_for_wrong_release_years(
                 app_data = local_database[app_id_as_str]
                 app_name = app_data["name"]
 
-                if app_id not in release_years.keys():
+                if app_id not in release_years:
                     if use_igdb:
                         (
-                            possible_release_years,
+                            _possible_release_years,
                             year_to_remember,
                         ) = get_igdb_release_years(
                             app_data,
@@ -162,18 +161,21 @@ def filter_out_votes_for_wrong_release_years(
                     current_ballots_list.append(app_id)
                 elif release_years[app_id] == -1:
                     print(
-                        "AppID {} ({}) not found on Steam (either a console game, or from another PC store)".format(
-                            app_id,
-                            app_name,
-                        ),
+                        f"AppID {app_id} ({app_name}) not found on Steam (either a console game, or from another PC store)",
                     )
                     current_ballots_list.append(app_id)
-                elif year_constraint == "minimum" and release_years[app_id] >= int(
-                    target_release_year,
-                ):
-                    current_ballots_list.append(app_id)
-                elif year_constraint == "maximum" and release_years[app_id] <= int(
-                    target_release_year,
+                elif (
+                    year_constraint == "minimum"
+                    and release_years[app_id]
+                    >= int(
+                        target_release_year,
+                    )
+                ) or (
+                    year_constraint == "maximum"
+                    and release_years[app_id]
+                    <= int(
+                        target_release_year,
+                    )
                 ):
                     current_ballots_list.append(app_id)
                 elif app_id in whitelisted_ids:
@@ -184,16 +186,11 @@ def filter_out_votes_for_wrong_release_years(
                         + whitelisted_ids[app_id]["reason"],
                     )
                     current_ballots_list.append(app_id)
-                else:
-                    if app_id not in removed_app_ids:
-                        print(
-                            "AppID {} ({}) removed because it was released in {}".format(
-                                app_id,
-                                app_name,
-                                release_years[app_id],
-                            ),
-                        )
-                        removed_app_ids.append(app_id)
+                elif app_id not in removed_app_ids:
+                    print(
+                        f"AppID {app_id} ({app_name}) removed because it was released in {release_years[app_id]}",
+                    )
+                    removed_app_ids.append(app_id)
 
         for i, current_ballot in enumerate(current_ballots_list):
             position = i + 1
@@ -248,12 +245,12 @@ def compute_schulze_ranking(standardized_ballots):
         standardized_ballots,
     )
 
-    schulze_ranking = schulze.compute_ranks(candidate_names, weighted_ranks)
-
-    return schulze_ranking
+    return schulze.compute_ranks(candidate_names, weighted_ranks)
 
 
-def print_schulze_ranking(schulze_ranking, target_release_year=None, use_igdb=False):
+def print_schulze_ranking(
+    schulze_ranking, target_release_year=None, use_igdb=False
+) -> None:
     local_database = get_local_database(
         target_release_year=target_release_year,
         use_igdb=use_igdb,
@@ -299,8 +296,6 @@ def print_schulze_ranking(schulze_ranking, target_release_year=None, use_igdb=Fa
 
         offset += len(appID_group) - 1
 
-    return
-
 
 def get_positions_for_single_voter(ballots):
     return sorted(ballots.keys())
@@ -334,7 +329,7 @@ def build_standardized_ballots_for_tie(
         current_app_ids = [current_ballots[position] for position in positions]
 
         current_num_votes_for_tied_app_ids = sum(
-            [bool(app_id in current_app_ids) for app_id in app_id_group],
+            bool(app_id in current_app_ids) for app_id in app_id_group
         )
         has_voted_for_at_least_n_tied_app_ids = bool(
             current_num_votes_for_tied_app_ids >= threshold_n,
@@ -369,7 +364,7 @@ def try_to_break_ties_in_app_id_group(
     standardized_ballots,
     threshold_n=None,
 ):
-    num_tied_app_ids = len(app_id_group)
+    len(app_id_group)
 
     if threshold_n is None:
         threshold_n = 1
@@ -428,9 +423,7 @@ def dissect_ranking(input_ranking, standardized_ballots):
             output_ranking.append(small_app_id_group)
         else:
             print(
-                "Looking more closely at a **strictly** smaller tie: {}".format(
-                    small_app_id_group,
-                ),
+                f"Looking more closely at a **strictly** smaller tie: {small_app_id_group}",
             )
             untied_ranking = try_to_break_ties_in_app_id_group(
                 small_app_id_group,
@@ -446,16 +439,13 @@ def display_info_about_tie(
     app_id_group,
     standardized_ballots_for_tied_app_id_group,
     threshold_n,
-):
+) -> None:
     positions = get_positions_for_every_voter(
         standardized_ballots_for_tied_app_id_group,
     )
 
     print(
-        "\nInfo regarding tie with appIDs in {} with threshold = {}".format(
-            app_id_group,
-            threshold_n,
-        ),
+        f"\nInfo regarding tie with appIDs in {app_id_group} with threshold = {threshold_n}",
     )
 
     for position in positions:
@@ -466,8 +456,6 @@ def display_info_about_tie(
         count_at_position = Counter(ballots_at_position)
         if any(k is not None for k in count_at_position):
             print(f"Position n°{position} ; {count_at_position}")
-
-    return
 
 
 def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
@@ -483,9 +471,7 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
 
             if len(schulze_ranking_for_tied_app_id_group) > 1:
                 print(
-                    "\nAt least one tie has been broken for group n°{}".format(
-                        group_no + 1,
-                    ),
+                    f"\nAt least one tie has been broken for group n°{group_no + 1}",
                 )
 
             for untied_app_id_group in schulze_ranking_for_tied_app_id_group:
@@ -496,7 +482,9 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
     return untied_schulze_ranking
 
 
-def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots):
+def print_ballot_distribution_for_given_appid(
+    app_id_group, standardized_ballots
+) -> None:
     for appID in app_id_group:
         ballot_distribution = None
 
@@ -515,18 +503,14 @@ def print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots
         print("\nappID:" + appID, end="\t")
         print("counts of ballots with rank 1, 2, ..., 5:\t", ballot_distribution)
 
-    return
-
 
 def print_ballot_distribution_for_top_ranked_games(
     schulze_ranking,
     standardized_ballots,
     num_app_id_groups_to_display=3,
-):
+) -> None:
     for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
         print_ballot_distribution_for_given_appid(appID_group, standardized_ballots)
-
-    return
 
 
 def print_reviews_for_top_ranked_games(
@@ -535,12 +519,10 @@ def print_reviews_for_top_ranked_games(
     matches,
     goty_field="goty_preferences",
     num_app_id_groups_to_display=3,
-):
+) -> None:
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
         for app_id in app_id_group:
             print_reviews(ballots, matches, app_id, goty_field=goty_field)
-
-    return
 
 
 def print_voter_stats(
@@ -548,7 +530,7 @@ def print_voter_stats(
     standardized_ballots,
     num_app_id_groups_to_display=7,
     verbose=True,
-):
+) -> None:
     # Check how many people voted for N games which ended up in the top 10 of the GOTY ranking
     # Reference:
     # https://metacouncil.com/threads/metacouncils-pc-games-of-the-year-awards-2018-results.525/page-2
@@ -579,16 +561,10 @@ def print_voter_stats(
             if c == num_votes:
                 l.append(v)
         print(
-            "\n{} ballots included {} games present in the top {}.".format(
-                len(l),
-                num_votes,
-                len(goty),
-            ),
+            f"\n{len(l)} ballots included {num_votes} games present in the top {len(goty)}.",
         )
         if verbose:
             print(l)
-
-    return
 
 
 def apply_pipeline(
@@ -603,7 +579,7 @@ def apply_pipeline(
     year_constraint="equality",
     print_matches=True,
     num_app_id_groups_to_display=7,
-):
+) -> bool:
     ballots = load_ballots(input_filename)
 
     # Standardize ballots

@@ -24,7 +24,7 @@ import whitelist_vote_igdb
 
 
 class TestParsingUtilsMethods(unittest.TestCase):
-    def test_parse_text_data(self):
+    def test_parse_text_data(self) -> None:
         voter_name = '"MyTestUserName";'
         goty_votes = '"Half-Life: Alyx";"The Walking Dead: Saints & Sinners";"Fall Guys";"Sakuna";"Yakuza";'
         goty_descr = """"I like the idea of a turn based Yakuza [..] game. Tl;DR, buy it, you won't regret it!";"""
@@ -38,25 +38,22 @@ class TestParsingUtilsMethods(unittest.TestCase):
             is_anonymized=True,
         )
 
-        self.assertTrue(
-            ballots["MyTestUserName"]["goty_description"].startswith("I like the idea"),
+        assert ballots["MyTestUserName"]["goty_description"].startswith(
+            "I like the idea"
         )
-        self.assertTrue(
-            ballots["MyTestUserName"]["goty_description"].endswith(
-                "you won't regret it!",
-            ),
+        assert ballots["MyTestUserName"]["goty_description"].endswith(
+            "you won't regret it!"
         )
-        self.assertEqual(ballots["MyTestUserName"]["best_dlc"], "Deep Rock Galactic")
-        self.assertEqual(ballots["MyTestUserName"]["best_early_access"], "Phasmophobia")
-        self.assertEqual(
-            ballots["MyTestUserName"]["best_vr"],
-            "The Walking Dead: Saints & Sinners",
+        assert ballots["MyTestUserName"]["best_dlc"] == "Deep Rock Galactic"
+        assert ballots["MyTestUserName"]["best_early_access"] == "Phasmophobia"
+        assert (
+            ballots["MyTestUserName"]["best_vr"] == "The Walking Dead: Saints & Sinners"
         )
-        self.assertEqual(ballots["MyTestUserName"]["best_turd"], "Cyberpunk 2077")
+        assert ballots["MyTestUserName"]["best_turd"] == "Cyberpunk 2077"
 
 
 class TestSteamStoreUtilsMethods(unittest.TestCase):
-    def test_get_link_to_store_case_valid_app_id(self):
+    def test_get_link_to_store_case_valid_app_id(self) -> None:
         app_id = "583950"
         link_to_store = steam_store_utils.get_link_to_store(app_id)
         expected_link = (
@@ -67,29 +64,29 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
             + "[/URL]"
         )
 
-        self.assertEqual(link_to_store, expected_link)
+        assert link_to_store == expected_link
 
-    def test_get_link_to_store_case_dummy_app_id_to_show(self):
+    def test_get_link_to_store_case_dummy_app_id_to_show(self) -> None:
         app_id = "-1"
         link_to_store = steam_store_utils.get_link_to_store(
             app_id,
             hide_dummy_app_id=False,
         )
 
-        self.assertEqual(link_to_store, app_id)
+        assert link_to_store == app_id
 
-    def test_get_link_to_store_case_dummy_app_id_to_hide(self):
+    def test_get_link_to_store_case_dummy_app_id_to_hide(self) -> None:
         app_id = "-1"
         link_to_store = steam_store_utils.get_link_to_store(
             app_id,
             hide_dummy_app_id=True,
         )
 
-        self.assertEqual(link_to_store, "n/a")
+        assert link_to_store == "n/a"
 
 
 class TestAnonymizeDataMethods(unittest.TestCase):
-    def test_get_author_name_token_index(self):
+    def test_get_author_name_token_index(self) -> None:
         expected_author_token_index = 18
         is_anonymized = False
 
@@ -98,9 +95,9 @@ class TestAnonymizeDataMethods(unittest.TestCase):
                 ballot_year=ballot_year,
                 is_anonymized=is_anonymized,
             )
-            self.assertTrue(expected_author_token_index == author_token_index)
+            assert expected_author_token_index == author_token_index
 
-    def test_get_review_token_indices(self):
+    def test_get_review_token_indices(self) -> None:
         goty_description_token_index = 30
         gotd_description_token_index = 52
         is_anonymized = False
@@ -110,27 +107,27 @@ class TestAnonymizeDataMethods(unittest.TestCase):
             ballot_year=ballot_year,
             is_anonymized=is_anonymized,
         )
-        self.assertTrue(len(review_token_indices) == 1)
-        self.assertTrue(goty_description_token_index in review_token_indices)
+        assert len(review_token_indices) == 1
+        assert goty_description_token_index in review_token_indices
 
         ballot_year = "2019"
         review_token_indices = anonymize_data.get_review_token_indices(
             ballot_year=ballot_year,
             is_anonymized=is_anonymized,
         )
-        self.assertTrue(len(review_token_indices) == 2)
-        self.assertTrue(goty_description_token_index in review_token_indices)
-        self.assertTrue(gotd_description_token_index in review_token_indices)
+        assert len(review_token_indices) == 2
+        assert goty_description_token_index in review_token_indices
+        assert gotd_description_token_index in review_token_indices
 
         ballot_year = "2020"
         review_token_indices = anonymize_data.get_review_token_indices(
             ballot_year=ballot_year,
             is_anonymized=is_anonymized,
         )
-        self.assertTrue(len(review_token_indices) == 1)
-        self.assertTrue(goty_description_token_index in review_token_indices)
+        assert len(review_token_indices) == 1
+        assert goty_description_token_index in review_token_indices
 
-    def test_load_and_anonymize(self):
+    def test_load_and_anonymize(self) -> None:
         ballot_year = "2018"
         input_filename = (
             "dummy_pc_gaming_metacouncil_goty_awards_" + ballot_year + ".csv"
@@ -140,11 +137,11 @@ class TestAnonymizeDataMethods(unittest.TestCase):
             ballot_year=ballot_year,
         )
 
-        self.assertEqual(len(anonymized_data), 3)
+        assert len(anonymized_data) == 3
 
 
 class TestParsingParamsMethods(unittest.TestCase):
-    def test_get_parsing_indices(self):
+    def test_get_parsing_indices(self) -> None:
         num_parameters = 4
 
         num_goty_games_per_voter = 5
@@ -160,54 +157,45 @@ class TestParsingParamsMethods(unittest.TestCase):
                     is_anonymized=is_anonymized,
                 )
 
-                self.assertEqual(len(indices.keys()), num_parameters)
+                assert len(indices.keys()) == num_parameters
 
                 offset = 0 if is_anonymized else 9
 
-                self.assertEqual(indices["voter_name"], offset)
+                assert indices["voter_name"] == offset
 
-                self.assertEqual(len(indices["main"]["goty"]), num_goty_games_per_voter)
-                self.assertEqual(
-                    indices["review"]["goty"],
-                    goty_description_index + offset,
-                )
+                assert len(indices["main"]["goty"]) == num_goty_games_per_voter
+                assert indices["review"]["goty"] == goty_description_index + offset
 
                 if int(ballot_year) == 2019:
-                    self.assertEqual(
-                        len(indices["main"]["gotd"]),
-                        num_gotd_games_per_voter,
-                    )
-                    self.assertEqual(
-                        indices["review"]["gotd"],
-                        gotd_description_index + offset,
-                    )
+                    assert len(indices["main"]["gotd"]) == num_gotd_games_per_voter
+                    assert indices["review"]["gotd"] == gotd_description_index + offset
                     # caveat: GOTD below, because there exists a GOTD
                     new_offset = gotd_description_index + offset
                 else:
-                    self.assertEqual(len(indices["main"]["gotd"]), 0)
-                    self.assertEqual(indices["review"]["gotd"], None)
+                    assert len(indices["main"]["gotd"]) == 0
+                    assert indices["review"]["gotd"] is None
                     # caveat: GOTY below, because there is **no** GOTD
                     new_offset = goty_description_index + offset
 
-                self.assertEqual(len(indices["optional"]["dlc"]), 1)
-                self.assertEqual(len(indices["optional"]["early_access"]), 1)
+                assert len(indices["optional"]["dlc"]) == 1
+                assert len(indices["optional"]["early_access"]) == 1
                 if int(ballot_year) == 2018:
-                    self.assertEqual(len(indices["optional"]["vr"]), 0)
+                    assert len(indices["optional"]["vr"]) == 0
                 else:
-                    self.assertEqual(len(indices["optional"]["vr"]), 1)
-                self.assertEqual(len(indices["optional"]["turd"]), 1)
+                    assert len(indices["optional"]["vr"]) == 1
+                assert len(indices["optional"]["turd"]) == 1
 
-                self.assertTrue((1 + new_offset) in indices["optional"]["dlc"])
-                self.assertTrue((2 + new_offset) in indices["optional"]["early_access"])
+                assert 1 + new_offset in indices["optional"]["dlc"]
+                assert 2 + new_offset in indices["optional"]["early_access"]
                 if int(ballot_year) == 2018:
-                    self.assertTrue((3 + new_offset) in indices["optional"]["turd"])
+                    assert 3 + new_offset in indices["optional"]["turd"]
                 else:
-                    self.assertTrue((3 + new_offset) in indices["optional"]["vr"])
-                    self.assertTrue((4 + new_offset) in indices["optional"]["turd"])
+                    assert 3 + new_offset in indices["optional"]["vr"]
+                    assert 4 + new_offset in indices["optional"]["turd"]
 
 
 class TestLoadBallotsMethods(unittest.TestCase):
-    def test_get_parsing_params(self):
+    def test_get_parsing_params(self) -> None:
         num_parameters = 6
 
         num_goty_games_per_voter = 5
@@ -216,86 +204,80 @@ class TestLoadBallotsMethods(unittest.TestCase):
         for ballot_year in ["2018", "2019", "2020"]:
             parsing_params = load_ballots.get_parsing_params(ballot_year=ballot_year)
 
-            self.assertEqual(len(parsing_params.keys()), num_parameters)
+            assert len(parsing_params.keys()) == num_parameters
 
-            self.assertEqual(
-                parsing_params["goty"]["num_choices"],
-                num_goty_games_per_voter,
-            )
+            assert parsing_params["goty"]["num_choices"] == num_goty_games_per_voter
 
             if int(ballot_year) == 2019:
-                self.assertEqual(
-                    parsing_params["gotd"]["num_choices"],
-                    num_gotd_games_per_voter,
-                )
+                assert parsing_params["gotd"]["num_choices"] == num_gotd_games_per_voter
             else:
-                self.assertEqual(parsing_params["gotd"]["num_choices"], 0)
+                assert parsing_params["gotd"]["num_choices"] == 0
 
-            self.assertEqual(parsing_params["dlc"]["num_choices"], 1)
-            self.assertEqual(parsing_params["early_access"]["num_choices"], 1)
+            assert parsing_params["dlc"]["num_choices"] == 1
+            assert parsing_params["early_access"]["num_choices"] == 1
 
             if int(ballot_year) == 2018:
-                self.assertEqual(parsing_params["vr"]["num_choices"], 0)
+                assert parsing_params["vr"]["num_choices"] == 0
             else:
-                self.assertEqual(parsing_params["vr"]["num_choices"], 1)
+                assert parsing_params["vr"]["num_choices"] == 1
 
-            self.assertEqual(parsing_params["turd"]["num_choices"], 1)
+            assert parsing_params["turd"]["num_choices"] == 1
 
-    def test_load_unanonymized_ballots(self):
+    def test_load_unanonymized_ballots(self) -> None:
         ballot_year = "2018"
         input_filename = (
             "dummy_pc_gaming_metacouncil_goty_awards_" + ballot_year + ".csv"
         )
         ballots = load_ballots.load_ballots(input_filename)
 
-        self.assertEqual(len(ballots), 3)
+        assert len(ballots) == 3
 
-    def test_load_ballots(self):
+    def test_load_ballots(self) -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
         ballots = load_ballots.load_ballots(input_filename)
 
-        self.assertEqual(len(ballots), 6)
+        assert len(ballots) == 6
 
 
 class TestHardCodedMatchesMethods(unittest.TestCase):
-    def test_get_hard_coded_app_id_dict(self):
+    def test_get_hard_coded_app_id_dict(self) -> None:
         hard_coded_dict = hard_coded_matches.get_hard_coded_app_id_dict()
 
-        self.assertGreater(len(hard_coded_dict), 0)
+        assert len(hard_coded_dict) > 0
 
 
 class TestDisqualifyVoteMethods(unittest.TestCase):
-    def test_get_hard_coded_noisy_votes(self):
+    def test_get_hard_coded_noisy_votes(self) -> None:
         noisy_votes = disqualify_vote.get_hard_coded_noisy_votes()
 
         empty_game_name = ""
         # The empty string is not part of the hard-coded noisy votes, although it would be consider as noisy later on.
-        self.assertTrue(empty_game_name not in noisy_votes)
+        assert empty_game_name not in noisy_votes
 
         for noisy_game_name in ["n/a", "N/A", "-"]:
-            self.assertTrue(noisy_game_name in noisy_votes)
+            assert noisy_game_name in noisy_votes
 
-    def test_is_a_noisy_vote(self):
+    def test_is_a_noisy_vote(self) -> None:
         empty_game_name = ""
         game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(empty_game_name)
         # The empty string is considered as noisy, although it is not part of the hard-coded noisy votes.
-        self.assertTrue(game_name_is_a_noisy_vote)
+        assert game_name_is_a_noisy_vote
 
         for noisy_game_name in ["n/a", "N/A", "-"]:
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(noisy_game_name)
-            self.assertTrue(game_name_is_a_noisy_vote)
+            assert game_name_is_a_noisy_vote
 
         for real_game_name in ["Hitman", "Celeste", "SpyParty"]:
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(real_game_name)
-            self.assertTrue(not game_name_is_a_noisy_vote)
+            assert not game_name_is_a_noisy_vote
 
-    def test_get_hard_coded_disqualified_app_ids(self):
+    def test_get_hard_coded_disqualified_app_ids(self) -> None:
         disqualified_app_id_dict = disqualify_vote.get_hard_coded_disqualified_app_ids()
 
-        self.assertGreater(len(disqualified_app_id_dict), 0)
+        assert len(disqualified_app_id_dict) > 0
 
-    def test_filter_out_votes_for_hard_coded_reasons(self):
+    def test_filter_out_votes_for_hard_coded_reasons(self) -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -317,24 +299,22 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
             standardized_ballots,
         )
 
-        self.assertTrue(
-            bool(standardized_ballots["dummy_voter_name"]["ballots"][1] is None),
-        )
+        assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] is None)
 
 
 class TestExtendSteamSpyMethods(unittest.TestCase):
-    def test_load_extended_steamspy_database(self):
+    def test_load_extended_steamspy_database(self) -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
-        self.assertGreater(len(extended_steamspy_database), 0)
+        assert len(extended_steamspy_database) > 0
 
-    def test_load_twice_extended_steamspy_database(self):
+    def test_load_twice_extended_steamspy_database(self) -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database(
             extended_steamspy_database,
         )
 
-        self.assertGreater(len(extended_steamspy_database), 0)
+        assert len(extended_steamspy_database) > 0
 
 
 class TestMatchNamesMethods(unittest.TestCase):
@@ -342,11 +322,9 @@ class TestMatchNamesMethods(unittest.TestCase):
     def get_ballots(ballot_year="2018"):
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
-        ballots = load_ballots.load_ballots(input_filename)
+        return load_ballots.load_ballots(input_filename)
 
-        return ballots
-
-    def test_precompute_matches(self):
+    def test_precompute_matches(self) -> None:
         ballot_year = "2018"
         ballots = self.get_ballots(ballot_year)
         matches = match_names.precompute_matches(ballots, release_year=ballot_year)
@@ -355,9 +333,9 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         match_names.display_matches(matches, print_after_sort=True)
 
-        self.assertGreater(len(matches), 0)
+        assert len(matches) > 0
 
-    def test_standardize_ballots(self):
+    def test_standardize_ballots(self) -> None:
         ballot_year = "2018"
         ballots = self.get_ballots(ballot_year)
         (standardized_ballots, _) = match_names.standardize_ballots(
@@ -365,9 +343,9 @@ class TestMatchNamesMethods(unittest.TestCase):
             release_year=ballot_year,
         )
 
-        self.assertEqual(len(ballots), len(standardized_ballots))
+        assert len(ballots) == len(standardized_ballots)
 
-    def test_find_closest_app_id(self):
+    def test_find_closest_app_id(self) -> None:
         raw_name = "Half-Life II"  # Typo ("II" instead of "2") on purpose to increase code coverage
         steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
@@ -381,26 +359,22 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         database_entry = steamspy_database[closest_appID[0]]
 
-        self.assertEqual(database_entry["appid"], 220)
-        self.assertEqual(database_entry["name"], "Half-Life 2")
-        self.assertEqual(database_entry["developer"], "Valve")
-        self.assertEqual(database_entry["publisher"], "Valve")
+        assert database_entry["appid"] == 220
+        assert database_entry["name"] == "Half-Life 2"
+        assert database_entry["developer"] == "Valve"
+        assert database_entry["publisher"] == "Valve"
 
 
 class TestSchulzeGotyMethods(unittest.TestCase):
-    def test_apply_pipeline(self):
+    def test_apply_pipeline(self) -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
-        self.assertTrue(
-            schulze_goty.apply_pipeline(
-                input_filename,
-                release_year=ballot_year,
-                try_to_break_ties=True,
-            ),
+        assert schulze_goty.apply_pipeline(
+            input_filename, release_year=ballot_year, try_to_break_ties=True
         )
 
-    def test_filtering_out(self):
+    def test_filtering_out(self) -> None:
         ballot_year = "2018"  # anything but '1998'
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -423,11 +397,9 @@ class TestSchulzeGotyMethods(unittest.TestCase):
             target_release_year=ballot_year,
         )
 
-        self.assertTrue(
-            bool(standardized_ballots["dummy_voter_name"]["ballots"][1] is None),
-        )
+        assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] is None)
 
-    def test_filter_out_votes_for_early_access_titles(self):
+    def test_filter_out_votes_for_early_access_titles(self) -> None:
         ballot_year = "2018"
 
         ballots = {}
@@ -453,14 +425,10 @@ class TestSchulzeGotyMethods(unittest.TestCase):
             standardized_ballots,
         )
 
-        self.assertTrue(
-            bool(standardized_ballots["dummy_voter_name"]["ballots"][1] == "504230"),
-        )
-        self.assertTrue(
-            bool(standardized_ballots["dummy_voter_name"]["ballots"][2] is None),
-        )
+        assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] == "504230")
+        assert bool(standardized_ballots["dummy_voter_name"]["ballots"][2] is None)
 
-    def test_try_to_break_ties_in_app_id_group(self):
+    def test_try_to_break_ties_in_app_id_group(self) -> None:
         app_id_group = ["300"]
         standardized_ballots = {
             "A": {"ballots": {1: "100", 2: "200", 3: None, 4: None, 5: None}},
@@ -472,9 +440,9 @@ class TestSchulzeGotyMethods(unittest.TestCase):
                 standardized_ballots,
             )
         )
-        self.assertEqual(schulze_ranking_for_tied_app_id_group, [["300"]])
+        assert schulze_ranking_for_tied_app_id_group == [["300"]]
 
-    def test_try_to_break_ties_in_schulze_ranking(self):
+    def test_try_to_break_ties_in_schulze_ranking(self) -> None:
         app_id_group = ["100", "200", "300"]
         schulze_ranking = [app_id_group]
         standardized_ballots = {
@@ -489,19 +457,19 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         for i, element in enumerate(untied_schulze_ranking):
             untied_schulze_ranking[i] = sorted(element)
 
-        self.assertEqual(untied_schulze_ranking, [["100"], ["200", "300"]])
+        assert untied_schulze_ranking == [["100"], ["200", "300"]]
 
 
 class TestOptionalCategoriesMethods(unittest.TestCase):
-    def test_display_optional_ballots(self):
+    def test_display_optional_ballots(self) -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
-        self.assertTrue(optional_categories.display_optional_ballots(input_filename))
+        assert optional_categories.display_optional_ballots(input_filename)
 
 
 class TestExtendIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_fixes_to_igdb_database(self):
+    def test_get_file_name_for_fixes_to_igdb_database(self) -> None:
         for release_year in [None, "2018"]:
             for database_type in ["match", "local"]:
                 file_name = extend_igdb.get_file_name_for_fixes_to_igdb_database(
@@ -521,118 +489,118 @@ class TestExtendIGDBMethods(unittest.TestCase):
                         + ".json"
                     )
 
-                self.assertEqual(file_name, expected_file_name)
+                assert file_name == expected_file_name
 
-    def test_load_fixes_to_igdb_database(self):
+    def test_load_fixes_to_igdb_database(self) -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_database()
-        self.assertGreaterEqual(len(fixes_to_igdb_database), 0)
+        assert len(fixes_to_igdb_database) >= 0
 
-    def test_load_fixes_to_igdb_local_database(self):
+    def test_load_fixes_to_igdb_local_database(self) -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_local_database()
-        self.assertGreaterEqual(len(fixes_to_igdb_database), 0)
+        assert len(fixes_to_igdb_database) >= 0
 
-    def test_load_fixes_to_igdb_match_database(self):
+    def test_load_fixes_to_igdb_match_database(self) -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_match_database()
-        self.assertGreaterEqual(len(fixes_to_igdb_database), 0)
+        assert len(fixes_to_igdb_database) >= 0
 
-    def test_extend_igdb_local_database(self):
+    def test_extend_igdb_local_database(self) -> None:
         release_year = "2018"
         extended_igdb_local_database = extend_igdb.extend_igdb_local_database(
             release_year=release_year,
         )
-        self.assertGreater(len(extended_igdb_local_database), 0)
+        assert len(extended_igdb_local_database) > 0
 
-    def test_extend_igdb_match_database(self):
+    def test_extend_igdb_match_database(self) -> None:
         release_year = "2018"
         extended_igdb_match_database = extend_igdb.extend_igdb_match_database(
             release_year=release_year,
         )
-        self.assertGreater(len(extended_igdb_match_database), 0)
+        assert len(extended_igdb_match_database) > 0
 
-    def test_fill_in_blanks_in_the_local_database(self):
+    def test_fill_in_blanks_in_the_local_database(self) -> None:
         augmented_igdb_local_database = (
             extend_igdb.fill_in_blanks_in_the_local_database(
                 release_year="2018",
                 save_to_disk=False,
             )
         )
-        self.assertGreater(len(augmented_igdb_local_database), 0)
+        assert len(augmented_igdb_local_database) > 0
 
-    def test_extend_both_igdb_databases(self):
+    def test_extend_both_igdb_databases(self) -> None:
         (
             extended_igdb_match_database,
             extended_igdb_local_database,
         ) = extend_igdb.extend_both_igdb_databases(release_year="2018")
-        self.assertGreater(len(extended_igdb_match_database), 0)
-        self.assertGreater(len(extended_igdb_local_database), 0)
+        assert len(extended_igdb_match_database) > 0
+        assert len(extended_igdb_local_database) > 0
 
-    def test_main(self):
-        self.assertTrue(extend_igdb.main())
+    def test_main(self) -> None:
+        assert extend_igdb.main()
 
 
 class TestIGDBUtilsMethods(unittest.TestCase):
-    def test_get_igdb_api_url(self):
+    def test_get_igdb_api_url(self) -> None:
         url = igdb_utils.get_igdb_api_url()
-        self.assertEqual(url, "https://api.igdb.com/v4")
+        assert url == "https://api.igdb.com/v4"
 
-    def test_get_igdb_api_url_for_games(self):
+    def test_get_igdb_api_url_for_games(self) -> None:
         url = igdb_utils.get_igdb_api_url_for_games()
-        self.assertEqual(url, "https://api.igdb.com/v4/games/")
+        assert url == "https://api.igdb.com/v4/games/"
 
-    def test_get_igdb_api_url_for_release_dates(self):
+    def test_get_igdb_api_url_for_release_dates(self) -> None:
         url = igdb_utils.get_igdb_api_url_for_release_dates()
-        self.assertEqual(url, "https://api.igdb.com/v4/release_dates/")
+        assert url == "https://api.igdb.com/v4/release_dates/"
 
-    def test_get_time_stamp_for_year_start(self):
+    def test_get_time_stamp_for_year_start(self) -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_start(year=1971)
-        self.assertGreaterEqual(int(time_stamp), 31532400)
+        assert int(time_stamp) >= 31532400
 
-    def test_get_time_stamp_for_year_end(self):
+    def test_get_time_stamp_for_year_end(self) -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_end(year=1970)
-        self.assertGreaterEqual(int(time_stamp), 31532400)
+        assert int(time_stamp) >= 31532400
 
-    def test_get_igdb_user_key_file_name(self):
+    def test_get_igdb_user_key_file_name(self) -> None:
         file_name = igdb_local_secrets.get_igdb_user_key_file_name()
-        self.assertEqual(file_name, "igdb_user_key.json")
+        assert file_name == "igdb_user_key.json"
 
-    def test_load_igdb_user_key(self):
+    def test_load_igdb_user_key(self) -> None:
         igdb_user_key = igdb_local_secrets.load_igdb_user_key()
-        self.assertTrue("user-key" in igdb_user_key)
+        assert "user-key" in igdb_user_key
 
-    def test_get_igdb_request_headers(self):
+    def test_get_igdb_request_headers(self) -> None:
         headers = igdb_look_up.get_igdb_request_headers()
-        self.assertTrue("Accept" in headers)
-        self.assertEqual(headers["Accept"], "application/json")
+        assert "Accept" in headers
+        assert headers["Accept"] == "application/json"
 
-    def test_get_igdb_request_params(self):
+    def test_get_igdb_request_params(self) -> None:
         params = igdb_utils.get_igdb_request_params()
-        self.assertEqual(params["fields"], "*")
+        assert params["fields"] == "*"
 
-    def test_get_pc_platform_no(self):
+    def test_get_pc_platform_no(self) -> None:
         value = igdb_utils.get_pc_platform_no()
-        self.assertEqual(value, 6)
+        assert value == 6
 
-    def test_get_pc_platform_range(self):
+    def test_get_pc_platform_range(self) -> None:
         value_list = igdb_utils.get_pc_platform_range()
-        self.assertTrue(6 in value_list)
+        assert 6 in value_list
 
-    def test_get_game_category_no(self):
+    def test_get_game_category_no(self) -> None:
         value_list = igdb_utils.get_game_category_no()
-        self.assertEqual(value_list, [0, 3, 4])
+        assert value_list == [0, 3, 4]
 
-    def test_get_dlc_category_no(self):
+    def test_get_dlc_category_no(self) -> None:
         value_list = igdb_utils.get_dlc_category_no()
-        self.assertEqual(value_list, [1, 2])
+        assert value_list == [1, 2]
 
-    def test_get_released_status_no(self):
+    def test_get_released_status_no(self) -> None:
         value = igdb_utils.get_released_status_no()
-        self.assertEqual(value, 0)
+        assert value == 0
 
-    def test_get_steam_service_no(self):
+    def test_get_steam_service_no(self) -> None:
         value = igdb_utils.get_steam_service_no()
-        self.assertEqual(value, 1)
+        assert value == 1
 
-    def test_append_filter_for_igdb_fields(self):
+    def test_append_filter_for_igdb_fields(self) -> None:
         fields = "name, slug"
         fields = igdb_utils.append_filter_for_igdb_fields(
             fields,
@@ -640,17 +608,17 @@ class TestIGDBUtilsMethods(unittest.TestCase):
             6,
             use_parenthesis=True,
         )
-        self.assertTrue("; where " in fields)
+        assert "; where " in fields
 
-    def test_get_igdb_fields_for_games(self):
+    def test_get_igdb_fields_for_games(self) -> None:
         fields = igdb_utils.get_igdb_fields_for_games()
-        self.assertGreater(len(fields), 0)
+        assert len(fields) > 0
 
-    def test_get_igdb_fields_for_release_dates(self):
+    def test_get_igdb_fields_for_release_dates(self) -> None:
         fields = igdb_utils.get_igdb_fields_for_release_dates()
-        self.assertGreater(len(fields), 0)
+        assert len(fields) > 0
 
-    def test_format_list_of_platforms(self):
+    def test_format_list_of_platforms(self) -> None:
         platform_list = [
             {
                 "id": 33,
@@ -681,11 +649,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
         formatted_list = igdb_utils.format_list_of_platforms(platform_list)
 
-        self.assertEqual(len(formatted_list), 3)
+        assert len(formatted_list) == 3
 
     @staticmethod
     def get_read_dead_redemption_two():
-        igdb_data = {
+        return {
             "id": 25076,
             "name": "Red Dead Redemption 2",
             "platforms": [6, 48, 49, 170],
@@ -702,103 +670,95 @@ class TestIGDBUtilsMethods(unittest.TestCase):
             "slug": "red-dead-redemption-2",
         }
 
-        return igdb_data
-
-    def test_format_release_dates_for_manual_display(self):
+    def test_format_release_dates_for_manual_display(self) -> None:
         igdb_data = self.get_read_dead_redemption_two()
         release_years_as_str = igdb_utils.format_release_dates_for_manual_display(
             element=igdb_data,
         )
 
-        self.assertEqual(release_years_as_str, "2018, 2019")
+        assert release_years_as_str == "2018, 2019"
 
 
 class TestIGDBMatchNamesMethods(unittest.TestCase):
     @staticmethod
     def get_dummy_match_database():
-        dummy_match_database = {
+        return {
             "Hello": [0],
             "World": [1, 2],
         }
 
-        return dummy_match_database
-
     @staticmethod
     def get_dummy_local_database():
         igdb_data = TestIGDBUtilsMethods.get_read_dead_redemption_two()
-        dummy_local_database = {"25076": igdb_data}
+        return {"25076": igdb_data}
 
-        return dummy_local_database
-
-    def test_get_link_to_igdb_website_with_int_input(self):
+    def test_get_link_to_igdb_website_with_int_input(self) -> None:
         igdb_id = 25076
         igdb_local_database = self.get_dummy_local_database()
         url = igdb_match_names.get_link_to_igdb_website(igdb_id, igdb_local_database)
-        self.assertEqual(
-            url,
-            "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]",
+        assert (
+            url == "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]"
         )
 
-    def test_get_link_to_igdb_website_with_str_input(self):
+    def test_get_link_to_igdb_website_with_str_input(self) -> None:
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
         url = igdb_match_names.get_link_to_igdb_website(igdb_id, igdb_local_database)
-        self.assertEqual(
-            url,
-            "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]",
+        assert (
+            url == "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]"
         )
 
-    def test_get_igdb_human_release_dates_with_int_input(self):
+    def test_get_igdb_human_release_dates_with_int_input(self) -> None:
         igdb_id = 25076
         igdb_local_database = self.get_dummy_local_database()
         (
-            human_release_dates,
+            _human_release_dates,
             human_release_date_to_remember,
         ) = igdb_match_names.get_igdb_human_release_dates(igdb_id, igdb_local_database)
-        self.assertEqual(human_release_date_to_remember, "2019-Nov-05")
+        assert human_release_date_to_remember == "2019-Nov-05"
 
-    def test_get_igdb_human_release_dates_with_str_input(self):
+    def test_get_igdb_human_release_dates_with_str_input(self) -> None:
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
         (
-            human_release_dates,
+            _human_release_dates,
             human_release_date_to_remember,
         ) = igdb_match_names.get_igdb_human_release_dates(igdb_id, igdb_local_database)
-        self.assertEqual(human_release_date_to_remember, "2019-Nov-05")
+        assert human_release_date_to_remember == "2019-Nov-05"
 
-    def test_get_igdb_release_years_with_no_target(self):
+    def test_get_igdb_release_years_with_no_target(self) -> None:
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
         igdb_data = igdb_local_database[igdb_id]
-        release_years, year_to_remember = igdb_match_names.get_igdb_release_years(
+        _release_years, year_to_remember = igdb_match_names.get_igdb_release_years(
             igdb_data,
         )
-        self.assertEqual(year_to_remember, -1)
+        assert year_to_remember == -1
 
-    def test_get_igdb_release_years_with_a_target(self):
+    def test_get_igdb_release_years_with_a_target(self) -> None:
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
         igdb_data = igdb_local_database[igdb_id]
-        release_years, year_to_remember = igdb_match_names.get_igdb_release_years(
+        _release_years, year_to_remember = igdb_match_names.get_igdb_release_years(
             igdb_data,
             target_release_year="2018",
         )
-        self.assertEqual(year_to_remember, 2019)
+        assert year_to_remember == 2019
 
-    def test_format_game_name_for_igdb(self):
+    def test_format_game_name_for_igdb(self) -> None:
         game_name = "Hello World"
         formatted_game_name = igdb_match_names.format_game_name_for_igdb(game_name)
-        self.assertEqual(formatted_game_name, game_name)
+        assert formatted_game_name == game_name
 
         formatted_game_name = igdb_match_names.format_game_name_for_igdb("Coca-Cola®")
-        self.assertEqual(formatted_game_name, "Coca-Cola")
+        assert formatted_game_name == "Coca-Cola"
 
         formatted_game_name = igdb_match_names.format_game_name_for_igdb(
             "Atelier ~ Anime Game ~",
         )
-        self.assertEqual(formatted_game_name, "Atelier   Anime Game")
+        assert formatted_game_name == "Atelier   Anime Game"
 
-    def test_print_igdb_matches(self):
+    def test_print_igdb_matches(self) -> None:
         release_year = "2018"
         igdb_match_names.print_igdb_matches(
             igdb_match_database=igdb_databases.load_igdb_match_database(
@@ -809,9 +769,9 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             ),
             constrained_release_year=release_year,
         )
-        self.assertTrue(True)
+        assert True
 
-    def test_merge_databases_where_entry_is_updated(self):
+    def test_merge_databases_where_entry_is_updated(self) -> None:
         new_database = {"a": 2}
         previous_database = {"a": 0, "b": 1}
 
@@ -819,11 +779,11 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             new_database=new_database,
             previous_database=previous_database,
         )
-        self.assertEqual(len(merged_database), 2)
-        self.assertEqual(merged_database["a"], 2)
-        self.assertEqual(merged_database["b"], 1)
+        assert len(merged_database) == 2
+        assert merged_database["a"] == 2
+        assert merged_database["b"] == 1
 
-    def test_merge_databases_where_entry_did_not_exist(self):
+    def test_merge_databases_where_entry_did_not_exist(self) -> None:
         new_database = {"c": 2}
         previous_database = {"a": 0, "b": 1}
 
@@ -831,12 +791,12 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             new_database=new_database,
             previous_database=previous_database,
         )
-        self.assertEqual(len(merged_database), 3)
-        self.assertEqual(merged_database["a"], 0)
-        self.assertEqual(merged_database["b"], 1)
-        self.assertEqual(merged_database["c"], 2)
+        assert len(merged_database) == 3
+        assert merged_database["a"] == 0
+        assert merged_database["b"] == 1
+        assert merged_database["c"] == 2
 
-    def test_figure_out_ballots_with_missing_data(self):
+    def test_figure_out_ballots_with_missing_data(self) -> None:
         dummy_voter = "dummy_voter_name"
         goty_field = "dummy_preferences"
 
@@ -863,15 +823,15 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         first_vote_is_now_empty = bool(
             new_ballots[dummy_voter][goty_field][1] == empty_vote,
         )
-        self.assertTrue(first_vote_is_now_empty)
+        assert first_vote_is_now_empty
 
         second_vote_is_still_intact = bool(
             new_ballots[dummy_voter][goty_field][2]
             == new_ballots[dummy_voter][goty_field][2],
         )
-        self.assertTrue(second_vote_is_still_intact)
+        assert second_vote_is_still_intact
 
-    def test_load_igdb_local_databases(self):
+    def test_load_igdb_local_databases(self) -> None:
         ballot_year = "2018"
 
         ballots = {}
@@ -894,10 +854,10 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             release_year=ballot_year,
         )
 
-        self.assertGreater(len(igdb_match_database), 0)
-        self.assertGreater(len(igdb_local_database), 0)
+        assert len(igdb_match_database) > 0
+        assert len(igdb_local_database) > 0
 
-    def test_transform_structure_of_matches(self):
+    def test_transform_structure_of_matches(self) -> None:
         release_year = "2018"
         igdb_match_database = igdb_databases.load_igdb_match_database(
             release_year=release_year,
@@ -910,20 +870,20 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             igdb_match_database=igdb_match_database,
             igdb_local_database=igdb_local_database,
         )
-        self.assertGreater(len(matches), 0)
+        assert len(matches) > 0
 
-    def test_main(self):
-        self.assertTrue(igdb_match_names.main())
+    def test_main(self) -> None:
+        assert igdb_match_names.main()
 
 
 class TestIGDBDatabasesMethods(unittest.TestCase):
-    def test_get_igdb_file_name_suffix(self):
+    def test_get_igdb_file_name_suffix(self) -> None:
         for release_year in [None, "2018"]:
             suffix = igdb_databases.get_igdb_file_name_suffix(release_year=release_year)
             expected_suffix = "" if release_year is None else "_" + str(release_year)
-            self.assertEqual(suffix, expected_suffix)
+            assert suffix == expected_suffix
 
-    def test_get_igdb_match_database_file_name(self):
+    def test_get_igdb_match_database_file_name(self) -> None:
         for release_year in [None, "2018"]:
             file_name = igdb_databases.get_igdb_match_database_file_name(
                 release_year=release_year,
@@ -934,9 +894,9 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
                 expected_file_name = (
                     "data/igdb_match_database_" + str(release_year) + ".json"
                 )
-            self.assertEqual(file_name, expected_file_name)
+            assert file_name == expected_file_name
 
-    def test_get_igdb_local_database_file_name(self):
+    def test_get_igdb_local_database_file_name(self) -> None:
         for release_year in [None, "2018"]:
             file_name = igdb_databases.get_igdb_local_database_file_name(
                 release_year=release_year,
@@ -947,36 +907,36 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
                 expected_file_name = (
                     "data/igdb_local_database_" + str(release_year) + ".json"
                 )
-            self.assertEqual(file_name, expected_file_name)
+            assert file_name == expected_file_name
 
-    def test_load_igdb_match_database(self):
+    def test_load_igdb_match_database(self) -> None:
         release_year = "2018"
         data = igdb_databases.load_igdb_match_database(release_year=release_year)
-        self.assertTrue(data is not None)
+        assert data is not None
 
-    def test_save_igdb_match_database(self):
+    def test_save_igdb_match_database(self) -> None:
         data = {}
         file_name = "data/dummy_match_file_for_unit_test.json"
         igdb_databases.save_igdb_match_database(data, file_name=file_name)
-        self.assertTrue(Path(file_name).exists())
+        assert Path(file_name).exists()
 
-    def test_load_igdb_local_database(self):
+    def test_load_igdb_local_database(self) -> None:
         release_year = "2018"
         data = igdb_databases.load_igdb_local_database(release_year=release_year)
-        self.assertTrue(data is not None)
+        assert data is not None
 
-    def test_save_igdb_local_database(self):
+    def test_save_igdb_local_database(self) -> None:
         data = {}
         file_name = "data/dummy_local_file_for_unit_test.json"
         igdb_databases.save_igdb_local_database(data, file_name=file_name)
-        self.assertTrue(Path(file_name).exists())
+        assert Path(file_name).exists()
 
-    def test_main(self):
-        self.assertTrue(igdb_databases.main())
+    def test_main(self) -> None:
+        assert igdb_databases.main()
 
 
 class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_disqualified_igdb_ids(self):
+    def test_get_file_name_for_disqualified_igdb_ids(self) -> None:
         for release_year in [None, "2018"]:
             file_name = disqualify_vote_igdb.get_file_name_for_disqualified_igdb_ids(
                 release_year=release_year,
@@ -989,18 +949,18 @@ class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
                     "data/disqualified_igdb_ids_" + str(release_year) + ".json"
                 )
 
-            self.assertEqual(file_name, expected_file_name)
+            assert file_name == expected_file_name
 
-    def test_load_disqualified_igdb_ids(self):
+    def test_load_disqualified_igdb_ids(self) -> None:
         disqualified_igdb_ids = disqualify_vote_igdb.load_disqualified_igdb_ids()
-        self.assertTrue(disqualified_igdb_ids is not None)
+        assert disqualified_igdb_ids is not None
 
-    def test_main(self):
-        self.assertTrue(disqualify_vote_igdb.main())
+    def test_main(self) -> None:
+        assert disqualify_vote_igdb.main()
 
 
 class TestWhiteListVoteIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_whitelisted_igdb_ids(self):
+    def test_get_file_name_for_whitelisted_igdb_ids(self) -> None:
         for release_year in [None, "2018"]:
             file_name = whitelist_vote_igdb.get_file_name_for_whitelisted_igdb_ids(
                 release_year=release_year,
@@ -1013,27 +973,27 @@ class TestWhiteListVoteIGDBMethods(unittest.TestCase):
                     "data/whitelisted_igdb_ids_" + str(release_year) + ".json"
                 )
 
-            self.assertEqual(file_name, expected_file_name)
+            assert file_name == expected_file_name
 
-    def test_load_whitelisted_igdb_ids(self):
+    def test_load_whitelisted_igdb_ids(self) -> None:
         whitelisted_igdb_ids = whitelist_vote_igdb.load_whitelisted_igdb_ids()
-        self.assertTrue(whitelisted_igdb_ids is not None)
+        assert whitelisted_igdb_ids is not None
 
-    def test_main(self):
-        self.assertTrue(whitelist_vote_igdb.main())
+    def test_main(self) -> None:
+        assert whitelist_vote_igdb.main()
 
 
 class TestWhiteListVoteMethods(unittest.TestCase):
-    def test_get_hard_coded_whitelisted_app_ids(self):
+    def test_get_hard_coded_whitelisted_app_ids(self) -> None:
         whitelisted_app_id_dict = whitelist_vote.get_hard_coded_whitelisted_app_ids()
-        self.assertGreater(len(whitelisted_app_id_dict), 0)
+        assert len(whitelisted_app_id_dict) > 0
 
-    def test_load_whitelisted_ids(self):
+    def test_load_whitelisted_ids(self) -> None:
         whitelisted_app_id_dict = whitelist_vote.load_whitelisted_ids(use_igdb=False)
-        self.assertGreater(len(whitelisted_app_id_dict), 0)
+        assert len(whitelisted_app_id_dict) > 0
 
-    def test_main(self):
-        self.assertTrue(whitelist_vote.main())
+    def test_main(self) -> None:
+        assert whitelist_vote.main()
 
 
 if __name__ == "__main__":

@@ -1,17 +1,15 @@
 import json
 
 
-def get_igdb_user_key_file_name():
-    igdb_user_key_file_name = "igdb_user_key.json"
-
-    return igdb_user_key_file_name
+def get_igdb_user_key_file_name() -> str:
+    return "igdb_user_key.json"
 
 
 def load_igdb_user_key():
     file_name = get_igdb_user_key_file_name()
 
     try:
-        with open(file_name) as f:
+        with open(file_name, encoding="utf-8") as f:
             igdb_user_key = json.load(f)
     except FileNotFoundError:
         print(f"IGDB user secret key {file_name} not found.")

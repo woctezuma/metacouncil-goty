@@ -1,7 +1,6 @@
 import time
 
 import requests
-
 from igdb_credentials import download_latest_credentials, load_credential_headers
 from igdb_local_secrets import load_igdb_user_key
 from igdb_utils import (
@@ -20,7 +19,7 @@ from igdb_utils import (
 def get_igdb_rate_limits():
     # Reference: https://api-docs.igdb.com/
 
-    igdb_rate_limits = {
+    return {
         # There is a rate limit of 4 requests per second.
         # If you go over this limit you will receive a response with status code 429 Too Many Requests.
         "num_requests_per_second": 4,
@@ -31,8 +30,6 @@ def get_igdb_rate_limits():
         # This can occur if requests take longer than 1 second to respond when multiple requests are being made.
         "max_num_open_requests": 8,
     }
-
-    return igdb_rate_limits
 
 
 def wait_for_cooldown(num_requests, start_time, igdb_rate_limits=None):
@@ -80,15 +77,7 @@ def look_up_game_name(
 ):
     if verbose:
         print(
-            "[query] Game name: {} ; Year: {} ({}) ; PC: {} ; Game: {} ; Platform: {} ; Category: {}".format(
-                game_name,
-                enforced_year,
-                year_constraint,
-                must_be_available_on_pc,
-                must_be_a_game,
-                enforced_platform,
-                enforced_game_category,
-            ),
+            f"[query] Game name: {game_name} ; Year: {enforced_year} ({year_constraint}) ; PC: {must_be_available_on_pc} ; Game: {must_be_a_game} ; Platform: {enforced_platform} ; Category: {enforced_game_category}",
         )
 
     url = get_igdb_api_url_for_games()
@@ -134,14 +123,7 @@ def look_up_game_id(
 ):
     if verbose:
         print(
-            "[query] Game id: {} ; Year: {} ; PC: {} ; Game: {} ; Platform: {} ; Category: {}".format(
-                game_id,
-                enforced_year,
-                must_be_available_on_pc,
-                must_be_a_game,
-                enforced_platform,
-                enforced_game_category,
-            ),
+            f"[query] Game id: {game_id} ; Year: {enforced_year} ; PC: {must_be_available_on_pc} ; Game: {must_be_a_game} ; Platform: {enforced_platform} ; Category: {enforced_game_category}",
         )
 
     url = get_igdb_api_url_for_games()
@@ -187,11 +169,7 @@ def look_up_games_released_in_given_year(
 ):
     if verbose:
         print(
-            "[query] Year: {} ; PC: {} ; Platform: {}".format(
-                enforced_year,
-                must_be_available_on_pc,
-                enforced_platform,
-            ),
+            f"[query] Year: {enforced_year} ; PC: {must_be_available_on_pc} ; Platform: {enforced_platform}",
         )
 
     url = get_igdb_api_url_for_release_dates()
@@ -291,7 +269,7 @@ def manual_look_up(
     return data
 
 
-def main():
+def main() -> bool:
     enforced_year = 2019
     must_be_available_on_pc = True
     must_be_a_game = True
@@ -302,7 +280,7 @@ def main():
 
     game_name = "Red Dead"
 
-    data = look_up_game_name(
+    look_up_game_name(
         game_name=game_name,
         enforced_year=enforced_year,
         must_be_available_on_pc=must_be_available_on_pc,
@@ -312,7 +290,7 @@ def main():
 
     game_id = 113391
 
-    data = look_up_game_id(
+    look_up_game_id(
         game_id=game_id,
         enforced_year=enforced_year,
         must_be_available_on_pc=must_be_available_on_pc,
@@ -320,14 +298,14 @@ def main():
         verbose=verbose,
     )
 
-    data = look_up_games_released_in_given_year(
+    look_up_games_released_in_given_year(
         enforced_year=enforced_year,
         must_be_available_on_pc=must_be_available_on_pc,
         verbose=verbose,
     )
 
     raw_data_platforms = download_list_of_platforms(verbose=verbose)
-    formatted_data_platforms = format_list_of_platforms(
+    format_list_of_platforms(
         raw_data_platforms,
         verbose=verbose,
     )

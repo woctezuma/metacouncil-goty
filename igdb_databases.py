@@ -4,9 +4,7 @@ from anonymize_data import get_data_folder
 
 
 def get_igdb_file_name_suffix(release_year=None):
-    suffix = "" if release_year is None else "_" + str(release_year)
-
-    return suffix
+    return "" if release_year is None else "_" + str(release_year)
 
 
 def get_igdb_match_database_file_name(release_year=None):
@@ -14,9 +12,7 @@ def get_igdb_match_database_file_name(release_year=None):
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + "igdb_match_database" + suffix + ".json"
-
-    return file_name
+    return get_data_folder() + "igdb_match_database" + suffix + ".json"
 
 
 def get_igdb_local_database_file_name(release_year=None):
@@ -24,9 +20,7 @@ def get_igdb_local_database_file_name(release_year=None):
 
     suffix = get_igdb_file_name_suffix(release_year)
 
-    file_name = get_data_folder() + "igdb_local_database" + suffix + ".json"
-
-    return file_name
+    return get_data_folder() + "igdb_local_database" + suffix + ".json"
 
 
 def load_igdb_match_database(release_year=None, file_name=None):
@@ -34,19 +28,15 @@ def load_igdb_match_database(release_year=None, file_name=None):
         file_name = get_igdb_match_database_file_name(release_year=release_year)
 
     with open(file_name, encoding="utf-8") as f:
-        data = json.load(f)
-
-    return data
+        return json.load(f)
 
 
-def save_igdb_match_database(data, release_year=None, file_name=None):
+def save_igdb_match_database(data, release_year=None, file_name=None) -> None:
     if file_name is None:
         file_name = get_igdb_match_database_file_name(release_year=release_year)
 
     with open(file_name, "w", encoding="utf-8") as f:
         json.dump(data, f)
-
-    return
 
 
 def load_igdb_local_database(release_year=None, file_name=None):
@@ -54,27 +44,23 @@ def load_igdb_local_database(release_year=None, file_name=None):
         file_name = get_igdb_local_database_file_name(release_year=release_year)
 
     with open(file_name, encoding="utf-8") as f:
-        data = json.load(f)
-
-    return data
+        return json.load(f)
 
 
-def save_igdb_local_database(data, release_year=None, file_name=None):
+def save_igdb_local_database(data, release_year=None, file_name=None) -> None:
     if file_name is None:
         file_name = get_igdb_local_database_file_name(release_year=release_year)
 
     with open(file_name, "w", encoding="utf-8") as f:
         json.dump(data, f)
 
-    return
 
-
-def main():
+def main() -> bool:
     release_year = "2018"
 
-    igdb_match_database = load_igdb_match_database(release_year)
+    load_igdb_match_database(release_year)
 
-    igdb_local_database = load_igdb_local_database(release_year)
+    load_igdb_local_database(release_year)
 
     return True
 

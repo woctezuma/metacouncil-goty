@@ -3,6 +3,7 @@
 # Reference: https://api-docs.igdb.com/?kotlin#endpoints
 
 import datetime
+import operator
 
 
 def get_igdb_api_url(end_point=None):
@@ -26,40 +27,30 @@ def get_igdb_api_url(end_point=None):
 
 def get_igdb_api_url_for_games():
     end_point = "/games/"
-    igdb_api_url_for_games = get_igdb_api_url(end_point=end_point)
-
-    return igdb_api_url_for_games
+    return get_igdb_api_url(end_point=end_point)
 
 
 def get_igdb_api_url_for_release_dates():
     end_point = "/release_dates/"
-    igdb_api_url_for_release_dates = get_igdb_api_url(end_point=end_point)
-
-    return igdb_api_url_for_release_dates
+    return get_igdb_api_url(end_point=end_point)
 
 
 def get_time_stamp_for_year_start(year):
-    time_stamp_for_year_start = datetime.datetime(year, 1, 1).timestamp()
-
-    return time_stamp_for_year_start
+    return datetime.datetime(year, 1, 1).timestamp()
 
 
 def get_time_stamp_for_year_end(year):
-    time_stamp_for_year_end = get_time_stamp_for_year_start(year=year + 1)
-
-    return time_stamp_for_year_end
+    return get_time_stamp_for_year_start(year=year + 1)
 
 
 def get_igdb_request_params():
-    params = {
+    return {
         "fields": "*",  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
         "limit": 10,  # max value is 500
     }
 
-    return params
 
-
-def get_pc_platform_no():
+def get_pc_platform_no() -> int:
     # name 	                value
     # ====================  =====
     # console 	            1
@@ -69,9 +60,7 @@ def get_pc_platform_no():
     # portable_console 	    5
     # computer 	            6
 
-    pc_platform_no = 6
-
-    return pc_platform_no
+    return 6
 
 
 def get_pc_platform_range():
@@ -93,9 +82,7 @@ def get_game_category_no():
 
     # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
 
-    game_category_no = [0, 3, 4]
-
-    return game_category_no
+    return [0, 3, 4]
 
 
 def get_dlc_category_no():
@@ -109,12 +96,10 @@ def get_dlc_category_no():
 
     # Reference: https://www.igdb.com/contribution_guidelines?page=addinggamedata
 
-    dlc_category_no = [1, 2]
-
-    return dlc_category_no
+    return [1, 2]
 
 
-def get_released_status_no():
+def get_released_status_no() -> int:
     # name 	                value
     # ====================  =====
     # released 	            0
@@ -126,12 +111,10 @@ def get_released_status_no():
 
     # Caveat: the release status is often missing from IGDB. Avoid using it for now, or you will get empty responses!
 
-    released_status_no = 0
-
-    return released_status_no
+    return 0
 
 
-def get_steam_service_no():
+def get_steam_service_no() -> int:
     # name 	                value
     # ====================  =====
     # steam 	            1
@@ -142,9 +125,7 @@ def get_steam_service_no():
     # twitch 	            14
     # android 	            15
 
-    steam_service_no = 1
-
-    return steam_service_no
+    return 1
 
 
 def append_filter_for_igdb_fields(
@@ -197,17 +178,9 @@ def append_filter_for_igdb_fields(
     if use_parenthesis:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
         # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
-        statement_to_append = "{} {} ({})".format(
-            filter_name,
-            comparison_symbol,
-            filter_value,
-        )
+        statement_to_append = f"{filter_name} {comparison_symbol} ({filter_value})"
     else:
-        statement_to_append = "{} {} {}".format(
-            filter_name,
-            comparison_symbol,
-            filter_value,
-        )
+        statement_to_append = f"{filter_name} {comparison_symbol} {filter_value}"
 
     if where_statement in igdb_fields:
         igdb_fields += conjunction_statement + statement_to_append
@@ -340,7 +313,7 @@ def get_igdb_fields_for_release_dates(
 def format_list_of_platforms(raw_data_platforms, verbose=True):
     formatted_data_platforms = {}
 
-    sorted_data_platforms = sorted(raw_data_platforms, key=lambda x: x["id"])
+    sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))
 
     for e in sorted_data_platforms:
         id = e["id"]
@@ -362,11 +335,7 @@ def format_list_of_platforms(raw_data_platforms, verbose=True):
                 slug = formatted_data_platforms[id]["slug"]
 
                 print(
-                    "Category: {} ; ID: {} ; Slug: {}".format(
-                        category,
-                        id,
-                        slug,
-                    ),
+                    f"Category: {category} ; ID: {id} ; Slug: {slug}",
                 )
 
     return formatted_data_platforms

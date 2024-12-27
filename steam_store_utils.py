@@ -8,11 +8,10 @@ def get_link_to_store(app_id, hide_dummy_app_id=True):
         link_to_store = (
             "[URL=" + steam_store_base_url + app_id + "/]" + app_id + "[/URL]"
         )
+    elif hide_dummy_app_id:
+        link_to_store = "n/a"
     else:
-        if hide_dummy_app_id:
-            link_to_store = "n/a"
-        else:
-            link_to_store = app_id
+        link_to_store = app_id
     return link_to_store
 
 

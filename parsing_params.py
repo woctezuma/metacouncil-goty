@@ -96,17 +96,14 @@ def convert_params_to_indices(params, offset=9):
     return indices
 
 
-def get_parsing_offset(is_anonymized):
-    offset = 0 if is_anonymized else 9
-    return offset
+def get_parsing_offset(is_anonymized) -> int:
+    return 0 if is_anonymized else 9
 
 
 def get_parsing_indices(year, is_anonymized):
     params = get_adjusted_parsing_params(year=year)
     offset = get_parsing_offset(is_anonymized)
-    indices = convert_params_to_indices(params, offset)
-
-    return indices
+    return convert_params_to_indices(params, offset)
 
 
 if __name__ == "__main__":

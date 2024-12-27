@@ -15,9 +15,7 @@ def get_ballot_file_name(ballot_year, is_anonymized=False):
 def convert_fname_to_year(fname, year_prefixe="20", num_digits=4):
     year_index = fname.find(year_prefixe)
     year_str = fname[year_index : (year_index + num_digits)]
-    ballot_year = int(year_str)
-
-    return ballot_year
+    return int(year_str)
 
 
 def get_parsing_params(ballot_year):
@@ -27,9 +25,7 @@ def get_parsing_params(ballot_year):
 def load_ballots(input_filename):
     ballot_year = convert_fname_to_year(fname=input_filename)
     parsing_params = get_parsing_params(ballot_year=ballot_year)
-    ballots = parse_csv(input_filename, parsing_params)
-
-    return ballots
+    return parse_csv(input_filename, parsing_params)
 
 
 def print_reviews(
@@ -39,7 +35,7 @@ def print_reviews(
     goty_field="goty_preferences",
     goty_review_field=None,
     export_for_forum=True,
-):
+) -> None:
     if goty_review_field is None:
         goty_review_field = goty_field.replace("_preferences", "_description")
 
@@ -79,8 +75,6 @@ def print_reviews(
                 print(goty_review)
                 if export_for_forum:
                     print("[/quote]")
-
-    return
 
 
 if __name__ == "__main__":

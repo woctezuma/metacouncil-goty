@@ -2,13 +2,11 @@ from whitelist_vote_igdb import load_whitelisted_igdb_ids
 
 
 def get_hard_coded_whitelisted_app_ids():
-    whitelisted_app_id_dict = {
+    return {
         "0": {
             "reason": "[placeholder]",
         },
     }
-
-    return whitelisted_app_id_dict
 
 
 def load_whitelisted_ids(release_year=None, use_igdb=False):
@@ -20,11 +18,11 @@ def load_whitelisted_ids(release_year=None, use_igdb=False):
     return whitelisted_app_id_dict
 
 
-def main():
+def main() -> bool:
     release_year = "2018"
     use_igdb = True
 
-    whitelisted_app_id_dict = load_whitelisted_ids(
+    load_whitelisted_ids(
         release_year=release_year,
         use_igdb=use_igdb,
     )

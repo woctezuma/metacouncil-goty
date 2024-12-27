@@ -11,23 +11,17 @@ from steam_store_utils import get_link_to_store
 
 
 def get_best_optional_categories():
-    optional_categories = [
-        f"best_{categorie}" for categorie in get_optional_categories()
-    ]
-
-    return optional_categories
+    return [f"best_{categorie}" for categorie in get_optional_categories()]
 
 
 def get_optional_ballots(ballots, category_name):
-    optional_ballots = [
+    return [
         ballots[voter_name][category_name]
         for voter_name in ballots
         if category_name in ballots[voter_name]
         and ballots[voter_name][category_name] is not None
         and len(ballots[voter_name][category_name]) > 0
     ]
-
-    return optional_ballots
 
 
 def filter_noise_from_optional_ballots(optional_ballots):
@@ -40,10 +34,8 @@ def filter_noise_from_optional_ballots(optional_ballots):
     return filtered_optional_ballots
 
 
-def get_dummy_field():
-    dummy_field = "dummy_preferences"
-
-    return dummy_field
+def get_dummy_field() -> str:
+    return "dummy_preferences"
 
 
 def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None):
@@ -72,7 +64,6 @@ def match_optional_ballots(
     use_levenshtein_distance=True,
 ):
     import steampi.calendar
-
     from extend_steamspy import load_extended_steamspy_database
     from match_names import find_closest_app_id
 
@@ -219,16 +210,14 @@ def compute_ranking_based_on_optional_ballots(optional_ballots):
     optional_counts = count_optional_ballots(optional_ballots)
 
     # Reference: https://stackoverflow.com/a/37693603
-    ranking = sorted(
+    return sorted(
         optional_counts.items(),
         key=lambda x: (-x[1], x[0]),
         reverse=False,
     )
 
-    return ranking
 
-
-def pretty_display(ranking):
+def pretty_display(ranking) -> None:
     print()
 
     current_num_votes = 0
@@ -250,8 +239,6 @@ def pretty_display(ranking):
 
         print(f"{rank:2} | " + game_name.strip() + my_str + str(num_votes))
 
-    return
-
 
 def display_optional_ballots(
     input_filename,
@@ -261,7 +248,7 @@ def display_optional_ballots(
     retrieve_igdb_data_from_scratch=True,
     apply_hard_coded_extension_and_fixes=True,
     use_levenshtein_distance=True,
-):
+) -> bool:
     from load_ballots import load_ballots
 
     ballots = load_ballots(input_filename)
