@@ -1,10 +1,10 @@
 from igdb_credentials import download_latest_credentials
 from schulze_goty import apply_pipeline
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = '2019'
+    ballot_year = "2019"
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     use_igdb = True
     retrieve_igdb_data_from_scratch = False
@@ -17,11 +17,11 @@ if __name__ == '__main__':
 
     # Game of the Decade
     # Caveat: pay attention to the d in 'gotd'.
-    goty_field = 'gotd_preferences'
+    goty_field = "gotd_preferences"
     # Either:
     duration_in_years = 10
     release_year = str(int(ballot_year) - duration_in_years + 1)
-    year_constraint = 'minimum'
+    year_constraint = "minimum"
     # Or:
     # release_year = None
     # year_constraint = None

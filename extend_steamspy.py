@@ -132,7 +132,7 @@ def load_extended_steamspy_database(steamspy_database=None):
     for app_id in hard_coded_steamspy_database_extension:
         if app_id in steamspy_database:
             print(
-                'AppID {} already exists in SteamSpy database. The entry will be overwritten.'.format(
+                "AppID {} already exists in SteamSpy database. The entry will be overwritten.".format(
                     app_id,
                 ),
             )
@@ -153,15 +153,15 @@ def get_app_name_for_problematic_app_id(app_id=None):
 def get_release_year_for_problematic_app_id(app_id):
     # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
     release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
-    matched_release_year = release_date_as_str.split(' ')[-1]
+    matched_release_year = release_date_as_str.split(" ")[-1]
     try:
         matched_release_year_as_int = int(matched_release_year)
     except ValueError:
-        matched_release_year = release_date_as_str.split(' ')[0]
+        matched_release_year = release_date_as_str.split(" ")[0]
         matched_release_year_as_int = int(matched_release_year)
 
     return matched_release_year_as_int
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     steamspy_database = load_extended_steamspy_database()

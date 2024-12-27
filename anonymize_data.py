@@ -2,16 +2,16 @@ from parsing_params import get_parsing_indices
 
 
 def get_data_folder():
-    data_folder = 'data/'
+    data_folder = "data/"
     return data_folder
 
 
 def get_anonymized_file_prefix():
-    anonymized_file_prefix = 'anonymized_'
+    anonymized_file_prefix = "anonymized_"
     return anonymized_file_prefix
 
 
-def load_input(filename, file_encoding='utf8', data_folder=None):
+def load_input(filename, file_encoding="utf8", data_folder=None):
     if data_folder is None:
         data_folder = get_data_folder()
 
@@ -23,7 +23,7 @@ def load_input(filename, file_encoding='utf8', data_folder=None):
         for line in f.readlines():
             line = line.strip()
             # Remove empty lines and comments
-            if len(line) > 0 and line[0:2] != '# ':
+            if len(line) > 0 and line[0:2] != "# ":
                 data.append(line)
 
     return data
@@ -47,9 +47,9 @@ def remove_header(data, content_start_criterion='"1"'):
     return data_content
 
 
-def get_review_token_indices(ballot_year='2018', is_anonymized=False):
+def get_review_token_indices(ballot_year="2018", is_anonymized=False):
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    review_token_indices = [2 * v for v in indices['review'].values() if v is not None]
+    review_token_indices = [2 * v for v in indices["review"].values() if v is not None]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected results for a file which was not anonymized:
     # - [30] for GOTY in 2018 and 2020
@@ -58,9 +58,9 @@ def get_review_token_indices(ballot_year='2018', is_anonymized=False):
     return review_token_indices
 
 
-def get_author_name_token_index(ballot_year='2018', is_anonymized=False):
+def get_author_name_token_index(ballot_year="2018", is_anonymized=False):
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    author_token_index = 2 * indices['voter_name']
+    author_token_index = 2 * indices["voter_name"]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected result for a file which was not anonymized: 18.
 
@@ -89,13 +89,13 @@ def anonymize(
 
     from faker import Faker
 
-    fake = Faker('fr_FR')
+    fake = Faker("fr_FR")
     fake.seed_instance(faker_seed)
 
     anonymized_data = []
 
     for element in data:
-        tokens = re.split('(;)', element)
+        tokens = re.split("(;)", element)
         if fake_author_name:
             tokens[author_name_token_index] = fake.name()
 
@@ -104,21 +104,21 @@ def anonymize(
             for review_token_index in review_token_indices:
                 if verbose:
                     review_content = tokens[review_token_index]
-                    print(f'Redacting review content: {review_content}')
+                    print(f"Redacting review content: {review_content}")
                 tokens[review_token_index] = '""'
 
         # Remove leading metadata
         # Consequence: the fake author name should now appear as the first token on each line of the anonymized data.
         tokens = tokens[author_name_token_index:]
 
-        line = ''.join(tokens)
+        line = "".join(tokens)
 
         anonymized_data.append(line)
 
     return anonymized_data
 
 
-def write_output(anonymized_data, output_filename, file_encoding='utf8'):
+def write_output(anonymized_data, output_filename, file_encoding="utf8"):
     import pathlib
 
     full_path_to_file = get_data_folder() + output_filename
@@ -127,7 +127,7 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
 
     pathlib.Path(data_path).mkdir(parents=True, exist_ok=True)
 
-    with open(full_path_to_file, 'w', encoding=file_encoding) as outfile:
+    with open(full_path_to_file, "w", encoding=file_encoding) as outfile:
         for element in anonymized_data:
             print(element, file=outfile)
 
@@ -137,7 +137,7 @@ def write_output(anonymized_data, output_filename, file_encoding='utf8'):
 def load_and_anonymize(
     input_filename,
     ballot_year,
-    file_encoding='utf-8',
+    file_encoding="utf-8",
     fake_author_name=True,
     redact_reviews=False,
     data_folder=None,
@@ -162,10 +162,10 @@ def load_and_anonymize(
     return anonymized_data
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = '2020'
+    ballot_year = "2020"
     input_filename = get_ballot_file_name(ballot_year)
 
     fake_author_name = True

@@ -21,7 +21,7 @@ def load_whitelisted_ids(release_year=None, use_igdb=False):
 
 
 def main():
-    release_year = '2018'
+    release_year = "2018"
     use_igdb = True
 
     whitelisted_app_id_dict = load_whitelisted_ids(
@@ -32,5 +32,5 @@ def main():
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

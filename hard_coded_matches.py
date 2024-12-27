@@ -43,5 +43,5 @@ def find_hard_coded_app_id(game_name_input):
     return hard_coded_app_id
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     hard_coded_dict = get_hard_coded_app_id_dict()

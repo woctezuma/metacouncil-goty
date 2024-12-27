@@ -5,14 +5,14 @@ from parsing_utils import parse_csv
 def get_ballot_file_name(ballot_year, is_anonymized=False):
     from anonymize_data import get_anonymized_file_prefix
 
-    fname = f'pc_gaming_metacouncil_goty_awards_{ballot_year}.csv'
+    fname = f"pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
     if is_anonymized:
         fname = get_anonymized_file_prefix() + fname
 
     return fname
 
 
-def convert_fname_to_year(fname, year_prefixe='20', num_digits=4):
+def convert_fname_to_year(fname, year_prefixe="20", num_digits=4):
     year_index = fname.find(year_prefixe)
     year_str = fname[year_index : (year_index + num_digits)]
     ballot_year = int(year_str)
@@ -36,12 +36,12 @@ def print_reviews(
     ballots,
     matches,
     app_id,
-    goty_field='goty_preferences',
+    goty_field="goty_preferences",
     goty_review_field=None,
     export_for_forum=True,
 ):
     if goty_review_field is None:
-        goty_review_field = goty_field.replace('_preferences', '_description')
+        goty_review_field = goty_field.replace("_preferences", "_description")
 
     # Constant parameters
     goty_position = 1
@@ -52,7 +52,7 @@ def print_reviews(
     for voter_name in ballots:
         goty_raw_name = ballots[voter_name][goty_field][goty_position]
         try:
-            goty_app_id = matches[goty_raw_name]['matched_appID'][
+            goty_app_id = matches[goty_raw_name]["matched_appID"][
                 neighbor_reference_index
             ]
         except KeyError:
@@ -60,7 +60,7 @@ def print_reviews(
             # - 'n/a' as the first game for GotY, so that the mandatory field in the form can be bypassed,
             # - no submitted game for the following games for GotY, because the fields were optional anyway.
             continue
-        goty_standardized_name = matches[goty_raw_name]['matched_name'][
+        goty_standardized_name = matches[goty_raw_name]["matched_name"][
             neighbor_reference_index
         ]
 
@@ -69,21 +69,21 @@ def print_reviews(
 
             if goty_standardized_name not in seen_game_names:
                 seen_game_names.add(goty_standardized_name)
-                print('\n[game] ' + goty_standardized_name)
+                print("\n[game] " + goty_standardized_name)
 
             if len(goty_review) > 0:
                 if export_for_forum:
                     print(f'\n[quote="{voter_name}"]')
                 else:
-                    print('\nReviewer: ' + voter_name)
+                    print("\nReviewer: " + voter_name)
                 print(goty_review)
                 if export_for_forum:
-                    print('[/quote]')
+                    print("[/quote]")
 
     return
 
 
-if __name__ == '__main__':
-    ballot_year = '2019'
+if __name__ == "__main__":
+    ballot_year = "2019"
     input_filename = get_ballot_file_name(ballot_year)
     ballots = load_ballots(input_filename)

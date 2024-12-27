@@ -15,20 +15,20 @@ from load_ballots import load_ballots
 
 
 def get_link_to_igdb_website(igdb_id, igdb_local_database, hide_dummy_app_id=True):
-    igdb_base_url = 'https://www.igdb.com/games/'
+    igdb_base_url = "https://www.igdb.com/games/"
 
     igdb_id_as_str = str(igdb_id)
 
     igdb_data = igdb_local_database[igdb_id_as_str]
-    slug = igdb_data['slug']
+    slug = igdb_data["slug"]
 
     if int(igdb_id) > 0:
         link_to_store = (
-            '[URL=' + igdb_base_url + slug + '/]' + igdb_id_as_str + '[/URL]'
+            "[URL=" + igdb_base_url + slug + "/]" + igdb_id_as_str + "[/URL]"
         )
     else:
         if hide_dummy_app_id:
-            link_to_store = 'n/a'
+            link_to_store = "n/a"
         else:
             link_to_store = igdb_id_as_str
     return link_to_store
@@ -41,9 +41,9 @@ def get_igdb_human_release_dates(igdb_id, igdb_local_database):
 
     try:
         human_release_dates = {
-            date['human']
-            for date in igdb_data['release_dates']
-            if 'human' in date and (date['platform'] in get_pc_platform_range())
+            date["human"]
+            for date in igdb_data["release_dates"]
+            if "human" in date and (date["platform"] in get_pc_platform_range())
         }
     except KeyError:
         # Unknown release date
@@ -60,9 +60,9 @@ def get_igdb_human_release_dates(igdb_id, igdb_local_database):
 def get_igdb_release_years(igdb_data, target_release_year=None):
     try:
         release_years = {
-            date['y']
-            for date in igdb_data['release_dates']
-            if 'y' in date and (date['platform'] in get_pc_platform_range())
+            date["y"]
+            for date in igdb_data["release_dates"]
+            if "y" in date and (date["platform"] in get_pc_platform_range())
         }
     except KeyError:
         # Unknown release date
@@ -89,17 +89,17 @@ def get_igdb_release_years(igdb_data, target_release_year=None):
 def format_game_name_for_igdb(raw_name, verbose=True):
     formatted_game_name_for_igdb = raw_name
 
-    for character in ['®', '~', '\'', ': ', ' - ', '!', '™', ' / ']:
+    for character in ["®", "~", "'", ": ", " - ", "!", "™", " / "]:
         formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace(
             character,
-            ' ',
+            " ",
         )
 
     formatted_game_name_for_igdb = formatted_game_name_for_igdb.strip()
 
     if verbose:
         print(
-            'Game name is reformatted from {} to {}'.format(
+            "Game name is reformatted from {} to {}".format(
                 raw_name,
                 formatted_game_name_for_igdb,
             ),
@@ -113,8 +113,8 @@ def match_names_with_igdb(
     release_year=None,
     must_be_available_on_pc=True,
     must_be_a_game=True,
-    goty_field='goty_preferences',
-    year_constraint='equality',
+    goty_field="goty_preferences",
+    year_constraint="equality",
     verbose=True,
 ):
     seen_game_names = set()
@@ -147,7 +147,7 @@ def match_names_with_igdb(
                     try:
                         igdb_best_match = igdb_matches[0]
                     except IndexError:
-                        print(f'Relaxing the year constraint for {raw_name}')
+                        print(f"Relaxing the year constraint for {raw_name}")
 
                         igdb_matches = look_up_game_name(
                             game_name=formatted_game_name_for_igdb,
@@ -165,7 +165,7 @@ def match_names_with_igdb(
                             igdb_best_match = igdb_matches[0]
                         except IndexError:
                             print(
-                                'Relaxing all of the constraints for {}'.format(
+                                "Relaxing all of the constraints for {}".format(
                                     raw_name,
                                 ),
                             )
@@ -185,7 +185,7 @@ def match_names_with_igdb(
                     igdb_matched_ids = []
 
                     for element in igdb_matches:
-                        igdb_id = element['id']
+                        igdb_id = element["id"]
                         igdb_data = element
 
                         igdb_matched_ids.append(igdb_id)
@@ -201,8 +201,10 @@ def match_names_with_igdb(
             [name for name in seen_game_names if not is_a_noisy_vote(name)],
         )
         if len(recently_matched_game_names) > 0:
-            s = [f'{i+1}) {name}' for i, name in enumerate(recently_matched_game_names)]
-            print('[Changelog]\n{}\n'.format('\n'.join(s)))
+            s = [
+                f"{i + 1}) {name}" for i, name in enumerate(recently_matched_game_names)
+            ]
+            print("[Changelog]\n{}\n".format("\n".join(s)))
 
     return igdb_match_database, igdb_local_database
 
@@ -211,7 +213,7 @@ def print_igdb_matches(
     igdb_match_database,
     igdb_local_database,
     constrained_release_year=None,
-    year_constraint='equality',
+    year_constraint="equality",
 ):
     sorted_input_names = sorted(igdb_match_database.keys())
 
@@ -233,7 +235,7 @@ def print_igdb_matches(
 
             if len(release_years) > 1:
                 displayed_release_years = sorted(release_years)
-                print(f'[!]\tSeveral release years are found for {raw_name}.')
+                print(f"[!]\tSeveral release years are found for {raw_name}.")
             else:
                 try:
                     displayed_release_years = list(release_years)[0]
@@ -245,17 +247,17 @@ def print_igdb_matches(
                     int(year) for year in release_years if year is not None
                 ]
 
-                if year_constraint == 'equality':
+                if year_constraint == "equality":
                     constraint_is_okay = any(
                         year == int(constrained_release_year)
                         for year in cleaned_release_years
                     )
-                elif year_constraint == 'minimum':
+                elif year_constraint == "minimum":
                     constraint_is_okay = any(
                         year >= int(constrained_release_year)
                         for year in cleaned_release_years
                     )
-                elif year_constraint == 'maximum':
+                elif year_constraint == "maximum":
                     constraint_is_okay = any(
                         year <= int(constrained_release_year)
                         for year in cleaned_release_years
@@ -266,7 +268,7 @@ def print_igdb_matches(
 
                 if not constraint_is_okay:
                     print(
-                        '[!]\tRelease year(s) ({}) do not match the ballot year ({}, constraint:{}) for {}.'.format(
+                        "[!]\tRelease year(s) ({}) do not match the ballot year ({}, constraint:{}) for {}.".format(
                             displayed_release_years,
                             constrained_release_year,
                             year_constraint,
@@ -275,15 +277,15 @@ def print_igdb_matches(
                     )
 
             print(
-                '\t{} ---> IGDB id: {}\t;\t{} ({})'.format(
+                "\t{} ---> IGDB id: {}\t;\t{} ({})".format(
                     raw_name,
-                    igdb_data['id'],
-                    igdb_data['name'],
+                    igdb_data["id"],
+                    igdb_data["name"],
                     displayed_release_years,
                 ),
             )
         else:
-            print(f'[X]\t{raw_name}')
+            print(f"[X]\t{raw_name}")
 
     return
 
@@ -305,8 +307,8 @@ def download_igdb_local_databases(
     extend_previous_databases=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,
-    goty_field='goty_preferences',
-    year_constraint='equality',
+    goty_field="goty_preferences",
+    year_constraint="equality",
     verbose=True,
 ):
     igdb_match_database, igdb_local_database = match_names_with_igdb(
@@ -375,7 +377,7 @@ def figure_out_ballots_with_missing_data(
     ballots,
     igdb_match_database=None,
     release_year=None,
-    goty_field='goty_preferences',
+    goty_field="goty_preferences",
     verbose=False,
 ):
     # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
@@ -397,7 +399,7 @@ def figure_out_ballots_with_missing_data(
                 game_name in extended_igdb_match_database
                 and len(extended_igdb_match_database[game_name]) > 0
             ):
-                new_ballots[voter_name][goty_field][game_position] = ''
+                new_ballots[voter_name][goty_field][game_position] = ""
 
     return new_ballots
 
@@ -408,8 +410,8 @@ def download_igdb_data_for_ballots_with_missing_data(
     apply_hard_coded_extension_and_fixes=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,
-    goty_field='goty_preferences',
-    year_constraint='equality',
+    goty_field="goty_preferences",
+    year_constraint="equality",
     verbose=False,
 ):
     # Caveat: it is mandatory to set 'extend_previous_databases' to True, if you want to:
@@ -440,8 +442,8 @@ def load_igdb_local_databases(
     apply_hard_coded_extension_and_fixes=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,
-    goty_field='goty_preferences',
-    year_constraint='equality',
+    goty_field="goty_preferences",
+    year_constraint="equality",
     verbose=False,
 ):
     try:
@@ -505,51 +507,51 @@ def transform_structure_of_matches(igdb_match_database, igdb_local_database):
         igdb_matched_pc_release_dates = []
         for igdb_id_as_str in igdb_matched_ids:
             try:
-                release_dates = igdb_local_database[igdb_id_as_str]['release_dates']
+                release_dates = igdb_local_database[igdb_id_as_str]["release_dates"]
             except KeyError:
                 continue
             for element in release_dates:
-                if element['platform'] == get_pc_platform_no():
-                    release_date = element['human']
+                if element["platform"] == get_pc_platform_no():
+                    release_date = element["human"]
                     igdb_matched_pc_release_dates.append(release_date)
 
         steam_matched_ids = []
         for igdb_id_as_str in igdb_matched_ids:
             try:
-                external_games = igdb_local_database[igdb_id_as_str]['external_games']
+                external_games = igdb_local_database[igdb_id_as_str]["external_games"]
             except KeyError:
                 continue
             for element in external_games:
-                if element['category'] == get_steam_service_no():
-                    steam_app_id = element['uid']
+                if element["category"] == get_steam_service_no():
+                    steam_app_id = element["uid"]
                     steam_matched_ids.append(steam_app_id)
 
         igdb_matched_slugs = [
-            igdb_local_database[igdb_id_as_str]['slug']
+            igdb_local_database[igdb_id_as_str]["slug"]
             for igdb_id_as_str in igdb_matched_ids
         ]
 
         igdb_matched_names = [
-            igdb_local_database[igdb_id_as_str]['name']
+            igdb_local_database[igdb_id_as_str]["name"]
             for igdb_id_as_str in igdb_matched_ids
         ]
 
         dummy_distances = [None for _ in igdb_matched_ids]
 
         element = {}
-        element['input_name'] = raw_name
-        element[
-            'matched_appID'
-        ] = igdb_matched_ids  # For IGDB, this is IGDB ID. For SteamSpy, this is Steam appID.
-        element['matched_pc_release_date'] = igdb_matched_pc_release_dates
-        element[
-            'matched_steam_appID'
-        ] = steam_matched_ids  # Steam urls use an appID, which is the game ID on the store
-        element[
-            'matched_slug'
-        ] = igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
-        element['matched_name'] = igdb_matched_names
-        element['match_distance'] = dummy_distances
+        element["input_name"] = raw_name
+        element["matched_appID"] = (
+            igdb_matched_ids  # For IGDB, this is IGDB ID. For SteamSpy, this is Steam appID.
+        )
+        element["matched_pc_release_date"] = igdb_matched_pc_release_dates
+        element["matched_steam_appID"] = (
+            steam_matched_ids  # Steam urls use an appID, which is the game ID on the store
+        )
+        element["matched_slug"] = (
+            igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
+        )
+        element["matched_name"] = igdb_matched_names
+        element["match_distance"] = dummy_distances
 
         matches[raw_name] = element
 
@@ -559,7 +561,7 @@ def transform_structure_of_matches(igdb_match_database, igdb_local_database):
 def main():
     from load_ballots import get_ballot_file_name
 
-    ballot_year = '2018'
+    ballot_year = "2018"
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     ballots = load_ballots(input_filename)
 
@@ -596,5 +598,5 @@ def main():
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

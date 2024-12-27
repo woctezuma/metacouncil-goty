@@ -13,20 +13,20 @@ from igdb_look_up import look_up_game_id, wait_for_cooldown
 
 def get_file_name_for_fixes_to_igdb_database(release_year=None, database_type=None):
     if database_type is None:
-        database_type = 'local'  # either 'local' or 'match'
+        database_type = "local"  # either 'local' or 'match'
 
-    prefix = 'fixes_to_'
+    prefix = "fixes_to_"
 
     suffix = get_igdb_file_name_suffix(release_year)
 
     file_name = (
         get_data_folder()
         + prefix
-        + 'igdb_'
+        + "igdb_"
         + database_type
-        + '_database'
+        + "_database"
         + suffix
-        + '.json'
+        + ".json"
     )
 
     return file_name
@@ -34,7 +34,7 @@ def get_file_name_for_fixes_to_igdb_database(release_year=None, database_type=No
 
 def load_fixes_to_igdb_database(release_year=None, database_type=None):
     if database_type is None:
-        database_type = 'local'  # either 'local' or 'match'
+        database_type = "local"  # either 'local' or 'match'
 
     file_name = get_file_name_for_fixes_to_igdb_database(
         release_year=release_year,
@@ -42,10 +42,10 @@ def load_fixes_to_igdb_database(release_year=None, database_type=None):
     )
 
     try:
-        with open(file_name, encoding='utf-8') as f:
+        with open(file_name, encoding="utf-8") as f:
             fixes_to_igdb_database = json.load(f)
     except FileNotFoundError:
-        print(f'File {file_name} not found.')
+        print(f"File {file_name} not found.")
         fixes_to_igdb_database = {}
 
     return fixes_to_igdb_database
@@ -54,7 +54,7 @@ def load_fixes_to_igdb_database(release_year=None, database_type=None):
 def load_fixes_to_igdb_local_database(release_year=None):
     fixes_to_igdb_database = load_fixes_to_igdb_database(
         release_year=release_year,
-        database_type='local',
+        database_type="local",
     )
 
     return fixes_to_igdb_database
@@ -63,7 +63,7 @@ def load_fixes_to_igdb_local_database(release_year=None):
 def load_fixes_to_igdb_match_database(release_year=None):
     fixes_to_igdb_database = load_fixes_to_igdb_database(
         release_year=release_year,
-        database_type='match',
+        database_type="match",
     )
 
     return fixes_to_igdb_database
@@ -81,7 +81,7 @@ def extend_igdb_local_database(release_year=None, igdb_local_database=None):
     for igdb_id in fixes_to_igdb_local_database:
         if igdb_id in igdb_local_database:
             print(
-                'IGDB ID {} already exists in IGDB local database. Data will be overwritten.'.format(
+                "IGDB ID {} already exists in IGDB local database. Data will be overwritten.".format(
                     igdb_id,
                 ),
             )
@@ -107,7 +107,7 @@ def extend_igdb_match_database(
         if app_name in igdb_match_database:
             if verbose:
                 print(
-                    'Query name {} already exists in IGDB match database. Match will be overwritten.'.format(
+                    "Query name {} already exists in IGDB match database. Match will be overwritten.".format(
                         app_name,
                     ),
                 )
@@ -211,7 +211,7 @@ def extend_both_igdb_databases(
 
 
 def main():
-    release_year = '2018'
+    release_year = "2018"
 
     (
         extended_igdb_match_database,
@@ -221,5 +221,5 @@ def main():
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

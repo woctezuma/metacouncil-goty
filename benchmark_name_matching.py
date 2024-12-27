@@ -23,7 +23,7 @@ def run_benchmark_for_steam_spy(
     num_closest_neighbors=1,
     max_num_tries_for_year=0,
     use_levenshtein_distance=True,
-    goty_field='goty_preferences',
+    goty_field="goty_preferences",
 ):
     seen_game_names = set()
     matches = {}
@@ -59,12 +59,12 @@ def run_benchmark_for_steam_spy(
                     closest_distance = [dist[app_id] for app_id in closest_app_id]
 
                     element = {}
-                    element['input_name'] = raw_name
-                    element['matched_appID'] = closest_app_id
-                    element['matched_name'] = [
-                        steamspy_database[appID]['name'] for appID in closest_app_id
+                    element["input_name"] = raw_name
+                    element["matched_appID"] = closest_app_id
+                    element["matched_name"] = [
+                        steamspy_database[appID]["name"] for appID in closest_app_id
                     ]
-                    element['match_distance'] = closest_distance
+                    element["match_distance"] = closest_distance
 
                     matches[raw_name] = element
 
@@ -74,7 +74,7 @@ def run_benchmark_for_steam_spy(
 def main():
     from load_ballots import get_ballot_file_name
 
-    ballot_year = '2018'
+    ballot_year = "2018"
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     ballots = load_ballots(input_filename)
 
@@ -86,7 +86,7 @@ def main():
     apply_hard_coded_extension_and_fixes = False
 
     print(
-        '\n\ti) Vanilla SteamSpy database with Levenshtein distance (without using the release year)\n',
+        "\n\ti) Vanilla SteamSpy database with Levenshtein distance (without using the release year)\n",
     )
 
     matches = run_benchmark_for_steam_spy(
@@ -98,7 +98,7 @@ def main():
     display_matches(matches, print_after_sort=False)
 
     print(
-        '\n\tii) Vanilla SteamSpy database with difflib (without using the release year)\n',
+        "\n\tii) Vanilla SteamSpy database with difflib (without using the release year)\n",
     )
 
     matches = run_benchmark_for_steam_spy(
@@ -109,7 +109,7 @@ def main():
 
     display_matches(matches, print_after_sort=False)
 
-    print('\n\tiii) Vanilla IGDB database (without using the release year)\n')
+    print("\n\tiii) Vanilla IGDB database (without using the release year)\n")
 
     igdb_match_database, igdb_local_database = load_igdb_local_databases(
         ballots,
@@ -123,7 +123,7 @@ def main():
         constrained_release_year=None,
     )
 
-    print('\n\tiv) Vanilla IGDB database (plus release year)\n')
+    print("\n\tiv) Vanilla IGDB database (plus release year)\n")
 
     igdb_match_database, igdb_local_database = load_igdb_local_databases(
         ballots,
@@ -138,7 +138,7 @@ def main():
     )
 
     print(
-        '\n\tv) Extended SteamSpy database with Levenshtein distance (plus hard-coded matches and release year)\n',
+        "\n\tv) Extended SteamSpy database with Levenshtein distance (plus hard-coded matches and release year)\n",
     )
 
     matches = precompute_matches(
@@ -152,7 +152,7 @@ def main():
     display_matches(matches, print_after_sort=False)
 
     print(
-        '\n\tvi) Extended SteamSpy database with difflib (plus hard-coded matches and release year)\n',
+        "\n\tvi) Extended SteamSpy database with difflib (plus hard-coded matches and release year)\n",
     )
 
     matches = precompute_matches(
@@ -166,7 +166,7 @@ def main():
     display_matches(matches, print_after_sort=False)
 
     print(
-        '\n\tvii) Vanilla SteamSpy database with Levenshtein distance (plus release year)\n',
+        "\n\tvii) Vanilla SteamSpy database with Levenshtein distance (plus release year)\n",
     )
 
     matches = run_benchmark_for_steam_spy(
@@ -179,7 +179,7 @@ def main():
 
     display_matches(matches, print_after_sort=False)
 
-    print('\n\tviii) Vanilla SteamSpy database with difflib (plus release year)\n')
+    print("\n\tviii) Vanilla SteamSpy database with difflib (plus release year)\n")
 
     matches = run_benchmark_for_steam_spy(
         ballots,
@@ -194,5 +194,5 @@ def main():
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

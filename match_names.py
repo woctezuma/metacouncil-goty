@@ -24,7 +24,7 @@ def constrain_app_id_search_by_year(
     sorted_app_ids,
     release_year,
     max_num_tries_for_year,
-    year_constraint='equality',
+    year_constraint="equality",
 ):
     filtered_sorted_app_ids = sorted_app_ids.copy()
 
@@ -52,19 +52,19 @@ def constrain_app_id_search_by_year(
                         app_id=first_match,
                     )
 
-                if year_constraint == 'equality':
+                if year_constraint == "equality":
                     # We want the matched release year to be equal to the target release year.
                     # NB: this is useful to compute the Game of the Year.
                     is_the_first_match_released_in_a_wrong_year = bool(
                         matched_release_year != int(release_year),
                     )
-                elif year_constraint == 'minimum':
+                elif year_constraint == "minimum":
                     # We want the matched release year to be greater than or equal to the target release year.
                     # NB: this should be useful to compute the Game of the last Decade.
                     is_the_first_match_released_in_a_wrong_year = bool(
                         matched_release_year < int(release_year),
                     )
-                elif year_constraint == 'maximum':
+                elif year_constraint == "maximum":
                     # We want the matched release year to be less than or equal to the target release year.
                     is_the_first_match_released_in_a_wrong_year = bool(
                         matched_release_year > int(release_year),
@@ -113,7 +113,7 @@ def find_closest_app_id(
     num_closest_neighbors=1,
     max_num_tries_for_year=2,
     use_levenshtein_distance=True,
-    year_constraint='equality',
+    year_constraint="equality",
     is_steamspy_api_paginated=True,
 ):
     if use_levenshtein_distance:
@@ -171,8 +171,8 @@ def precompute_matches(
     num_closest_neighbors=3,
     max_num_tries_for_year=2,
     use_levenshtein_distance=True,
-    year_constraint='equality',
-    goty_field='goty_preferences',
+    year_constraint="equality",
+    goty_field="goty_preferences",
     is_steamspy_api_paginated=True,
 ):
     seen_game_names = set()
@@ -202,17 +202,17 @@ def precompute_matches(
                         for appID in closest_appID:
                             if appID not in steamspy_database:
                                 steamspy_database[appID] = {}
-                                steamspy_database[appID][
-                                    'name'
-                                ] = get_app_name_for_problematic_app_id(appID)
+                                steamspy_database[appID]["name"] = (
+                                    get_app_name_for_problematic_app_id(appID)
+                                )
 
                     element = {}
-                    element['input_name'] = raw_name
-                    element['matched_appID'] = closest_appID
-                    element['matched_name'] = [
-                        steamspy_database[appID]['name'] for appID in closest_appID
+                    element["input_name"] = raw_name
+                    element["matched_appID"] = closest_appID
+                    element["matched_name"] = [
+                        steamspy_database[appID]["name"] for appID in closest_appID
                     ]
-                    element['match_distance'] = closest_distance
+                    element["match_distance"] = closest_distance
 
                     matches[raw_name] = element
 
@@ -226,8 +226,8 @@ def display_matches(matches, print_after_sort=True):
     if print_after_sort:
         sorted_keys = sorted(
             matches.keys(),
-            key=lambda x: matches[x]['match_distance'][neighbor_reference_index]
-            / (1 + len(matches[x]['input_name'])),
+            key=lambda x: matches[x]["match_distance"][neighbor_reference_index]
+            / (1 + len(matches[x]["input_name"])),
         )
     else:
         sorted_keys = matches.keys()
@@ -235,31 +235,31 @@ def display_matches(matches, print_after_sort=True):
     for game in sorted_keys:
         element = matches[game]
 
-        dist_reference = element['match_distance'][neighbor_reference_index]
-        game_name = element['input_name']
+        dist_reference = element["match_distance"][neighbor_reference_index]
+        game_name = element["input_name"]
 
         if dist_reference > 0 or check_database_of_problematic_game_names(game_name):
             print(
-                '\n'
+                "\n"
                 + game_name
-                + ' ('
-                + 'length:'
+                + " ("
+                + "length:"
                 + str(len(game_name))
-                + ')'
-                + ' ---> ',
-                end='',
+                + ")"
+                + " ---> ",
+                end="",
             )
-            for neighbor_index in range(len(element['match_distance'])):
-                dist = element['match_distance'][neighbor_index]
+            for neighbor_index in range(len(element["match_distance"])):
+                dist = element["match_distance"][neighbor_index]
                 print(
-                    element['matched_name'][neighbor_index]
-                    + ' (appID: '
-                    + element['matched_appID'][neighbor_index]
-                    + ' ; '
-                    + 'distance:'
+                    element["matched_name"][neighbor_index]
+                    + " (appID: "
+                    + element["matched_appID"][neighbor_index]
+                    + " ; "
+                    + "distance:"
                     + str(dist)
-                    + ')',
-                    end='\t',
+                    + ")",
+                    end="\t",
                 )
 
     print()
@@ -267,7 +267,7 @@ def display_matches(matches, print_after_sort=True):
     return
 
 
-def normalize_votes(raw_votes, matches, goty_field='goty_preferences'):
+def normalize_votes(raw_votes, matches, goty_field="goty_preferences"):
     # Index of the first neighbor
     neighbor_reference_index = 0
 
@@ -275,24 +275,24 @@ def normalize_votes(raw_votes, matches, goty_field='goty_preferences'):
 
     for voter_name in raw_votes:
         normalized_votes[voter_name] = {}
-        normalized_votes[voter_name]['ballots'] = {}
-        normalized_votes[voter_name]['distances'] = {}
+        normalized_votes[voter_name]["ballots"] = {}
+        normalized_votes[voter_name]["distances"] = {}
         for position, game_name in raw_votes[voter_name][goty_field].items():
             if game_name in matches:
                 # Display game name before error due to absence of any matched IGDB ID, in order to make it easier to
                 # incrementally and manually add hard-coded matches:
-                if len(matches[game_name]['matched_appID']) == 0:
-                    print(f'[Warning] no match found for {game_name}')
+                if len(matches[game_name]["matched_appID"]) == 0:
+                    print(f"[Warning] no match found for {game_name}")
 
-                normalized_votes[voter_name]['ballots'][position] = matches[game_name][
-                    'matched_appID'
+                normalized_votes[voter_name]["ballots"][position] = matches[game_name][
+                    "matched_appID"
                 ][neighbor_reference_index]
-                normalized_votes[voter_name]['distances'][position] = matches[
+                normalized_votes[voter_name]["distances"][position] = matches[
                     game_name
-                ]['match_distance'][neighbor_reference_index]
+                ]["match_distance"][neighbor_reference_index]
             else:
-                normalized_votes[voter_name]['ballots'][position] = None
-                normalized_votes[voter_name]['distances'][position] = None
+                normalized_votes[voter_name]["ballots"][position] = None
+                normalized_votes[voter_name]["distances"][position] = None
 
     return normalized_votes
 
@@ -308,8 +308,8 @@ def standardize_ballots(
     extend_previous_databases=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,
-    goty_field='goty_preferences',
-    year_constraint='equality',
+    goty_field="goty_preferences",
+    year_constraint="equality",
     print_matches=True,
     verbose=False,
 ):
@@ -375,10 +375,10 @@ def standardize_ballots(
     return (standardized_ballots, matches)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from load_ballots import get_ballot_file_name, load_ballots
 
-    ballot_year = '2018'
+    ballot_year = "2018"
     input_filename = get_ballot_file_name(ballot_year)
     use_levenshtein_distance = True
 

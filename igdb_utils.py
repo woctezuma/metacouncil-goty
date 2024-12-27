@@ -6,10 +6,10 @@ import datetime
 
 
 def get_igdb_api_url(end_point=None):
-    igdb_api_url = 'https://api.igdb.com/v4'
+    igdb_api_url = "https://api.igdb.com/v4"
 
     if end_point is not None:
-        url_separator = '/'
+        url_separator = "/"
 
         if not end_point.startswith(url_separator):
             end_point = url_separator + end_point
@@ -25,14 +25,14 @@ def get_igdb_api_url(end_point=None):
 
 
 def get_igdb_api_url_for_games():
-    end_point = '/games/'
+    end_point = "/games/"
     igdb_api_url_for_games = get_igdb_api_url(end_point=end_point)
 
     return igdb_api_url_for_games
 
 
 def get_igdb_api_url_for_release_dates():
-    end_point = '/release_dates/'
+    end_point = "/release_dates/"
     igdb_api_url_for_release_dates = get_igdb_api_url(end_point=end_point)
 
     return igdb_api_url_for_release_dates
@@ -52,8 +52,8 @@ def get_time_stamp_for_year_end(year):
 
 def get_igdb_request_params():
     params = {
-        'fields': '*',  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
-        'limit': 10,  # max value is 500
+        "fields": "*",  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
+        "limit": 10,  # max value is 500
     }
 
     return params
@@ -152,18 +152,18 @@ def append_filter_for_igdb_fields(
     filter_name,
     filter_value,
     use_parenthesis=False,
-    comparison_symbol='=',
+    comparison_symbol="=",
 ):
-    where_statement = ' ; where '
-    conjunction_statement = ' & '
+    where_statement = " ; where "
+    conjunction_statement = " & "
 
-    if filter_name.startswith('platform'):
+    if filter_name.startswith("platform"):
         # The filter name can be singular or plural:
         # - 'platforms' when used for games,
         # - 'platform' when used for release dates.
         use_parenthesis = True
 
-    if filter_name == 'category':
+    if filter_name == "category":
         # We will force the use of parenthesis if the filter value contains several game categories,
         # e.g. '1,4' or [1,4] will lead to a filtering with (1,4).
 
@@ -177,7 +177,7 @@ def append_filter_for_igdb_fields(
         use_parenthesis = bool(num_enforced_game_categories > 1)
 
         if num_enforced_game_categories > 1:
-            category_separator = ','
+            category_separator = ","
 
             if category_separator in filter_value:
                 # Adjust the count of game categories, because we previously included the separators in our count.
@@ -185,9 +185,9 @@ def append_filter_for_igdb_fields(
 
                 # filter_value is already a string, e.g. '1,4' or '(1,4)'. So we do not need to change it, unless it
                 # already contains parenthesis.
-                if filter_value.startswith('(') and filter_value.endswith(')'):
+                if filter_value.startswith("(") and filter_value.endswith(")"):
                     filter_value = filter_value[1:-1]
-                    num_enforced_game_categories -= len('()')
+                    num_enforced_game_categories -= len("()")
             else:
                 # Convert filter_value from a list of integers, e.g. [1,4], to a string, e.g. '1,4'.
                 filter_value = category_separator.join(
@@ -197,13 +197,13 @@ def append_filter_for_igdb_fields(
     if use_parenthesis:
         # Use parenthesis, e.g. (6), to look for games released on platform n°6, without discarding multi-platform games
         # Reference: https://medium.com/igdb/its-here-the-new-igdb-api-f6ad745b53fe
-        statement_to_append = '{} {} ({})'.format(
+        statement_to_append = "{} {} ({})".format(
             filter_name,
             comparison_symbol,
             filter_value,
         )
     else:
-        statement_to_append = '{} {} {}'.format(
+        statement_to_append = "{} {} {}".format(
             filter_name,
             comparison_symbol,
             filter_value,
@@ -217,15 +217,15 @@ def append_filter_for_igdb_fields(
     return igdb_fields
 
 
-def get_comparison_symbol(year_constraint='equality'):
-    if year_constraint == 'equality':
-        comparison_symbol = '='
-    elif year_constraint == 'minimum':
-        comparison_symbol = '>='
-    elif year_constraint == 'maximum':
-        comparison_symbol = '<='
+def get_comparison_symbol(year_constraint="equality"):
+    if year_constraint == "equality":
+        comparison_symbol = "="
+    elif year_constraint == "minimum":
+        comparison_symbol = ">="
+    elif year_constraint == "maximum":
+        comparison_symbol = "<="
     else:
-        comparison_symbol = '='
+        comparison_symbol = "="
 
     return comparison_symbol
 
@@ -236,28 +236,28 @@ def get_igdb_fields_for_games(
     enforced_platform=None,
     enforced_game_category=None,
     enforced_year=None,
-    year_constraint='equality',
+    year_constraint="equality",
 ):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
-    field_separator = ', '
+    field_separator = ", "
 
     igdb_fields_for_games = field_separator.join(
         [
-            'name',
-            'slug',
-            'platforms',
-            'category',
-            'release_dates.y',
-            'release_dates.platform',
-            'release_dates.human',
-            'external_games.category',
-            'external_games.name',
-            'external_games.uid',
-            'external_games.url',
-            'external_games.year',
-            'alternative_names.comment',
-            'alternative_names.name',
+            "name",
+            "slug",
+            "platforms",
+            "category",
+            "release_dates.y",
+            "release_dates.platform",
+            "release_dates.human",
+            "external_games.category",
+            "external_games.name",
+            "external_games.uid",
+            "external_games.url",
+            "external_games.year",
+            "alternative_names.comment",
+            "alternative_names.name",
         ],
     )
 
@@ -267,7 +267,7 @@ def get_igdb_fields_for_games(
 
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
-            'platforms',
+            "platforms",
             enforced_platform,
             use_parenthesis=True,
         )
@@ -278,7 +278,7 @@ def get_igdb_fields_for_games(
 
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
-            'category',
+            "category",
             enforced_game_category,
         )
 
@@ -287,7 +287,7 @@ def get_igdb_fields_for_games(
 
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
-            'release_dates.y',
+            "release_dates.y",
             enforced_year,
             comparison_symbol=comparison_symbol,
         )
@@ -302,17 +302,17 @@ def get_igdb_fields_for_release_dates(
 ):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
-    field_separator = ', '
+    field_separator = ", "
 
     igdb_fields_for_release_dates = field_separator.join(
         [
-            'game.name',
-            'game.slug',
-            'game.platforms',
-            'game.category',
-            'platform',
-            'human',
-            'y',
+            "game.name",
+            "game.slug",
+            "game.platforms",
+            "game.category",
+            "platform",
+            "human",
+            "y",
         ],
     )
 
@@ -322,7 +322,7 @@ def get_igdb_fields_for_release_dates(
 
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(
             igdb_fields_for_release_dates,
-            'platform',
+            "platform",
             enforced_platform,
             use_parenthesis=True,
         )
@@ -330,7 +330,7 @@ def get_igdb_fields_for_release_dates(
     if enforced_year is not None:
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(
             igdb_fields_for_release_dates,
-            'y',
+            "y",
             enforced_year,
         )
 
@@ -340,29 +340,29 @@ def get_igdb_fields_for_release_dates(
 def format_list_of_platforms(raw_data_platforms, verbose=True):
     formatted_data_platforms = {}
 
-    sorted_data_platforms = sorted(raw_data_platforms, key=lambda x: x['id'])
+    sorted_data_platforms = sorted(raw_data_platforms, key=lambda x: x["id"])
 
     for e in sorted_data_platforms:
-        id = e['id']
+        id = e["id"]
 
         formatted_data_platforms[id] = {}
-        formatted_data_platforms[id]['slug'] = e['slug']
-        formatted_data_platforms[id]['slug'] = e['name']
+        formatted_data_platforms[id]["slug"] = e["slug"]
+        formatted_data_platforms[id]["slug"] = e["name"]
 
         try:
-            formatted_data_platforms[id]['category'] = e['category']
+            formatted_data_platforms[id]["category"] = e["category"]
         except KeyError:
-            formatted_data_platforms[id]['category'] = None
+            formatted_data_platforms[id]["category"] = None
 
     if verbose:
         for id in formatted_data_platforms:
-            category = formatted_data_platforms[id]['category']
+            category = formatted_data_platforms[id]["category"]
 
             if category == get_pc_platform_no():
-                slug = formatted_data_platforms[id]['slug']
+                slug = formatted_data_platforms[id]["slug"]
 
                 print(
-                    'Category: {} ; ID: {} ; Slug: {}'.format(
+                    "Category: {} ; ID: {} ; Slug: {}".format(
                         category,
                         id,
                         slug,
@@ -373,15 +373,15 @@ def format_list_of_platforms(raw_data_platforms, verbose=True):
 
 
 def format_release_dates_for_manual_display(element):
-    if 'release_dates' in element:
+    if "release_dates" in element:
         release_years = {
-            str(date['y']) for date in element['release_dates'] if 'y' in date
+            str(date["y"]) for date in element["release_dates"] if "y" in date
         }
     else:
         release_years = None
 
     if release_years is not None:
-        release_years_as_str = ', '.join(sorted(release_years))
+        release_years_as_str = ", ".join(sorted(release_years))
     else:
         release_years_as_str = None
 

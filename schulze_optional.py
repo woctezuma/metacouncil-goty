@@ -102,7 +102,7 @@ if __name__ == "__main__":
         must_be_available_on_pc = False
         must_be_a_game = False
 
-        print('Category: ' + categorie)
+        print("Category: " + categorie)
         apply_pipeline_for_optional_categories(
             input_filename,
             release_year=release_year,
