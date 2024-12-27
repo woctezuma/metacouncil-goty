@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from parsing_params import get_parsing_indices
 
 
@@ -17,7 +19,7 @@ def load_input(filename, file_encoding="utf8", data_folder=None):
 
     full_path_to_file = data_folder + filename
 
-    with open(full_path_to_file, encoding=file_encoding) as f:
+    with Path(full_path_to_file).open(encoding=file_encoding) as f:
         for line in f:
             line = line.strip()
             # Remove empty lines and comments
@@ -113,15 +115,13 @@ def anonymize(
 
 
 def write_output(anonymized_data, output_filename, file_encoding="utf8") -> None:
-    import pathlib
-
     full_path_to_file = get_data_folder() + output_filename
 
-    data_path = pathlib.Path(full_path_to_file).parent
+    data_path = Path(full_path_to_file).parent
 
-    pathlib.Path(data_path).mkdir(parents=True, exist_ok=True)
+    Path(data_path).mkdir(parents=True, exist_ok=True)
 
-    with open(full_path_to_file, "w", encoding=file_encoding) as outfile:
+    with Path(full_path_to_file).open("w", encoding=file_encoding) as outfile:
         for element in anonymized_data:
             print(element, file=outfile)
 

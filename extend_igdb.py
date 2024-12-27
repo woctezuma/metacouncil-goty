@@ -1,5 +1,6 @@
 import json
 import time
+from pathlib import Path
 
 from anonymize_data import get_data_folder
 from igdb_databases import (
@@ -40,7 +41,7 @@ def load_fixes_to_igdb_database(release_year=None, database_type=None):
     )
 
     try:
-        with open(file_name, encoding="utf-8") as f:
+        with Path(file_name).open(encoding="utf-8") as f:
             fixes_to_igdb_database = json.load(f)
     except FileNotFoundError:
         print(f"File {file_name} not found.")

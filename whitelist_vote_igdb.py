@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix
@@ -14,7 +15,7 @@ def load_whitelisted_igdb_ids(release_year=None):
     file_name = get_file_name_for_whitelisted_igdb_ids(release_year=release_year)
 
     try:
-        with open(file_name, encoding="utf-8") as f:
+        with Path(file_name).open(encoding="utf-8") as f:
             whitelisted_igdb_ids = json.load(f)
     except FileNotFoundError:
         print(f"File {file_name} not found.")

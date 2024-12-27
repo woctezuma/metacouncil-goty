@@ -2,6 +2,7 @@
 
 import json
 import time
+from pathlib import Path
 
 import requests
 from igdb_local_secrets import get_igdb_user_key_file_name, load_igdb_user_key
@@ -73,7 +74,7 @@ def save_credentials_to_disk(credentials) -> None:
     time_dict = {"save_timestamp": get_unix_time_stamp()}
     igdb_user_key.update(time_dict)
 
-    with open(get_igdb_user_key_file_name(), "w", encoding="utf-8") as f:
+    with Path(get_igdb_user_key_file_name()).open("w", encoding="utf-8") as f:
         json.dump(igdb_user_key, f)
 
 
