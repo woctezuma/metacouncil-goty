@@ -19,10 +19,10 @@ from match_names import (
 def run_benchmark_for_steam_spy(
     raw_votes,
     release_year=None,
-    num_closest_neighbors=1,
-    max_num_tries_for_year=0,
-    use_levenshtein_distance=True,
-    goty_field="goty_preferences",
+    num_closest_neighbors: int = 1,
+    max_num_tries_for_year: int = 0,
+    use_levenshtein_distance: bool = True,
+    goty_field: str = "goty_preferences",
 ):
     seen_game_names = set()
     matches = {}

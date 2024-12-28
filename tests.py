@@ -319,7 +319,7 @@ class TestExtendSteamSpyMethods(unittest.TestCase):
 
 class TestMatchNamesMethods(unittest.TestCase):
     @staticmethod
-    def get_ballots(ballot_year="2018"):
+    def get_ballots(ballot_year: str = "2018") -> dict:
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
         return load_ballots.load_ballots(input_filename)
@@ -652,7 +652,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         assert len(formatted_list) == 3
 
     @staticmethod
-    def get_read_dead_redemption_two():
+    def get_read_dead_redemption_two() -> dict:
         return {
             "id": 25076,
             "name": "Red Dead Redemption 2",
@@ -681,14 +681,14 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
 class TestIGDBMatchNamesMethods(unittest.TestCase):
     @staticmethod
-    def get_dummy_match_database():
+    def get_dummy_match_database() -> dict[str, list[int]]:
         return {
             "Hello": [0],
             "World": [1, 2],
         }
 
     @staticmethod
-    def get_dummy_local_database():
+    def get_dummy_local_database() -> dict[str, dict]:
         igdb_data = TestIGDBUtilsMethods.get_read_dead_redemption_two()
         return {"25076": igdb_data}
 

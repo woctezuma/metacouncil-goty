@@ -1,14 +1,14 @@
-def get_main_categories():
+def get_main_categories() -> list[str]:
     # Caveat: the order matters!
     return ["goty", "gotd"]
 
 
-def get_optional_categories():
+def get_optional_categories() -> list[str]:
     # Caveat: the order matters!
     return ["dlc", "early_access", "vr", "turd"]
 
 
-def get_categories(categorie_type="main"):
+def get_categories(categorie_type: str = "main") -> list[str]:
     if categorie_type == "main":
         categories = get_main_categories()
     else:
@@ -17,7 +17,7 @@ def get_categories(categorie_type="main"):
     return categories
 
 
-def get_default_parsing_params():
+def get_default_parsing_params() -> dict[str, dict]:
     params = {}
 
     for categorie in get_main_categories():
@@ -29,7 +29,7 @@ def get_default_parsing_params():
     return params
 
 
-def adjust_params_to_year(params, year):
+def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str, dict]:
     # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
     if int(year) == 2018:
         params["vr"]["num_choices"] = 0
@@ -47,7 +47,7 @@ def get_adjusted_parsing_params(year):
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
-def get_next_indices(last_index=0, num_indices=0):
+def get_next_indices(last_index: int = 0, num_indices: int = 0) -> tuple[int, int, int]:
     # The first index to include
     start = 1 + last_index
 
@@ -59,7 +59,9 @@ def get_next_indices(last_index=0, num_indices=0):
     return start, end, description_index
 
 
-def convert_params_to_indices(params, offset=9):
+def convert_params_to_indices(
+    params: dict[str, dict], offset: int = 9
+) -> dict[str, dict]:
     voter_index = offset
 
     indices = {
@@ -96,7 +98,7 @@ def convert_params_to_indices(params, offset=9):
     return indices
 
 
-def get_parsing_offset(is_anonymized) -> int:
+def get_parsing_offset(is_anonymized: bool) -> int:
     return 0 if is_anonymized else 9
 
 

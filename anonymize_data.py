@@ -11,7 +11,9 @@ def get_anonymized_file_prefix() -> str:
     return "anonymized_"
 
 
-def load_input(filename, file_encoding="utf8", data_folder=None):
+def load_input(
+    filename: str, file_encoding: str = "utf8", data_folder: str | None = None
+) -> list[str]:
     if data_folder is None:
         data_folder = get_data_folder()
 
@@ -29,7 +31,7 @@ def load_input(filename, file_encoding="utf8", data_folder=None):
     return data
 
 
-def remove_header(data, content_start_criterion='"1"'):
+def remove_header(data: list[str], content_start_criterion: str = '"1"') -> list[str]:
     # Skip (header) lines until the first block of data content is encountered.
     num_rows_header = 0
     for row in data:
@@ -47,7 +49,9 @@ def remove_header(data, content_start_criterion='"1"'):
     return data_content
 
 
-def get_review_token_indices(ballot_year="2018", is_anonymized=False):
+def get_review_token_indices(
+    ballot_year: str = "2018", is_anonymized: bool = False
+) -> list[int]:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
     return [2 * v for v in indices["review"].values() if v is not None]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
@@ -56,7 +60,9 @@ def get_review_token_indices(ballot_year="2018", is_anonymized=False):
     # - [30, 52] for GOTY and GOTD in 2019
 
 
-def get_author_name_token_index(ballot_year="2018", is_anonymized=False):
+def get_author_name_token_index(
+    ballot_year: str = "2018", is_anonymized: bool = False
+) -> int:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
     return 2 * indices["voter_name"]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
@@ -64,14 +70,14 @@ def get_author_name_token_index(ballot_year="2018", is_anonymized=False):
 
 
 def anonymize(
-    data,
-    ballot_year,
-    fake_author_name=True,
-    redact_reviews=False,
-    faker_seed=0,
-    input_is_anonymized=False,
-    verbose=True,
-):
+    data: list[str],
+    ballot_year: str,
+    fake_author_name: bool = True,
+    redact_reviews: bool = False,
+    faker_seed: int = 0,
+    input_is_anonymized: bool = False,
+    verbose: bool = True,
+) -> list[str]:
     author_name_token_index = get_author_name_token_index(
         ballot_year=ballot_year,
         is_anonymized=input_is_anonymized,
@@ -114,7 +120,9 @@ def anonymize(
     return anonymized_data
 
 
-def write_output(anonymized_data, output_filename, file_encoding="utf8") -> None:
+def write_output(
+    anonymized_data: list[str], output_filename: str, file_encoding: str = "utf8"
+) -> None:
     full_path_to_file = get_data_folder() + output_filename
 
     data_path = Path(full_path_to_file).parent
@@ -127,13 +135,13 @@ def write_output(anonymized_data, output_filename, file_encoding="utf8") -> None
 
 
 def load_and_anonymize(
-    input_filename,
-    ballot_year,
-    file_encoding="utf-8",
-    fake_author_name=True,
-    redact_reviews=False,
-    data_folder=None,
-    verbose=True,
+    input_filename: str,
+    ballot_year: str,
+    file_encoding: str = "utf-8",
+    fake_author_name: bool = True,
+    redact_reviews: bool = False,
+    data_folder: str | None = None,
+    verbose: bool = True,
 ):
     output_filename = get_anonymized_file_prefix() + input_filename
 

@@ -7,7 +7,12 @@ from parsing_params import (
 )
 
 
-def extract_game_tokens(input_tokens, ind_list, num_choices, strip_game_name=True):
+def extract_game_tokens(
+    input_tokens: list[str],
+    ind_list: list[int],
+    num_choices: int,
+    strip_game_name: bool = True,
+) -> dict[int, str]:
     d = {}
     for i, ind in enumerate(ind_list):
         # Caveat: num_choices is not necessarily equal to len(ind_list)
@@ -19,11 +24,11 @@ def extract_game_tokens(input_tokens, ind_list, num_choices, strip_game_name=Tru
     return d
 
 
-def is_anonymized_file(fname):
+def is_anonymized_file(fname: str) -> bool:
     return bool(get_anonymized_file_prefix() in fname)
 
 
-def parse_csv(fname, parsing_params):
+def parse_csv(fname: str, parsing_params):
     text_data = load_input(fname)
 
     is_anonymized = is_anonymized_file(fname)
@@ -34,7 +39,9 @@ def parse_csv(fname, parsing_params):
     return parse_text_data(text_data, parsing_params, is_anonymized)
 
 
-def parse_text_data(text_data, parsing_params, is_anonymized):
+def parse_text_data(
+    text_data: list[str], parsing_params, is_anonymized: bool
+) -> dict[str, dict]:
     offset = get_parsing_offset(is_anonymized=is_anonymized)
     indices = convert_params_to_indices(parsing_params, offset=offset)
 
@@ -78,7 +85,7 @@ def fill_in_review(tokens, indices, single_ballot):
     return single_ballot
 
 
-def fill_in_game_list(tokens, indices, parsing_params, single_ballot):
+def fill_in_game_list(tokens, indices, parsing_params, single_ballot) -> dict:
     for categorie_type in ["main", "optional"]:
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]

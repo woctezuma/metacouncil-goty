@@ -1,7 +1,7 @@
 import steampi.api
 
 
-def get_link_to_store(app_id, hide_dummy_app_id=True):
+def get_link_to_store(app_id: str, hide_dummy_app_id: bool = True) -> str:
     steam_store_base_url = "https://store.steampowered.com/app/"
 
     if int(app_id) > 0:
@@ -15,7 +15,7 @@ def get_link_to_store(app_id, hide_dummy_app_id=True):
     return link_to_store
 
 
-def get_early_access_status(app_id):
+def get_early_access_status(app_id: str | int) -> bool:
     if int(app_id) > 0:
         app_details, _, _ = steampi.api.load_app_details(app_id)
     else:
