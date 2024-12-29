@@ -1,6 +1,7 @@
 from collections import Counter
 
 import steampi.calendar
+
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import (

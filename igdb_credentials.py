@@ -5,6 +5,7 @@ import time
 from pathlib import Path
 
 import requests
+
 from igdb_local_secrets import get_igdb_user_key_file_name, load_igdb_user_key
 
 

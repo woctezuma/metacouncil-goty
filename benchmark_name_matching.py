@@ -6,6 +6,7 @@
 import steampi.calendar
 import steampi.text_distances
 import steamspypi.api
+
 from disqualify_vote import is_a_noisy_vote
 from igdb_match_names import load_igdb_local_databases, print_igdb_matches
 from load_ballots import load_ballots

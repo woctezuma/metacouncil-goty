@@ -64,6 +64,7 @@ def match_optional_ballots(
     use_levenshtein_distance=True,
 ):
     import steampi.calendar
+
     from extend_steamspy import load_extended_steamspy_database
     from match_names import find_closest_app_id
 

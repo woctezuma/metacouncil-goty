@@ -1,6 +1,7 @@
 import time
 
 import requests
+
 from igdb_credentials import download_latest_credentials, load_credential_headers
 from igdb_local_secrets import load_igdb_user_key
 from igdb_utils import (

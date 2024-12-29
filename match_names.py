@@ -1,5 +1,6 @@
 import steampi.calendar
 import steampi.text_distances
+
 from disqualify_vote import is_a_noisy_vote
 from extend_steamspy import (
     get_app_name_for_problematic_app_id,
