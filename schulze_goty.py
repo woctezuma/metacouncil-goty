@@ -561,10 +561,7 @@ def print_voter_stats(
         counter[voter] = sum(i in goty for i in vote)
 
     for num_votes in reversed(range(max_num_ballots_per_person + 1)):
-        ballots = []
-        for v, c in counter.items():
-            if c == num_votes:
-                ballots.append(v)
+        ballots = [v for v, c in counter.items() if c == num_votes]
         print(
             f"\n{len(ballots)} ballots included {num_votes} games present in the top {len(goty)}.",
         )
