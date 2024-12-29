@@ -97,11 +97,10 @@ def extend_igdb_match_database(
 
     extended_igdb_match_database = igdb_match_database
     for app_name in fixes_to_igdb_match_database:
-        if app_name in igdb_match_database:
-            if verbose:
-                print(
-                    f"Query name {app_name} already exists in IGDB match database. Match will be overwritten.",
-                )
+        if app_name in igdb_match_database and verbose:
+            print(
+                f"Query name {app_name} already exists in IGDB match database. Match will be overwritten.",
+            )
         extended_igdb_match_database[app_name] = fixes_to_igdb_match_database[app_name]
 
     return extended_igdb_match_database

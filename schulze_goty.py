@@ -128,12 +128,15 @@ def filter_out_votes_for_wrong_release_years(
                 app_id_as_str = str(app_id)
 
                 # Due to the pagination recently adopted by SteamSpy API, local_database can miss many entries nowadays.
-                if not use_igdb and is_steamspy_api_paginated:
-                    if app_id_as_str not in local_database:
-                        local_database[app_id_as_str] = {}
-                        local_database[app_id_as_str]["name"] = (
-                            get_app_name_for_problematic_app_id(app_id_as_str)
-                        )
+                if (
+                    not use_igdb
+                    and is_steamspy_api_paginated
+                    and app_id_as_str not in local_database
+                ):
+                    local_database[app_id_as_str] = {}
+                    local_database[app_id_as_str]["name"] = (
+                        get_app_name_for_problematic_app_id(app_id_as_str)
+                    )
 
                 app_data = local_database[app_id_as_str]
                 app_name = app_data["name"]
