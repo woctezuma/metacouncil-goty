@@ -14,6 +14,7 @@ from schulze_goty import (
 def apply_pipeline_for_optional_categories(
     input_filename,
     release_year="2020",
+    *,
     try_to_break_ties=True,
     use_igdb=True,
     retrieve_igdb_data_from_scratch=True,

@@ -28,6 +28,7 @@ def is_a_noisy_vote(game_name):
 def filter_out_votes_for_hard_coded_reasons(
     standardized_ballots,
     release_year=None,
+    *,
     use_igdb=False,
 ):
     # Objective: remove appID which gathered votes but were manually marked for disqualification

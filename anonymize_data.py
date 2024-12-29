@@ -53,6 +53,7 @@ def remove_header(data: list[str], content_start_criterion: str = '"1"') -> list
 
 def get_review_token_indices(
     ballot_year: str = "2018",
+    *,
     is_anonymized: bool = False,
 ) -> list[int]:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
@@ -65,6 +66,7 @@ def get_review_token_indices(
 
 def get_author_name_token_index(
     ballot_year: str = "2018",
+    *,
     is_anonymized: bool = False,
 ) -> int:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
@@ -76,6 +78,7 @@ def get_author_name_token_index(
 def anonymize(
     data: list[str],
     ballot_year: str,
+    *,
     fake_author_name: bool = True,
     redact_reviews: bool = False,
     faker_seed: int = 0,
@@ -144,6 +147,7 @@ def load_and_anonymize(
     input_filename: str,
     ballot_year: str,
     file_encoding: str = "utf-8",
+    *,
     fake_author_name: bool = True,
     redact_reviews: bool = False,
     data_folder: str | None = None,

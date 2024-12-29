@@ -134,6 +134,7 @@ def append_filter_for_igdb_fields(
     igdb_fields,
     filter_name,
     filter_value,
+    *,
     use_parenthesis=False,
     comparison_symbol="=",
 ):
@@ -206,6 +207,7 @@ def get_comparison_symbol(year_constraint="equality"):
 
 
 def get_igdb_fields_for_games(
+    *,
     must_be_available_on_pc=True,
     must_be_a_game=True,
     enforced_platform=None,
@@ -269,6 +271,7 @@ def get_igdb_fields_for_games(
 
 
 def get_igdb_fields_for_release_dates(
+    *,
     must_be_available_on_pc=True,
     enforced_platform=None,
     enforced_year=None,
@@ -308,7 +311,7 @@ def get_igdb_fields_for_release_dates(
     return igdb_fields_for_release_dates
 
 
-def format_list_of_platforms(raw_data_platforms, verbose=True):
+def format_list_of_platforms(raw_data_platforms, *, verbose=True):
     formatted_data_platforms = {}
 
     sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))

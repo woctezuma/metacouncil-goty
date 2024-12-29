@@ -2,7 +2,7 @@ from parsing_params import get_adjusted_parsing_params
 from parsing_utils import parse_csv
 
 
-def get_ballot_file_name(ballot_year, is_anonymized=False):
+def get_ballot_file_name(ballot_year, *, is_anonymized=False):
     from anonymize_data import get_anonymized_file_prefix
 
     fname = f"pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
@@ -34,6 +34,7 @@ def print_reviews(
     app_id,
     goty_field="goty_preferences",
     goty_review_field=None,
+    *,
     export_for_forum=True,
 ) -> None:
     if goty_review_field is None:

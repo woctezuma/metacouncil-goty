@@ -22,6 +22,7 @@ def run_benchmark_for_steam_spy(
     release_year=None,
     num_closest_neighbors: int = 1,
     max_num_tries_for_year: int = 0,
+    *,
     use_levenshtein_distance: bool = True,
     goty_field: str = "goty_preferences",
 ):

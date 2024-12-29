@@ -15,7 +15,7 @@ def get_igdb_oauth_url() -> str:
     return "https://id.twitch.tv/oauth2/token"
 
 
-def load_client_params(verbose=False):
+def load_client_params(*, verbose=False):
     igdb_user_key = load_igdb_user_key()
 
     params = {
@@ -44,7 +44,7 @@ def get_default_credentials():
     }
 
 
-def load_credential_headers(verbose=False):
+def load_credential_headers(*, verbose=False):
     igdb_user_key = load_igdb_user_key()
 
     headers = get_default_headers()
@@ -81,7 +81,7 @@ def save_credentials_to_disk(credentials) -> None:
         json.dump(igdb_user_key, f)
 
 
-def download_latest_credentials(verbose=True):
+def download_latest_credentials(*, verbose=True):
     if verbose:
         print("[query] credentials")
 

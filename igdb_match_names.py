@@ -14,7 +14,7 @@ from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_serv
 from load_ballots import load_ballots
 
 
-def get_link_to_igdb_website(igdb_id, igdb_local_database, hide_dummy_app_id=True):
+def get_link_to_igdb_website(igdb_id, igdb_local_database, *, hide_dummy_app_id=True):
     igdb_base_url = "https://www.igdb.com/games/"
 
     igdb_id_as_str = str(igdb_id)
@@ -85,7 +85,7 @@ def get_igdb_release_years(igdb_data, target_release_year=None):
     return release_years, year_to_remember
 
 
-def format_game_name_for_igdb(raw_name, verbose=True):
+def format_game_name_for_igdb(raw_name, *, verbose=True):
     formatted_game_name_for_igdb = raw_name
 
     for character in ("®", "~", "'", ": ", " - ", "!", "™", " / "):
@@ -107,6 +107,7 @@ def format_game_name_for_igdb(raw_name, verbose=True):
 def match_names_with_igdb(
     raw_votes,
     release_year=None,
+    *,
     must_be_available_on_pc=True,
     must_be_a_game=True,
     goty_field="goty_preferences",
@@ -290,6 +291,7 @@ def merge_databases(new_database, previous_database):
 def download_igdb_local_databases(
     ballots,
     release_year=None,
+    *,
     apply_hard_coded_extension_and_fixes=True,
     extend_previous_databases=True,
     must_be_available_on_pc=True,
@@ -365,6 +367,7 @@ def figure_out_ballots_with_missing_data(
     igdb_match_database=None,
     release_year=None,
     goty_field="goty_preferences",
+    *,
     verbose=False,
 ):
     # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
@@ -394,6 +397,7 @@ def figure_out_ballots_with_missing_data(
 def download_igdb_data_for_ballots_with_missing_data(
     new_ballots,
     release_year=None,
+    *,
     apply_hard_coded_extension_and_fixes=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,
@@ -426,6 +430,7 @@ def download_igdb_data_for_ballots_with_missing_data(
 def load_igdb_local_databases(
     ballots,
     release_year=None,
+    *,
     apply_hard_coded_extension_and_fixes=True,
     must_be_available_on_pc=True,
     must_be_a_game=True,

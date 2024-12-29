@@ -110,6 +110,7 @@ def find_closest_app_id(
     release_year=None,
     num_closest_neighbors=1,
     max_num_tries_for_year=2,
+    *,
     use_levenshtein_distance=True,
     year_constraint="equality",
     is_steamspy_api_paginated=True,
@@ -168,6 +169,7 @@ def precompute_matches(
     release_year=None,
     num_closest_neighbors=3,
     max_num_tries_for_year=2,
+    *,
     use_levenshtein_distance=True,
     year_constraint="equality",
     goty_field="goty_preferences",
@@ -217,7 +219,7 @@ def precompute_matches(
     return matches
 
 
-def display_matches(matches, print_after_sort=True) -> None:
+def display_matches(matches, *, print_after_sort=True) -> None:
     # Index of the neighbor used to sort keys of the matches dictionary
     neighbor_reference_index = 0
 
@@ -296,6 +298,7 @@ def normalize_votes(raw_votes, matches, goty_field="goty_preferences"):
 def standardize_ballots(
     ballots,
     release_year,
+    *,
     print_after_sort=True,
     use_igdb=False,
     retrieve_igdb_data_from_scratch=True,

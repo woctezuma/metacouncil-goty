@@ -1,7 +1,7 @@
 import steampi.api
 
 
-def get_link_to_store(app_id: str, hide_dummy_app_id: bool = True) -> str:
+def get_link_to_store(app_id: str, *, hide_dummy_app_id: bool = True) -> str:
     steam_store_base_url = "https://store.steampowered.com/app/"
 
     if int(app_id) > 0:

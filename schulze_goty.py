@@ -74,7 +74,7 @@ def filter_out_votes_for_early_access_titles(
     return standardized_ballots
 
 
-def get_local_database(target_release_year=None, use_igdb=False, verbose=False):
+def get_local_database(target_release_year=None, *, use_igdb=False, verbose=False):
     if use_igdb:
         _, extended_igdb_local_database = extend_both_igdb_databases(
             release_year=target_release_year,
@@ -95,6 +95,7 @@ def get_local_database(target_release_year=None, use_igdb=False, verbose=False):
 def filter_out_votes_for_wrong_release_years(
     standardized_ballots,
     target_release_year,
+    *,
     use_igdb=False,
     year_constraint="equality",
     whitelisted_ids=None,
@@ -255,6 +256,7 @@ def compute_schulze_ranking(standardized_ballots):
 def print_schulze_ranking(
     schulze_ranking,
     target_release_year=None,
+    *,
     use_igdb=False,
 ) -> None:
     local_database = get_local_database(
@@ -535,6 +537,7 @@ def print_voter_stats(
     schulze_ranking,
     standardized_ballots,
     num_app_id_groups_to_display=7,
+    *,
     verbose=True,
 ) -> None:
     # Check how many people voted for N games which ended up in the top 10 of the GOTY ranking
@@ -572,6 +575,7 @@ def print_voter_stats(
 def apply_pipeline(
     input_filename,
     release_year="2018",
+    *,
     try_to_break_ties=False,
     use_igdb=False,
     retrieve_igdb_data_from_scratch=True,

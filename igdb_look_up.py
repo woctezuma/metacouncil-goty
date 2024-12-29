@@ -73,6 +73,7 @@ def get_igdb_request_headers():
 def look_up_game_name(
     game_name,
     enforced_year=None,
+    *,
     must_be_available_on_pc=True,
     must_be_a_game=True,
     enforced_platform=None,
@@ -118,6 +119,7 @@ def look_up_game_name(
 def look_up_game_id(
     game_id,
     enforced_year=None,
+    *,
     must_be_available_on_pc=True,
     must_be_a_game=True,
     enforced_platform=None,
@@ -166,6 +168,7 @@ def look_up_game_id(
 
 def look_up_games_released_in_given_year(
     enforced_year,
+    *,
     must_be_available_on_pc=True,
     enforced_platform=None,
     verbose=True,
@@ -200,7 +203,7 @@ def look_up_games_released_in_given_year(
     return data
 
 
-def download_list_of_platforms(verbose=True):
+def download_list_of_platforms(*, verbose=True):
     if verbose:
         print("[query] all possible platforms")
 
@@ -228,6 +231,7 @@ def download_list_of_platforms(verbose=True):
 
 def manual_look_up(
     input_query,
+    *,
     must_be_a_game=False,
     must_be_available_on_pc=False,
     verbose=True,

@@ -50,6 +50,7 @@ def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None
 def match_optional_ballots(
     optional_ballots,
     release_year=None,
+    *,
     use_igdb=False,
     retrieve_igdb_data_from_scratch=True,
     apply_hard_coded_extension_and_fixes=True,
@@ -237,6 +238,7 @@ def pretty_display(ranking) -> None:
 
 def display_optional_ballots(
     input_filename,
+    *,
     filter_noise=True,
     release_year=None,
     use_igdb=False,

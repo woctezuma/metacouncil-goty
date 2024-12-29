@@ -11,6 +11,7 @@ def extract_game_tokens(
     input_tokens: list[str],
     ind_list: list[int],
     num_choices: int,
+    *,
     strip_game_name: bool = True,
 ) -> dict[int, str]:
     d = {}

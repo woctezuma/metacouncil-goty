@@ -86,6 +86,7 @@ def extend_igdb_local_database(release_year=None, igdb_local_database=None):
 def extend_igdb_match_database(
     release_year=None,
     igdb_match_database=None,
+    *,
     verbose=True,
 ):
     if igdb_match_database is None:
@@ -110,6 +111,7 @@ def fill_in_blanks_in_the_local_database(
     release_year=None,
     igdb_local_database=None,
     igdb_match_database=None,
+    *,
     save_to_disk=True,
 ):
     if igdb_local_database is None:
@@ -169,6 +171,7 @@ def extend_both_igdb_databases(
     release_year=None,
     igdb_match_database=None,
     igdb_local_database=None,
+    *,
     verbose=True,
 ):
     # Manual extension of the match database
