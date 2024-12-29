@@ -560,15 +560,15 @@ def print_voter_stats(
         counter[voter] = sum(i in goty for i in vote)
 
     for num_votes in reversed(range(max_num_ballots_per_person + 1)):
-        l = []
+        ballots = []
         for v, c in counter.items():
             if c == num_votes:
-                l.append(v)
+                ballots.append(v)
         print(
-            f"\n{len(l)} ballots included {num_votes} games present in the top {len(goty)}.",
+            f"\n{len(ballots)} ballots included {num_votes} games present in the top {len(goty)}.",
         )
         if verbose:
-            print(l)
+            print(ballots)
 
 
 def apply_pipeline(
