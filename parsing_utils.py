@@ -88,7 +88,7 @@ def fill_in_review(tokens, indices, single_ballot):
 
 
 def fill_in_game_list(tokens, indices, parsing_params, single_ballot) -> dict:
-    for categorie_type in ["main", "optional"]:
+    for categorie_type in ("main", "optional"):
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]
             d = extract_game_tokens(

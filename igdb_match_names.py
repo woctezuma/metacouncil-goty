@@ -88,7 +88,7 @@ def get_igdb_release_years(igdb_data, target_release_year=None):
 def format_game_name_for_igdb(raw_name, verbose=True):
     formatted_game_name_for_igdb = raw_name
 
-    for character in ["®", "~", "'", ": ", " - ", "!", "™", " / "]:
+    for character in ("®", "~", "'", ": ", " - ", "!", "™", " / "):
         formatted_game_name_for_igdb = formatted_game_name_for_igdb.replace(
             character,
             " ",

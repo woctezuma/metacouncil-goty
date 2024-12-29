@@ -97,7 +97,7 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         expected_author_token_index = 18
         is_anonymized = False
 
-        for ballot_year in [2018, 2019, 2020]:
+        for ballot_year in (2018, 2019, 2020):
             author_token_index = anonymize_data.get_author_name_token_index(
                 ballot_year=ballot_year,
                 is_anonymized=is_anonymized,
@@ -157,8 +157,8 @@ class TestParsingParamsMethods(unittest.TestCase):
         goty_description_index = num_goty_games_per_voter + 1
         gotd_description_index = goty_description_index + num_gotd_games_per_voter + 1
 
-        for ballot_year in ["2018", "2019", "2020"]:
-            for is_anonymized in [True, False]:
+        for ballot_year in ("2018", "2019", "2020"):
+            for is_anonymized in (True, False):
                 indices = parsing_params.get_parsing_indices(
                     year=ballot_year,
                     is_anonymized=is_anonymized,
@@ -208,7 +208,7 @@ class TestLoadBallotsMethods(unittest.TestCase):
         num_goty_games_per_voter = 5
         num_gotd_games_per_voter = 10
 
-        for ballot_year in ["2018", "2019", "2020"]:
+        for ballot_year in ("2018", "2019", "2020"):
             parsing_params = load_ballots.get_parsing_params(ballot_year=ballot_year)
 
             assert len(parsing_params.keys()) == num_parameters
@@ -262,7 +262,7 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         # The empty string is not part of the hard-coded noisy votes, although it would be consider as noisy later on.
         assert empty_game_name not in noisy_votes
 
-        for noisy_game_name in ["n/a", "N/A", "-"]:
+        for noisy_game_name in ("n/a", "N/A", "-"):
             assert noisy_game_name in noisy_votes
 
     def test_is_a_noisy_vote(self) -> None:
@@ -271,11 +271,11 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         # The empty string is considered as noisy, although it is not part of the hard-coded noisy votes.
         assert game_name_is_a_noisy_vote
 
-        for noisy_game_name in ["n/a", "N/A", "-"]:
+        for noisy_game_name in ("n/a", "N/A", "-"):
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(noisy_game_name)
             assert game_name_is_a_noisy_vote
 
-        for real_game_name in ["Hitman", "Celeste", "SpyParty"]:
+        for real_game_name in ("Hitman", "Celeste", "SpyParty"):
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(real_game_name)
             assert not game_name_is_a_noisy_vote
 
@@ -479,8 +479,8 @@ class TestOptionalCategoriesMethods(unittest.TestCase):
 
 class TestExtendIGDBMethods(unittest.TestCase):
     def test_get_file_name_for_fixes_to_igdb_database(self) -> None:
-        for release_year in [None, "2018"]:
-            for database_type in ["match", "local"]:
+        for release_year in (None, "2018"):
+            for database_type in ("match", "local"):
                 file_name = extend_igdb.get_file_name_for_fixes_to_igdb_database(
                     release_year=release_year,
                     database_type=database_type,
@@ -888,13 +888,13 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
 
 class TestIGDBDatabasesMethods(unittest.TestCase):
     def test_get_igdb_file_name_suffix(self) -> None:
-        for release_year in [None, "2018"]:
+        for release_year in (None, "2018"):
             suffix = igdb_databases.get_igdb_file_name_suffix(release_year=release_year)
             expected_suffix = "" if release_year is None else "_" + str(release_year)
             assert suffix == expected_suffix
 
     def test_get_igdb_match_database_file_name(self) -> None:
-        for release_year in [None, "2018"]:
+        for release_year in (None, "2018"):
             file_name = igdb_databases.get_igdb_match_database_file_name(
                 release_year=release_year,
             )
@@ -907,7 +907,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
             assert file_name == expected_file_name
 
     def test_get_igdb_local_database_file_name(self) -> None:
-        for release_year in [None, "2018"]:
+        for release_year in (None, "2018"):
             file_name = igdb_databases.get_igdb_local_database_file_name(
                 release_year=release_year,
             )
@@ -947,7 +947,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
 
 class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
     def test_get_file_name_for_disqualified_igdb_ids(self) -> None:
-        for release_year in [None, "2018"]:
+        for release_year in (None, "2018"):
             file_name = disqualify_vote_igdb.get_file_name_for_disqualified_igdb_ids(
                 release_year=release_year,
             )
@@ -971,7 +971,7 @@ class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
 
 class TestWhiteListVoteIGDBMethods(unittest.TestCase):
     def test_get_file_name_for_whitelisted_igdb_ids(self) -> None:
-        for release_year in [None, "2018"]:
+        for release_year in (None, "2018"):
             file_name = whitelist_vote_igdb.get_file_name_for_whitelisted_igdb_ids(
                 release_year=release_year,
             )
