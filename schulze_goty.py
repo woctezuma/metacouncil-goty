@@ -478,8 +478,7 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
                     f"\nAt least one tie has been broken for group n°{group_no + 1}",
                 )
 
-            for untied_app_id_group in schulze_ranking_for_tied_app_id_group:
-                untied_schulze_ranking.append(untied_app_id_group)
+            untied_schulze_ranking.extend(schulze_ranking_for_tied_app_id_group)
         else:
             untied_schulze_ranking.append(app_id_group)
 
