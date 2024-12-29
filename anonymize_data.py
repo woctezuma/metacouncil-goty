@@ -27,7 +27,7 @@ def load_input(
         for raw_line in f:
             line = raw_line.strip()
             # Remove empty lines and comments
-            if len(line) > 0 and line[0:2] != "# ":
+            if line and line[0:2] != "# ":
                 data.append(line)
 
     return data
@@ -43,7 +43,7 @@ def remove_header(data: list[str], content_start_criterion: str = '"1"') -> list
 
     data_content = data[num_rows_header:]
 
-    if len(data_content) == 0:
+    if not data_content:
         # This situation occurs if the header has not been found, because the file was likely previously anonymized.
         # Ensure that we do not skip all of the (already anonymized) data by trying to remove a non-existent header!
         data_content = data

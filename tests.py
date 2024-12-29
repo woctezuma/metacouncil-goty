@@ -996,11 +996,11 @@ class TestWhiteListVoteIGDBMethods(unittest.TestCase):
 class TestWhiteListVoteMethods(unittest.TestCase):
     def test_get_hard_coded_whitelisted_app_ids(self) -> None:
         whitelisted_app_id_dict = whitelist_vote.get_hard_coded_whitelisted_app_ids()
-        assert len(whitelisted_app_id_dict) > 0
+        assert whitelisted_app_id_dict
 
     def test_load_whitelisted_ids(self) -> None:
         whitelisted_app_id_dict = whitelist_vote.load_whitelisted_ids(use_igdb=False)
-        assert len(whitelisted_app_id_dict) > 0
+        assert whitelisted_app_id_dict
 
     def test_main(self) -> None:
         assert whitelist_vote.main()
