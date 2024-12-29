@@ -253,7 +253,9 @@ def compute_schulze_ranking(standardized_ballots):
 
 
 def print_schulze_ranking(
-    schulze_ranking, target_release_year=None, use_igdb=False
+    schulze_ranking,
+    target_release_year=None,
+    use_igdb=False,
 ) -> None:
     local_database = get_local_database(
         target_release_year=target_release_year,
@@ -486,7 +488,8 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
 
 
 def print_ballot_distribution_for_given_appid(
-    app_id_group, standardized_ballots
+    app_id_group,
+    standardized_ballots,
 ) -> None:
     for app_id in app_id_group:
         ballot_distribution = None

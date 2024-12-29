@@ -25,7 +25,8 @@ def get_igdb_local_database_file_name(release_year: int | str | None = None) -> 
 
 
 def load_igdb_match_database(
-    release_year: int | str | None = None, file_name: str | None = None
+    release_year: int | str | None = None,
+    file_name: str | None = None,
 ) -> dict:
     if file_name is None:
         file_name = get_igdb_match_database_file_name(release_year=release_year)
@@ -35,7 +36,9 @@ def load_igdb_match_database(
 
 
 def save_igdb_match_database(
-    data: dict, release_year: int | str | None = None, file_name: str | None = None
+    data: dict,
+    release_year: int | str | None = None,
+    file_name: str | None = None,
 ) -> None:
     if file_name is None:
         file_name = get_igdb_match_database_file_name(release_year=release_year)
@@ -45,7 +48,8 @@ def save_igdb_match_database(
 
 
 def load_igdb_local_database(
-    release_year: int | str | None = None, file_name: str | None = None
+    release_year: int | str | None = None,
+    file_name: str | None = None,
 ) -> dict:
     if file_name is None:
         file_name = get_igdb_local_database_file_name(release_year=release_year)
@@ -55,7 +59,9 @@ def load_igdb_local_database(
 
 
 def save_igdb_local_database(
-    data: dict, release_year: int | str | None = None, file_name: str | None = None
+    data: dict,
+    release_year: int | str | None = None,
+    file_name: str | None = None,
 ) -> None:
     if file_name is None:
         file_name = get_igdb_local_database_file_name(release_year=release_year)

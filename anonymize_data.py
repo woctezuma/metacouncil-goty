@@ -12,7 +12,9 @@ def get_anonymized_file_prefix() -> str:
 
 
 def load_input(
-    filename: str, file_encoding: str = "utf8", data_folder: str | None = None
+    filename: str,
+    file_encoding: str = "utf8",
+    data_folder: str | None = None,
 ) -> list[str]:
     if data_folder is None:
         data_folder = get_data_folder()
@@ -50,7 +52,8 @@ def remove_header(data: list[str], content_start_criterion: str = '"1"') -> list
 
 
 def get_review_token_indices(
-    ballot_year: str = "2018", is_anonymized: bool = False
+    ballot_year: str = "2018",
+    is_anonymized: bool = False,
 ) -> list[int]:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
     return [2 * v for v in indices["review"].values() if v is not None]
@@ -61,7 +64,8 @@ def get_review_token_indices(
 
 
 def get_author_name_token_index(
-    ballot_year: str = "2018", is_anonymized: bool = False
+    ballot_year: str = "2018",
+    is_anonymized: bool = False,
 ) -> int:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
     return 2 * indices["voter_name"]
@@ -121,7 +125,9 @@ def anonymize(
 
 
 def write_output(
-    anonymized_data: list[str], output_filename: str, file_encoding: str = "utf8"
+    anonymized_data: list[str],
+    output_filename: str,
+    file_encoding: str = "utf8",
 ) -> None:
     full_path_to_file = get_data_folder() + output_filename
 

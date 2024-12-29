@@ -39,10 +39,10 @@ class TestParsingUtilsMethods(unittest.TestCase):
         )
 
         assert ballots["MyTestUserName"]["goty_description"].startswith(
-            "I like the idea"
+            "I like the idea",
         )
         assert ballots["MyTestUserName"]["goty_description"].endswith(
-            "you won't regret it!"
+            "you won't regret it!",
         )
         assert ballots["MyTestUserName"]["best_dlc"] == "Deep Rock Galactic"
         assert ballots["MyTestUserName"]["best_early_access"] == "Phasmophobia"
@@ -371,7 +371,9 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
         assert schulze_goty.apply_pipeline(
-            input_filename, release_year=ballot_year, try_to_break_ties=True
+            input_filename,
+            release_year=ballot_year,
+            try_to_break_ties=True,
         )
 
     def test_filtering_out(self) -> None:

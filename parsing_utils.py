@@ -40,7 +40,9 @@ def parse_csv(fname: str, parsing_params):
 
 
 def parse_text_data(
-    text_data: list[str], parsing_params, is_anonymized: bool
+    text_data: list[str],
+    parsing_params,
+    is_anonymized: bool,
 ) -> dict[str, dict]:
     offset = get_parsing_offset(is_anonymized=is_anonymized)
     indices = convert_params_to_indices(parsing_params, offset=offset)

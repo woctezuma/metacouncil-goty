@@ -60,7 +60,8 @@ def get_next_indices(last_index: int = 0, num_indices: int = 0) -> tuple[int, in
 
 
 def convert_params_to_indices(
-    params: dict[str, dict], offset: int = 9
+    params: dict[str, dict],
+    offset: int = 9,
 ) -> dict[str, dict]:
     voter_index = offset
 
