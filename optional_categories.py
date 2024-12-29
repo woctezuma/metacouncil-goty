@@ -131,17 +131,17 @@ def match_optional_ballots(
                     igdb_best_matched_id = None
 
                 if igdb_best_matched_id is not None:
-                    appID = str(igdb_best_matched_id)
+                    app_id = str(igdb_best_matched_id)
 
-                    app_name = local_database[appID]["name"]
+                    app_name = local_database[app_id]["name"]
 
                     _, app_id_release_date = get_igdb_human_release_dates(
-                        appID,
+                        app_id,
                         local_database,
                     )
-                    app_url = get_link_to_igdb_website(appID, local_database)
+                    app_url = get_link_to_igdb_website(app_id, local_database)
                 else:
-                    appID = None
+                    app_id = None
                     app_name = None
                     app_id_release_date = None
                     app_url = None
@@ -149,25 +149,25 @@ def match_optional_ballots(
             else:
                 # Using SteamSpy
 
-                (closest_appID, _) = find_closest_app_id(
+                (closest_app_id, _) = find_closest_app_id(
                     raw_name,
                     steamspy_database=local_database,
                     use_levenshtein_distance=use_levenshtein_distance,
                 )
 
-                appID = closest_appID[0]
+                app_id = closest_app_id[0]
 
-                app_name = local_database[appID]["name"]
+                app_name = local_database[app_id]["name"]
 
-                app_id_release_date = steampi.calendar.get_release_date_as_str(appID)
+                app_id_release_date = steampi.calendar.get_release_date_as_str(app_id)
 
-                app_url = get_link_to_store(appID)
+                app_url = get_link_to_store(app_id)
 
             if app_id_release_date is None:
                 app_id_release_date = "an unknown date"
 
             matches[raw_name] = {}
-            matches[raw_name]["matched_appID"] = appID
+            matches[raw_name]["matched_appID"] = app_id
             matches[raw_name]["matched_name"] = app_name
             matches[raw_name]["matched_release_date"] = app_id_release_date
             matches[raw_name]["matched_url"] = app_url

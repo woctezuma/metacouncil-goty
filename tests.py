@@ -349,7 +349,7 @@ class TestMatchNamesMethods(unittest.TestCase):
         raw_name = "Half-Life II"  # Typo ("II" instead of "2") on purpose to increase code coverage
         steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
-        (closest_appID, _) = match_names.find_closest_app_id(
+        (closest_app_id, _) = match_names.find_closest_app_id(
             raw_name,
             steamspy_database,
             release_year="2018",
@@ -357,7 +357,7 @@ class TestMatchNamesMethods(unittest.TestCase):
             max_num_tries_for_year=2,
         )
 
-        database_entry = steamspy_database[closest_appID[0]]
+        database_entry = steamspy_database[closest_app_id[0]]
 
         assert database_entry["appid"] == 220
         assert database_entry["name"] == "Half-Life 2"

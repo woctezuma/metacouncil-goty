@@ -268,19 +268,19 @@ def print_schulze_ranking(
 
     offset = 0
 
-    for rank, appID_group in enumerate(schulze_ranking):
-        for appID in sorted(appID_group, key=get_game_name):
-            game_name = get_game_name(appID)
+    for rank, app_id_group in enumerate(schulze_ranking):
+        for app_id in sorted(app_id_group, key=get_game_name):
+            game_name = get_game_name(app_id)
 
             if use_igdb:
                 _, app_id_release_date = get_igdb_human_release_dates(
-                    appID,
+                    app_id,
                     local_database,
                 )
-                app_url = get_link_to_igdb_website(appID, local_database)
+                app_url = get_link_to_igdb_website(app_id, local_database)
             else:
-                app_id_release_date = steampi.calendar.get_release_date_as_str(appID)
-                app_url = get_link_to_store(appID)
+                app_id_release_date = steampi.calendar.get_release_date_as_str(app_id)
+                app_url = get_link_to_store(app_id)
 
             if app_id_release_date is None:
                 app_id_release_date = "an unknown date"
@@ -295,7 +295,7 @@ def print_schulze_ranking(
                 + ")",
             )
 
-        offset += len(appID_group) - 1
+        offset += len(app_id_group) - 1
 
 
 def get_positions_for_single_voter(ballots):
@@ -462,10 +462,10 @@ def display_info_about_tie(
 def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
     untied_schulze_ranking = []
 
-    for group_no, appID_group in enumerate(schulze_ranking):
-        if len(appID_group) > 1:
+    for group_no, app_id_group in enumerate(schulze_ranking):
+        if len(app_id_group) > 1:
             schulze_ranking_for_tied_app_id_group = try_to_break_ties_in_app_id_group(
-                appID_group,
+                app_id_group,
                 standardized_ballots,
                 threshold_n=None,
             )
@@ -478,7 +478,7 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
             for untied_app_id_group in schulze_ranking_for_tied_app_id_group:
                 untied_schulze_ranking.append(untied_app_id_group)
         else:
-            untied_schulze_ranking.append(appID_group)
+            untied_schulze_ranking.append(app_id_group)
 
     return untied_schulze_ranking
 
@@ -486,7 +486,7 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
 def print_ballot_distribution_for_given_appid(
     app_id_group, standardized_ballots
 ) -> None:
-    for appID in app_id_group:
+    for app_id in app_id_group:
         ballot_distribution = None
 
         for voter_name in standardized_ballots:
@@ -498,10 +498,10 @@ def print_ballot_distribution_for_given_appid(
             positions = sorted(current_ballots.keys())
 
             for index, position in enumerate(positions):
-                if current_ballots[position] == appID:
+                if current_ballots[position] == app_id:
                     ballot_distribution[index] += 1
 
-        print("\nappID:" + appID, end="\t")
+        print("\nappID:" + app_id, end="\t")
         print("counts of ballots with rank 1, 2, ..., 5:\t", ballot_distribution)
 
 
@@ -510,8 +510,8 @@ def print_ballot_distribution_for_top_ranked_games(
     standardized_ballots,
     num_app_id_groups_to_display=3,
 ) -> None:
-    for appID_group in schulze_ranking[0:num_app_id_groups_to_display]:
-        print_ballot_distribution_for_given_appid(appID_group, standardized_ballots)
+    for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
+        print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots)
 
 
 def print_reviews_for_top_ranked_games(

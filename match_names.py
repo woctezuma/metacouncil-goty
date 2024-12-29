@@ -184,7 +184,7 @@ def precompute_matches(
                 seen_game_names.add(raw_name)
 
                 if not is_a_noisy_vote(raw_name):
-                    (closest_appID, closest_distance) = find_closest_app_id(
+                    (closest_app_id, closest_distance) = find_closest_app_id(
                         raw_name,
                         steamspy_database,
                         release_year,
@@ -197,18 +197,18 @@ def precompute_matches(
 
                     # Due to the pagination recently adopted by SteamSpy API, dist misses many entries nowadays.
                     if is_steamspy_api_paginated:
-                        for appID in closest_appID:
-                            if appID not in steamspy_database:
-                                steamspy_database[appID] = {}
-                                steamspy_database[appID]["name"] = (
-                                    get_app_name_for_problematic_app_id(appID)
+                        for app_id in closest_app_id:
+                            if app_id not in steamspy_database:
+                                steamspy_database[app_id] = {}
+                                steamspy_database[app_id]["name"] = (
+                                    get_app_name_for_problematic_app_id(app_id)
                                 )
 
                     element = {}
                     element["input_name"] = raw_name
-                    element["matched_appID"] = closest_appID
+                    element["matched_appID"] = closest_app_id
                     element["matched_name"] = [
-                        steamspy_database[appID]["name"] for appID in closest_appID
+                        steamspy_database[appID]["name"] for appID in closest_app_id
                     ]
                     element["match_distance"] = closest_distance
 
