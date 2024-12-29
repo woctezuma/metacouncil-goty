@@ -8,6 +8,8 @@ import requests
 
 from igdb_local_secrets import get_igdb_user_key_file_name, load_igdb_user_key
 
+TIMEOUT_IN_SECONDS = 5
+
 
 def get_igdb_oauth_url() -> str:
     return "https://id.twitch.tv/oauth2/token"
@@ -87,6 +89,7 @@ def download_latest_credentials(verbose=True):
         url=get_igdb_oauth_url(),
         headers=get_default_headers(),
         params=load_client_params(),
+        timeout=TIMEOUT_IN_SECONDS,
     )
 
     if response.ok:

@@ -2,7 +2,11 @@ import time
 
 import requests
 
-from igdb_credentials import download_latest_credentials, load_credential_headers
+from igdb_credentials import (
+    TIMEOUT_IN_SECONDS,
+    download_latest_credentials,
+    load_credential_headers,
+)
 from igdb_local_secrets import load_igdb_user_key
 from igdb_utils import (
     append_filter_for_igdb_fields,
@@ -102,6 +106,7 @@ def look_up_game_name(
         url=url,
         headers=headers,
         params=params,
+        timeout=TIMEOUT_IN_SECONDS,
     )
 
     data = response.json()
@@ -152,6 +157,7 @@ def look_up_game_id(
         url=url,
         headers=headers,
         params=params,
+        timeout=TIMEOUT_IN_SECONDS,
     )
 
     data = response.json()
@@ -189,6 +195,7 @@ def look_up_games_released_in_given_year(
         url=url,
         headers=headers,
         params=params,
+        timeout=TIMEOUT_IN_SECONDS,
     )
 
     data = response.json()
@@ -216,6 +223,7 @@ def download_list_of_platforms(verbose=True):
         url=url,
         headers=headers,
         params=params,
+        timeout=TIMEOUT_IN_SECONDS,
     )
 
     data = response.json()
