@@ -5,6 +5,8 @@
 import datetime
 import operator
 
+FIELD_SEPARATOR = ", "
+
 
 def get_igdb_api_url(end_point=None):
     igdb_api_url = "https://api.igdb.com/v4"
@@ -213,9 +215,7 @@ def get_igdb_fields_for_games(
 ):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
-    field_separator = ", "
-
-    igdb_fields_for_games = field_separator.join(
+    igdb_fields_for_games = FIELD_SEPARATOR.join(
         [
             "name",
             "slug",
@@ -275,9 +275,7 @@ def get_igdb_fields_for_release_dates(
 ):
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
-    field_separator = ", "
-
-    igdb_fields_for_release_dates = field_separator.join(
+    igdb_fields_for_release_dates = FIELD_SEPARATOR.join(
         [
             "game.name",
             "game.slug",
@@ -350,7 +348,7 @@ def format_release_dates_for_manual_display(element):
         release_years = None
 
     if release_years is not None:
-        release_years_as_str = ", ".join(sorted(release_years))
+        release_years_as_str = FIELD_SEPARATOR.join(sorted(release_years))
     else:
         release_years_as_str = None
 

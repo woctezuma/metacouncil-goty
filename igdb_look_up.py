@@ -102,14 +102,12 @@ def look_up_game_name(
 
     params["search"] = game_name
 
-    response = requests.post(
+    data = requests.post(
         url=url,
         headers=headers,
         params=params,
         timeout=TIMEOUT_IN_SECONDS,
-    )
-
-    data = response.json()
+    ).json()
 
     if verbose:
         print(f"Response (#games={len(data)}): {data}\n")
@@ -153,14 +151,12 @@ def look_up_game_id(
     params = get_igdb_request_params()
     params["fields"] = fields_str
 
-    response = requests.post(
+    data = requests.post(
         url=url,
         headers=headers,
         params=params,
         timeout=TIMEOUT_IN_SECONDS,
-    )
-
-    data = response.json()
+    ).json()
 
     if verbose:
         print(f"Response (#games={len(data)}): {data}\n")
@@ -191,14 +187,12 @@ def look_up_games_released_in_given_year(
     params = get_igdb_request_params()
     params["fields"] = fields_str
 
-    response = requests.post(
+    data = requests.post(
         url=url,
         headers=headers,
         params=params,
         timeout=TIMEOUT_IN_SECONDS,
-    )
-
-    data = response.json()
+    ).json()
 
     if verbose:
         print(f"Response (#games={len(data)}): {data}\n")
@@ -219,14 +213,12 @@ def download_list_of_platforms(verbose=True):
     params["fields"] = fields_str
     params["limit"] = 500
 
-    response = requests.post(
+    data = requests.post(
         url=url,
         headers=headers,
         params=params,
         timeout=TIMEOUT_IN_SECONDS,
-    )
-
-    data = response.json()
+    ).json()
 
     if verbose:
         print(f"Response (#platforms={len(data)}): {data}\n")
