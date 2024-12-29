@@ -21,6 +21,13 @@ import schulze_goty
 import steam_store_utils
 import whitelist_vote
 import whitelist_vote_igdb
+from parsing_params import YEAR_WITH_DECADE_VOTE, YEAR_WITH_NO_VR_VOTE
+
+EXPECTED_NUM_BALLOTS = 3
+EXPECTED_NUM_REVIEW_TOKEN_INDICES = 2
+HALF_LIFE_TWO_APP_ID = 220
+PC_PLATFORM_NO = 6
+REFERENCE_TIMESTAMP = 31532400
 
 
 class TestParsingUtilsMethods(unittest.TestCase):
@@ -115,7 +122,7 @@ class TestAnonymizeDataMethods(unittest.TestCase):
             ballot_year=ballot_year,
             is_anonymized=is_anonymized,
         )
-        assert len(review_token_indices) == 2
+        assert len(review_token_indices) == EXPECTED_NUM_REVIEW_TOKEN_INDICES
         assert goty_description_token_index in review_token_indices
         assert gotd_description_token_index in review_token_indices
 
@@ -137,7 +144,7 @@ class TestAnonymizeDataMethods(unittest.TestCase):
             ballot_year=ballot_year,
         )
 
-        assert len(anonymized_data) == 3
+        assert len(anonymized_data) == EXPECTED_NUM_BALLOTS
 
 
 class TestParsingParamsMethods(unittest.TestCase):
@@ -166,7 +173,7 @@ class TestParsingParamsMethods(unittest.TestCase):
                 assert len(indices["main"]["goty"]) == num_goty_games_per_voter
                 assert indices["review"]["goty"] == goty_description_index + offset
 
-                if int(ballot_year) == 2019:
+                if int(ballot_year) == YEAR_WITH_DECADE_VOTE:
                     assert len(indices["main"]["gotd"]) == num_gotd_games_per_voter
                     assert indices["review"]["gotd"] == gotd_description_index + offset
                     # caveat: GOTD below, because there exists a GOTD
@@ -179,7 +186,7 @@ class TestParsingParamsMethods(unittest.TestCase):
 
                 assert len(indices["optional"]["dlc"]) == 1
                 assert len(indices["optional"]["early_access"]) == 1
-                if int(ballot_year) == 2018:
+                if int(ballot_year) == YEAR_WITH_NO_VR_VOTE:
                     assert len(indices["optional"]["vr"]) == 0
                 else:
                     assert len(indices["optional"]["vr"]) == 1
@@ -187,7 +194,7 @@ class TestParsingParamsMethods(unittest.TestCase):
 
                 assert 1 + new_offset in indices["optional"]["dlc"]
                 assert 2 + new_offset in indices["optional"]["early_access"]
-                if int(ballot_year) == 2018:
+                if int(ballot_year) == YEAR_WITH_NO_VR_VOTE:
                     assert 3 + new_offset in indices["optional"]["turd"]
                 else:
                     assert 3 + new_offset in indices["optional"]["vr"]
@@ -208,7 +215,7 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
             assert parsing_params["goty"]["num_choices"] == num_goty_games_per_voter
 
-            if int(ballot_year) == 2019:
+            if int(ballot_year) == YEAR_WITH_DECADE_VOTE:
                 assert parsing_params["gotd"]["num_choices"] == num_gotd_games_per_voter
             else:
                 assert parsing_params["gotd"]["num_choices"] == 0
@@ -216,7 +223,7 @@ class TestLoadBallotsMethods(unittest.TestCase):
             assert parsing_params["dlc"]["num_choices"] == 1
             assert parsing_params["early_access"]["num_choices"] == 1
 
-            if int(ballot_year) == 2018:
+            if int(ballot_year) == YEAR_WITH_NO_VR_VOTE:
                 assert parsing_params["vr"]["num_choices"] == 0
             else:
                 assert parsing_params["vr"]["num_choices"] == 1
@@ -230,14 +237,14 @@ class TestLoadBallotsMethods(unittest.TestCase):
         )
         ballots = load_ballots.load_ballots(input_filename)
 
-        assert len(ballots) == 3
+        assert len(ballots) == EXPECTED_NUM_BALLOTS
 
     def test_load_ballots(self) -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
         ballots = load_ballots.load_ballots(input_filename)
 
-        assert len(ballots) == 6
+        assert len(ballots) == PC_PLATFORM_NO
 
 
 class TestHardCodedMatchesMethods(unittest.TestCase):
@@ -359,7 +366,7 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         database_entry = steamspy_database[closest_app_id[0]]
 
-        assert database_entry["appid"] == 220
+        assert database_entry["appid"] == HALF_LIFE_TWO_APP_ID
         assert database_entry["name"] == "Half-Life 2"
         assert database_entry["developer"] == "Valve"
         assert database_entry["publisher"] == "Valve"
@@ -555,11 +562,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     def test_get_time_stamp_for_year_start(self) -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_start(year=1971)
-        assert int(time_stamp) >= 31532400
+        assert int(time_stamp) >= REFERENCE_TIMESTAMP
 
     def test_get_time_stamp_for_year_end(self) -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_end(year=1970)
-        assert int(time_stamp) >= 31532400
+        assert int(time_stamp) >= REFERENCE_TIMESTAMP
 
     def test_get_igdb_user_key_file_name(self) -> None:
         file_name = igdb_local_secrets.get_igdb_user_key_file_name()
@@ -580,11 +587,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     def test_get_pc_platform_no(self) -> None:
         value = igdb_utils.get_pc_platform_no()
-        assert value == 6
+        assert value == PC_PLATFORM_NO
 
     def test_get_pc_platform_range(self) -> None:
         value_list = igdb_utils.get_pc_platform_range()
-        assert 6 in value_list
+        assert PC_PLATFORM_NO in value_list
 
     def test_get_game_category_no(self) -> None:
         value_list = igdb_utils.get_game_category_no()
@@ -651,7 +658,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
         formatted_list = igdb_utils.format_list_of_platforms(platform_list)
 
-        assert len(formatted_list) == 3
+        assert len(formatted_list) == len(platform_list)
 
     @staticmethod
     def get_read_dead_redemption_two() -> dict:
@@ -741,11 +748,12 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
         igdb_data = igdb_local_database[igdb_id]
+        target_release_year = "2018"
         _release_years, year_to_remember = igdb_match_names.get_igdb_release_years(
             igdb_data,
-            target_release_year="2018",
+            target_release_year=target_release_year,
         )
-        assert year_to_remember == 2019
+        assert year_to_remember == int(target_release_year) + 1
 
     def test_format_game_name_for_igdb(self) -> None:
         game_name = "Hello World"
@@ -781,9 +789,9 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             new_database=new_database,
             previous_database=previous_database,
         )
-        assert len(merged_database) == 2
-        assert merged_database["a"] == 2
-        assert merged_database["b"] == 1
+        assert len(merged_database) == len(previous_database)
+        assert merged_database["a"] == new_database["a"]
+        assert merged_database["b"] == previous_database["b"]
 
     def test_merge_databases_where_entry_did_not_exist(self) -> None:
         new_database = {"c": 2}
@@ -793,10 +801,10 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             new_database=new_database,
             previous_database=previous_database,
         )
-        assert len(merged_database) == 3
-        assert merged_database["a"] == 0
-        assert merged_database["b"] == 1
-        assert merged_database["c"] == 2
+        assert len(merged_database) == len(previous_database) + len(new_database)
+        assert merged_database["a"] == previous_database["a"]
+        assert merged_database["b"] == previous_database["b"]
+        assert merged_database["c"] == new_database["c"]
 
     def test_figure_out_ballots_with_missing_data(self) -> None:
         dummy_voter = "dummy_voter_name"

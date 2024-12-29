@@ -1,3 +1,8 @@
+YEAR_WITH_NO_VR_VOTE = 2018
+YEAR_WITH_DECADE_VOTE = 2019
+DIGIT_OF_LAST_YEAR_OF_DECADE = YEAR_WITH_DECADE_VOTE % 10
+
+
 def get_main_categories() -> list[str]:
     # Caveat: the order matters!
     return ["goty", "gotd"]
@@ -31,11 +36,11 @@ def get_default_parsing_params() -> dict[str, dict]:
 
 def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str, dict]:
     # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
-    if int(year) == 2018:
+    if int(year) == YEAR_WITH_NO_VR_VOTE:
         params["vr"]["num_choices"] = 0
 
     # NB: if the ballot year ends with a "9", e.g. "2019", then it is the last year of its decade, and there is a GotD.
-    if int(year) % 10 == 9:
+    if int(year) % 10 == DIGIT_OF_LAST_YEAR_OF_DECADE:
         params["gotd"]["num_choices"] = 10
     else:
         params["gotd"]["num_choices"] = 0
