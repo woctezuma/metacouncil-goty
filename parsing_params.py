@@ -104,7 +104,7 @@ def convert_params_to_indices(
     return indices
 
 
-def get_parsing_offset(is_anonymized: bool) -> int:
+def get_parsing_offset(*, is_anonymized: bool) -> int:
     return 0 if is_anonymized else 9
 
 
