@@ -540,8 +540,7 @@ def print_voter_stats(
 
     goty = []
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
-        for app_id in app_id_group:
-            goty.append(int(app_id))
+        goty.extend([int(app_id) for app_id in app_id_group])
 
     print(f"\nVoter stats are displayed based on the top {len(goty)} games")
 
