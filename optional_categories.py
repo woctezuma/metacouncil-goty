@@ -25,13 +25,7 @@ def get_optional_ballots(ballots, category_name):
 
 
 def filter_noise_from_optional_ballots(optional_ballots):
-    filtered_optional_ballots = []
-
-    for element in optional_ballots:
-        if not is_a_noisy_vote(element):
-            filtered_optional_ballots.append(element)
-
-    return filtered_optional_ballots
+    return [element for element in optional_ballots if not is_a_noisy_vote(element)]
 
 
 def get_dummy_field() -> str:
