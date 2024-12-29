@@ -47,7 +47,10 @@ def parse_text_data(
     is_anonymized: bool,
 ) -> dict[str, dict]:
     offset = get_parsing_offset(is_anonymized=is_anonymized)
-    indices = convert_params_to_indices(parsing_params, offset=offset)
+    indices: dict[str, dict[str, list[int | None]]] = convert_params_to_indices(
+        parsing_params,
+        offset=offset,
+    )
 
     quote = '"'
 
@@ -73,14 +76,18 @@ def parse_text_data(
     return ballots
 
 
-def read_voter_name(tokens, indices):
-    ind = indices["voter_name"]
+def read_voter_name(tokens, indices: dict[str, dict[str, list[int | None]]]):
+    ind = indices["voter_name"]["index"][0]
     return tokens[ind]
 
 
-def fill_in_review(tokens, indices, single_ballot):
+def fill_in_review(
+    tokens,
+    indices: dict[str, dict[str, list[int | None]]],
+    single_ballot,
+):
     for categorie in get_categories("main"):
-        ind = indices["review"][categorie]
+        ind = indices["review"][categorie][0]
         review = None if ind is None else tokens[ind]
 
         goty_review_field = f"{categorie}_description"
@@ -89,7 +96,12 @@ def fill_in_review(tokens, indices, single_ballot):
     return single_ballot
 
 
-def fill_in_game_list(tokens, indices, parsing_params, single_ballot) -> dict:
+def fill_in_game_list(
+    tokens,
+    indices: dict[str, dict[str, list[int | None]]],
+    parsing_params,
+    single_ballot,
+) -> dict:
     for categorie_type in ("main", "optional"):
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]

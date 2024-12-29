@@ -57,7 +57,7 @@ def get_review_token_indices(
     is_anonymized: bool = False,
 ) -> list[int]:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    return [2 * v for v in indices["review"].values() if v is not None]
+    return [2 * v[0] for v in indices["review"].values() if v[0] is not None]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected results for a file which was not anonymized:
     # - [30] for GOTY in 2018 and 2020
@@ -70,7 +70,7 @@ def get_author_name_token_index(
     is_anonymized: bool = False,
 ) -> int:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    return 2 * indices["voter_name"]
+    return 2 * indices["voter_name"]["index"][0]
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected result for a file which was not anonymized: 18.
 

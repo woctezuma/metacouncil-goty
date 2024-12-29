@@ -168,19 +168,25 @@ class TestParsingParamsMethods(unittest.TestCase):
 
                 offset = 0 if is_anonymized else 9
 
-                assert indices["voter_name"] == offset
+                assert len(indices["voter_name"]["index"]) == 1
+                assert indices["voter_name"]["index"][0] == offset
 
                 assert len(indices["main"]["goty"]) == num_goty_games_per_voter
-                assert indices["review"]["goty"] == goty_description_index + offset
+                assert len(indices["review"]["goty"]) == 1
+                assert indices["review"]["goty"][0] == goty_description_index + offset
 
                 if int(ballot_year) == YEAR_WITH_DECADE_VOTE:
                     assert len(indices["main"]["gotd"]) == num_gotd_games_per_voter
-                    assert indices["review"]["gotd"] == gotd_description_index + offset
+                    assert len(indices["review"]["gotd"]) == 1
+                    assert (
+                        indices["review"]["gotd"][0] == gotd_description_index + offset
+                    )
                     # caveat: GOTD below, because there exists a GOTD
                     new_offset = gotd_description_index + offset
                 else:
                     assert len(indices["main"]["gotd"]) == 0
-                    assert indices["review"]["gotd"] is None
+                    assert len(indices["review"]["gotd"]) == 1
+                    assert indices["review"]["gotd"][0] is None
                     # caveat: GOTY below, because there is **no** GOTD
                     new_offset = goty_description_index + offset
 

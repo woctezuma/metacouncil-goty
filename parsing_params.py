@@ -70,11 +70,11 @@ def get_next_indices(
 def convert_params_to_indices(
     params: dict[str, dict],
     offset: int = 9,
-) -> dict:
+) -> dict[str, dict[str, list[int | None]]]:
     voter_index = offset
 
-    indices = {
-        "voter_name": voter_index,
+    indices: dict[str, dict[str, list[int | None]]] = {
+        "voter_name": {"index": [voter_index]},
         "main": {},
         "review": {},
         "optional": {},
@@ -88,7 +88,7 @@ def convert_params_to_indices(
             num_indices=params[categorie]["num_choices"],
         )
         indices["main"][categorie] = list(range(start, end))
-        indices["review"][categorie] = descr
+        indices["review"][categorie] = [descr]
 
         if descr is not None:
             # range() will stop at end-1, and then the review is at index equal to end, so the last index is "end"
@@ -111,7 +111,10 @@ def get_parsing_offset(*, is_anonymized: bool) -> int:
     return 0 if is_anonymized else 9
 
 
-def get_parsing_indices(year: str | int, is_anonymized: bool):
+def get_parsing_indices(
+    year: str | int,
+    is_anonymized: bool,
+) -> dict[str, dict[str, list[int | None]]]:
     params = get_adjusted_parsing_params(year=year)
     offset = get_parsing_offset(is_anonymized=is_anonymized)
     return convert_params_to_indices(params, offset)
