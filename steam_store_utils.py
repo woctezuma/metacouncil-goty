@@ -22,11 +22,8 @@ def get_early_access_status(app_id: str | int) -> bool:
         app_details = {}
 
     try:
-        is_early_access = bool(
-            any(
-                genre["description"] == "Early Access"
-                for genre in app_details["genres"]
-            ),
+        is_early_access = any(
+            genre["description"] == "Early Access" for genre in app_details["genres"]
         )
     except KeyError:
         is_early_access = False
