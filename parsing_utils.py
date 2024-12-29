@@ -37,7 +37,7 @@ def parse_csv(fname: str, parsing_params):
     if not is_anonymized:
         text_data = remove_header(text_data)
 
-    return parse_text_data(text_data, parsing_params, is_anonymized)
+    return parse_text_data(text_data, parsing_params, is_anonymized=is_anonymized)
 
 
 def parse_text_data(
@@ -58,7 +58,7 @@ def parse_text_data(
 
         voter_name = read_voter_name(tokens, indices)
 
-        single_ballot = {}
+        single_ballot: dict = {}
         single_ballot = fill_in_review(tokens, indices, single_ballot=single_ballot)
         single_ballot = fill_in_game_list(
             tokens,

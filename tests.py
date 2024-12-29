@@ -411,7 +411,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
     def test_filter_out_votes_for_early_access_titles(self) -> None:
         ballot_year = "2018"
 
-        ballots = {}
+        ballots: dict = {}
 
         # Add dummy vote for an Early Access game
         ballots["dummy_voter_name"] = {}
@@ -810,7 +810,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         dummy_voter = "dummy_voter_name"
         goty_field = "dummy_preferences"
 
-        ballots = {}
+        ballots: dict = {}
         ballots[dummy_voter] = {}
         ballots[dummy_voter][goty_field] = {}
         ballots[dummy_voter][goty_field][1] = "Hello"
@@ -844,7 +844,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_load_igdb_local_databases(self) -> None:
         ballot_year = "2018"
 
-        ballots = {}
+        ballots: dict = {}
 
         # Add dummy votes for the two actual GotY 2018 on MetaCouncil
         ballots["dummy_voter_name"] = {}
@@ -925,7 +925,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         assert data is not None
 
     def test_save_igdb_match_database(self) -> None:
-        data = {}
+        data: dict = {}
         file_name = "data/dummy_match_file_for_unit_test.json"
         igdb_databases.save_igdb_match_database(data, file_name=file_name)
         assert Path(file_name).exists()
@@ -936,7 +936,7 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
         assert data is not None
 
     def test_save_igdb_local_database(self) -> None:
-        data = {}
+        data: dict = {}
         file_name = "data/dummy_local_file_for_unit_test.json"
         igdb_databases.save_igdb_local_database(data, file_name=file_name)
         assert Path(file_name).exists()

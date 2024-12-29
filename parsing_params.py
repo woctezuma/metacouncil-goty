@@ -48,11 +48,14 @@ def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str,
     return params
 
 
-def get_adjusted_parsing_params(year):
+def get_adjusted_parsing_params(year: str | int):
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
-def get_next_indices(last_index: int = 0, num_indices: int = 0) -> tuple[int, int, int]:
+def get_next_indices(
+    last_index: int = 0,
+    num_indices: int = 0,
+) -> tuple[int, int, int | None]:
     # The first index to include
     start = 1 + last_index
 
@@ -67,7 +70,7 @@ def get_next_indices(last_index: int = 0, num_indices: int = 0) -> tuple[int, in
 def convert_params_to_indices(
     params: dict[str, dict],
     offset: int = 9,
-) -> dict[str, dict]:
+) -> dict:
     voter_index = offset
 
     indices = {
@@ -108,9 +111,9 @@ def get_parsing_offset(*, is_anonymized: bool) -> int:
     return 0 if is_anonymized else 9
 
 
-def get_parsing_indices(year, is_anonymized):
+def get_parsing_indices(year: str | int, is_anonymized: bool):
     params = get_adjusted_parsing_params(year=year)
-    offset = get_parsing_offset(is_anonymized)
+    offset = get_parsing_offset(is_anonymized=is_anonymized)
     return convert_params_to_indices(params, offset)
 
 

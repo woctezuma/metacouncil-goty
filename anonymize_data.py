@@ -65,7 +65,7 @@ def get_review_token_indices(
 
 
 def get_author_name_token_index(
-    ballot_year: str = "2018",
+    ballot_year: str | int = "2018",
     *,
     is_anonymized: bool = False,
 ) -> int:

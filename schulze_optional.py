@@ -12,21 +12,21 @@ from schulze_goty import (
 
 
 def apply_pipeline_for_optional_categories(
-    input_filename,
-    release_year="2020",
+    input_filename: str,
+    release_year: str = "2020",
     *,
-    try_to_break_ties=True,
-    use_igdb=True,
-    retrieve_igdb_data_from_scratch=True,
-    apply_hard_coded_extension_and_fixes=True,
-    use_levenshtein_distance=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    print_matches=True,
-    num_app_id_groups_to_display=3,
-    must_be_available_on_pc=False,
-    must_be_a_game=False,
-    verbose=False,
+    try_to_break_ties: bool = True,
+    use_igdb: bool = True,
+    retrieve_igdb_data_from_scratch: bool = True,
+    apply_hard_coded_extension_and_fixes: bool = True,
+    use_levenshtein_distance: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    print_matches: bool = True,
+    num_app_id_groups_to_display: int = 3,
+    must_be_available_on_pc: bool = False,
+    must_be_a_game: bool = False,
+    verbose: bool = False,
 ) -> bool:
     ballots = load_ballots(input_filename)
 
