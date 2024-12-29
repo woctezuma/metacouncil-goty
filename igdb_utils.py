@@ -36,7 +36,7 @@ def get_igdb_api_url_for_release_dates():
 
 
 def get_time_stamp_for_year_start(year):
-    return datetime.datetime(year, 1, 1).timestamp()
+    return datetime.datetime(year, 1, 1, tzinfo=datetime.UTC).timestamp()
 
 
 def get_time_stamp_for_year_end(year):
