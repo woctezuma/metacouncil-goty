@@ -227,7 +227,7 @@ def download_list_of_platforms(verbose=True):
 
 
 def manual_look_up(
-    input,
+    input_query,
     must_be_a_game=False,
     must_be_available_on_pc=False,
     verbose=True,
@@ -241,16 +241,16 @@ def manual_look_up(
     # - and database extensions.
 
     try:
-        input = int(input)
+        input_query = int(input_query)
 
         data = look_up_game_id(
-            input,
+            input_query,
             must_be_a_game=must_be_a_game,
             must_be_available_on_pc=must_be_available_on_pc,
         )
     except ValueError:
         data = look_up_game_name(
-            input,
+            input_query,
             must_be_a_game=must_be_a_game,
             must_be_available_on_pc=must_be_available_on_pc,
         )

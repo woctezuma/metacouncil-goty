@@ -316,26 +316,26 @@ def format_list_of_platforms(raw_data_platforms, verbose=True):
     sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))
 
     for e in sorted_data_platforms:
-        id = e["id"]
+        element_id = e["id"]
 
-        formatted_data_platforms[id] = {}
-        formatted_data_platforms[id]["slug"] = e["slug"]
-        formatted_data_platforms[id]["slug"] = e["name"]
+        formatted_data_platforms[element_id] = {}
+        formatted_data_platforms[element_id]["slug"] = e["slug"]
+        formatted_data_platforms[element_id]["slug"] = e["name"]
 
         try:
-            formatted_data_platforms[id]["category"] = e["category"]
+            formatted_data_platforms[element_id]["category"] = e["category"]
         except KeyError:
-            formatted_data_platforms[id]["category"] = None
+            formatted_data_platforms[element_id]["category"] = None
 
     if verbose:
-        for id in formatted_data_platforms:
-            category = formatted_data_platforms[id]["category"]
+        for element_id in formatted_data_platforms:
+            category = formatted_data_platforms[element_id]["category"]
 
             if category == get_pc_platform_no():
-                slug = formatted_data_platforms[id]["slug"]
+                slug = formatted_data_platforms[element_id]["slug"]
 
                 print(
-                    f"Category: {category} ; ID: {id} ; Slug: {slug}",
+                    f"Category: {category} ; ID: {element_id} ; Slug: {slug}",
                 )
 
     return formatted_data_platforms
