@@ -289,17 +289,17 @@ def merge_databases(new_database, previous_database):
 
 
 def download_igdb_local_databases(
-    ballots,
-    release_year: str | None = None,
+    ballots: dict,
+    release_year: str | int | None = None,
     *,
-    apply_hard_coded_extension_and_fixes=True,
-    extend_previous_databases=True,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    verbose=True,
-):
+    apply_hard_coded_extension_and_fixes: bool = True,
+    extend_previous_databases: bool = True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    verbose: bool = True,
+) -> tuple[dict, dict]:
     igdb_match_database, igdb_local_database = match_names_with_igdb(
         ballots,
         release_year=release_year,
@@ -363,12 +363,12 @@ def download_igdb_local_databases(
 
 
 def figure_out_ballots_with_missing_data(
-    ballots,
-    igdb_match_database=None,
-    release_year=None,
-    goty_field="goty_preferences",
+    ballots: dict,
+    igdb_match_database: dict | None = None,
+    release_year: int | str | None = None,
+    goty_field: str = "goty_preferences",
     *,
-    verbose=False,
+    verbose: bool = False,
 ):
     # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
     # This means that we could work in offline mode once the manual matches cover all the empty results of IGDB queries.
@@ -428,16 +428,16 @@ def download_igdb_data_for_ballots_with_missing_data(
 
 
 def load_igdb_local_databases(
-    ballots,
-    release_year=None,
+    ballots: dict,
+    release_year: int | str | None = None,
     *,
-    apply_hard_coded_extension_and_fixes=True,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    verbose=False,
-):
+    apply_hard_coded_extension_and_fixes: bool = True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    verbose: bool = False,
+) -> tuple[dict, dict]:
     try:
         igdb_match_database = load_igdb_match_database(release_year=release_year)
     except FileNotFoundError:
@@ -488,7 +488,10 @@ def load_igdb_local_databases(
     return igdb_match_database, igdb_local_database
 
 
-def transform_structure_of_matches(igdb_match_database, igdb_local_database):
+def transform_structure_of_matches(
+    igdb_match_database: dict,
+    igdb_local_database: dict,
+) -> dict[str, dict]:
     # Retro-compatibility with code written for SteamSpy
 
     matches = {}
