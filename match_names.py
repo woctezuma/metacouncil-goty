@@ -107,7 +107,7 @@ def get_default_distance_cut_off_for_difflib() -> float:
 def find_closest_app_id(
     game_name_input: str,
     steamspy_database: dict,
-    release_year: int | None = None,
+    release_year: int | str | None = None,
     num_closest_neighbors: int = 1,
     max_num_tries_for_year: int = 2,
     *,
@@ -301,7 +301,7 @@ def normalize_votes(
 
 def standardize_ballots(
     ballots: dict,
-    release_year: int | None,
+    release_year: int | str | None,
     *,
     print_after_sort: bool = True,
     use_igdb: bool = False,
