@@ -14,7 +14,12 @@ from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_serv
 from load_ballots import load_ballots
 
 
-def get_link_to_igdb_website(igdb_id, igdb_local_database, *, hide_dummy_app_id=True):
+def get_link_to_igdb_website(
+    igdb_id: int,
+    igdb_local_database: dict,
+    *,
+    hide_dummy_app_id: bool = True,
+) -> str:
     igdb_base_url = "https://www.igdb.com/games/"
 
     igdb_id_as_str = str(igdb_id)
@@ -33,7 +38,10 @@ def get_link_to_igdb_website(igdb_id, igdb_local_database, *, hide_dummy_app_id=
     return link_to_store
 
 
-def get_igdb_human_release_dates(igdb_id, igdb_local_database):
+def get_igdb_human_release_dates(
+    igdb_id: int,
+    igdb_local_database: dict,
+) -> tuple[list[int | None], int]:
     igdb_id_as_str = str(igdb_id)
 
     igdb_data = igdb_local_database[igdb_id_as_str]
@@ -56,7 +64,10 @@ def get_igdb_human_release_dates(igdb_id, igdb_local_database):
     return human_release_dates, human_release_date_to_remember
 
 
-def get_igdb_release_years(igdb_data, target_release_year=None):
+def get_igdb_release_years(
+    igdb_data: dict,
+    target_release_year: int | str | None = None,
+) -> tuple[list[int | None], int]:
     try:
         release_years = {
             date["y"]
@@ -85,7 +96,7 @@ def get_igdb_release_years(igdb_data, target_release_year=None):
     return release_years, year_to_remember
 
 
-def format_game_name_for_igdb(raw_name, *, verbose=True):
+def format_game_name_for_igdb(raw_name: str, *, verbose: bool = True) -> str:
     formatted_game_name_for_igdb = raw_name
 
     for character in ("®", "~", "'", ": ", " - ", "!", "™", " / "):
@@ -105,15 +116,15 @@ def format_game_name_for_igdb(raw_name, *, verbose=True):
 
 
 def match_names_with_igdb(
-    raw_votes,
-    release_year: str | None = None,
+    raw_votes: dict,
+    release_year: str | int | None = None,
     *,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    verbose=True,
-):
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    verbose: bool = True,
+) -> tuple[dict, dict]:
     seen_game_names = set()
     igdb_match_database = {}
     igdb_local_database = {}
@@ -205,10 +216,10 @@ def match_names_with_igdb(
 
 
 def print_igdb_matches(
-    igdb_match_database,
-    igdb_local_database,
-    constrained_release_year=None,
-    year_constraint="equality",
+    igdb_match_database: dict,
+    igdb_local_database: dict,
+    constrained_release_year: int | str | None = None,
+    year_constraint: str = "equality",
 ) -> None:
     sorted_input_names = sorted(igdb_match_database.keys())
 
@@ -278,7 +289,7 @@ def print_igdb_matches(
             print(f"[X]\t{raw_name}")
 
 
-def merge_databases(new_database, previous_database):
+def merge_databases(new_database: dict, previous_database: dict) -> dict:
     merged_database = new_database
 
     for element in previous_database:
@@ -369,7 +380,7 @@ def figure_out_ballots_with_missing_data(
     goty_field: str = "goty_preferences",
     *,
     verbose: bool = False,
-):
+) -> dict:
     # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
     # This means that we could work in offline mode once the manual matches cover all the empty results of IGDB queries.
     #
@@ -395,16 +406,16 @@ def figure_out_ballots_with_missing_data(
 
 
 def download_igdb_data_for_ballots_with_missing_data(
-    new_ballots,
-    release_year=None,
+    new_ballots: dict,
+    release_year: int | str | None = None,
     *,
-    apply_hard_coded_extension_and_fixes=True,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    verbose=False,
-):
+    apply_hard_coded_extension_and_fixes: bool = True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    verbose: bool = False,
+) -> tuple[dict, dict]:
     # Caveat: it is mandatory to set 'extend_previous_databases' to True, if you want to:
     # - first download data for new ballots,
     # - then merge the result with databases stored on the disk for the previously seen ballots,

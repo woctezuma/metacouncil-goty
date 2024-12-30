@@ -152,7 +152,7 @@ def load_and_anonymize(
     redact_reviews: bool = False,
     data_folder: str | None = None,
     verbose: bool = True,
-):
+) -> list[str]:
     output_filename = get_anonymized_file_prefix() + input_filename
 
     data = load_input(input_filename, file_encoding, data_folder=data_folder)

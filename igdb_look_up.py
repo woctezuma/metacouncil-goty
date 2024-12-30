@@ -41,7 +41,7 @@ def wait_for_cooldown(
     num_requests: int,
     start_time: float,
     igdb_rate_limits: dict[str, int] | None = None,
-):
+) -> float:
     if igdb_rate_limits is None:
         igdb_rate_limits = get_igdb_rate_limits()
 
@@ -239,7 +239,7 @@ def manual_look_up(
     must_be_a_game: bool = False,
     must_be_available_on_pc: bool = False,
     verbose: bool = True,
-):
+) -> dict:
     # Input can be:
     # - either a query game name,
     # - or an IGDB id.
