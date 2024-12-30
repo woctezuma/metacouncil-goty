@@ -31,7 +31,8 @@ REFERENCE_TIMESTAMP = 31532400
 
 
 class TestParsingUtilsMethods(unittest.TestCase):
-    def test_parse_text_data(self) -> None:
+    @staticmethod
+    def test_parse_text_data() -> None:
         voter_name = '"MyTestUserName";'
         goty_votes = '"Half-Life: Alyx";"The Walking Dead: Saints & Sinners";"Fall Guys";"Sakuna";"Yakuza";'
         goty_descr = """"I like the idea of a turn based Yakuza [..] game. Tl;DR, buy it, you won't regret it!";"""
@@ -60,7 +61,8 @@ class TestParsingUtilsMethods(unittest.TestCase):
 
 
 class TestSteamStoreUtilsMethods(unittest.TestCase):
-    def test_get_link_to_store_case_valid_app_id(self) -> None:
+    @staticmethod
+    def test_get_link_to_store_case_valid_app_id() -> None:
         app_id = "583950"
         link_to_store = steam_store_utils.get_link_to_store(app_id)
         expected_link = (
@@ -73,7 +75,8 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
 
         assert link_to_store == expected_link
 
-    def test_get_link_to_store_case_dummy_app_id_to_show(self) -> None:
+    @staticmethod
+    def test_get_link_to_store_case_dummy_app_id_to_show() -> None:
         app_id = "-1"
         link_to_store = steam_store_utils.get_link_to_store(
             app_id,
@@ -82,7 +85,8 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
 
         assert link_to_store == app_id
 
-    def test_get_link_to_store_case_dummy_app_id_to_hide(self) -> None:
+    @staticmethod
+    def test_get_link_to_store_case_dummy_app_id_to_hide() -> None:
         app_id = "-1"
         link_to_store = steam_store_utils.get_link_to_store(
             app_id,
@@ -93,7 +97,8 @@ class TestSteamStoreUtilsMethods(unittest.TestCase):
 
 
 class TestAnonymizeDataMethods(unittest.TestCase):
-    def test_get_author_name_token_index(self) -> None:
+    @staticmethod
+    def test_get_author_name_token_index() -> None:
         expected_author_token_index = 18
         is_anonymized = False
 
@@ -104,7 +109,8 @@ class TestAnonymizeDataMethods(unittest.TestCase):
             )
             assert expected_author_token_index == author_token_index
 
-    def test_get_review_token_indices(self) -> None:
+    @staticmethod
+    def test_get_review_token_indices() -> None:
         goty_description_token_index = 30
         gotd_description_token_index = 52
         is_anonymized = False
@@ -134,7 +140,8 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         assert len(review_token_indices) == 1
         assert goty_description_token_index in review_token_indices
 
-    def test_load_and_anonymize(self) -> None:
+    @staticmethod
+    def test_load_and_anonymize() -> None:
         ballot_year = "2018"
         input_filename = (
             "dummy_pc_gaming_metacouncil_goty_awards_" + ballot_year + ".csv"
@@ -148,7 +155,8 @@ class TestAnonymizeDataMethods(unittest.TestCase):
 
 
 class TestParsingParamsMethods(unittest.TestCase):
-    def test_get_parsing_indices(self) -> None:
+    @staticmethod
+    def test_get_parsing_indices() -> None:
         num_parameters = 4
 
         num_goty_games_per_voter = 5
@@ -208,7 +216,8 @@ class TestParsingParamsMethods(unittest.TestCase):
 
 
 class TestLoadBallotsMethods(unittest.TestCase):
-    def test_get_parsing_params(self) -> None:
+    @staticmethod
+    def test_get_parsing_params() -> None:
         num_parameters = 6
 
         num_goty_games_per_voter = 5
@@ -236,7 +245,8 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
             assert parsing_params["turd"]["num_choices"] == 1
 
-    def test_load_unanonymized_ballots(self) -> None:
+    @staticmethod
+    def test_load_unanonymized_ballots() -> None:
         ballot_year = "2018"
         input_filename = (
             "dummy_pc_gaming_metacouncil_goty_awards_" + ballot_year + ".csv"
@@ -245,7 +255,8 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
         assert len(ballots) == EXPECTED_NUM_BALLOTS
 
-    def test_load_ballots(self) -> None:
+    @staticmethod
+    def test_load_ballots() -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
         ballots = load_ballots.load_ballots(input_filename)
@@ -254,14 +265,16 @@ class TestLoadBallotsMethods(unittest.TestCase):
 
 
 class TestHardCodedMatchesMethods(unittest.TestCase):
-    def test_get_hard_coded_app_id_dict(self) -> None:
+    @staticmethod
+    def test_get_hard_coded_app_id_dict() -> None:
         hard_coded_dict = hard_coded_matches.get_hard_coded_app_id_dict()
 
         assert hard_coded_dict
 
 
 class TestDisqualifyVoteMethods(unittest.TestCase):
-    def test_get_hard_coded_noisy_votes(self) -> None:
+    @staticmethod
+    def test_get_hard_coded_noisy_votes() -> None:
         noisy_votes = disqualify_vote.get_hard_coded_noisy_votes()
 
         empty_game_name = ""
@@ -271,7 +284,8 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
         for noisy_game_name in ("n/a", "N/A", "-"):
             assert noisy_game_name in noisy_votes
 
-    def test_is_a_noisy_vote(self) -> None:
+    @staticmethod
+    def test_is_a_noisy_vote() -> None:
         empty_game_name = ""
         game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(empty_game_name)
         # The empty string is considered as noisy, although it is not part of the hard-coded noisy votes.
@@ -285,12 +299,14 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
             game_name_is_a_noisy_vote = disqualify_vote.is_a_noisy_vote(real_game_name)
             assert not game_name_is_a_noisy_vote
 
-    def test_get_hard_coded_disqualified_app_ids(self) -> None:
+    @staticmethod
+    def test_get_hard_coded_disqualified_app_ids() -> None:
         disqualified_app_id_dict = disqualify_vote.get_hard_coded_disqualified_app_ids()
 
         assert disqualified_app_id_dict
 
-    def test_filter_out_votes_for_hard_coded_reasons(self) -> None:
+    @staticmethod
+    def test_filter_out_votes_for_hard_coded_reasons() -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -316,12 +332,14 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
 
 
 class TestExtendSteamSpyMethods(unittest.TestCase):
-    def test_load_extended_steamspy_database(self) -> None:
+    @staticmethod
+    def test_load_extended_steamspy_database() -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
         assert extended_steamspy_database
 
-    def test_load_twice_extended_steamspy_database(self) -> None:
+    @staticmethod
+    def test_load_twice_extended_steamspy_database() -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database(
             extended_steamspy_database,
@@ -358,7 +376,8 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         assert len(ballots) == len(standardized_ballots)
 
-    def test_find_closest_app_id(self) -> None:
+    @staticmethod
+    def test_find_closest_app_id() -> None:
         raw_name = "Half-Life II"  # Typo ("II" instead of "2") on purpose to increase code coverage
         steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
@@ -379,7 +398,8 @@ class TestMatchNamesMethods(unittest.TestCase):
 
 
 class TestSchulzeGotyMethods(unittest.TestCase):
-    def test_apply_pipeline(self) -> None:
+    @staticmethod
+    def test_apply_pipeline() -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -389,7 +409,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
             try_to_break_ties=True,
         )
 
-    def test_filtering_out(self) -> None:
+    @staticmethod
+    def test_filtering_out() -> None:
         ballot_year = "2018"  # anything but '1998'
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -414,7 +435,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
         assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] is None)
 
-    def test_filter_out_votes_for_early_access_titles(self) -> None:
+    @staticmethod
+    def test_filter_out_votes_for_early_access_titles() -> None:
         ballot_year = "2018"
 
         ballots: dict = {}
@@ -443,7 +465,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] == "504230")
         assert bool(standardized_ballots["dummy_voter_name"]["ballots"][2] is None)
 
-    def test_try_to_break_ties_in_app_id_group(self) -> None:
+    @staticmethod
+    def test_try_to_break_ties_in_app_id_group() -> None:
         app_id_group = ["300"]
         standardized_ballots = {
             "A": {"ballots": {1: "100", 2: "200", 3: None, 4: None, 5: None}},
@@ -457,7 +480,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
         )
         assert schulze_ranking_for_tied_app_id_group == [["300"]]
 
-    def test_try_to_break_ties_in_schulze_ranking(self) -> None:
+    @staticmethod
+    def test_try_to_break_ties_in_schulze_ranking() -> None:
         app_id_group = ["100", "200", "300"]
         schulze_ranking = [app_id_group]
         standardized_ballots = {
@@ -476,7 +500,8 @@ class TestSchulzeGotyMethods(unittest.TestCase):
 
 
 class TestOptionalCategoriesMethods(unittest.TestCase):
-    def test_display_optional_ballots(self) -> None:
+    @staticmethod
+    def test_display_optional_ballots() -> None:
         ballot_year = "2018"
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
@@ -484,7 +509,8 @@ class TestOptionalCategoriesMethods(unittest.TestCase):
 
 
 class TestExtendIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_fixes_to_igdb_database(self) -> None:
+    @staticmethod
+    def test_get_file_name_for_fixes_to_igdb_database() -> None:
         for release_year in (None, "2018"):
             for database_type in ("match", "local"):
                 file_name = extend_igdb.get_file_name_for_fixes_to_igdb_database(
@@ -506,33 +532,39 @@ class TestExtendIGDBMethods(unittest.TestCase):
 
                 assert file_name == expected_file_name
 
-    def test_load_fixes_to_igdb_database(self) -> None:
+    @staticmethod
+    def test_load_fixes_to_igdb_database() -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_database()
         assert len(fixes_to_igdb_database) >= 0
 
-    def test_load_fixes_to_igdb_local_database(self) -> None:
+    @staticmethod
+    def test_load_fixes_to_igdb_local_database() -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_local_database()
         assert len(fixes_to_igdb_database) >= 0
 
-    def test_load_fixes_to_igdb_match_database(self) -> None:
+    @staticmethod
+    def test_load_fixes_to_igdb_match_database() -> None:
         fixes_to_igdb_database = extend_igdb.load_fixes_to_igdb_match_database()
         assert len(fixes_to_igdb_database) >= 0
 
-    def test_extend_igdb_local_database(self) -> None:
+    @staticmethod
+    def test_extend_igdb_local_database() -> None:
         release_year = "2018"
         extended_igdb_local_database = extend_igdb.extend_igdb_local_database(
             release_year=release_year,
         )
         assert extended_igdb_local_database
 
-    def test_extend_igdb_match_database(self) -> None:
+    @staticmethod
+    def test_extend_igdb_match_database() -> None:
         release_year = "2018"
         extended_igdb_match_database = extend_igdb.extend_igdb_match_database(
             release_year=release_year,
         )
         assert extended_igdb_match_database
 
-    def test_fill_in_blanks_in_the_local_database(self) -> None:
+    @staticmethod
+    def test_fill_in_blanks_in_the_local_database() -> None:
         augmented_igdb_local_database = (
             extend_igdb.fill_in_blanks_in_the_local_database(
                 release_year="2018",
@@ -541,7 +573,8 @@ class TestExtendIGDBMethods(unittest.TestCase):
         )
         assert augmented_igdb_local_database
 
-    def test_extend_both_igdb_databases(self) -> None:
+    @staticmethod
+    def test_extend_both_igdb_databases() -> None:
         (
             extended_igdb_match_database,
             extended_igdb_local_database,
@@ -549,73 +582,90 @@ class TestExtendIGDBMethods(unittest.TestCase):
         assert len(extended_igdb_match_database) > 0
         assert len(extended_igdb_local_database) > 0
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert extend_igdb.main()
 
 
 class TestIGDBUtilsMethods(unittest.TestCase):
-    def test_get_igdb_api_url(self) -> None:
+    @staticmethod
+    def test_get_igdb_api_url() -> None:
         url = igdb_utils.get_igdb_api_url()
         assert url == "https://api.igdb.com/v4"
 
-    def test_get_igdb_api_url_for_games(self) -> None:
+    @staticmethod
+    def test_get_igdb_api_url_for_games() -> None:
         url = igdb_utils.get_igdb_api_url_for_games()
         assert url == "https://api.igdb.com/v4/games/"
 
-    def test_get_igdb_api_url_for_release_dates(self) -> None:
+    @staticmethod
+    def test_get_igdb_api_url_for_release_dates() -> None:
         url = igdb_utils.get_igdb_api_url_for_release_dates()
         assert url == "https://api.igdb.com/v4/release_dates/"
 
-    def test_get_time_stamp_for_year_start(self) -> None:
+    @staticmethod
+    def test_get_time_stamp_for_year_start() -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_start(year=1971)
         assert int(time_stamp) >= REFERENCE_TIMESTAMP
 
-    def test_get_time_stamp_for_year_end(self) -> None:
+    @staticmethod
+    def test_get_time_stamp_for_year_end() -> None:
         time_stamp = igdb_utils.get_time_stamp_for_year_end(year=1970)
         assert int(time_stamp) >= REFERENCE_TIMESTAMP
 
-    def test_get_igdb_user_key_file_name(self) -> None:
+    @staticmethod
+    def test_get_igdb_user_key_file_name() -> None:
         file_name = igdb_local_secrets.get_igdb_user_key_file_name()
         assert file_name == "igdb_user_key.json"
 
-    def test_load_igdb_user_key(self) -> None:
+    @staticmethod
+    def test_load_igdb_user_key() -> None:
         igdb_user_key = igdb_local_secrets.load_igdb_user_key()
         assert "user-key" in igdb_user_key
 
-    def test_get_igdb_request_headers(self) -> None:
+    @staticmethod
+    def test_get_igdb_request_headers() -> None:
         headers = igdb_look_up.get_igdb_request_headers()
         assert "Accept" in headers
         assert headers["Accept"] == "application/json"
 
-    def test_get_igdb_request_params(self) -> None:
+    @staticmethod
+    def test_get_igdb_request_params() -> None:
         params = igdb_utils.get_igdb_request_params()
         assert params["fields"] == "*"
 
-    def test_get_pc_platform_no(self) -> None:
+    @staticmethod
+    def test_get_pc_platform_no() -> None:
         value = igdb_utils.get_pc_platform_no()
         assert value == PC_PLATFORM_NO
 
-    def test_get_pc_platform_range(self) -> None:
+    @staticmethod
+    def test_get_pc_platform_range() -> None:
         value_list = igdb_utils.get_pc_platform_range()
         assert PC_PLATFORM_NO in value_list
 
-    def test_get_game_category_no(self) -> None:
+    @staticmethod
+    def test_get_game_category_no() -> None:
         value_list = igdb_utils.get_game_category_no()
         assert value_list == [0, 3, 4]
 
-    def test_get_dlc_category_no(self) -> None:
+    @staticmethod
+    def test_get_dlc_category_no() -> None:
         value_list = igdb_utils.get_dlc_category_no()
         assert value_list == [1, 2]
 
-    def test_get_released_status_no(self) -> None:
+    @staticmethod
+    def test_get_released_status_no() -> None:
         value = igdb_utils.get_released_status_no()
         assert value == 0
 
-    def test_get_steam_service_no(self) -> None:
+    @staticmethod
+    def test_get_steam_service_no() -> None:
         value = igdb_utils.get_steam_service_no()
         assert value == 1
 
-    def test_append_filter_for_igdb_fields(self) -> None:
+    @staticmethod
+    def test_append_filter_for_igdb_fields() -> None:
         fields = "name, slug"
         fields = igdb_utils.append_filter_for_igdb_fields(
             fields,
@@ -625,15 +675,18 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         )
         assert "; where " in fields
 
-    def test_get_igdb_fields_for_games(self) -> None:
+    @staticmethod
+    def test_get_igdb_fields_for_games() -> None:
         fields = igdb_utils.get_igdb_fields_for_games()
         assert fields
 
-    def test_get_igdb_fields_for_release_dates(self) -> None:
+    @staticmethod
+    def test_get_igdb_fields_for_release_dates() -> None:
         fields = igdb_utils.get_igdb_fields_for_release_dates()
         assert fields
 
-    def test_format_list_of_platforms(self) -> None:
+    @staticmethod
+    def test_format_list_of_platforms() -> None:
         platform_list = [
             {
                 "id": 33,
@@ -761,7 +814,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         )
         assert year_to_remember == int(target_release_year) + 1
 
-    def test_format_game_name_for_igdb(self) -> None:
+    @staticmethod
+    def test_format_game_name_for_igdb() -> None:
         game_name = "Hello World"
         formatted_game_name = igdb_match_names.format_game_name_for_igdb(game_name)
         assert formatted_game_name == game_name
@@ -774,7 +828,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         )
         assert formatted_game_name == "Atelier   Anime Game"
 
-    def test_print_igdb_matches(self) -> None:
+    @staticmethod
+    def test_print_igdb_matches() -> None:
         release_year = "2018"
         igdb_match_names.print_igdb_matches(
             igdb_match_database=igdb_databases.load_igdb_match_database(
@@ -787,7 +842,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         )
         assert True
 
-    def test_merge_databases_where_entry_is_updated(self) -> None:
+    @staticmethod
+    def test_merge_databases_where_entry_is_updated() -> None:
         new_database = {"a": 2}
         previous_database = {"a": 0, "b": 1}
 
@@ -799,7 +855,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         assert merged_database["a"] == new_database["a"]
         assert merged_database["b"] == previous_database["b"]
 
-    def test_merge_databases_where_entry_did_not_exist(self) -> None:
+    @staticmethod
+    def test_merge_databases_where_entry_did_not_exist() -> None:
         new_database = {"c": 2}
         previous_database = {"a": 0, "b": 1}
 
@@ -847,7 +904,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         )
         assert second_vote_is_still_intact
 
-    def test_load_igdb_local_databases(self) -> None:
+    @staticmethod
+    def test_load_igdb_local_databases() -> None:
         ballot_year = "2018"
 
         ballots: dict = {}
@@ -873,7 +931,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         assert len(igdb_match_database) > 0
         assert len(igdb_local_database) > 0
 
-    def test_transform_structure_of_matches(self) -> None:
+    @staticmethod
+    def test_transform_structure_of_matches() -> None:
         release_year = "2018"
         igdb_match_database = igdb_databases.load_igdb_match_database(
             release_year=release_year,
@@ -888,18 +947,21 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         )
         assert len(matches) > 0
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert igdb_match_names.main()
 
 
 class TestIGDBDatabasesMethods(unittest.TestCase):
-    def test_get_igdb_file_name_suffix(self) -> None:
+    @staticmethod
+    def test_get_igdb_file_name_suffix() -> None:
         for release_year in (None, "2018"):
             suffix = igdb_databases.get_igdb_file_name_suffix(release_year=release_year)
             expected_suffix = "" if release_year is None else "_" + str(release_year)
             assert suffix == expected_suffix
 
-    def test_get_igdb_match_database_file_name(self) -> None:
+    @staticmethod
+    def test_get_igdb_match_database_file_name() -> None:
         for release_year in (None, "2018"):
             file_name = igdb_databases.get_igdb_match_database_file_name(
                 release_year=release_year,
@@ -912,7 +974,8 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
                 )
             assert file_name == expected_file_name
 
-    def test_get_igdb_local_database_file_name(self) -> None:
+    @staticmethod
+    def test_get_igdb_local_database_file_name() -> None:
         for release_year in (None, "2018"):
             file_name = igdb_databases.get_igdb_local_database_file_name(
                 release_year=release_year,
@@ -925,34 +988,40 @@ class TestIGDBDatabasesMethods(unittest.TestCase):
                 )
             assert file_name == expected_file_name
 
-    def test_load_igdb_match_database(self) -> None:
+    @staticmethod
+    def test_load_igdb_match_database() -> None:
         release_year = "2018"
         data = igdb_databases.load_igdb_match_database(release_year=release_year)
         assert data is not None
 
-    def test_save_igdb_match_database(self) -> None:
+    @staticmethod
+    def test_save_igdb_match_database() -> None:
         data: dict = {}
         file_name = "data/dummy_match_file_for_unit_test.json"
         igdb_databases.save_igdb_match_database(data, file_name=file_name)
         assert Path(file_name).exists()
 
-    def test_load_igdb_local_database(self) -> None:
+    @staticmethod
+    def test_load_igdb_local_database() -> None:
         release_year = "2018"
         data = igdb_databases.load_igdb_local_database(release_year=release_year)
         assert data is not None
 
-    def test_save_igdb_local_database(self) -> None:
+    @staticmethod
+    def test_save_igdb_local_database() -> None:
         data: dict = {}
         file_name = "data/dummy_local_file_for_unit_test.json"
         igdb_databases.save_igdb_local_database(data, file_name=file_name)
         assert Path(file_name).exists()
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert igdb_databases.main()
 
 
 class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_disqualified_igdb_ids(self) -> None:
+    @staticmethod
+    def test_get_file_name_for_disqualified_igdb_ids() -> None:
         for release_year in (None, "2018"):
             file_name = disqualify_vote_igdb.get_file_name_for_disqualified_igdb_ids(
                 release_year=release_year,
@@ -967,16 +1036,19 @@ class TestDisqualifyVoteIGDBMethods(unittest.TestCase):
 
             assert file_name == expected_file_name
 
-    def test_load_disqualified_igdb_ids(self) -> None:
+    @staticmethod
+    def test_load_disqualified_igdb_ids() -> None:
         disqualified_igdb_ids = disqualify_vote_igdb.load_disqualified_igdb_ids()
         assert disqualified_igdb_ids is not None
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert disqualify_vote_igdb.main()
 
 
 class TestWhiteListVoteIGDBMethods(unittest.TestCase):
-    def test_get_file_name_for_whitelisted_igdb_ids(self) -> None:
+    @staticmethod
+    def test_get_file_name_for_whitelisted_igdb_ids() -> None:
         for release_year in (None, "2018"):
             file_name = whitelist_vote_igdb.get_file_name_for_whitelisted_igdb_ids(
                 release_year=release_year,
@@ -991,24 +1063,29 @@ class TestWhiteListVoteIGDBMethods(unittest.TestCase):
 
             assert file_name == expected_file_name
 
-    def test_load_whitelisted_igdb_ids(self) -> None:
+    @staticmethod
+    def test_load_whitelisted_igdb_ids() -> None:
         whitelisted_igdb_ids = whitelist_vote_igdb.load_whitelisted_igdb_ids()
         assert whitelisted_igdb_ids is not None
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert whitelist_vote_igdb.main()
 
 
 class TestWhiteListVoteMethods(unittest.TestCase):
-    def test_get_hard_coded_whitelisted_app_ids(self) -> None:
+    @staticmethod
+    def test_get_hard_coded_whitelisted_app_ids() -> None:
         whitelisted_app_id_dict = whitelist_vote.get_hard_coded_whitelisted_app_ids()
         assert whitelisted_app_id_dict
 
-    def test_load_whitelisted_ids(self) -> None:
+    @staticmethod
+    def test_load_whitelisted_ids() -> None:
         whitelisted_app_id_dict = whitelist_vote.load_whitelisted_ids(use_igdb=False)
         assert whitelisted_app_id_dict
 
-    def test_main(self) -> None:
+    @staticmethod
+    def test_main() -> None:
         assert whitelist_vote.main()
 
 
