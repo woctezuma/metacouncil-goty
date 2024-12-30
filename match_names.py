@@ -376,7 +376,7 @@ def standardize_ballots(
 
     standardized_ballots = normalize_votes(ballots, matches, goty_field=goty_field)
 
-    return (standardized_ballots, matches)
+    return standardized_ballots, matches
 
 
 if __name__ == "__main__":
