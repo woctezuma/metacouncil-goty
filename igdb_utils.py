@@ -66,11 +66,7 @@ def get_pc_platform_no() -> int:
 
 
 def get_pc_platform_range() -> list[int]:
-    pc_platform_range = []
-
-    pc_platform_range.append(get_pc_platform_no())
-
-    return pc_platform_range
+    return [get_pc_platform_no()]
 
 
 def get_game_category_no() -> list[int]:
