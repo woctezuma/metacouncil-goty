@@ -1,7 +1,7 @@
 from load_ballots import load_ballots
 
 
-def generate_thank_you_message(ballots, *, verbose=True):
+def generate_thank_you_message(ballots: dict, *, verbose: bool = True) -> str:
     voter_names = list(ballots.keys())
     voters = ", ".join(f"@{name}" for name in sorted(voter_names))
     sentence = f"A big thanks to the following who voted and just for being awesome people on MetaCouncil: {voters}."

@@ -5,10 +5,10 @@
 import datetime
 import operator
 
-FIELD_SEPARATOR = ", "
+FIELD_SEPARATOR: str = ", "
 
 
-def get_igdb_api_url(end_point=None):
+def get_igdb_api_url(end_point: str | None = None) -> str:
     igdb_api_url = "https://api.igdb.com/v4"
 
     if end_point is not None:
@@ -27,25 +27,25 @@ def get_igdb_api_url(end_point=None):
     return igdb_api_url
 
 
-def get_igdb_api_url_for_games():
+def get_igdb_api_url_for_games() -> str:
     end_point = "/games/"
     return get_igdb_api_url(end_point=end_point)
 
 
-def get_igdb_api_url_for_release_dates():
+def get_igdb_api_url_for_release_dates() -> str:
     end_point = "/release_dates/"
     return get_igdb_api_url(end_point=end_point)
 
 
-def get_time_stamp_for_year_start(year):
+def get_time_stamp_for_year_start(year: int) -> float:
     return datetime.datetime(year, 1, 1, tzinfo=datetime.UTC).timestamp()
 
 
-def get_time_stamp_for_year_end(year):
+def get_time_stamp_for_year_end(year: int) -> float:
     return get_time_stamp_for_year_start(year=year + 1)
 
 
-def get_igdb_request_params():
+def get_igdb_request_params() -> dict[str, str | int]:
     return {
         "fields": "*",  # It would be better if the fields were explicitly stated (and narrowed down to what is needed)!
         "limit": 10,  # max value is 500
@@ -65,7 +65,7 @@ def get_pc_platform_no() -> int:
     return 6
 
 
-def get_pc_platform_range():
+def get_pc_platform_range() -> list[int]:
     pc_platform_range = []
 
     pc_platform_range.append(get_pc_platform_no())
@@ -73,7 +73,7 @@ def get_pc_platform_range():
     return pc_platform_range
 
 
-def get_game_category_no():
+def get_game_category_no() -> list[int]:
     # name 	                value
     # ====================  =====
     # main_game 	        0
@@ -87,7 +87,7 @@ def get_game_category_no():
     return [0, 3, 4]
 
 
-def get_dlc_category_no():
+def get_dlc_category_no() -> list[int]:
     # name 	                value
     # ====================  =====
     # main_game 	        0
@@ -137,7 +137,7 @@ def append_filter_for_igdb_fields(
     *,
     use_parenthesis: bool = False,
     comparison_symbol: str = "=",
-):
+) -> str:
     where_statement = " ; where "
     conjunction_statement = " & "
 
@@ -193,7 +193,7 @@ def append_filter_for_igdb_fields(
     return igdb_fields
 
 
-def get_comparison_symbol(year_constraint="equality"):
+def get_comparison_symbol(year_constraint: str = "equality") -> str:
     if year_constraint == "equality":
         comparison_symbol = "="
     elif year_constraint == "minimum":
@@ -210,11 +210,11 @@ def get_igdb_fields_for_games(
     *,
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
-    enforced_platform=None,
-    enforced_game_category=None,
-    enforced_year: int | None = None,
+    enforced_platform: int | None = None,
+    enforced_game_category: int | None = None,
+    enforced_year: str | None = None,
     year_constraint: str = "equality",
-):
+) -> str:
     # Reference: https://api-docs.igdb.com/?kotlin#game
 
     igdb_fields_for_games = FIELD_SEPARATOR.join(
@@ -272,10 +272,10 @@ def get_igdb_fields_for_games(
 
 def get_igdb_fields_for_release_dates(
     *,
-    must_be_available_on_pc=True,
-    enforced_platform=None,
-    enforced_year=None,
-):
+    must_be_available_on_pc: bool = True,
+    enforced_platform: int | None = None,
+    enforced_year: str | int | None = None,
+) -> str:
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 
     igdb_fields_for_release_dates = FIELD_SEPARATOR.join(
@@ -311,7 +311,7 @@ def get_igdb_fields_for_release_dates(
     return igdb_fields_for_release_dates
 
 
-def format_list_of_platforms(raw_data_platforms, *, verbose=True):
+def format_list_of_platforms(raw_data_platforms: dict, *, verbose: bool = True) -> dict:
     formatted_data_platforms = {}
 
     sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))
@@ -342,7 +342,7 @@ def format_list_of_platforms(raw_data_platforms, *, verbose=True):
     return formatted_data_platforms
 
 
-def format_release_dates_for_manual_display(element):
+def format_release_dates_for_manual_display(element: dict) -> str | None:
     if "release_dates" in element:
         release_years = {
             str(date["y"]) for date in element["release_dates"] if "y" in date

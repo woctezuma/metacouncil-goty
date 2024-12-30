@@ -5,13 +5,13 @@ from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix
 
 
-def get_file_name_for_disqualified_igdb_ids(release_year=None):
+def get_file_name_for_disqualified_igdb_ids(release_year: str | None = None) -> str:
     suffix = get_igdb_file_name_suffix(release_year)
 
     return get_data_folder() + "disqualified_igdb_ids" + suffix + ".json"
 
 
-def load_disqualified_igdb_ids(release_year=None):
+def load_disqualified_igdb_ids(release_year: str | None = None) -> dict:
     file_name = get_file_name_for_disqualified_igdb_ids(release_year=release_year)
 
     try:

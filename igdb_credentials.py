@@ -15,7 +15,7 @@ def get_igdb_oauth_url() -> str:
     return "https://id.twitch.tv/oauth2/token"
 
 
-def load_client_params(*, verbose=False):
+def load_client_params(*, verbose: bool = False) -> dict[str, str | None]:
     igdb_user_key = load_igdb_user_key()
 
     params = {
@@ -30,13 +30,13 @@ def load_client_params(*, verbose=False):
     return params
 
 
-def get_default_headers():
+def get_default_headers() -> dict[str, str]:
     return {
         "Accept": "application/json",
     }
 
 
-def get_default_credentials():
+def get_default_credentials() -> dict[str, str | int]:
     return {
         "access_token": "",
         "expires_in": 0,
@@ -44,7 +44,7 @@ def get_default_credentials():
     }
 
 
-def load_credential_headers(*, verbose=False):
+def load_credential_headers(*, verbose: bool = False) -> dict[str, str | None]:
     igdb_user_key = load_igdb_user_key()
 
     headers = get_default_headers()
@@ -62,7 +62,7 @@ def load_credential_headers(*, verbose=False):
     return headers
 
 
-def get_unix_time_stamp():
+def get_unix_time_stamp() -> int:
     # Reference: https://stackoverflow.com/a/49362936
 
     unix_time_stamp = time.time()
@@ -70,18 +70,18 @@ def get_unix_time_stamp():
     return int(unix_time_stamp)
 
 
-def save_credentials_to_disk(credentials) -> None:
-    igdb_user_key = load_igdb_user_key()
+def save_credentials_to_disk(credentials: dict) -> None:
+    igdb_user_key: dict[str, int | str | None] = load_igdb_user_key()
     igdb_user_key.update(credentials)
 
-    time_dict = {"save_timestamp": get_unix_time_stamp()}
+    time_dict: dict[str, int] = {"save_timestamp": get_unix_time_stamp()}
     igdb_user_key.update(time_dict)
 
     with Path(get_igdb_user_key_file_name()).open("w", encoding="utf-8") as f:
         json.dump(igdb_user_key, f)
 
 
-def download_latest_credentials(*, verbose=True):
+def download_latest_credentials(*, verbose: bool = True) -> dict:
     if verbose:
         print("[query] credentials")
 

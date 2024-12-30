@@ -1,7 +1,7 @@
 from disqualify_vote_igdb import load_disqualified_igdb_ids
 
 
-def get_hard_coded_disqualified_app_ids():
+def get_hard_coded_disqualified_app_ids() -> dict[str, dict[str, str]]:
     return {
         "-1": {
             "reason": "Marvel's Spider-Man is not available on PC: it is exclusive to PS4.",
@@ -9,7 +9,7 @@ def get_hard_coded_disqualified_app_ids():
     }
 
 
-def get_hard_coded_noisy_votes():
+def get_hard_coded_noisy_votes() -> list[str]:
     return [
         "-",
         "None played",
@@ -19,18 +19,18 @@ def get_hard_coded_noisy_votes():
     ]
 
 
-def is_a_noisy_vote(game_name):
+def is_a_noisy_vote(game_name: str) -> bool:
     noisy_votes = get_hard_coded_noisy_votes()
 
     return bool(not game_name or (game_name in noisy_votes))
 
 
 def filter_out_votes_for_hard_coded_reasons(
-    standardized_ballots,
-    release_year=None,
+    standardized_ballots: dict,
+    release_year: str | None = None,
     *,
-    use_igdb=False,
-):
+    use_igdb: bool = False,
+) -> dict:
     # Objective: remove appID which gathered votes but were manually marked for disqualification
 
     print()

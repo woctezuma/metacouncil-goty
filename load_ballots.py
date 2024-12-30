@@ -2,7 +2,7 @@ from parsing_params import get_adjusted_parsing_params
 from parsing_utils import parse_csv
 
 
-def get_ballot_file_name(ballot_year, *, is_anonymized=False):
+def get_ballot_file_name(ballot_year: str | int, *, is_anonymized: bool = False) -> str:
     from anonymize_data import get_anonymized_file_prefix
 
     fname = f"pc_gaming_metacouncil_goty_awards_{ballot_year}.csv"
@@ -12,17 +12,21 @@ def get_ballot_file_name(ballot_year, *, is_anonymized=False):
     return fname
 
 
-def convert_fname_to_year(fname, year_prefixe="20", num_digits=4):
+def convert_fname_to_year(
+    fname: str,
+    year_prefixe: str = "20",
+    num_digits: int = 4,
+) -> int:
     year_index = fname.find(year_prefixe)
     year_str = fname[year_index : (year_index + num_digits)]
     return int(year_str)
 
 
-def get_parsing_params(ballot_year):
+def get_parsing_params(ballot_year: str | int) -> dict[str, dict]:
     return get_adjusted_parsing_params(year=ballot_year)
 
 
-def load_ballots(input_filename):
+def load_ballots(input_filename: str) -> dict[str, dict]:
     ballot_year = convert_fname_to_year(fname=input_filename)
     parsing_params = get_parsing_params(ballot_year=ballot_year)
     return parse_csv(input_filename, parsing_params)

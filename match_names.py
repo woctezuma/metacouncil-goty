@@ -22,7 +22,7 @@ from igdb_match_names import (
 def constrain_app_id_search_by_year(
     dist: dict[str, float],
     sorted_app_ids: list[str],
-    release_year: int | None,
+    release_year: str | None,
     max_num_tries_for_year: int,
     year_constraint: str | None = "equality",
 ) -> list[str]:

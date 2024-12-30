@@ -14,7 +14,7 @@ def get_best_optional_categories() -> list[str]:
     return [f"best_{categorie}" for categorie in get_optional_categories()]
 
 
-def get_optional_ballots(ballots: dict, category_name: str) -> list:
+def get_optional_ballots(ballots: dict, category_name: str) -> list[str]:
     return [
         ballots[voter_name][category_name]
         for voter_name in ballots
@@ -52,7 +52,7 @@ def format_optional_ballots_for_igdb_matching(
 
 def match_optional_ballots(
     optional_ballots: dict,
-    release_year: int | None = None,
+    release_year: str | int | None = None,
     *,
     use_igdb: bool = False,
     retrieve_igdb_data_from_scratch: bool = True,
@@ -193,7 +193,7 @@ def match_optional_ballots(
     return matched_optional_ballots
 
 
-def count_optional_ballots(optional_ballots: dict) -> dict:
+def count_optional_ballots(optional_ballots: dict) -> dict[str, int]:
     optional_counts = {}
 
     for element in optional_ballots:
@@ -245,7 +245,7 @@ def display_optional_ballots(
     input_filename: str,
     *,
     filter_noise: bool = True,
-    release_year: int | None = None,
+    release_year: str | int | None = None,
     use_igdb: bool = False,
     retrieve_igdb_data_from_scratch: bool = True,
     apply_hard_coded_extension_and_fixes: bool = True,

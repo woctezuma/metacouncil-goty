@@ -15,7 +15,7 @@ def get_link_to_store(app_id: str, *, hide_dummy_app_id: bool = True) -> str:
     return link_to_store
 
 
-def get_early_access_status(app_id: str | int) -> bool:
+def get_early_access_status(app_id: str) -> bool:
     if int(app_id) > 0:
         app_details, _, _ = steampi.api.load_app_details(app_id)
     else:

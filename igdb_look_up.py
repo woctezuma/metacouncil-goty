@@ -21,7 +21,7 @@ from igdb_utils import (
 )
 
 
-def get_igdb_rate_limits():
+def get_igdb_rate_limits() -> dict[str, int]:
     # Reference: https://api-docs.igdb.com/
 
     return {
@@ -37,7 +37,11 @@ def get_igdb_rate_limits():
     }
 
 
-def wait_for_cooldown(num_requests, start_time, igdb_rate_limits=None):
+def wait_for_cooldown(
+    num_requests: int,
+    start_time: float,
+    igdb_rate_limits: dict[str, int] | None = None,
+):
     if igdb_rate_limits is None:
         igdb_rate_limits = get_igdb_rate_limits()
 
@@ -54,7 +58,7 @@ def wait_for_cooldown(num_requests, start_time, igdb_rate_limits=None):
     return new_start_time
 
 
-def get_igdb_request_headers():
+def get_igdb_request_headers() -> dict[str, str | None]:
     igdb_user_key = load_igdb_user_key()
 
     # For IGDB API version 3:
@@ -72,15 +76,15 @@ def get_igdb_request_headers():
 
 def look_up_game_name(
     game_name: str,
-    enforced_year: int | None = None,
+    enforced_year: str | int | None = None,
     *,
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
-    enforced_platform=None,
-    enforced_game_category=None,
+    enforced_platform: int | None = None,
+    enforced_game_category: int | None = None,
     year_constraint: str = "equality",
     verbose: bool = True,
-):
+) -> dict:
     if verbose:
         print(
             f"[query] Game name: {game_name} ; Year: {enforced_year} ({year_constraint}) ; PC: {must_be_available_on_pc} ; Game: {must_be_a_game} ; Platform: {enforced_platform} ; Category: {enforced_game_category}",
@@ -117,16 +121,16 @@ def look_up_game_name(
 
 
 def look_up_game_id(
-    game_id,
-    enforced_year=None,
+    game_id: int,
+    enforced_year: str | int | None = None,
     *,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    enforced_platform=None,
-    enforced_game_category=None,
-    year_constraint="equality",
-    verbose=True,
-):
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    enforced_platform: int | None = None,
+    enforced_game_category: int | None = None,
+    year_constraint: str = "equality",
+    verbose: bool = True,
+) -> dict:
     if verbose:
         print(
             f"[query] Game id: {game_id} ; Year: {enforced_year} ; PC: {must_be_available_on_pc} ; Game: {must_be_a_game} ; Platform: {enforced_platform} ; Category: {enforced_game_category}",
@@ -167,12 +171,12 @@ def look_up_game_id(
 
 
 def look_up_games_released_in_given_year(
-    enforced_year,
+    enforced_year: str | int,
     *,
-    must_be_available_on_pc=True,
-    enforced_platform=None,
-    verbose=True,
-):
+    must_be_available_on_pc: bool = True,
+    enforced_platform: int | None = None,
+    verbose: bool = True,
+) -> dict:
     if verbose:
         print(
             f"[query] Year: {enforced_year} ; PC: {must_be_available_on_pc} ; Platform: {enforced_platform}",
@@ -203,7 +207,7 @@ def look_up_games_released_in_given_year(
     return data
 
 
-def download_list_of_platforms(*, verbose=True):
+def download_list_of_platforms(*, verbose: bool = True) -> dict:
     if verbose:
         print("[query] all possible platforms")
 
@@ -230,11 +234,11 @@ def download_list_of_platforms(*, verbose=True):
 
 
 def manual_look_up(
-    input_query,
+    input_query: str | int,
     *,
-    must_be_a_game=False,
-    must_be_available_on_pc=False,
-    verbose=True,
+    must_be_a_game: bool = False,
+    must_be_available_on_pc: bool = False,
+    verbose: bool = True,
 ):
     # Input can be:
     # - either a query game name,

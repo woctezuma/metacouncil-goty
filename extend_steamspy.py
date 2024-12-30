@@ -2,7 +2,7 @@ import steampi.calendar
 import steamspypi.api
 
 
-def get_hard_coded_steamspy_database_extension():
+def get_hard_coded_steamspy_database_extension() -> dict[str, dict[str, str]]:
     # Entries manually added to SteamSpy's database
 
     return {
@@ -118,7 +118,7 @@ def get_hard_coded_steamspy_database_extension():
     }
 
 
-def load_extended_steamspy_database(steamspy_database=None):
+def load_extended_steamspy_database(steamspy_database: dict | None = None) -> dict:
     if steamspy_database is None:
         steamspy_database = steamspypi.load()
 
@@ -140,11 +140,11 @@ def load_extended_steamspy_database(steamspy_database=None):
     return extended_steamspy_database
 
 
-def get_app_name_for_problematic_app_id(app_id=None) -> str:
+def get_app_name_for_problematic_app_id(app_id: str | None = None) -> str:
     return "[Not Available]" if app_id is None else f"app_{app_id}"
 
 
-def get_release_year_for_problematic_app_id(app_id):
+def get_release_year_for_problematic_app_id(app_id: str) -> int:
     # As of December 2020, SteamSpy returns release_date_as_str = "29 янв. 2015" for appID = "319630".
     release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
     matched_release_year = release_date_as_str.split(" ")[-1]

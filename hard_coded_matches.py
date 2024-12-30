@@ -1,4 +1,4 @@
-def get_hard_coded_app_id_dict():
+def get_hard_coded_app_id_dict() -> dict[str, str]:
     # Matches, manually added, from game names to Steam appIDs
 
     return {
@@ -25,13 +25,13 @@ def get_hard_coded_app_id_dict():
     }
 
 
-def check_database_of_problematic_game_names(game_name):
+def check_database_of_problematic_game_names(game_name: str) -> bool:
     hard_coded_dict = get_hard_coded_app_id_dict()
 
     return bool(game_name in hard_coded_dict)
 
 
-def find_hard_coded_app_id(game_name_input):
+def find_hard_coded_app_id(game_name_input: str) -> str:
     hard_coded_dict = get_hard_coded_app_id_dict()
 
     return hard_coded_dict[game_name_input]
