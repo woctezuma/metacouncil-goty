@@ -85,14 +85,9 @@ def get_local_database(
             release_year=target_release_year,
             verbose=verbose,
         )
-        steamspy_database = None
-
         local_database = extended_igdb_local_database
     else:
-        extended_igdb_local_database = None
-        steamspy_database = load_extended_steamspy_database()
-
-        local_database = steamspy_database
+        local_database = load_extended_steamspy_database()
 
     return local_database
 

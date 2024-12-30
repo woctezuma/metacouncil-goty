@@ -76,8 +76,6 @@ def match_optional_ballots(
         dummy_field=dummy_field,
     )
 
-    igdb_match_database: dict[str, list[int | None]] = {}
-
     if use_igdb:
         # Code inspired from standardize_ballots() in match_names.py
 
@@ -133,8 +131,6 @@ def match_optional_ballots(
                     app_id = str(igdb_best_matched_id)
 
                     app_name = local_database[app_id]["name"]
-
-                    app_id_release_date: str | int | None = None
 
                     _, app_id_release_date = get_igdb_human_release_dates(
                         app_id,
