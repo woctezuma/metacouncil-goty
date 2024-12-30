@@ -59,13 +59,14 @@ def run_benchmark_for_steam_spy(
                     closest_app_id = sorted_app_ids[0:num_closest_neighbors]
                     closest_distance = [dist[app_id] for app_id in closest_app_id]
 
-                    element = {}
-                    element["input_name"] = raw_name
-                    element["matched_appID"] = closest_app_id
-                    element["matched_name"] = [
-                        steamspy_database[appID]["name"] for appID in closest_app_id
-                    ]
-                    element["match_distance"] = closest_distance
+                    element = {
+                        "input_name": raw_name,
+                        "matched_appID": closest_app_id,
+                        "matched_name": [
+                            steamspy_database[appID]["name"] for appID in closest_app_id
+                        ],
+                        "match_distance": closest_distance,
+                    }
 
                     matches[raw_name] = element
 

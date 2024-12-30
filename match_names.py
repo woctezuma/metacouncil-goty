@@ -206,13 +206,14 @@ def precompute_matches(
                                     get_app_name_for_problematic_app_id(app_id)
                                 )
 
-                    element = {}
-                    element["input_name"] = raw_name
-                    element["matched_appID"] = closest_app_id
-                    element["matched_name"] = [
-                        steamspy_database[appID]["name"] for appID in closest_app_id
-                    ]
-                    element["match_distance"] = closest_distance
+                    element = {
+                        "input_name": raw_name,
+                        "matched_appID": closest_app_id,
+                        "matched_name": [
+                            steamspy_database[appID]["name"] for appID in closest_app_id
+                        ],
+                        "match_distance": closest_distance,
+                    }
 
                     matches[raw_name] = element
 

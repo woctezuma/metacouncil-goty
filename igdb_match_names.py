@@ -544,20 +544,21 @@ def transform_structure_of_matches(
 
         dummy_distances = [None for _ in igdb_matched_ids]
 
-        element = {}
-        element["input_name"] = raw_name
-        element["matched_appID"] = (
-            igdb_matched_ids  # For IGDB, this is IGDB ID. For SteamSpy, this is Steam appID.
-        )
-        element["matched_pc_release_date"] = igdb_matched_pc_release_dates
-        element["matched_steam_appID"] = (
-            steam_matched_ids  # Steam urls use an appID, which is the game ID on the store
-        )
-        element["matched_slug"] = (
-            igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
-        )
-        element["matched_name"] = igdb_matched_names
-        element["match_distance"] = dummy_distances
+        element = {
+            "input_name": raw_name,
+            "matched_appID": (
+                igdb_matched_ids  # For IGDB, this is IGDB ID. For SteamSpy, this is Steam appID.
+            ),
+            "matched_pc_release_date": igdb_matched_pc_release_dates,
+            "matched_steam_appID": (
+                steam_matched_ids  # Steam urls use an appID, which is the game ID on the store
+            ),
+            "matched_slug": (
+                igdb_matched_slugs  # IGDB urls rely on the slug, which is an url-friendly game name.
+            ),
+            "matched_name": igdb_matched_names,
+            "match_distance": dummy_distances,
+        }
 
         matches[raw_name] = element
 

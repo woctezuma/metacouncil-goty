@@ -439,10 +439,9 @@ class TestSchulzeGotyMethods(unittest.TestCase):
     def test_filter_out_votes_for_early_access_titles() -> None:
         ballot_year = "2018"
 
-        ballots: dict = {}
+        ballots: dict = {"dummy_voter_name": {}}
 
         # Add dummy vote for an Early Access game
-        ballots["dummy_voter_name"] = {}
         ballots["dummy_voter_name"]["goty_preferences"] = {}
         # The following is a game released in Early Access in 2018, and still in Early Access in 2020:
         ballots["dummy_voter_name"]["goty_preferences"][1] = (
@@ -873,8 +872,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         dummy_voter = "dummy_voter_name"
         goty_field = "dummy_preferences"
 
-        ballots: dict = {}
-        ballots[dummy_voter] = {}
+        ballots: dict = {dummy_voter: {}}
         ballots[dummy_voter][goty_field] = {}
         ballots[dummy_voter][goty_field][1] = "Hello"
         ballots[dummy_voter][goty_field][2] = "Universe"
@@ -908,10 +906,9 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_load_igdb_local_databases() -> None:
         ballot_year = "2018"
 
-        ballots: dict = {}
+        ballots: dict = {"dummy_voter_name": {}}
 
         # Add dummy votes for the two actual GotY 2018 on MetaCouncil
-        ballots["dummy_voter_name"] = {}
         ballots["dummy_voter_name"]["goty_preferences"] = {}
         ballots["dummy_voter_name"]["goty_preferences"][1] = (
             "HITMAN 2"  # IGDB id = '103210'

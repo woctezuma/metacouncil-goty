@@ -41,8 +41,7 @@ def format_optional_ballots_for_igdb_matching(
 
     dummy_voter = "dummy_voter"
 
-    formatted_optional_ballots: dict[str, dict[str, dict[int, str]]] = {}
-    formatted_optional_ballots[dummy_voter] = {}
+    formatted_optional_ballots: dict[str, dict[str, dict[int, str]]] = {dummy_voter: {}}
     formatted_optional_ballots[dummy_voter][dummy_field] = dict(
         enumerate(optional_ballots),
     )
