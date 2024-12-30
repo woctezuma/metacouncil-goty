@@ -9,7 +9,7 @@ from parsing_params import (
 
 def extract_game_tokens(
     input_tokens: list[str],
-    ind_list: list[int | None],
+    ind_list: list[int],
     num_choices: int,
     *,
     strip_game_name: bool = True,
@@ -47,7 +47,7 @@ def parse_text_data(
     is_anonymized: bool,
 ) -> dict[str, dict]:
     offset = get_parsing_offset(is_anonymized=is_anonymized)
-    indices: dict[str, dict[str, list[int | None]]] = convert_params_to_indices(
+    indices: dict[str, dict[str, list[int]]] = convert_params_to_indices(
         parsing_params,
         offset=offset,
     )
@@ -78,7 +78,7 @@ def parse_text_data(
 
 def read_voter_name(
     tokens: list[str],
-    indices: dict[str, dict[str, list[int | None]]],
+    indices: dict[str, dict[str, list[int]]],
 ) -> str:
     ind = indices["voter_name"]["index"][0]
     return tokens[ind]

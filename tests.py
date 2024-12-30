@@ -687,7 +687,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     @staticmethod
     def test_format_list_of_platforms() -> None:
-        platform_list = [
+        platform_list: list[dict[str, int | str]] = [
             {
                 "id": 33,
                 "abbreviation": "Game Boy",

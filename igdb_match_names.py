@@ -15,7 +15,7 @@ from load_ballots import load_ballots
 
 
 def get_link_to_igdb_website(
-    igdb_id: int,
+    igdb_id: int | str,
     igdb_local_database: dict,
     *,
     hide_dummy_app_id: bool = True,
@@ -39,9 +39,9 @@ def get_link_to_igdb_website(
 
 
 def get_igdb_human_release_dates(
-    igdb_id: int,
+    igdb_id: int | str,
     igdb_local_database: dict,
-) -> tuple[list[int | None], int]:
+) -> tuple[list[str | None], str | None]:
     igdb_id_as_str = str(igdb_id)
 
     igdb_data = igdb_local_database[igdb_id_as_str]
@@ -67,7 +67,7 @@ def get_igdb_human_release_dates(
 def get_igdb_release_years(
     igdb_data: dict,
     target_release_year: int | str | None = None,
-) -> tuple[list[int | None], int]:
+) -> tuple[list[int], int]:
     try:
         release_years = {
             date["y"]

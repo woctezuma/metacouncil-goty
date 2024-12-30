@@ -211,8 +211,8 @@ def get_igdb_fields_for_games(
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
     enforced_platform: int | None = None,
-    enforced_game_category: int | None = None,
-    enforced_year: str | None = None,
+    enforced_game_category: list[int] | None = None,
+    enforced_year: str | int | None = None,
     year_constraint: str = "equality",
 ) -> str:
     # Reference: https://api-docs.igdb.com/?kotlin#game
@@ -311,7 +311,11 @@ def get_igdb_fields_for_release_dates(
     return igdb_fields_for_release_dates
 
 
-def format_list_of_platforms(raw_data_platforms: dict, *, verbose: bool = True) -> dict:
+def format_list_of_platforms(
+    raw_data_platforms: list[dict[str, int | str]],
+    *,
+    verbose: bool = True,
+) -> dict[int, dict[str, str | None]]:
     formatted_data_platforms = {}
 
     sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))

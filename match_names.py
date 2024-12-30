@@ -22,7 +22,7 @@ from igdb_match_names import (
 def constrain_app_id_search_by_year(
     dist: dict[str, float],
     sorted_app_ids: list[str],
-    release_year: str | None,
+    release_year: str | int | None,
     max_num_tries_for_year: int,
     year_constraint: str | None = "equality",
 ) -> list[str]:
@@ -88,7 +88,7 @@ def apply_hard_coded_fixes_to_app_id_search(
     game_name_input: str,
     filtered_sorted_app_ids: list[str],
     num_closest_neighbors: int,
-) -> str:
+) -> list[str]:
     closest_app_id = [find_hard_coded_app_id(game_name_input)]
     if num_closest_neighbors > 1:
         closest_app_id.extend(filtered_sorted_app_ids[0 : (num_closest_neighbors - 1)])
@@ -166,7 +166,7 @@ def find_closest_app_id(
 
 def precompute_matches(
     raw_votes: dict,
-    release_year: int | None = None,
+    release_year: int | str | None = None,
     num_closest_neighbors: int = 3,
     max_num_tries_for_year: int = 2,
     *,
@@ -273,7 +273,7 @@ def normalize_votes(
     # Index of the first neighbor
     neighbor_reference_index = 0
 
-    normalized_votes = {}
+    normalized_votes: dict[str, dict] = {}
 
     for voter_name in raw_votes:
         normalized_votes[voter_name] = {}
@@ -371,7 +371,7 @@ def standardize_ballots(
         )
 
         if print_matches:
-            display_matches(matches, print_after_sort)
+            display_matches(matches, print_after_sort=print_after_sort)
 
     standardized_ballots = normalize_votes(ballots, matches, goty_field=goty_field)
 

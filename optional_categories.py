@@ -24,7 +24,7 @@ def get_optional_ballots(ballots: dict, category_name: str) -> list[str]:
     ]
 
 
-def filter_noise_from_optional_ballots(optional_ballots: dict) -> list[str]:
+def filter_noise_from_optional_ballots(optional_ballots: list[str]) -> list[str]:
     return [element for element in optional_ballots if not is_a_noisy_vote(element)]
 
 
@@ -33,7 +33,7 @@ def get_dummy_field() -> str:
 
 
 def format_optional_ballots_for_igdb_matching(
-    optional_ballots: dict,
+    optional_ballots: list[str],
     dummy_field: str | None = None,
 ) -> dict[str, dict[str, dict[int, str]]]:
     if dummy_field is None:
@@ -41,7 +41,7 @@ def format_optional_ballots_for_igdb_matching(
 
     dummy_voter = "dummy_voter"
 
-    formatted_optional_ballots = {}
+    formatted_optional_ballots: dict[str, dict[str, dict[int, str]]] = {}
     formatted_optional_ballots[dummy_voter] = {}
     formatted_optional_ballots[dummy_voter][dummy_field] = dict(
         enumerate(optional_ballots),
@@ -51,7 +51,7 @@ def format_optional_ballots_for_igdb_matching(
 
 
 def match_optional_ballots(
-    optional_ballots: dict,
+    optional_ballots: list[str],
     release_year: str | int | None = None,
     *,
     use_igdb: bool = False,
@@ -67,7 +67,7 @@ def match_optional_ballots(
     from match_names import find_closest_app_id
 
     seen_game_names = set()
-    matches = {}
+    matches: dict = {}
     matched_optional_ballots = []
 
     dummy_field = get_dummy_field()
@@ -76,6 +76,8 @@ def match_optional_ballots(
         optional_ballots,
         dummy_field=dummy_field,
     )
+
+    igdb_match_database: dict[str, list[int | None]] = {}
 
     if use_igdb:
         # Code inspired from standardize_ballots() in match_names.py
@@ -105,7 +107,7 @@ def match_optional_ballots(
                 goty_field=dummy_field,
             )
     else:
-        igdb_match_database = None
+        igdb_match_database = {}
         local_database = load_extended_steamspy_database()
 
     print()
@@ -132,6 +134,8 @@ def match_optional_ballots(
                     app_id = str(igdb_best_matched_id)
 
                     app_name = local_database[app_id]["name"]
+
+                    app_id_release_date: str | int | None = None
 
                     _, app_id_release_date = get_igdb_human_release_dates(
                         app_id,
@@ -193,8 +197,8 @@ def match_optional_ballots(
     return matched_optional_ballots
 
 
-def count_optional_ballots(optional_ballots: dict) -> dict[str, int]:
-    optional_counts = {}
+def count_optional_ballots(optional_ballots: list[str]) -> dict[str, int]:
+    optional_counts: dict[str, int] = {}
 
     for element in optional_ballots:
         try:
@@ -206,7 +210,7 @@ def count_optional_ballots(optional_ballots: dict) -> dict[str, int]:
 
 
 def compute_ranking_based_on_optional_ballots(
-    optional_ballots: dict,
+    optional_ballots: list[str],
 ) -> list[tuple[str, int]]:
     optional_counts = count_optional_ballots(optional_ballots)
 

@@ -81,7 +81,7 @@ def look_up_game_name(
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
     enforced_platform: int | None = None,
-    enforced_game_category: int | None = None,
+    enforced_game_category: list[int] | None = None,
     year_constraint: str = "equality",
     verbose: bool = True,
 ) -> dict:
@@ -127,7 +127,7 @@ def look_up_game_id(
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
     enforced_platform: int | None = None,
-    enforced_game_category: int | None = None,
+    enforced_game_category: list[int] | None = None,
     year_constraint: str = "equality",
     verbose: bool = True,
 ) -> dict:
@@ -207,7 +207,7 @@ def look_up_games_released_in_given_year(
     return data
 
 
-def download_list_of_platforms(*, verbose: bool = True) -> dict:
+def download_list_of_platforms(*, verbose: bool = True) -> list[dict]:
     if verbose:
         print("[query] all possible platforms")
 
@@ -258,7 +258,7 @@ def manual_look_up(
         )
     except ValueError:
         data = look_up_game_name(
-            input_query,
+            str(input_query),
             must_be_a_game=must_be_a_game,
             must_be_available_on_pc=must_be_available_on_pc,
         )

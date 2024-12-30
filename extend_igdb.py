@@ -13,7 +13,7 @@ from igdb_look_up import look_up_game_id, wait_for_cooldown
 
 
 def get_file_name_for_fixes_to_igdb_database(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     database_type: str | None = None,
 ) -> str:
     if database_type is None:
@@ -35,7 +35,7 @@ def get_file_name_for_fixes_to_igdb_database(
 
 
 def load_fixes_to_igdb_database(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     database_type: str | None = None,
 ) -> dict:
     if database_type is None:
@@ -56,14 +56,14 @@ def load_fixes_to_igdb_database(
     return fixes_to_igdb_database
 
 
-def load_fixes_to_igdb_local_database(release_year: str | None = None) -> dict:
+def load_fixes_to_igdb_local_database(release_year: str | int | None = None) -> dict:
     return load_fixes_to_igdb_database(
         release_year=release_year,
         database_type="local",
     )
 
 
-def load_fixes_to_igdb_match_database(release_year: str | None = None) -> dict:
+def load_fixes_to_igdb_match_database(release_year: str | int | None = None) -> dict:
     return load_fixes_to_igdb_database(
         release_year=release_year,
         database_type="match",
@@ -71,7 +71,7 @@ def load_fixes_to_igdb_match_database(release_year: str | None = None) -> dict:
 
 
 def extend_igdb_local_database(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     igdb_local_database: dict | None = None,
 ) -> dict:
     if igdb_local_database is None:
@@ -93,7 +93,7 @@ def extend_igdb_local_database(
 
 
 def extend_igdb_match_database(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     igdb_match_database: dict | None = None,
     *,
     verbose: bool = True,
@@ -117,7 +117,7 @@ def extend_igdb_match_database(
 
 
 def fill_in_blanks_in_the_local_database(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     igdb_local_database: dict | None = None,
     igdb_match_database: dict | None = None,
     *,
@@ -177,12 +177,12 @@ def fill_in_blanks_in_the_local_database(
 
 
 def extend_both_igdb_databases(
-    release_year: str | None = None,
+    release_year: str | int | None = None,
     igdb_match_database: dict | None = None,
     igdb_local_database: dict | None = None,
     *,
     verbose: bool = True,
-) -> dict:
+) -> tuple[dict, dict]:
     # Manual extension of the match database
 
     extended_igdb_match_database = extend_igdb_match_database(

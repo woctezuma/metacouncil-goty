@@ -75,7 +75,7 @@ def filter_out_votes_for_early_access_titles(
 
 
 def get_local_database(
-    target_release_year: int | None = None,
+    target_release_year: int | str | None = None,
     *,
     use_igdb: bool = False,
     verbose: bool = False,
@@ -236,7 +236,7 @@ def adapt_votes_format_for_schulze_computations(
                 current_ranking.append([app_id])
                 currently_seen_candidates.add(app_id)
 
-        remaining_app_ids = candidate_names.difference(currently_seen_candidates)
+        remaining_app_ids = list(candidate_names.difference(currently_seen_candidates))
         if remaining_app_ids:
             current_ranking.append(remaining_app_ids)
 
@@ -262,7 +262,7 @@ def compute_schulze_ranking(standardized_ballots: dict) -> list[list[str]]:
 
 def print_schulze_ranking(
     schulze_ranking: list[list[str]],
-    target_release_year: int | None = None,
+    target_release_year: int | str | None = None,
     *,
     use_igdb: bool = False,
 ) -> None:

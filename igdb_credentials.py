@@ -15,7 +15,7 @@ def get_igdb_oauth_url() -> str:
     return "https://id.twitch.tv/oauth2/token"
 
 
-def load_client_params(*, verbose: bool = False) -> dict[str, str | None]:
+def load_client_params(*, verbose: bool = False) -> dict[str, str | int | None]:
     igdb_user_key = load_igdb_user_key()
 
     params = {
@@ -44,15 +44,17 @@ def get_default_credentials() -> dict[str, str | int]:
     }
 
 
-def load_credential_headers(*, verbose: bool = False) -> dict[str, str | None]:
+def load_credential_headers(*, verbose: bool = False) -> dict[str, str]:
     igdb_user_key = load_igdb_user_key()
 
     headers = get_default_headers()
 
     headers["Client-ID"] = igdb_user_key["client_id"]
 
+    token_type: str = igdb_user_key["token_type"]
+
     headers["Authorization"] = "{} {}".format(
-        igdb_user_key["token_type"].capitalize(),
+        token_type.capitalize(),
         igdb_user_key["access_token"],
     )
 

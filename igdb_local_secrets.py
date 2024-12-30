@@ -6,7 +6,7 @@ def get_igdb_user_key_file_name() -> str:
     return "igdb_user_key.json"
 
 
-def load_igdb_user_key() -> dict[str, str | None]:
+def load_igdb_user_key() -> dict[str, str | int | None]:
     file_name = get_igdb_user_key_file_name()
 
     try:
