@@ -184,7 +184,7 @@ class TestParsingParamsMethods(unittest.TestCase):
                     # caveat: GOTD below, because there exists a GOTD
                     new_offset = gotd_description_index + offset
                 else:
-                    assert len(indices["main"]["gotd"]) == 0
+                    assert not indices["main"]["gotd"]
                     assert len(indices["review"]["gotd"]) == 1
                     assert indices["review"]["gotd"][0] is None
                     # caveat: GOTY below, because there is **no** GOTD
@@ -193,7 +193,7 @@ class TestParsingParamsMethods(unittest.TestCase):
                 assert len(indices["optional"]["dlc"]) == 1
                 assert len(indices["optional"]["early_access"]) == 1
                 if int(ballot_year) == YEAR_WITH_NO_VR_VOTE:
-                    assert len(indices["optional"]["vr"]) == 0
+                    assert not indices["optional"]["vr"]
                 else:
                     assert len(indices["optional"]["vr"]) == 1
                 assert len(indices["optional"]["turd"]) == 1
@@ -257,7 +257,7 @@ class TestHardCodedMatchesMethods(unittest.TestCase):
     def test_get_hard_coded_app_id_dict(self) -> None:
         hard_coded_dict = hard_coded_matches.get_hard_coded_app_id_dict()
 
-        assert len(hard_coded_dict) > 0
+        assert hard_coded_dict
 
 
 class TestDisqualifyVoteMethods(unittest.TestCase):
@@ -288,7 +288,7 @@ class TestDisqualifyVoteMethods(unittest.TestCase):
     def test_get_hard_coded_disqualified_app_ids(self) -> None:
         disqualified_app_id_dict = disqualify_vote.get_hard_coded_disqualified_app_ids()
 
-        assert len(disqualified_app_id_dict) > 0
+        assert disqualified_app_id_dict
 
     def test_filter_out_votes_for_hard_coded_reasons(self) -> None:
         ballot_year = "2018"
@@ -319,7 +319,7 @@ class TestExtendSteamSpyMethods(unittest.TestCase):
     def test_load_extended_steamspy_database(self) -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
 
-        assert len(extended_steamspy_database) > 0
+        assert extended_steamspy_database
 
     def test_load_twice_extended_steamspy_database(self) -> None:
         extended_steamspy_database = extend_steamspy.load_extended_steamspy_database()
@@ -327,7 +327,7 @@ class TestExtendSteamSpyMethods(unittest.TestCase):
             extended_steamspy_database,
         )
 
-        assert len(extended_steamspy_database) > 0
+        assert extended_steamspy_database
 
 
 class TestMatchNamesMethods(unittest.TestCase):
@@ -346,7 +346,7 @@ class TestMatchNamesMethods(unittest.TestCase):
 
         match_names.display_matches(matches, print_after_sort=True)
 
-        assert len(matches) > 0
+        assert matches
 
     def test_standardize_ballots(self) -> None:
         ballot_year = "2018"
@@ -523,14 +523,14 @@ class TestExtendIGDBMethods(unittest.TestCase):
         extended_igdb_local_database = extend_igdb.extend_igdb_local_database(
             release_year=release_year,
         )
-        assert len(extended_igdb_local_database) > 0
+        assert extended_igdb_local_database
 
     def test_extend_igdb_match_database(self) -> None:
         release_year = "2018"
         extended_igdb_match_database = extend_igdb.extend_igdb_match_database(
             release_year=release_year,
         )
-        assert len(extended_igdb_match_database) > 0
+        assert extended_igdb_match_database
 
     def test_fill_in_blanks_in_the_local_database(self) -> None:
         augmented_igdb_local_database = (
@@ -539,7 +539,7 @@ class TestExtendIGDBMethods(unittest.TestCase):
                 save_to_disk=False,
             )
         )
-        assert len(augmented_igdb_local_database) > 0
+        assert augmented_igdb_local_database
 
     def test_extend_both_igdb_databases(self) -> None:
         (
@@ -627,11 +627,11 @@ class TestIGDBUtilsMethods(unittest.TestCase):
 
     def test_get_igdb_fields_for_games(self) -> None:
         fields = igdb_utils.get_igdb_fields_for_games()
-        assert len(fields) > 0
+        assert fields
 
     def test_get_igdb_fields_for_release_dates(self) -> None:
         fields = igdb_utils.get_igdb_fields_for_release_dates()
-        assert len(fields) > 0
+        assert fields
 
     def test_format_list_of_platforms(self) -> None:
         platform_list = [

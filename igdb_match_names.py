@@ -195,7 +195,7 @@ def match_names_with_igdb(
         recently_matched_game_names = sorted(
             [name for name in seen_game_names if not is_a_noisy_vote(name)],
         )
-        if len(recently_matched_game_names) > 0:
+        if recently_matched_game_names:
             s = [
                 f"{i + 1}) {name}" for i, name in enumerate(recently_matched_game_names)
             ]

@@ -237,7 +237,7 @@ def adapt_votes_format_for_schulze_computations(
                 currently_seen_candidates.add(app_id)
 
         remaining_app_ids = candidate_names.difference(currently_seen_candidates)
-        if len(remaining_app_ids) > 0:
+        if remaining_app_ids:
             current_ranking.append(remaining_app_ids)
 
         current_weight = 1
@@ -390,7 +390,7 @@ def try_to_break_ties_in_app_id_group(
         threshold_n=threshold_n,
     )
 
-    if len(standardized_ballots_for_tied_app_id_group) == 0:
+    if not standardized_ballots_for_tied_app_id_group:
         print("Cannot break the tie.")
         schulze_ranking_for_tied_app_id_group = [app_id_group]
     else:

@@ -40,7 +40,7 @@ def constrain_app_id_search_by_year(
             while (
                 is_the_first_match_released_in_a_wrong_year
                 and (iter_count < max_num_tries_for_year)
-                and len(filtered_sorted_app_ids) > 0
+                and filtered_sorted_app_ids
             ):
                 first_match = filtered_sorted_app_ids[0]
                 try:
