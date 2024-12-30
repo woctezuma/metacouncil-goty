@@ -292,9 +292,9 @@ def print_igdb_matches(
 def merge_databases(new_database: dict, previous_database: dict) -> dict:
     merged_database = new_database
 
-    for element in previous_database:
+    for element, content in previous_database.items():
         if element not in merged_database:
-            merged_database[element] = previous_database[element]
+            merged_database[element] = content
 
     return merged_database
 
