@@ -71,15 +71,15 @@ def get_igdb_request_headers():
 
 
 def look_up_game_name(
-    game_name,
-    enforced_year=None,
+    game_name: str,
+    enforced_year: int | None = None,
     *,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
     enforced_platform=None,
     enforced_game_category=None,
-    year_constraint="equality",
-    verbose=True,
+    year_constraint: str = "equality",
+    verbose: bool = True,
 ):
     if verbose:
         print(

@@ -22,9 +22,9 @@ from whitelist_vote import load_whitelisted_ids
 
 
 def filter_out_votes_for_early_access_titles(
-    standardized_ballots,
-    whitelisted_ids=None,
-):
+    standardized_ballots: dict,
+    whitelisted_ids: dict | None = None,
+) -> dict:
     # Objective: remove appID which gathered votes but are tagged as 'Early Access' titles
 
     if whitelisted_ids is None:
@@ -74,7 +74,12 @@ def filter_out_votes_for_early_access_titles(
     return standardized_ballots
 
 
-def get_local_database(target_release_year=None, *, use_igdb=False, verbose=False):
+def get_local_database(
+    target_release_year: int | None = None,
+    *,
+    use_igdb: bool = False,
+    verbose: bool = False,
+) -> dict:
     if use_igdb:
         _, extended_igdb_local_database = extend_both_igdb_databases(
             release_year=target_release_year,
@@ -93,14 +98,14 @@ def get_local_database(target_release_year=None, *, use_igdb=False, verbose=Fals
 
 
 def filter_out_votes_for_wrong_release_years(
-    standardized_ballots,
-    target_release_year,
+    standardized_ballots: dict,
+    target_release_year: int,
     *,
-    use_igdb=False,
-    year_constraint="equality",
-    whitelisted_ids=None,
-    is_steamspy_api_paginated=True,
-):
+    use_igdb: bool = False,
+    year_constraint: str = "equality",
+    whitelisted_ids: dict | None = None,
+    is_steamspy_api_paginated: bool = True,
+) -> dict:
     # Objective: remove appID which gathered votes but were not released during the target release year
 
     if whitelisted_ids is None:
@@ -207,7 +212,9 @@ def filter_out_votes_for_wrong_release_years(
     return standardized_ballots
 
 
-def adapt_votes_format_for_schulze_computations(standardized_ballots):
+def adapt_votes_format_for_schulze_computations(
+    standardized_ballots: dict,
+) -> tuple[list[str], list[tuple[list[list[str]], int]]]:
     candidate_names = set()
 
     for voter in standardized_ballots:
@@ -241,7 +248,7 @@ def adapt_votes_format_for_schulze_computations(standardized_ballots):
     return candidate_names, weighted_ranks
 
 
-def compute_schulze_ranking(standardized_ballots):
+def compute_schulze_ranking(standardized_ballots: dict) -> list[list[str]]:
     # Reference: https://github.com/mgp/schulze-method
 
     import schulze
@@ -254,10 +261,10 @@ def compute_schulze_ranking(standardized_ballots):
 
 
 def print_schulze_ranking(
-    schulze_ranking,
-    target_release_year=None,
+    schulze_ranking: list[list[str]],
+    target_release_year: int | None = None,
     *,
-    use_igdb=False,
+    use_igdb: bool = False,
 ) -> None:
     local_database = get_local_database(
         target_release_year=target_release_year,
@@ -266,7 +273,7 @@ def print_schulze_ranking(
 
     print()
 
-    def get_game_name(app_id):
+    def get_game_name(app_id: str) -> str:
         try:
             output_game_name = local_database[app_id]["name"]
         except KeyError:
@@ -305,11 +312,11 @@ def print_schulze_ranking(
         offset += len(app_id_group) - 1
 
 
-def get_positions_for_single_voter(ballots):
+def get_positions_for_single_voter(ballots: dict) -> list[str]:
     return sorted(ballots.keys())
 
 
-def get_positions_for_every_voter(ballots_for_every_voter):
+def get_positions_for_every_voter(ballots_for_every_voter: dict) -> list[str]:
     positions_for_every_voter = set()
 
     for voter_name in ballots_for_every_voter:
@@ -322,14 +329,14 @@ def get_positions_for_every_voter(ballots_for_every_voter):
 
 
 def build_standardized_ballots_for_tie(
-    app_id_group,
-    standardized_ballots,
-    threshold_n=None,
-):
+    app_id_group: list[str],
+    standardized_ballots: dict,
+    threshold_n: int | None = None,
+) -> dict:
     if threshold_n is None:
         threshold_n = 1
 
-    standardized_ballots_for_tied_app_id_group = {}
+    standardized_ballots_for_tied_app_id_group: dict = {}
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]["ballots"]
@@ -368,10 +375,10 @@ def build_standardized_ballots_for_tie(
 
 
 def try_to_break_ties_in_app_id_group(
-    app_id_group,
-    standardized_ballots,
-    threshold_n=None,
-):
+    app_id_group: list[str],
+    standardized_ballots: dict,
+    threshold_n: int | None = None,
+) -> list[list[str]]:
     len(app_id_group)
 
     if threshold_n is None:
@@ -405,7 +412,12 @@ def try_to_break_ties_in_app_id_group(
     return schulze_ranking_for_tied_app_id_group
 
 
-def unwind_ranking(input_ranking, app_id_group, standardized_ballots, threshold_n):
+def unwind_ranking(
+    input_ranking: list[list[str]],
+    app_id_group: list[str],
+    standardized_ballots: dict,
+    threshold_n: int,
+) -> list[list[str]]:
     if len(input_ranking) == 1:
         print("Tie still there. Trying again with a higher threshold.")
         output_ranking = try_to_break_ties_in_app_id_group(
@@ -423,7 +435,10 @@ def unwind_ranking(input_ranking, app_id_group, standardized_ballots, threshold_
     return output_ranking
 
 
-def dissect_ranking(input_ranking, standardized_ballots):
+def dissect_ranking(
+    input_ranking: list[list[str]],
+    standardized_ballots: dict,
+) -> list[list[str]]:
     output_ranking = []
 
     for small_app_id_group in input_ranking:
@@ -444,9 +459,9 @@ def dissect_ranking(input_ranking, standardized_ballots):
 
 
 def display_info_about_tie(
-    app_id_group,
-    standardized_ballots_for_tied_app_id_group,
-    threshold_n,
+    app_id_group: list[str],
+    standardized_ballots_for_tied_app_id_group: dict,
+    threshold_n: int,
 ) -> None:
     positions = get_positions_for_every_voter(
         standardized_ballots_for_tied_app_id_group,
@@ -466,7 +481,10 @@ def display_info_about_tie(
             print(f"Position n°{position} ; {count_at_position}")
 
 
-def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
+def try_to_break_ties_in_schulze_ranking(
+    schulze_ranking: list[list[str]],
+    standardized_ballots: dict,
+) -> list[list[str]]:
     untied_schulze_ranking = []
 
     for group_no, app_id_group in enumerate(schulze_ranking):
@@ -490,8 +508,8 @@ def try_to_break_ties_in_schulze_ranking(schulze_ranking, standardized_ballots):
 
 
 def print_ballot_distribution_for_given_appid(
-    app_id_group,
-    standardized_ballots,
+    app_id_group: list[str],
+    standardized_ballots: dict,
 ) -> None:
     for app_id in app_id_group:
         ballot_distribution = None
@@ -513,20 +531,20 @@ def print_ballot_distribution_for_given_appid(
 
 
 def print_ballot_distribution_for_top_ranked_games(
-    schulze_ranking,
-    standardized_ballots,
-    num_app_id_groups_to_display=3,
+    schulze_ranking: list[list[str]],
+    standardized_ballots: dict,
+    num_app_id_groups_to_display: int = 3,
 ) -> None:
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
         print_ballot_distribution_for_given_appid(app_id_group, standardized_ballots)
 
 
 def print_reviews_for_top_ranked_games(
-    schulze_ranking,
-    ballots,
-    matches,
-    goty_field="goty_preferences",
-    num_app_id_groups_to_display=3,
+    schulze_ranking: list[list[str]],
+    ballots: dict,
+    matches: dict,
+    goty_field: str = "goty_preferences",
+    num_app_id_groups_to_display: int = 3,
 ) -> None:
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
         for app_id in app_id_group:
@@ -534,11 +552,11 @@ def print_reviews_for_top_ranked_games(
 
 
 def print_voter_stats(
-    schulze_ranking,
-    standardized_ballots,
-    num_app_id_groups_to_display=7,
+    schulze_ranking: list[list[str]],
+    standardized_ballots: dict,
+    num_app_id_groups_to_display: int = 7,
     *,
-    verbose=True,
+    verbose: bool = True,
 ) -> None:
     # Check how many people voted for N games which ended up in the top 10 of the GOTY ranking
     # Reference:
@@ -573,18 +591,18 @@ def print_voter_stats(
 
 
 def apply_pipeline(
-    input_filename,
-    release_year="2018",
+    input_filename: str,
+    release_year: str = "2018",
     *,
-    try_to_break_ties=False,
-    use_igdb=False,
-    retrieve_igdb_data_from_scratch=True,
-    apply_hard_coded_extension_and_fixes=True,
-    use_levenshtein_distance=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    print_matches=True,
-    num_app_id_groups_to_display=7,
+    try_to_break_ties: bool = False,
+    use_igdb: bool = False,
+    retrieve_igdb_data_from_scratch: bool = True,
+    apply_hard_coded_extension_and_fixes: bool = True,
+    use_levenshtein_distance: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    print_matches: bool = True,
+    num_app_id_groups_to_display: int = 7,
 ) -> bool:
     ballots = load_ballots(input_filename)
 

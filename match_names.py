@@ -20,12 +20,12 @@ from igdb_match_names import (
 
 
 def constrain_app_id_search_by_year(
-    dist,
-    sorted_app_ids,
-    release_year,
-    max_num_tries_for_year,
-    year_constraint="equality",
-):
+    dist: dict[str, float],
+    sorted_app_ids: list[str],
+    release_year: int | None,
+    max_num_tries_for_year: int,
+    year_constraint: str | None = "equality",
+) -> list[str]:
     filtered_sorted_app_ids = sorted_app_ids.copy()
 
     if release_year is not None and year_constraint is not None:
@@ -85,10 +85,10 @@ def constrain_app_id_search_by_year(
 
 
 def apply_hard_coded_fixes_to_app_id_search(
-    game_name_input,
-    filtered_sorted_app_ids,
-    num_closest_neighbors,
-):
+    game_name_input: str,
+    filtered_sorted_app_ids: list[str],
+    num_closest_neighbors: int,
+) -> str:
     closest_app_id = [find_hard_coded_app_id(game_name_input)]
     if num_closest_neighbors > 1:
         closest_app_id.extend(filtered_sorted_app_ids[0 : (num_closest_neighbors - 1)])
@@ -96,7 +96,7 @@ def apply_hard_coded_fixes_to_app_id_search(
     return closest_app_id
 
 
-def get_default_distance_cut_off_for_difflib():
+def get_default_distance_cut_off_for_difflib() -> float:
     # Reference: https://docs.python.org/3/library/difflib.html
 
     similarity_cut_off = 0.6
@@ -105,16 +105,16 @@ def get_default_distance_cut_off_for_difflib():
 
 
 def find_closest_app_id(
-    game_name_input,
-    steamspy_database,
-    release_year=None,
-    num_closest_neighbors=1,
-    max_num_tries_for_year=2,
+    game_name_input: str,
+    steamspy_database: dict,
+    release_year: int | None = None,
+    num_closest_neighbors: int = 1,
+    max_num_tries_for_year: int = 2,
     *,
-    use_levenshtein_distance=True,
-    year_constraint="equality",
-    is_steamspy_api_paginated=True,
-):
+    use_levenshtein_distance: bool = True,
+    year_constraint: str = "equality",
+    is_steamspy_api_paginated: bool = True,
+) -> tuple[list[str], list[int]]:
     if use_levenshtein_distance:
         # n is not used by Levenshtein distance.
         n = None
@@ -165,16 +165,16 @@ def find_closest_app_id(
 
 
 def precompute_matches(
-    raw_votes,
-    release_year=None,
-    num_closest_neighbors=3,
-    max_num_tries_for_year=2,
+    raw_votes: dict,
+    release_year: int | None = None,
+    num_closest_neighbors: int = 3,
+    max_num_tries_for_year: int = 2,
     *,
-    use_levenshtein_distance=True,
-    year_constraint="equality",
-    goty_field="goty_preferences",
-    is_steamspy_api_paginated=True,
-):
+    use_levenshtein_distance: bool = True,
+    year_constraint: str = "equality",
+    goty_field: str = "goty_preferences",
+    is_steamspy_api_paginated: bool = True,
+) -> dict:
     seen_game_names = set()
     matches = {}
 
@@ -219,7 +219,7 @@ def precompute_matches(
     return matches
 
 
-def display_matches(matches, *, print_after_sort=True) -> None:
+def display_matches(matches: dict, *, print_after_sort: bool = True) -> None:
     # Index of the neighbor used to sort keys of the matches dictionary
     neighbor_reference_index = 0
 
@@ -265,7 +265,11 @@ def display_matches(matches, *, print_after_sort=True) -> None:
     print()
 
 
-def normalize_votes(raw_votes, matches, goty_field="goty_preferences"):
+def normalize_votes(
+    raw_votes: dict,
+    matches: dict,
+    goty_field: str = "goty_preferences",
+) -> dict:
     # Index of the first neighbor
     neighbor_reference_index = 0
 
@@ -296,22 +300,22 @@ def normalize_votes(raw_votes, matches, goty_field="goty_preferences"):
 
 
 def standardize_ballots(
-    ballots,
-    release_year,
+    ballots: dict,
+    release_year: int | None,
     *,
-    print_after_sort=True,
-    use_igdb=False,
-    retrieve_igdb_data_from_scratch=True,
-    apply_hard_coded_extension_and_fixes=True,
-    use_levenshtein_distance=True,
-    extend_previous_databases=True,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
-    goty_field="goty_preferences",
-    year_constraint="equality",
-    print_matches=True,
-    verbose=False,
-):
+    print_after_sort: bool = True,
+    use_igdb: bool = False,
+    retrieve_igdb_data_from_scratch: bool = True,
+    apply_hard_coded_extension_and_fixes: bool = True,
+    use_levenshtein_distance: bool = True,
+    extend_previous_databases: bool = True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
+    goty_field: str = "goty_preferences",
+    year_constraint: str = "equality",
+    print_matches: bool = True,
+    verbose: bool = False,
+) -> tuple[dict, dict]:
     if use_igdb:
         # Using IGDB
 

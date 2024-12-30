@@ -29,13 +29,13 @@ def load_ballots(input_filename):
 
 
 def print_reviews(
-    ballots,
-    matches,
-    app_id,
-    goty_field="goty_preferences",
-    goty_review_field=None,
+    ballots: dict,
+    matches: dict,
+    app_id: str,
+    goty_field: str = "goty_preferences",
+    goty_review_field: str | None = None,
     *,
-    export_for_forum=True,
+    export_for_forum: bool = True,
 ) -> None:
     if goty_review_field is None:
         goty_review_field = goty_field.replace("_preferences", "_description")

@@ -48,7 +48,7 @@ def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str,
     return params
 
 
-def get_adjusted_parsing_params(year: str | int):
+def get_adjusted_parsing_params(year: str | int) -> dict[str, dict]:
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
@@ -113,6 +113,7 @@ def get_parsing_offset(*, is_anonymized: bool) -> int:
 
 def get_parsing_indices(
     year: str | int,
+    *,
     is_anonymized: bool,
 ) -> dict[str, dict[str, list[int | None]]]:
     params = get_adjusted_parsing_params(year=year)

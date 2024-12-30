@@ -106,7 +106,7 @@ def format_game_name_for_igdb(raw_name, *, verbose=True):
 
 def match_names_with_igdb(
     raw_votes,
-    release_year=None,
+    release_year: str | None = None,
     *,
     must_be_available_on_pc=True,
     must_be_a_game=True,
@@ -290,7 +290,7 @@ def merge_databases(new_database, previous_database):
 
 def download_igdb_local_databases(
     ballots,
-    release_year=None,
+    release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes=True,
     extend_previous_databases=True,

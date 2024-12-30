@@ -131,12 +131,12 @@ def get_steam_service_no() -> int:
 
 
 def append_filter_for_igdb_fields(
-    igdb_fields,
-    filter_name,
-    filter_value,
+    igdb_fields: str,
+    filter_name: str,
+    filter_value: str | list[int] | int,
     *,
-    use_parenthesis=False,
-    comparison_symbol="=",
+    use_parenthesis: bool = False,
+    comparison_symbol: str = "=",
 ):
     where_statement = " ; where "
     conjunction_statement = " & "
@@ -208,12 +208,12 @@ def get_comparison_symbol(year_constraint="equality"):
 
 def get_igdb_fields_for_games(
     *,
-    must_be_available_on_pc=True,
-    must_be_a_game=True,
+    must_be_available_on_pc: bool = True,
+    must_be_a_game: bool = True,
     enforced_platform=None,
     enforced_game_category=None,
-    enforced_year=None,
-    year_constraint="equality",
+    enforced_year: int | None = None,
+    year_constraint: str = "equality",
 ):
     # Reference: https://api-docs.igdb.com/?kotlin#game
 

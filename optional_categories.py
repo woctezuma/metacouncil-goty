@@ -10,11 +10,11 @@ from parsing_params import get_optional_categories
 from steam_store_utils import get_link_to_store
 
 
-def get_best_optional_categories():
+def get_best_optional_categories() -> list[str]:
     return [f"best_{categorie}" for categorie in get_optional_categories()]
 
 
-def get_optional_ballots(ballots, category_name):
+def get_optional_ballots(ballots: dict, category_name: str) -> list:
     return [
         ballots[voter_name][category_name]
         for voter_name in ballots
@@ -24,7 +24,7 @@ def get_optional_ballots(ballots, category_name):
     ]
 
 
-def filter_noise_from_optional_ballots(optional_ballots):
+def filter_noise_from_optional_ballots(optional_ballots: dict) -> list[str]:
     return [element for element in optional_ballots if not is_a_noisy_vote(element)]
 
 
@@ -32,7 +32,10 @@ def get_dummy_field() -> str:
     return "dummy_preferences"
 
 
-def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None):
+def format_optional_ballots_for_igdb_matching(
+    optional_ballots: dict,
+    dummy_field: str | None = None,
+) -> dict[str, dict[str, dict[int, str]]]:
     if dummy_field is None:
         dummy_field = get_dummy_field()
 
@@ -48,16 +51,16 @@ def format_optional_ballots_for_igdb_matching(optional_ballots, dummy_field=None
 
 
 def match_optional_ballots(
-    optional_ballots,
-    release_year=None,
+    optional_ballots: dict,
+    release_year: int | None = None,
     *,
-    use_igdb=False,
-    retrieve_igdb_data_from_scratch=True,
-    apply_hard_coded_extension_and_fixes=True,
-    must_be_available_on_pc=False,
-    must_be_a_game=False,
-    use_levenshtein_distance=True,
-):
+    use_igdb: bool = False,
+    retrieve_igdb_data_from_scratch: bool = True,
+    apply_hard_coded_extension_and_fixes: bool = True,
+    must_be_available_on_pc: bool = False,
+    must_be_a_game: bool = False,
+    use_levenshtein_distance: bool = True,
+) -> list[str]:
     import steampi.calendar
 
     from extend_steamspy import load_extended_steamspy_database
@@ -190,7 +193,7 @@ def match_optional_ballots(
     return matched_optional_ballots
 
 
-def count_optional_ballots(optional_ballots):
+def count_optional_ballots(optional_ballots: dict) -> dict:
     optional_counts = {}
 
     for element in optional_ballots:
@@ -202,7 +205,9 @@ def count_optional_ballots(optional_ballots):
     return optional_counts
 
 
-def compute_ranking_based_on_optional_ballots(optional_ballots):
+def compute_ranking_based_on_optional_ballots(
+    optional_ballots: dict,
+) -> list[tuple[str, int]]:
     optional_counts = count_optional_ballots(optional_ballots)
 
     # Reference: https://stackoverflow.com/a/37693603
@@ -213,7 +218,7 @@ def compute_ranking_based_on_optional_ballots(optional_ballots):
     )
 
 
-def pretty_display(ranking) -> None:
+def pretty_display(ranking: list[tuple[str, int]]) -> None:
     print()
 
     current_num_votes = 0
@@ -237,14 +242,14 @@ def pretty_display(ranking) -> None:
 
 
 def display_optional_ballots(
-    input_filename,
+    input_filename: str,
     *,
-    filter_noise=True,
-    release_year=None,
-    use_igdb=False,
-    retrieve_igdb_data_from_scratch=True,
-    apply_hard_coded_extension_and_fixes=True,
-    use_levenshtein_distance=True,
+    filter_noise: bool = True,
+    release_year: int | None = None,
+    use_igdb: bool = False,
+    retrieve_igdb_data_from_scratch: bool = True,
+    apply_hard_coded_extension_and_fixes: bool = True,
+    use_levenshtein_distance: bool = True,
 ) -> bool:
     from load_ballots import load_ballots
 

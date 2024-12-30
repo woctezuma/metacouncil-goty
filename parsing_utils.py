@@ -9,7 +9,7 @@ from parsing_params import (
 
 def extract_game_tokens(
     input_tokens: list[str],
-    ind_list: list[int],
+    ind_list: list[int | None],
     num_choices: int,
     *,
     strip_game_name: bool = True,
@@ -29,7 +29,7 @@ def is_anonymized_file(fname: str) -> bool:
     return bool(get_anonymized_file_prefix() in fname)
 
 
-def parse_csv(fname: str, parsing_params):
+def parse_csv(fname: str, parsing_params: dict) -> dict[str, dict]:
     text_data = load_input(fname)
 
     is_anonymized = is_anonymized_file(fname)
@@ -42,7 +42,7 @@ def parse_csv(fname: str, parsing_params):
 
 def parse_text_data(
     text_data: list[str],
-    parsing_params,
+    parsing_params: dict,
     *,
     is_anonymized: bool,
 ) -> dict[str, dict]:
@@ -76,16 +76,19 @@ def parse_text_data(
     return ballots
 
 
-def read_voter_name(tokens, indices: dict[str, dict[str, list[int | None]]]):
+def read_voter_name(
+    tokens: list[str],
+    indices: dict[str, dict[str, list[int | None]]],
+) -> str:
     ind = indices["voter_name"]["index"][0]
     return tokens[ind]
 
 
 def fill_in_review(
-    tokens,
+    tokens: list[str],
     indices: dict[str, dict[str, list[int | None]]],
-    single_ballot,
-):
+    single_ballot: dict,
+) -> dict:
     for categorie in get_categories("main"):
         ind = indices["review"][categorie][0]
         review = None if ind is None else tokens[ind]
@@ -97,10 +100,10 @@ def fill_in_review(
 
 
 def fill_in_game_list(
-    tokens,
+    tokens: list[str],
     indices: dict[str, dict[str, list[int | None]]],
-    parsing_params,
-    single_ballot,
+    parsing_params: dict,
+    single_ballot: dict,
 ) -> dict:
     for categorie_type in ("main", "optional"):
         for categorie in get_categories(categorie_type=categorie_type):
@@ -117,7 +120,7 @@ def fill_in_game_list(
     return single_ballot
 
 
-def fill_in_best_optional(single_ballot):
+def fill_in_best_optional(single_ballot: dict) -> dict:
     for categorie in get_categories("optional"):
         goty_field = f"{categorie}_preferences"
         best_position = 1
