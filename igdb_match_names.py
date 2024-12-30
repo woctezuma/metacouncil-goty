@@ -496,8 +496,8 @@ def transform_structure_of_matches(
 
     matches = {}
 
-    for raw_name in igdb_match_database:
-        igdb_matched_ids = [str(igdb_id) for igdb_id in igdb_match_database[raw_name]]
+    for raw_name, name_matches in igdb_match_database.items():
+        igdb_matched_ids = [str(igdb_id) for igdb_id in name_matches]
 
         igdb_matched_pc_release_dates = []
         for igdb_id_as_str in igdb_matched_ids:
