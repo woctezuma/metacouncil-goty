@@ -928,8 +928,8 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             release_year=ballot_year,
         )
 
-        assert len(igdb_match_database) > 0
-        assert len(igdb_local_database) > 0
+        assert igdb_match_database
+        assert igdb_local_database
 
     @staticmethod
     def test_transform_structure_of_matches() -> None:
@@ -945,7 +945,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
             igdb_match_database=igdb_match_database,
             igdb_local_database=igdb_local_database,
         )
-        assert len(matches) > 0
+        assert matches
 
     @staticmethod
     def test_main() -> None:

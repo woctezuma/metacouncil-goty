@@ -56,7 +56,7 @@ def get_igdb_human_release_dates(
         # Unknown release date
         human_release_dates = [None]
 
-    if len(human_release_dates) > 0:
+    if human_release_dates:
         human_release_date_to_remember = max(human_release_dates)
     else:
         human_release_date_to_remember = None
@@ -83,7 +83,7 @@ def get_igdb_release_years(
     if target_release_year is not None:
         target_release_year_as_int = int(target_release_year)
 
-        if len(release_years) > 0:
+        if release_years:
             if target_release_year_as_int in release_years:
                 year_to_remember = target_release_year_as_int
             else:
