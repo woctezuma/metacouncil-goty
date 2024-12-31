@@ -669,7 +669,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         fields = igdb_utils.append_filter_for_igdb_fields(
             fields,
             "platforms",
-            6,
+            "6",
             use_parenthesis=True,
         )
         assert "; where " in fields

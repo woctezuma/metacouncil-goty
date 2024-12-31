@@ -70,7 +70,8 @@ def get_author_name_token_index(
     is_anonymized: bool = False,
 ) -> int:
     indices = get_parsing_indices(year=ballot_year, is_anonymized=is_anonymized)
-    return 2 * indices["voter_name"]["index"][0]
+    ind = indices["voter_name"]["index"][0]
+    return 2 * ind if ind else -1
     # NB: we multiply the index by 2, because count starts at 0 and there are ";" separators in the original data.
     # Expected result for a file which was not anonymized: 18.
 

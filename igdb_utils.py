@@ -129,13 +129,18 @@ def get_steam_service_no() -> int:
 def append_filter_for_igdb_fields(
     igdb_fields: str,
     filter_name: str,
-    filter_value: str | list[int] | int,
+    filter_value: str,
     *,
     use_parenthesis: bool = False,
     comparison_symbol: str = "=",
 ) -> str:
     where_statement = " ; where "
     conjunction_statement = " & "
+
+    try:
+        filter_value_as_int = int(filter_value)
+    except TypeError:
+        filter_value_as_int = None
 
     if filter_name.startswith("platform"):
         # The filter name can be singular or plural:
@@ -147,10 +152,10 @@ def append_filter_for_igdb_fields(
         # We will force the use of parenthesis if the filter value contains several game categories,
         # e.g. '1,4' or [1,4] will lead to a filtering with (1,4).
 
-        try:
+        if filter_value_as_int is None:
             # Assume filter value is either a string or a list of integers.
             num_enforced_game_categories = len(filter_value)
-        except TypeError:
+        else:
             # The exception suggests that filter value is actually an integer.
             num_enforced_game_categories = 1
 
@@ -239,7 +244,7 @@ def get_igdb_fields_for_games(
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
             "platforms",
-            enforced_platform,
+            str(enforced_platform),
             use_parenthesis=True,
         )
 
@@ -250,7 +255,7 @@ def get_igdb_fields_for_games(
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
             "category",
-            enforced_game_category,
+            str(enforced_game_category),
         )
 
     if enforced_year is not None:
@@ -259,7 +264,7 @@ def get_igdb_fields_for_games(
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
             "release_dates.y",
-            enforced_year,
+            str(enforced_year),
             comparison_symbol=comparison_symbol,
         )
 
@@ -293,7 +298,7 @@ def get_igdb_fields_for_release_dates(
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(
             igdb_fields_for_release_dates,
             "platform",
-            enforced_platform,
+            str(enforced_platform),
             use_parenthesis=True,
         )
 
@@ -301,7 +306,7 @@ def get_igdb_fields_for_release_dates(
         igdb_fields_for_release_dates = append_filter_for_igdb_fields(
             igdb_fields_for_release_dates,
             "y",
-            enforced_year,
+            str(enforced_year),
         )
 
     return igdb_fields_for_release_dates
@@ -311,8 +316,8 @@ def format_list_of_platforms(
     raw_data_platforms: list[dict[str, int | str]],
     *,
     verbose: bool = True,
-) -> dict[int, dict[str, str | None]]:
-    formatted_data_platforms = {}
+) -> dict[int | str, dict[str, int | str | None]]:
+    formatted_data_platforms: dict[int | str, dict[str, int | str | None]] = {}
 
     sorted_data_platforms = sorted(raw_data_platforms, key=operator.itemgetter("id"))
 

@@ -151,7 +151,7 @@ def look_up_game_id(
     fields_str = append_filter_for_igdb_fields(
         fields_str,
         "id",
-        game_id,
+        str(game_id),
     )
 
     params = get_igdb_request_params()

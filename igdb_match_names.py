@@ -67,7 +67,7 @@ def get_igdb_human_release_dates(
 def get_igdb_release_years(
     igdb_data: dict,
     target_release_year: int | str | None = None,
-) -> tuple[list[int], int]:
+) -> tuple[list[int | None], int]:
     try:
         release_years = {
             date["y"]
@@ -93,7 +93,7 @@ def get_igdb_release_years(
                 if year_to_remember is None:
                     year_to_remember = -1
 
-    return release_years, year_to_remember
+    return list(release_years), year_to_remember
 
 
 def format_game_name_for_igdb(raw_name: str, *, verbose: bool = True) -> str:
