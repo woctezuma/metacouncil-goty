@@ -17,7 +17,7 @@ from igdb_match_names import (
 )
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
-from my_types import HardCodedIDs
+from my_types import HardCodedIDs, Ranking
 from steam_store_utils import get_early_access_status, get_link_to_store
 from whitelist_vote import load_whitelisted_ids
 
@@ -209,8 +209,8 @@ def filter_out_votes_for_wrong_release_years(
 
 
 def adapt_votes_format_for_schulze_computations(
-    standardized_ballots: dict,
-) -> tuple[list[str], list[tuple[list[list[str]], int]]]:
+    standardized_ballots: dict[str, dict],
+) -> tuple[list[str], list[tuple[Ranking, int]]]:
     candidate_names = set()
 
     for voter in standardized_ballots:
@@ -244,7 +244,7 @@ def adapt_votes_format_for_schulze_computations(
     return candidate_names, weighted_ranks
 
 
-def compute_schulze_ranking(standardized_ballots: dict) -> list[list[str]]:
+def compute_schulze_ranking(standardized_ballots: dict) -> Ranking:
     # Reference: https://github.com/mgp/schulze-method
 
     import schulze
@@ -257,7 +257,7 @@ def compute_schulze_ranking(standardized_ballots: dict) -> list[list[str]]:
 
 
 def print_schulze_ranking(
-    schulze_ranking: list[list[str]],
+    schulze_ranking: Ranking,
     target_release_year: str | None = None,
     *,
     use_igdb: bool = False,
@@ -374,7 +374,7 @@ def try_to_break_ties_in_app_id_group(
     app_id_group: list[str],
     standardized_ballots: dict,
     threshold_n: int | None = None,
-) -> list[list[str]]:
+) -> Ranking:
     len(app_id_group)
 
     if threshold_n is None:
@@ -409,11 +409,11 @@ def try_to_break_ties_in_app_id_group(
 
 
 def unwind_ranking(
-    input_ranking: list[list[str]],
+    input_ranking: Ranking,
     app_id_group: list[str],
     standardized_ballots: dict,
     threshold_n: int,
-) -> list[list[str]]:
+) -> Ranking:
     if len(input_ranking) == 1:
         print("Tie still there. Trying again with a higher threshold.")
         output_ranking = try_to_break_ties_in_app_id_group(
@@ -432,9 +432,9 @@ def unwind_ranking(
 
 
 def dissect_ranking(
-    input_ranking: list[list[str]],
+    input_ranking: Ranking,
     standardized_ballots: dict,
-) -> list[list[str]]:
+) -> Ranking:
     output_ranking = []
 
     for small_app_id_group in input_ranking:
@@ -478,9 +478,9 @@ def display_info_about_tie(
 
 
 def try_to_break_ties_in_schulze_ranking(
-    schulze_ranking: list[list[str]],
+    schulze_ranking: Ranking,
     standardized_ballots: dict,
-) -> list[list[str]]:
+) -> Ranking:
     untied_schulze_ranking = []
 
     for group_no, app_id_group in enumerate(schulze_ranking):
@@ -527,7 +527,7 @@ def print_ballot_distribution_for_given_appid(
 
 
 def print_ballot_distribution_for_top_ranked_games(
-    schulze_ranking: list[list[str]],
+    schulze_ranking: Ranking,
     standardized_ballots: dict,
     num_app_id_groups_to_display: int = 3,
 ) -> None:
@@ -536,7 +536,7 @@ def print_ballot_distribution_for_top_ranked_games(
 
 
 def print_reviews_for_top_ranked_games(
-    schulze_ranking: list[list[str]],
+    schulze_ranking: Ranking,
     ballots: dict,
     matches: dict,
     goty_field: str = "goty_preferences",
@@ -548,7 +548,7 @@ def print_reviews_for_top_ranked_games(
 
 
 def print_voter_stats(
-    schulze_ranking: list[list[str]],
+    schulze_ranking: Ranking,
     standardized_ballots: dict,
     num_app_id_groups_to_display: int = 7,
     *,
