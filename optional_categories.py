@@ -123,7 +123,7 @@ def match_optional_ballots(
                 try:
                     igdb_matched_ids = igdb_match_database[raw_name]
                 except KeyError:
-                    igdb_matched_ids = [None]
+                    igdb_matched_ids = []
 
                 try:
                     igdb_best_matched_id = igdb_matched_ids[0]
