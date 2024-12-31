@@ -1,4 +1,4 @@
-from my_types import Params
+from my_types import Indices, Params
 
 YEAR_WITH_NO_VR_VOTE = 2018
 YEAR_WITH_DECADE_VOTE = 2019
@@ -75,10 +75,10 @@ def get_next_indices(
 def convert_params_to_indices(
     params: Params,
     offset: int = 9,
-) -> dict[str, dict[str, list[int | None]]]:
+) -> Indices:
     voter_index = offset
 
-    indices: dict[str, dict[str, list[int | None]]] = {
+    indices: Indices = {
         "voter_name": {"index": [voter_index]},
         "main": {},
         "review": {},
@@ -120,7 +120,7 @@ def get_parsing_indices(
     year: str,
     *,
     is_anonymized: bool,
-) -> dict[str, dict[str, list[int | None]]]:
+) -> Indices:
     params = get_adjusted_parsing_params(year=year)
     offset = get_parsing_offset(is_anonymized=is_anonymized)
     return convert_params_to_indices(params, offset)

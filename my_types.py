@@ -1,4 +1,5 @@
 type Ballots = dict[str, dict]
 type HardCodedIDs = dict[str, dict[str, str]]
+type Indices = dict[str, dict[str, list[int | None]]]
 type Params = dict[str, dict[str, int]]
 type Ranking = list[list[str]]

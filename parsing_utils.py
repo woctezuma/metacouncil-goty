@@ -1,5 +1,5 @@
 from anonymize_data import get_anonymized_file_prefix, load_input, remove_header
-from my_types import Ballots, Params
+from my_types import Ballots, Indices, Params
 from parsing_params import (
     convert_params_to_indices,
     get_adjusted_parsing_params,
@@ -48,7 +48,7 @@ def parse_text_data(
     is_anonymized: bool,
 ) -> Ballots:
     offset = get_parsing_offset(is_anonymized=is_anonymized)
-    indices: dict[str, dict[str, list[int | None]]] = convert_params_to_indices(
+    indices: Indices = convert_params_to_indices(
         parsing_params,
         offset=offset,
     )
@@ -79,7 +79,7 @@ def parse_text_data(
 
 def read_voter_name(
     tokens: list[str],
-    indices: dict[str, dict[str, list[int | None]]],
+    indices: Indices,
 ) -> str:
     ind = indices["voter_name"]["index"][0]
     return tokens[ind] if ind is not None else ""
@@ -87,7 +87,7 @@ def read_voter_name(
 
 def fill_in_review(
     tokens: list[str],
-    indices: dict[str, dict[str, list[int | None]]],
+    indices: Indices,
     single_ballot: dict,
 ) -> dict[str, str]:
     for categorie in get_categories("main"):
@@ -102,7 +102,7 @@ def fill_in_review(
 
 def fill_in_game_list(
     tokens: list[str],
-    indices: dict[str, dict[str, list[int | None]]],
+    indices: Indices,
     parsing_params: dict,
     single_ballot: dict,
 ) -> dict[str, dict[int, str]]:
