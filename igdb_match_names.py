@@ -385,7 +385,7 @@ def figure_out_ballots_with_missing_data(
     goty_field: str = "goty_preferences",
     *,
     verbose: bool = False,
-) -> dict:
+) -> Ballots:
     # The extended match database is loaded so that there is no IGDB query for games which are already manually matched.
     # This means that we could work in offline mode once the manual matches cover all the empty results of IGDB queries.
     #
