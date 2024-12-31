@@ -21,6 +21,7 @@ import schulze_goty
 import steam_store_utils
 import whitelist_vote
 import whitelist_vote_igdb
+from my_types import Ballots
 from parsing_params import YEAR_WITH_DECADE_VOTE, YEAR_WITH_NO_VR_VOTE
 
 EXPECTED_NUM_BALLOTS = 3
@@ -350,7 +351,7 @@ class TestExtendSteamSpyMethods(unittest.TestCase):
 
 class TestMatchNamesMethods(unittest.TestCase):
     @staticmethod
-    def get_ballots(ballot_year: str = "2018") -> dict[str, dict]:
+    def get_ballots(ballot_year: str = "2018") -> Ballots:
         input_filename = "anonymized_dummy_goty_awards_" + ballot_year + ".csv"
 
         return load_ballots.load_ballots(input_filename)

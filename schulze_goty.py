@@ -17,15 +17,15 @@ from igdb_match_names import (
 )
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
-from my_types import HardCodedIDs, Ranking
+from my_types import Ballots, HardCodedIDs, Ranking
 from steam_store_utils import get_early_access_status, get_link_to_store
 from whitelist_vote import load_whitelisted_ids
 
 
 def filter_out_votes_for_early_access_titles(
-    standardized_ballots: dict[str, dict],
+    standardized_ballots: Ballots,
     whitelisted_ids: HardCodedIDs | None = None,
-) -> dict[str, dict]:
+) -> Ballots:
     # Objective: remove appID which gathered votes but are tagged as 'Early Access' titles
 
     if whitelisted_ids is None:
@@ -94,14 +94,14 @@ def get_local_database(
 
 
 def filter_out_votes_for_wrong_release_years(
-    standardized_ballots: dict[str, dict],
+    standardized_ballots: Ballots,
     target_release_year: str,
     *,
     use_igdb: bool = False,
     year_constraint: str = "equality",
     whitelisted_ids: dict | None = None,
     is_steamspy_api_paginated: bool = True,
-) -> dict:
+) -> Ballots:
     # Objective: remove appID which gathered votes but were not released during the target release year
 
     if whitelisted_ids is None:
@@ -209,7 +209,7 @@ def filter_out_votes_for_wrong_release_years(
 
 
 def adapt_votes_format_for_schulze_computations(
-    standardized_ballots: dict[str, dict],
+    standardized_ballots: Ballots,
 ) -> tuple[list[str], list[tuple[Ranking, int]]]:
     candidate_names = set()
 

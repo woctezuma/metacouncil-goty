@@ -12,6 +12,7 @@ from igdb_databases import (
 from igdb_look_up import look_up_game_name, wait_for_cooldown
 from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_service_no
 from load_ballots import load_ballots
+from my_types import Ballots
 
 
 def get_link_to_igdb_website(
@@ -502,7 +503,7 @@ def load_igdb_local_databases(
 def transform_structure_of_matches(
     igdb_match_database: dict,
     igdb_local_database: dict,
-) -> dict[str, dict]:
+) -> Ballots:
     # Retro-compatibility with code written for SteamSpy
 
     matches = {}

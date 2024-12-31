@@ -1,3 +1,4 @@
+from my_types import Ballots
 from parsing_params import get_adjusted_parsing_params
 from parsing_utils import parse_csv
 
@@ -25,7 +26,7 @@ def get_parsing_params(ballot_year: str) -> dict[str, dict[str, int]]:
     return get_adjusted_parsing_params(year=ballot_year)
 
 
-def load_ballots(input_filename: str) -> dict[str, dict]:
+def load_ballots(input_filename: str) -> Ballots:
     ballot_year = convert_fname_to_year(fname=input_filename)
     parsing_params = get_parsing_params(ballot_year=ballot_year)
     return parse_csv(input_filename, parsing_params)
