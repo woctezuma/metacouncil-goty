@@ -19,7 +19,7 @@ def extract_game_tokens(
     for i, ind in enumerate(ind_list):
         # Caveat: num_choices is not necessarily equal to len(ind_list)
         position = num_choices - i
-        game_name = input_tokens[ind] if ind else ""
+        game_name = input_tokens[ind] if ind is not None else ""
         if strip_game_name:
             game_name = game_name.strip()
         d[position] = game_name
@@ -82,7 +82,7 @@ def read_voter_name(
     indices: dict[str, dict[str, list[int | None]]],
 ) -> str:
     ind = indices["voter_name"]["index"][0]
-    return tokens[ind] if ind else ""
+    return tokens[ind] if ind is not None else ""
 
 
 def fill_in_review(
@@ -92,7 +92,7 @@ def fill_in_review(
 ) -> dict[str, str | None]:
     for categorie in get_categories("main"):
         ind = indices["review"][categorie][0]
-        review = None if ind is None else tokens[ind]
+        review = tokens[ind] if ind is not None else None
 
         goty_review_field = f"{categorie}_description"
         single_ballot[goty_review_field] = review
