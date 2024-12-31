@@ -42,7 +42,7 @@ class TestParsingUtilsMethods(unittest.TestCase):
 
         ballots = parsing_utils.parse_text_data(
             text_data=[line],
-            parsing_params=parsing_utils.get_adjusted_parsing_params(2020),
+            parsing_params=parsing_utils.get_adjusted_parsing_params("2020"),
             is_anonymized=True,
         )
 
@@ -102,7 +102,7 @@ class TestAnonymizeDataMethods(unittest.TestCase):
         expected_author_token_index = 18
         is_anonymized = False
 
-        for ballot_year in (2018, 2019, 2020):
+        for ballot_year in ("2018", "2019", "2020"):
             author_token_index = anonymize_data.get_author_name_token_index(
                 ballot_year=ballot_year,
                 is_anonymized=is_anonymized,

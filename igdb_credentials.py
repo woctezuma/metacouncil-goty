@@ -83,7 +83,7 @@ def save_credentials_to_disk(credentials: dict) -> None:
         json.dump(igdb_user_key, f)
 
 
-def download_latest_credentials(*, verbose: bool = True) -> dict:
+def download_latest_credentials(*, verbose: bool = True) -> dict[str, str | int]:
     if verbose:
         print("[query] credentials")
 

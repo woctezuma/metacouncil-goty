@@ -58,7 +58,7 @@ def wait_for_cooldown(
     return new_start_time
 
 
-def get_igdb_request_headers() -> dict[str, str | None]:
+def get_igdb_request_headers() -> dict[str, str | int | None]:
     igdb_user_key = load_igdb_user_key()
 
     # For IGDB API version 3:
@@ -76,7 +76,7 @@ def get_igdb_request_headers() -> dict[str, str | None]:
 
 def look_up_game_name(
     game_name: str,
-    enforced_year: str | int | None = None,
+    enforced_year: str | None = None,
     *,
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
@@ -122,7 +122,7 @@ def look_up_game_name(
 
 def look_up_game_id(
     game_id: int,
-    enforced_year: str | int | None = None,
+    enforced_year: str | None = None,
     *,
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
@@ -171,7 +171,7 @@ def look_up_game_id(
 
 
 def look_up_games_released_in_given_year(
-    enforced_year: str | int,
+    enforced_year: str,
     *,
     must_be_available_on_pc: bool = True,
     enforced_platform: int | None = None,
@@ -279,7 +279,7 @@ def manual_look_up(
 
 
 def main() -> bool:
-    enforced_year = 2019
+    enforced_year = "2019"
     must_be_available_on_pc = True
     must_be_a_game = True
     verbose = True

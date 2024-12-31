@@ -75,7 +75,7 @@ def filter_out_votes_for_early_access_titles(
 
 
 def get_local_database(
-    target_release_year: int | str | None = None,
+    target_release_year: str | None = None,
     *,
     use_igdb: bool = False,
     verbose: bool = False,
@@ -94,7 +94,7 @@ def get_local_database(
 
 def filter_out_votes_for_wrong_release_years(
     standardized_ballots: dict,
-    target_release_year: int | str,
+    target_release_year: str,
     *,
     use_igdb: bool = False,
     year_constraint: str = "equality",
@@ -257,7 +257,7 @@ def compute_schulze_ranking(standardized_ballots: dict) -> list[list[str]]:
 
 def print_schulze_ranking(
     schulze_ranking: list[list[str]],
-    target_release_year: int | str | None = None,
+    target_release_year: str | None = None,
     *,
     use_igdb: bool = False,
 ) -> None:

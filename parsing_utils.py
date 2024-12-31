@@ -138,7 +138,7 @@ def fill_in_best_optional(single_ballot: dict) -> dict:
 if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = 2018
+    ballot_year = "2018"
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
 
     params = get_adjusted_parsing_params(year=ballot_year)

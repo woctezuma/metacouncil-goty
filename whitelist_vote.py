@@ -10,7 +10,7 @@ def get_hard_coded_whitelisted_app_ids() -> dict[str, dict[str, str]]:
 
 
 def load_whitelisted_ids(
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     *,
     use_igdb: bool = False,
 ) -> dict:

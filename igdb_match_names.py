@@ -66,7 +66,7 @@ def get_igdb_human_release_dates(
 
 def get_igdb_release_years(
     igdb_data: dict,
-    target_release_year: int | str | None = None,
+    target_release_year: str | None = None,
 ) -> tuple[list[int | None], int]:
     try:
         release_years = {
@@ -117,7 +117,7 @@ def format_game_name_for_igdb(raw_name: str, *, verbose: bool = True) -> str:
 
 def match_names_with_igdb(
     raw_votes: dict,
-    release_year: str | int | None = None,
+    release_year: str | None = None,
     *,
     must_be_available_on_pc: bool = True,
     must_be_a_game: bool = True,
@@ -218,7 +218,7 @@ def match_names_with_igdb(
 def print_igdb_matches(
     igdb_match_database: dict,
     igdb_local_database: dict,
-    constrained_release_year: int | str | None = None,
+    constrained_release_year: str | None = None,
     year_constraint: str = "equality",
 ) -> None:
     sorted_input_names = sorted(igdb_match_database.keys())
@@ -301,7 +301,7 @@ def merge_databases(new_database: dict, previous_database: dict) -> dict:
 
 def download_igdb_local_databases(
     ballots: dict,
-    release_year: str | int | None = None,
+    release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,
     extend_previous_databases: bool = True,
@@ -376,7 +376,7 @@ def download_igdb_local_databases(
 def figure_out_ballots_with_missing_data(
     ballots: dict,
     igdb_match_database: dict | None = None,
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     goty_field: str = "goty_preferences",
     *,
     verbose: bool = False,
@@ -407,7 +407,7 @@ def figure_out_ballots_with_missing_data(
 
 def download_igdb_data_for_ballots_with_missing_data(
     new_ballots: dict,
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,
     must_be_available_on_pc: bool = True,
@@ -440,7 +440,7 @@ def download_igdb_data_for_ballots_with_missing_data(
 
 def load_igdb_local_databases(
     ballots: dict,
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,
     must_be_available_on_pc: bool = True,

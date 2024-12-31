@@ -22,7 +22,7 @@ from igdb_match_names import (
 def constrain_app_id_search_by_year(
     dist: dict[str, float],
     sorted_app_ids: list[str],
-    release_year: str | int | None,
+    release_year: str | None,
     max_num_tries_for_year: int,
     year_constraint: str | None = "equality",
 ) -> list[str]:
@@ -107,7 +107,7 @@ def get_default_distance_cut_off_for_difflib() -> float:
 def find_closest_app_id(
     game_name_input: str,
     steamspy_database: dict,
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     num_closest_neighbors: int = 1,
     max_num_tries_for_year: int = 2,
     *,
@@ -166,7 +166,7 @@ def find_closest_app_id(
 
 def precompute_matches(
     raw_votes: dict,
-    release_year: int | str | None = None,
+    release_year: str | None = None,
     num_closest_neighbors: int = 3,
     max_num_tries_for_year: int = 2,
     *,
@@ -302,7 +302,7 @@ def normalize_votes(
 
 def standardize_ballots(
     ballots: dict,
-    release_year: int | str | None,
+    release_year: str | None,
     *,
     print_after_sort: bool = True,
     use_igdb: bool = False,

@@ -213,7 +213,7 @@ def get_igdb_fields_for_games(
     must_be_a_game: bool = True,
     enforced_platform: int | None = None,
     enforced_game_category: list[int] | None = None,
-    enforced_year: str | int | None = None,
+    enforced_year: str | None = None,
     year_constraint: str = "equality",
 ) -> str:
     # Reference: https://api-docs.igdb.com/?kotlin#game
@@ -275,7 +275,7 @@ def get_igdb_fields_for_release_dates(
     *,
     must_be_available_on_pc: bool = True,
     enforced_platform: int | None = None,
-    enforced_year: str | int | None = None,
+    enforced_year: str | None = None,
 ) -> str:
     # Reference: https://api-docs.igdb.com/?kotlin#release-date
 

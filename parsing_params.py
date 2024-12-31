@@ -22,7 +22,7 @@ def get_categories(categorie_type: str = "main") -> list[str]:
     return categories
 
 
-def get_default_parsing_params() -> dict[str, dict]:
+def get_default_parsing_params() -> dict[str, dict[str, int]]:
     params = {}
 
     for categorie in get_main_categories():
@@ -34,7 +34,10 @@ def get_default_parsing_params() -> dict[str, dict]:
     return params
 
 
-def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str, dict]:
+def adjust_params_to_year(
+    params: dict[str, dict[str, int]],
+    year: str,
+) -> dict[str, dict[str, int]]:
     # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
     if int(year) == YEAR_WITH_NO_VR_VOTE:
         params["vr"]["num_choices"] = 0
@@ -48,7 +51,7 @@ def adjust_params_to_year(params: dict[str, dict], year: str | int) -> dict[str,
     return params
 
 
-def get_adjusted_parsing_params(year: str | int) -> dict[str, dict]:
+def get_adjusted_parsing_params(year: str) -> dict[str, dict[str, int]]:
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
@@ -112,7 +115,7 @@ def get_parsing_offset(*, is_anonymized: bool) -> int:
 
 
 def get_parsing_indices(
-    year: str | int,
+    year: str,
     *,
     is_anonymized: bool,
 ) -> dict[str, dict[str, list[int | None]]]:
@@ -122,7 +125,7 @@ def get_parsing_indices(
 
 
 if __name__ == "__main__":
-    ballot_year = 2018
+    ballot_year = "2018"
 
     params = get_adjusted_parsing_params(year=ballot_year)
     print(params)

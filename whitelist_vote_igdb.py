@@ -6,14 +6,14 @@ from igdb_databases import get_igdb_file_name_suffix
 
 
 def get_file_name_for_whitelisted_igdb_ids(
-    release_year: int | str | None = None,
+    release_year: str | None = None,
 ) -> str:
     suffix = get_igdb_file_name_suffix(release_year)
 
     return get_data_folder() + "whitelisted_igdb_ids" + suffix + ".json"
 
 
-def load_whitelisted_igdb_ids(release_year: int | str | None = None) -> dict:
+def load_whitelisted_igdb_ids(release_year: str | None = None) -> dict:
     file_name = get_file_name_for_whitelisted_igdb_ids(release_year=release_year)
 
     try:
