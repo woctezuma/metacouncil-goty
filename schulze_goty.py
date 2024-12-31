@@ -312,7 +312,9 @@ def get_positions_for_single_voter(ballots: Ballots) -> list[str]:
     return sorted(ballots.keys())
 
 
-def get_positions_for_every_voter(ballots_for_every_voter: dict) -> list[str]:
+def get_positions_for_every_voter(
+    ballots_for_every_voter: dict[str, Ballots],
+) -> list[str]:
     positions_for_every_voter = set()
 
     for voter_name in ballots_for_every_voter:
@@ -328,11 +330,11 @@ def build_standardized_ballots_for_tie(
     app_id_group: list[str],
     standardized_ballots: Ballots,
     threshold_n: int | None = None,
-) -> dict:
+) -> dict[str, Ballots]:
     if threshold_n is None:
         threshold_n = 1
 
-    standardized_ballots_for_tied_app_id_group: dict = {}
+    standardized_ballots_for_tied_app_id_group: dict[str, Ballots] = {}
 
     for voter_name in standardized_ballots:
         current_ballots = standardized_ballots[voter_name]["ballots"]
@@ -347,7 +349,7 @@ def build_standardized_ballots_for_tie(
         )
 
         if has_voted_for_at_least_n_tied_app_ids:
-            standardized_ballots_for_tied_app_id_group[voter_name] = {}
+            standardized_ballots_for_tied_app_id_group[voter_name]: Ballots = {}
             standardized_ballots_for_tied_app_id_group[voter_name]["ballots"] = {}
 
             new_ballots = [
@@ -456,7 +458,7 @@ def dissect_ranking(
 
 def display_info_about_tie(
     app_id_group: list[str],
-    standardized_ballots_for_tied_app_id_group: dict,
+    standardized_ballots_for_tied_app_id_group: dict[str, Ballots],
     threshold_n: int,
 ) -> None:
     positions = get_positions_for_every_voter(
