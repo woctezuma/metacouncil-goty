@@ -42,7 +42,7 @@ def get_link_to_igdb_website(
 def get_igdb_human_release_dates(
     igdb_id: int | str,
     igdb_local_database: dict,
-) -> tuple[list[str | None], str | None]:
+) -> tuple[list[str], str | None]:
     igdb_id_as_str = str(igdb_id)
 
     igdb_data = igdb_local_database[igdb_id_as_str]
@@ -57,7 +57,7 @@ def get_igdb_human_release_dates(
         )
     except KeyError:
         # Unknown release date
-        human_release_dates = [None]
+        human_release_dates = []
 
     if human_release_dates:
         human_release_date_to_remember = max(human_release_dates)
