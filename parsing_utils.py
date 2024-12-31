@@ -29,7 +29,7 @@ def is_anonymized_file(fname: str) -> bool:
     return bool(get_anonymized_file_prefix() in fname)
 
 
-def parse_csv(fname: str, parsing_params: dict) -> dict[str, dict]:
+def parse_csv(fname: str, parsing_params: dict[str, dict[str, int]]) -> dict[str, dict]:
     text_data = load_input(fname)
 
     is_anonymized = is_anonymized_file(fname)
@@ -42,7 +42,7 @@ def parse_csv(fname: str, parsing_params: dict) -> dict[str, dict]:
 
 def parse_text_data(
     text_data: list[str],
-    parsing_params: dict,
+    parsing_params: dict[str, dict[str, int]],
     *,
     is_anonymized: bool,
 ) -> dict[str, dict]:
@@ -88,7 +88,7 @@ def fill_in_review(
     tokens: list[str],
     indices: dict[str, dict[str, list[int | None]]],
     single_ballot: dict,
-) -> dict:
+) -> dict[str, str | None]:
     for categorie in get_categories("main"):
         ind = indices["review"][categorie][0]
         review = None if ind is None else tokens[ind]
@@ -104,7 +104,7 @@ def fill_in_game_list(
     indices: dict[str, dict[str, list[int | None]]],
     parsing_params: dict,
     single_ballot: dict,
-) -> dict:
+) -> dict[str, dict[int, str]]:
     for categorie_type in ("main", "optional"):
         for categorie in get_categories(categorie_type=categorie_type):
             ind_list = indices[categorie_type][categorie]
@@ -120,7 +120,7 @@ def fill_in_game_list(
     return single_ballot
 
 
-def fill_in_best_optional(single_ballot: dict) -> dict:
+def fill_in_best_optional(single_ballot: dict) -> dict[str, str | None]:
     for categorie in get_categories("optional"):
         goty_field = f"{categorie}_preferences"
         best_position = 1

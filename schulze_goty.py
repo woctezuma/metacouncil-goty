@@ -94,7 +94,7 @@ def get_local_database(
 
 
 def filter_out_votes_for_wrong_release_years(
-    standardized_ballots: dict,
+    standardized_ballots: dict[str, dict],
     target_release_year: str,
     *,
     use_igdb: bool = False,

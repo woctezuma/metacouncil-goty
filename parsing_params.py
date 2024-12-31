@@ -71,7 +71,7 @@ def get_next_indices(
 
 
 def convert_params_to_indices(
-    params: dict[str, dict],
+    params: dict[str, dict[str, int]],
     offset: int = 9,
 ) -> dict[str, dict[str, list[int | None]]]:
     voter_index = offset
