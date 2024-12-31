@@ -6,7 +6,7 @@ from igdb_match_names import (
     get_link_to_igdb_website,
     load_igdb_local_databases,
 )
-from my_types import Ballots
+from my_types import Ballots, OptionalBallots, OptionalRanking
 from parsing_params import get_optional_categories
 from steam_store_utils import get_link_to_store
 
@@ -15,7 +15,7 @@ def get_best_optional_categories() -> list[str]:
     return [f"best_{categorie}" for categorie in get_optional_categories()]
 
 
-def get_optional_ballots(ballots: Ballots, category_name: str) -> list[str]:
+def get_optional_ballots(ballots: Ballots, category_name: str) -> OptionalBallots:
     return [
         ballots[voter_name][category_name]
         for voter_name in ballots
@@ -25,7 +25,9 @@ def get_optional_ballots(ballots: Ballots, category_name: str) -> list[str]:
     ]
 
 
-def filter_noise_from_optional_ballots(optional_ballots: list[str]) -> list[str]:
+def filter_noise_from_optional_ballots(
+    optional_ballots: OptionalBallots,
+) -> OptionalBallots:
     return [element for element in optional_ballots if not is_a_noisy_vote(element)]
 
 
@@ -34,7 +36,7 @@ def get_dummy_field() -> str:
 
 
 def format_optional_ballots_for_igdb_matching(
-    optional_ballots: list[str],
+    optional_ballots: OptionalBallots,
     dummy_field: str | None = None,
 ) -> dict[str, dict[str, dict[int, str]]]:
     if dummy_field is None:
@@ -51,7 +53,7 @@ def format_optional_ballots_for_igdb_matching(
 
 
 def match_optional_ballots(
-    optional_ballots: list[str],
+    optional_ballots: OptionalBallots,
     release_year: str | None = None,
     *,
     use_igdb: bool = False,
@@ -60,7 +62,7 @@ def match_optional_ballots(
     must_be_available_on_pc: bool = False,
     must_be_a_game: bool = False,
     use_levenshtein_distance: bool = True,
-) -> list[str]:
+) -> OptionalBallots:
     import steampi.calendar
 
     from extend_steamspy import load_extended_steamspy_database
@@ -193,7 +195,7 @@ def match_optional_ballots(
     return matched_optional_ballots
 
 
-def count_optional_ballots(optional_ballots: list[str]) -> dict[str, int]:
+def count_optional_ballots(optional_ballots: OptionalBallots) -> dict[str, int]:
     optional_counts: dict[str, int] = {}
 
     for element in optional_ballots:
@@ -206,8 +208,8 @@ def count_optional_ballots(optional_ballots: list[str]) -> dict[str, int]:
 
 
 def compute_ranking_based_on_optional_ballots(
-    optional_ballots: list[str],
-) -> list[tuple[str, int]]:
+    optional_ballots: OptionalBallots,
+) -> OptionalRanking:
     optional_counts = count_optional_ballots(optional_ballots)
 
     # Reference: https://stackoverflow.com/a/37693603
@@ -218,7 +220,7 @@ def compute_ranking_based_on_optional_ballots(
     )
 
 
-def pretty_display(ranking: list[tuple[str, int]]) -> None:
+def pretty_display(ranking: OptionalRanking) -> None:
     print()
 
     current_num_votes = 0
