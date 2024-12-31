@@ -6,7 +6,7 @@ def get_igdb_user_key_file_name() -> str:
     return "igdb_user_key.json"
 
 
-def load_igdb_user_key() -> dict[str, str | int | None]:
+def load_igdb_user_key() -> dict:
     file_name = get_igdb_user_key_file_name()
 
     try:
@@ -16,10 +16,10 @@ def load_igdb_user_key() -> dict[str, str | int | None]:
         print(f"IGDB user secret key {file_name} not found.")
         igdb_user_key = {
             # For version 3 of IGDB API:
-            "user-key": None,
+            "user-key": "",
             # For version 4 of IGDB API:
-            "client_id": None,
-            "client_secret": None,
+            "client_id": "",
+            "client_secret": "",
             # The following are temporary credentials which should be obtained with the pair (id, secret) above:
             "token_type": "",
             "access_token": "",

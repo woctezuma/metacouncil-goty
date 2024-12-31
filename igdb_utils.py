@@ -129,7 +129,7 @@ def get_steam_service_no() -> int:
 def append_filter_for_igdb_fields(
     igdb_fields: str,
     filter_name: str,
-    filter_value: str,
+    filter_value: str | list[int],
     *,
     use_parenthesis: bool = False,
     comparison_symbol: str = "=",
@@ -137,9 +137,12 @@ def append_filter_for_igdb_fields(
     where_statement = " ; where "
     conjunction_statement = " & "
 
-    try:
-        filter_value_as_int = int(filter_value)
-    except TypeError:
+    if isinstance(filter_value, str):
+        try:
+            filter_value_as_int = int(filter_value)
+        except TypeError:
+            filter_value_as_int = None
+    else:
         filter_value_as_int = None
 
     if filter_name.startswith("platform"):
@@ -164,7 +167,7 @@ def append_filter_for_igdb_fields(
         if num_enforced_game_categories > 1:
             category_separator = ","
 
-            if category_separator in filter_value:
+            if isinstance(filter_value, str) and category_separator in filter_value:
                 # Adjust the count of game categories, because we previously included the separators in our count.
                 num_enforced_game_categories -= filter_value.count(category_separator)
 
@@ -255,7 +258,7 @@ def get_igdb_fields_for_games(
         igdb_fields_for_games = append_filter_for_igdb_fields(
             igdb_fields_for_games,
             "category",
-            str(enforced_game_category),
+            enforced_game_category,
         )
 
     if enforced_year is not None:

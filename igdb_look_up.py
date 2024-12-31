@@ -58,7 +58,7 @@ def wait_for_cooldown(
     return new_start_time
 
 
-def get_igdb_request_headers() -> dict[str, str | int | None]:
+def get_igdb_request_headers() -> dict[str, str]:
     igdb_user_key = load_igdb_user_key()
 
     # For IGDB API version 3:

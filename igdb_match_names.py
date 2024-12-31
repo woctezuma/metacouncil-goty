@@ -48,11 +48,13 @@ def get_igdb_human_release_dates(
     igdb_data = igdb_local_database[igdb_id_as_str]
 
     try:
-        human_release_dates = {
-            date["human"]
-            for date in igdb_data["release_dates"]
-            if "human" in date and (date["platform"] in get_pc_platform_range())
-        }
+        human_release_dates = list(
+            {
+                date["human"]
+                for date in igdb_data["release_dates"]
+                if "human" in date and (date["platform"] in get_pc_platform_range())
+            },
+        )
     except KeyError:
         # Unknown release date
         human_release_dates = [None]
@@ -68,16 +70,18 @@ def get_igdb_human_release_dates(
 def get_igdb_release_years(
     igdb_data: dict,
     target_release_year: str | None = None,
-) -> tuple[list[int | None], int]:
+) -> tuple[list[int], int]:
     try:
-        release_years = {
-            date["y"]
-            for date in igdb_data["release_dates"]
-            if "y" in date and (date["platform"] in get_pc_platform_range())
-        }
+        release_years = list(
+            {
+                date["y"]
+                for date in igdb_data["release_dates"]
+                if "y" in date and (date["platform"] in get_pc_platform_range())
+            },
+        )
     except KeyError:
         # Unknown release date
-        release_years = [None]
+        release_years = []
 
     year_to_remember = -1
 

@@ -232,7 +232,7 @@ def display_matches(matches: dict, *, print_after_sort: bool = True) -> None:
             / (1 + len(matches[x]["input_name"])),
         )
     else:
-        sorted_keys = matches.keys()
+        sorted_keys = list(matches.keys())
 
     for game in sorted_keys:
         element = matches[game]

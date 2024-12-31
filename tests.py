@@ -720,9 +720,7 @@ class TestIGDBUtilsMethods(unittest.TestCase):
         assert len(formatted_list) == len(platform_list)
 
     @staticmethod
-    def get_read_dead_redemption_two() -> (
-        dict[str, int | str | list[int] | list[dict[str, int | str]]]
-    ):
+    def get_read_dead_redemption_two() -> dict[str, int | str | list]:
         return {
             "id": 25076,
             "name": "Red Dead Redemption 2",
@@ -758,9 +756,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         }
 
     @staticmethod
-    def get_dummy_local_database() -> (
-        dict[str, dict[str, int | str | list[int] | list[dict[str, int | str]]]]
-    ):
+    def get_dummy_local_database() -> dict[str, dict[str, int | str | list]]:
         igdb_data = TestIGDBUtilsMethods.get_read_dead_redemption_two()
         return {"25076": igdb_data}
 

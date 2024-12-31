@@ -239,9 +239,7 @@ def adapt_votes_format_for_schulze_computations(
         current_weight = 1
         weighted_ranks.append((current_ranking, current_weight))
 
-    candidate_names = list(candidate_names)
-
-    return candidate_names, weighted_ranks
+    return list(candidate_names), weighted_ranks
 
 
 def compute_schulze_ranking(standardized_ballots: Ballots) -> Ranking:
@@ -349,7 +347,7 @@ def build_standardized_ballots_for_tie(
         )
 
         if has_voted_for_at_least_n_tied_app_ids:
-            standardized_ballots_for_tied_app_id_group[voter_name]: Ballots = {}
+            standardized_ballots_for_tied_app_id_group[voter_name] = {}
             standardized_ballots_for_tied_app_id_group[voter_name]["ballots"] = {}
 
             new_ballots = [
