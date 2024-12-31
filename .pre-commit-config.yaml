@@ -22,10 +22,3 @@ repos:
     - id: mypy
       additional_dependencies: [types-requests]
       stages: [manual]
-
--   repo: https://github.com/dosisod/refurb
-    rev: v2.0.0
-    hooks:
-    - id: refurb
-      args: [--python-version, "3.13"]
-      stages: [manual]
