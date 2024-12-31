@@ -578,8 +578,8 @@ class TestExtendIGDBMethods(unittest.TestCase):
             extended_igdb_match_database,
             extended_igdb_local_database,
         ) = extend_igdb.extend_both_igdb_databases(release_year="2018")
-        assert len(extended_igdb_match_database) > 0
-        assert len(extended_igdb_local_database) > 0
+        assert extended_igdb_match_database
+        assert extended_igdb_local_database
 
     @staticmethod
     def test_main() -> None:
