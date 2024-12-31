@@ -99,7 +99,7 @@ def filter_out_votes_for_wrong_release_years(
     *,
     use_igdb: bool = False,
     year_constraint: str = "equality",
-    whitelisted_ids: dict | None = None,
+    whitelisted_ids: HardCodedIDs | None = None,
     is_steamspy_api_paginated: bool = True,
 ) -> Ballots:
     # Objective: remove appID which gathered votes but were not released during the target release year
