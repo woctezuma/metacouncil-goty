@@ -89,10 +89,10 @@ def fill_in_review(
     tokens: list[str],
     indices: dict[str, dict[str, list[int | None]]],
     single_ballot: dict,
-) -> dict[str, str | None]:
+) -> dict[str, str]:
     for categorie in get_categories("main"):
         ind = indices["review"][categorie][0]
-        review = tokens[ind] if ind is not None else None
+        review = tokens[ind] if ind is not None else ""
 
         goty_review_field = f"{categorie}_description"
         single_ballot[goty_review_field] = review
