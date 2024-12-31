@@ -1,5 +1,5 @@
 from disqualify_vote_igdb import load_disqualified_igdb_ids
-from my_types import HardCodedIDs
+from my_types import Ballots, HardCodedIDs
 
 
 def get_hard_coded_disqualified_app_ids() -> HardCodedIDs:
@@ -27,7 +27,7 @@ def is_a_noisy_vote(game_name: str) -> bool:
 
 
 def filter_out_votes_for_hard_coded_reasons(
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     release_year: str | None = None,
     *,
     use_igdb: bool = False,

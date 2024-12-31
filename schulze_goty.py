@@ -244,7 +244,7 @@ def adapt_votes_format_for_schulze_computations(
     return candidate_names, weighted_ranks
 
 
-def compute_schulze_ranking(standardized_ballots: dict) -> Ranking:
+def compute_schulze_ranking(standardized_ballots: Ballots) -> Ranking:
     # Reference: https://github.com/mgp/schulze-method
 
     import schulze
@@ -308,7 +308,7 @@ def print_schulze_ranking(
         offset += len(app_id_group) - 1
 
 
-def get_positions_for_single_voter(ballots: dict) -> list[str]:
+def get_positions_for_single_voter(ballots: Ballots) -> list[str]:
     return sorted(ballots.keys())
 
 
@@ -326,7 +326,7 @@ def get_positions_for_every_voter(ballots_for_every_voter: dict) -> list[str]:
 
 def build_standardized_ballots_for_tie(
     app_id_group: list[str],
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     threshold_n: int | None = None,
 ) -> dict:
     if threshold_n is None:
@@ -372,7 +372,7 @@ def build_standardized_ballots_for_tie(
 
 def try_to_break_ties_in_app_id_group(
     app_id_group: list[str],
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     threshold_n: int | None = None,
 ) -> Ranking:
     len(app_id_group)
@@ -411,7 +411,7 @@ def try_to_break_ties_in_app_id_group(
 def unwind_ranking(
     input_ranking: Ranking,
     app_id_group: list[str],
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     threshold_n: int,
 ) -> Ranking:
     if len(input_ranking) == 1:
@@ -433,7 +433,7 @@ def unwind_ranking(
 
 def dissect_ranking(
     input_ranking: Ranking,
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
 ) -> Ranking:
     output_ranking = []
 
@@ -479,7 +479,7 @@ def display_info_about_tie(
 
 def try_to_break_ties_in_schulze_ranking(
     schulze_ranking: Ranking,
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
 ) -> Ranking:
     untied_schulze_ranking = []
 
@@ -505,7 +505,7 @@ def try_to_break_ties_in_schulze_ranking(
 
 def print_ballot_distribution_for_given_appid(
     app_id_group: list[str],
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
 ) -> None:
     for app_id in app_id_group:
         ballot_distribution = None
@@ -528,7 +528,7 @@ def print_ballot_distribution_for_given_appid(
 
 def print_ballot_distribution_for_top_ranked_games(
     schulze_ranking: Ranking,
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     num_app_id_groups_to_display: int = 3,
 ) -> None:
     for app_id_group in schulze_ranking[0:num_app_id_groups_to_display]:
@@ -537,7 +537,7 @@ def print_ballot_distribution_for_top_ranked_games(
 
 def print_reviews_for_top_ranked_games(
     schulze_ranking: Ranking,
-    ballots: dict,
+    ballots: Ballots,
     matches: dict,
     goty_field: str = "goty_preferences",
     num_app_id_groups_to_display: int = 3,
@@ -549,7 +549,7 @@ def print_reviews_for_top_ranked_games(
 
 def print_voter_stats(
     schulze_ranking: Ranking,
-    standardized_ballots: dict,
+    standardized_ballots: Ballots,
     num_app_id_groups_to_display: int = 7,
     *,
     verbose: bool = True,

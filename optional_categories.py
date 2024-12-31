@@ -6,6 +6,7 @@ from igdb_match_names import (
     get_link_to_igdb_website,
     load_igdb_local_databases,
 )
+from my_types import Ballots
 from parsing_params import get_optional_categories
 from steam_store_utils import get_link_to_store
 
@@ -14,7 +15,7 @@ def get_best_optional_categories() -> list[str]:
     return [f"best_{categorie}" for categorie in get_optional_categories()]
 
 
-def get_optional_ballots(ballots: dict, category_name: str) -> list[str]:
+def get_optional_ballots(ballots: Ballots, category_name: str) -> list[str]:
     return [
         ballots[voter_name][category_name]
         for voter_name in ballots

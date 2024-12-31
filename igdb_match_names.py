@@ -301,7 +301,7 @@ def merge_databases(new_database: dict, previous_database: dict) -> dict:
 
 
 def download_igdb_local_databases(
-    ballots: dict,
+    ballots: Ballots,
     release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,
@@ -375,7 +375,7 @@ def download_igdb_local_databases(
 
 
 def figure_out_ballots_with_missing_data(
-    ballots: dict,
+    ballots: Ballots,
     igdb_match_database: dict | None = None,
     release_year: str | None = None,
     goty_field: str = "goty_preferences",
@@ -407,7 +407,7 @@ def figure_out_ballots_with_missing_data(
 
 
 def download_igdb_data_for_ballots_with_missing_data(
-    new_ballots: dict,
+    new_ballots: Ballots,
     release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,
@@ -440,7 +440,7 @@ def download_igdb_data_for_ballots_with_missing_data(
 
 
 def load_igdb_local_databases(
-    ballots: dict,
+    ballots: Ballots,
     release_year: str | None = None,
     *,
     apply_hard_coded_extension_and_fixes: bool = True,

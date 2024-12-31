@@ -440,7 +440,7 @@ class TestSchulzeGotyMethods(unittest.TestCase):
     def test_filter_out_votes_for_early_access_titles() -> None:
         ballot_year = "2018"
 
-        ballots: dict = {"dummy_voter_name": {}}
+        ballots: Ballots = {"dummy_voter_name": {}}
 
         # Add dummy vote for an Early Access game
         ballots["dummy_voter_name"]["goty_preferences"] = {}
@@ -877,7 +877,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
         dummy_voter = "dummy_voter_name"
         goty_field = "dummy_preferences"
 
-        ballots: dict = {dummy_voter: {}}
+        ballots: Ballots = {dummy_voter: {}}
         ballots[dummy_voter][goty_field] = {}
         ballots[dummy_voter][goty_field][1] = "Hello"
         ballots[dummy_voter][goty_field][2] = "Universe"
@@ -911,7 +911,7 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_load_igdb_local_databases() -> None:
         ballot_year = "2018"
 
-        ballots: dict = {"dummy_voter_name": {}}
+        ballots: Ballots = {"dummy_voter_name": {}}
 
         # Add dummy votes for the two actual GotY 2018 on MetaCouncil
         ballots["dummy_voter_name"]["goty_preferences"] = {}

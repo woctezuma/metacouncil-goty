@@ -1,5 +1,3 @@
-from typing import TYPE_CHECKING
-
 import steampi.calendar
 import steampi.text_distances
 
@@ -19,9 +17,7 @@ from igdb_match_names import (
     print_igdb_matches,
     transform_structure_of_matches,
 )
-
-if TYPE_CHECKING:
-    from my_types import Ballots
+from my_types import Ballots
 
 
 def constrain_app_id_search_by_year(
@@ -306,7 +302,7 @@ def normalize_votes(
 
 
 def standardize_ballots(
-    ballots: dict,
+    ballots: Ballots,
     release_year: str | None,
     *,
     print_after_sort: bool = True,

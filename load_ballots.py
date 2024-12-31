@@ -33,7 +33,7 @@ def load_ballots(input_filename: str) -> Ballots:
 
 
 def print_reviews(
-    ballots: dict,
+    ballots: Ballots,
     matches: dict,
     app_id: str,
     goty_field: str = "goty_preferences",
