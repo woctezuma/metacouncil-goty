@@ -3,6 +3,7 @@ from pathlib import Path
 
 from anonymize_data import get_data_folder
 from igdb_databases import get_igdb_file_name_suffix
+from my_types import HardCodedIDs
 
 
 def get_file_name_for_disqualified_igdb_ids(release_year: str | None = None) -> str:
@@ -11,7 +12,7 @@ def get_file_name_for_disqualified_igdb_ids(release_year: str | None = None) -> 
     return get_data_folder() + "disqualified_igdb_ids" + suffix + ".json"
 
 
-def load_disqualified_igdb_ids(release_year: str | None = None) -> dict:
+def load_disqualified_igdb_ids(release_year: str | None = None) -> HardCodedIDs:
     file_name = get_file_name_for_disqualified_igdb_ids(release_year=release_year)
 
     try:

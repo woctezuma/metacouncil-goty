@@ -207,7 +207,7 @@ def look_up_games_released_in_given_year(
     return data
 
 
-def download_list_of_platforms(*, verbose: bool = True) -> list[dict]:
+def download_list_of_platforms(*, verbose: bool = True) -> list[dict[str, int | str]]:
     if verbose:
         print("[query] all possible platforms")
 
