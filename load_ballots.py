@@ -1,4 +1,4 @@
-from my_types import Ballots
+from my_types import Ballots, Params
 from parsing_params import get_adjusted_parsing_params
 from parsing_utils import parse_csv
 
@@ -22,7 +22,7 @@ def convert_fname_to_year(
     return fname[year_index : (year_index + num_digits)]
 
 
-def get_parsing_params(ballot_year: str) -> dict[str, dict[str, int]]:
+def get_parsing_params(ballot_year: str) -> Params:
     return get_adjusted_parsing_params(year=ballot_year)
 
 

@@ -1,3 +1,5 @@
+from my_types import Params
+
 YEAR_WITH_NO_VR_VOTE = 2018
 YEAR_WITH_DECADE_VOTE = 2019
 DIGIT_OF_LAST_YEAR_OF_DECADE = YEAR_WITH_DECADE_VOTE % 10
@@ -22,7 +24,7 @@ def get_categories(categorie_type: str = "main") -> list[str]:
     return categories
 
 
-def get_default_parsing_params() -> dict[str, dict[str, int]]:
+def get_default_parsing_params() -> Params:
     params = {}
 
     for categorie in get_main_categories():
@@ -35,9 +37,9 @@ def get_default_parsing_params() -> dict[str, dict[str, int]]:
 
 
 def adjust_params_to_year(
-    params: dict[str, dict[str, int]],
+    params: Params,
     year: str,
-) -> dict[str, dict[str, int]]:
+) -> Params:
     # NB: in 2018, there was no vote for the best VR game. In 2019 and subsequent years, there was one.
     if int(year) == YEAR_WITH_NO_VR_VOTE:
         params["vr"]["num_choices"] = 0
@@ -51,7 +53,7 @@ def adjust_params_to_year(
     return params
 
 
-def get_adjusted_parsing_params(year: str) -> dict[str, dict[str, int]]:
+def get_adjusted_parsing_params(year: str) -> Params:
     return adjust_params_to_year(get_default_parsing_params(), year)
 
 
@@ -71,7 +73,7 @@ def get_next_indices(
 
 
 def convert_params_to_indices(
-    params: dict[str, dict[str, int]],
+    params: Params,
     offset: int = 9,
 ) -> dict[str, dict[str, list[int | None]]]:
     voter_index = offset

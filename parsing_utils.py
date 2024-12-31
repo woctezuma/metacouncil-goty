@@ -1,5 +1,5 @@
 from anonymize_data import get_anonymized_file_prefix, load_input, remove_header
-from my_types import Ballots
+from my_types import Ballots, Params
 from parsing_params import (
     convert_params_to_indices,
     get_adjusted_parsing_params,
@@ -30,7 +30,7 @@ def is_anonymized_file(fname: str) -> bool:
     return bool(get_anonymized_file_prefix() in fname)
 
 
-def parse_csv(fname: str, parsing_params: dict[str, dict[str, int]]) -> Ballots:
+def parse_csv(fname: str, parsing_params: Params) -> Ballots:
     text_data = load_input(fname)
 
     is_anonymized = is_anonymized_file(fname)
@@ -43,7 +43,7 @@ def parse_csv(fname: str, parsing_params: dict[str, dict[str, int]]) -> Ballots:
 
 def parse_text_data(
     text_data: list[str],
-    parsing_params: dict[str, dict[str, int]],
+    parsing_params: Params,
     *,
     is_anonymized: bool,
 ) -> Ballots:
