@@ -1,7 +1,8 @@
+from my_types import HardCodedIDs
 from whitelist_vote_igdb import load_whitelisted_igdb_ids
 
 
-def get_hard_coded_whitelisted_app_ids() -> dict[str, dict[str, str]]:
+def get_hard_coded_whitelisted_app_ids() -> HardCodedIDs:
     return {
         "0": {
             "reason": "[placeholder]",
@@ -13,7 +14,7 @@ def load_whitelisted_ids(
     release_year: str | None = None,
     *,
     use_igdb: bool = False,
-) -> dict:
+) -> HardCodedIDs:
     if use_igdb:
         whitelisted_app_id_dict = load_whitelisted_igdb_ids(release_year=release_year)
     else:

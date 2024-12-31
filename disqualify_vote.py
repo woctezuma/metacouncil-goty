@@ -1,7 +1,8 @@
 from disqualify_vote_igdb import load_disqualified_igdb_ids
+from my_types import HardCodedIDs
 
 
-def get_hard_coded_disqualified_app_ids() -> dict[str, dict[str, str]]:
+def get_hard_coded_disqualified_app_ids() -> HardCodedIDs:
     return {
         "-1": {
             "reason": "Marvel's Spider-Man is not available on PC: it is exclusive to PS4.",

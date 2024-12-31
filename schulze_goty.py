@@ -17,14 +17,15 @@ from igdb_match_names import (
 )
 from load_ballots import load_ballots, print_reviews
 from match_names import standardize_ballots
+from my_types import HardCodedIDs
 from steam_store_utils import get_early_access_status, get_link_to_store
 from whitelist_vote import load_whitelisted_ids
 
 
 def filter_out_votes_for_early_access_titles(
-    standardized_ballots: dict,
-    whitelisted_ids: dict | None = None,
-) -> dict:
+    standardized_ballots: dict[str, dict],
+    whitelisted_ids: HardCodedIDs | None = None,
+) -> dict[str, dict]:
     # Objective: remove appID which gathered votes but are tagged as 'Early Access' titles
 
     if whitelisted_ids is None:

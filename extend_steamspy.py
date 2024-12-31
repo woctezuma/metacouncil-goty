@@ -1,8 +1,10 @@
 import steampi.calendar
 import steamspypi.api
 
+from my_types import HardCodedIDs
 
-def get_hard_coded_steamspy_database_extension() -> dict[str, dict[str, str]]:
+
+def get_hard_coded_steamspy_database_extension() -> HardCodedIDs:
     # Entries manually added to SteamSpy's database
 
     return {
