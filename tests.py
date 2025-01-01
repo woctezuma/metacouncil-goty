@@ -24,6 +24,7 @@ import whitelist_vote_igdb
 from my_types import Ballots
 from parsing_params import YEAR_WITH_DECADE_VOTE, YEAR_WITH_NO_VR_VOTE
 
+CELESTE_APP_ID = 504230
 EXPECTED_NUM_BALLOTS = 3
 EXPECTED_NUM_REVIEW_TOKEN_INDICES = 2
 HALF_LIFE_TWO_APP_ID = 220
@@ -460,7 +461,10 @@ class TestSchulzeGotyMethods(unittest.TestCase):
             standardized_ballots,
         )
 
-        assert bool(standardized_ballots["dummy_voter_name"]["ballots"][1] == "504230")
+        assert bool(
+            standardized_ballots["dummy_voter_name"]["ballots"][1]
+            == str(CELESTE_APP_ID),
+        )
         assert bool(standardized_ballots["dummy_voter_name"]["ballots"][2] is None)
 
     @staticmethod
