@@ -294,9 +294,9 @@ def print_schulze_ranking(
                 app_id_release_date = "an unknown date"
 
             print(
-                f"{rank + offset + 1:2} | "
+                f"{rank + offset + 1:2} | **"
                 + game_name.strip()
-                + " (appID: "
+                + "** (IGDB: "
                 + app_url
                 + ", released on "
                 + app_id_release_date

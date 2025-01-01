@@ -184,7 +184,7 @@ def match_optional_ballots(
                 ),
             )
 
-        my_str = "{} (appID: {}, released on {})".format(
+        my_str = "**{}** (IGDB: {}, released on {})".format(
             matches[raw_name]["matched_name"],
             matches[raw_name]["matched_url"],
             matches[raw_name]["matched_release_date"],
