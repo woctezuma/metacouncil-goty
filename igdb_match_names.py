@@ -247,11 +247,10 @@ def print_igdb_matches(
             if len(release_years) > 1:
                 displayed_release_years = sorted(release_years)
                 print(f"[!]\tSeveral release years are found for {raw_name}.")
+            elif release_years:
+                displayed_release_years = next(iter(release_years))
             else:
-                try:
-                    displayed_release_years = next(iter(release_years))
-                except IndexError:
-                    displayed_release_years = None
+                displayed_release_years = None
 
             if constrained_release_year is not None:
                 cleaned_release_years = [
