@@ -14,6 +14,8 @@ from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_serv
 from load_ballots import load_ballots
 from my_types import Ballots
 
+USE_MARKDOWN_DISPLAY = True
+
 
 def get_link_to_igdb_website(
     igdb_id: int | str,
@@ -29,9 +31,12 @@ def get_link_to_igdb_website(
     slug = igdb_data["slug"]
 
     if int(igdb_id) > 0:
-        link_to_store = (
-            "[URL=" + igdb_base_url + slug + "/]" + igdb_id_as_str + "[/URL]"
-        )
+        if USE_MARKDOWN_DISPLAY:
+            link_to_store = f"[{igdb_id_as_str}]({igdb_base_url}{slug}/)"
+        else:
+            link_to_store = (
+                "[URL=" + igdb_base_url + slug + "/]" + igdb_id_as_str + "[/URL]"
+            )
     elif hide_dummy_app_id:
         link_to_store = "n/a"
     else:
