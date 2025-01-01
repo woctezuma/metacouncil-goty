@@ -3,6 +3,8 @@ import steamspypi.api
 
 from my_types import HardCodedIDs
 
+YEAR_LENGTH = len("2025")
+
 
 def get_hard_coded_steamspy_database_extension() -> HardCodedIDs:
     # Entries manually added to SteamSpy's database
@@ -151,7 +153,7 @@ def get_release_year_for_problematic_app_id(app_id: str) -> int:
     release_date_as_str = steampi.calendar.get_release_date_as_str(app_id=app_id)
     matched_release_year = release_date_as_str.split(" ")[-1]
     try:
-        matched_release_year_as_int = int(matched_release_year)
+        matched_release_year_as_int = int(matched_release_year[:YEAR_LENGTH])
     except ValueError:
         matched_release_year = release_date_as_str.split(" ")[0]
         matched_release_year_as_int = int(matched_release_year)
