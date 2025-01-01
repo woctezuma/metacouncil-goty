@@ -6,4 +6,5 @@ data/dummy*.json
 data/pc_gaming_metacouncil_goty_awards_20*.csv
 .scannerwork/
 igdb_user_key.json
-
+data/20*_steamspy.json
+data/appdetails/appID_*.json
