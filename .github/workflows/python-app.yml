@@ -43,6 +43,10 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests.py --cov=./ --cov-report=xml
+      env:
+        IGDB_USER_KEY: ${{ secrets.IGDB_USER_KEY }}
+        IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+        IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v5
       with:
