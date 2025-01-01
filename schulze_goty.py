@@ -681,7 +681,7 @@ def apply_pipeline(
 if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = "2020"
+    ballot_year = "2024"
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     use_igdb = True
     retrieve_igdb_data_from_scratch = False
