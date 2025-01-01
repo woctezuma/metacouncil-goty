@@ -859,12 +859,13 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_merge_databases_where_entry_did_not_exist() -> None:
         new_database = {"c": 2}
         previous_database = {"a": 0, "b": 1}
+        length_new_database = len(new_database)
 
         merged_database = igdb_match_names.merge_databases(
             new_database=new_database,
             previous_database=previous_database,
         )
-        assert len(merged_database) == len(previous_database) + len(new_database)
+        assert len(merged_database) == len(previous_database) + length_new_database
         assert merged_database["a"] == previous_database["a"]
         assert merged_database["b"] == previous_database["b"]
         assert merged_database["c"] == new_database["c"]
