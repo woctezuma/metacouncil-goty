@@ -228,7 +228,7 @@ def adapt_votes_format_for_schulze_computations(
         currently_seen_candidates = set()
         for position in sorted(current_ballots.keys()):
             app_id = current_ballots[position]
-            if app_id is not None:
+            if app_id is not None and app_id not in currently_seen_candidates:
                 current_ranking.append([app_id])
                 currently_seen_candidates.add(app_id)
 
