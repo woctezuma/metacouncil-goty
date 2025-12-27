@@ -524,7 +524,10 @@ def print_ballot_distribution_for_given_appid(
                     ballot_distribution[index] += 1
 
         print("\nappID:" + app_id, end="\t")
-        print("counts of ballots with rank 1, 2, ..., 5:\t", ballot_distribution)
+        print(
+            f"counts of ballots with rank 1, 2, ..., {len(ballot_distribution)}:\t",
+            ballot_distribution,
+        )
 
 
 def print_ballot_distribution_for_top_ranked_games(
