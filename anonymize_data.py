@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from constants import BALLOT_YEAR
 from parsing_params import get_parsing_indices
 
 
@@ -176,7 +177,7 @@ def load_and_anonymize(
 if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = "2024"
+    ballot_year = BALLOT_YEAR
     input_filename = get_ballot_file_name(ballot_year)
 
     fake_author_name = True

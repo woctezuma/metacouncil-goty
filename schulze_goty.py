@@ -2,6 +2,7 @@ from collections import Counter
 
 import steampi.calendar
 
+from constants import BALLOT_YEAR
 from disqualify_vote import filter_out_votes_for_hard_coded_reasons
 from extend_igdb import extend_both_igdb_databases
 from extend_steamspy import (
@@ -681,7 +682,7 @@ def apply_pipeline(
 if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = "2024"
+    ballot_year = BALLOT_YEAR
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     use_igdb = True
     retrieve_igdb_data_from_scratch = False

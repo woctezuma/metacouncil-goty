@@ -1,0 +1,1 @@
+BALLOT_YEAR = "2025"

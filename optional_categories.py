@@ -1,3 +1,4 @@
+from constants import BALLOT_YEAR
 from disqualify_vote import is_a_noisy_vote
 from igdb_credentials import download_latest_credentials
 from igdb_match_names import (
@@ -283,7 +284,7 @@ def display_optional_ballots(
 if __name__ == "__main__":
     from load_ballots import get_ballot_file_name
 
-    ballot_year = "2024"
+    ballot_year = BALLOT_YEAR
     input_filename = get_ballot_file_name(ballot_year, is_anonymized=True)
     use_igdb = True
     retrieve_igdb_data_from_scratch = False
