@@ -63,7 +63,7 @@ def get_igdb_request_headers() -> dict[str, str]:
 
     # For IGDB API version 3:
     headers = {
-        "user-key": igdb_user_key["user-key"],
+        "user-key": igdb_user_key.get("user-key", ""),
         "Accept": "application/json",
     }
 
