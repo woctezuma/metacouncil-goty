@@ -1,0 +1,14 @@
+{
+  "-1": {
+    "id": -1,
+    "name": "N/A",
+    "release_dates": [
+      {
+        "platform": 6,
+        "y": 2025,
+        "human": "2025-Jan-01"
+      }
+    ],
+    "slug": null
+  }
+}
