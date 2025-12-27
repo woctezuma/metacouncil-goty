@@ -537,7 +537,12 @@ def transform_structure_of_matches(
             except KeyError:
                 continue
             for element in external_games:
-                if element["category"] == get_steam_service_no():
+                try:
+                    category = element["external_game_source"]
+                except KeyError:
+                    # Retro-compatibility with previous years
+                    category = element["category"]
+                if category == get_steam_service_no():
                     steam_app_id = element["uid"]
                     steam_matched_ids.append(steam_app_id)
 
