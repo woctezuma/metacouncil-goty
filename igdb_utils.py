@@ -231,6 +231,7 @@ def get_igdb_fields_for_games(
             "release_dates.platform",
             "release_dates.human",
             "external_games.category",
+            "external_games.external_game_source",
             "external_games.name",
             "external_games.uid",
             "external_games.url",
