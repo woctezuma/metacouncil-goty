@@ -92,6 +92,7 @@ Results are displayed:
     - [GotD 201X][results-201X-wiki],
     - [GotY 2020][results-2020-wiki],
     - [GotY 2024][results-2024-wiki],
+    - [GotY 2025][results-2025-wiki],
 -   on MetaCouncil:
     - [GotY 2018][results-2018],
     - [GotY 2019][results-2019],
@@ -189,3 +190,4 @@ the most promising method involves using the IGDB database with a constraint w.r
 [results-201X-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Decade_201X>
 [results-2020-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2020>
 [results-2024-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2024>
+[results-2025-wiki]: <https://github.com/woctezuma/metacouncil-goty/wiki/Games_of_the_Year_2025>
