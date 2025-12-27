@@ -3,7 +3,7 @@ from my_types import Indices, Params
 YEAR_WITH_NO_VR_VOTE = 2018
 YEAR_WITH_DECADE_VOTE = 2019
 DIGIT_OF_LAST_YEAR_OF_DECADE = YEAR_WITH_DECADE_VOTE % 10
-YEAR_WITH_MORE_CHOICES_FOR_GOTY = 2024
+STARTING_YEAR_WITH_MORE_CHOICES_FOR_GOTY = 2024
 
 
 def get_main_categories() -> list[str]:
@@ -52,7 +52,7 @@ def adjust_params_to_year(
         params["gotd"]["num_choices"] = 0
 
     # NB: in 2024, there are 10 choices (instead of 5) for the GotY.
-    if int(year) == YEAR_WITH_MORE_CHOICES_FOR_GOTY:
+    if int(year) >= STARTING_YEAR_WITH_MORE_CHOICES_FOR_GOTY:
         params["goty"]["num_choices"] = 10
 
     return params
