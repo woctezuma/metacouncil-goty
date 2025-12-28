@@ -42,8 +42,7 @@ def parse_csv(fname: str, parsing_params: Params) -> Ballots:
 
     if not is_anonymized:
         text_data = remove_header(text_data)
-
-    text_data = remove_spurious_linebreaks_in_reviews(text_data)
+        text_data = remove_spurious_linebreaks_in_reviews(text_data)
 
     return parse_text_data(text_data, parsing_params, is_anonymized=is_anonymized)
 
