@@ -1,4 +1,9 @@
-from anonymize_data import get_anonymized_file_prefix, load_input, remove_header
+from anonymize_data import (
+    get_anonymized_file_prefix,
+    load_input,
+    remove_header,
+    remove_spurious_linebreaks_in_reviews,
+)
 from my_types import Ballots, Indices, Params
 from parsing_params import (
     convert_params_to_indices,
@@ -37,6 +42,8 @@ def parse_csv(fname: str, parsing_params: Params) -> Ballots:
 
     if not is_anonymized:
         text_data = remove_header(text_data)
+
+    text_data = remove_spurious_linebreaks_in_reviews(text_data)
 
     return parse_text_data(text_data, parsing_params, is_anonymized=is_anonymized)
 

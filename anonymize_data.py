@@ -145,6 +145,31 @@ def write_output(
             print(element, file=outfile)
 
 
+def remove_spurious_linebreaks_in_reviews(data_content: list[str]) -> list[str]:
+    data_output = []
+    current_line = ""
+
+    for e in data_content:
+        try:
+            # Each line starts with an integer, which indexes the ballot.
+            # Caveat: we only check if the first element of the split line is an integer.
+            #         If more care is needed, one could perform more checks, e.g. if these elements are sequential.
+            int(e.split(";")[0].strip('"'))
+            # First, save the last processed line
+            if current_line:
+                data_output.append(current_line)
+            # Then consider the content as a new line
+            current_line = e
+        except ValueError:
+            # Concatenate lines
+            current_line += f" {e}"
+
+    # Save the last processed line
+    data_output.append(current_line)
+
+    return data_output
+
+
 def load_and_anonymize(
     input_filename: str,
     ballot_year: str,
@@ -160,6 +185,8 @@ def load_and_anonymize(
     data = load_input(input_filename, file_encoding, data_folder=data_folder)
 
     data_content = remove_header(data, content_start_criterion='"1"')
+
+    data_content = remove_spurious_linebreaks_in_reviews(data_content)
 
     anonymized_data = anonymize(
         data_content,
