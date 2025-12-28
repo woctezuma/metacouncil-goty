@@ -148,6 +148,7 @@ def write_output(
 def remove_spurious_linebreaks_in_reviews(data_content: list[str]) -> list[str]:
     data_output = []
     current_line = ""
+    concatenation_separator = " "
 
     for e in data_content:
         try:
@@ -162,7 +163,7 @@ def remove_spurious_linebreaks_in_reviews(data_content: list[str]) -> list[str]:
             current_line = e
         except ValueError:
             # Concatenate lines
-            current_line += f" {e}"
+            current_line += f"{concatenation_separator}{e}"
 
     # Save the last processed line
     data_output.append(current_line)
