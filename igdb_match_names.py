@@ -14,7 +14,7 @@ from igdb_utils import get_pc_platform_no, get_pc_platform_range, get_steam_serv
 from load_ballots import load_ballots
 from my_types import Ballots
 
-USE_MARKDOWN_DISPLAY = False
+USE_MARKDOWN_DISPLAY = True
 
 
 def get_link_to_igdb_website(
