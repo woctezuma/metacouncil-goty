@@ -22,6 +22,7 @@ def get_link_to_igdb_website(
     igdb_local_database: dict,
     *,
     hide_dummy_app_id: bool = True,
+    use_markdown_display: bool = USE_MARKDOWN_DISPLAY,
 ) -> str:
     igdb_base_url = "https://www.igdb.com/games/"
 
@@ -31,7 +32,7 @@ def get_link_to_igdb_website(
     slug = igdb_data["slug"]
 
     if int(igdb_id) > 0:
-        if USE_MARKDOWN_DISPLAY:
+        if use_markdown_display:
             link_to_store = f"[{igdb_id_as_str}]({igdb_base_url}{slug}/)"
         else:
             link_to_store = (
