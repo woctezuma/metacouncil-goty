@@ -765,18 +765,38 @@ class TestIGDBMatchNamesMethods(unittest.TestCase):
     def test_get_link_to_igdb_website_with_int_input(self) -> None:
         igdb_id = 25076
         igdb_local_database = self.get_dummy_local_database()
-        url = igdb_match_names.get_link_to_igdb_website(igdb_id, igdb_local_database)
+        url = igdb_match_names.get_link_to_igdb_website(
+            igdb_id,
+            igdb_local_database,
+            use_markdown_display=False,
+        )
         assert (
             url == "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]"
         )
+        url = igdb_match_names.get_link_to_igdb_website(
+            igdb_id,
+            igdb_local_database,
+            use_markdown_display=True,
+        )
+        assert url == "[25076](https://www.igdb.com/games/red-dead-redemption-2/)"
 
     def test_get_link_to_igdb_website_with_str_input(self) -> None:
         igdb_id = "25076"
         igdb_local_database = self.get_dummy_local_database()
-        url = igdb_match_names.get_link_to_igdb_website(igdb_id, igdb_local_database)
+        url = igdb_match_names.get_link_to_igdb_website(
+            igdb_id,
+            igdb_local_database,
+            use_markdown_display=False,
+        )
         assert (
             url == "[URL=https://www.igdb.com/games/red-dead-redemption-2/]25076[/URL]"
         )
+        url = igdb_match_names.get_link_to_igdb_website(
+            igdb_id,
+            igdb_local_database,
+            use_markdown_display=True,
+        )
+        assert url == "[25076](https://www.igdb.com/games/red-dead-redemption-2/)"
 
     def test_get_igdb_human_release_dates_with_int_input(self) -> None:
         igdb_id = 25076
